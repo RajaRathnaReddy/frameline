@@ -497,6 +497,13 @@ export function getFeaturedArticle(): Article {
 }
 
 export function getArticleBySlug(slug: string): Article | undefined {
+  if (
+    slug.includes('toxic') ||
+    slug.includes('the-boys') ||
+    slug.includes('kalki-brahmastra')
+  ) {
+    return undefined;
+  }
   return getAllArticles().find(a => a.slug === slug);
 }
 

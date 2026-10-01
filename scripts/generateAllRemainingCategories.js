@@ -249,8 +249,8 @@ console.log(`Generated ${aiFullStories.length} AI articles in ai.ts`);
 
 // ─── 2. VFX & PIPELINE (100 TOPICS) ───
 const vfxThemes = [
-  'Scaling Compute for 2026 Tentpoles: Toxic and The Boys FX Pipeline',
-  'Procedural Destruction Case Study: Kalki 2898 AD and Brahmastra',
+  'ILM Deploys OpenUSD 24.11 Solaris Pipeline Across Global Studio Facilities',
+  'Wētā FX Open-Sources Deep Comp Neural Denoising Toolkit for Tentpole Productions',
   'OpenUSD Solaris Cross-DCC Blueprint: Houdini to Unreal Pipeline',
   'Studio Automation Architecture: n8n and ShotGrid Orchestration',
   'Local LLM Privacy Infrastructure: Deploying Ollama and OpenClaw in VFX',

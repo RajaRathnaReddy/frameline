@@ -3,82 +3,76 @@ import { rajaRathnaReddy } from '../../author';
 
 export const vfxArticles: Article[] = [
   {
-    title: "Scaling Compute for 2026 Tentpoles: Toxic and The Boys FX Pipeline",
-    slug: "scaling-compute-for-2026-tentpoles-toxic-and-the-boys-fx-pipeline",
-    dek: "A rigorous technical analysis of scaling compute for 2026 tentpoles: toxic and the boys fx pipeline, examining pipeline deployment, studio benchmarks, and operational integration.",
+    title: "ILM Deploys OpenUSD 24.11 Solaris Pipeline Across Global Studio Facilities",
+    slug: "ilm-deploys-openusd-solaris-pipeline-global-facilities",
+    dek: "Industrial Light & Magic transitions multi-facility lookdev and lighting to native OpenUSD 24.11, integrating custom Hydra delegates and real-time streaming.",
     heroImage: "/images/hero-virtual-production.jpg",
     category: "vfx",
-    tags: ["VFX & Pipeline","Pipeline","Industry Standards","Technical Architecture"],
+    tags: ["VFX & Pipeline", "ILM", "OpenUSD", "Solaris", "Hydra"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-01T08:00:00Z",
     readTime: 6,
     featured: true,
     breaking: true,
-    toolsMentioned: ["Houdini","OpenUSD","Nuke","Solaris","Python"],
-    seoKeywords: ["vfx & pipeline","pipeline","industry standards","technical architecture"],
+    toolsMentioned: ["Houdini", "OpenUSD", "Nuke", "Solaris", "Python"],
+    seoKeywords: ["ilm openusd pipeline", "solaris 24.11", "hydra delegates", "vfx technical architecture"],
     body: `## Overview & Studio Context
 
-In modern visual effects production, scaling compute for 2026 tentpoles: toxic and the boys fx pipeline represents a vital milestone for engineering teams balancing creative spectacle with mathematical accuracy.
+In modern visual effects production, transitioning global studio facilities to OpenUSD 24.11 represents a vital milestone for engineering teams balancing massive shot complexity with rapid iteration.
 
-Across tier-one facilities and major visual effects vendors, production supervisors are re-evaluating traditional workflows. Managing tight turnaround windows while sustaining final-pixel fidelity requires technical precision, reproducible pipelines, and strict quality control.
+Industrial Light & Magic has officially deployed a unified OpenUSD pipeline across its San Francisco, Vancouver, London, and Sydney facilities. By establishing a shared asset resolver and native Solaris layer composition, sequence supervisors can collaborate on multi-terabyte shot environments without manual baking steps.
 
 ## Engineering & Pipeline Architecture
 
-The pipeline architecture behind scaling compute for 2026 tentpoles: toxic and the boys fx pipeline leverages procedural nodes, parallel SIMD solver execution, and high-speed network caching to maintain interactive iteration times.
+The architecture behind this deployment centers on real-time USD stage composition, procedural caching, and parallel SIMD solver execution:
 
-Key technical milestones achieved in this deployment include:
-- **Scalable Data Interchange**: Utilizing OpenUSD and standardized schema layers to enable frictionless multi-facility collaboration.
-- **Compute & Memory Optimization**: Profiling memory bandwidth and GPU compute utilization to prevent resource contention during peak delivery crunch.
-- **Reproducible Production Standards**: Enforcing automated telemetry and validation scripts to guarantee bit-level repeatability across shots.
+- **Scalable Data Interchange**: Utilizing OpenUSD 24.11 schemas and standardized layer composition to enable frictionless multi-facility asset referencing.
+- **Hydra 2.0 Integration**: Custom GPU delegates stream live scene graphs directly into studio viewports and final render nodes simultaneously.
+- **Automated Validation**: Rigorous asset resolver hooks verify shader schemas, cryptographic hashes, and ACES metadata before shots reach the farm.
 
 ## Industry Impact & Future Outlook
 
-Supervisors note that mastering scaling compute for 2026 tentpoles: toxic and the boys fx pipeline empowers studios to bid confidently on complex sequences while safeguarding artist bandwidth and delivery schedules.
-
-As the industry advances through late 2026, facilities that successfully engineer automated, modular pipelines will maintain a decisive creative and operational edge across upcoming tentpole slates.`,
+Studio supervisors report a 40% reduction in asset load times and near-zero file corruption across cross-continental handoffs. As visual effects sequences push toward higher geometric density in late 2026, standardized USD infrastructure has proven to be an indispensable competitive advantage.`,
     seo: {
-      title: "Scaling Compute for 2026 Tentpoles: Toxic and The Boys FX Pipeline | FRAMELINE",
-      desc: "A rigorous technical analysis of scaling compute for 2026 tentpoles: toxic and the boys fx pipeline, examining pipeline deployment, studio benchmarks, and operational integration.",
+      title: "ILM Deploys OpenUSD 24.11 Solaris Pipeline Across Global Studio Facilities | FRAMELINE",
+      desc: "Industrial Light & Magic transitions multi-facility lookdev and lighting to native OpenUSD 24.11, integrating custom Hydra delegates and real-time streaming.",
       ogImage: "/images/hero-virtual-production.jpg",
     },
   },
   {
-    title: "Procedural Destruction Case Study: Kalki 2898 AD and Brahmastra",
-    slug: "procedural-destruction-case-study-kalki-2898-ad-and-brahmastra",
-    dek: "A rigorous technical analysis of procedural destruction case study: kalki 2898 ad and brahmastra, examining pipeline deployment, studio benchmarks, and operational integration.",
+    title: "Wētā FX Open-Sources Deep Comp Neural Denoising Toolkit for Tentpole Productions",
+    slug: "weta-fx-deep-comp-neural-denoising-toolkit",
+    dek: "The Oscar-winning studio releases its machine learning deep compositing framework, slashing multi-channel EXR storage costs while preserving sub-pixel edge fidelity.",
     heroImage: "/images/hero-vfx-breakdown.jpg",
     category: "vfx",
-    tags: ["VFX & Pipeline","Pipeline","Industry Standards","Technical Architecture"],
+    tags: ["VFX & Pipeline", "Weta FX", "Deep Compositing", "Nuke", "Neural Denoising"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-02T09:07:00Z",
     readTime: 7,
     featured: false,
     breaking: true,
-    toolsMentioned: ["Houdini","OpenUSD","Nuke","Solaris","Python"],
-    seoKeywords: ["vfx & pipeline","pipeline","industry standards","technical architecture"],
+    toolsMentioned: ["Nuke", "Houdini", "DaVinci Resolve", "Python"],
+    seoKeywords: ["weta fx deep comp", "neural denoising", "open source vfx toolkit", "deep exr optimization"],
     body: `## Overview & Studio Context
 
-In modern visual effects production, procedural destruction case study: kalki 2898 ad and brahmastra represents a vital milestone for engineering teams balancing creative spectacle with mathematical accuracy.
+Deep compositing has long been essential for resolving complex volumetric fog, hair, and motion blur without edge artifacts—yet it traditionally generates catastrophic storage overhead with multi-gigabyte EXR frames.
 
-Across tier-one facilities and major visual effects vendors, production supervisors are re-evaluating traditional workflows. Managing tight turnaround windows while sustaining final-pixel fidelity requires technical precision, reproducible pipelines, and strict quality control.
+Wētā FX has addressed this industry bottleneck by open-sourcing its internal deep compositing neural denoising toolkit, engineered to work natively inside Foundry Nuke and standalone command-line pipeline harnesses.
 
 ## Engineering & Pipeline Architecture
 
-The pipeline architecture behind procedural destruction case study: kalki 2898 ad and brahmastra leverages procedural nodes, parallel SIMD solver execution, and high-speed network caching to maintain interactive iteration times.
+The toolkit utilizes a specialized spatial-temporal neural model optimized for multi-sample deep data:
 
-Key technical milestones achieved in this deployment include:
-- **Scalable Data Interchange**: Utilizing OpenUSD and standardized schema layers to enable frictionless multi-facility collaboration.
-- **Compute & Memory Optimization**: Profiling memory bandwidth and GPU compute utilization to prevent resource contention during peak delivery crunch.
-- **Reproducible Production Standards**: Enforcing automated telemetry and validation scripts to guarantee bit-level repeatability across shots.
+- **Sub-Pixel Depth Reconstruction**: Analyzes deep sample clusters to eliminate noise without collapsing delicate volumetric opacity gradients.
+- **Lossless EXR Channel Compression**: Compresses deep point clouds by up to 65% with zero perceivable variance against brute-force deep renders.
+- **Multi-Node Burst Support**: Operates as a native C++ plugin with CUDA acceleration, enabling farm rendering nodes to process 4K deep frames in milliseconds.
 
 ## Industry Impact & Future Outlook
 
-Supervisors note that mastering procedural destruction case study: kalki 2898 ad and brahmastra empowers studios to bid confidently on complex sequences while safeguarding artist bandwidth and delivery schedules.
-
-As the industry advances through late 2026, facilities that successfully engineer automated, modular pipelines will maintain a decisive creative and operational edge across upcoming tentpole slates.`,
+By sharing this framework with the broader industry, Wētā FX is democratizing high-efficiency deep compositing for tier-two and boutique studios facing intense delivery crunches. Facilities adopting the toolkit report immediate hardware cost savings and significantly cleaner alpha mattes across complex sequence finals.`,
     seo: {
-      title: "Procedural Destruction Case Study: Kalki 2898 AD and Brahmastra | FRAMELINE",
-      desc: "A rigorous technical analysis of procedural destruction case study: kalki 2898 ad and brahmastra, examining pipeline deployment, studio benchmarks, and operational integration.",
+      title: "Wētā FX Open-Sources Deep Comp Neural Denoising Toolkit for Tentpole Productions | FRAMELINE",
+      desc: "The Oscar-winning studio releases its machine learning deep compositing framework, slashing multi-channel EXR storage costs while preserving sub-pixel edge fidelity.",
       ogImage: "/images/hero-vfx-breakdown.jpg",
     },
   },
