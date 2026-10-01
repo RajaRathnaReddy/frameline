@@ -245,7 +245,7 @@ export const reviews: ProductReview[] = [
       'Fusion node workspace remains intimidating for Premiere editors',
       'Advanced hardware panels require significant studio desk real estate',
     ],
-    author: authors[0],
+    author: rajaRathnaReddy,
     publishedAt: '2026-09-28T12:00:00Z',
     testedSpecs: {
       'Tested Version': 'v20.0.1 Studio',
@@ -277,7 +277,7 @@ export const reviews: ProductReview[] = [
       'Super35 sensor size requires specific glass (no full-frame 2.39x squeeze natively)',
       'Total package with viewfinder, batteries, and media easily exceeds $90,000',
     ],
-    author: authors[1],
+    author: rajaRathnaReddy,
     publishedAt: '2026-09-25T15:00:00Z',
     testedSpecs: {
       'Sensor': 'Super 35 format ARRI ALEV 4 CMOS (4608 x 3164)',
@@ -308,7 +308,7 @@ export const reviews: ProductReview[] = [
       'Extremely GPU-intensive (requires RTX 4090 or Apple M-series for swift render)',
       'Occasional hallucinations in high-contrast foliage or typography',
     ],
-    author: authors[2],
+    author: rajaRathnaReddy,
     publishedAt: '2026-09-20T10:00:00Z',
     testedSpecs: {
       'Version': 'v5.2.3 Commercial',
@@ -444,20 +444,40 @@ export function addCustomArticle(article: Article) {
 export function getAllArticles(): Article[] {
   if (typeof window !== 'undefined') {
     try {
-      const stored: Article[] = JSON.parse(localStorage.getItem('frameline_custom_articles') || '[]');
-      if (stored.length > 0) {
-        // Enforce Raja Rathna Reddy and filter out any unwanted or resume-specific slugs
-        const blacklisted = new Set([
-          'toxic-the-boys-fx-pipeline-architecture',
-          'kalki-brahmastra-procedural-fx-case-study',
-        ]);
-        const sanitized = stored
-          .filter(a => !blacklisted.has(a.slug) && !a.slug.includes('toxic-the-boys'))
-          .map(a => ({ ...a, author: rajaRathnaReddy }));
-        
-        const customSlugs = new Set(sanitized.map((a: Article) => a.slug));
-        const nonDuplicateDefaults = articles.filter(a => !customSlugs.has(a.slug));
-        return [...sanitized, ...nonDuplicateDefaults];
+      const raw = localStorage.getItem('frameline_custom_articles');
+      if (raw) {
+        const stored: Article[] = JSON.parse(raw);
+        if (stored.length > 0) {
+          const staticSlugs = new Set(articles.map(a => a.slug));
+          const staticTitles = new Set(articles.map(a => a.title.toLowerCase().trim()));
+
+          // Purge any old entries with dummy author names or duplicate titles/slugs
+          const sanitized = stored
+            .filter(a => {
+              const authorName = a.author?.name || '';
+              const isDummyAuthor =
+                authorName.includes('Julian') ||
+                authorName.includes('Elena') ||
+                authorName.includes('Marcus') ||
+                authorName.includes('Vance');
+              const isBlacklisted =
+                a.slug.includes('toxic-the-boys') ||
+                a.slug.includes('kalki-brahmastra');
+              const isDuplicate =
+                staticSlugs.has(a.slug) ||
+                staticTitles.has(a.title.toLowerCase().trim()) ||
+                a.title.includes('James Cameron on Stability AI') ||
+                a.title.includes('Lionsgate Expands Runway');
+              return !isDummyAuthor && !isBlacklisted && !isDuplicate;
+            })
+            .map(a => ({ ...a, author: rajaRathnaReddy }));
+
+          if (sanitized.length !== stored.length) {
+            localStorage.setItem('frameline_custom_articles', JSON.stringify(sanitized));
+          }
+
+          return [...sanitized, ...articles];
+        }
       }
     } catch {
       // fallback

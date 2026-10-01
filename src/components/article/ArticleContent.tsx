@@ -176,7 +176,7 @@ export default function ArticleContent({ article }: { article: Article }) {
               </div>
 
               <h1
-                className="text-fluid-h1 font-display text-text-primary mb-4"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-display font-black text-text-primary mb-4 leading-[1.18] tracking-tight max-w-4xl"
                 itemProp="headline"
               >
                 {article.title}

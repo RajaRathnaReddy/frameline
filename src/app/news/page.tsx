@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { getAllArticles, categories } from '@/lib/data';
+import { getAllArticles, categories, rajaRathnaReddy } from '@/lib/data';
 import { getCategoryColor, formatTimecode } from '@/lib/utils';
 import { Article } from '@/lib/types';
 
@@ -13,6 +13,30 @@ export default function NewsPage() {
   const [searchFilter, setSearchFilter] = useState<string>('');
 
   useEffect(() => {
+    // Purge any legacy localStorage items containing dummy authors or duplicate titles
+    if (typeof window !== 'undefined') {
+      try {
+        const raw = localStorage.getItem('frameline_custom_articles');
+        if (raw) {
+          const list = JSON.parse(raw);
+          const cleaned = list.filter((a: any) => {
+            const authorName = a.author?.name || '';
+            const isDummy =
+              authorName.includes('Julian') ||
+              authorName.includes('Elena') ||
+              authorName.includes('Marcus') ||
+              authorName.includes('Vance');
+            return !isDummy;
+          });
+          if (cleaned.length !== list.length) {
+            localStorage.setItem('frameline_custom_articles', JSON.stringify(cleaned));
+          }
+        }
+      } catch {
+        // ignore
+      }
+    }
+
     const updateHandler = () => setAllStories(getAllArticles());
     window.addEventListener('frameline_articles_updated', updateHandler);
     setAllStories(getAllArticles());
@@ -168,14 +192,14 @@ export default function NewsPage() {
               <div className="px-5 pb-5 pt-3 border-t border-border-subtle/60 flex items-center justify-between text-meta text-text-secondary/50 text-[10px]">
                 <div className="flex items-center gap-2">
                   <Image
-                    src={article.author.avatar}
-                    alt={article.author.name}
+                    src={rajaRathnaReddy.avatar}
+                    alt={rajaRathnaReddy.name}
                     width={18}
                     height={18}
-                    className="rounded-full"
+                    className="rounded-full border border-accent-gold/40"
                   />
-                  <span className="text-text-secondary/70 truncate max-w-[100px]">
-                    {article.author.name}
+                  <span className="text-text-secondary/80 font-mono text-[11px] truncate max-w-[120px] font-medium">
+                    {rajaRathnaReddy.name}
                   </span>
                 </div>
                 <div className="flex items-center gap-1.5 font-mono">

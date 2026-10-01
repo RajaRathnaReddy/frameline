@@ -72,15 +72,15 @@ body {
 }
 
 .text-fluid-h1 {
-  font-size: clamp(2.75rem, 6vw, 6rem);
-  line-height: 1.05;
-  letter-spacing: -0.03em;
+  font-size: clamp(2rem, 3.5vw, 3.25rem);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
   font-weight: 800;
 }
 
 .text-fluid-h2 {
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  line-height: 1.1;
+  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+  line-height: 1.2;
   letter-spacing: -0.02em;
   font-weight: 700;
 }

@@ -75,16 +75,18 @@ export default function StudioPage() {
       title: baseTemplate.title,
       slug,
       dek: baseTemplate.leadSnippet,
-      heroImage:
-        selectedCategory === 'virtual-production'
-          ? '/images/hero-virtual-production.jpg'
-          : selectedCategory === 'vfx'
-          ? '/images/hero-vfx-breakdown.jpg'
-          : selectedCategory === 'tools'
-          ? '/images/article-unreal.jpg'
-          : selectedCategory === 'hollywood'
-          ? '/images/article-netflix.jpg'
-          : '/images/hero-ai-film.jpg',
+      heroImage: [
+        '/images/soundstage-production.jpg',
+        '/images/virtual-stage-setup.jpg',
+        '/images/vfx-space-explosion.jpg',
+        '/images/ai-neural-editor.jpg',
+        '/images/color-grading-suite.jpg',
+        '/images/hero-virtual-production.jpg',
+        '/images/hero-ai-film.jpg',
+        '/images/article-unreal.jpg',
+        '/images/article-adobe.jpg',
+        '/images/hero-vfx-breakdown.jpg',
+      ][Math.floor(Math.random() * 10)],
       category: selectedCategory,
       tags: finalTags,
       seoKeywords: finalKeywords,
