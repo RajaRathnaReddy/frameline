@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Article } from '@/lib/types';
 import { getCategoryColor, formatTimecode } from '@/lib/utils';
+import AuthorBadge from '@/components/common/AuthorBadge';
 
 interface CategoryArticleListProps {
   articles: Article[];
@@ -157,23 +158,7 @@ export default function CategoryArticleList({
               </div>
 
               <div className="px-5 pb-5 pt-3 border-t border-border-subtle/50 flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <Image
-                    src={article.author.avatar}
-                    alt={article.author.name}
-                    width={22}
-                    height={22}
-                    className="rounded-full border border-white/20"
-                  />
-                  <div className="flex flex-col">
-                    <span className="text-text-primary text-[11px] font-semibold">
-                      {article.author.name}
-                    </span>
-                    <span className="text-accent-cyan text-[9px] font-mono">
-                      {article.author.role}
-                    </span>
-                  </div>
-                </div>
+                <AuthorBadge size="sm" />
                 <div className="text-right font-mono text-[10px] text-text-secondary/60">
                   <span>{article.readTime} MIN</span>
                 </div>

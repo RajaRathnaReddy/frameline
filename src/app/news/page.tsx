@@ -7,40 +7,24 @@ import { getAllArticles, categories, rajaRathnaReddy } from '@/lib/data';
 import { getCategoryColor, formatTimecode } from '@/lib/utils';
 import { Article } from '@/lib/types';
 
+import AuthorBadge from '@/components/common/AuthorBadge';
+
 export default function NewsPage() {
   const [allStories, setAllStories] = useState<Article[]>(() => getAllArticles());
   const [selectedCat, setSelectedCat] = useState<string>('all');
   const [searchFilter, setSearchFilter] = useState<string>('');
 
   useEffect(() => {
-    // Purge any legacy localStorage items containing dummy authors or duplicate titles
+    // Purge any legacy localStorage items from previous mock sessions
     if (typeof window !== 'undefined') {
       try {
-        const raw = localStorage.getItem('frameline_custom_articles');
-        if (raw) {
-          const list = JSON.parse(raw);
-          const cleaned = list.filter((a: any) => {
-            const authorName = a.author?.name || '';
-            const isDummy =
-              authorName.includes('Julian') ||
-              authorName.includes('Elena') ||
-              authorName.includes('Marcus') ||
-              authorName.includes('Vance');
-            return !isDummy;
-          });
-          if (cleaned.length !== list.length) {
-            localStorage.setItem('frameline_custom_articles', JSON.stringify(cleaned));
-          }
-        }
+        localStorage.removeItem('frameline_custom_articles');
       } catch {
         // ignore
       }
     }
 
-    const updateHandler = () => setAllStories(getAllArticles());
-    window.addEventListener('frameline_articles_updated', updateHandler);
     setAllStories(getAllArticles());
-    return () => window.removeEventListener('frameline_articles_updated', updateHandler);
   }, []);
 
   const filteredArticles = allStories.filter((article) => {
@@ -189,20 +173,9 @@ export default function NewsPage() {
                 </div>
               </div>
 
-              <div className="px-5 pb-5 pt-3 border-t border-border-subtle/60 flex items-center justify-between text-meta text-text-secondary/50 text-[10px]">
-                <div className="flex items-center gap-2">
-                  <Image
-                    src={rajaRathnaReddy.avatar}
-                    alt={rajaRathnaReddy.name}
-                    width={18}
-                    height={18}
-                    className="rounded-full border border-accent-gold/40"
-                  />
-                  <span className="text-text-secondary/80 font-mono text-[11px] truncate max-w-[120px] font-medium">
-                    {rajaRathnaReddy.name}
-                  </span>
-                </div>
-                <div className="flex items-center gap-1.5 font-mono">
+              <div className="px-5 pb-5 pt-3 border-t border-border-subtle/60 flex items-center justify-between">
+                <AuthorBadge size="sm" showWebsite={true} />
+                <div className="flex items-center gap-1.5 font-mono text-[10px] text-text-secondary/60">
                   <span>{article.readTime} MIN</span>
                   <span>&bull;</span>
                   <time dateTime={article.publishedAt}>

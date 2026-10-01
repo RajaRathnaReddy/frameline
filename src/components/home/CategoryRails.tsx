@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { articles, categories, getAllArticles } from '@/lib/data';
 import { getCategoryColor, formatTimecode } from '@/lib/utils';
 import { ScrollReveal } from '@/components/motion';
+import AuthorBadge from '@/components/common/AuthorBadge';
 
 export default function CategoryRails() {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
@@ -102,27 +103,7 @@ export default function CategoryRails() {
 
                   {/* Curated Grid of 3 Non-Repeating Articles */}
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {catArticles.slice(0, 3).map((article, cardIdx) => {
-                      // Distinct image rotation per category and card index so NO images repeat
-                      const distinctImages = [
-                        '/images/soundstage-production.jpg',
-                        '/images/vfx-space-explosion.jpg',
-                        '/images/virtual-stage-setup.jpg',
-                        '/images/color-grading-suite.jpg',
-                        '/images/ai-neural-editor.jpg',
-                        '/images/article-unreal.jpg',
-                        '/images/article-netflix.jpg',
-                        '/images/article-adobe.jpg',
-                        '/images/hero-vfx-breakdown.jpg',
-                        '/images/hero-virtual-production.jpg',
-                        '/images/breakdown-creature.jpg',
-                        '/images/review-camera.jpg',
-                        '/images/review-davinci.jpg',
-                        '/images/hero-ai-film.jpg',
-                        '/images/article-sora.jpg',
-                      ];
-                      const uniqueImage = distinctImages[(idx * 3 + cardIdx) % distinctImages.length];
-
+                    {catArticles.slice(0, 3).map((article) => {
                       return (
                         <Link
                           key={article.slug}
@@ -133,7 +114,7 @@ export default function CategoryRails() {
                             {/* Thumbnail */}
                             <div className="img-hover-container aspect-[16/9] rounded-lg overflow-hidden mb-4 relative bg-bg-elevated">
                               <Image
-                                src={uniqueImage}
+                                src={article.heroImage}
                                 alt={article.title}
                                 fill
                                 className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -172,13 +153,8 @@ export default function CategoryRails() {
                           </div>
 
                           {/* Footer with Author Byline and Link */}
-                          <div className="pt-3 border-t border-white/5 flex items-center justify-between text-meta text-[10px] text-text-secondary/60">
-                            <span className="font-mono text-text-primary font-medium">
-                              Raja Rathna Reddy
-                            </span>
-                            <span className="font-mono text-accent-cyan">
-                              rajarathnareddy.com
-                            </span>
+                          <div className="pt-3 border-t border-white/5 flex items-center justify-between">
+                            <AuthorBadge size="sm" showWebsite={true} />
                           </div>
                         </Link>
                       );

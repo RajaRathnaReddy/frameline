@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { getFeaturedArticle, articles } from '@/lib/data';
 import { formatTimecode, getCategoryColor } from '@/lib/utils';
 import { motion } from 'framer-motion';
+import AuthorBadge from '@/components/common/AuthorBadge';
 
 export default function CinematicHero() {
   const featured = getFeaturedArticle();
@@ -72,24 +73,7 @@ export default function CinematicHero() {
 
                 {/* Metadata & Author Bar */}
                 <div className="pt-4 border-t border-white/[0.08] flex items-center justify-between flex-wrap gap-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-full overflow-hidden border border-white/20 relative">
-                      <Image
-                        src={featured.author.avatar}
-                        alt={featured.author.name}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                    <div>
-                      <div className="text-white text-xs font-display font-bold">
-                        {featured.author.name}
-                      </div>
-                      <div className="text-text-secondary text-[10px] font-mono">
-                        {featured.author.role}
-                      </div>
-                    </div>
-                  </div>
+                  <AuthorBadge size="md" showWebsite={true} />
 
                   <div className="flex items-center gap-3 text-right">
                     <div className="font-mono text-xs text-text-secondary">

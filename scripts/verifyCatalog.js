@@ -16,10 +16,10 @@ for (const cat of categories) {
   }
   const content = fs.readFileSync(filePath, 'utf8');
 
-  // Extract all titles
-  const titleMatches = [...content.matchAll(/title:\s*["']([^"']+)["']/g)].map(m => m[1]);
+  // Extract all titles (properly matching matching quotes)
+  const titleMatches = [...content.matchAll(/title:\s*"([^"]+)"/g)].map(m => m[1]);
   // Extract all slugs
-  const slugMatches = [...content.matchAll(/slug:\s*["']([^"']+)["']/g)].map(m => m[1]);
+  const slugMatches = [...content.matchAll(/slug:\s*"([^"]+)"/g)].map(m => m[1]);
   // Check authors
   const authorMatches = [...content.matchAll(/author:\s*([a-zA-Z0-9_]+)/g)].map(m => m[1]);
 

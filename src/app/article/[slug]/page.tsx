@@ -16,8 +16,11 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: ArticlePageProps): Promise<Metadata> {
   const { slug } = await params;
+  if (slug.includes('toxic') || slug.includes('the-boys') || slug.includes('kalki')) {
+    return { title: '404 - Not Found | FRAMELINE' };
+  }
   const article = articles.find((a) => a.slug === slug);
-  if (!article) return { title: 'FRAMELINE Dispatch' };
+  if (!article) return { title: '404 - Not Found | FRAMELINE' };
 
   return {
     title: article.seo.title,
@@ -41,10 +44,15 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
 
 export default async function ArticlePage({ params }: ArticlePageProps) {
   const { slug } = await params;
+
+  if (slug.includes('toxic') || slug.includes('the-boys') || slug.includes('kalki')) {
+    notFound();
+  }
+
   const article = articles.find((a) => a.slug === slug);
 
   if (!article) {
-    return <ArticleClientLoader slug={slug} />;
+    notFound();
   }
 
   return <ArticleContent article={article} />;

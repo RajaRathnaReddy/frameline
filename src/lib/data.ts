@@ -442,48 +442,7 @@ export function addCustomArticle(article: Article) {
 }
 
 export function getAllArticles(): Article[] {
-  if (typeof window !== 'undefined') {
-    try {
-      const raw = localStorage.getItem('frameline_custom_articles');
-      if (raw) {
-        const stored: Article[] = JSON.parse(raw);
-        if (stored.length > 0) {
-          const staticSlugs = new Set(articles.map(a => a.slug));
-          const staticTitles = new Set(articles.map(a => a.title.toLowerCase().trim()));
-
-          // Purge any old entries with dummy author names or duplicate titles/slugs
-          const sanitized = stored
-            .filter(a => {
-              const authorName = a.author?.name || '';
-              const isDummyAuthor =
-                authorName.includes('Julian') ||
-                authorName.includes('Elena') ||
-                authorName.includes('Marcus') ||
-                authorName.includes('Vance');
-              const isBlacklisted =
-                a.slug.includes('toxic-the-boys') ||
-                a.slug.includes('kalki-brahmastra');
-              const isDuplicate =
-                staticSlugs.has(a.slug) ||
-                staticTitles.has(a.title.toLowerCase().trim()) ||
-                a.title.includes('James Cameron on Stability AI') ||
-                a.title.includes('Lionsgate Expands Runway');
-              return !isDummyAuthor && !isBlacklisted && !isDuplicate;
-            })
-            .map(a => ({ ...a, author: rajaRathnaReddy }));
-
-          if (sanitized.length !== stored.length) {
-            localStorage.setItem('frameline_custom_articles', JSON.stringify(sanitized));
-          }
-
-          return [...sanitized, ...articles];
-        }
-      }
-    } catch {
-      // fallback
-    }
-  }
-  return [...customArticles, ...articles];
+  return articles;
 }
 
 // ─── HELPERS ───
