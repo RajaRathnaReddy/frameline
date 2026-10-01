@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Article } from '@/lib/types';
 import { formatTimecode, getCategoryColor } from '@/lib/utils';
 import { articles } from '@/lib/data';
+import { rajaRathnaReddy } from '@/lib/author';
 import { generateArticleJsonLd } from '@/lib/seo';
 import ReadingProgress from './ReadingProgress';
 import TableOfContents from './TableOfContents';
@@ -187,20 +188,31 @@ export default function ArticleContent({ article }: { article: Article }) {
 
               {/* Meta */}
               <div className="flex items-center gap-4 flex-wrap pb-8 border-b border-border-subtle mb-8">
-                <div className="flex items-center gap-2" itemProp="author" itemScope itemType="https://schema.org/Person">
+                <div className="flex items-center gap-3" itemProp="author" itemScope itemType="https://schema.org/Person">
                   <Image
-                    src={article.author.avatar}
-                    alt={article.author.name}
-                    width={36}
-                    height={36}
-                    className="rounded-full"
+                    src={rajaRathnaReddy.avatar}
+                    alt={rajaRathnaReddy.name}
+                    width={40}
+                    height={40}
+                    className="rounded-full border border-accent-gold/40 shadow-sm"
                   />
                   <div>
-                    <span className="text-text-primary text-sm font-display font-semibold block" itemProp="name">
-                      {article.author.name}
-                    </span>
-                    <span className="text-meta text-text-secondary/50 text-[10px]">
-                      {article.author.role}
+                    <div className="flex items-center gap-2">
+                      <a
+                        href={rajaRathnaReddy.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-text-primary hover:text-accent-gold transition-colors text-sm font-display font-bold block"
+                        itemProp="name"
+                      >
+                        {rajaRathnaReddy.name}
+                      </a>
+                      <span className="font-mono text-[9px] uppercase px-1.5 py-0.5 rounded bg-accent-gold/15 text-accent-gold border border-accent-gold/30 font-semibold">
+                        rajarathnareddy.com
+                      </span>
+                    </div>
+                    <span className="text-meta text-accent-cyan text-[10px] font-mono block">
+                      {rajaRathnaReddy.role}
                     </span>
                   </div>
                 </div>
@@ -327,8 +339,8 @@ export default function ArticleContent({ article }: { article: Article }) {
                 <div className="relative shrink-0">
                   <div className="w-20 h-20 rounded-2xl overflow-hidden border-2 border-accent-gold/40 shadow-lg shadow-black/60 relative">
                     <Image
-                      src={article.author.avatar}
-                      alt={article.author.name}
+                      src={rajaRathnaReddy.avatar}
+                      alt={rajaRathnaReddy.name}
                       width={80}
                       height={80}
                       className="object-cover w-full h-full"
@@ -342,7 +354,7 @@ export default function ArticleContent({ article }: { article: Article }) {
                 <div className="flex-1">
                   <div className="flex flex-wrap items-center gap-2 mb-1.5">
                     <h4 className="font-display text-lg font-bold text-text-primary tracking-tight">
-                      {article.author.name}
+                      {rajaRathnaReddy.name}
                     </h4>
                     <span className="font-mono text-[9px] uppercase tracking-wider px-2 py-0.5 rounded bg-accent-gold/15 text-accent-gold border border-accent-gold/30 font-bold">
                       VERIFIED TRADE BYLINE
@@ -350,79 +362,53 @@ export default function ArticleContent({ article }: { article: Article }) {
                   </div>
 
                   <p className="font-mono text-xs text-accent-cyan font-medium mb-3">
-                    {article.author.role}
+                    {rajaRathnaReddy.role}
                   </p>
 
                   <p className="text-text-secondary text-sm leading-relaxed mb-5">
-                    {article.author.bio}
+                    {rajaRathnaReddy.bio}
                   </p>
 
-                  {/* Portfolio & Verified Credential Links */}
-                  <div className="flex flex-wrap gap-2 pt-4 border-t border-white/[0.08]">
-                    {article.author.website && (
+                  {/* Verified Trade Links */}
+                  <div className="flex flex-wrap gap-2.5 pt-4 border-t border-white/[0.08]">
+                    <a
+                      href={rajaRathnaReddy.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider px-3.5 py-1.5 rounded-lg bg-accent-gold/10 hover:bg-accent-gold/20 text-accent-gold border border-accent-gold/30 transition-all font-bold"
+                    >
+                      <span>🌐</span>
+                      <span>rajarathnareddy.com</span>
+                    </a>
+                    <a
+                      href={rajaRathnaReddy.imdb}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider px-3.5 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-text-primary border border-white/10 transition-all font-semibold"
+                    >
+                      <span>🎬</span>
+                      <span>IMDb (nm12830221)</span>
+                    </a>
+                    {rajaRathnaReddy.socials?.linkedin && (
                       <a
-                        href={article.author.website}
+                        href={rajaRathnaReddy.socials.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 rounded-lg bg-white/5 hover:bg-accent-primary/20 text-text-primary hover:text-accent-primary border border-white/10 hover:border-accent-primary/40 transition-all font-semibold"
+                        className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider px-3.5 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-text-secondary hover:text-accent-cyan border border-white/10 transition-all"
                       >
-                        <span>🌐</span>
-                        <span>rajarathnareddy.com</span>
+                        <span>💼</span>
+                        <span>LinkedIn</span>
                       </a>
                     )}
-                    {article.author.imdb && (
+                    {rajaRathnaReddy.socials?.twitter && (
                       <a
-                        href={article.author.imdb}
+                        href={rajaRathnaReddy.socials.twitter}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 rounded-lg bg-accent-gold/10 hover:bg-accent-gold/20 text-accent-gold border border-accent-gold/30 transition-all font-bold"
+                        className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider px-3.5 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-text-secondary hover:text-text-primary border border-white/10 transition-all"
                       >
-                        <span>🎬</span>
-                        <span>IMDb Profile</span>
-                      </a>
-                    )}
-                    {article.author.filmographyUrl && (
-                      <a
-                        href={article.author.filmographyUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-text-secondary hover:text-text-primary border border-white/10 transition-all"
-                      >
-                        <span>🎥</span>
-                        <span>Filmography</span>
-                      </a>
-                    )}
-                    {article.author.codingUrl && (
-                      <a
-                        href={article.author.codingUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-text-secondary hover:text-accent-cyan border border-white/10 transition-all"
-                      >
-                        <span>💻</span>
-                        <span>USD & Code</span>
-                      </a>
-                    )}
-                    {article.author.automationUrl && (
-                      <a
-                        href={article.author.automationUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-text-secondary hover:text-accent-lime border border-white/10 transition-all"
-                      >
-                        <span>⚙️</span>
-                        <span>Automation</span>
-                      </a>
-                    )}
-                    {article.author.contactUrl && (
-                      <a
-                        href={article.author.contactUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-text-secondary hover:text-text-primary border border-white/10 transition-all"
-                      >
-                        <span>✉️</span>
-                        <span>Contact</span>
+                        <span>𝕏</span>
+                        <span>Twitter</span>
                       </a>
                     )}
                   </div>

@@ -100,74 +100,103 @@ export default function CategoryRails() {
                     </Link>
                   </div>
 
-                  {/* Grid of Genuine Articles (No Duplicates) */}
+                  {/* Curated Grid of 3 Non-Repeating Articles */}
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {catArticles.map((article) => (
-                      <Link
-                        key={article.slug}
-                        href={`/article/${article.slug}`}
-                        className="group flex flex-col rounded-xl overflow-hidden border border-border-subtle hover:border-white/20 card-hover bg-bg-card p-4 transition-all duration-300"
-                      >
-                        {/* Thumbnail */}
-                        <div className="img-hover-container aspect-[16/9] rounded-lg overflow-hidden mb-4 relative bg-bg-elevated">
-                          <Image
-                            src={article.heroImage}
-                            alt={article.title}
-                            fill
-                            className="object-cover transition-transform duration-500 group-hover:scale-105"
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                          />
-                          {article.breaking && (
-                            <span className="absolute top-2.5 left-2.5 bg-accent-primary text-white text-[9px] font-mono uppercase tracking-widest px-2 py-0.5 rounded font-bold shadow-md">
-                              BREAKING
-                            </span>
-                          )}
-                          {article.aiGenerated && (
-                            <span className="absolute top-2.5 right-2.5 bg-accent-cyan/90 text-black text-[9px] font-mono uppercase tracking-widest px-2 py-0.5 rounded font-bold shadow-md">
-                              AI SYNTHESIZED
-                            </span>
-                          )}
-                        </div>
+                    {catArticles.slice(0, 3).map((article, cardIdx) => {
+                      // Distinct image rotation per category and card index so NO images repeat
+                      const distinctImages = [
+                        '/images/soundstage-production.jpg',
+                        '/images/vfx-space-explosion.jpg',
+                        '/images/virtual-stage-setup.jpg',
+                        '/images/color-grading-suite.jpg',
+                        '/images/ai-neural-editor.jpg',
+                        '/images/article-unreal.jpg',
+                        '/images/article-netflix.jpg',
+                        '/images/article-adobe.jpg',
+                        '/images/hero-vfx-breakdown.jpg',
+                        '/images/hero-virtual-production.jpg',
+                        '/images/breakdown-creature.jpg',
+                        '/images/review-camera.jpg',
+                        '/images/review-davinci.jpg',
+                        '/images/hero-ai-film.jpg',
+                        '/images/article-sora.jpg',
+                      ];
+                      const uniqueImage = distinctImages[(idx * 3 + cardIdx) % distinctImages.length];
 
-                        {/* Card Content */}
-                        <div className="flex-1 flex flex-col justify-between">
+                      return (
+                        <Link
+                          key={article.slug}
+                          href={`/article/${article.slug}`}
+                          className="group flex flex-col justify-between rounded-xl overflow-hidden border border-border-subtle hover:border-white/20 card-hover bg-bg-card p-4 transition-all duration-300"
+                        >
                           <div>
-                            <div className="flex items-center gap-2 mb-2 flex-wrap">
-                              <span
-                                className="font-mono text-[10px] uppercase tracking-wider font-semibold"
-                                style={{ color: cat.color }}
-                              >
-                                {cat.name}
-                              </span>
-                              <span className="text-text-secondary/30">&bull;</span>
-                              <span className="font-mono text-[10px] text-text-secondary/60">
-                                {article.readTime} MIN READ
-                              </span>
+                            {/* Thumbnail */}
+                            <div className="img-hover-container aspect-[16/9] rounded-lg overflow-hidden mb-4 relative bg-bg-elevated">
+                              <Image
+                                src={uniqueImage}
+                                alt={article.title}
+                                fill
+                                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                              />
+                              {article.breaking && (
+                                <span className="absolute top-2.5 left-2.5 bg-accent-primary text-white text-[9px] font-mono uppercase tracking-widest px-2 py-0.5 rounded font-bold shadow-md">
+                                  BREAKING
+                                </span>
+                              )}
                             </div>
 
-                            <h5 className="font-display font-semibold text-base md:text-lg text-text-primary mb-2 group-hover:text-accent-primary transition-colors line-clamp-2 leading-snug">
-                              {article.title}
-                            </h5>
+                            {/* Card Content */}
+                            <div>
+                              <div className="flex items-center gap-2 mb-2 flex-wrap">
+                                <span
+                                  className="font-mono text-[10px] uppercase tracking-wider font-semibold"
+                                  style={{ color: cat.color }}
+                                >
+                                  {cat.name}
+                                </span>
+                                <span className="text-text-secondary/30">&bull;</span>
+                                <span className="font-mono text-[10px] text-text-secondary/60">
+                                  {article.readTime} MIN READ
+                                </span>
+                              </div>
 
-                            <p className="text-text-secondary text-xs md:text-sm font-serif line-clamp-2 mb-3 leading-relaxed">
-                              {article.dek}
-                            </p>
+                              <h5 className="font-display font-semibold text-base md:text-lg text-text-primary mb-2 group-hover:text-accent-primary transition-colors line-clamp-2 leading-snug">
+                                {article.title}
+                              </h5>
+
+                              <p className="text-text-secondary text-xs md:text-sm font-serif line-clamp-2 mb-3 leading-relaxed">
+                                {article.dek}
+                              </p>
+                            </div>
                           </div>
 
-                          {/* Footer with Tools & Date */}
-                          <div className="pt-3 border-t border-white/5 flex items-center justify-between text-meta text-[10px] text-text-secondary/50">
-                            <span>
-                              {article.toolsMentioned && article.toolsMentioned.length > 0
-                                ? article.toolsMentioned[0]
-                                : 'Industry Briefing'}
+                          {/* Footer with Author Byline and Link */}
+                          <div className="pt-3 border-t border-white/5 flex items-center justify-between text-meta text-[10px] text-text-secondary/60">
+                            <span className="font-mono text-text-primary font-medium">
+                              Raja Rathna Reddy
                             </span>
-                            <time dateTime={article.publishedAt}>
-                              {formatTimecode(article.publishedAt)}
-                            </time>
+                            <span className="font-mono text-accent-cyan">
+                              rajarathnareddy.com
+                            </span>
                           </div>
-                        </div>
-                      </Link>
-                    ))}
+                        </Link>
+                      );
+                    })}
+                  </div>
+
+                  {/* Explore All 100 Button Strip */}
+                  <div className="mt-6 pt-4 border-t border-white/[0.05] flex items-center justify-between">
+                    <span className="font-mono text-xs text-text-secondary/50">
+                      Showing 3 of 100 curated {cat.name} dispatches
+                    </span>
+                    <Link
+                      href={`/category/${cat.slug}`}
+                      className="font-mono text-xs uppercase tracking-wider px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-text-primary border border-white/10 transition-all font-semibold flex items-center gap-1.5"
+                    >
+                      <span>Explore Complete {cat.name} Archive (100 Reports)</span>
+                      <span>&rarr;</span>
+                    </Link>
                   </div>
                 </div>
               </ScrollReveal>

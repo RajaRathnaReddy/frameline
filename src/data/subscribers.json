@@ -1,0 +1,17 @@
+[
+  {
+    "id": "sub_init_1",
+    "email": "vfx@rajarathnareddy.com",
+    "name": "Test Colleague",
+    "subscribedAt": "2026-10-01T20:00:00.000Z",
+    "status": "active",
+    "source": "system_owner",
+    "topics": [
+      "VFX & OpenUSD Solaris Pipeline",
+      "Generative AI & Neural Cinema Models",
+      "Hollywood Studio Deals & Guild Agreements",
+      "LED Volume & In-Camera VFX (ICVFX)",
+      "Film Tools, GPU Compute & Cloud Infrastructure"
+    ]
+  }
+]

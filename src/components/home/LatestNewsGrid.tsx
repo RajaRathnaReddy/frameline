@@ -72,118 +72,132 @@ export default function LatestNewsGrid() {
         </div>
       </div>
 
-      {/* Bento Grid */}
-      <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-        {/* Large Card */}
-        <StaggerItem className="md:col-span-2 lg:row-span-2">
-          <Link
-            href={`/article/${large.slug}`}
-            className={`group block h-full rounded-lg overflow-hidden border border-border-subtle card-hover bg-bg-card cat-${large.category === 'virtual-production' ? 'virtual-production' : large.category}`}
-          >
-            <div className="img-hover-container aspect-[16/10]">
-              <Image
-                src={large.heroImage}
-                alt={large.title}
-                width={800}
-                height={500}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="p-5">
-              <div
-                className="h-0.5 w-10 mb-3 rounded"
-                style={{ backgroundColor: getCategoryColor(large.category) }}
-              />
-              <span
-                className="text-meta text-[10px] block mb-2"
-                style={{ color: getCategoryColor(large.category) }}
+      {/* Bento Grid with 100% Unique Images */}
+      {(() => {
+        const bentoImages = [
+          '/images/soundstage-production.jpg',
+          '/images/vfx-space-explosion.jpg',
+          '/images/virtual-stage-setup.jpg',
+          '/images/color-grading-suite.jpg',
+          '/images/ai-neural-editor.jpg',
+          '/images/article-unreal.jpg',
+          '/images/article-netflix.jpg',
+        ];
+
+        return (
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {/* Large Card */}
+            <StaggerItem className="md:col-span-2 lg:row-span-2">
+              <Link
+                href={`/article/${large.slug}`}
+                className={`group block h-full rounded-lg overflow-hidden border border-border-subtle card-hover bg-bg-card cat-${large.category === 'virtual-production' ? 'virtual-production' : large.category}`}
               >
-                {large.category.replace('-', ' ')}
-              </span>
-              <h3 className="text-fluid-h3 font-display text-text-primary mb-2 group-hover:text-accent-primary transition-colors">
-                {large.title}
-              </h3>
-              <p className="text-text-secondary text-sm leading-relaxed mb-3 line-clamp-2">
-                {large.dek}
-              </p>
-              <div className="flex items-center gap-3">
-                <span className="text-meta text-text-secondary/50">{large.readTime} MIN</span>
-                <span className="text-text-secondary/20">·</span>
-                <time className="text-meta text-text-secondary/50" dateTime={large.publishedAt}>
-                  {formatTimecode(large.publishedAt)}
-                </time>
-              </div>
-            </div>
-          </Link>
-        </StaggerItem>
+                <div className="img-hover-container aspect-[16/10]">
+                  <Image
+                    src={bentoImages[0]}
+                    alt={large.title}
+                    width={800}
+                    height={500}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-5">
+                  <div
+                    className="h-0.5 w-10 mb-3 rounded"
+                    style={{ backgroundColor: getCategoryColor(large.category) }}
+                  />
+                  <span
+                    className="text-meta text-[10px] block mb-2"
+                    style={{ color: getCategoryColor(large.category) }}
+                  >
+                    {large.category.replace('-', ' ')}
+                  </span>
+                  <h3 className="text-fluid-h3 font-display text-text-primary mb-2 group-hover:text-accent-primary transition-colors">
+                    {large.title}
+                  </h3>
+                  <p className="text-text-secondary text-sm leading-relaxed mb-3 line-clamp-2">
+                    {large.dek}
+                  </p>
+                  <div className="flex items-center gap-3">
+                    <span className="text-meta text-text-secondary/50">{large.readTime} MIN</span>
+                    <span className="text-text-secondary/20">·</span>
+                    <time className="text-meta text-text-secondary/50" dateTime={large.publishedAt}>
+                      {formatTimecode(large.publishedAt)}
+                    </time>
+                  </div>
+                </div>
+              </Link>
+            </StaggerItem>
 
-        {/* Medium Cards */}
-        {medium.map(article => (
-          <StaggerItem key={article.slug} className="lg:col-span-1">
-            <Link
-              href={`/article/${article.slug}`}
-              className={`group block h-full rounded-lg overflow-hidden border border-border-subtle card-hover bg-bg-card`}
-            >
-              <div className="img-hover-container aspect-video">
-                <Image
-                  src={article.heroImage}
-                  alt={article.title}
-                  width={400}
-                  height={225}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-4">
-                <div
-                  className="h-0.5 w-8 mb-2.5 rounded"
-                  style={{ backgroundColor: getCategoryColor(article.category) }}
-                />
-                <span
-                  className="text-meta text-[10px] block mb-1.5"
-                  style={{ color: getCategoryColor(article.category) }}
+            {/* Medium Cards */}
+            {medium.map((article, mIdx) => (
+              <StaggerItem key={article.slug} className="lg:col-span-1">
+                <Link
+                  href={`/article/${article.slug}`}
+                  className={`group block h-full rounded-lg overflow-hidden border border-border-subtle card-hover bg-bg-card`}
                 >
-                  {article.category.replace('-', ' ')}
-                </span>
-                <h3 className="font-display font-semibold text-sm text-text-primary mb-1.5 group-hover:text-accent-primary transition-colors line-clamp-2">
-                  {article.title}
-                </h3>
-                <span className="text-meta text-text-secondary/50 text-[10px]">{article.readTime} MIN</span>
-              </div>
-            </Link>
-          </StaggerItem>
-        ))}
+                  <div className="img-hover-container aspect-video">
+                    <Image
+                      src={bentoImages[mIdx + 1]}
+                      alt={article.title}
+                      width={400}
+                      height={225}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <div
+                      className="h-0.5 w-8 mb-2.5 rounded"
+                      style={{ backgroundColor: getCategoryColor(article.category) }}
+                    />
+                    <span
+                      className="text-meta text-[10px] block mb-1.5"
+                      style={{ color: getCategoryColor(article.category) }}
+                    >
+                      {article.category.replace('-', ' ')}
+                    </span>
+                    <h3 className="font-display font-semibold text-sm text-text-primary mb-1.5 group-hover:text-accent-primary transition-colors line-clamp-2">
+                      {article.title}
+                    </h3>
+                    <span className="text-meta text-text-secondary/50 text-[10px]">{article.readTime} MIN</span>
+                  </div>
+                </Link>
+              </StaggerItem>
+            ))}
 
-        {/* Small Cards */}
-        {small.map(article => (
-          <StaggerItem key={article.slug} className="lg:col-span-1">
-            <Link
-              href={`/article/${article.slug}`}
-              className="group flex gap-3 p-3 rounded-lg border border-border-subtle hover:bg-bg-card/50 transition-all card-hover"
-            >
-              <div className="w-20 h-14 rounded overflow-hidden shrink-0 img-hover-container">
-                <Image
-                  src={article.heroImage}
-                  alt={article.title}
-                  width={80}
-                  height={56}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="flex-1 min-w-0">
-                <span
-                  className="text-meta text-[9px] block mb-1"
-                  style={{ color: getCategoryColor(article.category) }}
+            {/* Small Cards */}
+            {small.map((article, sIdx) => (
+              <StaggerItem key={article.slug} className="lg:col-span-1">
+                <Link
+                  href={`/article/${article.slug}`}
+                  className="group flex gap-3 p-3 rounded-lg border border-border-subtle hover:bg-bg-card/50 transition-all card-hover"
                 >
-                  {article.category.replace('-', ' ')}
-                </span>
-                <h4 className="font-display font-semibold text-xs text-text-primary leading-snug group-hover:text-accent-primary transition-colors line-clamp-2">
-                  {article.title}
-                </h4>
-              </div>
-            </Link>
-          </StaggerItem>
-        ))}
-      </StaggerContainer>
+                  <div className="w-20 h-14 rounded overflow-hidden shrink-0 img-hover-container">
+                    <Image
+                      src={bentoImages[sIdx + 3]}
+                      alt={article.title}
+                      width={80}
+                      height={56}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <span
+                      className="text-meta text-[9px] block mb-1"
+                      style={{ color: getCategoryColor(article.category) }}
+                    >
+                      {article.category.replace('-', ' ')}
+                    </span>
+                    <h4 className="font-display font-semibold text-xs text-text-primary leading-snug group-hover:text-accent-primary transition-colors line-clamp-2">
+                      {article.title}
+                    </h4>
+                  </div>
+                </Link>
+              </StaggerItem>
+            ))}
+          </StaggerContainer>
+        );
+      })()}
     </section>
   );
 }
