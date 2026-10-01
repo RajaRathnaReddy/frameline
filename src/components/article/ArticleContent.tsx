@@ -1,0 +1,520 @@
+'use client';
+
+import Image from 'next/image';
+import Link from 'next/link';
+import { Article } from '@/lib/types';
+import { formatTimecode, getCategoryColor } from '@/lib/utils';
+import { articles } from '@/lib/data';
+import { generateArticleJsonLd } from '@/lib/seo';
+import ReadingProgress from './ReadingProgress';
+import TableOfContents from './TableOfContents';
+import { ScrollReveal } from '@/components/motion';
+import { useMemo } from 'react';
+
+function slugify(text: string): string {
+  return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+}
+
+function formatInlineMarkdown(text: string): string {
+  return text
+    .replace(/\*\*(.*?)\*\*/g, '<strong class="text-text-primary font-semibold">$1</strong>')
+    .replace(/\*(.*?)\*/g, '<em class="italic text-text-primary/90">$1</em>');
+}
+
+function parseBody(body: string): { html: string; headings: { id: string; text: string }[] } {
+  const headings: { id: string; text: string }[] = [];
+  const lines = body.split('\n');
+
+  let inList = false;
+  let listItems: string[] = [];
+  let isOrderedList = false;
+  const blocks: string[] = [];
+
+  const flushList = () => {
+    if (inList && listItems.length > 0) {
+      const tag = isOrderedList ? 'ol' : 'ul';
+      const listClass = isOrderedList
+        ? 'list-decimal list-inside space-y-2 mb-6 text-text-secondary pl-2 font-serif text-lg leading-relaxed'
+        : 'list-disc list-inside space-y-2 mb-6 text-text-secondary pl-2 font-serif text-lg leading-relaxed';
+      blocks.push(`<${tag} class="${listClass}">${listItems.join('')}</${tag}>`);
+      listItems = [];
+      inList = false;
+    }
+  };
+
+  for (let i = 0; i < lines.length; i++) {
+    const rawLine = lines[i];
+    const trimmed = rawLine.trim();
+
+    if (!trimmed) {
+      flushList();
+      continue;
+    }
+
+    // H2 Headings
+    if (trimmed.startsWith('## ')) {
+      flushList();
+      const text = trimmed.replace('## ', '').trim();
+      const id = slugify(text);
+      headings.push({ id, text });
+      blocks.push(`<h2 id="${id}" class="text-2xl md:text-3xl font-display font-bold text-text-primary mt-12 mb-4 scroll-mt-24 border-b border-border-subtle/50 pb-2">${text}</h2>`);
+      continue;
+    }
+
+    // Numbered lists: e.g. "1. " or "2. "
+    const orderedMatch = trimmed.match(/^\d+\.\s+(.+)$/);
+    if (orderedMatch) {
+      if (!inList || !isOrderedList) {
+        flushList();
+        inList = true;
+        isOrderedList = true;
+      }
+      listItems.push(`<li class="leading-relaxed"><span class="text-text-secondary">${formatInlineMarkdown(orderedMatch[1])}</span></li>`);
+      continue;
+    }
+
+    // Bullet lists: e.g. "- " or "* "
+    if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) {
+      if (!inList || isOrderedList) {
+        flushList();
+        inList = true;
+        isOrderedList = false;
+      }
+      const itemContent = trimmed.replace(/^[-*]\s+/, '');
+      listItems.push(`<li class="leading-relaxed"><span class="text-text-secondary">${formatInlineMarkdown(itemContent)}</span></li>`);
+      continue;
+    }
+
+    // Blockquote: e.g. "> "
+    if (trimmed.startsWith('> ')) {
+      flushList();
+      const quoteContent = trimmed.replace(/^>\s*/, '');
+      blocks.push(`<blockquote class="border-l-2 border-accent-primary bg-bg-card/40 rounded-r-md px-5 py-4 my-6 text-text-primary italic font-serif text-lg leading-relaxed">${formatInlineMarkdown(quoteContent)}</blockquote>`);
+      continue;
+    }
+
+    flushList();
+    blocks.push(`<p class="text-body text-text-secondary mb-6 leading-relaxed font-serif text-lg md:text-[19px]">${formatInlineMarkdown(trimmed)}</p>`);
+  }
+
+  flushList();
+
+  return { html: blocks.join('\n'), headings };
+}
+
+export default function ArticleContent({ article }: { article: Article }) {
+  const { html, headings } = useMemo(() => parseBody(article.body), [article.body]);
+
+  const relatedArticles = articles
+    .filter(a => a.slug !== article.slug)
+    .filter(a => a.category === article.category || a.tags.some(t => article.tags.includes(t)))
+    .slice(0, 3);
+
+  return (
+    <>
+      <ReadingProgress />
+
+      <article itemScope itemType="https://schema.org/NewsArticle">
+        {/* Google-compliant Structured Data (JSON-LD) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(generateArticleJsonLd(article)) }}
+        />
+
+        {/* Hero */}
+        <ScrollReveal>
+          <div className="max-w-[1440px] mx-auto px-4 md:px-8 pt-6 md:pt-10">
+            <div className="letterbox rounded-lg overflow-hidden relative">
+              <Image
+                src={article.heroImage}
+                alt={article.title}
+                fill
+                className="object-cover"
+                priority
+                sizes="100vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-bg-base via-bg-base/30 to-transparent" />
+
+              {/* Breaking badge */}
+              {article.breaking && (
+                <div className="absolute top-6 left-6 z-10">
+                  <span className="bg-accent-primary !text-white px-3 py-1 rounded-sm font-mono text-[11px] uppercase tracking-wider font-bold flex items-center gap-1.5 border border-white/20 shadow-md">
+                    <span className="relative flex h-2 w-2">
+                      <span className="animate-[pulse-dot_2s_ease-in-out_infinite] absolute inline-flex h-full w-full rounded-full bg-white opacity-75" />
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-white" />
+                    </span>
+                    BREAKING BRIEFING
+                  </span>
+                </div>
+              )}
+            </div>
+          </div>
+        </ScrollReveal>
+
+        {/* Header */}
+        <div className="max-w-[1440px] mx-auto px-4 md:px-8 -mt-20 md:-mt-32 relative z-10">
+          <ScrollReveal delay={0.2}>
+            <div className="max-w-3xl mx-auto">
+              <div className="flex items-center gap-3 flex-wrap mb-4">
+                <span
+                  className="category-tag inline-block"
+                  style={{
+                    color: getCategoryColor(article.category),
+                    borderColor: getCategoryColor(article.category),
+                  }}
+                >
+                  {article.category.replace('-', ' ')}
+                </span>
+
+                {article.aiGenerated && (
+                  <span className="font-mono text-[11px] text-accent-cyan bg-accent-cyan/10 border border-accent-cyan/30 px-3 py-1 rounded-full flex items-center gap-1.5 shadow-sm shadow-accent-cyan/10">
+                    <span className="w-2 h-2 rounded-full bg-accent-cyan animate-pulse" />
+                    AUTONOMOUS AI NEWSROOM DISPATCH
+                  </span>
+                )}
+              </div>
+
+              <h1
+                className="text-fluid-h1 font-display text-text-primary mb-4"
+                itemProp="headline"
+              >
+                {article.title}
+              </h1>
+
+              <p className="text-text-secondary text-lg md:text-xl font-serif leading-relaxed mb-6" itemProp="description">
+                {article.dek}
+              </p>
+
+              {/* Meta */}
+              <div className="flex items-center gap-4 flex-wrap pb-8 border-b border-border-subtle mb-8">
+                <div className="flex items-center gap-2" itemProp="author" itemScope itemType="https://schema.org/Person">
+                  <Image
+                    src={article.author.avatar}
+                    alt={article.author.name}
+                    width={36}
+                    height={36}
+                    className="rounded-full"
+                  />
+                  <div>
+                    <span className="text-text-primary text-sm font-display font-semibold block" itemProp="name">
+                      {article.author.name}
+                    </span>
+                    <span className="text-meta text-text-secondary/50 text-[10px]">
+                      {article.author.role}
+                    </span>
+                  </div>
+                </div>
+                <span className="text-text-secondary/20">|</span>
+                <span className="text-meta text-text-secondary">{article.readTime} MIN READ</span>
+                <span className="text-text-secondary/20">|</span>
+                <time
+                  className="text-meta text-text-secondary"
+                  dateTime={article.publishedAt}
+                  itemProp="datePublished"
+                >
+                  {formatTimecode(article.publishedAt)}
+                </time>
+
+                {/* Share buttons */}
+                <div className="flex items-center gap-2 ml-auto">
+                  <button
+                    className="w-8 h-8 rounded-full border border-border-subtle flex items-center justify-center text-text-secondary hover:text-text-primary hover:border-text-secondary/30 transition-colors"
+                    aria-label="Share on Twitter"
+                  >
+                    <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                  </button>
+                  <button
+                    className="w-8 h-8 rounded-full border border-border-subtle flex items-center justify-center text-text-secondary hover:text-text-primary hover:border-text-secondary/30 transition-colors"
+                    aria-label="Copy link"
+                  >
+                    <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m9.86-5.54a4.5 4.5 0 0 0-1.242-7.244l-4.5-4.5a4.5 4.5 0 0 0-6.364 6.364L4.343 8.81" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </ScrollReveal>
+        </div>
+
+        {/* Body + TOC */}
+        <div className="max-w-[1440px] mx-auto px-4 md:px-8 pb-16">
+          <div className="flex gap-12 max-w-5xl mx-auto">
+            {/* TOC (desktop only) */}
+            <aside className="hidden lg:block w-64 shrink-0">
+              <TableOfContents headings={headings} />
+            </aside>
+
+            {/* Article body */}
+            <div className="flex-1 max-w-[680px]" itemProp="articleBody">
+              <ScrollReveal>
+                <div
+                  className="drop-cap"
+                  dangerouslySetInnerHTML={{ __html: html }}
+                />
+
+                {/* Tools Mentioned Chips */}
+                {article.toolsMentioned && article.toolsMentioned.length > 0 && (
+                  <div className="mt-12 pt-8 border-t border-border-subtle">
+                    <div className="text-meta text-accent-cyan text-[11px] mb-3 flex items-center gap-2 font-mono">
+                      <svg className="w-3.5 h-3.5 text-accent-cyan" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                      TOOLS & PIPELINES REFERENCED
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {article.toolsMentioned.map((tool) => (
+                        <Link
+                          key={tool}
+                          href="/tools"
+                          className="text-xs px-3 py-1.5 rounded bg-bg-card border border-border-subtle hover:border-accent-cyan/60 hover:text-accent-cyan text-text-secondary transition-all flex items-center gap-2 font-mono group"
+                        >
+                          <span className="w-1.5 h-1.5 rounded-full bg-accent-cyan/60 group-hover:bg-accent-cyan transition-colors" />
+                          {tool}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Keyword Telemetry & Tags */}
+                {article.seoKeywords && article.seoKeywords.length > 0 && (
+                  <div className="mt-8 pt-6 border-t border-border-subtle">
+                    <div className="text-meta text-accent-gold text-[11px] mb-3 flex items-center gap-2 font-mono">
+                      <span>KEYWORD TELEMETRY & INDEXING</span>
+                    </div>
+                    <div className="flex flex-wrap gap-1.5">
+                      {article.seoKeywords.map((kw) => (
+                        <span
+                          key={kw}
+                          className="text-[11px] px-2.5 py-1 rounded bg-bg-card border border-border-subtle text-text-secondary font-mono"
+                        >
+                          #{kw}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* AI Dispatch Origin Card */}
+                {article.aiGenerated && article.promptSource && (
+                  <div className="mt-8 p-4 rounded-xl border border-accent-cyan/20 bg-accent-cyan/5 font-mono text-xs">
+                    <div className="text-accent-cyan font-semibold mb-1 flex items-center gap-2">
+                      <span className="w-2 h-2 rounded-full bg-accent-cyan" />
+                      AI NEWSROOM INGEST TELEMETRY
+                    </div>
+                    <p className="text-text-secondary">
+                      Synthesized from query prompt: <span className="text-text-primary italic font-serif">"{article.promptSource}"</span>
+                    </p>
+                  </div>
+                )}
+              </ScrollReveal>
+            </div>
+          </div>
+        </div>
+
+        {/* Author Bio */}
+        {/* Author Bio & Executive Profile */}
+        <div className="max-w-[760px] mx-auto px-4 md:px-8 mb-16">
+          <ScrollReveal>
+            <div className="glass-card rounded-2xl p-6 md:p-8 border border-white/10 bg-bg-card/70 shadow-2xl relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-accent-gold/5 rounded-full blur-3xl pointer-events-none" />
+
+              <div className="flex flex-col sm:flex-row items-start gap-6 relative z-10">
+                <div className="relative shrink-0">
+                  <div className="w-20 h-20 rounded-2xl overflow-hidden border-2 border-accent-gold/40 shadow-lg shadow-black/60 relative">
+                    <Image
+                      src={article.author.avatar}
+                      alt={article.author.name}
+                      width={80}
+                      height={80}
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+                  <div className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-bg-base flex items-center justify-center border border-white/20">
+                    <div className="w-2.5 h-2.5 rounded-full bg-accent-gold animate-pulse" />
+                  </div>
+                </div>
+
+                <div className="flex-1">
+                  <div className="flex flex-wrap items-center gap-2 mb-1.5">
+                    <h4 className="font-display text-lg font-bold text-text-primary tracking-tight">
+                      {article.author.name}
+                    </h4>
+                    <span className="font-mono text-[9px] uppercase tracking-wider px-2 py-0.5 rounded bg-accent-gold/15 text-accent-gold border border-accent-gold/30 font-bold">
+                      VERIFIED TRADE BYLINE
+                    </span>
+                  </div>
+
+                  <p className="font-mono text-xs text-accent-cyan font-medium mb-3">
+                    {article.author.role}
+                  </p>
+
+                  <p className="text-text-secondary text-sm leading-relaxed mb-5">
+                    {article.author.bio}
+                  </p>
+
+                  {/* Portfolio & Verified Credential Links */}
+                  <div className="flex flex-wrap gap-2 pt-4 border-t border-white/[0.08]">
+                    {article.author.website && (
+                      <a
+                        href={article.author.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 rounded-lg bg-white/5 hover:bg-accent-primary/20 text-text-primary hover:text-accent-primary border border-white/10 hover:border-accent-primary/40 transition-all font-semibold"
+                      >
+                        <span>🌐</span>
+                        <span>rajarathnareddy.com</span>
+                      </a>
+                    )}
+                    {article.author.imdb && (
+                      <a
+                        href={article.author.imdb}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 rounded-lg bg-accent-gold/10 hover:bg-accent-gold/20 text-accent-gold border border-accent-gold/30 transition-all font-bold"
+                      >
+                        <span>🎬</span>
+                        <span>IMDb Profile</span>
+                      </a>
+                    )}
+                    {article.author.filmographyUrl && (
+                      <a
+                        href={article.author.filmographyUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-text-secondary hover:text-text-primary border border-white/10 transition-all"
+                      >
+                        <span>🎥</span>
+                        <span>Filmography</span>
+                      </a>
+                    )}
+                    {article.author.codingUrl && (
+                      <a
+                        href={article.author.codingUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-text-secondary hover:text-accent-cyan border border-white/10 transition-all"
+                      >
+                        <span>💻</span>
+                        <span>USD & Code</span>
+                      </a>
+                    )}
+                    {article.author.automationUrl && (
+                      <a
+                        href={article.author.automationUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-text-secondary hover:text-accent-lime border border-white/10 transition-all"
+                      >
+                        <span>⚙️</span>
+                        <span>Automation</span>
+                      </a>
+                    )}
+                    {article.author.contactUrl && (
+                      <a
+                        href={article.author.contactUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-text-secondary hover:text-text-primary border border-white/10 transition-all"
+                      >
+                        <span>✉️</span>
+                        <span>Contact</span>
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ScrollReveal>
+        </div>
+
+        {/* Related Stories */}
+        {relatedArticles.length > 0 && (
+          <div className="bg-bg-elevated border-t border-border-subtle py-16">
+            <div className="max-w-[1440px] mx-auto px-4 md:px-8">
+              <ScrollReveal>
+                <h3 className="text-meta text-text-secondary mb-8">
+                  MORE IN {article.category.replace('-', ' ').toUpperCase()}
+                </h3>
+              </ScrollReveal>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {relatedArticles.map((related, i) => (
+                  <ScrollReveal key={related.slug} delay={i * 0.1}>
+                    <Link
+                      href={`/article/${related.slug}`}
+                      className="group block rounded-lg overflow-hidden border border-border-subtle hover:border-border-subtle card-hover bg-bg-card"
+                    >
+                      <div className="img-hover-container aspect-video">
+                        <Image
+                          src={related.heroImage}
+                          alt={related.title}
+                          width={400}
+                          height={225}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div className="p-4">
+                        <div
+                          className="h-0.5 w-8 mb-2.5 rounded"
+                          style={{ backgroundColor: getCategoryColor(related.category) }}
+                        />
+                        <h4 className="font-display font-semibold text-sm text-text-primary mb-1.5 group-hover:text-accent-primary transition-colors line-clamp-2">
+                          {related.title}
+                        </h4>
+                        <span className="text-meta text-text-secondary/50 text-[10px]">
+                          {related.readTime} MIN READ
+                        </span>
+                      </div>
+                    </Link>
+                  </ScrollReveal>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+      </article>
+
+      {/* JSON-LD with verified Person Schema and SameAs Knowledge Graph */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'NewsArticle',
+            headline: article.title,
+            description: article.dek,
+            image: article.heroImage,
+            datePublished: article.publishedAt,
+            author: {
+              '@type': 'Person',
+              name: article.author.name,
+              jobTitle: article.author.role,
+              url: article.author.website || 'https://rajarathnareddy.com',
+              sameAs: [
+                'https://rajarathnareddy.com',
+                'https://www.imdb.com/name/nm12830221/',
+                'https://rajarathnareddy.com/about/',
+                'https://rajarathnareddy.com/filmography/',
+                'https://rajarathnareddy.com/coding/',
+                'https://rajarathnareddy.com/automation/',
+                'https://rajarathnareddy.com/contact/',
+                'https://www.linkedin.com/in/rajarathnareddy/',
+                'https://x.com/RAJARATHNAREDDY',
+                'https://www.instagram.com/raja_rathna_reddy/',
+              ],
+            },
+            publisher: {
+              '@type': 'Organization',
+              name: 'FRAMELINE',
+              url: 'https://frameline.film',
+            },
+          }),
+        }}
+      />
+    </>
+  );
+}
