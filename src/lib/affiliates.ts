@@ -180,7 +180,7 @@ export const AFFILIATE_OFFERS: AffiliateOffer[] = [
   // ─── 8. PLUGIN BOUTIQUE (Film Scoring, VST/AU & DAWs) ───
   {
     id: 'plugin-boutique-audio',
-    network: 'Plugin Boutique',
+    network: 'Plugin Boutique / Loopmasters',
     name: 'Plugin Boutique Film Audio Suite',
     company: 'Plugin Boutique',
     logo: '🎹',
@@ -189,9 +189,9 @@ export const AFFILIATE_OFFERS: AffiliateOffer[] = [
     description: 'The definitive catalog for film composers, game sound designers, and re-recording mixers featuring Kontakt libraries, dialogue de-noising tools, and spatial reverb suites.',
     perk: 'Free monthly premium plugin gift with every checkout + virtual cash loyalty rewards.',
     ctaText: 'Browse Studio Audio Deals →',
-    url: 'https://www.pluginboutique.com?ref=frameline',
+    url: 'https://www.pluginboutique.com/?a_aid=rajarathnareddy',
     categories: ['music'],
-    keywords: ['plugin boutique', 'kontakt', 'fabfilter', 'izotope', 'audio', 'music', 'sound', 'daw', 'synth', 'scoring', 'orchestral', 'vst'],
+    keywords: ['plugin boutique', 'loopmasters', 'kontakt', 'fabfilter', 'izotope', 'audio', 'music', 'sound', 'daw', 'synth', 'scoring', 'orchestral', 'vst'],
     pricing: 'Deals from $19 / Free Monthly Gifts',
     rating: 4.9,
   },
@@ -215,26 +215,46 @@ export const AFFILIATE_OFFERS: AffiliateOffer[] = [
     rating: 4.9,
   },
 
-  // ─── 10. B&H PHOTO & AMAZON PRO GEAR (Cinema Cameras, Monitors & Workstation GPUs) ───
+  // ─── 10. AMAZON PRO ASSOCIATES (Cinema Cameras, Monitors & Workstation GPUs) ───
   {
     id: 'bh-amazon-cinema-gear',
-    network: 'B&H / Amazon Pro Associates',
-    name: 'B&H & Amazon Pro Cinema Gear',
-    company: 'B&H Photo Video / Amazon',
+    network: 'Amazon Associates',
+    name: 'Amazon Pro Cinema & Studio Gear',
+    company: 'Amazon Associates',
     logo: '🎥',
     badge: 'VERIFIED CINEMA HARDWARE',
-    headline: 'Sony Venice, RED, ARRI Accessories, ASUS ProArt & RTX 6000 Ada GPUs',
-    description: 'Equip your crew and pipeline infrastructure with calibrated HDR OLED reference monitors, dual-GPU compute workstations, anamorphic lenses, and cinema wireless rigs.',
-    perk: 'Fast tax-advantaged shipping, verified corporate financing, and pro cinema warranty.',
-    ctaText: 'Shop Pro Cinema Gear →',
-    url: 'https://www.bhphotovideo.com?ref=frameline',
+    headline: 'HDR Reference Monitors, RTX 6000 Ada GPUs, Mac Studio & Camera Rigs',
+    description: 'Equip your pipeline infrastructure with calibrated HDR OLED reference monitors, dual-GPU compute workstations, anamorphic lenses, cinema wireless rigs, and high-speed NVMe arrays.',
+    perk: 'Direct Prime delivery, verified studio seller warranties, and corporate financing.',
+    ctaText: 'Shop Amazon Pro Hardware →',
+    url: 'https://www.amazon.in/?tag=frameline-21',
     categories: ['technology', 'virtual-production', 'hollywood', 'tools'],
-    keywords: ['camera', 'lens', 'arri', 'red', 'sony', 'gpu', 'nvidia', 'rtx', 'workstation', 'monitor', 'asus proart', 'flanders', 'hardware'],
+    keywords: ['camera', 'lens', 'arri', 'red', 'sony', 'gpu', 'nvidia', 'rtx', 'workstation', 'monitor', 'asus proart', 'flanders', 'hardware', 'amazon'],
     pricing: 'Pro Studio Hardware Pricing',
     rating: 4.9,
   },
 
-  // ─── 11. RUNWAY GEN-4 (Multimodal AI Directing) ───
+  // ─── 11. HIGGSFIELD AI (Controllable Camera Motion & Video Dynamics) ───
+  {
+    id: 'higgsfield-ai',
+    toolSlug: 'higgsfield',
+    network: 'Higgsfield Partner',
+    name: 'Higgsfield AI Video',
+    company: 'Higgsfield AI',
+    logo: '⚡',
+    badge: 'CINEMA CAMERA AI',
+    headline: 'Control Cinematic Camera Motion, Dynamics & Character Realism',
+    description: 'Advanced generative video platform engineered for directors, previs artists, and cinematographers with granular 3D camera controls and realistic human motion.',
+    perk: 'Free creative tokens to direct camera motion paths and character action.',
+    ctaText: 'Launch Higgsfield AI →',
+    url: 'https://higgsfield.ai?fpr=raja-rathna-reddy-5b73d0',
+    categories: ['ai', 'hollywood', 'virtual-production', 'tools'],
+    keywords: ['higgsfield', 'higgs field', 'camera movement', 'camera control', 'ai video', 'generative video', 'motion', 'previs'],
+    pricing: 'Free Credits / Creator Pro',
+    rating: 4.8,
+  },
+
+  // ─── 12. RUNWAY GEN-4 (Multimodal AI Directing) ───
   {
     id: 'runway-gen4',
     toolSlug: 'runway',
@@ -254,7 +274,7 @@ export const AFFILIATE_OFFERS: AffiliateOffer[] = [
     rating: 4.5,
   },
 
-  // ─── 12. ELEVENLABS (Voice Acting, Dubbing & ADR) ───
+  // ─── 13. ELEVENLABS (Voice Acting, Dubbing & ADR) ───
   {
     id: 'elevenlabs-voice',
     network: 'ElevenLabs',
@@ -266,7 +286,7 @@ export const AFFILIATE_OFFERS: AffiliateOffer[] = [
     description: 'Generate studio-grade voice performances, automated dialogue replacement (ADR), and sound effects with nuanced emotional inflection for cinema & games.',
     perk: 'Direct voice cloning & low-latency streaming API for pipeline integrations.',
     ctaText: 'Try Free Voice Studio →',
-    url: 'https://elevenlabs.io?ref=frameline',
+    url: 'https://try.elevenlabs.io/7dnbvl7c40ip',
     categories: ['ai', 'music'],
     keywords: ['elevenlabs', 'voice ai', 'adr', 'dubbing', 'voice acting', 'audio ai', 'speech', 'voice cloning'],
     pricing: 'Free Tier / $5 Starter',
@@ -338,6 +358,10 @@ export function getAffiliateOfferForArticle(article: Article): AffiliateOffer {
 
   if (allText.includes('voice') || allText.includes('adr') || allText.includes('elevenlabs') || allText.includes('dubbing') || allText.includes('speech')) {
     return AFFILIATE_OFFERS.find(o => o.id === 'elevenlabs-voice')!;
+  }
+
+  if (allText.includes('higgsfield') || allText.includes('higgs field') || allText.includes('camera movement') || allText.includes('camera control')) {
+    return AFFILIATE_OFFERS.find(o => o.id === 'higgsfield-ai')!;
   }
 
   if (allText.includes('runway') || allText.includes('gen-3') || allText.includes('gen-4') || allText.includes('generative video') || allText.includes('text-to-video')) {
