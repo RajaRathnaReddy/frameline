@@ -86,12 +86,14 @@ export default function Navbar() {
         }`}
         onMouseLeave={handleMouseLeaveCategory}
       >
-        <div className="w-full max-w-[1600px] mx-auto px-3 sm:px-4 lg:px-6 h-16 flex items-center justify-between gap-2 lg:gap-3 relative">
-          {/* Logo - completely protected from shrinkage and wrapping */}
-          <FramelineLogo size="md" />
+        <div className="w-full max-w-[1600px] mx-auto px-3 sm:px-4 lg:px-6 h-16 flex items-center justify-between relative">
+          {/* Logo / Brand Identity - completely protected from shrinkage and wrapping */}
+          <div className="flex items-center shrink-0 pr-3 sm:pr-4 xl:pr-6 z-10">
+            <FramelineLogo size="md" />
+          </div>
 
           {/* Center Nav (Desktop) - Adaptive 2-Tier Hierarchy */}
-          <div className="hidden lg:flex items-center justify-center gap-1 xl:gap-1.5 shrink min-w-0">
+          <div className="hidden min-[1180px]:flex items-center justify-center gap-1 xl:gap-1.5 flex-1 min-w-0 px-1 xl:px-3">
             {/* Primary Categories (Visible on all Desktop viewports) */}
             {primaryCategories.map((cat) => (
               <div
@@ -106,17 +108,17 @@ export default function Navbar() {
                   }`}
                 >
                   <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: cat.color }} />
-                  {cat.slug === 'vfx-pipeline' ? (
+                  {cat.slug === 'vfx' ? (
                     <>
                       <span className="min-[1680px]:inline hidden">VFX & Pipeline</span>
                       <span className="min-[1680px]:hidden inline">VFX</span>
                     </>
-                  ) : cat.slug === 'film-tools' ? (
+                  ) : cat.slug === 'tools' ? (
                     <>
                       <span className="min-[1680px]:inline hidden">Film Tools</span>
                       <span className="min-[1680px]:hidden inline">Tools</span>
                     </>
-                  ) : cat.slug === 'ai-in-film' ? (
+                  ) : cat.slug === 'ai' ? (
                     <>
                       <span className="min-[1680px]:inline hidden">AI in Film</span>
                       <span className="min-[1680px]:hidden inline">AI</span>
@@ -128,11 +130,11 @@ export default function Navbar() {
               </div>
             ))}
 
-            {/* Secondary Categories (Visible on 2xl+ screens, cleanly folded into "More" on laptops/desktops < 1536px) */}
+            {/* Secondary Categories (Visible on 1600px+ screens, cleanly folded into "More" on viewports < 1600px) */}
             {secondaryCategories.map((cat) => (
               <div
                 key={cat.slug}
-                className="relative py-2 shrink-0 hidden 2xl:block"
+                className="relative py-2 shrink-0 hidden min-[1600px]:block"
                 onMouseEnter={() => handleMouseEnterCategory(cat.slug)}
               >
                 <Link
@@ -159,11 +161,11 @@ export default function Navbar() {
               </div>
             ))}
 
-            {/* On viewports < 1536px: Sleek "More" Dropdown combining Secondary Categories + Features */}
-            <div className="relative py-2 shrink-0 group 2xl:hidden">
+            {/* On viewports < 1600px: Sleek "More" Dropdown combining Secondary Categories + Features */}
+            <div className="relative py-2 shrink-0 group min-[1600px]:hidden">
               <button
                 type="button"
-                className="flex items-center gap-1 font-mono text-[10px] xl:text-[11px] uppercase tracking-wider px-2.5 py-1.5 rounded-lg transition-all duration-200 text-text-secondary hover:text-text-primary hover:bg-white/5 border border-transparent hover:border-white/10 whitespace-nowrap"
+                className="flex items-center gap-1 font-mono text-[10px] xl:text-[11px] uppercase tracking-wider px-2.5 py-1.5 rounded-lg transition-all duration-200 text-text-secondary hover:text-text-primary hover:bg-white/5 border border-transparent hover:border-white/10 whitespace-nowrap cursor-pointer"
               >
                 <span>More</span>
                 <svg className="w-3 h-3 text-text-secondary/60 group-hover:text-text-primary transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -217,11 +219,11 @@ export default function Navbar() {
               </div>
             </div>
 
-            {/* On 2xl+ viewports (1536px+): Dedicated Features Dropdown */}
-            <div className="relative py-2 shrink-0 group hidden 2xl:block">
+            {/* On wide viewports (1600px+): Dedicated Features Dropdown */}
+            <div className="relative py-2 shrink-0 group hidden min-[1600px]:block">
               <button
                 type="button"
-                className="flex items-center gap-1 font-mono text-[10px] 2xl:text-[11px] uppercase tracking-wider px-2 2xl:px-2.5 py-1.5 rounded-lg transition-all duration-200 text-text-secondary hover:text-text-primary hover:bg-white/5 border border-transparent hover:border-white/10 whitespace-nowrap"
+                className="flex items-center gap-1 font-mono text-[10px] 2xl:text-[11px] uppercase tracking-wider px-2 2xl:px-2.5 py-1.5 rounded-lg transition-all duration-200 text-text-secondary hover:text-text-primary hover:bg-white/5 border border-transparent hover:border-white/10 whitespace-nowrap cursor-pointer"
               >
                 <span>Features</span>
                 <svg className="w-3 h-3 text-text-secondary/60 group-hover:text-text-primary transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -258,7 +260,7 @@ export default function Navbar() {
           </div>
 
           {/* Right Actions */}
-          <div className="flex items-center gap-1.5 sm:gap-2 xl:gap-2.5 shrink-0 z-10">
+          <div className="flex items-center gap-1.5 sm:gap-2 xl:gap-2.5 shrink-0 pl-3 sm:pl-4 xl:pr-0 z-10">
             {/* Search Trigger */}
             <button
               onClick={() => {
@@ -298,7 +300,7 @@ export default function Navbar() {
             {/* Mobile Menu Toggle */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden flex flex-col justify-center items-center gap-1.5 p-2 rounded-lg bg-bg-card/40 border border-border-subtle shrink-0"
+              className="min-[1180px]:hidden flex flex-col justify-center items-center gap-1.5 p-2 rounded-lg bg-bg-card/40 border border-border-subtle shrink-0 cursor-pointer"
               aria-label="Toggle Navigation Menu"
             >
               <motion.span
@@ -328,7 +330,7 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -6 }}
               transition={{ duration: 0.18, ease: [0.22, 1, 0.36, 1] }}
-              className="hidden lg:block absolute left-0 right-0 top-16 bg-[#0B0D13] border-b border-border-subtle shadow-2xl shadow-black/95 z-50"
+              className="hidden min-[1180px]:block absolute left-0 right-0 top-16 bg-[#0B0D13] border-b border-border-subtle shadow-2xl shadow-black/95 z-50"
               onMouseEnter={() => {
                 if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
                 if (enterTimeoutRef.current) clearTimeout(enterTimeoutRef.current);
@@ -398,7 +400,7 @@ export default function Navbar() {
               animate={{ height: 'auto', opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              className="lg:hidden overflow-hidden border-t border-border-subtle bg-bg-elevated/98 backdrop-blur-2xl"
+              className="min-[1180px]:hidden overflow-hidden border-t border-border-subtle bg-bg-elevated/98 backdrop-blur-2xl"
             >
               <div className="p-5 flex flex-col gap-2">
                 <span className="font-mono text-[10px] text-text-secondary tracking-widest uppercase px-3 pt-2">
