@@ -22,9 +22,10 @@ export interface AffiliateOffer {
 export const PARTNER_CONTACT = {
   name: 'Raja Rathna Reddy',
   email: 'vfx@rajarathnareddy.com',
-  phone: '+919704506779',
-  phoneDisplay: '+91 97045 06779',
-  whatsappUrl: 'https://wa.me/919704506779?text=Hello%20Raja,%20we%20want%20to%20partner%20with%20FRAMELINE',
+  instagram: 'https://www.instagram.com/raja_rathna_reddy',
+  facebook: 'https://www.facebook.com/RAJARATNAREDDY',
+  instagramHandle: '@raja_rathna_reddy',
+  facebookHandle: '@RAJARATNAREDDY',
 };
 
 /**

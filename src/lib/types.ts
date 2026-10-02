@@ -16,6 +16,7 @@ export interface Author {
     twitter?: string;
     linkedin?: string;
     instagram?: string;
+    facebook?: string;
     imdb?: string;
   };
 }

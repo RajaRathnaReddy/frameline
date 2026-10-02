@@ -8,11 +8,11 @@ export const rajaRathnaReddy: Author = {
   website: 'https://rajarathnareddy.com',
   imdb: 'https://www.imdb.com/name/nm12830221/',
   email: 'vfx@rajarathnareddy.com',
-  phone: '+919704506779',
   socials: {
-    twitter: 'https://x.com/RAJARATHNAREDDY',
+    instagram: 'https://www.instagram.com/raja_rathna_reddy',
+    facebook: 'https://www.facebook.com/RAJARATNAREDDY',
     linkedin: 'https://www.linkedin.com/in/rajarathnareddy/',
-    instagram: 'https://www.instagram.com/raja_rathna_reddy/',
+    twitter: 'https://x.com/RAJARATHNAREDDY',
     imdb: 'https://www.imdb.com/name/nm12830221/',
   },
 };

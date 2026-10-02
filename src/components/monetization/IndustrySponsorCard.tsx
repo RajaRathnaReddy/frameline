@@ -124,13 +124,13 @@ export default function IndustrySponsorCard({
           </a>
           <span>&bull;</span>
           <a
-            href={PARTNER_CONTACT.whatsappUrl}
+            href={PARTNER_CONTACT.instagram}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-accent-lime transition-colors text-text-secondary/70 flex items-center gap-1"
+            className="hover:text-pink-400 transition-colors text-text-secondary/70 flex items-center gap-1"
           >
-            <span>📱</span>
-            <span>{PARTNER_CONTACT.phoneDisplay}</span>
+            <span>Instagram:</span>
+            <span>{PARTNER_CONTACT.instagramHandle}</span>
           </a>
         </div>
       </div>
