@@ -6,11 +6,19 @@ import Footer from "@/components/layout/Footer";
 import CustomCursor from "@/components/layout/CustomCursor";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://frameline.film'),
+  metadataBase: new URL('https://vfx.rajarathnareddy.com'),
   title: "FRAMELINE — AI · VFX · Hollywood · Film Technology",
   description:
     "The premium news platform for film technology, visual effects, AI in cinema, virtual production, and Hollywood industry coverage.",
   keywords: ["VFX", "AI", "Hollywood", "film technology", "virtual production", "visual effects"],
+  icons: {
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/frameline-logo.png', type: 'image/png' },
+    ],
+    shortcut: '/icon.svg',
+    apple: '/apple-icon.png',
+  },
   openGraph: {
     title: "FRAMELINE — AI · VFX · Hollywood · Film Technology",
     description:
@@ -33,6 +41,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+        <link rel="icon" type="image/png" href="/frameline-logo.png" />
+        <link rel="apple-touch-icon" href="/apple-icon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

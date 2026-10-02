@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { categories, articles, searchAll, getArticlesByCategory } from '@/lib/data';
 import { motion, AnimatePresence } from 'framer-motion';
+import FramelineLogo from '@/components/common/FramelineLogo';
 
 export default function Navbar() {
   const router = useRouter();
@@ -72,19 +73,7 @@ export default function Navbar() {
       >
         <div className="max-w-[1440px] mx-auto px-4 md:px-8 h-16 flex items-center justify-between gap-4 relative">
           {/* Logo - completely protected from shrinkage and wrapping */}
-          <Link href="/" className="flex items-center gap-3 group shrink-0 select-none">
-            <div className="w-8 h-8 rounded-full border-2 border-accent-primary flex items-center justify-center group-hover:bg-accent-primary/20 transition-all duration-300 group-hover:scale-105 shadow-sm shadow-accent-primary/20 shrink-0">
-              <div className="w-3 h-3 rounded-full bg-accent-primary animate-pulse" />
-            </div>
-            <div className="flex flex-col shrink-0 min-w-max">
-              <span className="font-display text-xl font-black tracking-tight text-text-primary leading-none whitespace-nowrap">
-                FRAMELINE
-              </span>
-              <span className="text-[9px] font-mono tracking-widest text-text-secondary/70 uppercase whitespace-nowrap mt-1">
-                FILM &middot; AI &middot; VFX
-              </span>
-            </div>
-          </Link>
+          <FramelineLogo size="md" />
 
           {/* Center Nav (Desktop) - 6 Production Pillars + Features Dropdown */}
           <div className="hidden lg:flex items-center gap-1 xl:gap-1.5 shrink-0">

@@ -1,10 +1,19 @@
 import Link from 'next/link';
 import { categories } from '@/lib/data';
+import FramelineLogo from '@/components/common/FramelineLogo';
 
 export default function Footer() {
   return (
     <footer className="bg-bg-base border-t border-border-subtle">
       <div className="max-w-[1440px] mx-auto px-4 md:px-8 py-16">
+        {/* Brand identity header */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-10 mb-12 border-b border-border-subtle gap-6">
+          <FramelineLogo size="lg" />
+          <p className="text-text-secondary text-sm max-w-md font-serif leading-relaxed">
+            The specialized trade journal covering generative cinema, VFX pipelines, real-time engines, and Hollywood technology infrastructure.
+          </p>
+        </div>
+
         {/* Columns */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-16">
           {/* Sections */}

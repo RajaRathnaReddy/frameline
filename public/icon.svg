@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <!-- Background Chassis Gradient -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#14161D"/>
+      <stop offset="100%" stop-color="#08090C"/>
+    </linearGradient>
+
+    <!-- Outer Border Glow Gradient -->
+    <linearGradient id="borderGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF4D2E" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#3EE6FF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#E8B44A" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <!-- Core Brand Cinema Flame Gradient -->
+    <linearGradient id="cinemaFlame" x1="16" y1="14" x2="48" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF5B37"/>
+      <stop offset="45%" stop-color="#FF3314"/>
+      <stop offset="100%" stop-color="#E02600"/>
+    </linearGradient>
+
+    <!-- Anamorphic Lens Flare Streak Gradient -->
+    <linearGradient id="anamorphicStreak" x1="4" y1="32" x2="60" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3EE6FF" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#3EE6FF" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="70%" stop-color="#3EE6FF" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3EE6FF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Amber Glow -->
+    <radialGradient id="centerGlow" cx="32" cy="32" r="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF4D2E" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#3EE6FF" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="bloom" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Base Rounded Chassis -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#bgGrad)"/>
+  <rect x="2" y="2" width="60" height="60" rx="14" stroke="url(#borderGrad)" stroke-width="1.5" stroke-opacity="0.7"/>
+
+  <!-- Ambient Glow -->
+  <circle cx="32" cy="32" r="22" fill="url(#centerGlow)"/>
+
+  <!-- Viewfinder Aspect Frame Brackets (2.39:1 Cinema Crop Marks) -->
+  <!-- Top Left -->
+  <path d="M8 18 V10 C8 8.9 8.9 8 10 8 H18" stroke="#3EE6FF" stroke-width="1.75" stroke-linecap="round"/>
+  <!-- Top Right -->
+  <path d="M46 8 H54 C55.1 8 56 8.9 56 10 V18" stroke="#FF4D2E" stroke-width="1.75" stroke-linecap="round"/>
+  <!-- Bottom Left -->
+  <path d="M8 46 V54 C8 55.1 8.9 56 10 56 H18" stroke="#FF4D2E" stroke-width="1.75" stroke-linecap="round"/>
+  <!-- Bottom Right -->
+  <path d="M46 56 H54 C55.1 56 56 55.1 56 54 V46" stroke="#3EE6FF" stroke-width="1.75" stroke-linecap="round"/>
+
+  <!-- Center Framing Crosshairs -->
+  <line x1="32" y1="6" x2="32" y2="10" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="32" y1="54" x2="32" y2="58" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="6" y1="32" x2="10" y2="32" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="54" y1="32" x2="58" y2="32" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Anamorphic Flare Beam passing through center -->
+  <line x1="6" y1="32" x2="58" y2="32" stroke="url(#anamorphicStreak)" stroke-width="1.25"/>
+
+  <!-- The Iconic Geometric "F" / Film Aperture Shutter -->
+  <!-- Vertical Pillar -->
+  <rect x="18" y="16" width="6" height="32" rx="2" fill="url(#cinemaFlame)"/>
+
+  <!-- Top Horizontal Bar (Upper Aperture Blade) -->
+  <path d="M24 16 H44 C45.1 16 46 16.9 46 18 V20.5 C46 21.6 45.1 22.5 44 22.5 H24 V16 Z" fill="url(#cinemaFlame)"/>
+
+  <!-- Middle Horizontal Bar with Anamorphic Blue Shutter Accent -->
+  <path d="M24 29 H37 C38.1 29 39 29.9 39 31 V33.5 C39 34.6 38.1 35.5 37 35.5 H24 V29 Z" fill="#3EE6FF" filter="url(#bloom)"/>
+
+  <!-- Optical Camera Core Dot (Sensor Gate / Recording Tally) -->
+  <circle cx="43" cy="29" r="2.5" fill="#FF4D2E" filter="url(#bloom)"/>
+  <circle cx="43" cy="29" r="1.2" fill="#FFFFFF"/>
+</svg>
