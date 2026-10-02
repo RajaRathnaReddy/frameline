@@ -31,6 +31,9 @@ export const metadata: Metadata = {
     title: "FRAMELINE",
     description: "AI · VFX · Hollywood · Film Technology",
   },
+  other: {
+    'impact-site-verification': '978cf08d-3365-41b9-b52a-d3e8e5930700',
+  },
 };
 
 export default function RootLayout({
@@ -46,6 +49,11 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-icon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <meta
+          name="impact-site-verification"
+          content="978cf08d-3365-41b9-b52a-d3e8e5930700"
+          {...({ value: "978cf08d-3365-41b9-b52a-d3e8e5930700" } as Record<string, string>)}
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=JetBrains+Mono:wght@300;400;500;600&display=swap"
           rel="stylesheet"
