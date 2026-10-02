@@ -49,6 +49,51 @@ The execution on **ILM Deploys OpenUSD 24.11 Solaris Pipeline Across Global Stud
     },
   },
   {
+    title: "Alliance for OpenUSD Standardizes 3D Gaussian Splats in Core v26 Production Schemas",
+    slug: "alliance-for-openusd-standardizes-3d-gaussian-splats-v26-schemas",
+    dek: "AOUSD unifies radiance field captures across Houdini 22, Nuke 17, and Unreal Engine, establishing universal schemas for real-time VFX asset handoffs.",
+    heroImage: "/images/nuke-vfx-comp.jpg",
+    category: "vfx",
+    tags: ["VFX", "OpenUSD v26", "Gaussian Splatting", "Foundry Nuke 17", "Houdini 22", "Pipeline Architecture"],
+    author: rajaRathnaReddy,
+    publishedAt: "2026-10-02T18:15:00.000Z",
+    readTime: 7,
+    featured: false,
+    breaking: true,
+    toolsMentioned: ["OpenUSD v26", "Foundry Nuke 17", "SideFX Houdini 22", "Unreal Engine 5.8", "Karma XPU"],
+    seoKeywords: ["openusd v26 gaussian splats", "3d gaussian splatting vfx", "aousd production schema", "nuke 17 splats", "houdini 22 copernicus"],
+    body: `## The Normalization of Radiance Fields in High-End VFX
+
+In what visual effects supervisors are hailing as the biggest pipeline breakthrough since the release of MaterialX, the **Alliance for OpenUSD (AOUSD)** has officially published the **OpenUSD v26.08** core specification, formalizing native schemas for **3D Gaussian Splatting (3DGS)** and neural radiance fields.
+
+Previously, studios attempting to ingest high-resolution drone photogrammetry and scanned set environments into visual effects shots faced fractured proprietary formats (.ply hacks and custom shader loaders). With OpenUSD v26, Gaussian Splat clouds are now first-class primitives capable of referencing standard USD transforms, material overrides, and stage composition arcs.
+
+\`\`\`markdown
+| Pipeline Stage | Legacy Mesh & Photogrammetry | OpenUSD v26 Gaussian Splat Pipeline |
+|----------------|------------------------------|-----------------------------------|
+| Data Ingestion | Multi-Million Polygon Retopo | Direct Gaussian Cloud Point Prim  |
+| Lookdev & Depth| Heavy Normal Map Baking      | Native View-Dependent Radiance     |
+| Render Latency | 45 - 90 Minutes per Frame    | Sub-Second Real-Time Viewport (XPU)|
+| Cross-DCC Sync | Broken FBX/OBJ Point Cache   | Single .usda/.usdc Referenced File |
+\`\`\`
+
+## Deep DCC Toolchain Integration: Houdini 22, Nuke 17 & Unreal Engine
+
+The adoption curve across major software vendors has been instantaneous:
+- **SideFX Houdini 22**: The new **Copernicus** procedural engine allows artists to groom, clip, and cull millions of Gaussians procedurally while simulating dynamic wind collision directly within Solaris viewports.
+- **Foundry Nuke 17**: Features native Gaussian Splat projection cameras and deep holdout integration. Compositors can now fly interactive cameras through scanned sets with accurate optical depth-of-field and motion blur without rendering offline CG passes.
+- **Epic Games Unreal Engine 5.8**: Ingests USD Gaussian primitives natively onto In-Camera VFX (ICVFX) LED volumes with sub-frame tracking latency and Zero-Moiré dynamic filtering.
+
+## Technical Field Assessment by Raja Rathna Reddy
+
+Standardizing 3D Gaussian Splats under OpenUSD marks the definitive bridge between practical set photogrammetry and digital visual effects. Facilities that adopt OpenUSD v26 schemas will cut weeks off traditional digital-double set builds while delivering photographic fidelity that holds up to the most demanding theatrical scrutiny.`,
+    seo: {
+      title: "Alliance for OpenUSD Standardizes 3D Gaussian Splats in Core v26 | FRAMELINE",
+      desc: "AOUSD officially releases OpenUSD v26 with native 3D Gaussian Splatting schemas, unifying real-time VFX asset workflows across Houdini 22 and Nuke 17.",
+      ogImage: "/images/nuke-vfx-comp.jpg",
+    },
+  },
+  {
     title: "Wētā FX Open-Sources Deep Comp Neural Denoising Toolkit for Tentpole Productions",
     slug: "weta-fx-deep-comp-neural-denoising-toolkit",
     dek: "Behind-the-scenes engineering report on Wētā FX Open-Sources Deep Comp Neural Denoising Toolkit for Tentpole Productions, detailing multi-pass compositing, procedural solvers, and final-pixel execution.",

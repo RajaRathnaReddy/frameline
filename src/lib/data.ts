@@ -355,22 +355,22 @@ export const reviews: ProductReview[] = [
 
 // ─── BREAKING HEADLINES (for ticker) ───
 export const breakingHeadlines: string[] = [
-  'Adobe completes $340M Topaz Labs acquisition for Neurostream tech',
-  'Higgsfield AI’s $500K feature film Hell Grind sparks fierce debate at Cannes',
-  'Netflix invests $587M to acquire Ben Affleck’s InterPositive startup',
-  'Epic Games confirms Unreal Engine 6 target: Early Access late 2027',
-  'ByteDance tightens Seedance 2.0 guardrails after SAG-AFTRA & studio backlash',
-  'Virtual production market projected to grow from $3.3B to $18.5B by 2035',
-  'EU mandates machine-readable provenance marking on AI video by August 2',
-  'Foundry releases Mari 8.0 in open beta as Blender 5.2 LTS adds Geometry Nodes cloth',
+  'Google DeepMind partners with A24 in $75M research alliance to launch A24 Labs',
+  'Alliance for OpenUSD releases v26.08 standardizing 3D Gaussian Splats in core pipelines',
+  'Kling 3.0 Omni & Google Veo 3.1 achieve multi-shot narrative camera consistency',
+  'Brompton & ROE Visual unveil full-spectrum RGBW LED panels with Dynamic Calibration',
+  'Nikon & RED showcase unified cinema flagship with native Z-mount & C2PA hardware provenance',
+  'Adobe Firefly Video 2.0 embeds multi-model generative AI directly into Premiere Pro',
+  'Dolby Atmos rolls out Room-Adaptive AI Calibration & neural dialogue separation for post suites',
+  'Netflix confirms 300+ active productions using InterPositive AI conforming pipelines',
 ];
 
 // ─── FINANCIAL METRICS (for Box Office & Business Strip) ───
 export const businessStats = [
+  { value: '$75M', target: 75, prefix: '$', suffix: 'M', label: 'Google DeepMind / A24', change: 'A24 Labs Alliance', desc: 'Bespoke artist-first studio AI incubator' },
   { value: '$587M', target: 587, prefix: '$', suffix: 'M', label: 'Netflix / Ben Affleck Deal', change: '+300 Productions', desc: 'InterPositive AI venture acquisition' },
-  { value: '$900M', target: 900, prefix: '$', suffix: 'M', label: 'Luma AI Funding Round', change: 'Saudi-Led Round', desc: 'Accelerating Dream Machine 2 video compute' },
+  { value: '$2.3B', target: 2.3, prefix: '$', suffix: 'B', label: 'AI Sound & Stem Market', change: '2026 Forecast', desc: 'Neural stem separation and spatial audio suites' },
   { value: '$340M', target: 340, prefix: '$', suffix: 'M', label: 'Adobe / Topaz Labs', change: 'All-Cash Deal', desc: 'Neurostream local device inference buyout' },
-  { value: '80%', target: 80, prefix: '', suffix: '%', label: 'Hell Grind Compute Share', change: '$500K Budget', desc: '4 of every 5 dollars spent on raw GPU compute' },
 ];
 
 // ─── INDUSTRY OPINIONS (for Opinion & Interviews) ───

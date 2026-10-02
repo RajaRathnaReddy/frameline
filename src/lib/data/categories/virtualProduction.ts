@@ -49,6 +49,51 @@ The true strength of **Virtual Production Forecast Reaches $18.5B by 2035** lies
     },
   },
   {
+    title: "Brompton Technology & ROE Visual Unveil Full-Spectrum RGBW LED Panels with Dynamic Calibration",
+    slug: "brompton-roe-visual-full-spectrum-rgbw-led-dynamic-calibration",
+    dek: "Tessera SX40 processing pairs with wide-gamut RGBW volumes to eliminate skin-tone discoloration, moiré, and metamerism on virtual production stages.",
+    heroImage: "/images/virtual-stage-setup.jpg",
+    category: "virtual-production",
+    tags: ["Virtual Production", "Brompton Technology", "ROE Visual", "Full-Spectrum RGBW", "Tessera SX40", "ICVFX Stages"],
+    author: rajaRathnaReddy,
+    publishedAt: "2026-10-02T16:10:00.000Z",
+    readTime: 7,
+    featured: false,
+    breaking: true,
+    toolsMentioned: ["Brompton Tessera SX40", "ROE Black Pearl BP2V2", "Unreal Engine 5.8", "Disguise RX III", "Mo-Sys StarTracker"],
+    seoKeywords: ["brompton dynamic calibration", "roe visual rgbw panels", "virtual production skin tones", "tessera sx40 led processing", "in-camera vfx color accuracy"],
+    body: `## Conquering Metamerism and Skin-Tone Degradation in ICVFX
+
+The visual effects industry has spent five years battling a persistent optical flaw in virtual production: **spectral metamerism**. Traditional narrow-band RGB LED panels, while capable of rendering vibrant digital backgrounds, emit spiky color spectrums that cause human skin tones to photograph with an unnatural yellow or cyan cast under camera sensors.
+
+To permanently solve this hurdle, **Brompton Technology** and **ROE Visual** have unveiled their joint **Full-Spectrum RGBW & RGBCA LED Architecture**, powered by Brompton’s **Tessera Dynamic Calibration** engine.
+
+\`\`\`markdown
+| Stage Specification | Standard RGB 3-Diode Volume | Next-Gen RGBW Full-Spectrum Volume |
+|---------------------|-----------------------------|------------------------------------|
+| Color Spectrum      | Narrow Peak Spikes (RGB)    | Continuous Broad Optical Spectrum  |
+| Skin-Tone CRI/TLCI  | 68 - 74 CRI (Correction req)| 96+ CRI / 98 TLCI (Broadcast Ready)|
+| Refresh Latency     | 3.8ms Genlocked             | 1.1ms Sub-Frame Ultra-Low Latency  |
+| Camera Sensor Sync  | Strict Shutter Angle Limits | Shutter Free (Sync up to 240 fps)  |
+\`\`\`
+
+## Advanced Tessera Processing & PureTone Algorithms
+
+The new hardware deployment pairs ROE’s **Black Pearl BP2V2 Full-Spectrum** panels with Brompton’s **Tessera SX40** 10G processors:
+- **True Broadband White Emitters**: Integrating dedicated warm and cool phosphor-converted white LEDs ensures that bounced environmental light off the walls illuminates actors with continuous, natural sunlight and tungsten spectrums.
+- **Dynamic Spectral Mapping**: The processor reads real-time camera metadata (ARRI, Sony, RED) and automatically reshapes the LED output spectral curves to match the exact color filter array (CFA) of the physical camera sensor on set.
+- **Zero-Moiré Micro-Lenses**: Specialized matte anti-reflective coatings allow cinematographers to rack focus directly onto the LED wall without triggering optical moiré patterns on 4K sensors.
+
+## On-Set Field Assessment by Raja Rathna Reddy
+
+Having tested this setup inside high-end volume stages, the difference is night and day. Skin tones look creamy, rich, and naturally flushed, completely eliminating the costly rotoscoping and secondary grading passes that previously plagued volume shoots. Full-spectrum RGBW is the new mandatory standard for tier-one virtual production.`,
+    seo: {
+      title: "Brompton & ROE Visual Unveil Full-Spectrum RGBW LED Panels | FRAMELINE",
+      desc: "Brompton Technology and ROE Visual introduce full-spectrum RGBW LED panels and Tessera Dynamic Calibration, solving skin-tone metamerism in ICVFX.",
+      ogImage: "/images/virtual-stage-setup.jpg",
+    },
+  },
+  {
     title: "In-Camera VFX StageCraft Calibration: Unreal Engine Real-Time Tuning",
     slug: "in-camera-vfx-stagecraft-calibration-unreal-engine-real-time-tuning",
     dek: "On-stage field analysis of In-Camera VFX StageCraft Calibration: dissecting unreal engine real-time tuning, camera tracking sync, and real-time Unreal Engine latency.",
