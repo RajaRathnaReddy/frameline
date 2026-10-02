@@ -128,29 +128,27 @@ export default function Navbar() {
               </div>
             ))}
 
-            {/* Secondary Categories (Visible on xl+ screens, cleanly folded into "More" on lg) */}
+            {/* Secondary Categories (Visible on 2xl+ screens, cleanly folded into "More" on laptops/desktops < 1536px) */}
             {secondaryCategories.map((cat) => (
               <div
                 key={cat.slug}
-                className="relative py-2 shrink-0 hidden xl:block"
+                className="relative py-2 shrink-0 hidden 2xl:block"
                 onMouseEnter={() => handleMouseEnterCategory(cat.slug)}
               >
                 <Link
                   href={`/category/${cat.slug}`}
-                  className={`flex items-center gap-1.5 font-mono text-[10px] xl:text-[11px] uppercase tracking-wider px-2 xl:px-2.5 py-1.5 rounded-lg transition-all duration-200 text-text-secondary hover:text-text-primary hover:bg-white/5 border border-transparent hover:border-white/10 whitespace-nowrap ${
+                  className={`flex items-center gap-1.5 font-mono text-[10px] 2xl:text-[11px] uppercase tracking-wider px-2 2xl:px-2.5 py-1.5 rounded-lg transition-all duration-200 text-text-secondary hover:text-text-primary hover:bg-white/5 border border-transparent hover:border-white/10 whitespace-nowrap ${
                     activeCategoryHover === cat.slug ? 'text-text-primary bg-white/10 border-white/15' : ''
                   }`}
                 >
                   <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: cat.color }} />
                   {cat.slug === 'virtual-production' ? (
                     <>
-                      <span className="2xl:hidden">Virtual Prod</span>
-                      <span className="hidden 2xl:inline">Virtual Production</span>
+                      <span>Virtual Production</span>
                     </>
                   ) : cat.slug === 'music' ? (
                     <>
-                      <span className="2xl:hidden">Sound</span>
-                      <span className="hidden 2xl:inline">Sound & Music</span>
+                      <span>Sound & Music</span>
                     </>
                   ) : (
                     cat.name
@@ -159,11 +157,11 @@ export default function Navbar() {
               </div>
             ))}
 
-            {/* On lg viewports (1024-1279px): Sleek "More" Dropdown combining Secondary Categories + Features */}
-            <div className="relative py-2 shrink-0 group xl:hidden">
+            {/* On viewports < 1536px: Sleek "More" Dropdown combining Secondary Categories + Features */}
+            <div className="relative py-2 shrink-0 group 2xl:hidden">
               <button
                 type="button"
-                className="flex items-center gap-1 font-mono text-[10px] uppercase tracking-wider px-2 py-1.5 rounded-lg transition-all duration-200 text-text-secondary hover:text-text-primary hover:bg-white/5 border border-transparent hover:border-white/10 whitespace-nowrap"
+                className="flex items-center gap-1 font-mono text-[10px] xl:text-[11px] uppercase tracking-wider px-2.5 py-1.5 rounded-lg transition-all duration-200 text-text-secondary hover:text-text-primary hover:bg-white/5 border border-transparent hover:border-white/10 whitespace-nowrap"
               >
                 <span>More</span>
                 <svg className="w-3 h-3 text-text-secondary/60 group-hover:text-text-primary transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -217,11 +215,11 @@ export default function Navbar() {
               </div>
             </div>
 
-            {/* On xl+ viewports (1280px+): Dedicated Features Dropdown */}
-            <div className="relative py-2 shrink-0 group hidden xl:block">
+            {/* On 2xl+ viewports (1536px+): Dedicated Features Dropdown */}
+            <div className="relative py-2 shrink-0 group hidden 2xl:block">
               <button
                 type="button"
-                className="flex items-center gap-1 font-mono text-[10px] xl:text-[11px] uppercase tracking-wider px-2 xl:px-2.5 py-1.5 rounded-lg transition-all duration-200 text-text-secondary hover:text-text-primary hover:bg-white/5 border border-transparent hover:border-white/10 whitespace-nowrap"
+                className="flex items-center gap-1 font-mono text-[10px] 2xl:text-[11px] uppercase tracking-wider px-2 2xl:px-2.5 py-1.5 rounded-lg transition-all duration-200 text-text-secondary hover:text-text-primary hover:bg-white/5 border border-transparent hover:border-white/10 whitespace-nowrap"
               >
                 <span>Features</span>
                 <svg className="w-3 h-3 text-text-secondary/60 group-hover:text-text-primary transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
