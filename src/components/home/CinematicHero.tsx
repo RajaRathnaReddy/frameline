@@ -73,7 +73,7 @@ export default function CinematicHero() {
 
                 {/* Metadata & Author Bar */}
                 <div className="pt-4 border-t border-white/[0.08] flex items-center justify-between flex-wrap gap-4">
-                  <AuthorBadge size="md" showWebsite={true} />
+                  <AuthorBadge size="md" showWebsite={false} />
 
                   <div className="flex items-center gap-3 text-right">
                     <div className="font-mono text-xs text-text-secondary">

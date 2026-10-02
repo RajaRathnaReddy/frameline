@@ -219,9 +219,6 @@ export default function ArticleContent({ article }: { article: Article }) {
                           <path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.79-4-4-4-.495 0-.965.084-1.4.238C14.55 2.475 13.18 1.6 11.6 1.6c-1.58 0-2.95.875-3.6 2.148-.435-.154-.905-.238-1.4-.238-2.21 0-4 1.79-4 4 0 .495.084.965.238 1.4C1.575 9.55.7 10.92.7 12.5c0 1.58.875 2.95 2.148 3.6-.154.435-.238.905-.238 1.4 0 2.21 1.79 4 4 4 .495 0 .965-.084 1.4-.238 1.273 1.273 2.643 2.148 4.223 2.148 1.58 0 2.95-.875 3.6-2.148.435.154.905.238 1.4.238 2.21 0 4-1.79 4-4 0-.495-.084-.965-.238-1.4 1.273-1.273 2.148-2.643 2.148-4.223zm-12.28 4.49l-3.79-3.79 1.41-1.41 2.38 2.38 5.79-5.79 1.41 1.41-7.2 7.2z"/>
                         </svg>
                       </a>
-                      <span className="font-mono text-[9px] uppercase px-1.5 py-0.5 rounded bg-accent-gold/15 text-accent-gold border border-accent-gold/30 font-semibold">
-                        rajarathnareddy.com
-                      </span>
                     </div>
                     <span className="text-meta text-accent-cyan text-[10px] font-mono block">
                       {rajaRathnaReddy.role}

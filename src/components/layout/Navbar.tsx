@@ -86,12 +86,12 @@ export default function Navbar() {
         }`}
         onMouseLeave={handleMouseLeaveCategory}
       >
-        <div className="w-full max-w-[1440px] mx-auto px-4 md:px-6 xl:px-8 h-16 flex items-center justify-between gap-2 xl:gap-4 relative">
+        <div className="w-full max-w-[1600px] mx-auto px-3 sm:px-4 lg:px-6 h-16 flex items-center justify-between gap-2 lg:gap-3 relative">
           {/* Logo - completely protected from shrinkage and wrapping */}
           <FramelineLogo size="md" />
 
           {/* Center Nav (Desktop) - Adaptive 2-Tier Hierarchy */}
-          <div className="hidden lg:flex items-center gap-1 xl:gap-1.5 shrink-0">
+          <div className="hidden lg:flex items-center justify-center gap-1 xl:gap-1.5 shrink min-w-0">
             {/* Primary Categories (Visible on all Desktop viewports) */}
             {primaryCategories.map((cat) => (
               <div
@@ -108,18 +108,18 @@ export default function Navbar() {
                   <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: cat.color }} />
                   {cat.slug === 'vfx-pipeline' ? (
                     <>
-                      <span className="2xl:hidden">VFX</span>
-                      <span className="hidden 2xl:inline">VFX & Pipeline</span>
+                      <span className="min-[1680px]:inline hidden">VFX & Pipeline</span>
+                      <span className="min-[1680px]:hidden inline">VFX</span>
                     </>
                   ) : cat.slug === 'film-tools' ? (
                     <>
-                      <span className="xl:hidden">Tools</span>
-                      <span className="hidden xl:inline">Film Tools</span>
+                      <span className="min-[1680px]:inline hidden">Film Tools</span>
+                      <span className="min-[1680px]:hidden inline">Tools</span>
                     </>
                   ) : cat.slug === 'ai-in-film' ? (
                     <>
-                      <span className="xl:hidden">AI</span>
-                      <span className="hidden xl:inline">AI in Film</span>
+                      <span className="min-[1680px]:inline hidden">AI in Film</span>
+                      <span className="min-[1680px]:hidden inline">AI</span>
                     </>
                   ) : (
                     cat.name
@@ -144,11 +144,13 @@ export default function Navbar() {
                   <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: cat.color }} />
                   {cat.slug === 'virtual-production' ? (
                     <>
-                      <span>Virtual Production</span>
+                      <span className="min-[1680px]:inline hidden">Virtual Production</span>
+                      <span className="min-[1680px]:hidden inline">Virtual Prod</span>
                     </>
                   ) : cat.slug === 'music' ? (
                     <>
-                      <span>Sound & Music</span>
+                      <span className="min-[1680px]:inline hidden">Sound & Music</span>
+                      <span className="min-[1680px]:hidden inline">Sound</span>
                     </>
                   ) : (
                     cat.name
@@ -256,7 +258,7 @@ export default function Navbar() {
           </div>
 
           {/* Right Actions */}
-          <div className="flex items-center gap-1.5 sm:gap-2 xl:gap-2.5 shrink-0">
+          <div className="flex items-center gap-1.5 sm:gap-2 xl:gap-2.5 shrink-0 z-10">
             {/* Search Trigger */}
             <button
               onClick={() => {
@@ -270,7 +272,7 @@ export default function Navbar() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
               </svg>
               <span className="hidden xl:inline text-xs text-text-secondary">Search</span>
-              <kbd className="hidden 2xl:inline text-[10px] font-mono px-1.5 py-0.5 rounded bg-white/5 text-text-secondary/80 border border-white/10">
+              <kbd className="hidden min-[1680px]:inline text-[10px] font-mono px-1.5 py-0.5 rounded bg-white/5 text-text-secondary/80 border border-white/10">
                 ⌘K
               </kbd>
             </button>
@@ -287,7 +289,7 @@ export default function Navbar() {
             {/* Subscribe Button */}
             <Link
               href="/newsletter"
-              className="hidden sm:flex items-center gap-1.5 xl:gap-2 bg-accent-primary hover:bg-accent-primary/90 !text-white px-3 xl:px-4 py-1.5 xl:py-2 rounded-full transition-all duration-300 font-mono text-[10px] xl:text-[11px] font-bold uppercase tracking-wider shadow-lg shadow-accent-primary/25 border border-white/25 hover:border-white/50 hover:scale-[1.02] select-none whitespace-nowrap shrink-0"
+              className="hidden sm:flex items-center gap-1.5 xl:gap-2 bg-accent-primary hover:bg-accent-primary/90 !text-white px-3 xl:px-3.5 py-1.5 rounded-full transition-all duration-300 font-mono text-[10px] xl:text-[11px] font-bold uppercase tracking-wider shadow-lg shadow-accent-primary/25 border border-white/25 hover:border-white/50 hover:scale-[1.02] select-none whitespace-nowrap shrink-0"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse shadow-sm shadow-white shrink-0" />
               <span className="!text-white font-bold tracking-wider">Subscribe</span>
