@@ -40,8 +40,13 @@ export default function Footer() {
             <div className="flex flex-col gap-3">
               <Link href="/about" className="text-text-secondary hover:text-text-primary transition-colors text-sm">About</Link>
               <Link href="/contact" className="text-text-secondary hover:text-text-primary transition-colors text-sm">Contact</Link>
-              <Link href="/advertise" className="text-text-secondary hover:text-text-primary transition-colors text-sm">Advertise</Link>
-              <span className="text-text-secondary/40 text-sm">Careers</span>
+              <Link href="/advertise" className="text-text-secondary hover:text-text-primary transition-colors text-sm">Advertise / Media Kit</Link>
+              <a href="mailto:a.rajarathnareddychenni@gmail.com" className="text-accent-gold hover:text-white transition-colors text-xs font-mono truncate">
+                ✉ a.rajarathnareddychenni@gmail.com
+              </a>
+              <a href="https://wa.me/919704506779" target="_blank" rel="noopener noreferrer" className="text-accent-lime hover:text-white transition-colors text-xs font-mono">
+                📱 +91 97045 06779
+              </a>
             </div>
           </div>
 

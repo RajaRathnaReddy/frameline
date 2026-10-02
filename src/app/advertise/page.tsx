@@ -187,6 +187,44 @@ export default function AdvertisePage() {
             </div>
           )}
         </div>
+
+        {/* Direct Executive Partnership Contacts */}
+        <div className="mt-12 p-8 md:p-10 rounded-3xl bg-bg-card border border-white/10 shadow-2xl max-w-4xl mx-auto relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-72 h-72 bg-accent-gold/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 relative z-10">
+            <div>
+              <span className="font-mono text-xs uppercase tracking-widest text-accent-cyan block mb-1">
+                DIRECT PARTNERSHIP DESK
+              </span>
+              <h3 className="font-display text-2xl font-black text-text-primary">
+                Commercial Partnerships & Media Inquiries
+              </h3>
+              <p className="font-serif text-sm text-text-secondary mt-1 max-w-xl">
+                For custom brand integrations, sponsored pipeline breakdowns, or tool directory listings, contact Raja Rathna Reddy directly:
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto shrink-0">
+              <a
+                href="mailto:a.rajarathnareddychenni@gmail.com?subject=FRAMELINE%20Advertising%20%26%20Partnership"
+                className="px-5 py-3 rounded-xl bg-accent-gold text-black font-mono text-xs uppercase font-bold text-center hover:bg-accent-gold/90 transition-all shadow-md flex items-center justify-center gap-2"
+              >
+                <span>✉ Email Desk</span>
+              </a>
+              <a
+                href="https://wa.me/919704506779?text=Hello%20Raja,%20we%20want%20to%20partner%20with%20FRAMELINE"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-mono text-xs uppercase font-bold text-center border border-white/15 transition-all flex items-center justify-center gap-2"
+              >
+                <span>📱 +91 97045 06779</span>
+              </a>
+            </div>
+          </div>
+          <div className="mt-6 pt-4 border-t border-white/[0.06] flex flex-wrap items-center justify-between gap-2 text-xs font-mono text-text-secondary/70">
+            <span>Official Email: a.rajarathnareddychenni@gmail.com</span>
+            <span>Direct Phone / WhatsApp: +91 97045 06779</span>
+          </div>
+        </div>
       </div>
     </div>
   );

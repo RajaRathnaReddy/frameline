@@ -7,6 +7,8 @@ export const rajaRathnaReddy: Author = {
   bio: 'FX Pipeline Technical Director & AI Architect with 8+ years of production experience across major global VFX houses. Specializes in USD pipelines, Houdini procedural workflows, neural rendering models, and studio-scale automation architectures.',
   website: 'https://rajarathnareddy.com',
   imdb: 'https://www.imdb.com/name/nm12830221/',
+  email: 'a.rajarathnareddychenni@gmail.com',
+  phone: '+919704506779',
   socials: {
     twitter: 'https://x.com/RAJARATHNAREDDY',
     linkedin: 'https://www.linkedin.com/in/rajarathnareddy/',

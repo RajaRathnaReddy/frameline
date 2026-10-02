@@ -1,6 +1,6 @@
 'use client';
 
-import { AffiliateOffer } from '@/lib/affiliates';
+import { AffiliateOffer, PARTNER_CONTACT } from '@/lib/affiliates';
 import { getCategoryColor } from '@/lib/utils';
 
 interface IndustrySponsorCardProps {
@@ -109,10 +109,30 @@ export default function IndustrySponsorCard({
         </div>
       </div>
 
-      {/* FTC Disclosure */}
-      <div className="mt-5 pt-3 border-t border-white/[0.04] flex items-center justify-between text-[10px] font-mono text-text-secondary/40">
-        <span>FRAMELINE is reader-supported. We may earn an affiliate commission on verified licenses.</span>
-        <span className="hidden sm:inline">OFFICIAL STUDIO PARTNER</span>
+      {/* FTC Disclosure & Direct Partner Inquiries */}
+      <div className="mt-5 pt-3 border-t border-white/[0.04] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-[10px] font-mono text-text-secondary/50">
+        <div>
+          <span>FRAMELINE is reader-supported ({offer.network}). Commission earned on verified licenses.</span>
+        </div>
+        <div className="flex items-center gap-3">
+          <a
+            href={`mailto:${PARTNER_CONTACT.email}?subject=FRAMELINE%20Sponsorship%20Inquiry`}
+            className="hover:text-accent-gold transition-colors text-text-secondary/70 flex items-center gap-1"
+          >
+            <span>✉</span>
+            <span>{PARTNER_CONTACT.email}</span>
+          </a>
+          <span>&bull;</span>
+          <a
+            href={PARTNER_CONTACT.whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-accent-lime transition-colors text-text-secondary/70 flex items-center gap-1"
+          >
+            <span>📱</span>
+            <span>{PARTNER_CONTACT.phoneDisplay}</span>
+          </a>
+        </div>
       </div>
     </div>
   );

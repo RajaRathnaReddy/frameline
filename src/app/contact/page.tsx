@@ -160,6 +160,40 @@ export default function ContactPage() {
 
           {/* Bureau Info Right (5 cols) */}
           <div className="lg:col-span-5 space-y-8">
+            {/* Direct Executive Contact */}
+            <div className="p-6 rounded-2xl bg-bg-card border border-accent-gold/40 shadow-lg relative overflow-hidden">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-accent-gold animate-pulse" />
+                <span className="font-mono text-xs font-bold text-accent-gold uppercase tracking-wider">
+                  Executive Desk & Editorial Leadership
+                </span>
+              </div>
+              <div className="text-white font-display font-bold text-base mb-1">
+                Raja Rathna Reddy
+              </div>
+              <div className="font-mono text-[11px] text-accent-cyan mb-4">
+                FX Pipeline TD & AI Newsroom Architect
+              </div>
+              <div className="space-y-2.5 font-mono text-xs">
+                <a
+                  href="mailto:a.rajarathnareddychenni@gmail.com"
+                  className="flex items-center gap-2 text-text-primary hover:text-accent-gold transition-colors p-2.5 rounded-lg bg-white/[0.03] border border-white/[0.06]"
+                >
+                  <span className="text-accent-gold">✉</span>
+                  <span className="truncate">a.rajarathnareddychenni@gmail.com</span>
+                </a>
+                <a
+                  href="https://wa.me/919704506779"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-text-primary hover:text-accent-lime transition-colors p-2.5 rounded-lg bg-white/[0.03] border border-white/[0.06]"
+                >
+                  <span className="text-accent-lime">📱</span>
+                  <span>+91 97045 06779 (Direct / WhatsApp)</span>
+                </a>
+              </div>
+            </div>
+
             {/* Secure Tip Box */}
             <div className="p-6 rounded-2xl bg-bg-card border border-accent-cyan/30 shadow-lg">
               <div className="flex items-center gap-2 mb-2">

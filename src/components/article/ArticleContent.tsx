@@ -11,7 +11,7 @@ import ReadingProgress from './ReadingProgress';
 import TableOfContents from './TableOfContents';
 import { ScrollReveal } from '@/components/motion';
 import { useMemo } from 'react';
-import { getAffiliateOfferForCategory } from '@/lib/affiliates';
+import { getAffiliateOfferForArticle } from '@/lib/affiliates';
 import IndustrySponsorCard from '@/components/monetization/IndustrySponsorCard';
 import IndustrySponsorSidebar from '@/components/monetization/IndustrySponsorSidebar';
 
@@ -108,7 +108,7 @@ function parseBody(body: string): { html: string; headings: { id: string; text: 
 
 export default function ArticleContent({ article }: { article: Article }) {
   const { html, headings } = useMemo(() => parseBody(article.body), [article.body]);
-  const sponsorOffer = useMemo(() => getAffiliateOfferForCategory(article.category), [article.category]);
+  const sponsorOffer = useMemo(() => getAffiliateOfferForArticle(article), [article]);
 
   const relatedArticles = articles
     .filter(a => a.slug !== article.slug)
@@ -433,6 +433,26 @@ export default function ArticleContent({ article }: { article: Article }) {
                       >
                         <span>𝕏</span>
                         <span>Twitter</span>
+                      </a>
+                    )}
+                    {rajaRathnaReddy.email && (
+                      <a
+                        href={`mailto:${rajaRathnaReddy.email}`}
+                        className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider px-3.5 py-1.5 rounded-lg bg-accent-primary/10 hover:bg-accent-primary/20 text-accent-primary border border-accent-primary/30 transition-all font-semibold"
+                      >
+                        <span>✉</span>
+                        <span>{rajaRathnaReddy.email}</span>
+                      </a>
+                    )}
+                    {rajaRathnaReddy.phone && (
+                      <a
+                        href="https://wa.me/919704506779"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider px-3.5 py-1.5 rounded-lg bg-accent-lime/10 hover:bg-accent-lime/20 text-accent-lime border border-accent-lime/30 transition-all font-semibold"
+                      >
+                        <span>📱</span>
+                        <span>+91 97045 06779</span>
                       </a>
                     )}
                   </div>

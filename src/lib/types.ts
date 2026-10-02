@@ -10,6 +10,8 @@ export interface Author {
   codingUrl?: string;
   automationUrl?: string;
   contactUrl?: string;
+  email?: string;
+  phone?: string;
   socials: {
     twitter?: string;
     linkedin?: string;

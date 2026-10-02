@@ -144,6 +144,36 @@ export const tools: Tool[] = [
     studioUsers: ['Prologue Films', 'The Mill', 'Imaginary Forces', 'Elastic', 'Buck'],
     rating: 4.5
   },
+  {
+    name: 'Autodesk Maya',
+    slug: 'autodesk-maya',
+    logo: '🐉',
+    category: '3D',
+    pricing: 'Paid',
+    platforms: ['Windows', 'macOS', 'Linux'],
+    version: '2026.2 (Bifrost & USD)',
+    website: 'https://www.autodesk.com/products/maya/overview',
+    description: 'Industry-standard 3D animation, rigging, character modeling, and simulation platform powering Hollywood feature animation.',
+    longDescription: 'Autodesk Maya is the cornerstone 3D animation software relied on by leading VFX houses and animation studios worldwide, featuring native USD workflows and Bifrost visual programming.',
+    features: ['Bifrost Procedural Ocean & Pyro Simulation', 'USD Maya Integration & Lookdev', 'Character Rigging & Retargeting Matrix', 'Arnold High-Fidelity Renderer', 'Python 3 / MEL Pipeline Scripting'],
+    studioUsers: ['Walt Disney Animation', 'Sony Pictures Imageworks', 'Framestore', 'MPC Film', 'DreamWorks'],
+    rating: 4.9
+  },
+  {
+    name: 'Autodesk ShotGrid',
+    slug: 'autodesk-shotgrid',
+    logo: '📊',
+    category: 'Pipeline Management',
+    pricing: 'Paid',
+    platforms: ['Web', 'Windows', 'macOS', 'Linux'],
+    version: 'Studio Cloud Edition',
+    website: 'https://www.autodesk.com/products/shotgrid/overview',
+    description: 'Production tracking, review, and asset management software powering collaborative pipelines across global VFX facilities.',
+    longDescription: 'Autodesk ShotGrid (formerly Shotgun Software) provides production management, review, and pipeline integration for creative studios worldwide, connecting artists, supervisors, and producers in real-time.',
+    features: ['Real-Time Production Tracking & Scheduling', 'High-Resolution Dailies & RV Playback', 'Toolkit (SGTK) Pipeline Integration', 'Asset Lifecycle Tracking & Versioning', 'Multi-Site Security & Cloud Access Control'],
+    studioUsers: ['Industrial Light & Magic', 'Wētā FX', 'DNEG', 'The Mill', 'Luma Pictures'],
+    rating: 4.9
+  },
 ];
 
 // ─── AI MODELS (2026 Professional Benchmark) ───
