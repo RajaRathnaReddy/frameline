@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { articles, categories, tools } from '@/lib/data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://frameline.film';
+  const baseUrl = 'https://vfx.rajarathnareddy.com';
 
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: new Date(), changeFrequency: 'always', priority: 1.0 },

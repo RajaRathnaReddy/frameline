@@ -65,7 +65,7 @@ export function extractAutonomousTags(body: string, category: string): { tags: s
 /**
  * Generate Google-compliant JSON-LD structured data for articles
  */
-export function generateArticleJsonLd(article: Article, siteUrl: string = 'https://frameline.film') {
+export function generateArticleJsonLd(article: Article, siteUrl: string = 'https://vfx.rajarathnareddy.com') {
   return {
     '@context': 'https://schema.org',
     '@type': article.category === 'tech' || article.category === 'tools' ? 'TechArticle' : 'NewsArticle',
@@ -103,7 +103,7 @@ export function generateArticleJsonLd(article: Article, siteUrl: string = 'https
 /**
  * Generate complete Next.js Metadata object with OpenGraph and Twitter cards
  */
-export function buildArticleMetadata(article: Article, siteUrl: string = 'https://frameline.film'): Metadata {
+export function buildArticleMetadata(article: Article, siteUrl: string = 'https://vfx.rajarathnareddy.com'): Metadata {
   const url = `${siteUrl}/article/${article.slug}`;
   const keywords = [...(article.seoKeywords || []), ...article.tags];
 

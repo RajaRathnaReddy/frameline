@@ -1,7 +1,7 @@
 import { articles } from '@/lib/data';
 
 export async function GET() {
-  const siteUrl = 'https://frameline.film';
+  const siteUrl = 'https://vfx.rajarathnareddy.com';
 
   const rssItems = articles
     .map(

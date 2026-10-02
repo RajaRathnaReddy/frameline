@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://frameline.film/sitemap.xml',
+    sitemap: 'https://vfx.rajarathnareddy.com/sitemap.xml',
   };
 }

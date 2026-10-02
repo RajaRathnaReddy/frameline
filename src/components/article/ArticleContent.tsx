@@ -517,8 +517,12 @@ export default function ArticleContent({ article }: { article: Article }) {
             '@type': 'NewsArticle',
             headline: article.title,
             description: article.dek,
-            image: article.heroImage,
+            image: article.heroImage.startsWith('http') ? article.heroImage : `https://vfx.rajarathnareddy.com${article.heroImage}`,
             datePublished: article.publishedAt,
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id': `https://vfx.rajarathnareddy.com/article/${article.slug}`,
+            },
             author: {
               '@type': 'Person',
               name: article.author.name,
@@ -540,7 +544,11 @@ export default function ArticleContent({ article }: { article: Article }) {
             publisher: {
               '@type': 'Organization',
               name: 'FRAMELINE',
-              url: 'https://frameline.film',
+              url: 'https://vfx.rajarathnareddy.com',
+              logo: {
+                '@type': 'ImageObject',
+                url: 'https://vfx.rajarathnareddy.com/frameline-logo.png',
+              },
             },
           }),
         }}

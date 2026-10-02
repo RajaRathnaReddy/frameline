@@ -22,14 +22,31 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
   const article = articles.find((a) => a.slug === slug);
   if (!article) return { title: '404 - Not Found | FRAMELINE' };
 
+  const articleUrl = `https://vfx.rajarathnareddy.com/article/${article.slug}`;
+  const ogImageUrl = article.seo.ogImage.startsWith('http')
+    ? article.seo.ogImage
+    : `https://vfx.rajarathnareddy.com${article.seo.ogImage}`;
+
   return {
     title: article.seo.title,
     description: article.seo.desc,
+    alternates: {
+      canonical: articleUrl,
+    },
     openGraph: {
       title: article.seo.title,
       description: article.seo.desc,
+      url: articleUrl,
+      siteName: 'FRAMELINE',
       type: 'article',
-      images: [article.seo.ogImage],
+      images: [
+        {
+          url: ogImageUrl,
+          width: 1200,
+          height: 630,
+          alt: article.title,
+        },
+      ],
       publishedTime: article.publishedAt,
       authors: [article.author.name],
     },
@@ -37,7 +54,7 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
       card: 'summary_large_image',
       title: article.seo.title,
       description: article.seo.desc,
-      images: [article.seo.ogImage],
+      images: [ogImageUrl],
     },
   };
 }
