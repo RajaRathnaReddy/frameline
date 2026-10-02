@@ -12,7 +12,7 @@ export default function CinematicHero() {
   const secondary = articles.filter(a => !a.featured).slice(0, 3);
 
   return (
-    <section className="relative w-full border-b border-white/[0.08]" id="hero">
+    <section className="relative w-full max-w-full overflow-hidden border-b border-white/[0.08]" id="hero">
       <div className="max-w-[1440px] mx-auto px-4 md:px-8 py-6 md:py-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
           {/* Main Cover Story Left (8 cols) */}

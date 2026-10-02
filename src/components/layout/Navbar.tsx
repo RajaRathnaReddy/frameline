@@ -16,6 +16,17 @@ export default function Navbar() {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeCategoryHover, setActiveCategoryHover] = useState<string | null>(null);
   const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const enterTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const primaryCategories = categories.slice(0, 4);
+  const secondaryCategories = categories.slice(4);
+
+  useEffect(() => {
+    return () => {
+      if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
+      if (enterTimeoutRef.current) clearTimeout(enterTimeoutRef.current);
+    };
+  }, []);
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 40);
@@ -52,35 +63,76 @@ export default function Navbar() {
 
   const handleMouseEnterCategory = (slug: string) => {
     if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
-    setActiveCategoryHover(slug);
+    if (enterTimeoutRef.current) clearTimeout(enterTimeoutRef.current);
+    enterTimeoutRef.current = setTimeout(() => {
+      setActiveCategoryHover(slug);
+    }, 140);
   };
 
   const handleMouseLeaveCategory = () => {
+    if (enterTimeoutRef.current) clearTimeout(enterTimeoutRef.current);
     hoverTimeoutRef.current = setTimeout(() => {
       setActiveCategoryHover(null);
-    }, 200);
+    }, 180);
   };
 
   return (
     <>
       <nav
-        className={`sticky top-0 z-40 transition-all duration-300 ${
+        className={`sticky top-0 z-40 w-full max-w-full transition-all duration-300 ${
           scrolled
             ? 'bg-bg-base/95 backdrop-blur-xl shadow-xl shadow-black/80 border-b border-border-subtle'
             : 'bg-bg-base/90 backdrop-blur-md border-b border-white/[0.06]'
         }`}
         onMouseLeave={handleMouseLeaveCategory}
       >
-        <div className="max-w-[1440px] mx-auto px-4 md:px-8 h-16 flex items-center justify-between gap-4 relative">
+        <div className="w-full max-w-[1440px] mx-auto px-4 md:px-6 xl:px-8 h-16 flex items-center justify-between gap-2 xl:gap-4 relative">
           {/* Logo - completely protected from shrinkage and wrapping */}
           <FramelineLogo size="md" />
 
-          {/* Center Nav (Desktop) - 6 Production Pillars + Features Dropdown */}
+          {/* Center Nav (Desktop) - Adaptive 2-Tier Hierarchy */}
           <div className="hidden lg:flex items-center gap-1 xl:gap-1.5 shrink-0">
-            {categories.map((cat) => (
+            {/* Primary Categories (Visible on all Desktop viewports) */}
+            {primaryCategories.map((cat) => (
               <div
                 key={cat.slug}
                 className="relative py-2 shrink-0"
+                onMouseEnter={() => handleMouseEnterCategory(cat.slug)}
+              >
+                <Link
+                  href={`/category/${cat.slug}`}
+                  className={`flex items-center gap-1.5 font-mono text-[10px] xl:text-[11px] uppercase tracking-wider px-2 xl:px-2.5 py-1.5 rounded-lg transition-all duration-200 text-text-secondary hover:text-text-primary hover:bg-white/5 border border-transparent hover:border-white/10 whitespace-nowrap ${
+                    activeCategoryHover === cat.slug ? 'text-text-primary bg-white/10 border-white/15' : ''
+                  }`}
+                >
+                  <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: cat.color }} />
+                  {cat.slug === 'vfx-pipeline' ? (
+                    <>
+                      <span className="2xl:hidden">VFX</span>
+                      <span className="hidden 2xl:inline">VFX & Pipeline</span>
+                    </>
+                  ) : cat.slug === 'film-tools' ? (
+                    <>
+                      <span className="xl:hidden">Tools</span>
+                      <span className="hidden xl:inline">Film Tools</span>
+                    </>
+                  ) : cat.slug === 'ai-in-film' ? (
+                    <>
+                      <span className="xl:hidden">AI</span>
+                      <span className="hidden xl:inline">AI in Film</span>
+                    </>
+                  ) : (
+                    cat.name
+                  )}
+                </Link>
+              </div>
+            ))}
+
+            {/* Secondary Categories (Visible on xl+ screens, cleanly folded into "More" on lg) */}
+            {secondaryCategories.map((cat) => (
+              <div
+                key={cat.slug}
+                className="relative py-2 shrink-0 hidden xl:block"
                 onMouseEnter={() => handleMouseEnterCategory(cat.slug)}
               >
                 <Link
@@ -100,11 +152,6 @@ export default function Navbar() {
                       <span className="2xl:hidden">Sound</span>
                       <span className="hidden 2xl:inline">Sound & Music</span>
                     </>
-                  ) : cat.slug === 'vfx-pipeline' ? (
-                    <>
-                      <span className="2xl:hidden">VFX</span>
-                      <span className="hidden 2xl:inline">VFX & Pipeline</span>
-                    </>
                   ) : (
                     cat.name
                   )}
@@ -112,8 +159,66 @@ export default function Navbar() {
               </div>
             ))}
 
-            {/* Features & Formats Dropdown */}
-            <div className="relative py-2 shrink-0 group">
+            {/* On lg viewports (1024-1279px): Sleek "More" Dropdown combining Secondary Categories + Features */}
+            <div className="relative py-2 shrink-0 group xl:hidden">
+              <button
+                type="button"
+                className="flex items-center gap-1 font-mono text-[10px] uppercase tracking-wider px-2 py-1.5 rounded-lg transition-all duration-200 text-text-secondary hover:text-text-primary hover:bg-white/5 border border-transparent hover:border-white/10 whitespace-nowrap"
+              >
+                <span>More</span>
+                <svg className="w-3 h-3 text-text-secondary/60 group-hover:text-text-primary transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              <div className="absolute right-0 top-full pt-1 hidden group-hover:block z-50 min-w-[220px]">
+                <div className="p-2 bg-[#0B0D13] border border-border-subtle rounded-xl shadow-2xl flex flex-col gap-1">
+                  <div className="px-2 py-1 text-[9px] font-mono uppercase tracking-wider text-text-secondary/50 font-bold">
+                    Production Pillars
+                  </div>
+                  {secondaryCategories.map((cat) => (
+                    <Link
+                      key={cat.slug}
+                      href={`/category/${cat.slug}`}
+                      className="flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-mono text-text-secondary hover:text-text-primary hover:bg-white/5 transition-colors"
+                    >
+                      <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: cat.color }} />
+                      <span>{cat.name}</span>
+                    </Link>
+                  ))}
+
+                  <div className="h-px bg-white/[0.08] my-1" />
+
+                  <div className="px-2 py-1 text-[9px] font-mono uppercase tracking-wider text-text-secondary/50 font-bold">
+                    Features & Formats
+                  </div>
+                  <Link
+                    href="/breakdowns"
+                    className="flex items-center justify-between px-3 py-2 rounded-lg text-xs font-mono text-text-secondary hover:text-accent-violet hover:bg-white/5 transition-colors"
+                  >
+                    <span>Breakdowns</span>
+                    <span className="text-[9px] text-accent-violet font-semibold">Deep Dive</span>
+                  </Link>
+                  <Link
+                    href="/reviews"
+                    className="flex items-center justify-between px-3 py-2 rounded-lg text-xs font-mono text-text-secondary hover:text-accent-gold hover:bg-white/5 transition-colors"
+                  >
+                    <span>Reviews</span>
+                    <span className="text-[9px] text-accent-gold font-semibold">Hands-on</span>
+                  </Link>
+                  <Link
+                    href="/tools"
+                    className="flex items-center justify-between px-3 py-2 rounded-lg text-xs font-mono text-text-secondary hover:text-accent-lime hover:bg-white/5 transition-colors"
+                  >
+                    <span>Tools Matrix</span>
+                    <span className="text-[9px] text-accent-lime font-semibold">Database</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* On xl+ viewports (1280px+): Dedicated Features Dropdown */}
+            <div className="relative py-2 shrink-0 group hidden xl:block">
               <button
                 type="button"
                 className="flex items-center gap-1 font-mono text-[10px] xl:text-[11px] uppercase tracking-wider px-2 xl:px-2.5 py-1.5 rounded-lg transition-all duration-200 text-text-secondary hover:text-text-primary hover:bg-white/5 border border-transparent hover:border-white/10 whitespace-nowrap"
@@ -125,7 +230,7 @@ export default function Navbar() {
               </button>
 
               <div className="absolute right-0 top-full pt-1 hidden group-hover:block z-50 min-w-[200px]">
-                <div className="p-2 bg-bg-elevated/95 backdrop-blur-2xl border border-border-subtle rounded-xl shadow-2xl flex flex-col gap-1">
+                <div className="p-2 bg-[#0B0D13] border border-border-subtle rounded-xl shadow-2xl flex flex-col gap-1">
                   <Link
                     href="/breakdowns"
                     className="flex items-center justify-between px-3 py-2 rounded-lg text-xs font-mono text-text-secondary hover:text-accent-violet hover:bg-white/5 transition-colors"
@@ -153,21 +258,21 @@ export default function Navbar() {
           </div>
 
           {/* Right Actions */}
-          <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
+          <div className="flex items-center gap-1.5 sm:gap-2 xl:gap-2.5 shrink-0">
             {/* Search Trigger */}
             <button
               onClick={() => {
                 setSearchOpen(true);
                 setSearchQuery('');
               }}
-              className="flex items-center gap-2 text-meta text-text-secondary hover:text-text-primary transition-colors px-3 py-1.5 rounded-lg border border-border-subtle/60 hover:border-border-subtle bg-bg-card/40 hover:bg-bg-card/80"
+              className="flex items-center gap-1.5 xl:gap-2 text-meta text-text-secondary hover:text-text-primary transition-colors px-2 sm:px-2.5 xl:px-3 py-1.5 rounded-lg border border-border-subtle/60 hover:border-border-subtle bg-bg-card/40 hover:bg-bg-card/80 shrink-0"
               aria-label="Search site"
             >
-              <svg className="w-4 h-4 text-accent-cyan" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+              <svg className="w-4 h-4 text-accent-cyan shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
               </svg>
-              <span className="hidden sm:inline text-xs text-text-secondary">Search</span>
-              <kbd className="hidden sm:inline text-[10px] font-mono px-1.5 py-0.5 rounded bg-white/5 text-text-secondary/80 border border-white/10">
+              <span className="hidden xl:inline text-xs text-text-secondary">Search</span>
+              <kbd className="hidden 2xl:inline text-[10px] font-mono px-1.5 py-0.5 rounded bg-white/5 text-text-secondary/80 border border-white/10">
                 ⌘K
               </kbd>
             </button>
@@ -175,16 +280,16 @@ export default function Navbar() {
             {/* AI Studio Trigger */}
             <Link
               href="/studio"
-              className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 rounded-lg border border-accent-cyan/40 bg-accent-cyan/10 hover:bg-accent-cyan/20 text-accent-cyan font-bold transition-all shadow-sm shadow-accent-cyan/10 group"
+              className="flex items-center gap-1.5 font-mono text-[10px] xl:text-[11px] uppercase tracking-wider px-2.5 xl:px-3 py-1.5 rounded-lg border border-accent-cyan/40 bg-accent-cyan/10 hover:bg-accent-cyan/20 text-accent-cyan font-bold transition-all shadow-sm shadow-accent-cyan/10 group whitespace-nowrap shrink-0"
             >
-              <span className="w-2 h-2 rounded-full bg-accent-cyan animate-pulse group-hover:scale-125 transition-transform" />
+              <span className="w-2 h-2 rounded-full bg-accent-cyan animate-pulse group-hover:scale-125 transition-transform shrink-0" />
               <span>AI Studio</span>
             </Link>
 
             {/* Subscribe Button */}
             <Link
               href="/newsletter"
-              className="hidden sm:flex items-center gap-2 bg-accent-primary hover:bg-accent-primary/90 !text-white px-4 py-2 rounded-full transition-all duration-300 font-mono text-[11px] font-bold uppercase tracking-wider shadow-lg shadow-accent-primary/25 border border-white/25 hover:border-white/50 hover:scale-[1.02] select-none"
+              className="hidden sm:flex items-center gap-1.5 xl:gap-2 bg-accent-primary hover:bg-accent-primary/90 !text-white px-3 xl:px-4 py-1.5 xl:py-2 rounded-full transition-all duration-300 font-mono text-[10px] xl:text-[11px] font-bold uppercase tracking-wider shadow-lg shadow-accent-primary/25 border border-white/25 hover:border-white/50 hover:scale-[1.02] select-none whitespace-nowrap shrink-0"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse shadow-sm shadow-white shrink-0" />
               <span className="!text-white font-bold tracking-wider">Subscribe</span>
@@ -193,7 +298,7 @@ export default function Navbar() {
             {/* Mobile Menu Toggle */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden flex flex-col justify-center items-center gap-1.5 p-2 rounded-lg bg-bg-card/40 border border-border-subtle"
+              className="lg:hidden flex flex-col justify-center items-center gap-1.5 p-2 rounded-lg bg-bg-card/40 border border-border-subtle shrink-0"
               aria-label="Toggle Navigation Menu"
             >
               <motion.span
@@ -215,25 +320,26 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Mega Menu Dropdown on Category Hover */}
+        {/* Mega Menu Dropdown on Category Hover - Solid 100% Opaque Obsidian Background */}
         <AnimatePresence>
           {activeCategoryHover && (
             <motion.div
-              initial={{ opacity: 0, y: -8 }}
+              initial={{ opacity: 0, y: -6 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -8 }}
-              transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="hidden lg:block absolute left-0 right-0 top-16 bg-bg-elevated/95 backdrop-blur-2xl border-b border-t border-border-subtle shadow-2xl z-30"
+              exit={{ opacity: 0, y: -6 }}
+              transition={{ duration: 0.18, ease: [0.22, 1, 0.36, 1] }}
+              className="hidden lg:block absolute left-0 right-0 top-16 bg-[#0B0D13] border-b border-border-subtle shadow-2xl shadow-black/95 z-50"
               onMouseEnter={() => {
                 if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
+                if (enterTimeoutRef.current) clearTimeout(enterTimeoutRef.current);
               }}
               onMouseLeave={handleMouseLeaveCategory}
             >
-              <div className="max-w-[1440px] mx-auto px-8 py-6">
-                <div className="flex items-center justify-between mb-4 pb-2 border-b border-white/[0.06]">
+              <div className="max-w-[1440px] mx-auto px-4 md:px-6 xl:px-8 py-6">
+                <div className="flex items-center justify-between mb-4 pb-2 border-b border-white/[0.08]">
                   <div className="flex items-center gap-2">
-                    <span className="font-mono text-xs uppercase tracking-widest text-accent-cyan">
-                      Scene / {activeCategoryHover.toUpperCase()}
+                    <span className="font-mono text-xs uppercase tracking-widest text-accent-cyan font-bold">
+                      Scene / {activeCategoryHover.toUpperCase().replace(/-/g, ' ')}
                     </span>
                     <span className="text-text-secondary/40">&bull;</span>
                     <span className="text-xs text-text-secondary">Latest Stories & Intelligence</span>
@@ -241,9 +347,9 @@ export default function Navbar() {
                   <Link
                     href={`/category/${activeCategoryHover}`}
                     onClick={() => setActiveCategoryHover(null)}
-                    className="text-xs font-mono text-accent-primary hover:underline flex items-center gap-1"
+                    className="text-xs font-mono text-accent-primary hover:underline flex items-center gap-1 font-semibold"
                   >
-                    View All {activeCategoryHover.toUpperCase()} &rarr;
+                    View All {activeCategoryHover.toUpperCase().replace(/-/g, ' ')} &rarr;
                   </Link>
                 </div>
 
@@ -253,7 +359,7 @@ export default function Navbar() {
                       key={art.slug}
                       href={`/article/${art.slug}`}
                       onClick={() => setActiveCategoryHover(null)}
-                      className="group flex gap-4 p-3 rounded-xl bg-white/[0.02] hover:bg-white/[0.05] border border-transparent hover:border-border-subtle transition-all duration-300"
+                      className="group flex gap-4 p-3 rounded-xl bg-white/[0.03] hover:bg-white/[0.07] border border-white/[0.06] hover:border-border-subtle transition-all duration-300"
                     >
                       <div className="w-24 h-16 shrink-0 relative rounded-lg overflow-hidden bg-bg-card">
                         <Image

@@ -6,7 +6,7 @@ export default function TickerBar() {
   const doubled = [...breakingHeadlines, ...breakingHeadlines];
 
   return (
-    <div className="bg-bg-base border-b border-border-subtle overflow-hidden h-9 flex items-center relative z-50">
+    <div className="w-full max-w-full bg-bg-base border-b border-border-subtle overflow-hidden h-9 flex items-center relative z-50">
       <div className="flex items-center gap-2 px-4 shrink-0">
         <span className="flex items-center gap-1.5 text-meta">
           <span className="relative flex h-2 w-2">

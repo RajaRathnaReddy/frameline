@@ -43,13 +43,17 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 100%;
+  overflow-x: clip;
 }
 
 body {
   font-family: var(--font-display);
   background-color: var(--color-bg-base);
   color: var(--color-text-primary);
-  overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: clip;
+  position: relative;
 }
 
 ::selection {
