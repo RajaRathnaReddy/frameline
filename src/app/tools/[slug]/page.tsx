@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { tools, articles, getToolBySlug } from '@/lib/data';
+import { getAffiliateOfferForTool } from '@/lib/affiliates';
 import type { Metadata } from 'next';
 
 export function generateStaticParams() {
@@ -36,6 +37,8 @@ export default async function ToolProfilePage({
   if (!tool) {
     notFound();
   }
+
+  const affiliateOffer = getAffiliateOfferForTool(slug);
 
   // Find related articles that mention this tool
   const relatedArticles = articles.filter(
@@ -99,18 +102,40 @@ export default async function ToolProfilePage({
                 </span>
               </div>
               <a
-                href={tool.website}
+                href={affiliateOffer?.url || tool.website}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel={affiliateOffer ? 'sponsored noopener noreferrer' : 'noopener noreferrer'}
                 className="bg-accent-primary hover:bg-accent-primary/90 text-white font-mono text-xs uppercase px-5 py-3 rounded-full font-bold transition-all shadow-lg shadow-accent-primary/20 hover:scale-105 flex items-center gap-2"
               >
-                <span>Visit Official Site</span>
+                <span>{affiliateOffer ? affiliateOffer.ctaText : 'Visit Official Site'}</span>
                 <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                 </svg>
               </a>
             </div>
           </div>
+
+          {/* Studio Partner Deal Perk Banner */}
+          {affiliateOffer && (
+            <div className="mt-6 p-4 rounded-xl bg-accent-gold/10 border border-accent-gold/30 flex items-center justify-between gap-4 flex-wrap">
+              <div className="flex items-center gap-2">
+                <span className="text-accent-gold font-bold font-mono text-xs uppercase">
+                  ⚡ {affiliateOffer.badge}:
+                </span>
+                <span className="text-text-primary text-sm font-serif">
+                  {affiliateOffer.perk}
+                </span>
+              </div>
+              <a
+                href={affiliateOffer.url}
+                target="_blank"
+                rel="sponsored noopener noreferrer"
+                className="text-xs font-mono font-bold uppercase text-accent-gold hover:underline whitespace-nowrap"
+              >
+                Claim Deal &rarr;
+              </a>
+            </div>
+          )}
 
           {/* Overview Text */}
           <div className="mt-8">

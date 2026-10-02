@@ -11,6 +11,9 @@ import ReadingProgress from './ReadingProgress';
 import TableOfContents from './TableOfContents';
 import { ScrollReveal } from '@/components/motion';
 import { useMemo } from 'react';
+import { getAffiliateOfferForCategory } from '@/lib/affiliates';
+import IndustrySponsorCard from '@/components/monetization/IndustrySponsorCard';
+import IndustrySponsorSidebar from '@/components/monetization/IndustrySponsorSidebar';
 
 function slugify(text: string): string {
   return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
@@ -105,6 +108,7 @@ function parseBody(body: string): { html: string; headings: { id: string; text: 
 
 export default function ArticleContent({ article }: { article: Article }) {
   const { html, headings } = useMemo(() => parseBody(article.body), [article.body]);
+  const sponsorOffer = useMemo(() => getAffiliateOfferForCategory(article.category), [article.category]);
 
   const relatedArticles = articles
     .filter(a => a.slug !== article.slug)
@@ -262,9 +266,12 @@ export default function ArticleContent({ article }: { article: Article }) {
         {/* Body + TOC */}
         <div className="max-w-[1440px] mx-auto px-4 md:px-8 pb-16">
           <div className="flex gap-12 max-w-5xl mx-auto">
-            {/* TOC (desktop only) */}
+            {/* TOC & Sticky Partner Sponsor (desktop only) */}
             <aside className="hidden lg:block w-64 shrink-0">
-              <TableOfContents headings={headings} />
+              <div className="sticky top-24 space-y-6">
+                <TableOfContents headings={headings} />
+                <IndustrySponsorSidebar offer={sponsorOffer} category={article.category} />
+              </div>
             </aside>
 
             {/* Article body */}
@@ -331,6 +338,9 @@ export default function ArticleContent({ article }: { article: Article }) {
                     </p>
                   </div>
                 )}
+
+                {/* Industry Pipeline Partner & Monetization Spotlight */}
+                <IndustrySponsorCard offer={sponsorOffer} category={article.category} />
               </ScrollReveal>
             </div>
           </div>

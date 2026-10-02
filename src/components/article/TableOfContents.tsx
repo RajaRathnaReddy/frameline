@@ -33,7 +33,7 @@ export default function TableOfContents({ headings }: { headings: TOCItem[] }) {
   if (headings.length === 0) return null;
 
   return (
-    <nav className="sticky top-24" aria-label="Table of contents">
+    <nav aria-label="Table of contents">
       <h4 className="text-meta text-text-secondary/50 mb-4">ON THIS PAGE</h4>
       <div className="flex flex-col gap-1">
         {headings.map(({ id, text }) => (

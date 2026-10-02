@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { tools } from '@/lib/data';
+import { getAffiliateOfferForTool } from '@/lib/affiliates';
 import { ScrollReveal, StaggerContainer, StaggerItem } from '@/components/motion';
 
 const toolCategories = ['All', 'Compositing', '3D', 'Rendering', 'AI Video', 'Upscaling', 'Virtual Production', 'Color', 'Editing'];
@@ -114,12 +115,19 @@ export default function ToolsContent() {
                       <div className="text-3xl p-2 rounded-xl bg-white/[0.03] border border-white/[0.06] group-hover:scale-110 transition-transform">
                         {tool.logo}
                       </div>
-                      <span className={`text-meta text-[10px] px-2 py-0.5 rounded-full ${
-                        tool.pricing === 'Free' ? 'pill-live' :
-                        tool.pricing === 'Open Source' ? 'pill-beta' : 'text-text-secondary border border-border-subtle'
-                      }`}>
-                        {tool.pricing.toUpperCase()}
-                      </span>
+                      <div className="flex items-center gap-1.5 flex-wrap justify-end">
+                        {getAffiliateOfferForTool(tool.slug) && (
+                          <span className="text-meta text-[9px] px-2 py-0.5 rounded-full bg-accent-gold/15 text-accent-gold border border-accent-gold/30 font-bold">
+                            ⚡ DEAL
+                          </span>
+                        )}
+                        <span className={`text-meta text-[10px] px-2 py-0.5 rounded-full ${
+                          tool.pricing === 'Free' ? 'pill-live' :
+                          tool.pricing === 'Open Source' ? 'pill-beta' : 'text-text-secondary border border-border-subtle'
+                        }`}>
+                          {tool.pricing.toUpperCase()}
+                        </span>
+                      </div>
                     </div>
 
                     <h3 className="font-display font-semibold text-text-primary text-lg mb-1 group-hover:text-accent-lime transition-colors">
