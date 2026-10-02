@@ -95,6 +95,11 @@ export default function Navbar() {
                       <span className="2xl:hidden">Virtual Prod</span>
                       <span className="hidden 2xl:inline">Virtual Production</span>
                     </>
+                  ) : cat.slug === 'music' ? (
+                    <>
+                      <span className="2xl:hidden">Sound</span>
+                      <span className="hidden 2xl:inline">Sound & Music</span>
+                    </>
                   ) : cat.slug === 'vfx-pipeline' ? (
                     <>
                       <span className="2xl:hidden">VFX</span>

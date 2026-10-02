@@ -9,8 +9,9 @@ import { vfxArticles } from './data/categories/vfx';
 import { toolsArticles } from './data/categories/tools';
 import { virtualProductionArticles } from './data/categories/virtualProduction';
 import { techArticles } from './data/categories/tech';
+import { musicArticles } from './data/categories/music';
 
-// ─── ARTICLES (600 Top Non-Repeating Curated Articles across 6 Categories) ───
+// ─── ARTICLES (630 Top Curated Industry Articles across 7 Pillars) ───
 export const articles: Article[] = [
   ...hollywoodArticles,
   ...aiArticles,
@@ -18,6 +19,7 @@ export const articles: Article[] = [
   ...toolsArticles,
   ...virtualProductionArticles,
   ...techArticles,
+  ...musicArticles,
 ];
 
 // ─── TOOLS ───
@@ -163,6 +165,7 @@ export const categories: Category[] = [
   { name: 'VFX & Pipeline', slug: 'vfx', color: 'var(--color-accent-violet)', cssClass: 'cat-vfx' },
   { name: 'Film Tools', slug: 'tools', color: 'var(--color-accent-lime)', cssClass: 'cat-tools' },
   { name: 'Virtual Production', slug: 'virtual-production', color: 'var(--color-accent-orange)', cssClass: 'cat-virtual-production' },
+  { name: 'Sound & Music', slug: 'music', color: '#EC4899', cssClass: 'cat-music' },
   { name: 'Technology', slug: 'tech', color: 'var(--color-text-primary)', cssClass: 'cat-tech' },
 ];
 

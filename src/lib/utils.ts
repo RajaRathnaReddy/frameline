@@ -41,6 +41,7 @@ export function getCategoryColor(categorySlug: string): string {
     tools: '#B4F34A',
     'virtual-production': '#FF8C42',
     tech: '#F2F2F0',
+    music: '#EC4899',
   };
   return colorMap[categorySlug] || '#F2F2F0';
 }

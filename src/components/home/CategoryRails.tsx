@@ -28,7 +28,7 @@ export default function CategoryRails() {
               <h2 className="text-meta text-text-secondary">CATEGORY BEATS & DISPATCHES</h2>
             </div>
             <h3 className="text-fluid-h2 font-display text-text-primary">
-              The Six Production Pillars
+              Production Pillars & Creative Tech
             </h3>
           </div>
 
