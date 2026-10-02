@@ -5,7 +5,7 @@ export const hollywoodArticles: Article[] = [
   {
     title: "The New Frame: How AI, Real-Time Engines and an Adobe Deal Are Changing Hollywood in Late 2026",
     slug: "the-new-frame-how-ai-real-time-engines-and-an-adobe-deal-are-changing-hollywood-in-late-2026",
-    dek: "Inside Hollywood's evolving business model: examining The New Frame and the strategic industry impact of how ai, real-time engines and an adobe deal are changing hollywood in late 2026.",
+    dek: "An executive briefing on AI cinema, VFX pipelines, and how modern films get made—from Cannes indie breakthroughs to Netflix's $587M acquisition and real-time studio workflows.",
     heroImage: "/images/article-netflix.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -44,7 +44,7 @@ By streamlining production friction, studios can reallocate capital where it mat
 The developments seen in **The New Frame** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
       title: "The New Frame: How AI, Real-Time Engines and an Adobe Deal Are Changing Hollywood in Late 2026 | FRAMELINE",
-      desc: "Inside Hollywood's evolving business model: examining The New Frame and the strategic industry impact of how ai, real-time engines and an adobe deal are changing hollywood in late 2026.",
+      desc: "An executive briefing on AI cinema, VFX pipelines, and how modern films get made—from Cannes indie breakthroughs to Netflix's $587M acquisition and real-time studio workflows.",
       ogImage: "/images/article-netflix.jpg",
     },
   },

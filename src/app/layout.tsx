@@ -3,7 +3,6 @@ import "./globals.css";
 import TickerBar from "@/components/layout/TickerBar";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import CustomCursor from "@/components/layout/CustomCursor";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://vfx.rajarathnareddy.com'),
@@ -91,7 +90,6 @@ export default function RootLayout({
         >
           Skip to main content
         </a>
-        <CustomCursor />
         <TickerBar />
         <Navbar />
         <main id="main-content">{children}</main>
