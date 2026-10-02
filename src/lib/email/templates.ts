@@ -225,7 +225,7 @@ export function getWelcomeEmailHtml(name?: string): string {
         </div>
 
         <div style="text-align: center; margin: 30px 0;">
-          <a href="http://localhost:3000/news" class="cta-button">Access Today's Latest Intelligence &rarr;</a>
+          <a href="https://vfx.rajarathnareddy.com/news" class="cta-button">Access Today's Latest Intelligence &rarr;</a>
         </div>
 
         <!-- Author Signature -->
@@ -246,7 +246,7 @@ export function getWelcomeEmailHtml(name?: string): string {
           FRAMELINE &bull; Published by Raja Rathna Reddy &bull; High-Throughput Studio Intelligence
         </p>
         <p style="margin: 0;">
-          You received this email because you subscribed on <a href="https://rajarathnareddy.com">rajarathnareddy.com</a> or FRAMELINE.
+          You received this email because you subscribed on <a href="https://vfx.rajarathnareddy.com">vfx.rajarathnareddy.com</a> or FRAMELINE.
         </p>
       </div>
     </div>
@@ -262,7 +262,7 @@ export function getWeeklyDigestHtml(articles: any[]): string {
         ${(a.category || 'INDUSTRY').toUpperCase()} &bull; ${a.readTime || 7} MIN READ
       </div>
       <h3 style="margin: 0 0 8px 0; font-size: 17px; color: #FFFFFF; font-weight: 700;">
-        <a href="http://localhost:3000/article/${a.slug}" style="color: #FFFFFF; text-decoration: none;">
+        <a href="https://vfx.rajarathnareddy.com/article/${a.slug}" style="color: #FFFFFF; text-decoration: none;">
           ${a.title}
         </a>
       </h3>
@@ -292,7 +292,7 @@ export function getWeeklyDigestHtml(articles: any[]): string {
         </p>
         ${articlesHtml}
         <div style="text-align: center; margin-top: 30px;">
-          <a href="http://localhost:3000/news" style="display: inline-block; background-color: #E63946; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 12px; font-family: monospace; letter-spacing: 1px; text-transform: uppercase; padding: 12px 24px; border-radius: 6px;">Read All 600 Catalog Reports &rarr;</a>
+          <a href="https://vfx.rajarathnareddy.com/news" style="display: inline-block; background-color: #E63946; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 12px; font-family: monospace; letter-spacing: 1px; text-transform: uppercase; padding: 12px 24px; border-radius: 6px;">Read All 600 Catalog Reports &rarr;</a>
         </div>
       </div>
       <div style="background-color: #0A0B0D; padding: 20px; border-top: 1px solid #1C2025; font-size: 11px; color: #64748B; font-family: monospace; text-align: center;">

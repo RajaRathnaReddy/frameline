@@ -205,7 +205,7 @@ export default function AdvertisePage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto shrink-0">
               <a
-                href="mailto:a.rajarathnareddychenni@gmail.com?subject=FRAMELINE%20Advertising%20%26%20Partnership"
+                href="mailto:vfx@rajarathnareddy.com?subject=FRAMELINE%20Advertising%20%26%20Partnership"
                 className="px-5 py-3 rounded-xl bg-accent-gold text-black font-mono text-xs uppercase font-bold text-center hover:bg-accent-gold/90 transition-all shadow-md flex items-center justify-center gap-2"
               >
                 <span>✉ Email Desk</span>
@@ -221,7 +221,7 @@ export default function AdvertisePage() {
             </div>
           </div>
           <div className="mt-6 pt-4 border-t border-white/[0.06] flex flex-wrap items-center justify-between gap-2 text-xs font-mono text-text-secondary/70">
-            <span>Official Email: a.rajarathnareddychenni@gmail.com</span>
+            <span>Official Email: vfx@rajarathnareddy.com</span>
             <span>Direct Phone / WhatsApp: +91 97045 06779</span>
           </div>
         </div>

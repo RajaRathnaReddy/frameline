@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { addSubscriber } from '@/lib/email/subscribers';
-import { sendWelcomeEmail } from '@/lib/email/mailer';
+import { sendWelcomeEmail, notifyAdminNewSubscriber } from '@/lib/email/mailer';
 
 export async function POST(request: Request) {
   try {
@@ -32,6 +32,13 @@ export async function POST(request: Request) {
     } catch (mailError: any) {
       console.error('Welcome email dispatch error:', mailError);
       welcomeStatus = { success: false, error: mailError?.message || 'SMTP delivery delayed' };
+    }
+
+    // Alert admin of new subscriber so no subscriber is ever lost
+    if (isNew) {
+      notifyAdminNewSubscriber(subscriber.email, subscriber.name, source || 'website').catch(err => {
+        console.error('Admin notification dispatch error:', err);
+      });
     }
 
     return NextResponse.json({

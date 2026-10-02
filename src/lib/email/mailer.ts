@@ -45,13 +45,46 @@ export async function sendWelcomeEmail(
       to: toEmail,
       subject: 'Welcome to FRAMELINE Intelligence — Scene 01 / Dispatch 01',
       html,
-      text: `Welcome to FRAMELINE Intelligence. Published by Raja Rathna Reddy (FX Pipeline TD & AI Architect). Access our daily briefings at http://localhost:3000/news`,
+      text: `Welcome to FRAMELINE Intelligence. Published by Raja Rathna Reddy (FX Pipeline TD & AI Architect). Access our daily briefings at https://vfx.rajarathnareddy.com/news`,
     });
 
     return { success: true, messageId: info.messageId };
   } catch (error: any) {
     console.error(`Failed to send welcome email to ${toEmail}:`, error);
     return { success: false, error: error?.message || 'Failed to dispatch welcome email.' };
+  }
+}
+
+export async function notifyAdminNewSubscriber(
+  subscriberEmail: string,
+  subscriberName?: string,
+  source?: string
+): Promise<{ success: boolean; error?: string }> {
+  try {
+    const transporter = createMailerTransport();
+    await transporter.sendMail({
+      from: FROM_ADDRESS,
+      to: 'vfx@rajarathnareddy.com',
+      subject: `🔔 New FRAMELINE Subscriber: ${subscriberEmail}`,
+      text: `New subscriber joined FRAMELINE Intelligence:\n\nEmail: ${subscriberEmail}\nName: ${subscriberName || 'Not specified'}\nSource: ${source || 'Website'}\nTime: ${new Date().toUTCString()}\n\nView list at: https://vfx.rajarathnareddy.com/api/newsletter/subscribers?key=frameline_admin_2026`,
+      html: `
+        <div style="font-family: sans-serif; background: #08090A; color: #FFFFFF; padding: 24px; border-radius: 8px;">
+          <h2 style="color: #3EE6FF; margin-top: 0;">🔔 New FRAMELINE Subscriber!</h2>
+          <p style="font-size: 15px;">A new reader just subscribed to <strong>The Daily Render / FRAMELINE Intelligence</strong>:</p>
+          <table style="border-collapse: collapse; width: 100%; margin: 16px 0;">
+            <tr><td style="padding: 8px; color: #9BA1A9;">Email:</td><td style="padding: 8px; font-weight: bold; color: #E8B44A;">${subscriberEmail}</td></tr>
+            <tr><td style="padding: 8px; color: #9BA1A9;">Name:</td><td style="padding: 8px;">${subscriberName || 'Anonymous'}</td></tr>
+            <tr><td style="padding: 8px; color: #9BA1A9;">Source:</td><td style="padding: 8px;">${source || 'Website'}</td></tr>
+            <tr><td style="padding: 8px; color: #9BA1A9;">Date:</td><td style="padding: 8px;">${new Date().toUTCString()}</td></tr>
+          </table>
+          <p style="font-size: 13px; color: #9BA1A9; margin-top: 24px;">This notification was automatically dispatched by the FRAMELINE Newsroom Engine.</p>
+        </div>
+      `,
+    });
+    return { success: true };
+  } catch (error: any) {
+    console.error('Failed to notify admin of new subscriber:', error);
+    return { success: false, error: error?.message };
   }
 }
 
@@ -68,7 +101,7 @@ export async function sendWeeklyDigestEmail(
       to: toEmail,
       subject: `FRAMELINE Weekly Intelligence Digest — ${new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}`,
       html,
-      text: `FRAMELINE Weekly Intelligence Report curated by Raja Rathna Reddy. Read the full reports at http://localhost:3000/news`,
+      text: `FRAMELINE Weekly Intelligence Report curated by Raja Rathna Reddy. Read the full reports at https://vfx.rajarathnareddy.com/news`,
     });
 
     return { success: true, messageId: info.messageId };

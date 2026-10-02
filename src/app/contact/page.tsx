@@ -176,11 +176,11 @@ export default function ContactPage() {
               </div>
               <div className="space-y-2.5 font-mono text-xs">
                 <a
-                  href="mailto:a.rajarathnareddychenni@gmail.com"
+                  href="mailto:vfx@rajarathnareddy.com"
                   className="flex items-center gap-2 text-text-primary hover:text-accent-gold transition-colors p-2.5 rounded-lg bg-white/[0.03] border border-white/[0.06]"
                 >
                   <span className="text-accent-gold">✉</span>
-                  <span className="truncate">a.rajarathnareddychenni@gmail.com</span>
+                  <span className="truncate">vfx@rajarathnareddy.com</span>
                 </a>
                 <a
                   href="https://wa.me/919704506779"
