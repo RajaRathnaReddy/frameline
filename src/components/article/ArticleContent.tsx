@@ -458,15 +458,6 @@ export default function ArticleContent({ article }: { article: Article }) {
                         <span>Twitter</span>
                       </a>
                     )}
-                    {rajaRathnaReddy.email && (
-                      <a
-                        href={`mailto:${rajaRathnaReddy.email}`}
-                        className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider px-3.5 py-1.5 rounded-lg bg-accent-primary/10 hover:bg-accent-primary/20 text-accent-primary border border-accent-primary/30 transition-all font-semibold"
-                      >
-                        <span>✉</span>
-                        <span>{rajaRathnaReddy.email}</span>
-                      </a>
-                    )}
                   </div>
                 </div>
               </div>

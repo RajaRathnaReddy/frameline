@@ -235,7 +235,7 @@ export default function AdvertisePage() {
             </div>
           </div>
           <div className="mt-6 pt-4 border-t border-white/[0.06] flex flex-wrap items-center justify-between gap-2 text-xs font-mono text-text-secondary/70">
-            <span>Official Email: vfx@rajarathnareddy.com</span>
+            <span>Partnership Desks: Los Angeles &bull; London &bull; Vancouver</span>
             <span>Social: @raja_rathna_reddy &bull; @RAJARATNAREDDY</span>
           </div>
         </div>

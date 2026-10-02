@@ -41,9 +41,6 @@ export default function Footer() {
               <Link href="/about" className="text-text-secondary hover:text-text-primary transition-colors text-sm">About</Link>
               <Link href="/contact" className="text-text-secondary hover:text-text-primary transition-colors text-sm">Contact</Link>
               <Link href="/advertise" className="text-text-secondary hover:text-text-primary transition-colors text-sm">Advertise / Media Kit</Link>
-              <a href="mailto:vfx@rajarathnareddy.com" className="text-accent-gold hover:text-white transition-colors text-xs font-mono truncate">
-                ✉ vfx@rajarathnareddy.com
-              </a>
             </div>
           </div>
 
