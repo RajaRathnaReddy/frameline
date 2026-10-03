@@ -492,13 +492,12 @@ export function addCustomArticle(article: Article) {
   customArticles.unshift(article);
   if (typeof window !== 'undefined') {
     try {
-      const stored = JSON.parse(localStorage.getItem('renderline_custom_articles') || localStorage.getItem('frameline_custom_articles') || '[]');
+      const stored = JSON.parse(localStorage.getItem('renderline_custom_articles') || '[]');
       // Deduplicate by slug
       const filtered = stored.filter((a: Article) => a.slug !== article.slug);
       filtered.unshift(article);
       localStorage.setItem('renderline_custom_articles', JSON.stringify(filtered));
       window.dispatchEvent(new Event('renderline_articles_updated'));
-      window.dispatchEvent(new Event('frameline_articles_updated'));
     } catch {
       // fallback
     }

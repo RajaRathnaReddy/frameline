@@ -3,13 +3,13 @@ import "./globals.css";
 import TickerBar from "@/components/layout/TickerBar";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { SITE_NAME, SITE_SHORT, SITE_TAGLINE, SITE_URL, SITE_DESCRIPTION } from "@/lib/config";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://vfx.rajarathnareddy.com'),
-  title: "RENDERLINE — AI · VFX · Hollywood · Film Technology",
-  description:
-    "The premium news platform for film technology, visual effects, AI in cinema, virtual production, and Hollywood industry coverage.",
-  keywords: ["VFX", "AI", "Hollywood", "film technology", "virtual production", "visual effects", "RenderLine"],
+  metadataBase: new URL(SITE_URL),
+  title: `${SITE_NAME} — ${SITE_TAGLINE}`,
+  description: SITE_DESCRIPTION,
+  keywords: ["VFX", "AI", "Hollywood", "film technology", "virtual production", "visual effects", SITE_NAME, SITE_SHORT],
   icons: {
     icon: [
       { url: '/icon.svg?v=2', type: 'image/svg+xml' },
@@ -20,19 +20,19 @@ export const metadata: Metadata = {
     apple: '/apple-icon.png?v=2',
   },
   alternates: {
-    canonical: 'https://vfx.rajarathnareddy.com',
+    canonical: SITE_URL,
   },
   openGraph: {
-    title: "RENDERLINE — AI · VFX · Hollywood · Film Technology",
-    description:
-      "The premium news platform for film technology, visual effects, AI in cinema, virtual production, and Hollywood industry coverage.",
+    title: `${SITE_NAME} — ${SITE_TAGLINE}`,
+    description: SITE_DESCRIPTION,
     type: "website",
-    siteName: "RENDERLINE",
+    siteName: SITE_NAME,
+    url: SITE_URL,
   },
   twitter: {
     card: "summary_large_image",
-    title: "RENDERLINE",
-    description: "AI · VFX · Hollywood · Film Technology",
+    title: `${SITE_NAME} — ${SITE_TAGLINE}`,
+    description: SITE_TAGLINE,
   },
 };
 
@@ -41,45 +41,45 @@ const siteJsonLd = {
   "@graph": [
     {
       "@type": "WebSite",
-      "@id": "https://vfx.rajarathnareddy.com/#website",
-      "url": "https://vfx.rajarathnareddy.com",
-      "name": "RENDERLINE",
-      "alternateName": ["RenderLine", "Frameline", "RENDERLINE Film Technology"],
-      "description": "The premium news platform for film technology, visual effects, AI in cinema, virtual production, and Hollywood industry coverage.",
+      "@id": `${SITE_URL}/#website`,
+      "url": SITE_URL,
+      "name": SITE_NAME,
+      "alternateName": [SITE_SHORT, "RenderLine"],
+      "description": SITE_DESCRIPTION,
       "publisher": {
-        "@id": "https://vfx.rajarathnareddy.com/#organization"
+        "@id": `${SITE_URL}/#organization`
       },
       "inLanguage": "en-US",
       "potentialAction": {
         "@type": "SearchAction",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "https://vfx.rajarathnareddy.com/search?q={search_term_string}"
+          "urlTemplate": `${SITE_URL}/search?q={search_term_string}`
         },
         "query-input": "required name=search_term_string"
       }
     },
     {
       "@type": "NewsMediaOrganization",
-      "@id": "https://vfx.rajarathnareddy.com/#organization",
-      "name": "RENDERLINE",
-      "alternateName": ["Frameline"],
-      "url": "https://vfx.rajarathnareddy.com",
+      "@id": `${SITE_URL}/#organization`,
+      "name": SITE_NAME,
+      "alternateName": [SITE_SHORT],
+      "url": SITE_URL,
       "logo": {
         "@type": "ImageObject",
-        "@id": "https://vfx.rajarathnareddy.com/#logo",
-        "url": "https://vfx.rajarathnareddy.com/renderline-logo.png",
-        "contentUrl": "https://vfx.rajarathnareddy.com/renderline-logo.png",
-        "caption": "RENDERLINE",
+        "@id": `${SITE_URL}/#logo`,
+        "url": `${SITE_URL}/renderline-logo.png`,
+        "contentUrl": `${SITE_URL}/renderline-logo.png`,
+        "caption": SITE_NAME,
         "width": 512,
         "height": 512
       },
-      "image": "https://vfx.rajarathnareddy.com/renderline-logo.png",
-      "description": "The premium news platform for film technology, visual effects, AI in cinema, virtual production, and Hollywood industry coverage.",
+      "image": `${SITE_URL}/renderline-logo.png`,
+      "description": SITE_DESCRIPTION,
       "founder": {
         "@type": "Person",
         "name": "Raja Rathna Reddy",
-        "jobTitle": "FX Pipeline TD & AI Architect • Founder, RENDERLINE",
+        "jobTitle": `FX Pipeline TD & AI Architect • Founder, ${SITE_NAME}`,
         "url": "https://rajarathnareddy.com",
         "sameAs": [
           "https://rajarathnareddy.com",

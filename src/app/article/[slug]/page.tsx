@@ -3,6 +3,7 @@ import { articles } from '@/lib/data';
 import ArticleContent from '@/components/article/ArticleContent';
 import ArticleClientLoader from '@/components/article/ArticleClientLoader';
 import type { Metadata } from 'next';
+import { SITE_NAME, SITE_URL } from '@/lib/config';
 
 interface ArticlePageProps {
   params: Promise<{ slug: string }>;
@@ -17,27 +18,29 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: ArticlePageProps): Promise<Metadata> {
   const { slug } = await params;
   if (slug.includes('toxic') || slug.includes('the-boys') || slug.includes('kalki')) {
-    return { title: '404 - Not Found | RENDERLINE' };
+    return { title: `404 - Not Found | ${SITE_NAME}` };
   }
   const article = articles.find((a) => a.slug === slug);
-  if (!article) return { title: '404 - Not Found | RENDERLINE' };
+  if (!article) return { title: `404 - Not Found | ${SITE_NAME}` };
 
-  const articleUrl = `https://vfx.rajarathnareddy.com/article/${article.slug}`;
+  const articleUrl = `${SITE_URL}/article/${article.slug}`;
   const ogImageUrl = article.seo.ogImage.startsWith('http')
     ? article.seo.ogImage
-    : `https://vfx.rajarathnareddy.com${article.seo.ogImage}`;
+    : `${SITE_URL}${article.seo.ogImage}`;
+
+  const pageTitle = `${article.title} | ${SITE_NAME}`;
 
   return {
-    title: article.seo.title,
+    title: pageTitle,
     description: article.seo.desc,
     alternates: {
       canonical: articleUrl,
     },
     openGraph: {
-      title: article.seo.title,
+      title: pageTitle,
       description: article.seo.desc,
       url: articleUrl,
-      siteName: 'RENDERLINE',
+      siteName: SITE_NAME,
       type: 'article',
       images: [
         {
@@ -52,7 +55,7 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
     },
     twitter: {
       card: 'summary_large_image',
-      title: article.seo.title,
+      title: pageTitle,
       description: article.seo.desc,
       images: [ogImageUrl],
     },

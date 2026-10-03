@@ -1,5 +1,6 @@
 import { Article } from './types';
 import type { Metadata } from 'next';
+import { SITE_NAME, SITE_URL } from './config';
 
 /**
  * Known Film, AI, VFX, and Virtual Production keywords dictionary
@@ -65,7 +66,7 @@ export function extractAutonomousTags(body: string, category: string): { tags: s
 /**
  * Generate Google-compliant JSON-LD structured data for articles
  */
-export function generateArticleJsonLd(article: Article, siteUrl: string = 'https://vfx.rajarathnareddy.com') {
+export function generateArticleJsonLd(article: Article, siteUrl: string = SITE_URL) {
   const imageUrl = article.heroImage.startsWith('http')
     ? article.heroImage
     : `${siteUrl}${article.heroImage}`;
@@ -99,7 +100,7 @@ export function generateArticleJsonLd(article: Article, siteUrl: string = 'https
     },
     publisher: {
       '@type': 'NewsMediaOrganization',
-      name: 'RENDERLINE',
+      name: SITE_NAME,
       url: siteUrl,
       logo: {
         '@type': 'ImageObject',
@@ -146,7 +147,7 @@ export function generateVideoJsonLd(
     contentUrl?: string;
     embedUrl?: string;
   },
-  siteUrl: string = 'https://vfx.rajarathnareddy.com'
+  siteUrl: string = SITE_URL
 ) {
   return {
     '@context': 'https://schema.org',
@@ -165,20 +166,20 @@ export function generateVideoJsonLd(
 /**
  * Generate complete Next.js Metadata object with OpenGraph and Twitter cards
  */
-export function buildArticleMetadata(article: Article, siteUrl: string = 'https://vfx.rajarathnareddy.com'): Metadata {
+export function buildArticleMetadata(article: Article, siteUrl: string = SITE_URL): Metadata {
   const url = `${siteUrl}/article/${article.slug}`;
   const keywords = [...(article.seoKeywords || []), ...article.tags];
 
   return {
-    title: `${article.title} — RENDERLINE`,
+    title: `${article.title} | ${SITE_NAME}`,
     description: article.dek,
     keywords,
     authors: [{ name: article.author.name }],
     openGraph: {
-      title: article.title,
+      title: `${article.title} | ${SITE_NAME}`,
       description: article.dek,
       url,
-      siteName: 'RENDERLINE',
+      siteName: SITE_NAME,
       type: 'article',
       publishedTime: article.publishedAt,
       modifiedTime: article.updatedAt || article.publishedAt,
@@ -195,7 +196,7 @@ export function buildArticleMetadata(article: Article, siteUrl: string = 'https:
     },
     twitter: {
       card: 'summary_large_image',
-      title: article.title,
+      title: `${article.title} | ${SITE_NAME}`,
       description: article.dek,
       images: [article.heroImage.startsWith('http') ? article.heroImage : `${siteUrl}${article.heroImage}`],
       creator: article.author.socials?.twitter || '@RAJARATHNAREDDY',

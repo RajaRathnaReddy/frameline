@@ -1,15 +1,14 @@
 import { articles } from '@/lib/data';
+import { SITE_NAME, SITE_URL, SITE_DESCRIPTION } from '@/lib/config';
 
 export async function GET() {
-  const siteUrl = 'https://vfx.rajarathnareddy.com';
-
   const rssItems = articles
     .map(
       (art) => `
     <item>
       <title><![CDATA[${art.title}]]></title>
-      <link>${siteUrl}/article/${art.slug}</link>
-      <guid>${siteUrl}/article/${art.slug}</guid>
+      <link>${SITE_URL}/article/${art.slug}</link>
+      <guid>${SITE_URL}/article/${art.slug}</guid>
       <pubDate>${new Date(art.publishedAt).toUTCString()}</pubDate>
       <description><![CDATA[${art.dek}]]></description>
       <category>${art.category}</category>
@@ -21,11 +20,11 @@ export async function GET() {
   const rssFeed = `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>RENDERLINE — AI · VFX · Hollywood · Film Technology</title>
-    <link>${siteUrl}</link>
-    <description>The premium news and editorial platform for visual effects, AI in cinema, virtual production, and film technology.</description>
+    <title>${SITE_NAME}</title>
+    <link>${SITE_URL}</link>
+    <description>${SITE_DESCRIPTION}</description>
     <language>en-us</language>
-    <atom:link href="${siteUrl}/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="${SITE_URL}/rss.xml" rel="self" type="application/rss+xml" />
     ${rssItems}
   </channel>
 </rss>`;

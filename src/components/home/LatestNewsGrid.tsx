@@ -15,11 +15,9 @@ export default function LatestNewsGrid() {
   useEffect(() => {
     const updateHandler = () => setAllStories(getAllArticles());
     window.addEventListener('renderline_articles_updated', updateHandler);
-    window.addEventListener('frameline_articles_updated', updateHandler);
     setAllStories(getAllArticles());
     return () => {
       window.removeEventListener('renderline_articles_updated', updateHandler);
-      window.removeEventListener('frameline_articles_updated', updateHandler);
     };
   }, []);
 

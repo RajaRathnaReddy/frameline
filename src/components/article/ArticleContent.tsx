@@ -14,6 +14,7 @@ import { useMemo } from 'react';
 import { getAffiliateOfferForArticle } from '@/lib/affiliates';
 import IndustrySponsorCard from '@/components/monetization/IndustrySponsorCard';
 import IndustrySponsorSidebar from '@/components/monetization/IndustrySponsorSidebar';
+import { SITE_URL } from '@/lib/config';
 
 function slugify(text: string): string {
   return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
@@ -116,9 +117,9 @@ export default function ArticleContent({ article }: { article: Article }) {
     .slice(0, 3);
 
   const breadcrumbItems = useMemo(() => [
-    { name: 'Home', url: 'https://vfx.rajarathnareddy.com' },
-    { name: article.category.replace('-', ' ').toUpperCase(), url: `https://vfx.rajarathnareddy.com/category/${article.category}` },
-    { name: article.title, url: `https://vfx.rajarathnareddy.com/article/${article.slug}` },
+    { name: 'Home', url: SITE_URL },
+    { name: article.category.replace('-', ' ').toUpperCase(), url: `${SITE_URL}/category/${article.category}` },
+    { name: article.title, url: `${SITE_URL}/article/${article.slug}` },
   ], [article]);
 
   return (

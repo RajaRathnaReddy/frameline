@@ -8,7 +8,7 @@ export async function GET(request: Request) {
     const format = searchParams.get('format'); // 'json' or 'csv'
     const expectedKey = process.env.CRON_SECRET || 'renderline_admin_2026';
 
-    if (key !== expectedKey && key !== 'renderline_admin_2026' && key !== 'frameline_admin_2026') {
+    if (key !== expectedKey && key !== 'renderline_admin_2026') {
       return NextResponse.json(
         { success: false, error: 'Unauthorized: Pass ?key=renderline_admin_2026 to view subscribers' },
         { status: 401 }

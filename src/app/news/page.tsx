@@ -19,7 +19,6 @@ export default function NewsPage() {
     if (typeof window !== 'undefined') {
       try {
         localStorage.removeItem('renderline_custom_articles');
-        localStorage.removeItem('frameline_custom_articles');
       } catch {
         // ignore
       }

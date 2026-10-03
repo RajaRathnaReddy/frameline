@@ -1,8 +1,9 @@
 import { MetadataRoute } from 'next';
 import { articles, categories, tools } from '@/lib/data';
+import { SITE_URL } from '@/lib/config';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://vfx.rajarathnareddy.com';
+  const baseUrl = SITE_URL;
 
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: new Date(), changeFrequency: 'always', priority: 1.0 },

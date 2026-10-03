@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { categories, articles, searchAll, getArticlesByCategory } from '@/lib/data';
 import { motion, AnimatePresence } from 'framer-motion';
-import FramelineLogo from '@/components/common/FramelineLogo';
+import RenderLineLogo from '@/components/common/RenderLineLogo';
 
 export default function Navbar() {
   const router = useRouter();
@@ -89,7 +89,7 @@ export default function Navbar() {
         <div className="w-full max-w-[1600px] mx-auto px-3 sm:px-4 lg:px-6 h-16 flex items-center justify-between relative">
           {/* Logo / Brand Identity - completely protected from shrinkage and wrapping */}
           <div className="flex items-center shrink-0 pr-3 sm:pr-4 xl:pr-6 z-10">
-            <FramelineLogo size="md" />
+            <RenderLineLogo size="md" />
           </div>
 
           {/* Center Nav (Desktop) - Adaptive 2-Tier Hierarchy */}

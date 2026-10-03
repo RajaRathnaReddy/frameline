@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { categories } from '@/lib/data';
-import FramelineLogo from '@/components/common/FramelineLogo';
+import RenderLineLogo from '@/components/common/RenderLineLogo';
+import { SITE_NAME } from '@/lib/config';
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
       <div className="max-w-[1440px] mx-auto px-4 md:px-8 py-16">
         {/* Brand identity header */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-10 mb-12 border-b border-border-subtle gap-6">
-          <FramelineLogo size="lg" />
+          <RenderLineLogo size="lg" />
           <p className="text-text-secondary text-sm max-w-md font-serif leading-relaxed">
             The specialized trade journal covering generative cinema, VFX pipelines, real-time engines, and Hollywood technology infrastructure.
           </p>
@@ -116,12 +117,17 @@ export default function Footer() {
               WebkitTextStroke: '1px rgba(255,255,255,0.08)',
             }}
           >
-            RENDERLINE
+            RENDER LINE
           </div>
-          <div className="mt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <p className="text-meta text-text-secondary/50">
-              © {new Date().getFullYear()} RENDERLINE. All rights reserved.
-            </p>
+          <div className="mt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 flex-wrap">
+            <div>
+              <p className="text-meta text-text-secondary/60">
+                © 2026 {SITE_NAME}. All rights reserved.
+              </p>
+              <p className="text-meta text-text-secondary/40 mt-1">
+                Opinions on this site are personal and do not represent any employer or company.
+              </p>
+            </div>
             <p className="text-meta text-text-secondary/30">
               BUILT FOR THE FRAME-BY-FRAME OBSESSED
             </p>

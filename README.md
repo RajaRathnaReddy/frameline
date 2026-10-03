@@ -1,8 +1,8 @@
-# FRAMELINE — Premium Film & Technology News Platform
+# Render Line — Premium Film & Technology News Platform
 
 A cinematic, dark-editorial news platform built for the intersection of AI, VFX, Hollywood, film tools, and virtual production.
 
-![FRAMELINE](./public/images/hero-virtual-production.jpg)
+![Render Line](./public/images/hero-virtual-production.jpg)
 
 ## ✨ Features
 
@@ -40,8 +40,8 @@ A cinematic, dark-editorial news platform built for the intersection of AI, VFX,
 
 ### Hardware & Software Reviews (`/reviews`)
 - Lab benchmark scorecards with 10-point scale
-- "FRAMELINE EDITORS' CHOICE" award badges
-- The Frameline Verdict callouts
+- "RENDER LINE EDITORS' CHOICE" award badges
+- The Render Line Verdict callouts
 - Pros & Cons breakdown lists with clear iconography
 - Studio lab test rig specifications (Mac Studio M3 Ultra, Sony BVM-HX310 master monitor, ACES pipeline)
 - In-depth reviews for DaVinci Resolve Studio 20, ARRI ALEXA 35, and Topaz Video AI 5.2
@@ -54,7 +54,7 @@ A cinematic, dark-editorial news platform built for the intersection of AI, VFX,
   - Version tags, pricing badges, studio consensus rating
   - Key pipeline features list
   - Studio adoption list (ILM, Wētā FX, Method Studios, Disguise)
-  - Related Frameline news stories mentioning the tool
+  - Related Render Line news stories mentioning the tool
   - Alternative tools in the same category
 
 ### Global Search & Command Palette (`/search` & `⌘K`)
