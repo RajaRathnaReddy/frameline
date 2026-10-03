@@ -12,11 +12,12 @@ export const metadata: Metadata = {
   keywords: ["VFX", "AI", "Hollywood", "film technology", "virtual production", "visual effects", "RenderLine"],
   icons: {
     icon: [
-      { url: '/icon.svg', type: 'image/svg+xml' },
-      { url: '/renderline-logo.png', type: 'image/png' },
+      { url: '/icon.svg?v=2', type: 'image/svg+xml' },
+      { url: '/renderline-logo.png?v=2', type: 'image/png' },
+      { url: '/favicon.ico?v=2', sizes: 'any' },
     ],
-    shortcut: '/icon.svg',
-    apple: '/apple-icon.png',
+    shortcut: '/favicon.ico?v=2',
+    apple: '/apple-icon.png?v=2',
   },
   alternates: {
     canonical: 'https://vfx.rajarathnareddy.com',
@@ -70,9 +71,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" type="image/svg+xml" href="/icon.svg" />
-        <link rel="icon" type="image/png" href="/renderline-logo.png" />
-        <link rel="apple-touch-icon" href="/apple-icon.png" />
+        <link rel="icon" type="image/svg+xml" href="/icon.svg?v=2" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/renderline-logo.png?v=2" />
+        <link rel="shortcut icon" href="/favicon.ico?v=2" />
+        <link rel="apple-touch-icon" href="/apple-icon.png?v=2" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
