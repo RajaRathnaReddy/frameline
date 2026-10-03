@@ -112,7 +112,11 @@ export default function IndustrySponsorCard({
       {/* FTC Disclosure & Direct Partner Inquiries */}
       <div className="mt-5 pt-3 border-t border-white/[0.04] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-[10px] font-mono text-text-secondary/50">
         <div>
-          <span>RENDERLINE is reader-supported ({offer.network}). Commission earned on verified licenses.</span>
+          {offer.network === 'Amazon Associates' ? (
+            <span>RENDERLINE is reader-supported. As an Amazon Associate, RenderLine earns from qualifying purchases. Direct Prime delivery with studio seller warranties.</span>
+          ) : (
+            <span>RENDERLINE is reader-supported ({offer.network}). Commission earned on verified licenses.</span>
+          )}
         </div>
         <div className="flex items-center gap-3">
           <a

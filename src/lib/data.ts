@@ -174,6 +174,36 @@ export const tools: Tool[] = [
     studioUsers: ['Industrial Light & Magic', 'Wētā FX', 'DNEG', 'The Mill', 'Luma Pictures'],
     rating: 4.9
   },
+  {
+    name: 'Higgsfield AI Video',
+    slug: 'higgsfield',
+    logo: '⚡',
+    category: 'AI Video',
+    pricing: 'Paid',
+    platforms: ['Web', 'iOS', 'API'],
+    version: '2026.2',
+    website: 'https://higgsfield.ai?fpr=raja-rathna-reddy-5b73d0',
+    description: 'Generative video platform with granular 3D camera trajectory controls and photorealistic human motion.',
+    longDescription: 'Higgsfield AI is the breakout generative video platform engineered for directors, previs artists, and cinematographers, offering granular 3D camera trajectory controls, realistic human motion kinematics, and custom scene direction.',
+    features: ['Granular 3D Camera Trajectory Controls', 'Cinematic Pan, Tilt, Dolly & Boom Moves', 'Photorealistic Human Motion Synthesis', 'Actor Consistency Across Shots', 'Pipeline API & Batch Ingest'],
+    studioUsers: ['Boutique Previs Studios', 'Independent Filmmakers', 'Commercial Production Labs', 'Festival Creators'],
+    rating: 4.9
+  },
+  {
+    name: 'ElevenLabs Cinema Voice AI',
+    slug: 'elevenlabs',
+    logo: '🗣️',
+    category: 'Voice AI',
+    pricing: 'Paid',
+    platforms: ['Web', 'API', 'Python SDK'],
+    version: 'v3 Enterprise',
+    website: 'https://try.elevenlabs.io/7dnbvl7c40ip',
+    description: 'Hyper-realistic AI voice acting, automated dialogue replacement (ADR), and sound effects generation.',
+    longDescription: 'ElevenLabs delivers studio-grade voice performances, automated dialogue replacement (ADR), and synthetic Foley sound effects with nuanced emotional control for cinema, gaming, and commercial localization.',
+    features: ['Zero-Shot & High-Fidelity Voice Cloning', 'Emotional & Cadence Inflection Sliders', 'Automated Dialogue Replacement (ADR)', 'Studio-Grade Synthetic Foley & SFX', 'Low-Latency Streaming Speech API'],
+    studioUsers: ['Localization Houses', 'Game Audio Studios', 'Independent Post Bays', 'Documentary Producers'],
+    rating: 4.8
+  },
 ];
 
 // ─── AI MODELS (2026 Professional Benchmark) ───
