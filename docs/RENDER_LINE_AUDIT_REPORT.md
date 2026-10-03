@@ -155,7 +155,7 @@ X-Vercel-Id: bom1::vp964-1791052625254-2da5f6e838b6
    - Pricing: Free / 5% royalty over $1M gross.  
    - Source: [`https://www.gamedeveloper.com/programming/unreal-engine-6-will-merge-ue5-and-uefn-into-a-single-unified-engine-`](https://www.gamedeveloper.com/programming/unreal-engine-6-will-merge-ue5-and-uefn-into-a-single-unified-engine-) (17 Jun 2026)
 2. **Foundry Nuke**: Version `17.0`  
-   - Highlights: Native 3D Gaussian Splatting, CopyCat Neural Network ML Training, OpenUSD workflows. Released 26 Feb 2026.  
+   - Highlights: Native 3D Gaussian Splatting, OpenUSD workflows. Released 26 Feb 2026.  
    - Pricing: Commercial Subscription / Studio.  
    - Sources: [`https://www.foundry.com/news-and-awards/foundry-releases-nuke-17-advancing-compositing-workflows`](https://www.foundry.com/news-and-awards/foundry-releases-nuke-17-advancing-compositing-workflows) & [`https://broadcastbeat.com/news/foundry-releases-nuke-17-0`](https://broadcastbeat.com/news/foundry-releases-nuke-17-0) (26 Feb 2026)
 3. **SideFX Houdini**: Version `22.0`  
@@ -171,7 +171,7 @@ X-Vercel-Id: bom1::vp964-1791052625254-2da5f6e838b6
    - Pricing: Free / Studio paid ($295 one-time).  
    - Source: [`https://www.newsshooter.com/2026/10/01/davinci-resolve-21-1-1/`](https://www.newsshooter.com/2026/10/01/davinci-resolve-21-1-1/) (1 Oct 2026)
 6. **Autodesk Maya**: Version `2027.1`  
-   - Highlights: OpenTimelineIO (OTIO) native Sequencer integration, LookdevX 2.1.0 texture projections, USD for Maya 0.36, Smart Bevel enhancements, Bifrost procedural compounds. Released 21 May 2026 (following Maya 2027 on 25 Mar 2026).  
+   - Highlights: OpenTimelineIO (OTIO) native Sequencer integration. Released 21 May 2026 (following Maya 2027 on 25 Mar 2026).  
    - Sources: [`https://digitalproduction.com/2026/05/22/maya-2027-1-adds-otio-to-sequencer/`](https://digitalproduction.com/2026/05/22/maya-2027-1-adds-otio-to-sequencer/) (22 May 2026)
 7. **Topaz Video**: Version: *None specified* (Unverified version numbers removed)  
    - Highlights: Chronos frame interpolation, Proteus multi-pass enhancement, Neurostream local device inference. Completed acquisition by Adobe on 23 Sep 2026 for about $340M, primarily cash.  
@@ -201,7 +201,7 @@ X-Vercel-Id: bom1::vp964-1791052625254-2da5f6e838b6
    - Status: Gated as `unverified` and hidden per audit specifications pending full official documentation.  
    - Source: `https://klingai.com`
 8. **Luma Ray 3.2**: Version `Ray 3.2` *(Verified / Restored)*  
-   - Highlights: Production-grade video-to-video style transfer, camera control, HDR/EXR pipelines.  
+   - Highlights: Built for transforming footage you already have (Video-to-Video).  
    - Source: [`https://lumalabs.ai/learning-center/articles/ray-3-2-video-to-video`](https://lumalabs.ai/learning-center/articles/ray-3-2-video-to-video) (Jul 2026)
 9. **Higgsfield AI Engine**: Version: *None specified* *(Verified / Active)*  
    - Highlights: Generative AI feature film production, 95-minute runtime, sub-$500K budget. (Removed "keyframe character anchoring, multi-tier diffusion").  

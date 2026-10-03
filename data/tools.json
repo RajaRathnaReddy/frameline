@@ -84,11 +84,10 @@
     "website": "https://www.foundry.com/nuke",
     "source_url": "https://www.foundry.com/news-and-awards/foundry-releases-nuke-17-advancing-compositing-workflows",
     "last_verified": "2026-10-03",
-    "description": "Industry-standard node-based compositing software featuring native 3D Gaussian Splatting, CopyCat ML, and USD workflows.",
-    "longDescription": "Foundry released Nuke 17.0 on 26 Feb 2026, bringing native 3D Gaussian Splatting support, USD 3D system out of beta, and CopyCat neural networks.",
+    "description": "Industry-standard node-based compositing software featuring native 3D Gaussian Splatting and USD workflows.",
+    "longDescription": "Foundry released Nuke 17.0 on 26 Feb 2026, bringing native 3D Gaussian Splatting support and a new 3D system based on USD.",
     "features": [
       "3D Gaussian Splatting Animation & Relighting",
-      "CopyCat Neural Network ML Training",
       "Deep Image Compositing Pipeline",
       "3D Scene Graph & OpenUSD",
       "ACES 1.3 / ACES 2.0 Native Color Management"
