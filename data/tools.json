@@ -17,11 +17,9 @@
     "description": "Real-time 3D engine powering in-camera VFX (ICVFX), LED volume stages, MegaLights, and Live Link Hub. UE 5.8 was released in June 2026 as the final planned major UE5 release; UE6 early access is targeted for late 2027.",
     "longDescription": "Epic Games' Unreal Engine is the core technology powering modern virtual production stages. UE 5.8 was released in June 2026, introducing production-ready MegaLights, Lumen Lite for 60 fps targets, experimental Mesh Terrain, and Live Link Hub tracking synchronization. Early access for Unreal Engine 6 is scheduled for late 2027.",
     "features": [
-      "MegaLights Dynamic Emissive System",
-      "Movie Render Graph ACEScg Pipeline",
-      "Lore Open-Source VCS (MIT)",
-      "In-Camera VFX (ICVFX) Multi-User Stage",
-      "Chaos Cloth & Dataflow Simulation"
+      "Merge UE5 and UEFN into 'a single, unified engine'",
+      "Tools for cross-game interoperability",
+      "Shift from programming language C++ to Verse"
     ],
     "studioUsers": [
       "ILM StageCraft",
@@ -52,11 +50,11 @@
     "description": "AI video enhancement, temporal de-flickering, Starlight diffusion restoration, and Neurostream local device inference.",
     "longDescription": "Topaz Video (formerly Topaz Video AI) bridges the critical quality gap between synthetic generative video and professional 4K cinematography with local desktop diffusion models. Adobe completed the acquisition of Topaz Labs on 23 Sep 2026, for about $340M, primarily cash, integrating Neurostream and video enhancement models into Creative Cloud workflows.",
     "features": [
-      "Starlight Diffusion Restoration Architecture",
-      "Proteus & Iris Neural Enhancement",
-      "Temporal Flickering Elimination",
-      "Lossless ProRes 4444 XQ Output",
-      "Apollo High-Frame-Rate Slow-Motion"
+      "Unlimited local rendering",
+      "Precision Upscale",
+      "Creative Upscale",
+      "Frame Interpolation",
+      "SDR to HDR"
     ],
     "studioUsers": [
       "Adobe Systems",
@@ -87,10 +85,8 @@
     "description": "Industry-standard node-based compositing software featuring native 3D Gaussian Splatting and USD workflows.",
     "longDescription": "Foundry released Nuke 17.0 on 26 Feb 2026, bringing native 3D Gaussian Splatting support and a new 3D system based on USD.",
     "features": [
-      "3D Gaussian Splatting Animation & Relighting",
-      "Deep Image Compositing Pipeline",
-      "3D Scene Graph & OpenUSD",
-      "ACES 1.3 / ACES 2.0 Native Color Management"
+      "Native Gaussian Splat support",
+      "New 3D system based on USD"
     ],
     "studioUsers": [
       "Industrial Light & Magic",
@@ -122,11 +118,10 @@
     "description": "Open-source 3D creation suite featuring procedural physics in Geometry Nodes, texture caching in Cycles, and Grease Pencil enhancements.",
     "longDescription": "Blender 5.2 LTS brings procedural hair and cloth simulation directly into Geometry Nodes, alongside texture caching optimizations in Cycles and enhanced asset library remote hosting.",
     "features": [
-      "Geometry Nodes Procedural Physics Solver",
-      "Cycles GPU Path Tracing with Texture Caching",
-      "Grease Pencil Vector Fill & Brushes",
-      "OpenUSD Stage Composition",
-      "Full Python Automation API"
+      "Audio-reactive animations and simulations to Geometry Nodes",
+      "Physics for hair and cloth simulations",
+      "Built-in XPBD Solver node",
+      "Cycles texture cache"
     ],
     "studioUsers": [
       "Tangential Animation",
@@ -157,11 +152,10 @@
     "description": "Premier Hollywood color grading, editing, Fusion VFX, and Fairlight audio post-production suite.",
     "longDescription": "Blackmagic Design DaVinci Resolve 21.1.1 combines neural isolation brushes, HDR Dolby Vision mastering, Fusion node VFX, and Cloud Multi-Seat Collaboration with AI assistant integration in both a free tier and professional Studio edition.",
     "features": [
-      "DaVinci Neural Engine AI Masking & Assistants",
-      "Fusion Node-Based Compositing",
-      "HDR Color Wheels & ACEScc 1.3",
-      "Cloud Timeline Multi-Seat Collaboration",
-      "Fairlight 2000-Track Audio Engine"
+      "Trim editor improvements for audio clips",
+      "Multiple edit-point controls",
+      "USAC audio decoding on Windows 11",
+      "Improved controls for clips with multiple Fusion effects"
     ],
     "studioUsers": [
       "Company 3",
@@ -193,11 +187,11 @@
     "description": "Procedural 3D animation and effects software featuring native 3D Gaussian Splatting, Copernicus GPU image processing, and KineFX character animation.",
     "longDescription": "SideFX released Houdini 22 on 16 Jul 2026, delivering native 3D Gaussian Splatting editing and relighting, the Copernicus GPU image processor for textures and terrains, Solaris USD enhancements, and expanded KineFX rigging.",
     "features": [
-      "3D Gaussian Splatting (create, edit, rig, relight, render)",
-      "Copernicus GPU Image Processing (texturing & terrain)",
-      "KineFX & APEX Procedural Character Animation",
-      "Solaris USD World-Building & SOP Sub-nodes",
-      "Karma XPU Renderer Maturation"
+      "Production-ready Gaussian Splats",
+      "New tools for character animation and rigging",
+      "Retargeting and grooming",
+      "USD world building and rendering",
+      "Texture synthesis and VFX in Copernicus"
     ],
     "studioUsers": [
       "Scanline VFX",
@@ -227,11 +221,10 @@
     "description": "Multimodal AI video generation platform with director controls, camera trajectories, and studio partnerships.",
     "longDescription": "Runway offers director-level camera controls, multi-character consistency, and cinematic framing through its Gen-4.5 architecture released in December 2025.",
     "features": [
-      "Cinematic Camera Movement Controls",
-      "Multi-Motion Brush Spatial Masking",
-      "Temporal Consistency Stabilization",
-      "Prompt-to-Video & Image-to-Video",
-      "Enterprise API Pipeline Access"
+      "Cinematic, photorealistic outputs",
+      "Precise prompt adherence",
+      "Advanced motion quality",
+      "Consistent visual fidelity across diverse generation modes"
     ],
     "studioUsers": [
       "A24",
@@ -260,13 +253,7 @@
     "last_verified": "2026-10-01",
     "description": "Industry-standard motion graphics, title design, and visual effects compositing with native 3D workspace.",
     "longDescription": "Adobe After Effects is the essential motion design and visual effects software, featuring advanced 3D workspace integration, AI Roto Brush, and deep Creative Cloud pipeline hooks.",
-    "features": [
-      "Advanced 3D Workspace & GLTF Importer",
-      "Roto Brush 3 AI Auto-Segmentation",
-      "Content-Aware Fill for Video",
-      "Essential Graphics Shared MOGRTs",
-      "Hardware-Accelerated Ray Tracing"
-    ],
+    "features": [],
     "studioUsers": [
       "Prologue Films",
       "The Mill",
@@ -297,11 +284,8 @@
     "description": "Industry-standard 3D animation, rigging, character modeling, and simulation platform powering Hollywood feature animation.",
     "longDescription": "Autodesk released Maya 2027 on 25 Mar 2026 and Maya 2027.1 on 21 May 2026, adding support for OpenTimelineIO (OTIO) in the Sequencer.",
     "features": [
-      "Bifrost Procedural Ocean & Liquid Simulation",
-      "USD Maya Integration & Lookdev",
-      "Character Rigging & Retargeting Matrix",
-      "Arnold High-Fidelity Renderer",
-      "OpenPBR Default Surface Shading"
+      "Support for OpenTimelineIO in the Sequencer",
+      "LookdevX projection tools"
     ],
     "studioUsers": [
       "Walt Disney Animation",
@@ -333,13 +317,7 @@
     "last_verified": "2026-10-01",
     "description": "Production tracking, review, and asset management software powering collaborative pipelines across global VFX facilities.",
     "longDescription": "Autodesk ShotGrid provides production management, review, and pipeline integration for creative studios worldwide, connecting artists, supervisors, and producers in real-time.",
-    "features": [
-      "Real-Time Production Tracking & Scheduling",
-      "High-Resolution Dailies & RV Playback",
-      "Toolkit (SGTK) Pipeline Integration",
-      "Asset Lifecycle Tracking & Versioning",
-      "Multi-Site Security & Cloud Access Control"
-    ],
+    "features": [],
     "studioUsers": [
       "Industrial Light & Magic",
       "Wētā FX",
@@ -369,13 +347,7 @@
     "last_verified": "2026-10-01",
     "description": "Generative video platform with granular 3D camera trajectory controls and photorealistic human motion.",
     "longDescription": "Higgsfield AI is the generative video platform engineered for directors, previs artists, and cinematographers, offering granular 3D camera trajectory controls, realistic human motion kinematics, and custom scene direction.",
-    "features": [
-      "Granular 3D Camera Trajectory Controls",
-      "Cinematic Pan, Tilt, Dolly & Boom Moves",
-      "Photorealistic Human Motion Synthesis",
-      "Actor Consistency Across Shots",
-      "Pipeline API & Batch Ingest"
-    ],
+    "features": [],
     "studioUsers": [
       "Boutique Previs Studios",
       "Independent Filmmakers",
@@ -404,13 +376,7 @@
     "last_verified": "2026-10-01",
     "description": "Hyper-realistic AI voice acting, automated dialogue replacement (ADR), and sound effects generation.",
     "longDescription": "ElevenLabs delivers studio-grade voice performances, automated dialogue replacement (ADR), and synthetic Foley sound effects with nuanced emotional control for cinema, gaming, and commercial localization.",
-    "features": [
-      "Zero-Shot & High-Fidelity Voice Cloning",
-      "Emotional & Cadence Inflection Sliders",
-      "Automated Dialogue Replacement (ADR)",
-      "Studio-Grade Synthetic Foley & SFX",
-      "Low-Latency Streaming Speech API"
-    ],
+    "features": [],
     "studioUsers": [
       "Localization Houses",
       "Game Audio Studios",
