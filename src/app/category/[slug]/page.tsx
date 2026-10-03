@@ -3,6 +3,7 @@ import { articles, categories } from '@/lib/data';
 import { getCategoryColor } from '@/lib/utils';
 import CategoryArticleList from '@/components/category/CategoryArticleList';
 import type { Metadata } from 'next';
+import { SITE_NAME, SITE_URL } from '@/lib/config';
 
 interface CategoryPageProps {
   params: Promise<{ slug: string }>;
@@ -17,11 +18,13 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
   const { slug } = await params;
   const cat = categories.find((c) => c.slug === slug);
-  if (!cat) return { title: 'Not Found' };
+  if (!cat) return { title: `Not Found | ${SITE_NAME}` };
+
+  const catArticles = articles.filter((a) => a.category === slug);
 
   return {
-    title: `${cat.name} — RENDERLINE Intelligence`,
-    description: `Latest 100 ${cat.name} reports and deep technical briefings by Raja Rathna Reddy (FX Pipeline TD & AI Architect).`,
+    title: `${cat.name} — ${SITE_NAME}`,
+    description: `Latest ${catArticles.length} ${cat.name} reports and deep technical briefings by Raja Rathna Reddy (FX Pipeline TD & AI Architect).`,
   };
 }
 
@@ -43,13 +46,13 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://vfx.rajarathnareddy.com',
+        item: SITE_URL,
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: cat.name,
-        item: `https://vfx.rajarathnareddy.com/category/${slug}`,
+        item: `${SITE_URL}/category/${slug}`,
       },
     ],
   };
@@ -57,13 +60,13 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const collectionJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: `${cat.name} Dispatches — RENDERLINE`,
+    name: `${cat.name} Dispatches — ${SITE_NAME}`,
     description: `Comprehensive technical intelligence and analysis covering ${cat.name.toLowerCase()} by Raja Rathna Reddy.`,
-    url: `https://vfx.rajarathnareddy.com/category/${slug}`,
+    url: `${SITE_URL}/category/${slug}`,
     publisher: {
       '@type': 'NewsMediaOrganization',
-      name: 'RENDERLINE',
-      url: 'https://vfx.rajarathnareddy.com',
+      name: SITE_NAME,
+      url: SITE_URL,
     },
   };
 
@@ -87,7 +90,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             style={{ backgroundColor: getCategoryColor(slug) }}
           />
           <span className="text-meta text-text-secondary/50 font-mono tracking-widest text-xs">
-            SPECIALIZED TRADE VERTICAL · 100 CURATED DISPATCHES
+            SPECIALIZED TRADE VERTICAL &bull; {catArticles.length} CURATED DISPATCHES
           </span>
         </div>
         <h1

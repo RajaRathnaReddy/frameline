@@ -58,9 +58,10 @@ export function truncate(text: string, maxLength: number): string {
  * Generate reading time estimate
  */
 export function estimateReadTime(text: string): number {
-  const wordsPerMinute = 230;
+  if (!text) return 5;
+  const wordsPerMinute = 200;
   const words = text.trim().split(/\s+/).length;
-  return Math.ceil(words / wordsPerMinute);
+  return Math.max(1, Math.ceil(words / wordsPerMinute));
 }
 
 /**
@@ -68,4 +69,16 @@ export function estimateReadTime(text: string): number {
  */
 export function cn(...classes: (string | undefined | null | false)[]): string {
   return classes.filter(Boolean).join(' ');
+}
+
+/**
+ * Check if article qualifies for BREAKING label:
+ * Must have breaking flag AND published within the last 48 hours
+ */
+export function isBreaking(publishedAt?: string, breaking?: boolean): boolean {
+  if (!breaking || !publishedAt) return false;
+  const pubTime = new Date(publishedAt).getTime();
+  if (isNaN(pubTime)) return false;
+  const diffHours = (Date.now() - pubTime) / (1000 * 60 * 60);
+  return diffHours >= 0 && diffHours <= 48;
 }

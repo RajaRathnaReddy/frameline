@@ -42,6 +42,7 @@ export interface Article {
   seoKeywords?: string[];
   aiGenerated?: boolean;
   promptSource?: string;
+  status?: 'approved' | 'needs_review';
   seo: {
     title: string;
     desc: string;
@@ -65,10 +66,12 @@ export interface Tool {
   slug: string;
   logo: string;
   category: string;
-  pricing: 'Free' | 'Paid' | 'Open Source';
+  pricing: 'Free' | 'Paid' | 'Open Source' | 'Free / Studio paid';
   platforms: string[];
   version: string;
   website: string;
+  source_url?: string;
+  last_verified?: string;
   description: string;
   longDescription?: string;
   features?: string[];
@@ -78,11 +81,14 @@ export interface Tool {
 
 export interface AIModel {
   name: string;
+  version?: string;
   company: string;
   maxLength: string;
   resolution: string;
   audioNative: boolean;
   apiStatus: 'live' | 'beta' | 'sunset';
+  source_url?: string;
+  last_verified?: string;
   updatedAt: string;
 }
 

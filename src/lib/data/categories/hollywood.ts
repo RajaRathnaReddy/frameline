@@ -5,7 +5,7 @@ export const hollywoodArticles: Article[] = [
   {
     title: "The New Frame: How AI, Real-Time Engines and an Adobe Deal Are Changing Hollywood in Late 2026",
     slug: "the-new-frame-how-ai-real-time-engines-and-an-adobe-deal-are-changing-hollywood-in-late-2026",
-    dek: "An executive briefing on AI cinema, VFX pipelines, and how modern films get made—from Cannes indie breakthroughs to Netflix's $587M acquisition and real-time studio workflows.",
+    dek: "A comprehensive analysis of AI cinema, VFX pipelines, and modern film production—from independent breakthroughs to studio acquisitions and real-time workflows.",
     heroImage: "/images/article-netflix.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -13,7 +13,7 @@ export const hollywoodArticles: Article[] = [
     publishedAt: "2026-09-01T08:00:00.000Z",
     readTime: 6,
     featured: true,
-    breaking: true,
+    breaking: false,
     toolsMentioned: ["Unreal Engine","DaVinci Resolve","Foundry Nuke","Houdini","OpenUSD"],
     seoKeywords: ["the new frame","hollywood","vfx pipeline","hollywood technology"],
     body: `## Industry Dynamics & Strategic Context
@@ -43,108 +43,102 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **The New Frame** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "The New Frame: How AI, Real-Time Engines and an Adobe Deal Are Changing Hollywood in Late 2026 | RENDERLINE",
-      desc: "An executive briefing on AI cinema, VFX pipelines, and how modern films get made—from Cannes indie breakthroughs to Netflix's $587M acquisition and real-time studio workflows.",
+      title: "The New Frame: How AI, Real-Time Engines and an Adobe Deal Are Changing Hollywood in Late 2026 | Render Line",
+      desc: "A comprehensive analysis of AI cinema, VFX pipelines, and modern film production—from independent breakthroughs to studio acquisitions and real-time workflows.",
       ogImage: "/images/article-netflix.jpg",
     },
   },
   {
-    title: "Google DeepMind Strikes $75M Strategic Alliance with A24 to Form 'A24 Labs'",
+    title: "Google DeepMind and A24 Announce Multiyear AI Research Partnership",
     slug: "google-deepmind-strikes-75m-strategic-alliance-with-a24-a24-labs",
-    dek: "The landmark joint research initiative creates 'A24 Labs' to engineer bespoke studio-safe AI storyboarding, pre-vis pipelines, and ethical creator toolsets.",
+    dek: "Google invests approximately $75 million in a non-exclusive AI research collaboration with A24 Labs, focusing on storyboarding tools without accessing the studio's film library.",
     heroImage: "/images/soundstage-production.jpg",
     category: "hollywood",
-    tags: ["HOLLYWOOD", "Studio Deals", "Google DeepMind", "A24 Labs", "Ethical AI", "Pre-Visualization"],
+    tags: ["HOLLYWOOD", "Studio Deals", "Google DeepMind", "A24 Labs", "Storyboarding", "Pre-Visualization"],
     author: rajaRathnaReddy,
-    publishedAt: "2026-10-02T19:30:00.000Z",
-    readTime: 6,
+    publishedAt: "2026-06-22T10:00:00.000Z",
+    readTime: 5,
     featured: false,
-    breaking: true,
-    toolsMentioned: ["DeepMind StoryEngine", "OpenUSD", "DaVinci Resolve", "Blender"],
-    seoKeywords: ["google deepmind a24 deal", "a24 labs", "hollywood ai filmmaking", "pre-vis pipeline", "ethical studio ai"],
-    body: `## Strategic Partnership & Executive Context
+    breaking: false,
+    status: "approved",
+    toolsMentioned: ["DeepMind StoryEngine", "OpenUSD", "Blender"],
+    seoKeywords: ["google deepmind a24 deal", "a24 labs", "scott belsky", "storyboarding ai", "hollywood research partnership"],
+    body: `## Non-Exclusive Research Partnership Details
 
-In one of the most consequential studio technology alliances of 2026, **Google DeepMind** and independent powerhouse **A24** have formalized a multi-year, $75 million research partnership to establish **A24 Labs**. Unlike traditional corporate IP licensing or data-scraping agreements, this collaboration is engineered as an in-house incubator dedicated to developing specialized, artist-centric artificial intelligence tools for independent directors, screenwriters, and VFX artists.
+On Monday, June 22, 2026, **Google** announced an investment of approximately **$75 million** in independent studio **A24** as part of a multiyear, non-exclusive research partnership with **Google DeepMind**.
 
-A24 Labs will operate out of New York and London, pairing DeepMind machine learning researchers directly with working directors, directors of photography, and production designers. The objective is clear: build custom generative pre-visualization and continuity engines that respect authorial vision while radically reducing pre-production overhead.
+Importantly, the agreement does not grant Google access to A24's proprietary film library or private production data for model training. Instead, the collaboration integrates DeepMind researchers with **A24 Labs**—the studio's creative technology initiative led by A24 partner **Scott Belsky**—to explore experimental artist tools.
 
 \`\`\`markdown
-| Initiative Milestone | Traditional Indie Pipeline | A24 Labs Research Pipeline |
-|----------------------|----------------------------|----------------------------|
-| Script to Concept Art | 4 - 6 Weeks (Outsourced)   | 48 Hours (Artist-in-the-Loop) |
-| Pre-Vis Shot Coverage | Static 2D Storyboards      | Spatial 3D Volumetric Pre-Vis |
-| Asset Provenance      | Manual Paper Release Forms | Cryptographic C2PA Verification |
-| Budget Efficiency     | 18% Spent on Pre-Production| Under 6% Reallocated to Principal Photography |
+| Agreement Term | Specification |
+|---|---|
+| Announcement Date | Monday, June 22, 2026 |
+| Investment Size | Approximately $75 Million |
+| Structure | Multiyear, Non-Exclusive Research Alliance |
+| Film Library Access | None (A24 data and catalog remain excluded) |
+| Active Focus Area | Pre-production and AI-assisted storyboarding workflows |
 \`\`\`
 
-## Technical Architecture: Bespoke Generative Systems
+## Exploration of Storyboarding & Pre-Visualization
 
-A central pillar of A24 Labs is its refusal to train models on unverified internet scrapings. Instead, the initiative operates on isolated compute clusters running models trained exclusively on licensed studio archives, historical public domain cinematography, and bespoke physical camera telemetry.
+The initial focus of the partnership centers on developing assistive storyboarding and animatic systems that respect directorial intent:
+- **Storyboarding Exploration**: Helping directors and screenwriters rapidly visualize scene concepts and shot flow from draft scripts.
+- **Independent Pipeline Integration**: Testing prototype tools within indie production timelines rather than mass automated generative pipelines.
+- **Creator Autonomy**: Maintaining human creative control throughout pre-production without automated final-frame generation.
 
-Key technical pillars include:
-- **Neural Storyboarding & Volumetric Animatics**: Turning approved screenplays into multi-camera 3D shot sequences that export directly into OpenUSD layouts.
-- **Lighting & Lens Emulation**: Simulating specific vintage anamorphic glass (Panavision C-Series, Cooke Speed Panchros) with exact optical flare and falloff characteristics before physical rental package commits.
-- **Strict Actor Likeness Safeguards**: Full architectural compliance with SAG-AFTRA and DGA guidelines, implementing encrypted keypairs that prevent generative rendering of human performers without explicit per-scene biometric consent tokens.
-
-## Strategic Forecast by Raja Rathna Reddy
-
-By choosing a research-first alignment with cinema’s most revered auteur brand rather than attempting to bypass creators, Google DeepMind has charted the definitive playbook for ethical studio technology integration in late 2026. A24 Labs demonstrates that cutting-edge computational intelligence, when placed respectfully in the hands of visionary filmmakers, elevates practical cinema rather than replacing it.`,
+Sources: TechCrunch (2026-06-22), Variety, The Wall Street Journal, Google DeepMind Blog.`,
     seo: {
-      title: "Google DeepMind Strikes $75M Strategic Alliance with A24 to Form 'A24 Labs' | RENDERLINE",
-      desc: "Google DeepMind and A24 unveil a landmark $75M partnership establishing A24 Labs to develop ethical, artist-first AI filmmaking and pre-vis tools.",
+      title: "Google DeepMind and A24 Announce Multiyear AI Research Partnership | Render Line",
+      desc: "Google invests approximately $75 million in a multiyear AI research alliance with A24 Labs, focusing on storyboarding without library data access.",
       ogImage: "/images/soundstage-production.jpg",
     },
   },
   {
     title: "Netflix Drops $587M for Ben Affleck’s InterPositive as AI Production Scales",
     slug: "netflix-drops-587m-for-ben-affleck-s-interpositive-as-ai-production-scales",
-    dek: "Executive briefing on Netflix Drops $587M for Ben Affleck’s InterPositive as AI Production Scales, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "Netflix acquired Ben Affleck's AI production venture InterPositive for $587M in cash, confirmed via SEC regulatory filings from March 2026 and reported in July 2026.",
     heroImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-02T09:07:00.000Z",
-    readTime: 7,
+    readTime: 5,
     featured: false,
-    breaking: true,
+    breaking: false,
+    status: "approved",
     toolsMentioned: ["Unreal Engine","DaVinci Resolve","Foundry Nuke","Houdini","OpenUSD"],
     seoKeywords: ["netflix drops $587m for ben affleck’s interpositive as ai production scales","hollywood","vfx pipeline","hollywood technology"],
-    body: `## Industry Dynamics & Strategic Context
+    body: `## SEC Filing Confirmation & Transaction Terms
 
-The business and creative developments surrounding **Netflix Drops $587M for Ben Affleck’s InterPositive as AI Production Scales** highlight the structural realignment underway across the global entertainment landscape. Between shifting theatrical windows, direct-to-consumer streaming economics, and technological transformation, major studios are re-architecting their production strategies from the ground up.
+Netflix confirmed the acquisition of **InterPositive**, the generative AI conforming and production pipeline venture backed by **Ben Affleck**, for **$587 million in cash**. The transaction was executed in March 2026 and officially detailed in regulatory SEC filings reported in July 2026.
 
-Key drivers behind this market evolution include:
-- **Capital Allocation**: Prioritizing high-margin tentpole IP and tech infrastructure that reduces downstream delivery costs.
-- **Production Modernization**: Transitioning traditional physical production overhead into modular virtual production and automated post pipelines.
-- **Talent & Guild Alignment**: Establishing transparent agreements around intellectual property, likeness protections, and creative credit in an AI-assisted ecosystem.
-
-## Studio Operations & Financial Impact
-
-Industry executives and studio leads recognize that navigating this transition requires both artistic discipline and technological foresight:
+According to studio disclosures, InterPositive's proprietary software focuses on automating editorial conforming, high-throughput dailies synchronization, and metadata reconciliation across distributed production hubs.
 
 \`\`\`markdown
-| Operational Metric | Traditional Workflow | Modern Integrated Pipeline |
-|--------------------|----------------------|----------------------------|
-| Turnaround Window  | 18 - 24 Months       | 10 - 14 Months             |
-| On-Set Decision Latency | Dailies Next Day | Real-Time Final Pixel Review |
-| Data Reconciliation | Manual File Logging | Automated USD Asset Tracking |
+| Transaction Detail | Verified Filing Data |
+|---|---|
+| Acquirer | Netflix Inc. |
+| Target Entity | InterPositive (Ben Affleck AI Pipeline Venture) |
+| Transaction Value | $587 Million (All-Cash Consideration) |
+| Filing Basis | Netflix SEC Regulatory Filing (March 2026 deal, reported July 2026) |
+| Core Technology | Automated editorial conforming and machine-learning color sync |
 \`\`\`
 
-By streamlining production friction, studios can reallocate capital where it matters most: empowering directors and visionaries to take bold creative risks on screen.
+## Production Scaling Across Distributed Titles
 
-## Strategic Forecast by Raja Rathna Reddy
+During recent investor disclosures, Netflix leadership noted that approximately 300 of its titles have utilized machine learning or generative AI tools across pre-production and finishing workflows. The InterPositive toolset is being integrated into Netflix's global production infrastructure to streamline editorial turnarounds between principal photography and delivery.
 
-The developments seen in **Netflix Drops $587M for Ben Affleck’s InterPositive as AI Production Scales** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
+Source: Netflix SEC Filing (sec.gov).`,
     seo: {
-      title: "Netflix Drops $587M for Ben Affleck’s InterPositive as AI Production Scales | RENDERLINE",
-      desc: "Executive briefing on Netflix Drops $587M for Ben Affleck’s InterPositive as AI Production Scales, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "Netflix Acquires Ben Affleck’s InterPositive for $587M Cash | Render Line",
+      desc: "Netflix acquires Ben Affleck's AI venture InterPositive for $587M cash, detailed in SEC filings reported in July 2026.",
       ogImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Lionsgate Expands Runway Partnership with Equity Co-Production Venture",
     slug: "lionsgate-expands-runway-partnership-with-equity-co-production-venture",
-    dek: "Executive briefing on Lionsgate Expands Runway Partnership with Equity Co-Production Venture, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of Lionsgate Expands Runway Partnership with Equity Co-Production Venture, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "/images/article-sora.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -182,15 +176,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Lionsgate Expands Runway Partnership with Equity Co-Production Venture** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Lionsgate Expands Runway Partnership with Equity Co-Production Venture | RENDERLINE",
-      desc: "Executive briefing on Lionsgate Expands Runway Partnership with Equity Co-Production Venture, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "Lionsgate Expands Runway Partnership with Equity Co-Production Venture | Render Line",
+      desc: "An industry analysis of Lionsgate Expands Runway Partnership with Equity Co-Production Venture, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "/images/article-sora.jpg",
     },
   },
   {
     title: "Universal Studios Backlot Stage 12 Unveils 360-Degree LED Volume Expansion",
     slug: "universal-studios-backlot-stage-12-unveils-360-degree-led-volume-expansion",
-    dek: "Executive briefing on Universal Studios Backlot Stage 12 Unveils 360-Degree LED Volume Expansion, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of Universal Studios Backlot Stage 12 Unveils 360-Degree LED Volume Expansion, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -228,15 +222,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Universal Studios Backlot Stage 12 Unveils 360-Degree LED Volume Expansion** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Universal Studios Backlot Stage 12 Unveils 360-Degree LED Volume Expansion | RENDERLINE",
-      desc: "Executive briefing on Universal Studios Backlot Stage 12 Unveils 360-Degree LED Volume Expansion, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "Universal Studios Backlot Stage 12 Unveils 360-Degree LED Volume Expansion | Render Line",
+      desc: "An industry analysis of Universal Studios Backlot Stage 12 Unveils 360-Degree LED Volume Expansion, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Disney Tech Directive Mandates Human Authorship Thresholds for Tentpoles",
     slug: "disney-tech-directive-mandates-human-authorship-thresholds-for-tentpoles",
-    dek: "Executive briefing on Disney Tech Directive Mandates Human Authorship Thresholds for Tentpoles, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of Disney Tech Directive Mandates Human Authorship Thresholds for Tentpoles, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "/images/article-netflix.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -245,6 +239,7 @@ The developments seen in **Universal Studios Backlot Stage 12 Unveils 360-Degree
     readTime: 6,
     featured: false,
     breaking: false,
+    status: "needs_review",
     toolsMentioned: ["Unreal Engine","DaVinci Resolve","Foundry Nuke","Houdini","OpenUSD"],
     seoKeywords: ["disney tech directive mandates human authorship thresholds for tentpoles","hollywood","vfx pipeline","hollywood technology"],
     body: `## Industry Dynamics & Strategic Context
@@ -274,15 +269,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Disney Tech Directive Mandates Human Authorship Thresholds for Tentpoles** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Disney Tech Directive Mandates Human Authorship Thresholds for Tentpoles | RENDERLINE",
-      desc: "Executive briefing on Disney Tech Directive Mandates Human Authorship Thresholds for Tentpoles, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "Disney Tech Directive Mandates Human Authorship Thresholds for Tentpoles | Render Line",
+      desc: "An industry analysis of Disney Tech Directive Mandates Human Authorship Thresholds for Tentpoles, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "/images/article-netflix.jpg",
     },
   },
   {
     title: "Christopher Nolan Reaffirms Photochemical Mandate for Upcoming Feature",
     slug: "christopher-nolan-reaffirms-photochemical-mandate-for-upcoming-feature",
-    dek: "Executive briefing on Christopher Nolan Reaffirms Photochemical Mandate for Upcoming Feature, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of Christopher Nolan Reaffirms Photochemical Mandate for Upcoming Feature, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -320,15 +315,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Christopher Nolan Reaffirms Photochemical Mandate for Upcoming Feature** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Christopher Nolan Reaffirms Photochemical Mandate for Upcoming Feature | RENDERLINE",
-      desc: "Executive briefing on Christopher Nolan Reaffirms Photochemical Mandate for Upcoming Feature, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "Christopher Nolan Reaffirms Photochemical Mandate for Upcoming Feature | Render Line",
+      desc: "An industry analysis of Christopher Nolan Reaffirms Photochemical Mandate for Upcoming Feature, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "James Cameron Pipeline Roadmap: Doubling VFX Throughput Without Digital Doubles",
     slug: "james-cameron-pipeline-roadmap-doubling-vfx-throughput-without-digital-doubles",
-    dek: "Inside Hollywood's evolving business model: examining James Cameron Pipeline Roadmap and the strategic industry impact of doubling vfx throughput without digital doubles.",
+    dek: "An analysis of James Cameron Pipeline Roadmap, examining production workflows and the industry impact of .doubling vfx throughput without digital doubles.",
     heroImage: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -366,15 +361,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **James Cameron Pipeline Roadmap** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "James Cameron Pipeline Roadmap: Doubling VFX Throughput Without Digital Doubles | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining James Cameron Pipeline Roadmap and the strategic industry impact of doubling vfx throughput without digital doubles.",
+      title: "James Cameron Pipeline Roadmap: Doubling VFX Throughput Without Digital Doubles | Render Line",
+      desc: "An analysis of James Cameron Pipeline Roadmap, examining production workflows and the industry impact of .doubling vfx throughput without digital doubles.",
       ogImage: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "SAG-AFTRA 2026 Review: The Practical Realities of Digital Likeness Escrow",
     slug: "sag-aftra-2026-review-the-practical-realities-of-digital-likeness-escrow",
-    dek: "Inside Hollywood's evolving business model: examining SAG-AFTRA 2026 Review and the strategic industry impact of the practical realities of digital likeness escrow.",
+    dek: "An analysis of SAG-AFTRA 2026 Review, examining production workflows and the industry impact of .the practical realities of digital likeness escrow.",
     heroImage: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -412,15 +407,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **SAG-AFTRA 2026 Review** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "SAG-AFTRA 2026 Review: The Practical Realities of Digital Likeness Escrow | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining SAG-AFTRA 2026 Review and the strategic industry impact of the practical realities of digital likeness escrow.",
+      title: "SAG-AFTRA 2026 Review: The Practical Realities of Digital Likeness Escrow | Render Line",
+      desc: "An analysis of SAG-AFTRA 2026 Review, examining production workflows and the industry impact of .the practical realities of digital likeness escrow.",
       ogImage: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "IATSE Local 891 VFX Guild Sets Precedent with Mandatory 10-Hour Turnaround",
     slug: "iatse-local-891-vfx-guild-sets-precedent-with-mandatory-10-hour-turnaround",
-    dek: "Executive briefing on IATSE Local 891 VFX Guild Sets Precedent with Mandatory 10-Hour Turnaround, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of IATSE Local 891 VFX Guild Sets Precedent with Mandatory 10-Hour Turnaround, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "/images/breakdown-creature.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -458,15 +453,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **IATSE Local 891 VFX Guild Sets Precedent with Mandatory 10-Hour Turnaround** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "IATSE Local 891 VFX Guild Sets Precedent with Mandatory 10-Hour Turnaround | RENDERLINE",
-      desc: "Executive briefing on IATSE Local 891 VFX Guild Sets Precedent with Mandatory 10-Hour Turnaround, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "IATSE Local 891 VFX Guild Sets Precedent with Mandatory 10-Hour Turnaround | Render Line",
+      desc: "An industry analysis of IATSE Local 891 VFX Guild Sets Precedent with Mandatory 10-Hour Turnaround, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "/images/breakdown-creature.jpg",
     },
   },
   {
     title: "Warner Bros Discovery Consolidates Post-Production on Multi-Petabyte NVMe Cloud",
     slug: "warner-bros-discovery-consolidates-post-production-on-multi-petabyte-nvme-cloud",
-    dek: "Executive briefing on Warner Bros Discovery Consolidates Post-Production on Multi-Petabyte NVMe Cloud, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of Warner Bros Discovery Consolidates Post-Production on Multi-Petabyte NVMe Cloud, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -504,15 +499,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Warner Bros Discovery Consolidates Post-Production on Multi-Petabyte NVMe Cloud** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Warner Bros Discovery Consolidates Post-Production on Multi-Petabyte NVMe Cloud | RENDERLINE",
-      desc: "Executive briefing on Warner Bros Discovery Consolidates Post-Production on Multi-Petabyte NVMe Cloud, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "Warner Bros Discovery Consolidates Post-Production on Multi-Petabyte NVMe Cloud | Render Line",
+      desc: "An industry analysis of Warner Bros Discovery Consolidates Post-Production on Multi-Petabyte NVMe Cloud, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Sony Pictures Culver City Soundstage Fiber Backbone Modernization",
     slug: "sony-pictures-culver-city-soundstage-fiber-backbone-modernization",
-    dek: "Executive briefing on Sony Pictures Culver City Soundstage Fiber Backbone Modernization, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of Sony Pictures Culver City Soundstage Fiber Backbone Modernization, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -550,15 +545,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Sony Pictures Culver City Soundstage Fiber Backbone Modernization** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Sony Pictures Culver City Soundstage Fiber Backbone Modernization | RENDERLINE",
-      desc: "Executive briefing on Sony Pictures Culver City Soundstage Fiber Backbone Modernization, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "Sony Pictures Culver City Soundstage Fiber Backbone Modernization | Render Line",
+      desc: "An industry analysis of Sony Pictures Culver City Soundstage Fiber Backbone Modernization, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Paramount Skydance Merger: Unifying Enterprise OpenUSD Asset Schemas",
     slug: "paramount-skydance-merger-unifying-enterprise-openusd-asset-schemas",
-    dek: "Inside Hollywood's evolving business model: examining Paramount Skydance Merger and the strategic industry impact of unifying enterprise openusd asset schemas.",
+    dek: "An analysis of Paramount Skydance Merger, examining production workflows and the industry impact of .unifying enterprise openusd asset schemas.",
     heroImage: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -567,6 +562,7 @@ The developments seen in **Sony Pictures Culver City Soundstage Fiber Backbone M
     readTime: 9,
     featured: false,
     breaking: false,
+    status: "needs_review",
     toolsMentioned: ["Unreal Engine","DaVinci Resolve","Foundry Nuke","Houdini","OpenUSD"],
     seoKeywords: ["paramount skydance merger","hollywood","vfx pipeline","hollywood technology"],
     body: `## Industry Dynamics & Strategic Context
@@ -596,15 +592,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Paramount Skydance Merger** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Paramount Skydance Merger: Unifying Enterprise OpenUSD Asset Schemas | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Paramount Skydance Merger and the strategic industry impact of unifying enterprise openusd asset schemas.",
+      title: "Paramount Skydance Merger: Unifying Enterprise OpenUSD Asset Schemas | Render Line",
+      desc: "An analysis of Paramount Skydance Merger, examining production workflows and the industry impact of .unifying enterprise openusd asset schemas.",
       ogImage: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "UK AVEC Tax Credit 2026 Boosts Long-Term Pinewood Stage Leases",
     slug: "uk-avec-tax-credit-2026-boosts-long-term-pinewood-stage-leases",
-    dek: "Executive briefing on UK AVEC Tax Credit 2026 Boosts Long-Term Pinewood Stage Leases, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of UK AVEC Tax Credit 2026 Boosts Long-Term Pinewood Stage Leases, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -642,15 +638,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **UK AVEC Tax Credit 2026 Boosts Long-Term Pinewood Stage Leases** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "UK AVEC Tax Credit 2026 Boosts Long-Term Pinewood Stage Leases | RENDERLINE",
-      desc: "Executive briefing on UK AVEC Tax Credit 2026 Boosts Long-Term Pinewood Stage Leases, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "UK AVEC Tax Credit 2026 Boosts Long-Term Pinewood Stage Leases | Render Line",
+      desc: "An industry analysis of UK AVEC Tax Credit 2026 Boosts Long-Term Pinewood Stage Leases, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "The Practical Stunt Revival: Box Office Triumph of Hand-Crafted Action",
     slug: "the-practical-stunt-revival-box-office-triumph-of-hand-crafted-action",
-    dek: "Inside Hollywood's evolving business model: examining The Practical Stunt Revival and the strategic industry impact of box office triumph of hand-crafted action.",
+    dek: "An analysis of The Practical Stunt Revival, examining production workflows and the industry impact of .box office triumph of hand-crafted action.",
     heroImage: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -688,15 +684,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **The Practical Stunt Revival** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "The Practical Stunt Revival: Box Office Triumph of Hand-Crafted Action | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining The Practical Stunt Revival and the strategic industry impact of box office triumph of hand-crafted action.",
+      title: "The Practical Stunt Revival: Box Office Triumph of Hand-Crafted Action | Render Line",
+      desc: "An analysis of The Practical Stunt Revival, examining production workflows and the industry impact of .box office triumph of hand-crafted action.",
       ogImage: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "IMAX 15/70mm Projection Shortage: How Theatres Are Rebuilding Film Platter Systems",
     slug: "imax-15-70mm-projection-shortage-how-theatres-are-rebuilding-film-platter-systems",
-    dek: "Inside Hollywood's evolving business model: examining IMAX 15/70mm Projection Shortage and the strategic industry impact of how theatres are rebuilding film platter systems.",
+    dek: "An analysis of IMAX 15/70mm Projection Shortage, examining production workflows and the industry impact of .how theatres are rebuilding film platter systems.",
     heroImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -734,15 +730,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **IMAX 15/70mm Projection Shortage** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "IMAX 15/70mm Projection Shortage: How Theatres Are Rebuilding Film Platter Systems | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining IMAX 15/70mm Projection Shortage and the strategic industry impact of how theatres are rebuilding film platter systems.",
+      title: "IMAX 15/70mm Projection Shortage: How Theatres Are Rebuilding Film Platter Systems | Render Line",
+      desc: "An analysis of IMAX 15/70mm Projection Shortage, examining production workflows and the industry impact of .how theatres are rebuilding film platter systems.",
       ogImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Boutique Theatrical Resurgence: Neon and A24 Direct Distribution Models",
     slug: "boutique-theatrical-resurgence-neon-and-a24-direct-distribution-models",
-    dek: "Inside Hollywood's evolving business model: examining Boutique Theatrical Resurgence and the strategic industry impact of neon and a24 direct distribution models.",
+    dek: "An analysis of Boutique Theatrical Resurgence, examining production workflows and the industry impact of .neon and a24 direct distribution models.",
     heroImage: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -780,15 +776,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Boutique Theatrical Resurgence** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Boutique Theatrical Resurgence: Neon and A24 Direct Distribution Models | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Boutique Theatrical Resurgence and the strategic industry impact of neon and a24 direct distribution models.",
+      title: "Boutique Theatrical Resurgence: Neon and A24 Direct Distribution Models | Render Line",
+      desc: "An analysis of Boutique Theatrical Resurgence, examining production workflows and the industry impact of .neon and a24 direct distribution models.",
       ogImage: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Green Production Guide 2026: Mobile Clean Battery Generators Displace Diesel",
     slug: "green-production-guide-2026-mobile-clean-battery-generators-displace-diesel",
-    dek: "Inside Hollywood's evolving business model: examining Green Production Guide 2026 and the strategic industry impact of mobile clean battery generators displace diesel.",
+    dek: "An analysis of Green Production Guide 2026, examining production workflows and the industry impact of .mobile clean battery generators displace diesel.",
     heroImage: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -826,15 +822,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Green Production Guide 2026** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Green Production Guide 2026: Mobile Clean Battery Generators Displace Diesel | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Green Production Guide 2026 and the strategic industry impact of mobile clean battery generators displace diesel.",
+      title: "Green Production Guide 2026: Mobile Clean Battery Generators Displace Diesel | Render Line",
+      desc: "An analysis of Green Production Guide 2026, examining production workflows and the industry impact of .mobile clean battery generators displace diesel.",
       ogImage: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "C2PA Cryptographic Provenance: Studio Legal Teams Enforce Video Watermarking",
     slug: "c2pa-cryptographic-provenance-studio-legal-teams-enforce-video-watermarking",
-    dek: "Inside Hollywood's evolving business model: examining C2PA Cryptographic Provenance and the strategic industry impact of studio legal teams enforce video watermarking.",
+    dek: "An analysis of C2PA Cryptographic Provenance, examining production workflows and the industry impact of .studio legal teams enforce video watermarking.",
     heroImage: "/images/article-netflix.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -872,15 +868,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **C2PA Cryptographic Provenance** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "C2PA Cryptographic Provenance: Studio Legal Teams Enforce Video Watermarking | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining C2PA Cryptographic Provenance and the strategic industry impact of studio legal teams enforce video watermarking.",
+      title: "C2PA Cryptographic Provenance: Studio Legal Teams Enforce Video Watermarking | Render Line",
+      desc: "An analysis of C2PA Cryptographic Provenance, examining production workflows and the industry impact of .studio legal teams enforce video watermarking.",
       ogImage: "/images/article-netflix.jpg",
     },
   },
   {
     title: "EU AI Act August 2 Enforcement: What Major Studios Must Comply With",
     slug: "eu-ai-act-august-2-enforcement-what-major-studios-must-comply-with",
-    dek: "Inside Hollywood's evolving business model: examining EU AI Act August 2 Enforcement and the strategic industry impact of what major studios must comply with.",
+    dek: "An analysis of EU AI Act August 2 Enforcement, examining production workflows and the industry impact of .what major studios must comply with.",
     heroImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -918,15 +914,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **EU AI Act August 2 Enforcement** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "EU AI Act August 2 Enforcement: What Major Studios Must Comply With | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining EU AI Act August 2 Enforcement and the strategic industry impact of what major studios must comply with.",
+      title: "EU AI Act August 2 Enforcement: What Major Studios Must Comply With | Render Line",
+      desc: "An analysis of EU AI Act August 2 Enforcement, examining production workflows and the industry impact of .what major studios must comply with.",
       ogImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "High-Frame-Rate Cinema in 2026: Variable Frame Rate Grading Standards",
     slug: "high-frame-rate-cinema-in-2026-variable-frame-rate-grading-standards",
-    dek: "Inside Hollywood's evolving business model: examining High-Frame-Rate Cinema in 2026 and the strategic industry impact of variable frame rate grading standards.",
+    dek: "An analysis of High-Frame-Rate Cinema in 2026, examining production workflows and the industry impact of .variable frame rate grading standards.",
     heroImage: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -964,15 +960,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **High-Frame-Rate Cinema in 2026** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "High-Frame-Rate Cinema in 2026: Variable Frame Rate Grading Standards | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining High-Frame-Rate Cinema in 2026 and the strategic industry impact of variable frame rate grading standards.",
+      title: "High-Frame-Rate Cinema in 2026: Variable Frame Rate Grading Standards | Render Line",
+      desc: "An analysis of High-Frame-Rate Cinema in 2026, examining production workflows and the industry impact of .variable frame rate grading standards.",
       ogImage: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "The Guild Residual Structure for Algorithmic Streaming Placements",
     slug: "the-guild-residual-structure-for-algorithmic-streaming-placements",
-    dek: "Executive briefing on The Guild Residual Structure for Algorithmic Streaming Placements, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of The Guild Residual Structure for Algorithmic Streaming Placements, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "/images/audio-atmos-stage.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1010,15 +1006,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **The Guild Residual Structure for Algorithmic Streaming Placements** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "The Guild Residual Structure for Algorithmic Streaming Placements | RENDERLINE",
-      desc: "Executive briefing on The Guild Residual Structure for Algorithmic Streaming Placements, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "The Guild Residual Structure for Algorithmic Streaming Placements | Render Line",
+      desc: "An industry analysis of The Guild Residual Structure for Algorithmic Streaming Placements, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "/images/audio-atmos-stage.jpg",
     },
   },
   {
     title: "4K Archival Restoration: How Nitrate and Super 35 Negatives Are Rescued",
     slug: "4k-archival-restoration-how-nitrate-and-super-35-negatives-are-rescued",
-    dek: "Inside Hollywood's evolving business model: examining 4K Archival Restoration and the strategic industry impact of how nitrate and super 35 negatives are rescued.",
+    dek: "An analysis of 4K Archival Restoration, examining production workflows and the industry impact of .how nitrate and super 35 negatives are rescued.",
     heroImage: "/images/article-netflix.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1056,15 +1052,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **4K Archival Restoration** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "4K Archival Restoration: How Nitrate and Super 35 Negatives Are Rescued | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining 4K Archival Restoration and the strategic industry impact of how nitrate and super 35 negatives are rescued.",
+      title: "4K Archival Restoration: How Nitrate and Super 35 Negatives Are Rescued | Render Line",
+      desc: "An analysis of 4K Archival Restoration, examining production workflows and the industry impact of .how nitrate and super 35 negatives are rescued.",
       ogImage: "/images/article-netflix.jpg",
     },
   },
   {
     title: "The Shift from Green Screen to Hybrid Volume In-Camera Workflows",
     slug: "the-shift-from-green-screen-to-hybrid-volume-in-camera-workflows",
-    dek: "Executive briefing on The Shift from Green Screen to Hybrid Volume In-Camera Workflows, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of The Shift from Green Screen to Hybrid Volume In-Camera Workflows, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1102,15 +1098,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **The Shift from Green Screen to Hybrid Volume In-Camera Workflows** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "The Shift from Green Screen to Hybrid Volume In-Camera Workflows | RENDERLINE",
-      desc: "Executive briefing on The Shift from Green Screen to Hybrid Volume In-Camera Workflows, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "The Shift from Green Screen to Hybrid Volume In-Camera Workflows | Render Line",
+      desc: "An industry analysis of The Shift from Green Screen to Hybrid Volume In-Camera Workflows, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Stunt Rig Telemetry: Sensor-Equipped Harnesses Stream Previs Data Live",
     slug: "stunt-rig-telemetry-sensor-equipped-harnesses-stream-previs-data-live",
-    dek: "Inside Hollywood's evolving business model: examining Stunt Rig Telemetry and the strategic industry impact of sensor-equipped harnesses stream previs data live.",
+    dek: "An analysis of Stunt Rig Telemetry, examining production workflows and the industry impact of .sensor-equipped harnesses stream previs data live.",
     heroImage: "https://images.unsplash.com/photo-1533561797500-4bad475fe661?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1148,15 +1144,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Stunt Rig Telemetry** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Stunt Rig Telemetry: Sensor-Equipped Harnesses Stream Previs Data Live | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Stunt Rig Telemetry and the strategic industry impact of sensor-equipped harnesses stream previs data live.",
+      title: "Stunt Rig Telemetry: Sensor-Equipped Harnesses Stream Previs Data Live | Render Line",
+      desc: "An analysis of Stunt Rig Telemetry, examining production workflows and the industry impact of .sensor-equipped harnesses stream previs data live.",
       ogImage: "https://images.unsplash.com/photo-1533561797500-4bad475fe661?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "AMPAS Scientific & Technical Awards Honor Groundbreaking Denoise Math",
     slug: "ampas-scientific-technical-awards-honor-groundbreaking-denoise-math",
-    dek: "Executive briefing on AMPAS Scientific & Technical Awards Honor Groundbreaking Denoise Math, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of AMPAS Scientific & Technical Awards Honor Groundbreaking Denoise Math, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1194,15 +1190,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **AMPAS Scientific & Technical Awards Honor Groundbreaking Denoise Math** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "AMPAS Scientific & Technical Awards Honor Groundbreaking Denoise Math | RENDERLINE",
-      desc: "Executive briefing on AMPAS Scientific & Technical Awards Honor Groundbreaking Denoise Math, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "AMPAS Scientific & Technical Awards Honor Groundbreaking Denoise Math | Render Line",
+      desc: "An industry analysis of AMPAS Scientific & Technical Awards Honor Groundbreaking Denoise Math, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Foreign Language Neural Dubbing: Guilds Establish Royalty Safeguards",
     slug: "foreign-language-neural-dubbing-guilds-establish-royalty-safeguards",
-    dek: "Inside Hollywood's evolving business model: examining Foreign Language Neural Dubbing and the strategic industry impact of guilds establish royalty safeguards.",
+    dek: "An analysis of Foreign Language Neural Dubbing, examining production workflows and the industry impact of .guilds establish royalty safeguards.",
     heroImage: "/images/ai-generative-video.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1240,15 +1236,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Foreign Language Neural Dubbing** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Foreign Language Neural Dubbing: Guilds Establish Royalty Safeguards | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Foreign Language Neural Dubbing and the strategic industry impact of guilds establish royalty safeguards.",
+      title: "Foreign Language Neural Dubbing: Guilds Establish Royalty Safeguards | Render Line",
+      desc: "An analysis of Foreign Language Neural Dubbing, examining production workflows and the industry impact of .guilds establish royalty safeguards.",
       ogImage: "/images/ai-generative-video.jpg",
     },
   },
   {
     title: "SMPTE IEEE 1588 Precision Time Protocol Adopted for Multi-Camera Shoots",
     slug: "smpte-ieee-1588-precision-time-protocol-adopted-for-multi-camera-shoots",
-    dek: "Executive briefing on SMPTE IEEE 1588 Precision Time Protocol Adopted for Multi-Camera Shoots, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of SMPTE IEEE 1588 Precision Time Protocol Adopted for Multi-Camera Shoots, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1286,15 +1282,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **SMPTE IEEE 1588 Precision Time Protocol Adopted for Multi-Camera Shoots** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "SMPTE IEEE 1588 Precision Time Protocol Adopted for Multi-Camera Shoots | RENDERLINE",
-      desc: "Executive briefing on SMPTE IEEE 1588 Precision Time Protocol Adopted for Multi-Camera Shoots, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "SMPTE IEEE 1588 Precision Time Protocol Adopted for Multi-Camera Shoots | Render Line",
+      desc: "An industry analysis of SMPTE IEEE 1588 Precision Time Protocol Adopted for Multi-Camera Shoots, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Millimeter-Accurate LIDAR Drone Scouting Replaces Traditional Location Visits",
     slug: "millimeter-accurate-lidar-drone-scouting-replaces-traditional-location-visits",
-    dek: "Executive briefing on Millimeter-Accurate LIDAR Drone Scouting Replaces Traditional Location Visits, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of Millimeter-Accurate LIDAR Drone Scouting Replaces Traditional Location Visits, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1332,15 +1328,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Millimeter-Accurate LIDAR Drone Scouting Replaces Traditional Location Visits** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Millimeter-Accurate LIDAR Drone Scouting Replaces Traditional Location Visits | RENDERLINE",
-      desc: "Executive briefing on Millimeter-Accurate LIDAR Drone Scouting Replaces Traditional Location Visits, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "Millimeter-Accurate LIDAR Drone Scouting Replaces Traditional Location Visits | Render Line",
+      desc: "An industry analysis of Millimeter-Accurate LIDAR Drone Scouting Replaces Traditional Location Visits, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Soundstage Acoustic Damping Innovations for Dual-Camera Sound Recording",
     slug: "soundstage-acoustic-damping-innovations-for-dual-camera-sound-recording",
-    dek: "Executive briefing on Soundstage Acoustic Damping Innovations for Dual-Camera Sound Recording, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of Soundstage Acoustic Damping Innovations for Dual-Camera Sound Recording, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "/images/camera-arri-alexa.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1378,15 +1374,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Soundstage Acoustic Damping Innovations for Dual-Camera Sound Recording** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Soundstage Acoustic Damping Innovations for Dual-Camera Sound Recording | RENDERLINE",
-      desc: "Executive briefing on Soundstage Acoustic Damping Innovations for Dual-Camera Sound Recording, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "Soundstage Acoustic Damping Innovations for Dual-Camera Sound Recording | Render Line",
+      desc: "An industry analysis of Soundstage Acoustic Damping Innovations for Dual-Camera Sound Recording, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
   },
   {
     title: "ACES 2.0 Full Adoption: Color Consistency Across Distributed Global Vendors",
     slug: "aces-2-0-full-adoption-color-consistency-across-distributed-global-vendors",
-    dek: "Inside Hollywood's evolving business model: examining ACES 2.0 Full Adoption and the strategic industry impact of color consistency across distributed global vendors.",
+    dek: "An analysis of ACES 2.0 Full Adoption, examining production workflows and the industry impact of .color consistency across distributed global vendors.",
     heroImage: "/images/color-grading-suite.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1424,15 +1420,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **ACES 2.0 Full Adoption** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "ACES 2.0 Full Adoption: Color Consistency Across Distributed Global Vendors | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining ACES 2.0 Full Adoption and the strategic industry impact of color consistency across distributed global vendors.",
+      title: "ACES 2.0 Full Adoption: Color Consistency Across Distributed Global Vendors | Render Line",
+      desc: "An analysis of ACES 2.0 Full Adoption, examining production workflows and the industry impact of .color consistency across distributed global vendors.",
       ogImage: "/images/color-grading-suite.jpg",
     },
   },
   {
     title: "Film Financing Tech Audits: Completion Bond Companies Inspect Digital Pipelines",
     slug: "film-financing-tech-audits-completion-bond-companies-inspect-digital-pipelines",
-    dek: "Inside Hollywood's evolving business model: examining Film Financing Tech Audits and the strategic industry impact of completion bond companies inspect digital pipelines.",
+    dek: "An analysis of Film Financing Tech Audits, examining production workflows and the industry impact of .completion bond companies inspect digital pipelines.",
     heroImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1470,15 +1466,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Film Financing Tech Audits** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Film Financing Tech Audits: Completion Bond Companies Inspect Digital Pipelines | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Film Financing Tech Audits and the strategic industry impact of completion bond companies inspect digital pipelines.",
+      title: "Film Financing Tech Audits: Completion Bond Companies Inspect Digital Pipelines | Render Line",
+      desc: "An analysis of Film Financing Tech Audits, examining production workflows and the industry impact of .completion bond companies inspect digital pipelines.",
       ogImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Virtual Art Departments (VAD) Recognized as Essential Core Department",
     slug: "virtual-art-departments-vad-recognized-as-essential-core-department",
-    dek: "Executive briefing on Virtual Art Departments (VAD) Recognized as Essential Core Department, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of Virtual Art Departments (VAD) Recognized as Essential Core Department, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1516,15 +1512,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Virtual Art Departments (VAD) Recognized as Essential Core Department** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Virtual Art Departments (VAD) Recognized as Essential Core Department | RENDERLINE",
-      desc: "Executive briefing on Virtual Art Departments (VAD) Recognized as Essential Core Department, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "Virtual Art Departments (VAD) Recognized as Essential Core Department | Render Line",
+      desc: "An industry analysis of Virtual Art Departments (VAD) Recognized as Essential Core Department, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "The 95-Minute Action Film: How Focused Editing Cuts Tentpole Fatigue",
     slug: "the-95-minute-action-film-how-focused-editing-cuts-tentpole-fatigue",
-    dek: "Inside Hollywood's evolving business model: examining The 95-Minute Action Film and the strategic industry impact of how focused editing cuts tentpole fatigue.",
+    dek: "An analysis of The 95-Minute Action Film, examining production workflows and the industry impact of .how focused editing cuts tentpole fatigue.",
     heroImage: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1562,15 +1558,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **The 95-Minute Action Film** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "The 95-Minute Action Film: How Focused Editing Cuts Tentpole Fatigue | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining The 95-Minute Action Film and the strategic industry impact of how focused editing cuts tentpole fatigue.",
+      title: "The 95-Minute Action Film: How Focused Editing Cuts Tentpole Fatigue | Render Line",
+      desc: "An analysis of The 95-Minute Action Film, examining production workflows and the industry impact of .how focused editing cuts tentpole fatigue.",
       ogImage: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Cross-Border Co-Productions: India and UK Streamline USD Pipeline Hand-Offs",
     slug: "cross-border-co-productions-india-and-uk-streamline-usd-pipeline-hand-offs",
-    dek: "Inside Hollywood's evolving business model: examining Cross-Border Co-Productions and the strategic industry impact of india and uk streamline usd pipeline hand-offs.",
+    dek: "An analysis of Cross-Border Co-Productions, examining production workflows and the industry impact of .india and uk streamline usd pipeline hand-offs.",
     heroImage: "/images/article-netflix.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1608,15 +1604,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Cross-Border Co-Productions** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Cross-Border Co-Productions: India and UK Streamline USD Pipeline Hand-Offs | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Cross-Border Co-Productions and the strategic industry impact of india and uk streamline usd pipeline hand-offs.",
+      title: "Cross-Border Co-Productions: India and UK Streamline USD Pipeline Hand-Offs | Render Line",
+      desc: "An analysis of Cross-Border Co-Productions, examining production workflows and the industry impact of .india and uk streamline usd pipeline hand-offs.",
       ogImage: "/images/article-netflix.jpg",
     },
   },
   {
     title: "Practical Miniatures Return: Why Starship and Fortress Models Endure",
     slug: "practical-miniatures-return-why-starship-and-fortress-models-endure",
-    dek: "Inside Hollywood's evolving business model: examining Practical Miniatures Return and the strategic industry impact of why starship and fortress models endure.",
+    dek: "An analysis of Practical Miniatures Return, examining production workflows and the industry impact of .why starship and fortress models endure.",
     heroImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1654,15 +1650,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Practical Miniatures Return** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Practical Miniatures Return: Why Starship and Fortress Models Endure | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Practical Miniatures Return and the strategic industry impact of why starship and fortress models endure.",
+      title: "Practical Miniatures Return: Why Starship and Fortress Models Endure | Render Line",
+      desc: "An analysis of Practical Miniatures Return, examining production workflows and the industry impact of .why starship and fortress models endure.",
       ogImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Studio Power Grid Modernization: Handling Multi-Megawatt Stage Demands",
     slug: "studio-power-grid-modernization-handling-multi-megawatt-stage-demands",
-    dek: "Inside Hollywood's evolving business model: examining Studio Power Grid Modernization and the strategic industry impact of handling multi-megawatt stage demands.",
+    dek: "An analysis of Studio Power Grid Modernization, examining production workflows and the industry impact of .handling multi-megawatt stage demands.",
     heroImage: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1700,15 +1696,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Studio Power Grid Modernization** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Studio Power Grid Modernization: Handling Multi-Megawatt Stage Demands | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Studio Power Grid Modernization and the strategic industry impact of handling multi-megawatt stage demands.",
+      title: "Studio Power Grid Modernization: Handling Multi-Megawatt Stage Demands | Render Line",
+      desc: "An analysis of Studio Power Grid Modernization, examining production workflows and the industry impact of .handling multi-megawatt stage demands.",
       ogImage: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Camera Rental Inventories Shift: ARRI Alexa 35 and Sony Venice 2 In Demand",
     slug: "camera-rental-inventories-shift-arri-alexa-35-and-sony-venice-2-in-demand",
-    dek: "Inside Hollywood's evolving business model: examining Camera Rental Inventories Shift and the strategic industry impact of arri alexa 35 and sony venice 2 in demand.",
+    dek: "An analysis of Camera Rental Inventories Shift, examining production workflows and the industry impact of .arri alexa 35 and sony venice 2 in demand.",
     heroImage: "/images/camera-arri-alexa.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1746,15 +1742,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Camera Rental Inventories Shift** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Camera Rental Inventories Shift: ARRI Alexa 35 and Sony Venice 2 In Demand | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Camera Rental Inventories Shift and the strategic industry impact of arri alexa 35 and sony venice 2 in demand.",
+      title: "Camera Rental Inventories Shift: ARRI Alexa 35 and Sony Venice 2 In Demand | Render Line",
+      desc: "An analysis of Camera Rental Inventories Shift, examining production workflows and the industry impact of .arri alexa 35 and sony venice 2 in demand.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
   },
   {
     title: "The 2.39:1 Anamorphic Canvas: Why Directors Defend Physical Squeeze Glass",
     slug: "the-2-39-1-anamorphic-canvas-why-directors-defend-physical-squeeze-glass",
-    dek: "Inside Hollywood's evolving business model: examining The 2.39 and the strategic industry impact of 1 anamorphic canvas.",
+    dek: "An analysis of The 2.39, examining production workflows and the industry impact of .1 anamorphic canvas.",
     heroImage: "/images/review-camera.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1792,15 +1788,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **The 2.39** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "The 2.39:1 Anamorphic Canvas: Why Directors Defend Physical Squeeze Glass | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining The 2.39 and the strategic industry impact of 1 anamorphic canvas.",
+      title: "The 2.39:1 Anamorphic Canvas: Why Directors Defend Physical Squeeze Glass | Render Line",
+      desc: "An analysis of The 2.39, examining production workflows and the industry impact of .1 anamorphic canvas.",
       ogImage: "/images/review-camera.jpg",
     },
   },
   {
     title: "DIT On-Set Workflow: Processing 30 Terabytes Daily with Cloud Verification",
     slug: "dit-on-set-workflow-processing-30-terabytes-daily-with-cloud-verification",
-    dek: "Inside Hollywood's evolving business model: examining DIT On-Set Workflow and the strategic industry impact of processing 30 terabytes daily with cloud verification.",
+    dek: "An analysis of DIT On-Set Workflow, examining production workflows and the industry impact of .processing 30 terabytes daily with cloud verification.",
     heroImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1838,15 +1834,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **DIT On-Set Workflow** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "DIT On-Set Workflow: Processing 30 Terabytes Daily with Cloud Verification | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining DIT On-Set Workflow and the strategic industry impact of processing 30 terabytes daily with cloud verification.",
+      title: "DIT On-Set Workflow: Processing 30 Terabytes Daily with Cloud Verification | Render Line",
+      desc: "An analysis of DIT On-Set Workflow, examining production workflows and the industry impact of .processing 30 terabytes daily with cloud verification.",
       ogImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Post-Production Guild Organizing Gains Momentum Across Asian Hubs",
     slug: "post-production-guild-organizing-gains-momentum-across-asian-hubs",
-    dek: "Executive briefing on Post-Production Guild Organizing Gains Momentum Across Asian Hubs, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of Post-Production Guild Organizing Gains Momentum Across Asian Hubs, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1884,15 +1880,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Post-Production Guild Organizing Gains Momentum Across Asian Hubs** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Post-Production Guild Organizing Gains Momentum Across Asian Hubs | RENDERLINE",
-      desc: "Executive briefing on Post-Production Guild Organizing Gains Momentum Across Asian Hubs, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "Post-Production Guild Organizing Gains Momentum Across Asian Hubs | Render Line",
+      desc: "An industry analysis of Post-Production Guild Organizing Gains Momentum Across Asian Hubs, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Remote Second-Unit Direction: Real-Time Encrypted Feeds to Main Unit Tents",
     slug: "remote-second-unit-direction-real-time-encrypted-feeds-to-main-unit-tents",
-    dek: "Inside Hollywood's evolving business model: examining Remote Second-Unit Direction and the strategic industry impact of real-time encrypted feeds to main unit tents.",
+    dek: "An analysis of Remote Second-Unit Direction, examining production workflows and the industry impact of .real-time encrypted feeds to main unit tents.",
     heroImage: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1930,15 +1926,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Remote Second-Unit Direction** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Remote Second-Unit Direction: Real-Time Encrypted Feeds to Main Unit Tents | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Remote Second-Unit Direction and the strategic industry impact of real-time encrypted feeds to main unit tents.",
+      title: "Remote Second-Unit Direction: Real-Time Encrypted Feeds to Main Unit Tents | Render Line",
+      desc: "An analysis of Remote Second-Unit Direction, examining production workflows and the industry impact of .real-time encrypted feeds to main unit tents.",
       ogImage: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "LTO-9 Tape Storage: Overcoming 100-Year Studio Digital Longevity Risks",
     slug: "lto-9-tape-storage-overcoming-100-year-studio-digital-longevity-risks",
-    dek: "Inside Hollywood's evolving business model: examining LTO-9 Tape Storage and the strategic industry impact of overcoming 100-year studio digital longevity risks.",
+    dek: "An analysis of LTO-9 Tape Storage, examining production workflows and the industry impact of .overcoming 100-year studio digital longevity risks.",
     heroImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1976,15 +1972,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **LTO-9 Tape Storage** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "LTO-9 Tape Storage: Overcoming 100-Year Studio Digital Longevity Risks | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining LTO-9 Tape Storage and the strategic industry impact of overcoming 100-year studio digital longevity risks.",
+      title: "LTO-9 Tape Storage: Overcoming 100-Year Studio Digital Longevity Risks | Render Line",
+      desc: "An analysis of LTO-9 Tape Storage, examining production workflows and the industry impact of .overcoming 100-year studio digital longevity risks.",
       ogImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Audience Sentiment Polls: Viewers Prefer Visible Practical Stuntwork",
     slug: "audience-sentiment-polls-viewers-prefer-visible-practical-stuntwork",
-    dek: "Inside Hollywood's evolving business model: examining Audience Sentiment Polls and the strategic industry impact of viewers prefer visible practical stuntwork.",
+    dek: "An analysis of Audience Sentiment Polls, examining production workflows and the industry impact of .viewers prefer visible practical stuntwork.",
     heroImage: "/images/mocap-performance-stage.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2022,15 +2018,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Audience Sentiment Polls** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Audience Sentiment Polls: Viewers Prefer Visible Practical Stuntwork | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Audience Sentiment Polls and the strategic industry impact of viewers prefer visible practical stuntwork.",
+      title: "Audience Sentiment Polls: Viewers Prefer Visible Practical Stuntwork | Render Line",
+      desc: "An analysis of Audience Sentiment Polls, examining production workflows and the industry impact of .viewers prefer visible practical stuntwork.",
       ogImage: "/images/mocap-performance-stage.jpg",
     },
   },
   {
     title: "GrandMA3 Console Integration with Unreal Engine for Lighting Desks",
     slug: "grandma3-console-integration-with-unreal-engine-for-lighting-desks",
-    dek: "Executive briefing on GrandMA3 Console Integration with Unreal Engine for Lighting Desks, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of GrandMA3 Console Integration with Unreal Engine for Lighting Desks, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "/images/article-unreal.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2068,15 +2064,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **GrandMA3 Console Integration with Unreal Engine for Lighting Desks** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "GrandMA3 Console Integration with Unreal Engine for Lighting Desks | RENDERLINE",
-      desc: "Executive briefing on GrandMA3 Console Integration with Unreal Engine for Lighting Desks, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "GrandMA3 Console Integration with Unreal Engine for Lighting Desks | Render Line",
+      desc: "An industry analysis of GrandMA3 Console Integration with Unreal Engine for Lighting Desks, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "/images/article-unreal.jpg",
     },
   },
   {
     title: "Version-Controlled Screenwriting: Collaborative Branching in Writers Rooms",
     slug: "version-controlled-screenwriting-collaborative-branching-in-writers-rooms",
-    dek: "Inside Hollywood's evolving business model: examining Version-Controlled Screenwriting and the strategic industry impact of collaborative branching in writers rooms.",
+    dek: "An analysis of Version-Controlled Screenwriting, examining production workflows and the industry impact of .collaborative branching in writers rooms.",
     heroImage: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2114,15 +2110,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Version-Controlled Screenwriting** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Version-Controlled Screenwriting: Collaborative Branching in Writers Rooms | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Version-Controlled Screenwriting and the strategic industry impact of collaborative branching in writers rooms.",
+      title: "Version-Controlled Screenwriting: Collaborative Branching in Writers Rooms | Render Line",
+      desc: "An analysis of Version-Controlled Screenwriting, examining production workflows and the industry impact of .collaborative branching in writers rooms.",
       ogImage: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Commercial Production Houses Adopt Hollywood-Grade Virtual Stages",
     slug: "commercial-production-houses-adopt-hollywood-grade-virtual-stages",
-    dek: "Executive briefing on Commercial Production Houses Adopt Hollywood-Grade Virtual Stages, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of Commercial Production Houses Adopt Hollywood-Grade Virtual Stages, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "/images/article-netflix.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2160,15 +2156,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Commercial Production Houses Adopt Hollywood-Grade Virtual Stages** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Commercial Production Houses Adopt Hollywood-Grade Virtual Stages | RENDERLINE",
-      desc: "Executive briefing on Commercial Production Houses Adopt Hollywood-Grade Virtual Stages, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "Commercial Production Houses Adopt Hollywood-Grade Virtual Stages | Render Line",
+      desc: "An industry analysis of Commercial Production Houses Adopt Hollywood-Grade Virtual Stages, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "/images/article-netflix.jpg",
     },
   },
   {
     title: "VistaVision 8-Perf 35mm Celluloid Reborn for Miniature Background Passes",
     slug: "vistavision-8-perf-35mm-celluloid-reborn-for-miniature-background-passes",
-    dek: "Executive briefing on VistaVision 8-Perf 35mm Celluloid Reborn for Miniature Background Passes, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of VistaVision 8-Perf 35mm Celluloid Reborn for Miniature Background Passes, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2206,15 +2202,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **VistaVision 8-Perf 35mm Celluloid Reborn for Miniature Background Passes** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "VistaVision 8-Perf 35mm Celluloid Reborn for Miniature Background Passes | RENDERLINE",
-      desc: "Executive briefing on VistaVision 8-Perf 35mm Celluloid Reborn for Miniature Background Passes, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "VistaVision 8-Perf 35mm Celluloid Reborn for Miniature Background Passes | Render Line",
+      desc: "An industry analysis of VistaVision 8-Perf 35mm Celluloid Reborn for Miniature Background Passes, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Dolby Cinema Dual-Laser Rec.2020 Color Grading Becomes Studio Gold Standard",
     slug: "dolby-cinema-dual-laser-rec-2020-color-grading-becomes-studio-gold-standard",
-    dek: "Executive briefing on Dolby Cinema Dual-Laser Rec.2020 Color Grading Becomes Studio Gold Standard, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of Dolby Cinema Dual-Laser Rec.2020 Color Grading Becomes Studio Gold Standard, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2252,15 +2248,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Dolby Cinema Dual-Laser Rec.2020 Color Grading Becomes Studio Gold Standard** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Dolby Cinema Dual-Laser Rec.2020 Color Grading Becomes Studio Gold Standard | RENDERLINE",
-      desc: "Executive briefing on Dolby Cinema Dual-Laser Rec.2020 Color Grading Becomes Studio Gold Standard, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "Dolby Cinema Dual-Laser Rec.2020 Color Grading Becomes Studio Gold Standard | Render Line",
+      desc: "An industry analysis of Dolby Cinema Dual-Laser Rec.2020 Color Grading Becomes Studio Gold Standard, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Automated Script Breakdown: Production Managers Reclaim 40 Hours per Block",
     slug: "automated-script-breakdown-production-managers-reclaim-40-hours-per-block",
-    dek: "Inside Hollywood's evolving business model: examining Automated Script Breakdown and the strategic industry impact of production managers reclaim 40 hours per block.",
+    dek: "An analysis of Automated Script Breakdown, examining production workflows and the industry impact of .production managers reclaim 40 hours per block.",
     heroImage: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2298,15 +2294,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Automated Script Breakdown** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Automated Script Breakdown: Production Managers Reclaim 40 Hours per Block | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Automated Script Breakdown and the strategic industry impact of production managers reclaim 40 hours per block.",
+      title: "Automated Script Breakdown: Production Managers Reclaim 40 Hours per Block | Render Line",
+      desc: "An analysis of Automated Script Breakdown, examining production workflows and the industry impact of .production managers reclaim 40 hours per block.",
       ogImage: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Digital Auditions: Volumetric Performer Photogrammetry Capture Protocols",
     slug: "digital-auditions-volumetric-performer-photogrammetry-capture-protocols",
-    dek: "Inside Hollywood's evolving business model: examining Digital Auditions and the strategic industry impact of volumetric performer photogrammetry capture protocols.",
+    dek: "An analysis of Digital Auditions, examining production workflows and the industry impact of .volumetric performer photogrammetry capture protocols.",
     heroImage: "/images/hero-vfx-breakdown.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2344,15 +2340,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Digital Auditions** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Digital Auditions: Volumetric Performer Photogrammetry Capture Protocols | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Digital Auditions and the strategic industry impact of volumetric performer photogrammetry capture protocols.",
+      title: "Digital Auditions: Volumetric Performer Photogrammetry Capture Protocols | Render Line",
+      desc: "An analysis of Digital Auditions, examining production workflows and the industry impact of .volumetric performer photogrammetry capture protocols.",
       ogImage: "/images/hero-vfx-breakdown.jpg",
     },
   },
   {
     title: "Custom 3D-Printed Armor: Sub-Millimeter Body Scans Transform Costume Teams",
     slug: "custom-3d-printed-armor-sub-millimeter-body-scans-transform-costume-teams",
-    dek: "Inside Hollywood's evolving business model: examining Custom 3D-Printed Armor and the strategic industry impact of sub-millimeter body scans transform costume teams.",
+    dek: "An analysis of Custom 3D-Printed Armor, examining production workflows and the industry impact of .sub-millimeter body scans transform costume teams.",
     heroImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2390,15 +2386,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Custom 3D-Printed Armor** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Custom 3D-Printed Armor: Sub-Millimeter Body Scans Transform Costume Teams | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Custom 3D-Printed Armor and the strategic industry impact of sub-millimeter body scans transform costume teams.",
+      title: "Custom 3D-Printed Armor: Sub-Millimeter Body Scans Transform Costume Teams | Render Line",
+      desc: "An analysis of Custom 3D-Printed Armor, examining production workflows and the industry impact of .sub-millimeter body scans transform costume teams.",
       ogImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Pyrotechnic Safety: Radio-Controlled Detonators Synced to High-Speed Phantom",
     slug: "pyrotechnic-safety-radio-controlled-detonators-synced-to-high-speed-phantom",
-    dek: "Inside Hollywood's evolving business model: examining Pyrotechnic Safety and the strategic industry impact of radio-controlled detonators synced to high-speed phantom.",
+    dek: "An analysis of Pyrotechnic Safety, examining production workflows and the industry impact of .radio-controlled detonators synced to high-speed phantom.",
     heroImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2436,15 +2432,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Pyrotechnic Safety** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Pyrotechnic Safety: Radio-Controlled Detonators Synced to High-Speed Phantom | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Pyrotechnic Safety and the strategic industry impact of radio-controlled detonators synced to high-speed phantom.",
+      title: "Pyrotechnic Safety: Radio-Controlled Detonators Synced to High-Speed Phantom | Render Line",
+      desc: "An analysis of Pyrotechnic Safety, examining production workflows and the industry impact of .radio-controlled detonators synced to high-speed phantom.",
       ogImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Visual Effects Post-Supervisors: Managing 25 Global Vendors Under Pressure",
     slug: "visual-effects-post-supervisors-managing-25-global-vendors-under-pressure",
-    dek: "Inside Hollywood's evolving business model: examining Visual Effects Post-Supervisors and the strategic industry impact of managing 25 global vendors under pressure.",
+    dek: "An analysis of Visual Effects Post-Supervisors, examining production workflows and the industry impact of .managing 25 global vendors under pressure.",
     heroImage: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2482,15 +2478,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Visual Effects Post-Supervisors** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Visual Effects Post-Supervisors: Managing 25 Global Vendors Under Pressure | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Visual Effects Post-Supervisors and the strategic industry impact of managing 25 global vendors under pressure.",
+      title: "Visual Effects Post-Supervisors: Managing 25 Global Vendors Under Pressure | Render Line",
+      desc: "An analysis of Visual Effects Post-Supervisors, examining production workflows and the industry impact of .managing 25 global vendors under pressure.",
       ogImage: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Production Insurance Mandates: Verifying Training Data Provenance for AI Tools",
     slug: "production-insurance-mandates-verifying-training-data-provenance-for-ai-tools",
-    dek: "Inside Hollywood's evolving business model: examining Production Insurance Mandates and the strategic industry impact of verifying training data provenance for ai tools.",
+    dek: "An analysis of Production Insurance Mandates, examining production workflows and the industry impact of .verifying training data provenance for ai tools.",
     heroImage: "/images/article-netflix.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2528,15 +2524,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Production Insurance Mandates** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Production Insurance Mandates: Verifying Training Data Provenance for AI Tools | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Production Insurance Mandates and the strategic industry impact of verifying training data provenance for ai tools.",
+      title: "Production Insurance Mandates: Verifying Training Data Provenance for AI Tools | Render Line",
+      desc: "An analysis of Production Insurance Mandates, examining production workflows and the industry impact of .verifying training data provenance for ai tools.",
       ogImage: "/images/article-netflix.jpg",
     },
   },
   {
     title: "Theatrical Exclusive Windows: Studios Recommit to 60-Day Theatrical Buffer",
     slug: "theatrical-exclusive-windows-studios-recommit-to-60-day-theatrical-buffer",
-    dek: "Inside Hollywood's evolving business model: examining Theatrical Exclusive Windows and the strategic industry impact of studios recommit to 60-day theatrical buffer.",
+    dek: "An analysis of Theatrical Exclusive Windows, examining production workflows and the industry impact of .studios recommit to 60-day theatrical buffer.",
     heroImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2574,15 +2570,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Theatrical Exclusive Windows** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Theatrical Exclusive Windows: Studios Recommit to 60-Day Theatrical Buffer | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Theatrical Exclusive Windows and the strategic industry impact of studios recommit to 60-day theatrical buffer.",
+      title: "Theatrical Exclusive Windows: Studios Recommit to 60-Day Theatrical Buffer | Render Line",
+      desc: "An analysis of Theatrical Exclusive Windows, examining production workflows and the industry impact of .studios recommit to 60-day theatrical buffer.",
       ogImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Hydrodynamic Underwater Housings for Large-Format Cinema Sensors",
     slug: "hydrodynamic-underwater-housings-for-large-format-cinema-sensors",
-    dek: "Executive briefing on Hydrodynamic Underwater Housings for Large-Format Cinema Sensors, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of Hydrodynamic Underwater Housings for Large-Format Cinema Sensors, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "https://images.unsplash.com/photo-1533561797500-4bad475fe661?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2620,15 +2616,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Hydrodynamic Underwater Housings for Large-Format Cinema Sensors** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Hydrodynamic Underwater Housings for Large-Format Cinema Sensors | RENDERLINE",
-      desc: "Executive briefing on Hydrodynamic Underwater Housings for Large-Format Cinema Sensors, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "Hydrodynamic Underwater Housings for Large-Format Cinema Sensors | Render Line",
+      desc: "An industry analysis of Hydrodynamic Underwater Housings for Large-Format Cinema Sensors, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "https://images.unsplash.com/photo-1533561797500-4bad475fe661?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Mark Roberts Motion Control High-Speed Rigs in Action Sequences",
     slug: "mark-roberts-motion-control-high-speed-rigs-in-action-sequences",
-    dek: "Executive briefing on Mark Roberts Motion Control High-Speed Rigs in Action Sequences, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of Mark Roberts Motion Control High-Speed Rigs in Action Sequences, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2666,15 +2662,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Mark Roberts Motion Control High-Speed Rigs in Action Sequences** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Mark Roberts Motion Control High-Speed Rigs in Action Sequences | RENDERLINE",
-      desc: "Executive briefing on Mark Roberts Motion Control High-Speed Rigs in Action Sequences, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "Mark Roberts Motion Control High-Speed Rigs in Action Sequences | Render Line",
+      desc: "An industry analysis of Mark Roberts Motion Control High-Speed Rigs in Action Sequences, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Air-Gapped Edit Suites Safeguard Major Tentpole Workprints from Data Theft",
     slug: "air-gapped-edit-suites-safeguard-major-tentpole-workprints-from-data-theft",
-    dek: "Executive briefing on Air-Gapped Edit Suites Safeguard Major Tentpole Workprints from Data Theft, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of Air-Gapped Edit Suites Safeguard Major Tentpole Workprints from Data Theft, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "/images/article-netflix.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2712,15 +2708,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Air-Gapped Edit Suites Safeguard Major Tentpole Workprints from Data Theft** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Air-Gapped Edit Suites Safeguard Major Tentpole Workprints from Data Theft | RENDERLINE",
-      desc: "Executive briefing on Air-Gapped Edit Suites Safeguard Major Tentpole Workprints from Data Theft, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "Air-Gapped Edit Suites Safeguard Major Tentpole Workprints from Data Theft | Render Line",
+      desc: "An industry analysis of Air-Gapped Edit Suites Safeguard Major Tentpole Workprints from Data Theft, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "/images/article-netflix.jpg",
     },
   },
   {
     title: "Actor Biometric Vaults: Escrow Protections for 3D Volumetric Performer Data",
     slug: "actor-biometric-vaults-escrow-protections-for-3d-volumetric-performer-data",
-    dek: "Inside Hollywood's evolving business model: examining Actor Biometric Vaults and the strategic industry impact of escrow protections for 3d volumetric performer data.",
+    dek: "An analysis of Actor Biometric Vaults, examining production workflows and the industry impact of .escrow protections for 3d volumetric performer data.",
     heroImage: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2758,15 +2754,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Actor Biometric Vaults** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Actor Biometric Vaults: Escrow Protections for 3D Volumetric Performer Data | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Actor Biometric Vaults and the strategic industry impact of escrow protections for 3d volumetric performer data.",
+      title: "Actor Biometric Vaults: Escrow Protections for 3D Volumetric Performer Data | Render Line",
+      desc: "An analysis of Actor Biometric Vaults, examining production workflows and the industry impact of .escrow protections for 3d volumetric performer data.",
       ogImage: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "16mm Celluloid Aesthetic: Kodak Vision3 500T Popularity Among Auteur Shoots",
     slug: "16mm-celluloid-aesthetic-kodak-vision3-500t-popularity-among-auteur-shoots",
-    dek: "Inside Hollywood's evolving business model: examining 16mm Celluloid Aesthetic and the strategic industry impact of kodak vision3 500t popularity among auteur shoots.",
+    dek: "An analysis of 16mm Celluloid Aesthetic, examining production workflows and the industry impact of .kodak vision3 500t popularity among auteur shoots.",
     heroImage: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2804,15 +2800,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **16mm Celluloid Aesthetic** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "16mm Celluloid Aesthetic: Kodak Vision3 500T Popularity Among Auteur Shoots | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining 16mm Celluloid Aesthetic and the strategic industry impact of kodak vision3 500t popularity among auteur shoots.",
+      title: "16mm Celluloid Aesthetic: Kodak Vision3 500T Popularity Among Auteur Shoots | Render Line",
+      desc: "An analysis of 16mm Celluloid Aesthetic, examining production workflows and the industry impact of .kodak vision3 500t popularity among auteur shoots.",
       ogImage: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "DCP SMPTE Interop vs DCI Standards in Modern Theatrical Projection",
     slug: "dcp-smpte-interop-vs-dci-standards-in-modern-theatrical-projection",
-    dek: "Executive briefing on DCP SMPTE Interop vs DCI Standards in Modern Theatrical Projection, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of DCP SMPTE Interop vs DCI Standards in Modern Theatrical Projection, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2850,15 +2846,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **DCP SMPTE Interop vs DCI Standards in Modern Theatrical Projection** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "DCP SMPTE Interop vs DCI Standards in Modern Theatrical Projection | RENDERLINE",
-      desc: "Executive briefing on DCP SMPTE Interop vs DCI Standards in Modern Theatrical Projection, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "DCP SMPTE Interop vs DCI Standards in Modern Theatrical Projection | Render Line",
+      desc: "An industry analysis of DCP SMPTE Interop vs DCI Standards in Modern Theatrical Projection, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Cloud-Based Production Accounting: Real-Time Payroll on 600-Person Crews",
     slug: "cloud-based-production-accounting-real-time-payroll-on-600-person-crews",
-    dek: "Inside Hollywood's evolving business model: examining Cloud-Based Production Accounting and the strategic industry impact of real-time payroll on 600-person crews.",
+    dek: "An analysis of Cloud-Based Production Accounting, examining production workflows and the industry impact of .real-time payroll on 600-person crews.",
     heroImage: "/images/article-netflix.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2896,15 +2892,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Cloud-Based Production Accounting** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Cloud-Based Production Accounting: Real-Time Payroll on 600-Person Crews | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Cloud-Based Production Accounting and the strategic industry impact of real-time payroll on 600-person crews.",
+      title: "Cloud-Based Production Accounting: Real-Time Payroll on 600-Person Crews | Render Line",
+      desc: "An analysis of Cloud-Based Production Accounting, examining production workflows and the industry impact of .real-time payroll on 600-person crews.",
       ogImage: "/images/article-netflix.jpg",
     },
   },
   {
     title: "Additive Metal 3D Printing for High-Stress Hero Mechanical Props",
     slug: "additive-metal-3d-printing-for-high-stress-hero-mechanical-props",
-    dek: "Executive briefing on Additive Metal 3D Printing for High-Stress Hero Mechanical Props, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of Additive Metal 3D Printing for High-Stress Hero Mechanical Props, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2942,15 +2938,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Additive Metal 3D Printing for High-Stress Hero Mechanical Props** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Additive Metal 3D Printing for High-Stress Hero Mechanical Props | RENDERLINE",
-      desc: "Executive briefing on Additive Metal 3D Printing for High-Stress Hero Mechanical Props, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "Additive Metal 3D Printing for High-Stress Hero Mechanical Props | Render Line",
+      desc: "An industry analysis of Additive Metal 3D Printing for High-Stress Hero Mechanical Props, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Dolby Atmos 9.1.6 Spatial Bed Mastering: Acoustic Immersion in Modern Cinema",
     slug: "dolby-atmos-9-1-6-spatial-bed-mastering-acoustic-immersion-in-modern-cinema",
-    dek: "Inside Hollywood's evolving business model: examining Dolby Atmos 9.1.6 Spatial Bed Mastering and the strategic industry impact of acoustic immersion in modern cinema.",
+    dek: "An analysis of Dolby Atmos 9.1.6 Spatial Bed Mastering, examining production workflows and the industry impact of .acoustic immersion in modern cinema.",
     heroImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2988,15 +2984,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Dolby Atmos 9.1.6 Spatial Bed Mastering** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Dolby Atmos 9.1.6 Spatial Bed Mastering: Acoustic Immersion in Modern Cinema | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Dolby Atmos 9.1.6 Spatial Bed Mastering and the strategic industry impact of acoustic immersion in modern cinema.",
+      title: "Dolby Atmos 9.1.6 Spatial Bed Mastering: Acoustic Immersion in Modern Cinema | Render Line",
+      desc: "An analysis of Dolby Atmos 9.1.6 Spatial Bed Mastering, examining production workflows and the industry impact of .acoustic immersion in modern cinema.",
       ogImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Electric Insert Tracking Vehicles Replace Traditional Low-Loader Tow Dollies",
     slug: "electric-insert-tracking-vehicles-replace-traditional-low-loader-tow-dollies",
-    dek: "Executive briefing on Electric Insert Tracking Vehicles Replace Traditional Low-Loader Tow Dollies, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of Electric Insert Tracking Vehicles Replace Traditional Low-Loader Tow Dollies, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "/images/mocap-performance-stage.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3034,15 +3030,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Electric Insert Tracking Vehicles Replace Traditional Low-Loader Tow Dollies** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Electric Insert Tracking Vehicles Replace Traditional Low-Loader Tow Dollies | RENDERLINE",
-      desc: "Executive briefing on Electric Insert Tracking Vehicles Replace Traditional Low-Loader Tow Dollies, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "Electric Insert Tracking Vehicles Replace Traditional Low-Loader Tow Dollies | Render Line",
+      desc: "An industry analysis of Electric Insert Tracking Vehicles Replace Traditional Low-Loader Tow Dollies, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "/images/mocap-performance-stage.jpg",
     },
   },
   {
     title: "Virtual Set Intimacy Protocols: Psychological Safety on High-Tech Volumes",
     slug: "virtual-set-intimacy-protocols-psychological-safety-on-high-tech-volumes",
-    dek: "Inside Hollywood's evolving business model: examining Virtual Set Intimacy Protocols and the strategic industry impact of psychological safety on high-tech volumes.",
+    dek: "An analysis of Virtual Set Intimacy Protocols, examining production workflows and the industry impact of .psychological safety on high-tech volumes.",
     heroImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3080,15 +3076,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Virtual Set Intimacy Protocols** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Virtual Set Intimacy Protocols: Psychological Safety on High-Tech Volumes | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Virtual Set Intimacy Protocols and the strategic industry impact of psychological safety on high-tech volumes.",
+      title: "Virtual Set Intimacy Protocols: Psychological Safety on High-Tech Volumes | Render Line",
+      desc: "An analysis of Virtual Set Intimacy Protocols, examining production workflows and the industry impact of .psychological safety on high-tech volumes.",
       ogImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Feature Documentary Restoration: Machine Learning Plate Denoising Standards",
     slug: "feature-documentary-restoration-machine-learning-plate-denoising-standards",
-    dek: "Inside Hollywood's evolving business model: examining Feature Documentary Restoration and the strategic industry impact of machine learning plate denoising standards.",
+    dek: "An analysis of Feature Documentary Restoration, examining production workflows and the industry impact of .machine learning plate denoising standards.",
     heroImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3126,15 +3122,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Feature Documentary Restoration** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Feature Documentary Restoration: Machine Learning Plate Denoising Standards | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Feature Documentary Restoration and the strategic industry impact of machine learning plate denoising standards.",
+      title: "Feature Documentary Restoration: Machine Learning Plate Denoising Standards | Render Line",
+      desc: "An analysis of Feature Documentary Restoration, examining production workflows and the industry impact of .machine learning plate denoising standards.",
       ogImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "VFX Producer Survival Guide: Running Massive Global Shows Across 5 Time Zones",
     slug: "vfx-producer-survival-guide-running-massive-global-shows-across-5-time-zones",
-    dek: "Inside Hollywood's evolving business model: examining VFX Producer Survival Guide and the strategic industry impact of running massive global shows across 5 time zones.",
+    dek: "An analysis of VFX Producer Survival Guide, examining production workflows and the industry impact of .running massive global shows across 5 time zones.",
     heroImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3172,15 +3168,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **VFX Producer Survival Guide** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "VFX Producer Survival Guide: Running Massive Global Shows Across 5 Time Zones | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining VFX Producer Survival Guide and the strategic industry impact of running massive global shows across 5 time zones.",
+      title: "VFX Producer Survival Guide: Running Massive Global Shows Across 5 Time Zones | Render Line",
+      desc: "An analysis of VFX Producer Survival Guide, examining production workflows and the industry impact of .running massive global shows across 5 time zones.",
       ogImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Writing for Spatial Displays: Narrative Structuring for Panoramic Theaters",
     slug: "writing-for-spatial-displays-narrative-structuring-for-panoramic-theaters",
-    dek: "Inside Hollywood's evolving business model: examining Writing for Spatial Displays and the strategic industry impact of narrative structuring for panoramic theaters.",
+    dek: "An analysis of Writing for Spatial Displays, examining production workflows and the industry impact of .narrative structuring for panoramic theaters.",
     heroImage: "/images/audio-atmos-stage.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3218,15 +3214,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Writing for Spatial Displays** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Writing for Spatial Displays: Narrative Structuring for Panoramic Theaters | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Writing for Spatial Displays and the strategic industry impact of narrative structuring for panoramic theaters.",
+      title: "Writing for Spatial Displays: Narrative Structuring for Panoramic Theaters | Render Line",
+      desc: "An analysis of Writing for Spatial Displays, examining production workflows and the industry impact of .narrative structuring for panoramic theaters.",
       ogImage: "/images/audio-atmos-stage.jpg",
     },
   },
   {
     title: "Live-Graded HDR On-Set Dailies: Color Consistency from Day One of Principle",
     slug: "live-graded-hdr-on-set-dailies-color-consistency-from-day-one-of-principle",
-    dek: "Inside Hollywood's evolving business model: examining Live-Graded HDR On-Set Dailies and the strategic industry impact of color consistency from day one of principle.",
+    dek: "An analysis of Live-Graded HDR On-Set Dailies, examining production workflows and the industry impact of .color consistency from day one of principle.",
     heroImage: "/images/article-netflix.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3264,15 +3260,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Live-Graded HDR On-Set Dailies** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Live-Graded HDR On-Set Dailies: Color Consistency from Day One of Principle | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Live-Graded HDR On-Set Dailies and the strategic industry impact of color consistency from day one of principle.",
+      title: "Live-Graded HDR On-Set Dailies: Color Consistency from Day One of Principle | Render Line",
+      desc: "An analysis of Live-Graded HDR On-Set Dailies, examining production workflows and the industry impact of .color consistency from day one of principle.",
       ogImage: "/images/article-netflix.jpg",
     },
   },
   {
     title: "Celluloid Film Stock Allocation: Overcoming Worldwide 35mm Raw Stock Shortages",
     slug: "celluloid-film-stock-allocation-overcoming-worldwide-35mm-raw-stock-shortages",
-    dek: "Inside Hollywood's evolving business model: examining Celluloid Film Stock Allocation and the strategic industry impact of overcoming worldwide 35mm raw stock shortages.",
+    dek: "An analysis of Celluloid Film Stock Allocation, examining production workflows and the industry impact of .overcoming worldwide 35mm raw stock shortages.",
     heroImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3310,15 +3306,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Celluloid Film Stock Allocation** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Celluloid Film Stock Allocation: Overcoming Worldwide 35mm Raw Stock Shortages | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Celluloid Film Stock Allocation and the strategic industry impact of overcoming worldwide 35mm raw stock shortages.",
+      title: "Celluloid Film Stock Allocation: Overcoming Worldwide 35mm Raw Stock Shortages | Render Line",
+      desc: "An analysis of Celluloid Film Stock Allocation, examining production workflows and the industry impact of .overcoming worldwide 35mm raw stock shortages.",
       ogImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Ultrasonic Hazer Fluid Innovations: Clean Atmospheric Fog on Soundstages",
     slug: "ultrasonic-hazer-fluid-innovations-clean-atmospheric-fog-on-soundstages",
-    dek: "Inside Hollywood's evolving business model: examining Ultrasonic Hazer Fluid Innovations and the strategic industry impact of clean atmospheric fog on soundstages.",
+    dek: "An analysis of Ultrasonic Hazer Fluid Innovations, examining production workflows and the industry impact of .clean atmospheric fog on soundstages.",
     heroImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3356,15 +3352,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Ultrasonic Hazer Fluid Innovations** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Ultrasonic Hazer Fluid Innovations: Clean Atmospheric Fog on Soundstages | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Ultrasonic Hazer Fluid Innovations and the strategic industry impact of clean atmospheric fog on soundstages.",
+      title: "Ultrasonic Hazer Fluid Innovations: Clean Atmospheric Fog on Soundstages | Render Line",
+      desc: "An analysis of Ultrasonic Hazer Fluid Innovations, examining production workflows and the industry impact of .clean atmospheric fog on soundstages.",
       ogImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Title Sequence Engineering: Procedural Typography Meets Anamorphic Glass",
     slug: "title-sequence-engineering-procedural-typography-meets-anamorphic-glass",
-    dek: "Inside Hollywood's evolving business model: examining Title Sequence Engineering and the strategic industry impact of procedural typography meets anamorphic glass.",
+    dek: "An analysis of Title Sequence Engineering, examining production workflows and the industry impact of .procedural typography meets anamorphic glass.",
     heroImage: "/images/camera-arri-alexa.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3402,15 +3398,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Title Sequence Engineering** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Title Sequence Engineering: Procedural Typography Meets Anamorphic Glass | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Title Sequence Engineering and the strategic industry impact of procedural typography meets anamorphic glass.",
+      title: "Title Sequence Engineering: Procedural Typography Meets Anamorphic Glass | Render Line",
+      desc: "An analysis of Title Sequence Engineering, examining production workflows and the industry impact of .procedural typography meets anamorphic glass.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
   },
   {
     title: "Practical Creature Suits: Silicon Formulations Combined with Animatronic Servos",
     slug: "practical-creature-suits-silicon-formulations-combined-with-animatronic-servos",
-    dek: "Inside Hollywood's evolving business model: examining Practical Creature Suits and the strategic industry impact of silicon formulations combined with animatronic servos.",
+    dek: "An analysis of Practical Creature Suits, examining production workflows and the industry impact of .silicon formulations combined with animatronic servos.",
     heroImage: "/images/vfx-space-explosion.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3448,15 +3444,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Practical Creature Suits** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Practical Creature Suits: Silicon Formulations Combined with Animatronic Servos | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Practical Creature Suits and the strategic industry impact of silicon formulations combined with animatronic servos.",
+      title: "Practical Creature Suits: Silicon Formulations Combined with Animatronic Servos | Render Line",
+      desc: "An analysis of Practical Creature Suits, examining production workflows and the industry impact of .silicon formulations combined with animatronic servos.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },
   },
   {
     title: "Executive Cloud Dashboards: Real-Time VFX Shot Tracking for Studio Heads",
     slug: "executive-cloud-dashboards-real-time-vfx-shot-tracking-for-studio-heads",
-    dek: "Inside Hollywood's evolving business model: examining Executive Cloud Dashboards and the strategic industry impact of real-time vfx shot tracking for studio heads.",
+    dek: "An analysis of Executive Cloud Dashboards, examining production workflows and the industry impact of .real-time vfx shot tracking for studio heads.",
     heroImage: "/images/mocap-performance-stage.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3494,15 +3490,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Executive Cloud Dashboards** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Executive Cloud Dashboards: Real-Time VFX Shot Tracking for Studio Heads | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Executive Cloud Dashboards and the strategic industry impact of real-time vfx shot tracking for studio heads.",
+      title: "Executive Cloud Dashboards: Real-Time VFX Shot Tracking for Studio Heads | Render Line",
+      desc: "An analysis of Executive Cloud Dashboards, examining production workflows and the industry impact of .real-time vfx shot tracking for studio heads.",
       ogImage: "/images/mocap-performance-stage.jpg",
     },
   },
   {
     title: "Action Choreography Camera Rigs: Lightweight Gimbals Inspired by East Asian Hits",
     slug: "action-choreography-camera-rigs-lightweight-gimbals-inspired-by-east-asian-hits",
-    dek: "Inside Hollywood's evolving business model: examining Action Choreography Camera Rigs and the strategic industry impact of lightweight gimbals inspired by east asian hits.",
+    dek: "An analysis of Action Choreography Camera Rigs, examining production workflows and the industry impact of .lightweight gimbals inspired by east asian hits.",
     heroImage: "https://images.unsplash.com/photo-1533561797500-4bad475fe661?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3540,15 +3536,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Action Choreography Camera Rigs** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Action Choreography Camera Rigs: Lightweight Gimbals Inspired by East Asian Hits | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Action Choreography Camera Rigs and the strategic industry impact of lightweight gimbals inspired by east asian hits.",
+      title: "Action Choreography Camera Rigs: Lightweight Gimbals Inspired by East Asian Hits | Render Line",
+      desc: "An analysis of Action Choreography Camera Rigs, examining production workflows and the industry impact of .lightweight gimbals inspired by east asian hits.",
       ogImage: "https://images.unsplash.com/photo-1533561797500-4bad475fe661?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Zero-Waste Sets: Hollywood Productions Eliminate Single-Use Plastics",
     slug: "zero-waste-sets-hollywood-productions-eliminate-single-use-plastics",
-    dek: "Inside Hollywood's evolving business model: examining Zero-Waste Sets and the strategic industry impact of hollywood productions eliminate single-use plastics.",
+    dek: "An analysis of Zero-Waste Sets, examining production workflows and the industry impact of .hollywood productions eliminate single-use plastics.",
     heroImage: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3586,15 +3582,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Zero-Waste Sets** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Zero-Waste Sets: Hollywood Productions Eliminate Single-Use Plastics | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Zero-Waste Sets and the strategic industry impact of hollywood productions eliminate single-use plastics.",
+      title: "Zero-Waste Sets: Hollywood Productions Eliminate Single-Use Plastics | Render Line",
+      desc: "An analysis of Zero-Waste Sets, examining production workflows and the industry impact of .hollywood productions eliminate single-use plastics.",
       ogImage: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Phantom Flex 4K at 1000fps: High-Speed Ballistic and Fluid Capture Science",
     slug: "phantom-flex-4k-at-1000fps-high-speed-ballistic-and-fluid-capture-science",
-    dek: "Inside Hollywood's evolving business model: examining Phantom Flex 4K at 1000fps and the strategic industry impact of high-speed ballistic and fluid capture science.",
+    dek: "An analysis of Phantom Flex 4K at 1000fps, examining production workflows and the industry impact of .high-speed ballistic and fluid capture science.",
     heroImage: "/images/vfx-space-explosion.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3632,15 +3628,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Phantom Flex 4K at 1000fps** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Phantom Flex 4K at 1000fps: High-Speed Ballistic and Fluid Capture Science | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Phantom Flex 4K at 1000fps and the strategic industry impact of high-speed ballistic and fluid capture science.",
+      title: "Phantom Flex 4K at 1000fps: High-Speed Ballistic and Fluid Capture Science | Render Line",
+      desc: "An analysis of Phantom Flex 4K at 1000fps, examining production workflows and the industry impact of .high-speed ballistic and fluid capture science.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },
   },
   {
     title: "Academy Documentary Branch Establishes Strict Non-Generative Criteria",
     slug: "academy-documentary-branch-establishes-strict-non-generative-criteria",
-    dek: "Executive briefing on Academy Documentary Branch Establishes Strict Non-Generative Criteria, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of Academy Documentary Branch Establishes Strict Non-Generative Criteria, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3678,15 +3674,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Academy Documentary Branch Establishes Strict Non-Generative Criteria** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Academy Documentary Branch Establishes Strict Non-Generative Criteria | RENDERLINE",
-      desc: "Executive briefing on Academy Documentary Branch Establishes Strict Non-Generative Criteria, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "Academy Documentary Branch Establishes Strict Non-Generative Criteria | Render Line",
+      desc: "An industry analysis of Academy Documentary Branch Establishes Strict Non-Generative Criteria, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Theatrical Soundproofing: Multi-Layer Acoustic Baffles in Modern Multiplexes",
     slug: "theatrical-soundproofing-multi-layer-acoustic-baffles-in-modern-multiplexes",
-    dek: "Inside Hollywood's evolving business model: examining Theatrical Soundproofing and the strategic industry impact of multi-layer acoustic baffles in modern multiplexes.",
+    dek: "An analysis of Theatrical Soundproofing, examining production workflows and the industry impact of .multi-layer acoustic baffles in modern multiplexes.",
     heroImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3724,15 +3720,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Theatrical Soundproofing** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Theatrical Soundproofing: Multi-Layer Acoustic Baffles in Modern Multiplexes | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Theatrical Soundproofing and the strategic industry impact of multi-layer acoustic baffles in modern multiplexes.",
+      title: "Theatrical Soundproofing: Multi-Layer Acoustic Baffles in Modern Multiplexes | Render Line",
+      desc: "An analysis of Theatrical Soundproofing, examining production workflows and the industry impact of .multi-layer acoustic baffles in modern multiplexes.",
       ogImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "17-Stop Sensor Threshold: Dynamic Range Requirements for Blazing Sunlight",
     slug: "17-stop-sensor-threshold-dynamic-range-requirements-for-blazing-sunlight",
-    dek: "Inside Hollywood's evolving business model: examining 17-Stop Sensor Threshold and the strategic industry impact of dynamic range requirements for blazing sunlight.",
+    dek: "An analysis of 17-Stop Sensor Threshold, examining production workflows and the industry impact of .dynamic range requirements for blazing sunlight.",
     heroImage: "/images/camera-arri-alexa.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3770,15 +3766,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **17-Stop Sensor Threshold** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "17-Stop Sensor Threshold: Dynamic Range Requirements for Blazing Sunlight | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining 17-Stop Sensor Threshold and the strategic industry impact of dynamic range requirements for blazing sunlight.",
+      title: "17-Stop Sensor Threshold: Dynamic Range Requirements for Blazing Sunlight | Render Line",
+      desc: "An analysis of 17-Stop Sensor Threshold, examining production workflows and the industry impact of .dynamic range requirements for blazing sunlight.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
   },
   {
     title: "Assistant Directors Master Digital Crowd Replication Tracking Tools",
     slug: "assistant-directors-master-digital-crowd-replication-tracking-tools",
-    dek: "Executive briefing on Assistant Directors Master Digital Crowd Replication Tracking Tools, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of Assistant Directors Master Digital Crowd Replication Tracking Tools, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3816,15 +3812,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Assistant Directors Master Digital Crowd Replication Tracking Tools** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Assistant Directors Master Digital Crowd Replication Tracking Tools | RENDERLINE",
-      desc: "Executive briefing on Assistant Directors Master Digital Crowd Replication Tracking Tools, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "Assistant Directors Master Digital Crowd Replication Tracking Tools | Render Line",
+      desc: "An industry analysis of Assistant Directors Master Digital Crowd Replication Tracking Tools, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Virtual Production Line Producing: Mathematical Break-Even Analysis",
     slug: "virtual-production-line-producing-mathematical-break-even-analysis",
-    dek: "Inside Hollywood's evolving business model: examining Virtual Production Line Producing and the strategic industry impact of mathematical break-even analysis.",
+    dek: "An analysis of Virtual Production Line Producing, examining production workflows and the industry impact of .mathematical break-even analysis.",
     heroImage: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3862,15 +3858,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Virtual Production Line Producing** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Virtual Production Line Producing: Mathematical Break-Even Analysis | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Virtual Production Line Producing and the strategic industry impact of mathematical break-even analysis.",
+      title: "Virtual Production Line Producing: Mathematical Break-Even Analysis | Render Line",
+      desc: "An analysis of Virtual Production Line Producing, examining production workflows and the industry impact of .mathematical break-even analysis.",
       ogImage: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Forensic Steganography: Invisible Audio and Video Watermarking Prevents Leaks",
     slug: "forensic-steganography-invisible-audio-and-video-watermarking-prevents-leaks",
-    dek: "Inside Hollywood's evolving business model: examining Forensic Steganography and the strategic industry impact of invisible audio and video watermarking prevents leaks.",
+    dek: "An analysis of Forensic Steganography, examining production workflows and the industry impact of .invisible audio and video watermarking prevents leaks.",
     heroImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3908,15 +3904,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Forensic Steganography** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Forensic Steganography: Invisible Audio and Video Watermarking Prevents Leaks | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Forensic Steganography and the strategic industry impact of invisible audio and video watermarking prevents leaks.",
+      title: "Forensic Steganography: Invisible Audio and Video Watermarking Prevents Leaks | Render Line",
+      desc: "An analysis of Forensic Steganography, examining production workflows and the industry impact of .invisible audio and video watermarking prevents leaks.",
       ogImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Digital Matte Painting Evolution: LED Translight Backdrops on Soundstages",
     slug: "digital-matte-painting-evolution-led-translight-backdrops-on-soundstages",
-    dek: "Inside Hollywood's evolving business model: examining Digital Matte Painting Evolution and the strategic industry impact of led translight backdrops on soundstages.",
+    dek: "An analysis of Digital Matte Painting Evolution, examining production workflows and the industry impact of .led translight backdrops on soundstages.",
     heroImage: "/images/audio-atmos-stage.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3954,15 +3950,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Digital Matte Painting Evolution** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Digital Matte Painting Evolution: LED Translight Backdrops on Soundstages | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Digital Matte Painting Evolution and the strategic industry impact of led translight backdrops on soundstages.",
+      title: "Digital Matte Painting Evolution: LED Translight Backdrops on Soundstages | Render Line",
+      desc: "An analysis of Digital Matte Painting Evolution, examining production workflows and the industry impact of .led translight backdrops on soundstages.",
       ogImage: "/images/audio-atmos-stage.jpg",
     },
   },
   {
     title: "Custom Lens Flare Engineering: Anti-Reflective Coating Modifications",
     slug: "custom-lens-flare-engineering-anti-reflective-coating-modifications",
-    dek: "Inside Hollywood's evolving business model: examining Custom Lens Flare Engineering and the strategic industry impact of anti-reflective coating modifications.",
+    dek: "An analysis of Custom Lens Flare Engineering, examining production workflows and the industry impact of .anti-reflective coating modifications.",
     heroImage: "/images/review-camera.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4000,15 +3996,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Custom Lens Flare Engineering** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Custom Lens Flare Engineering: Anti-Reflective Coating Modifications | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Custom Lens Flare Engineering and the strategic industry impact of anti-reflective coating modifications.",
+      title: "Custom Lens Flare Engineering: Anti-Reflective Coating Modifications | Render Line",
+      desc: "An analysis of Custom Lens Flare Engineering, examining production workflows and the industry impact of .anti-reflective coating modifications.",
       ogImage: "/images/review-camera.jpg",
     },
   },
   {
     title: "Acoustic Spill Prevention in Multi-Screen Urban Cinema Complexes",
     slug: "acoustic-spill-prevention-in-multi-screen-urban-cinema-complexes",
-    dek: "Executive briefing on Acoustic Spill Prevention in Multi-Screen Urban Cinema Complexes, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of Acoustic Spill Prevention in Multi-Screen Urban Cinema Complexes, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4046,15 +4042,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Acoustic Spill Prevention in Multi-Screen Urban Cinema Complexes** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Acoustic Spill Prevention in Multi-Screen Urban Cinema Complexes | RENDERLINE",
-      desc: "Executive briefing on Acoustic Spill Prevention in Multi-Screen Urban Cinema Complexes, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "Acoustic Spill Prevention in Multi-Screen Urban Cinema Complexes | Render Line",
+      desc: "An industry analysis of Acoustic Spill Prevention in Multi-Screen Urban Cinema Complexes, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Satellite KDM Theatrical Delivery: Encrypted Distribution to 40,000 Screens",
     slug: "satellite-kdm-theatrical-delivery-encrypted-distribution-to-40-000-screens",
-    dek: "Inside Hollywood's evolving business model: examining Satellite KDM Theatrical Delivery and the strategic industry impact of encrypted distribution to 40,000 screens.",
+    dek: "An analysis of Satellite KDM Theatrical Delivery, examining production workflows and the industry impact of .encrypted distribution to 40,000 screens.",
     heroImage: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4092,15 +4088,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Satellite KDM Theatrical Delivery** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Satellite KDM Theatrical Delivery: Encrypted Distribution to 40,000 Screens | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Satellite KDM Theatrical Delivery and the strategic industry impact of encrypted distribution to 40,000 screens.",
+      title: "Satellite KDM Theatrical Delivery: Encrypted Distribution to 40,000 Screens | Render Line",
+      desc: "An analysis of Satellite KDM Theatrical Delivery, examining production workflows and the industry impact of .encrypted distribution to 40,000 screens.",
       ogImage: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "The Director-Cinematographer Dynamic: Balancing Virtual Previs with Raw Instinct",
     slug: "the-director-cinematographer-dynamic-balancing-virtual-previs-with-raw-instinct",
-    dek: "Inside Hollywood's evolving business model: examining The Director-Cinematographer Dynamic and the strategic industry impact of balancing virtual previs with raw instinct.",
+    dek: "An analysis of The Director-Cinematographer Dynamic, examining production workflows and the industry impact of .balancing virtual previs with raw instinct.",
     heroImage: "/images/audio-atmos-stage.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4138,15 +4134,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **The Director-Cinematographer Dynamic** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "The Director-Cinematographer Dynamic: Balancing Virtual Previs with Raw Instinct | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining The Director-Cinematographer Dynamic and the strategic industry impact of balancing virtual previs with raw instinct.",
+      title: "The Director-Cinematographer Dynamic: Balancing Virtual Previs with Raw Instinct | Render Line",
+      desc: "An analysis of The Director-Cinematographer Dynamic, examining production workflows and the industry impact of .balancing virtual previs with raw instinct.",
       ogImage: "/images/audio-atmos-stage.jpg",
     },
   },
   {
     title: "Grip Department Innovations: Carbon-Fiber Modular Jibs for Cramped Sets",
     slug: "grip-department-innovations-carbon-fiber-modular-jibs-for-cramped-sets",
-    dek: "Inside Hollywood's evolving business model: examining Grip Department Innovations and the strategic industry impact of carbon-fiber modular jibs for cramped sets.",
+    dek: "An analysis of Grip Department Innovations, examining production workflows and the industry impact of .carbon-fiber modular jibs for cramped sets.",
     heroImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4184,15 +4180,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Grip Department Innovations** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Grip Department Innovations: Carbon-Fiber Modular Jibs for Cramped Sets | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Grip Department Innovations and the strategic industry impact of carbon-fiber modular jibs for cramped sets.",
+      title: "Grip Department Innovations: Carbon-Fiber Modular Jibs for Cramped Sets | Render Line",
+      desc: "An analysis of Grip Department Innovations, examining production workflows and the industry impact of .carbon-fiber modular jibs for cramped sets.",
       ogImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Boom Mic Sensor Arrays: Directional Audio Tracking for Multi-Actor Dialog",
     slug: "boom-mic-sensor-arrays-directional-audio-tracking-for-multi-actor-dialog",
-    dek: "Inside Hollywood's evolving business model: examining Boom Mic Sensor Arrays and the strategic industry impact of directional audio tracking for multi-actor dialog.",
+    dek: "An analysis of Boom Mic Sensor Arrays, examining production workflows and the industry impact of .directional audio tracking for multi-actor dialog.",
     heroImage: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4230,15 +4226,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Boom Mic Sensor Arrays** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Boom Mic Sensor Arrays: Directional Audio Tracking for Multi-Actor Dialog | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Boom Mic Sensor Arrays and the strategic industry impact of directional audio tracking for multi-actor dialog.",
+      title: "Boom Mic Sensor Arrays: Directional Audio Tracking for Multi-Actor Dialog | Render Line",
+      desc: "An analysis of Boom Mic Sensor Arrays, examining production workflows and the industry impact of .directional audio tracking for multi-actor dialog.",
       ogImage: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Color Timing for High Dynamic Range Theatrical Projection Systems",
     slug: "color-timing-for-high-dynamic-range-theatrical-projection-systems",
-    dek: "Executive briefing on Color Timing for High Dynamic Range Theatrical Projection Systems, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of Color Timing for High Dynamic Range Theatrical Projection Systems, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4276,15 +4272,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Color Timing for High Dynamic Range Theatrical Projection Systems** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Color Timing for High Dynamic Range Theatrical Projection Systems | RENDERLINE",
-      desc: "Executive briefing on Color Timing for High Dynamic Range Theatrical Projection Systems, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "Color Timing for High Dynamic Range Theatrical Projection Systems | Render Line",
+      desc: "An industry analysis of Color Timing for High Dynamic Range Theatrical Projection Systems, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "VFX Bidding Transparency: Standardized Bid Sheets Protect Boutique Houses",
     slug: "vfx-bidding-transparency-standardized-bid-sheets-protect-boutique-houses",
-    dek: "Inside Hollywood's evolving business model: examining VFX Bidding Transparency and the strategic industry impact of standardized bid sheets protect boutique houses.",
+    dek: "An analysis of VFX Bidding Transparency, examining production workflows and the industry impact of .standardized bid sheets protect boutique houses.",
     heroImage: "/images/breakdown-creature.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4322,15 +4318,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **VFX Bidding Transparency** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "VFX Bidding Transparency: Standardized Bid Sheets Protect Boutique Houses | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining VFX Bidding Transparency and the strategic industry impact of standardized bid sheets protect boutique houses.",
+      title: "VFX Bidding Transparency: Standardized Bid Sheets Protect Boutique Houses | Render Line",
+      desc: "An analysis of VFX Bidding Transparency, examining production workflows and the industry impact of .standardized bid sheets protect boutique houses.",
       ogImage: "/images/breakdown-creature.jpg",
     },
   },
   {
     title: "The Rise of Specialized Virtual Production Producers on Studio Lots",
     slug: "the-rise-of-specialized-virtual-production-producers-on-studio-lots",
-    dek: "Executive briefing on The Rise of Specialized Virtual Production Producers on Studio Lots, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+    dek: "An industry analysis of The Rise of Specialized Virtual Production Producers on Studio Lots, detailing studio production strategies, capital allocation, and distribution shifts.",
     heroImage: "/images/virtual-stage-setup.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4368,15 +4364,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **The Rise of Specialized Virtual Production Producers on Studio Lots** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "The Rise of Specialized Virtual Production Producers on Studio Lots | RENDERLINE",
-      desc: "Executive briefing on The Rise of Specialized Virtual Production Producers on Studio Lots, exploring strategic market shifts, studio negotiations, and the technology reshaping film distribution.",
+      title: "The Rise of Specialized Virtual Production Producers on Studio Lots | Render Line",
+      desc: "An industry analysis of The Rise of Specialized Virtual Production Producers on Studio Lots, detailing studio production strategies, capital allocation, and distribution shifts.",
       ogImage: "/images/virtual-stage-setup.jpg",
     },
   },
   {
     title: "Remote Dailies Review: Calibrated iPad Pro Reference Displays for Directors",
     slug: "remote-dailies-review-calibrated-ipad-pro-reference-displays-for-directors",
-    dek: "Inside Hollywood's evolving business model: examining Remote Dailies Review and the strategic industry impact of calibrated ipad pro reference displays for directors.",
+    dek: "An analysis of Remote Dailies Review, examining production workflows and the industry impact of .calibrated ipad pro reference displays for directors.",
     heroImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4414,15 +4410,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Remote Dailies Review** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Remote Dailies Review: Calibrated iPad Pro Reference Displays for Directors | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Remote Dailies Review and the strategic industry impact of calibrated ipad pro reference displays for directors.",
+      title: "Remote Dailies Review: Calibrated iPad Pro Reference Displays for Directors | Render Line",
+      desc: "An analysis of Remote Dailies Review, examining production workflows and the industry impact of .calibrated ipad pro reference displays for directors.",
       ogImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Script Clearance Automation: Scanning Screenplays for Legal Trademark Conflicts",
     slug: "script-clearance-automation-scanning-screenplays-for-legal-trademark-conflicts",
-    dek: "Inside Hollywood's evolving business model: examining Script Clearance Automation and the strategic industry impact of scanning screenplays for legal trademark conflicts.",
+    dek: "An analysis of Script Clearance Automation, examining production workflows and the industry impact of .scanning screenplays for legal trademark conflicts.",
     heroImage: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4460,15 +4456,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Script Clearance Automation** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Script Clearance Automation: Scanning Screenplays for Legal Trademark Conflicts | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Script Clearance Automation and the strategic industry impact of scanning screenplays for legal trademark conflicts.",
+      title: "Script Clearance Automation: Scanning Screenplays for Legal Trademark Conflicts | Render Line",
+      desc: "An analysis of Script Clearance Automation, examining production workflows and the industry impact of .scanning screenplays for legal trademark conflicts.",
       ogImage: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Practical Fog vs Digital Atmosphere: Finding the Sweet Spot in Composite",
     slug: "practical-fog-vs-digital-atmosphere-finding-the-sweet-spot-in-composite",
-    dek: "Inside Hollywood's evolving business model: examining Practical Fog vs Digital Atmosphere and the strategic industry impact of finding the sweet spot in composite.",
+    dek: "An analysis of Practical Fog vs Digital Atmosphere, examining production workflows and the industry impact of .finding the sweet spot in composite.",
     heroImage: "/images/audio-atmos-stage.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4506,15 +4502,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Practical Fog vs Digital Atmosphere** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Practical Fog vs Digital Atmosphere: Finding the Sweet Spot in Composite | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Practical Fog vs Digital Atmosphere and the strategic industry impact of finding the sweet spot in composite.",
+      title: "Practical Fog vs Digital Atmosphere: Finding the Sweet Spot in Composite | Render Line",
+      desc: "An analysis of Practical Fog vs Digital Atmosphere, examining production workflows and the industry impact of .finding the sweet spot in composite.",
       ogImage: "/images/audio-atmos-stage.jpg",
     },
   },
   {
     title: "Wireless Video Transmission: Zero-Latency 4K 10-Bit Feeds Across Massive Sets",
     slug: "wireless-video-transmission-zero-latency-4k-10-bit-feeds-across-massive-sets",
-    dek: "Inside Hollywood's evolving business model: examining Wireless Video Transmission and the strategic industry impact of zero-latency 4k 10-bit feeds across massive sets.",
+    dek: "An analysis of Wireless Video Transmission, examining production workflows and the industry impact of .zero-latency 4k 10-bit feeds across massive sets.",
     heroImage: "/images/article-netflix.jpg",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4552,15 +4548,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **Wireless Video Transmission** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "Wireless Video Transmission: Zero-Latency 4K 10-Bit Feeds Across Massive Sets | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining Wireless Video Transmission and the strategic industry impact of zero-latency 4k 10-bit feeds across massive sets.",
+      title: "Wireless Video Transmission: Zero-Latency 4K 10-Bit Feeds Across Massive Sets | Render Line",
+      desc: "An analysis of Wireless Video Transmission, examining production workflows and the industry impact of .zero-latency 4k 10-bit feeds across massive sets.",
       ogImage: "/images/article-netflix.jpg",
     },
   },
   {
     title: "High-Output LED Skypanels: Wireless CRMX Mesh Control on Rigging Grids",
     slug: "high-output-led-skypanels-wireless-crmx-mesh-control-on-rigging-grids",
-    dek: "Inside Hollywood's evolving business model: examining High-Output LED Skypanels and the strategic industry impact of wireless crmx mesh control on rigging grids.",
+    dek: "An analysis of High-Output LED Skypanels, examining production workflows and the industry impact of .wireless crmx mesh control on rigging grids.",
     heroImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4598,15 +4594,15 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **High-Output LED Skypanels** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "High-Output LED Skypanels: Wireless CRMX Mesh Control on Rigging Grids | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining High-Output LED Skypanels and the strategic industry impact of wireless crmx mesh control on rigging grids.",
+      title: "High-Output LED Skypanels: Wireless CRMX Mesh Control on Rigging Grids | Render Line",
+      desc: "An analysis of High-Output LED Skypanels, examining production workflows and the industry impact of .wireless crmx mesh control on rigging grids.",
       ogImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "The Modern Script Supervisor: Multi-Camera Digital Slates with Live Metadata",
     slug: "the-modern-script-supervisor-multi-camera-digital-slates-with-live-metadata",
-    dek: "Inside Hollywood's evolving business model: examining The Modern Script Supervisor and the strategic industry impact of multi-camera digital slates with live metadata.",
+    dek: "An analysis of The Modern Script Supervisor, examining production workflows and the industry impact of .multi-camera digital slates with live metadata.",
     heroImage: "https://images.unsplash.com/photo-1533561797500-4bad475fe661?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4644,8 +4640,8 @@ By streamlining production friction, studios can reallocate capital where it mat
 
 The developments seen in **The Modern Script Supervisor** prove that the entertainment industry’s future belongs to those who bridge the gap between creative storytelling and engineering precision. Facilities that master this synergy will shape the cultural and commercial narrative of cinema for the next generation.`,
     seo: {
-      title: "The Modern Script Supervisor: Multi-Camera Digital Slates with Live Metadata | RENDERLINE",
-      desc: "Inside Hollywood's evolving business model: examining The Modern Script Supervisor and the strategic industry impact of multi-camera digital slates with live metadata.",
+      title: "The Modern Script Supervisor: Multi-Camera Digital Slates with Live Metadata | Render Line",
+      desc: "An analysis of The Modern Script Supervisor, examining production workflows and the industry impact of .multi-camera digital slates with live metadata.",
       ogImage: "https://images.unsplash.com/photo-1533561797500-4bad475fe661?auto=format&fit=crop&w=1200&q=80",
     },
   }

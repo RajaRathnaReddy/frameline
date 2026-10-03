@@ -1,0 +1,345 @@
+[
+  {
+    "name": "Unreal Engine",
+    "slug": "unreal-engine",
+    "logo": "⚡",
+    "category": "Virtual Production",
+    "pricing": "Free",
+    "platforms": ["Windows", "macOS", "Linux"],
+    "version": "5.5 / 5.6",
+    "website": "https://www.unrealengine.com",
+    "source_url": "https://www.unrealengine.com",
+    "last_verified": "2026-10-01",
+    "description": "Real-time 3D engine powering in-camera VFX (ICVFX), LED volume stages, MegaLights, and the open-source Lore VCS.",
+    "longDescription": "Epic Games' Unreal Engine is the core technology powering modern virtual production stages around the world. UE 5.5 and 5.6 introduce production-ready MegaLights, Movie Render Graph, and Audio Insights, while Unreal Engine 6 targets Early Access in late 2027.",
+    "features": [
+      "MegaLights Dynamic Emissive System",
+      "Movie Render Graph ACEScg Pipeline",
+      "Lore Open-Source VCS (MIT)",
+      "In-Camera VFX (ICVFX) Multi-User Stage",
+      "Chaos Cloth & Dataflow Simulation"
+    ],
+    "studioUsers": [
+      "ILM StageCraft",
+      "Lux Machina",
+      "Pixomondo",
+      "Disguise Systems",
+      "Amazon MGM Studios"
+    ],
+    "rating": 4.9
+  },
+  {
+    "name": "Topaz Video AI",
+    "slug": "topaz-video-ai",
+    "logo": "💎",
+    "category": "Upscaling",
+    "pricing": "Paid",
+    "platforms": ["Windows", "macOS"],
+    "version": "5.3 (Announced, pending close)",
+    "website": "https://www.topazlabs.com",
+    "source_url": "https://www.topazlabs.com/topaz-video-ai",
+    "last_verified": "2026-10-01",
+    "description": "AI video enhancement, temporal de-flickering, and Neurostream local consumer device inference.",
+    "longDescription": "Topaz Video AI bridges the critical quality gap between synthetic generative video and professional 4K cinematography. Adobe announced an agreement to acquire Topaz Labs in June 2026, with the transaction pending regulatory approval.",
+    "features": [
+      "Neurostream Local Inference Architecture",
+      "Proteus & Iris Neural Enhancement",
+      "Temporal Flickering Elimination",
+      "Lossless ProRes 4444 XQ Output",
+      "Apollo High-Frame-Rate Slow-Motion"
+    ],
+    "studioUsers": [
+      "Adobe Systems",
+      "The Criterion Collection Partners",
+      "Hollywood Finishing Houses",
+      "Archival Film Labs"
+    ],
+    "rating": 4.8
+  },
+  {
+    "name": "Nuke",
+    "slug": "nuke",
+    "logo": "🎯",
+    "category": "Compositing",
+    "pricing": "Paid",
+    "platforms": ["Windows", "macOS", "Linux"],
+    "version": "15.1",
+    "website": "https://www.foundry.com/nuke",
+    "source_url": "https://www.foundry.com/products/nuke/whats-new",
+    "last_verified": "2026-10-01",
+    "description": "Industry-standard node-based compositing software featuring CopyCat machine learning used on Dune: Part Two.",
+    "longDescription": "Foundry Nuke is the definitive node-based digital compositing application relied upon by the world's top studios. Powered 1,000 blue-eye shots on Dune: Part Two with its native CopyCat neural network toolset.",
+    "features": [
+      "CopyCat Neural Network ML Training",
+      "Deep Image Compositing Pipeline",
+      "3D Scene Graph & OpenUSD",
+      "Planar Tracking & Lens Distortion",
+      "ACES 1.3 Native Color Management"
+    ],
+    "studioUsers": [
+      "Industrial Light & Magic",
+      "Wētā FX",
+      "Framestore",
+      "DNEG",
+      "Sony Pictures Imageworks"
+    ],
+    "rating": 4.9
+  },
+  {
+    "name": "Blender",
+    "slug": "blender",
+    "logo": "🟠",
+    "category": "3D",
+    "pricing": "Open Source",
+    "platforms": ["Windows", "macOS", "Linux"],
+    "version": "4.3 / 5.0 LTS",
+    "website": "https://www.blender.org",
+    "source_url": "https://www.blender.org",
+    "last_verified": "2026-10-01",
+    "description": "Open-source 3D creation suite with newly announced cloth physics in Geometry Nodes and major Cycles upgrades.",
+    "longDescription": "Blender brings breakthrough cloth physics directly into procedural Geometry Nodes, alongside massive performance updates to Cycles rendering, making it a formidable alternative to proprietary packages.",
+    "features": [
+      "Geometry Nodes Cloth Physics Solver",
+      "Cycles Next GPU Path Tracing",
+      "Grease Pencil 3.0 Real-Time 2D/3D",
+      "OpenUSD Stage Composition",
+      "Full Python 3.12 Automation API"
+    ],
+    "studioUsers": [
+      "Tangential Animation",
+      "Ubisoft Film",
+      "Goodbye Kansas Studios",
+      "Khara Studio"
+    ],
+    "rating": 4.7
+  },
+  {
+    "name": "DaVinci Resolve",
+    "slug": "davinci-resolve",
+    "logo": "🎬",
+    "category": "Color",
+    "pricing": "Free / Studio paid",
+    "platforms": ["Windows", "macOS", "Linux"],
+    "version": "19.1 / 20.0 Studio",
+    "website": "https://www.blackmagicdesign.com",
+    "source_url": "https://www.blackmagicdesign.com/products/davinciresolve",
+    "last_verified": "2026-10-01",
+    "description": "Premier Hollywood color grading, editing, Fusion VFX, and Fairlight audio post-production suite.",
+    "longDescription": "Blackmagic Design DaVinci Resolve combines neural isolation brushes, HDR Dolby Vision mastering, Fusion node VFX, and Cloud Multi-Seat Collaboration in both a free tier and professional Studio edition.",
+    "features": [
+      "DaVinci Neural Engine AI Masking",
+      "Fusion Node-Based Compositing",
+      "HDR Color Wheels & ACEScc 1.3",
+      "Cloud Timeline Collaboration",
+      "Fairlight 2000-Track Audio Engine"
+    ],
+    "studioUsers": [
+      "Company 3",
+      "Harbor Picture Company",
+      "Fotokem",
+      "Light Iron",
+      "Warner Bros. Post"
+    ],
+    "rating": 4.8
+  },
+  {
+    "name": "Houdini",
+    "slug": "houdini",
+    "logo": "🌀",
+    "category": "3D",
+    "pricing": "Paid",
+    "platforms": ["Windows", "macOS", "Linux"],
+    "version": "21.0",
+    "website": "https://www.sidefx.com",
+    "source_url": "https://www.sidefx.com/products/houdini/",
+    "last_verified": "2026-10-01",
+    "description": "Procedural 3D animation, physics simulation, and effects software dominating film pyro, fluid, and destruction.",
+    "longDescription": "SideFX Houdini combines procedural node-based workflows with industry-leading simulation dynamics. From massive pyro explosions and oceanic water dynamics to complex crowd simulation.",
+    "features": [
+      "Solaris USD-based Lookdev",
+      "Karma XPU Production Renderer",
+      "KineFX Rigging & Motion Editing",
+      "Vellum Multi-Physics Solver",
+      "Pyro & FLIP Fluid Dynamics"
+    ],
+    "studioUsers": [
+      "Scanline VFX",
+      "ILM",
+      "Method Studios",
+      "Rodeo FX",
+      "Pixar"
+    ],
+    "rating": 4.9
+  },
+  {
+    "name": "Runway",
+    "slug": "runway",
+    "logo": "🤖",
+    "category": "AI Video",
+    "pricing": "Paid",
+    "platforms": ["Web"],
+    "version": "Gen-3 Alpha Turbo",
+    "website": "https://runwayml.com",
+    "source_url": "https://runwayml.com",
+    "last_verified": "2026-10-01",
+    "description": "Multimodal AI video generation platform with director controls, camera trajectories, and studio partnerships.",
+    "longDescription": "Runway offers director-level camera controls, multi-character consistency, and cinematic framing through its Gen-3 Alpha Turbo architecture.",
+    "features": [
+      "Cinematic Camera Movement Controls",
+      "Multi-Motion Brush Spatial Masking",
+      "Temporal Consistency Stabilization",
+      "Prompt-to-Video & Image-to-Video",
+      "Enterprise API Pipeline Access"
+    ],
+    "studioUsers": [
+      "A24",
+      "Lionsgate Creative Lab",
+      "Commercial Agencies",
+      "Boutique Previs Studios"
+    ],
+    "rating": 4.4
+  },
+  {
+    "name": "Adobe After Effects",
+    "slug": "adobe-after-effects",
+    "logo": "🔮",
+    "category": "Compositing",
+    "pricing": "Paid",
+    "platforms": ["Windows", "macOS"],
+    "version": "2025 (v25.0)",
+    "website": "https://www.adobe.com/aftereffects",
+    "source_url": "https://www.adobe.com/products/aftereffects",
+    "last_verified": "2026-10-01",
+    "description": "Industry-standard motion graphics, title design, and visual effects compositing with native 3D workspace.",
+    "longDescription": "Adobe After Effects is the essential motion design and visual effects software, featuring advanced 3D workspace integration, AI Roto Brush, and deep Creative Cloud pipeline hooks.",
+    "features": [
+      "Advanced 3D Workspace & GLTF Importer",
+      "Roto Brush 3 AI Auto-Segmentation",
+      "Content-Aware Fill for Video",
+      "Essential Graphics Shared MOGRTs",
+      "Hardware-Accelerated Ray Tracing"
+    ],
+    "studioUsers": [
+      "Prologue Films",
+      "The Mill",
+      "Imaginary Forces",
+      "Elastic",
+      "Buck"
+    ],
+    "rating": 4.5
+  },
+  {
+    "name": "Autodesk Maya",
+    "slug": "autodesk-maya",
+    "logo": "🐉",
+    "category": "3D",
+    "pricing": "Paid",
+    "platforms": ["Windows", "macOS", "Linux"],
+    "version": "2026",
+    "website": "https://www.autodesk.com/products/maya/overview",
+    "source_url": "https://www.autodesk.com/products/maya/overview",
+    "last_verified": "2026-10-01",
+    "description": "Industry-standard 3D animation, rigging, character modeling, and simulation platform powering Hollywood feature animation.",
+    "longDescription": "Autodesk Maya is the cornerstone 3D animation software relied on by leading VFX houses and animation studios worldwide, featuring native USD workflows and Bifrost visual programming.",
+    "features": [
+      "Bifrost Procedural Ocean & Pyro Simulation",
+      "USD Maya Integration & Lookdev",
+      "Character Rigging & Retargeting Matrix",
+      "Arnold High-Fidelity Renderer",
+      "Python 3 / MEL Pipeline Scripting"
+    ],
+    "studioUsers": [
+      "Walt Disney Animation",
+      "Sony Pictures Imageworks",
+      "Framestore",
+      "MPC Film",
+      "DreamWorks"
+    ],
+    "rating": 4.9
+  },
+  {
+    "name": "Autodesk ShotGrid",
+    "slug": "autodesk-shotgrid",
+    "logo": "📊",
+    "category": "Pipeline Management",
+    "pricing": "Paid",
+    "platforms": ["Web", "Windows", "macOS", "Linux"],
+    "version": "Studio Cloud Edition",
+    "website": "https://www.autodesk.com/products/shotgrid/overview",
+    "source_url": "https://www.autodesk.com/products/shotgrid/overview",
+    "last_verified": "2026-10-01",
+    "description": "Production tracking, review, and asset management software powering collaborative pipelines across global VFX facilities.",
+    "longDescription": "Autodesk ShotGrid provides production management, review, and pipeline integration for creative studios worldwide, connecting artists, supervisors, and producers in real-time.",
+    "features": [
+      "Real-Time Production Tracking & Scheduling",
+      "High-Resolution Dailies & RV Playback",
+      "Toolkit (SGTK) Pipeline Integration",
+      "Asset Lifecycle Tracking & Versioning",
+      "Multi-Site Security & Cloud Access Control"
+    ],
+    "studioUsers": [
+      "Industrial Light & Magic",
+      "Wētā FX",
+      "DNEG",
+      "The Mill",
+      "Luma Pictures"
+    ],
+    "rating": 4.9
+  },
+  {
+    "name": "Higgsfield AI Video",
+    "slug": "higgsfield",
+    "logo": "⚡",
+    "category": "AI Video",
+    "pricing": "Paid",
+    "platforms": ["Web", "iOS", "API"],
+    "version": "2026.2",
+    "website": "https://higgsfield.ai",
+    "source_url": "https://higgsfield.ai",
+    "last_verified": "2026-10-01",
+    "description": "Generative video platform with granular 3D camera trajectory controls and photorealistic human motion.",
+    "longDescription": "Higgsfield AI is the generative video platform engineered for directors, previs artists, and cinematographers, offering granular 3D camera trajectory controls, realistic human motion kinematics, and custom scene direction.",
+    "features": [
+      "Granular 3D Camera Trajectory Controls",
+      "Cinematic Pan, Tilt, Dolly & Boom Moves",
+      "Photorealistic Human Motion Synthesis",
+      "Actor Consistency Across Shots",
+      "Pipeline API & Batch Ingest"
+    ],
+    "studioUsers": [
+      "Boutique Previs Studios",
+      "Independent Filmmakers",
+      "Commercial Production Labs",
+      "Festival Creators"
+    ],
+    "rating": 4.9
+  },
+  {
+    "name": "ElevenLabs Cinema Voice AI",
+    "slug": "elevenlabs",
+    "logo": "🗣️",
+    "category": "Voice AI",
+    "pricing": "Paid",
+    "platforms": ["Web", "API", "Python SDK"],
+    "version": "v3 Enterprise",
+    "website": "https://elevenlabs.io",
+    "source_url": "https://elevenlabs.io",
+    "last_verified": "2026-10-01",
+    "description": "Hyper-realistic AI voice acting, automated dialogue replacement (ADR), and sound effects generation.",
+    "longDescription": "ElevenLabs delivers studio-grade voice performances, automated dialogue replacement (ADR), and synthetic Foley sound effects with nuanced emotional control for cinema, gaming, and commercial localization.",
+    "features": [
+      "Zero-Shot & High-Fidelity Voice Cloning",
+      "Emotional & Cadence Inflection Sliders",
+      "Automated Dialogue Replacement (ADR)",
+      "Studio-Grade Synthetic Foley & SFX",
+      "Low-Latency Streaming Speech API"
+    ],
+    "studioUsers": [
+      "Localization Houses",
+      "Game Audio Studios",
+      "Independent Post Bays",
+      "Documentary Producers"
+    ],
+    "rating": 4.8
+  }
+]

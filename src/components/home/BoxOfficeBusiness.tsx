@@ -22,16 +22,19 @@ export default function BoxOfficeBusiness() {
         </div>
       </ScrollReveal>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
         {businessStats.map((item, i) => (
           <ScrollReveal key={item.label} delay={i * 0.1}>
-            <div className="glass-card rounded-lg p-6 text-center group hover:border-accent-gold/40 transition-all hover:bg-bg-card relative overflow-hidden">
-              <div className="absolute top-3 right-3">
-                <span className="text-meta text-[9px] px-2 py-0.5 rounded bg-accent-gold/10 text-accent-gold border border-accent-gold/20">
+            <div className="glass-card rounded-xl p-8 text-center group hover:border-accent-gold/40 transition-all hover:bg-bg-card relative overflow-hidden h-full flex flex-col justify-between">
+              <div className="flex items-center justify-between gap-2 mb-4">
+                <span className="text-meta text-[10px] text-text-secondary/60 uppercase font-mono">
+                  VERIFIED TRANSACTION
+                </span>
+                <span className="text-meta text-[9px] px-2 py-0.5 rounded bg-accent-gold/10 text-accent-gold border border-accent-gold/20 font-bold">
                   {item.change}
                 </span>
               </div>
-              <div className="text-fluid-h1 font-display font-black text-accent-gold mb-2 tracking-tight">
+              <div className="text-fluid-h1 font-display font-black text-accent-gold mb-3 tracking-tight">
                 <CountUp
                   target={item.target}
                   prefix={item.prefix}
@@ -39,12 +42,26 @@ export default function BoxOfficeBusiness() {
                   duration={1.5}
                 />
               </div>
-              <h4 className="font-display font-semibold text-text-primary text-sm mb-1.5">
-                {item.label}
-              </h4>
-              <p className="text-text-secondary/70 text-xs leading-relaxed">
-                {item.desc}
-              </p>
+              <div>
+                <h4 className="font-display font-bold text-text-primary text-base mb-1.5">
+                  {item.label}
+                </h4>
+                <p className="text-text-secondary/80 text-xs leading-relaxed max-w-sm mx-auto">
+                  {item.desc}
+                </p>
+              </div>
+              {item.sourceUrl && (
+                <div className="mt-4 pt-3 border-t border-white/[0.06]">
+                  <a
+                    href={item.sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-meta text-[10px] text-accent-cyan hover:underline font-mono"
+                  >
+                    View Official Source ↗
+                  </a>
+                </div>
+              )}
             </div>
           </ScrollReveal>
         ))}

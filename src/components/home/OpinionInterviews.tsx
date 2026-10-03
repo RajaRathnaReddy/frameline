@@ -1,10 +1,37 @@
 'use client';
 
-import Image from 'next/image';
 import { ScrollReveal, StaggerContainer, StaggerItem } from '@/components/motion';
 import { industryQuotes } from '@/lib/data';
 
+interface IndustryQuote {
+  quote: string;
+  author: string;
+  role: string;
+  source_url?: string;
+  date?: string;
+  verified?: boolean;
+}
+
 export default function OpinionInterviews() {
+  // Task 6: Only display quotes that have verified source URLs and exact dates.
+  const verifiedQuotes = (industryQuotes as IndustryQuote[]).filter(
+    (q) => q.source_url && q.verified
+  );
+
+  // If fewer than 3 verified quotes remain, hide the whole "Opinion & Dispatches" section.
+  if (verifiedQuotes.length < 3) {
+    return null;
+  }
+
+  const getInitials = (name: string) => {
+    return name
+      .split(' ')
+      .map((n) => n[0])
+      .join('')
+      .slice(0, 2)
+      .toUpperCase();
+  };
+
   return (
     <section className="bg-bg-elevated py-16 md:py-24 border-y border-border-subtle" id="opinions">
       <div className="max-w-[1440px] mx-auto px-4 md:px-8">
@@ -19,13 +46,13 @@ export default function OpinionInterviews() {
               Perspectives From The Trenches
             </h3>
             <p className="text-text-secondary text-sm max-w-md">
-              Directors, VFX supervisors, and studio heads on where compute meets craft in late 2026.
+              Verified industry commentary on where compute meets craft.
             </p>
           </div>
         </ScrollReveal>
 
-        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {industryQuotes.map((opinion) => (
+        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {verifiedQuotes.map((opinion) => (
             <StaggerItem key={opinion.author}>
               <div className="glass-card rounded-lg p-6 h-full flex flex-col group hover:border-accent-primary/40 transition-all hover:bg-bg-card">
                 {/* Quote Mark */}
@@ -36,25 +63,31 @@ export default function OpinionInterviews() {
                   "{opinion.quote}"
                 </blockquote>
 
-                {/* Author */}
-                <div className="flex items-center gap-3 pt-4 border-t border-border-subtle">
-                  <div className="w-10 h-10 rounded-full overflow-hidden relative shrink-0 border border-border-subtle">
-                    <Image
-                      src={opinion.image}
-                      alt={opinion.author}
-                      fill
-                      sizes="40px"
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="min-w-0">
-                    <div className="font-display font-semibold text-text-primary text-sm truncate">
-                      {opinion.author}
+                {/* Author with neutral initials circle */}
+                <div className="flex items-center justify-between pt-4 border-t border-border-subtle">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center shrink-0 font-mono text-xs font-bold text-accent-cyan">
+                      {getInitials(opinion.author)}
                     </div>
-                    <div className="text-meta text-text-secondary/70 text-[10px] leading-tight line-clamp-2">
-                      {opinion.role}
+                    <div className="min-w-0">
+                      <div className="font-display font-semibold text-text-primary text-sm truncate">
+                        {opinion.author}
+                      </div>
+                      <div className="text-meta text-text-secondary/70 text-[10px] leading-tight line-clamp-1">
+                        {opinion.role}
+                      </div>
                     </div>
                   </div>
+                  {opinion.source_url && (
+                    <a
+                      href={opinion.source_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[11px] font-mono text-accent-cyan hover:underline ml-2 shrink-0"
+                    >
+                      Source ↗
+                    </a>
+                  )}
                 </div>
               </div>
             </StaggerItem>

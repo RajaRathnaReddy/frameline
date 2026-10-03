@@ -16,7 +16,15 @@ export default function ToolsContent() {
 
   const filteredTools = tools.filter(tool => {
     if (categoryFilter !== 'All' && tool.category !== categoryFilter) return false;
-    if (pricingFilter !== 'All' && tool.pricing !== pricingFilter) return false;
+    if (pricingFilter !== 'All') {
+      if (pricingFilter === 'Free') {
+        if (!tool.pricing.includes('Free')) return false;
+      } else if (pricingFilter === 'Paid') {
+        if (!tool.pricing.includes('Paid') && !tool.pricing.includes('paid')) return false;
+      } else if (tool.pricing !== pricingFilter) {
+        return false;
+      }
+    }
     return true;
   });
 
@@ -123,7 +131,9 @@ export default function ToolsContent() {
                         )}
                         <span className={`text-meta text-[10px] px-2 py-0.5 rounded-full ${
                           tool.pricing === 'Free' ? 'pill-live' :
-                          tool.pricing === 'Open Source' ? 'pill-beta' : 'text-text-secondary border border-border-subtle'
+                          tool.pricing === 'Open Source' ? 'pill-beta' :
+                          tool.pricing === 'Free / Studio paid' ? 'bg-accent-cyan/15 text-accent-cyan border border-accent-cyan/30' :
+                          'text-text-secondary border border-border-subtle'
                         }`}>
                           {tool.pricing.toUpperCase()}
                         </span>
@@ -187,7 +197,9 @@ export default function ToolsContent() {
               </div>
               <span className={`text-meta text-[10px] px-2 py-0.5 rounded-full ${
                 tool.pricing === 'Free' ? 'pill-live' :
-                tool.pricing === 'Open Source' ? 'pill-beta' : 'text-text-secondary border border-border-subtle'
+                tool.pricing === 'Open Source' ? 'pill-beta' :
+                tool.pricing === 'Free / Studio paid' ? 'bg-accent-cyan/15 text-accent-cyan border border-accent-cyan/30' :
+                'text-text-secondary border border-border-subtle'
               }`}>
                 {tool.pricing.toUpperCase()}
               </span>
@@ -199,6 +211,12 @@ export default function ToolsContent() {
           ))}
         </div>
       )}
+
+      {/* Verification footer */}
+      <div className="mt-8 pt-4 border-t border-border-subtle flex flex-col sm:flex-row items-center justify-between text-meta text-text-secondary/60 gap-2">
+        <span>Software releases and version numbers verified against official developer release notes.</span>
+        <span className="font-mono text-xs">Last verified: October 1, 2026</span>
+      </div>
     </div>
   );
 }

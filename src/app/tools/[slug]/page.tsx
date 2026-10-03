@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { tools, articles, getToolBySlug } from '@/lib/data';
 import { getAffiliateOfferForTool } from '@/lib/affiliates';
 import type { Metadata } from 'next';
+import { SITE_NAME, SITE_URL } from '@/lib/config';
 
 export function generateStaticParams() {
   return tools.map((tool) => ({
@@ -18,10 +19,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const tool = getToolBySlug(slug);
-  if (!tool) return { title: 'Tool Not Found | RENDERLINE' };
+  if (!tool) return { title: `Tool Not Found | ${SITE_NAME}` };
 
   return {
-    title: `${tool.name} (v${tool.version}) — Film & VFX Tool Profile | RENDERLINE`,
+    title: `${tool.name} (v${tool.version}) — Film & VFX Tool Profile | ${SITE_NAME}`,
     description: tool.description,
   };
 }
@@ -58,19 +59,19 @@ export default async function ToolProfilePage({
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://vfx.rajarathnareddy.com',
+        item: SITE_URL,
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Tools Directory',
-        item: 'https://vfx.rajarathnareddy.com/tools',
+        item: `${SITE_URL}/tools`,
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: tool.name,
-        item: `https://vfx.rajarathnareddy.com/tools/${slug}`,
+        item: `${SITE_URL}/tools/${slug}`,
       },
     ],
   };
@@ -82,7 +83,7 @@ export default async function ToolProfilePage({
     operatingSystem: tool.platforms.join(', '),
     applicationCategory: tool.category,
     description: tool.description,
-    url: `https://vfx.rajarathnareddy.com/tools/${slug}`,
+    url: `${SITE_URL}/tools/${slug}`,
     softwareVersion: tool.version,
     aggregateRating: {
       '@type': 'AggregateRating',

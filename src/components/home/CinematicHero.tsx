@@ -3,13 +3,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { getFeaturedArticle, articles } from '@/lib/data';
-import { formatTimecode, getCategoryColor } from '@/lib/utils';
+import { formatTimecode, getCategoryColor, estimateReadTime } from '@/lib/utils';
 import { motion } from 'framer-motion';
 import AuthorBadge from '@/components/common/AuthorBadge';
 
 export default function CinematicHero() {
   const featured = getFeaturedArticle();
   const secondary = articles.filter(a => !a.featured).slice(0, 3);
+
+  const pubDate = new Date(featured.publishedAt);
+  const briefingDateLabel = isNaN(pubDate.getTime())
+    ? 'OCTOBER 2026'
+    : pubDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' }).toUpperCase();
+  const heroReadTime = estimateReadTime(featured.body || featured.dek);
 
   return (
     <section className="relative w-full max-w-full overflow-hidden border-b border-white/[0.08]" id="hero">
@@ -41,10 +47,10 @@ export default function CinematicHero() {
               <div className="absolute top-5 left-5 md:top-6 md:left-6 z-10 flex items-center gap-2">
                 <span className="bg-accent-primary text-white font-mono text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full flex items-center gap-1.5 shadow-lg shadow-accent-primary/30">
                   <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
-                  OCTOBER 2026 BRIEFING &bull; COVER STORY
+                  {briefingDateLabel} BRIEFING &bull; COVER STORY
                 </span>
                 <span className="hidden sm:inline-block font-mono text-[10px] text-white/70 bg-black/50 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/10">
-                  8 MIN READ
+                  {heroReadTime} MIN READ
                 </span>
               </div>
 
@@ -137,7 +143,7 @@ export default function CinematicHero() {
                         {article.title}
                       </h3>
                       <div className="flex items-center gap-2 mt-2 font-mono text-[10px] text-text-secondary">
-                        <span>{article.readTime} MIN READ</span>
+                        <span>{estimateReadTime(article.body || article.dek)} MIN READ</span>
                         <span>&bull;</span>
                         <span>{formatTimecode(article.publishedAt).split('&bull;')[0]}</span>
                       </div>

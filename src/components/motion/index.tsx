@@ -1,7 +1,7 @@
 'use client';
 
 import { motion, useInView } from 'framer-motion';
-import { useRef, ReactNode } from 'react';
+import { useRef, useState, useEffect, ReactNode } from 'react';
 
 interface ScrollRevealProps {
   children: ReactNode;
@@ -124,58 +124,49 @@ export function WordReveal({ text, className, delay = 0 }: WordRevealProps) {
   );
 }
 
-export function CountUp({ target, duration = 2, prefix = '', suffix = '' }: {
+export function CountUp({ target, duration = 1.5, prefix = '', suffix = '' }: {
   target: number;
   duration?: number;
   prefix?: string;
   suffix?: string;
 }) {
-  const ref = useRef(null);
+  const [current, setCurrent] = useState<number>(target);
+  const [mounted, setMounted] = useState(false);
+  const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, { once: true });
 
-  return (
-    <motion.span
-      ref={ref}
-      initial={{ opacity: 0 }}
-      animate={isInView ? { opacity: 1 } : { opacity: 0 }}
-    >
-      {isInView ? (
-        <motion.span>
-          {prefix}
-          <motion.span
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.3 }}
-          >
-            <AnimatedNumber value={target} duration={duration} />
-          </motion.span>
-          {suffix}
-        </motion.span>
-      ) : (
-        <span>{prefix}0{suffix}</span>
-      )}
-    </motion.span>
-  );
-}
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
-function AnimatedNumber({ value, duration }: { value: number; duration: number }) {
+  useEffect(() => {
+    if (!mounted || !isInView) return;
+    let startTimestamp: number | null = null;
+    const step = (timestamp: number) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / (duration * 1000), 1);
+      // easeOutExpo
+      const ease = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+      setCurrent(Math.round(ease * target));
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      } else {
+        setCurrent(target);
+      }
+    };
+    setCurrent(0);
+    const frameId = window.requestAnimationFrame(step);
+    return () => window.cancelAnimationFrame(frameId);
+  }, [mounted, isInView, target, duration]);
+
   return (
-    <motion.span
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
-      <motion.span
-        key={value}
-        initial="hidden"
-        animate="visible"
-        variants={{
-          hidden: { y: 20, opacity: 0 },
-          visible: { y: 0, opacity: 1, transition: { duration, ease: [0.22, 1, 0.36, 1] } },
-        }}
-      >
-        {value.toLocaleString()}
-      </motion.span>
-    </motion.span>
+    <span ref={ref} className="inline-block">
+      <noscript>
+        <span>{prefix}{target.toLocaleString()}{suffix}</span>
+      </noscript>
+      <span>
+        {prefix}{current.toLocaleString()}{suffix}
+      </span>
+    </span>
   );
 }

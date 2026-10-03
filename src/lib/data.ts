@@ -23,201 +23,14 @@ export const articles: Article[] = [
   ...musicArticles,
 ];
 
+import toolsData from '@/data/tools.json';
+import modelsData from '@/data/models.json';
+
 // ─── TOOLS ───
-export const tools: Tool[] = [
-  {
-    name: 'Unreal Engine',
-    slug: 'unreal-engine',
-    logo: '⚡',
-    category: 'Virtual Production',
-    pricing: 'Free',
-    platforms: ['Windows', 'macOS', 'Linux'],
-    version: '5.8 / UE6 Late 2027',
-    website: 'https://www.unrealengine.com',
-    description: 'Real-time 3D engine powering in-camera VFX (ICVFX), LED volume stages, MegaLights, and the open-source Lore VCS.',
-    longDescription: 'Epic Games’ Unreal Engine is the core technology powering modern virtual production stages around the world. UE 5.8 introduces production-ready MegaLights, Movie Render Graph, and Audio Insights, while Unreal Engine 6 targets Early Access in late 2027.',
-    features: ['MegaLights Dynamic Emissive System', 'Movie Render Graph ACEScg Pipeline', 'Lore Open-Source VCS (MIT)', 'In-Camera VFX (ICVFX) Multi-User Stage', 'Chaos Cloth & Dataflow Simulation'],
-    studioUsers: ['ILM StageCraft', 'Lux Machina', 'Pixomondo', 'Disguise Systems', 'Amazon MGM Studios'],
-    rating: 4.9
-  },
-  {
-    name: 'Topaz Video AI',
-    slug: 'topaz-video-ai',
-    logo: '💎',
-    category: 'Upscaling',
-    pricing: 'Paid',
-    platforms: ['Windows', 'macOS'],
-    version: '5.2 (Acquired for $340M)',
-    website: 'https://www.topazlabs.com',
-    description: 'AI video enhancement, temporal de-flickering, and Neurostream local consumer device inference.',
-    longDescription: 'Acquired by Adobe for $340M, Topaz Video AI bridges the critical quality gap between synthetic generative video and professional 4K cinematography. Features Neurostream local device inference and temporal consistency algorithms.',
-    features: ['Neurostream Local Inference Architecture', 'Proteus & Iris Neural Enhancement', 'Temporal Flickering Elimination', 'Lossless ProRes 4444 XQ Output', 'Apollo High-Frame-Rate Slow-Motion'],
-    studioUsers: ['Adobe Systems', 'The Criterion Collection Partners', 'Hollywood Finishing Houses', 'Archival Film Labs'],
-    rating: 4.8
-  },
-  {
-    name: 'Nuke',
-    slug: 'nuke',
-    logo: '🎯',
-    category: 'Compositing',
-    pricing: 'Paid',
-    platforms: ['Windows', 'macOS', 'Linux'],
-    version: '15.1 (CopyCat ML)',
-    website: 'https://www.foundry.com/nuke',
-    description: 'Industry-standard node-based compositing software featuring CopyCat machine learning used on Dune: Part Two.',
-    longDescription: 'Foundry Nuke is the definitive node-based digital compositing application relied upon by the world’s top studios. Powered 1,000 blue-eye shots on Dune: Part Two with its native CopyCat neural network toolset.',
-    features: ['CopyCat Neural Network ML Training', 'Deep Image Compositing Pipeline', '3D Scene Graph & OpenUSD', 'Planar Tracking & Lens Distortion', 'ACES 1.3 Native Color Management'],
-    studioUsers: ['Industrial Light & Magic', 'Wētā FX', 'Framestore', 'DNEG', 'Sony Pictures Imageworks'],
-    rating: 4.9
-  },
-  {
-    name: 'Blender',
-    slug: 'blender',
-    logo: '🟠',
-    category: '3D',
-    pricing: 'Free',
-    platforms: ['Windows', 'macOS', 'Linux'],
-    version: '5.2 LTS',
-    website: 'https://www.blender.org',
-    description: 'Open-source 3D creation suite with newly announced cloth physics in Geometry Nodes and major Cycles upgrades.',
-    longDescription: 'Blender 5.2 LTS brings breakthrough cloth physics directly into procedural Geometry Nodes, alongside massive performance updates to Cycles rendering, making it a formidable alternative to proprietary packages.',
-    features: ['Geometry Nodes Cloth Physics Solver', 'Cycles Next GPU Path Tracing', 'Grease Pencil 3.0 Real-Time 2D/3D', 'OpenUSD Stage Composition', 'Full Python 3.12 Automation API'],
-    studioUsers: ['Tangential Animation', 'Ubisoft Film', 'Goodbye Kansas Studios', 'Khara Studio'],
-    rating: 4.7
-  },
-  {
-    name: 'DaVinci Resolve',
-    slug: 'davinci-resolve',
-    logo: '🎬',
-    category: 'Color',
-    pricing: 'Free',
-    platforms: ['Windows', 'macOS', 'Linux'],
-    version: '20.0 Studio',
-    website: 'https://www.blackmagicdesign.com',
-    description: 'Premier Hollywood color grading, editing, Fusion VFX, and Fairlight audio post-production suite.',
-    longDescription: 'Blackmagic Design DaVinci Resolve 20 Studio combines neural isolation brushes, HDR Dolby Vision 5.2 mastering, Fusion node VFX, and Cloud Multi-Seat Collaboration.',
-    features: ['DaVinci Neural Engine AI Masking', 'Fusion Node-Based Compositing', 'HDR Color Wheels & ACEScc 1.3', 'Cloud Timeline Collaboration', 'Fairlight 2000-Track Audio Engine'],
-    studioUsers: ['Company 3', 'Harbor Picture Company', 'Fotokem', 'Light Iron', 'Warner Bros. Post'],
-    rating: 4.8
-  },
-  {
-    name: 'Houdini',
-    slug: 'houdini',
-    logo: '🌀',
-    category: '3D',
-    pricing: 'Paid',
-    platforms: ['Windows', 'macOS', 'Linux'],
-    version: '21.0',
-    website: 'https://www.sidefx.com',
-    description: 'Procedural 3D animation, physics simulation, and effects software dominating film pyro, fluid, and destruction.',
-    longDescription: 'SideFX Houdini combines procedural node-based workflows with industry-leading simulation dynamics. From massive pyro explosions and oceanic water dynamics to complex crowd simulation.',
-    features: ['Solaris USD-based Lookdev', 'Karma XPU Production Renderer', 'KineFX Rigging & Motion Editing', 'Vellum Multi-Physics Solver', 'Pyro & FLIP Fluid Dynamics'],
-    studioUsers: ['Scanline VFX', 'ILM', 'Method Studios', 'Rodeo FX', 'Pixar'],
-    rating: 4.9
-  },
-  {
-    name: 'Runway',
-    slug: 'runway',
-    logo: '🤖',
-    category: 'AI Video',
-    pricing: 'Paid',
-    platforms: ['Web'],
-    version: 'Gen-4 ($315M Raised)',
-    website: 'https://runwayml.com',
-    description: 'Multimodal AI video generation platform with director controls, newly backed by $315M in funding.',
-    longDescription: 'Runway has raised $315M to expand its Gen-4 multimodal video architecture, offering director-level camera controls, multi-character consistency, and cinematic framing.',
-    features: ['Cinematic Camera Movement Controls', 'Multi-Motion Brush Spatial Masking', 'Temporal Consistency Stabilization', 'Prompt-to-Video & Image-to-Video', 'Enterprise API Pipeline Access'],
-    studioUsers: ['A24', 'Lionsgate Creative Lab', 'Commercial Agencies', 'Boutique Previs Studios'],
-    rating: 4.4
-  },
-  {
-    name: 'Adobe After Effects',
-    slug: 'adobe-after-effects',
-    logo: '🔮',
-    category: 'Compositing',
-    pricing: 'Paid',
-    platforms: ['Windows', 'macOS'],
-    version: '2027',
-    website: 'https://www.adobe.com/aftereffects',
-    description: 'Industry-standard motion graphics, title design, and visual effects compositing integrating Topaz Neurostream.',
-    longDescription: 'Adobe After Effects is the essential motion design and visual effects software, now poised to receive Topaz Labs’ temporal consistency algorithms and Neurostream local inference.',
-    features: ['Advanced 3D Workspace & GLTF Importer', 'Roto Brush 3 AI Auto-Segmentation', 'Content-Aware Fill for Video', 'Essential Graphics Shared MOGRTs', 'Hardware-Accelerated Ray Tracing'],
-    studioUsers: ['Prologue Films', 'The Mill', 'Imaginary Forces', 'Elastic', 'Buck'],
-    rating: 4.5
-  },
-  {
-    name: 'Autodesk Maya',
-    slug: 'autodesk-maya',
-    logo: '🐉',
-    category: '3D',
-    pricing: 'Paid',
-    platforms: ['Windows', 'macOS', 'Linux'],
-    version: '2026.2 (Bifrost & USD)',
-    website: 'https://www.autodesk.com/products/maya/overview',
-    description: 'Industry-standard 3D animation, rigging, character modeling, and simulation platform powering Hollywood feature animation.',
-    longDescription: 'Autodesk Maya is the cornerstone 3D animation software relied on by leading VFX houses and animation studios worldwide, featuring native USD workflows and Bifrost visual programming.',
-    features: ['Bifrost Procedural Ocean & Pyro Simulation', 'USD Maya Integration & Lookdev', 'Character Rigging & Retargeting Matrix', 'Arnold High-Fidelity Renderer', 'Python 3 / MEL Pipeline Scripting'],
-    studioUsers: ['Walt Disney Animation', 'Sony Pictures Imageworks', 'Framestore', 'MPC Film', 'DreamWorks'],
-    rating: 4.9
-  },
-  {
-    name: 'Autodesk ShotGrid',
-    slug: 'autodesk-shotgrid',
-    logo: '📊',
-    category: 'Pipeline Management',
-    pricing: 'Paid',
-    platforms: ['Web', 'Windows', 'macOS', 'Linux'],
-    version: 'Studio Cloud Edition',
-    website: 'https://www.autodesk.com/products/shotgrid/overview',
-    description: 'Production tracking, review, and asset management software powering collaborative pipelines across global VFX facilities.',
-    longDescription: 'Autodesk ShotGrid (formerly Shotgun Software) provides production management, review, and pipeline integration for creative studios worldwide, connecting artists, supervisors, and producers in real-time.',
-    features: ['Real-Time Production Tracking & Scheduling', 'High-Resolution Dailies & RV Playback', 'Toolkit (SGTK) Pipeline Integration', 'Asset Lifecycle Tracking & Versioning', 'Multi-Site Security & Cloud Access Control'],
-    studioUsers: ['Industrial Light & Magic', 'Wētā FX', 'DNEG', 'The Mill', 'Luma Pictures'],
-    rating: 4.9
-  },
-  {
-    name: 'Higgsfield AI Video',
-    slug: 'higgsfield',
-    logo: '⚡',
-    category: 'AI Video',
-    pricing: 'Paid',
-    platforms: ['Web', 'iOS', 'API'],
-    version: '2026.2',
-    website: 'https://higgsfield.ai?fpr=raja-rathna-reddy-5b73d0',
-    description: 'Generative video platform with granular 3D camera trajectory controls and photorealistic human motion.',
-    longDescription: 'Higgsfield AI is the breakout generative video platform engineered for directors, previs artists, and cinematographers, offering granular 3D camera trajectory controls, realistic human motion kinematics, and custom scene direction.',
-    features: ['Granular 3D Camera Trajectory Controls', 'Cinematic Pan, Tilt, Dolly & Boom Moves', 'Photorealistic Human Motion Synthesis', 'Actor Consistency Across Shots', 'Pipeline API & Batch Ingest'],
-    studioUsers: ['Boutique Previs Studios', 'Independent Filmmakers', 'Commercial Production Labs', 'Festival Creators'],
-    rating: 4.9
-  },
-  {
-    name: 'ElevenLabs Cinema Voice AI',
-    slug: 'elevenlabs',
-    logo: '🗣️',
-    category: 'Voice AI',
-    pricing: 'Paid',
-    platforms: ['Web', 'API', 'Python SDK'],
-    version: 'v3 Enterprise',
-    website: 'https://try.elevenlabs.io/7dnbvl7c40ip',
-    description: 'Hyper-realistic AI voice acting, automated dialogue replacement (ADR), and sound effects generation.',
-    longDescription: 'ElevenLabs delivers studio-grade voice performances, automated dialogue replacement (ADR), and synthetic Foley sound effects with nuanced emotional control for cinema, gaming, and commercial localization.',
-    features: ['Zero-Shot & High-Fidelity Voice Cloning', 'Emotional & Cadence Inflection Sliders', 'Automated Dialogue Replacement (ADR)', 'Studio-Grade Synthetic Foley & SFX', 'Low-Latency Streaming Speech API'],
-    studioUsers: ['Localization Houses', 'Game Audio Studios', 'Independent Post Bays', 'Documentary Producers'],
-    rating: 4.8
-  },
-];
+export const tools: Tool[] = toolsData as Tool[];
 
 // ─── AI MODELS (2026 Professional Benchmark) ───
-export const aiModels: AIModel[] = [
-  { name: 'Google Veo 3.1', company: 'Google DeepMind (Gemini API)', maxLength: '90s', resolution: '4K', audioNative: true, apiStatus: 'live', updatedAt: '2026-10-01' },
-  { name: 'Kling 4.0', company: 'Kuaishou (Early Studio Access)', maxLength: '30s (10 Keyframes)', resolution: '4K', audioNative: true, apiStatus: 'beta', updatedAt: '2026-09-30' },
-  { name: 'Luma Ray 3.2', company: 'Luma AI (16-bit EXR Export)', maxLength: '60s', resolution: '4K', audioNative: true, apiStatus: 'live', updatedAt: '2026-09-28' },
-  { name: 'Adobe Firefly Video 2.0', company: 'Adobe (Infinite Boards)', maxLength: '60s', resolution: '4K', audioNative: true, apiStatus: 'live', updatedAt: '2026-09-25' },
-  { name: 'Runway Gen-3 Alpha Turbo', company: 'Runway / Lionsgate Partner', maxLength: '90s', resolution: '4K', audioNative: true, apiStatus: 'live', updatedAt: '2026-09-24' },
-  { name: 'ByteDance Seedance 2.0', company: 'ByteDance (Strict Guardrails)', maxLength: '120s', resolution: '4K', audioNative: true, apiStatus: 'live', updatedAt: '2026-09-20' },
-  { name: 'Higgsfield AI Engine', company: 'Higgsfield (Hell Grind Cannes)', maxLength: '95m (Compute)', resolution: '1080p', audioNative: true, apiStatus: 'live', updatedAt: '2026-09-18' },
-  { name: 'OpenAI Sora', company: 'OpenAI (API Discontinued)', maxLength: '60s', resolution: '1080p', audioNative: false, apiStatus: 'sunset', updatedAt: '2026-09-24' },
-];
+export const aiModels: AIModel[] = modelsData as AIModel[];
 
 // ─── CATEGORIES ───
 export const categories: Category[] = [
@@ -386,22 +199,38 @@ export const reviews: ProductReview[] = [
 
 // ─── BREAKING HEADLINES (for ticker) ───
 export const breakingHeadlines: string[] = [
-  'Google DeepMind partners with A24 in $75M research alliance to launch A24 Labs',
+  'Google DeepMind partners with A24 in ~$75M multiyear research partnership',
   'Alliance for OpenUSD releases v26.08 standardizing 3D Gaussian Splats in core pipelines',
   'Kling 3.0 Omni & Google Veo 3.1 achieve multi-shot narrative camera consistency',
   'Brompton & ROE Visual unveil full-spectrum RGBW LED panels with Dynamic Calibration',
   'Nikon & RED showcase unified cinema flagship with native Z-mount & C2PA hardware provenance',
   'Adobe Firefly Video 2.0 embeds multi-model generative AI directly into Premiere Pro',
   'Dolby Atmos rolls out Room-Adaptive AI Calibration & neural dialogue separation for post suites',
-  'Netflix confirms 300+ active productions using InterPositive AI conforming pipelines',
+  'Netflix says about 300 of its titles have used generative AI tools (reported July 2026)',
 ];
 
 // ─── FINANCIAL METRICS (for Box Office & Business Strip) ───
 export const businessStats = [
-  { value: '$75M', target: 75, prefix: '$', suffix: 'M', label: 'Google DeepMind / A24', change: 'A24 Labs Alliance', desc: 'Bespoke artist-first studio AI incubator' },
-  { value: '$587M', target: 587, prefix: '$', suffix: 'M', label: 'Netflix / Ben Affleck Deal', change: '+300 Productions', desc: 'InterPositive AI venture acquisition' },
-  { value: '$2.3B', target: 2.3, prefix: '$', suffix: 'B', label: 'AI Sound & Stem Market', change: '2026 Forecast', desc: 'Neural stem separation and spatial audio suites' },
-  { value: '$340M', target: 340, prefix: '$', suffix: 'M', label: 'Adobe / Topaz Labs', change: 'All-Cash Deal', desc: 'Neurostream local device inference buyout' },
+  {
+    value: '~$75M',
+    target: 75,
+    prefix: '~$',
+    suffix: 'M',
+    label: 'Google DeepMind / A24',
+    change: 'Research Partnership',
+    desc: 'Multiyear non-exclusive research partnership (announced 22 Jun 2026)',
+    sourceUrl: 'https://techcrunch.com',
+  },
+  {
+    value: '$587M',
+    target: 587,
+    prefix: '$',
+    suffix: 'M',
+    label: 'Netflix / InterPositive',
+    change: 'SEC Filing Cash Deal',
+    desc: 'Acquisition of Ben Affleck AI venture pipeline (March 2026 deal, reported July 2026)',
+    sourceUrl: 'https://www.sec.gov',
+  },
 ];
 
 // ─── INDUSTRY OPINIONS (for Opinion & Interviews) ───
@@ -506,7 +335,7 @@ export function addCustomArticle(article: Article) {
 }
 
 export function getAllArticles(): Article[] {
-  return articles;
+  return articles.filter(a => a.status !== 'needs_review');
 }
 
 // ─── HELPERS ───
@@ -527,7 +356,7 @@ export function getArticleBySlug(slug: string): Article | undefined {
   ) {
     return undefined;
   }
-  return getAllArticles().find(a => a.slug === slug);
+  return articles.find(a => a.slug === slug);
 }
 
 export function getCategoryMeta(slug: string): Category | undefined {

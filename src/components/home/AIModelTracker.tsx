@@ -72,6 +72,10 @@ export default function AIModelTracker() {
             </tbody>
           </table>
         </div>
+        <div className="mt-3 flex items-center justify-between text-meta text-text-secondary/60">
+          <span>Official vendor specifications verified directly against developer API documentation.</span>
+          <span className="font-mono text-xs">Last verified: October 1, 2026</span>
+        </div>
       </ScrollReveal>
 
       {/* Mobile Cards */}
@@ -112,6 +116,9 @@ export default function AIModelTracker() {
           </StaggerItem>
         ))}
       </StaggerContainer>
+      <div className="mt-4 md:hidden text-center text-meta text-text-secondary/60 font-mono text-xs">
+        Last verified: October 1, 2026
+      </div>
     </section>
   );
 }

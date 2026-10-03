@@ -5,7 +5,7 @@ export const vfxArticles: Article[] = [
   {
     title: "ILM Deploys OpenUSD 24.11 Solaris Pipeline Across Global Studio Facilities",
     slug: "ilm-deploys-openusd-solaris-pipeline-global-facilities",
-    dek: "Behind-the-scenes engineering report on ILM Deploys OpenUSD 24.11 Solaris Pipeline Across Global Studio Facilities, detailing multi-pass compositing, procedural solvers, and final-pixel execution.",
+    dek: "A VFX pipeline analysis of ILM Deploys OpenUSD 24.11 Solaris Pipeline Across Global Studio Facilities, detailing multi-pass compositing and procedural execution.",
     heroImage: "/images/hero-vfx-breakdown.jpg",
     category: "vfx",
     tags: ["VFX","Pipeline Architecture","Industry Standards","Production Review"],
@@ -43,25 +43,25 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **ILM Deploys OpenUSD 24.11 Solaris Pipeline Across Global Studio Facilities** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "ILM Deploys OpenUSD 24.11 Solaris Pipeline Across Global Studio Facilities | RENDERLINE",
-      desc: "Behind-the-scenes engineering report on ILM Deploys OpenUSD 24.11 Solaris Pipeline Across Global Studio Facilities, detailing multi-pass compositing, procedural solvers, and final-pixel execution.",
+      title: "ILM Deploys OpenUSD 24.11 Solaris Pipeline Across Global Studio Facilities | Render Line",
+      desc: "A VFX pipeline analysis of ILM Deploys OpenUSD 24.11 Solaris Pipeline Across Global Studio Facilities, detailing multi-pass compositing and procedural execution.",
       ogImage: "/images/hero-vfx-breakdown.jpg",
     },
   },
   {
     title: "Alliance for OpenUSD Standardizes 3D Gaussian Splats in Core v26 Production Schemas",
     slug: "alliance-for-openusd-standardizes-3d-gaussian-splats-v26-schemas",
-    dek: "AOUSD unifies radiance field captures across Houdini 22, Nuke 17, and Unreal Engine, establishing universal schemas for real-time VFX asset handoffs.",
+    dek: "AOUSD unifies radiance field captures across Houdini 21, Nuke 15.1, and Unreal Engine, establishing universal schemas for real-time VFX asset handoffs.",
     heroImage: "/images/nuke-vfx-comp.jpg",
     category: "vfx",
-    tags: ["VFX", "OpenUSD v26", "Gaussian Splatting", "Foundry Nuke 17", "Houdini 22", "Pipeline Architecture"],
+    tags: ["VFX", "OpenUSD v26", "Gaussian Splatting", "Foundry Nuke 15.1", "Houdini 21", "Pipeline Architecture"],
     author: rajaRathnaReddy,
     publishedAt: "2026-10-02T18:15:00.000Z",
     readTime: 7,
     featured: false,
-    breaking: true,
-    toolsMentioned: ["OpenUSD v26", "Foundry Nuke 17", "SideFX Houdini 22", "Unreal Engine 5.8", "Karma XPU"],
-    seoKeywords: ["openusd v26 gaussian splats", "3d gaussian splatting vfx", "aousd production schema", "nuke 17 splats", "houdini 22 copernicus"],
+    breaking: false,
+    toolsMentioned: ["OpenUSD v26", "Foundry Nuke 15.1", "SideFX Houdini 21.0", "Unreal Engine 5.5", "Karma XPU"],
+    seoKeywords: ["openusd v26 gaussian splats", "3d gaussian splatting vfx", "aousd production schema", "nuke 15.1 splats", "houdini 21 copernicus"],
     body: `## The Normalization of Radiance Fields in High-End VFX
 
 In what visual effects supervisors are hailing as the biggest pipeline breakthrough since the release of MaterialX, the **Alliance for OpenUSD (AOUSD)** has officially published the **OpenUSD v26.08** core specification, formalizing native schemas for **3D Gaussian Splatting (3DGS)** and neural radiance fields.
@@ -77,26 +77,26 @@ Previously, studios attempting to ingest high-resolution drone photogrammetry an
 | Cross-DCC Sync | Broken FBX/OBJ Point Cache   | Single .usda/.usdc Referenced File |
 \`\`\`
 
-## Deep DCC Toolchain Integration: Houdini 22, Nuke 17 & Unreal Engine
+## Deep DCC Toolchain Integration: Houdini 21, Nuke 15.1 & Unreal Engine
 
 The adoption curve across major software vendors has been instantaneous:
-- **SideFX Houdini 22**: The new **Copernicus** procedural engine allows artists to groom, clip, and cull millions of Gaussians procedurally while simulating dynamic wind collision directly within Solaris viewports.
-- **Foundry Nuke 17**: Features native Gaussian Splat projection cameras and deep holdout integration. Compositors can now fly interactive cameras through scanned sets with accurate optical depth-of-field and motion blur without rendering offline CG passes.
-- **Epic Games Unreal Engine 5.8**: Ingests USD Gaussian primitives natively onto In-Camera VFX (ICVFX) LED volumes with sub-frame tracking latency and Zero-Moiré dynamic filtering.
+- **SideFX Houdini 21**: The **Copernicus** procedural engine allows artists to groom, clip, and cull millions of Gaussians procedurally while simulating dynamic wind collision directly within Solaris viewports.
+- **Foundry Nuke 15.1**: Features native Gaussian Splat projection cameras and deep holdout integration. Compositors can now fly interactive cameras through scanned sets with accurate optical depth-of-field and motion blur without rendering offline CG passes.
+- **Epic Games Unreal Engine 5.5**: Ingests USD Gaussian primitives natively onto In-Camera VFX (ICVFX) LED volumes with sub-frame tracking latency and Zero-Moiré dynamic filtering.
 
 ## Technical Field Assessment by Raja Rathna Reddy
 
 Standardizing 3D Gaussian Splats under OpenUSD marks the definitive bridge between practical set photogrammetry and digital visual effects. Facilities that adopt OpenUSD v26 schemas will cut weeks off traditional digital-double set builds while delivering photographic fidelity that holds up to the most demanding theatrical scrutiny.`,
     seo: {
-      title: "Alliance for OpenUSD Standardizes 3D Gaussian Splats in Core v26 | RENDERLINE",
-      desc: "AOUSD officially releases OpenUSD v26 with native 3D Gaussian Splatting schemas, unifying real-time VFX asset workflows across Houdini 22 and Nuke 17.",
+      title: "Alliance for OpenUSD Standardizes 3D Gaussian Splats in Core v26 | Render Line",
+      desc: "AOUSD officially releases OpenUSD v26 with native 3D Gaussian Splatting schemas, unifying real-time VFX asset workflows across Houdini 21 and Nuke 15.1.",
       ogImage: "/images/nuke-vfx-comp.jpg",
     },
   },
   {
     title: "Wētā FX Open-Sources Deep Comp Neural Denoising Toolkit for Tentpole Productions",
     slug: "weta-fx-deep-comp-neural-denoising-toolkit",
-    dek: "Behind-the-scenes engineering report on Wētā FX Open-Sources Deep Comp Neural Denoising Toolkit for Tentpole Productions, detailing multi-pass compositing, procedural solvers, and final-pixel execution.",
+    dek: "A VFX pipeline analysis of Wētā FX Open-Sources Deep Comp Neural Denoising Toolkit for Tentpole Productions, detailing multi-pass compositing and procedural execution.",
     heroImage: "/images/hero-vfx-breakdown.jpg",
     category: "vfx",
     tags: ["VFX","Pipeline Architecture","Industry Standards","Production Review"],
@@ -104,7 +104,8 @@ Standardizing 3D Gaussian Splats under OpenUSD marks the definitive bridge betwe
     publishedAt: "2026-09-02T09:07:00.000Z",
     readTime: 7,
     featured: false,
-    breaking: true,
+    breaking: false,
+    status: "needs_review",
     toolsMentioned: ["Unreal Engine","DaVinci Resolve","Foundry Nuke","Houdini","OpenUSD"],
     seoKeywords: ["wētā fx open-sources deep comp neural denoising toolkit for tentpole productions","vfx","vfx pipeline","hollywood technology"],
     body: `## Shot Anatomy & Procedural Setup
@@ -134,8 +135,8 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Wētā FX Open-Sources Deep Comp Neural Denoising Toolkit for Tentpole Productions** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Wētā FX Open-Sources Deep Comp Neural Denoising Toolkit for Tentpole Productions | RENDERLINE",
-      desc: "Behind-the-scenes engineering report on Wētā FX Open-Sources Deep Comp Neural Denoising Toolkit for Tentpole Productions, detailing multi-pass compositing, procedural solvers, and final-pixel execution.",
+      title: "Wētā FX Open-Sources Deep Comp Neural Denoising Toolkit for Tentpole Productions | Render Line",
+      desc: "A VFX pipeline analysis of Wētā FX Open-Sources Deep Comp Neural Denoising Toolkit for Tentpole Productions, detailing multi-pass compositing and procedural execution.",
       ogImage: "/images/hero-vfx-breakdown.jpg",
     },
   },
@@ -180,7 +181,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **OpenUSD Solaris Cross-DCC Blueprint** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "OpenUSD Solaris Cross-DCC Blueprint: Houdini to Unreal Pipeline | RENDERLINE",
+      title: "OpenUSD Solaris Cross-DCC Blueprint: Houdini to Unreal Pipeline | Render Line",
       desc: "VFX pipeline breakdown: how OpenUSD Solaris Cross-DCC Blueprint implemented houdini to unreal pipeline to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80",
     },
@@ -226,7 +227,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Studio Automation Architecture** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Studio Automation Architecture: n8n and ShotGrid Orchestration | RENDERLINE",
+      title: "Studio Automation Architecture: n8n and ShotGrid Orchestration | Render Line",
       desc: "VFX pipeline breakdown: how Studio Automation Architecture implemented n8n and shotgrid orchestration to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },
@@ -272,7 +273,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Local LLM Privacy Infrastructure** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Local LLM Privacy Infrastructure: Deploying Ollama and OpenClaw in VFX | RENDERLINE",
+      title: "Local LLM Privacy Infrastructure: Deploying Ollama and OpenClaw in VFX | Render Line",
       desc: "VFX pipeline breakdown: how Local LLM Privacy Infrastructure implemented deploying ollama and openclaw in vfx to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/breakdown-creature.jpg",
     },
@@ -318,7 +319,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **SideFX Houdini 21 VEX Optimization** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "SideFX Houdini 21 VEX Optimization: Maximizing SIMD Multi-Threading | RENDERLINE",
+      title: "SideFX Houdini 21 VEX Optimization: Maximizing SIMD Multi-Threading | Render Line",
       desc: "VFX pipeline breakdown: how SideFX Houdini 21 VEX Optimization implemented maximizing simd multi-threading to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },
@@ -364,7 +365,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Karma XPU vs Arnold GPU** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Karma XPU vs Arnold GPU: Production Path Tracing Benchmarks in Solaris | RENDERLINE",
+      title: "Karma XPU vs Arnold GPU: Production Path Tracing Benchmarks in Solaris | Render Line",
       desc: "VFX pipeline breakdown: how Karma XPU vs Arnold GPU implemented production path tracing benchmarks in solaris to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     },
@@ -410,7 +411,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Vellum Multi-Physics Solver** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Vellum Multi-Physics Solver: Simulating Layered Hero Wardrobe Dynamics | RENDERLINE",
+      title: "Vellum Multi-Physics Solver: Simulating Layered Hero Wardrobe Dynamics | Render Line",
       desc: "VFX pipeline breakdown: how Vellum Multi-Physics Solver implemented simulating layered hero wardrobe dynamics to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     },
@@ -456,7 +457,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **FLIP Fluid Dynamics at Scale** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "FLIP Fluid Dynamics at Scale: Simulating Megalodon Ocean Breaches | RENDERLINE",
+      title: "FLIP Fluid Dynamics at Scale: Simulating Megalodon Ocean Breaches | Render Line",
       desc: "VFX pipeline breakdown: how FLIP Fluid Dynamics at Scale implemented simulating megalodon ocean breaches to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/audio-atmos-stage.jpg",
     },
@@ -502,7 +503,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Axiom GPU Pyro Solver** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Axiom GPU Pyro Solver: Real-Time Gas Dynamics for Explosive Battles | RENDERLINE",
+      title: "Axiom GPU Pyro Solver: Real-Time Gas Dynamics for Explosive Battles | Render Line",
       desc: "VFX pipeline breakdown: how Axiom GPU Pyro Solver implemented real-time gas dynamics for explosive battles to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
     },
@@ -548,7 +549,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **AWS Thinkbox Deadline 10.4** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "AWS Thinkbox Deadline 10.4: Spot Fleet Cost Optimization for Tentpoles | RENDERLINE",
+      title: "AWS Thinkbox Deadline 10.4: Spot Fleet Cost Optimization for Tentpoles | Render Line",
       desc: "VFX pipeline breakdown: how AWS Thinkbox Deadline 10.4 implemented spot fleet cost optimization for tentpoles to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     },
@@ -594,7 +595,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Tractor 2.5 Job Spooling** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Tractor 2.5 Job Spooling: Managing 200,000 Concurrent Render Tasks | RENDERLINE",
+      title: "Tractor 2.5 Job Spooling: Managing 200,000 Concurrent Render Tasks | Render Line",
       desc: "VFX pipeline breakdown: how Tractor 2.5 Job Spooling implemented managing 200,000 concurrent render tasks to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },
@@ -640,7 +641,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **OpenCue Cloud Orchestration** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "OpenCue Cloud Orchestration: Building Open-Source Studio Render Farms | RENDERLINE",
+      title: "OpenCue Cloud Orchestration: Building Open-Source Studio Render Farms | Render Line",
       desc: "VFX pipeline breakdown: how OpenCue Cloud Orchestration implemented building open-source studio render farms to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/server-render-farm.jpg",
     },
@@ -686,7 +687,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Deep Compositing Workflows in Nuke 16** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Deep Compositing Workflows in Nuke 16: Managing Petabyte EXR Storage | RENDERLINE",
+      title: "Deep Compositing Workflows in Nuke 16: Managing Petabyte EXR Storage | Render Line",
       desc: "VFX pipeline breakdown: how Deep Compositing Workflows in Nuke 16 implemented managing petabyte exr storage to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/hero-vfx-breakdown.jpg",
     },
@@ -732,7 +733,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **ACES 2.0 Migration Guide** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "ACES 2.0 Migration Guide: Maintaining Color Gamut Integrity Across DCCs | RENDERLINE",
+      title: "ACES 2.0 Migration Guide: Maintaining Color Gamut Integrity Across DCCs | Render Line",
       desc: "VFX pipeline breakdown: how ACES 2.0 Migration Guide implemented maintaining color gamut integrity across dccs to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80",
     },
@@ -778,7 +779,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Cryptomatte 2.0 Performance** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Cryptomatte 2.0 Performance: Optimizing Multi-Layer Render Passes | RENDERLINE",
+      title: "Cryptomatte 2.0 Performance: Optimizing Multi-Layer Render Passes | Render Line",
       desc: "VFX pipeline breakdown: how Cryptomatte 2.0 Performance implemented optimizing multi-layer render passes to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },
@@ -824,7 +825,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Ziva VFX Tissue Dynamics** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Ziva VFX Tissue Dynamics: Realistic Muscle and Fascia for Creature Rigs | RENDERLINE",
+      title: "Ziva VFX Tissue Dynamics: Realistic Muscle and Fascia for Creature Rigs | Render Line",
       desc: "VFX pipeline breakdown: how Ziva VFX Tissue Dynamics implemented realistic muscle and fascia for creature rigs to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/audio-atmos-stage.jpg",
     },
@@ -870,7 +871,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **MetaHuman DNA Calibration** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "MetaHuman DNA Calibration: Retargeting Facial FACS Rigs for Feature Heroes | RENDERLINE",
+      title: "MetaHuman DNA Calibration: Retargeting Facial FACS Rigs for Feature Heroes | Render Line",
       desc: "VFX pipeline breakdown: how MetaHuman DNA Calibration implemented retargeting facial facs rigs for feature heroes to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/breakdown-creature.jpg",
     },
@@ -916,7 +917,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **KineFX Motion Editing** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "KineFX Motion Editing: Streamlining Mocap Clean-Up for Crowd Simulation | RENDERLINE",
+      title: "KineFX Motion Editing: Streamlining Mocap Clean-Up for Crowd Simulation | Render Line",
       desc: "VFX pipeline breakdown: how KineFX Motion Editing implemented streamlining mocap clean-up for crowd simulation to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/mocap-performance-stage.jpg",
     },
@@ -962,7 +963,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **PDG Task Graph Scheduling** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "PDG Task Graph Scheduling: Automating 10,000 Variation Asset Batches | RENDERLINE",
+      title: "PDG Task Graph Scheduling: Automating 10,000 Variation Asset Batches | Render Line",
       desc: "VFX pipeline breakdown: how PDG Task Graph Scheduling implemented automating 10,000 variation asset batches to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },
@@ -1008,7 +1009,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Substance Painter UDIM Pipelines** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Substance Painter UDIM Pipelines: Managing 100 UDIM Hero Character Assets | RENDERLINE",
+      title: "Substance Painter UDIM Pipelines: Managing 100 UDIM Hero Character Assets | Render Line",
       desc: "VFX pipeline breakdown: how Substance Painter UDIM Pipelines implemented managing 100 udim hero character assets to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1054,7 +1055,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Katana 7 Lighting Lookdev** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Katana 7 Lighting Lookdev: High-Speed Scene Graph Graph Traversal | RENDERLINE",
+      title: "Katana 7 Lighting Lookdev: High-Speed Scene Graph Graph Traversal | Render Line",
       desc: "VFX pipeline breakdown: how Katana 7 Lighting Lookdev implemented high-speed scene graph graph traversal to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/breakdown-creature.jpg",
     },
@@ -1100,7 +1101,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Gaffer Node-Based Lookdev** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Gaffer Node-Based Lookdev: Open-Source Lighting for Boutique Studios | RENDERLINE",
+      title: "Gaffer Node-Based Lookdev: Open-Source Lighting for Boutique Studios | Render Line",
       desc: "VFX pipeline breakdown: how Gaffer Node-Based Lookdev implemented open-source lighting for boutique studios to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1146,7 +1147,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **MaterialX 1.39 Shading Standard** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "MaterialX 1.39 Shading Standard: Cross-Vendor Shader Portability | RENDERLINE",
+      title: "MaterialX 1.39 Shading Standard: Cross-Vendor Shader Portability | Render Line",
       desc: "VFX pipeline breakdown: how MaterialX 1.39 Shading Standard implemented cross-vendor shader portability to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },
@@ -1192,7 +1193,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Leica Geosystems LIDAR Ingest** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Leica Geosystems LIDAR Ingest: Processing 500M Point Clouds into USD Meshes | RENDERLINE",
+      title: "Leica Geosystems LIDAR Ingest: Processing 500M Point Clouds into USD Meshes | Render Line",
       desc: "VFX pipeline breakdown: how Leica Geosystems LIDAR Ingest implemented processing 500m point clouds into usd meshes to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/hero-vfx-breakdown.jpg",
     },
@@ -1238,7 +1239,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **RealityCapture Drone Photogrammetry** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "RealityCapture Drone Photogrammetry: Automated Terrain Mesh Extraction | RENDERLINE",
+      title: "RealityCapture Drone Photogrammetry: Automated Terrain Mesh Extraction | Render Line",
       desc: "VFX pipeline breakdown: how RealityCapture Drone Photogrammetry implemented automated terrain mesh extraction to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/breakdown-creature.jpg",
     },
@@ -1284,7 +1285,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Houdini Guide Process Grooming** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Houdini Guide Process Grooming: Simulating Micro-Fiber Fur Dynamics | RENDERLINE",
+      title: "Houdini Guide Process Grooming: Simulating Micro-Fiber Fur Dynamics | Render Line",
       desc: "VFX pipeline breakdown: how Houdini Guide Process Grooming implemented simulating micro-fiber fur dynamics to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1330,7 +1331,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **FACS-Based Facial Rigging** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "FACS-Based Facial Rigging: Calibrating Subtle Emotional Nuance | RENDERLINE",
+      title: "FACS-Based Facial Rigging: Calibrating Subtle Emotional Nuance | Render Line",
       desc: "VFX pipeline breakdown: how FACS-Based Facial Rigging implemented calibrating subtle emotional nuance to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },
@@ -1376,7 +1377,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Neural Cloth Deformation** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Neural Cloth Deformation: Accelerating Real-Time Wardrobe Sim in Viewports | RENDERLINE",
+      title: "Neural Cloth Deformation: Accelerating Real-Time Wardrobe Sim in Viewports | Render Line",
       desc: "VFX pipeline breakdown: how Neural Cloth Deformation implemented accelerating real-time wardrobe sim in viewports to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1422,7 +1423,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **EXR Compression Benchmarks** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "EXR Compression Benchmarks: DWAB vs ZIP1 in High-Throughput Pipelines | RENDERLINE",
+      title: "EXR Compression Benchmarks: DWAB vs ZIP1 in High-Throughput Pipelines | Render Line",
       desc: "VFX pipeline breakdown: how EXR Compression Benchmarks implemented dwab vs zip1 in high-throughput pipelines to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/breakdown-creature.jpg",
     },
@@ -1468,7 +1469,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Colorfront Transkoder 2026** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Colorfront Transkoder 2026: Automated High-Speed Dailies Delivery | RENDERLINE",
+      title: "Colorfront Transkoder 2026: Automated High-Speed Dailies Delivery | Render Line",
       desc: "VFX pipeline breakdown: how Colorfront Transkoder 2026 implemented automated high-speed dailies delivery to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1514,7 +1515,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Nuke Machine-Learning Node Architecture** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Nuke Machine-Learning Node Architecture: Training In-House Toolsets | RENDERLINE",
+      title: "Nuke Machine-Learning Node Architecture: Training In-House Toolsets | Render Line",
       desc: "VFX pipeline breakdown: how Nuke Machine-Learning Node Architecture implemented training in-house toolsets to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/hero-vfx-breakdown.jpg",
     },
@@ -1522,7 +1523,7 @@ The execution on **Nuke Machine-Learning Node Architecture** demonstrates why pr
   {
     title: "Camera Tracking Solve Protocols for Anamorphic Spherical Distortions",
     slug: "camera-tracking-solve-protocols-for-anamorphic-spherical-distortions",
-    dek: "Behind-the-scenes engineering report on Camera Tracking Solve Protocols for Anamorphic Spherical Distortions, detailing multi-pass compositing, procedural solvers, and final-pixel execution.",
+    dek: "A VFX pipeline analysis of Camera Tracking Solve Protocols for Anamorphic Spherical Distortions, detailing multi-pass compositing and procedural execution.",
     heroImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     category: "vfx",
     tags: ["VFX","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1560,8 +1561,8 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Camera Tracking Solve Protocols for Anamorphic Spherical Distortions** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Camera Tracking Solve Protocols for Anamorphic Spherical Distortions | RENDERLINE",
-      desc: "Behind-the-scenes engineering report on Camera Tracking Solve Protocols for Anamorphic Spherical Distortions, detailing multi-pass compositing, procedural solvers, and final-pixel execution.",
+      title: "Camera Tracking Solve Protocols for Anamorphic Spherical Distortions | Render Line",
+      desc: "A VFX pipeline analysis of Camera Tracking Solve Protocols for Anamorphic Spherical Distortions, detailing multi-pass compositing and procedural execution.",
       ogImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     },
   },
@@ -1606,7 +1607,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Houdini Heightfields to Nanite Meshes** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Houdini Heightfields to Nanite Meshes: Sculpting Infinite 3D Terrains | RENDERLINE",
+      title: "Houdini Heightfields to Nanite Meshes: Sculpting Infinite 3D Terrains | Render Line",
       desc: "VFX pipeline breakdown: how Houdini Heightfields to Nanite Meshes implemented sculpting infinite 3d terrains to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/article-unreal.jpg",
     },
@@ -1652,7 +1653,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Crowd Simulation Dynamics** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Crowd Simulation Dynamics: Agent Behavior Logic in Urban Disaster Scenes | RENDERLINE",
+      title: "Crowd Simulation Dynamics: Agent Behavior Logic in Urban Disaster Scenes | Render Line",
       desc: "VFX pipeline breakdown: how Crowd Simulation Dynamics implemented agent behavior logic in urban disaster scenes to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1698,7 +1699,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Automated Daily Render Slates** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Automated Daily Render Slates: Python Scripting for Color Calibrated Reviews | RENDERLINE",
+      title: "Automated Daily Render Slates: Python Scripting for Color Calibrated Reviews | Render Line",
       desc: "VFX pipeline breakdown: how Automated Daily Render Slates implemented python scripting for color calibrated reviews to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },
@@ -1744,7 +1745,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Volumetric Fog and Atmosphere** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Volumetric Fog and Atmosphere: VDB Caching Protocols for Network Storage | RENDERLINE",
+      title: "Volumetric Fog and Atmosphere: VDB Caching Protocols for Network Storage | Render Line",
       desc: "VFX pipeline breakdown: how Volumetric Fog and Atmosphere implemented vdb caching protocols for network storage to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/nuke-vfx-comp.jpg",
     },
@@ -1790,7 +1791,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Pyrotechnic Smoke Dissipation** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Pyrotechnic Smoke Dissipation: Simulating Realistic Atmospheric Falloff | RENDERLINE",
+      title: "Pyrotechnic Smoke Dissipation: Simulating Realistic Atmospheric Falloff | Render Line",
       desc: "VFX pipeline breakdown: how Pyrotechnic Smoke Dissipation implemented simulating realistic atmospheric falloff to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1836,7 +1837,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **High-Speed Fluid Splashes** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "High-Speed Fluid Splashes: Narrow Band FLIP Memory Optimization | RENDERLINE",
+      title: "High-Speed Fluid Splashes: Narrow Band FLIP Memory Optimization | Render Line",
       desc: "VFX pipeline breakdown: how High-Speed Fluid Splashes implemented narrow band flip memory optimization to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1882,7 +1883,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Bullet Physics vs Vellum** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Bullet Physics vs Vellum: Selecting Rigid Body Solvers for Building Collapse | RENDERLINE",
+      title: "Bullet Physics vs Vellum: Selecting Rigid Body Solvers for Building Collapse | Render Line",
       desc: "VFX pipeline breakdown: how Bullet Physics vs Vellum implemented selecting rigid body solvers for building collapse to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },
@@ -1928,7 +1929,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Fracture Pattern Generation** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Fracture Pattern Generation: Voronoi vs Procedural Boolean Destruction | RENDERLINE",
+      title: "Fracture Pattern Generation: Voronoi vs Procedural Boolean Destruction | Render Line",
       desc: "VFX pipeline breakdown: how Fracture Pattern Generation implemented voronoi vs procedural boolean destruction to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/hero-vfx-breakdown.jpg",
     },
@@ -1974,7 +1975,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Secondary Debris Simulation** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Secondary Debris Simulation: Instancing Debris Particles on Collapsing Geometry | RENDERLINE",
+      title: "Secondary Debris Simulation: Instancing Debris Particles on Collapsing Geometry | Render Line",
       desc: "VFX pipeline breakdown: how Secondary Debris Simulation implemented instancing debris particles on collapsing geometry to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },
@@ -2020,7 +2021,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Dynamic Soft Body Impacts** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Dynamic Soft Body Impacts: Rubber and Metal Deformation in Vehicle Crashes | RENDERLINE",
+      title: "Dynamic Soft Body Impacts: Rubber and Metal Deformation in Vehicle Crashes | Render Line",
       desc: "VFX pipeline breakdown: how Dynamic Soft Body Impacts implemented rubber and metal deformation in vehicle crashes to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2066,7 +2067,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Tearable Cloth Dynamics** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Tearable Cloth Dynamics: Simulating Ballistic Fabric Damage in Action Hits | RENDERLINE",
+      title: "Tearable Cloth Dynamics: Simulating Ballistic Fabric Damage in Action Hits | Render Line",
       desc: "VFX pipeline breakdown: how Tearable Cloth Dynamics implemented simulating ballistic fabric damage in action hits to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2112,7 +2113,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Dynamic Hair Collisions** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Dynamic Hair Collisions: Preventing Inter-Penetration on Fast Character Spins | RENDERLINE",
+      title: "Dynamic Hair Collisions: Preventing Inter-Penetration on Fast Character Spins | Render Line",
       desc: "VFX pipeline breakdown: how Dynamic Hair Collisions implemented preventing inter-penetration on fast character spins to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/audio-atmos-stage.jpg",
     },
@@ -2158,7 +2159,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Underwater Particulate Simulation** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Underwater Particulate Simulation: Modeling Marine Snow and Deep Sea Murk | RENDERLINE",
+      title: "Underwater Particulate Simulation: Modeling Marine Snow and Deep Sea Murk | Render Line",
       desc: "VFX pipeline breakdown: how Underwater Particulate Simulation implemented modeling marine snow and deep sea murk to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/nuke-vfx-comp.jpg",
     },
@@ -2204,7 +2205,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Sand and Granular Solvers** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Sand and Granular Solvers: Simulating Dune Avalanches and Shockwaves | RENDERLINE",
+      title: "Sand and Granular Solvers: Simulating Dune Avalanches and Shockwaves | Render Line",
       desc: "VFX pipeline breakdown: how Sand and Granular Solvers implemented simulating dune avalanches and shockwaves to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2250,7 +2251,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Snow and Frost Procedural Growth** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Snow and Frost Procedural Growth: Node-Based Surface Condensation Solves | RENDERLINE",
+      title: "Snow and Frost Procedural Growth: Node-Based Surface Condensation Solves | Render Line",
       desc: "VFX pipeline breakdown: how Snow and Frost Procedural Growth implemented node-based surface condensation solves to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },
@@ -2296,7 +2297,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Lava and Viscous Fluid Dynamics** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Lava and Viscous Fluid Dynamics: Temperature-Dependent Viscosity Modeling | RENDERLINE",
+      title: "Lava and Viscous Fluid Dynamics: Temperature-Dependent Viscosity Modeling | Render Line",
       desc: "VFX pipeline breakdown: how Lava and Viscous Fluid Dynamics implemented temperature-dependent viscosity modeling to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/audio-atmos-stage.jpg",
     },
@@ -2342,7 +2343,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Procedural Vegetation Growth** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Procedural Vegetation Growth: L-System Trees Reacting to Wind Velocities | RENDERLINE",
+      title: "Procedural Vegetation Growth: L-System Trees Reacting to Wind Velocities | Render Line",
       desc: "VFX pipeline breakdown: how Procedural Vegetation Growth implemented l-system trees reacting to wind velocities to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/breakdown-creature.jpg",
     },
@@ -2388,7 +2389,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Digital Double Skin Shading** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Digital Double Skin Shading: Subsurface Scattering with Dual Specular Lobes | RENDERLINE",
+      title: "Digital Double Skin Shading: Subsurface Scattering with Dual Specular Lobes | Render Line",
       desc: "VFX pipeline breakdown: how Digital Double Skin Shading implemented subsurface scattering with dual specular lobes to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2396,7 +2397,7 @@ The execution on **Digital Double Skin Shading** demonstrates why procedural and
   {
     title: "Eyeball Refraction and Cornea Caustics in Hero Close-Up Renders",
     slug: "eyeball-refraction-and-cornea-caustics-in-hero-close-up-renders",
-    dek: "Behind-the-scenes engineering report on Eyeball Refraction and Cornea Caustics in Hero Close-Up Renders, detailing multi-pass compositing, procedural solvers, and final-pixel execution.",
+    dek: "A VFX pipeline analysis of Eyeball Refraction and Cornea Caustics in Hero Close-Up Renders, detailing multi-pass compositing and procedural execution.",
     heroImage: "/images/vfx-space-explosion.jpg",
     category: "vfx",
     tags: ["VFX","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2434,8 +2435,8 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Eyeball Refraction and Cornea Caustics in Hero Close-Up Renders** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Eyeball Refraction and Cornea Caustics in Hero Close-Up Renders | RENDERLINE",
-      desc: "Behind-the-scenes engineering report on Eyeball Refraction and Cornea Caustics in Hero Close-Up Renders, detailing multi-pass compositing, procedural solvers, and final-pixel execution.",
+      title: "Eyeball Refraction and Cornea Caustics in Hero Close-Up Renders | Render Line",
+      desc: "A VFX pipeline analysis of Eyeball Refraction and Cornea Caustics in Hero Close-Up Renders, detailing multi-pass compositing and procedural execution.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },
   },
@@ -2480,7 +2481,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Digital Stunt Doubles** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Digital Stunt Doubles: Seamless Invisible Head Replacements in Combat | RENDERLINE",
+      title: "Digital Stunt Doubles: Seamless Invisible Head Replacements in Combat | Render Line",
       desc: "VFX pipeline breakdown: how Digital Stunt Doubles implemented seamless invisible head replacements in combat to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/mocap-performance-stage.jpg",
     },
@@ -2526,7 +2527,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Automated Edge Extension** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Automated Edge Extension: Eliminating Spill and Fringing on Blue Screen Plates | RENDERLINE",
+      title: "Automated Edge Extension: Eliminating Spill and Fringing on Blue Screen Plates | Render Line",
       desc: "VFX pipeline breakdown: how Automated Edge Extension implemented eliminating spill and fringing on blue screen plates to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/breakdown-creature.jpg",
     },
@@ -2572,7 +2573,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Deep Defocus in Compositing** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Deep Defocus in Compositing: Physical Lens Blur on Multi-Depth Layers | RENDERLINE",
+      title: "Deep Defocus in Compositing: Physical Lens Blur on Multi-Depth Layers | Render Line",
       desc: "VFX pipeline breakdown: how Deep Defocus in Compositing implemented physical lens blur on multi-depth layers to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/nuke-vfx-comp.jpg",
     },
@@ -2618,7 +2619,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Motion Vector Synthesis in Nuke** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Motion Vector Synthesis in Nuke: Accurate Post-Blur on Fast Rotating Propellers | RENDERLINE",
+      title: "Motion Vector Synthesis in Nuke: Accurate Post-Blur on Fast Rotating Propellers | Render Line",
       desc: "VFX pipeline breakdown: how Motion Vector Synthesis in Nuke implemented accurate post-blur on fast rotating propellers to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/hero-vfx-breakdown.jpg",
     },
@@ -2664,7 +2665,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Heat Haze Distortion Shaders** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Heat Haze Distortion Shaders: Optical Index of Refraction Modeling | RENDERLINE",
+      title: "Heat Haze Distortion Shaders: Optical Index of Refraction Modeling | Render Line",
       desc: "VFX pipeline breakdown: how Heat Haze Distortion Shaders implemented optical index of refraction modeling to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2710,7 +2711,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Rain Streak Geometry Instancing** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Rain Streak Geometry Instancing: Camera-Relative Particle Simulation | RENDERLINE",
+      title: "Rain Streak Geometry Instancing: Camera-Relative Particle Simulation | Render Line",
       desc: "VFX pipeline breakdown: how Rain Streak Geometry Instancing implemented camera-relative particle simulation to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/review-camera.jpg",
     },
@@ -2756,7 +2757,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Puddle Splash Interaction** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Puddle Splash Interaction: Footstep Shockwaves on Wet Asphalt | RENDERLINE",
+      title: "Puddle Splash Interaction: Footstep Shockwaves on Wet Asphalt | Render Line",
       desc: "VFX pipeline breakdown: how Puddle Splash Interaction implemented footstep shockwaves on wet asphalt to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2802,7 +2803,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Muzzle Flash and Gunshot Lighting** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Muzzle Flash and Gunshot Lighting: Interactive Dynamic Radiance Passes | RENDERLINE",
+      title: "Muzzle Flash and Gunshot Lighting: Interactive Dynamic Radiance Passes | Render Line",
       desc: "VFX pipeline breakdown: how Muzzle Flash and Gunshot Lighting implemented interactive dynamic radiance passes to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2848,7 +2849,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Laser and Plasma FX** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Laser and Plasma FX: Procedural Energy Arcs with Volumetric Glow | RENDERLINE",
+      title: "Laser and Plasma FX: Procedural Energy Arcs with Volumetric Glow | Render Line",
       desc: "VFX pipeline breakdown: how Laser and Plasma FX implemented procedural energy arcs with volumetric glow to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/hero-vfx-breakdown.jpg",
     },
@@ -2894,7 +2895,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Magical Spell Geometry** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Magical Spell Geometry: Particle Systems Driven by Curl Noise Fields | RENDERLINE",
+      title: "Magical Spell Geometry: Particle Systems Driven by Curl Noise Fields | Render Line",
       desc: "VFX pipeline breakdown: how Magical Spell Geometry implemented particle systems driven by curl noise fields to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/breakdown-creature.jpg",
     },
@@ -2940,7 +2941,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Sci-Fi Shield Impacts** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Sci-Fi Shield Impacts: Ripple Dispersion Shaders on Convex Hulls | RENDERLINE",
+      title: "Sci-Fi Shield Impacts: Ripple Dispersion Shaders on Convex Hulls | Render Line",
       desc: "VFX pipeline breakdown: how Sci-Fi Shield Impacts implemented ripple dispersion shaders on convex hulls to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2986,7 +2987,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Hologram Lookdev** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Hologram Lookdev: Glitch Artifacts, Scanlines, and Optical Chromatic Fringes | RENDERLINE",
+      title: "Hologram Lookdev: Glitch Artifacts, Scanlines, and Optical Chromatic Fringes | Render Line",
       desc: "VFX pipeline breakdown: how Hologram Lookdev implemented glitch artifacts, scanlines, and optical chromatic fringes to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },
@@ -3032,7 +3033,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Spaceship Thruster Dynamics** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Spaceship Thruster Dynamics: Supersonic Shock Diamonds in Gas Exhaust | RENDERLINE",
+      title: "Spaceship Thruster Dynamics: Supersonic Shock Diamonds in Gas Exhaust | Render Line",
       desc: "VFX pipeline breakdown: how Spaceship Thruster Dynamics implemented supersonic shock diamonds in gas exhaust to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/davinci-color-suite.jpg",
     },
@@ -3078,7 +3079,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Planetary Atmosphere Shading** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Planetary Atmosphere Shading: Rayleigh and Mie Scattering in Path Tracers | RENDERLINE",
+      title: "Planetary Atmosphere Shading: Rayleigh and Mie Scattering in Path Tracers | Render Line",
       desc: "VFX pipeline breakdown: how Planetary Atmosphere Shading implemented rayleigh and mie scattering in path tracers to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3124,7 +3125,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Asteroid Field Instancing** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Asteroid Field Instancing: Point Clustered USD Assets with LOD Switching | RENDERLINE",
+      title: "Asteroid Field Instancing: Point Clustered USD Assets with LOD Switching | Render Line",
       desc: "VFX pipeline breakdown: how Asteroid Field Instancing implemented point clustered usd assets with lod switching to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3170,7 +3171,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Zero-Gravity Debris Float** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Zero-Gravity Debris Float: Micro-Velocity Physics Solvers for Spacecraft Breaches | RENDERLINE",
+      title: "Zero-Gravity Debris Float: Micro-Velocity Physics Solvers for Spacecraft Breaches | Render Line",
       desc: "VFX pipeline breakdown: how Zero-Gravity Debris Float implemented micro-velocity physics solvers for spacecraft breaches to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3216,7 +3217,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Supernova and Cosmic Gas Volumes** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Supernova and Cosmic Gas Volumes: Multi-Octave Noise Grids in VDB | RENDERLINE",
+      title: "Supernova and Cosmic Gas Volumes: Multi-Octave Noise Grids in VDB | Render Line",
       desc: "VFX pipeline breakdown: how Supernova and Cosmic Gas Volumes implemented multi-octave noise grids in vdb to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/audio-atmos-stage.jpg",
     },
@@ -3262,7 +3263,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Microscopic Cellular Simulation** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Microscopic Cellular Simulation: Blood Cells and Viruses in Fluid Flow | RENDERLINE",
+      title: "Microscopic Cellular Simulation: Blood Cells and Viruses in Fluid Flow | Render Line",
       desc: "VFX pipeline breakdown: how Microscopic Cellular Simulation implemented blood cells and viruses in fluid flow to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3308,7 +3309,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Time-Lapse Plant Growth** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Time-Lapse Plant Growth: Skeletal Rig Animation Driven by Daylight Curves | RENDERLINE",
+      title: "Time-Lapse Plant Growth: Skeletal Rig Animation Driven by Daylight Curves | Render Line",
       desc: "VFX pipeline breakdown: how Time-Lapse Plant Growth implemented skeletal rig animation driven by daylight curves to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3354,7 +3355,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Insect Swarm Pathfinding** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Insect Swarm Pathfinding: Boids Algorithm Optimization for 100,000 Agents | RENDERLINE",
+      title: "Insect Swarm Pathfinding: Boids Algorithm Optimization for 100,000 Agents | Render Line",
       desc: "VFX pipeline breakdown: how Insect Swarm Pathfinding implemented boids algorithm optimization for 100,000 agents to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },
@@ -3400,7 +3401,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Bird Flock Aerodynamics** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Bird Flock Aerodynamics: Turbulence Guidance and Wing Flutter Physics | RENDERLINE",
+      title: "Bird Flock Aerodynamics: Turbulence Guidance and Wing Flutter Physics | Render Line",
       desc: "VFX pipeline breakdown: how Bird Flock Aerodynamics implemented turbulence guidance and wing flutter physics to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/audio-atmos-stage.jpg",
     },
@@ -3446,7 +3447,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Fish School Dynamic Evasion** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Fish School Dynamic Evasion: Reactive Velocity Fields to Predator Meshes | RENDERLINE",
+      title: "Fish School Dynamic Evasion: Reactive Velocity Fields to Predator Meshes | Render Line",
       desc: "VFX pipeline breakdown: how Fish School Dynamic Evasion implemented reactive velocity fields to predator meshes to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3492,7 +3493,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Procedural Weathering and Rust** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Procedural Weathering and Rust: Curvature and Ambient Occlusion Baking | RENDERLINE",
+      title: "Procedural Weathering and Rust: Curvature and Ambient Occlusion Baking | Render Line",
       desc: "VFX pipeline breakdown: how Procedural Weathering and Rust implemented curvature and ambient occlusion baking to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3538,7 +3539,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Concrete Spalling and Rebar Exposure** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Concrete Spalling and Rebar Exposure: Multi-Tiered Structural Breakdown | RENDERLINE",
+      title: "Concrete Spalling and Rebar Exposure: Multi-Tiered Structural Breakdown | Render Line",
       desc: "VFX pipeline breakdown: how Concrete Spalling and Rebar Exposure implemented multi-tiered structural breakdown to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },
@@ -3584,7 +3585,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Glass Shatter Mechanics** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Glass Shatter Mechanics: Stress-Tensor Guided Cleavage Planes | RENDERLINE",
+      title: "Glass Shatter Mechanics: Stress-Tensor Guided Cleavage Planes | Render Line",
       desc: "VFX pipeline breakdown: how Glass Shatter Mechanics implemented stress-tensor guided cleavage planes to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/hero-vfx-breakdown.jpg",
     },
@@ -3630,7 +3631,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Wood Splinter Physics** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Wood Splinter Physics: Fibrous Fracture Generation for Structural Beams | RENDERLINE",
+      title: "Wood Splinter Physics: Fibrous Fracture Generation for Structural Beams | Render Line",
       desc: "VFX pipeline breakdown: how Wood Splinter Physics implemented fibrous fracture generation for structural beams to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/breakdown-creature.jpg",
     },
@@ -3676,7 +3677,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Paper and Leaf Flutter Dynamics** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Paper and Leaf Flutter Dynamics: Thin Shell Aerodynamic Lift Solvers | RENDERLINE",
+      title: "Paper and Leaf Flutter Dynamics: Thin Shell Aerodynamic Lift Solvers | Render Line",
       desc: "VFX pipeline breakdown: how Paper and Leaf Flutter Dynamics implemented thin shell aerodynamic lift solvers to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3722,7 +3723,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Fireball Radiance Falloff** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Fireball Radiance Falloff: Blackbody Radiation Curve Tuning for Realism | RENDERLINE",
+      title: "Fireball Radiance Falloff: Blackbody Radiation Curve Tuning for Realism | Render Line",
       desc: "VFX pipeline breakdown: how Fireball Radiance Falloff implemented blackbody radiation curve tuning for realism to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },
@@ -3768,7 +3769,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Electrical Sparks and Arc Welding** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Electrical Sparks and Arc Welding: High-Velocity Particle Emission with Bounce | RENDERLINE",
+      title: "Electrical Sparks and Arc Welding: High-Velocity Particle Emission with Bounce | Render Line",
       desc: "VFX pipeline breakdown: how Electrical Sparks and Arc Welding implemented high-velocity particle emission with bounce to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/hero-vfx-breakdown.jpg",
     },
@@ -3814,7 +3815,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Smoke Inversion Layers** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Smoke Inversion Layers: Atmospheric Thermal Capping in Valley Environments | RENDERLINE",
+      title: "Smoke Inversion Layers: Atmospheric Thermal Capping in Valley Environments | Render Line",
       desc: "VFX pipeline breakdown: how Smoke Inversion Layers implemented atmospheric thermal capping in valley environments to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3860,7 +3861,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Volcanic Eruption Plumes** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Volcanic Eruption Plumes: High-Density Particulate Dispersion Solvers | RENDERLINE",
+      title: "Volcanic Eruption Plumes: High-Density Particulate Dispersion Solvers | Render Line",
       desc: "VFX pipeline breakdown: how Volcanic Eruption Plumes implemented high-density particulate dispersion solvers to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3906,7 +3907,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Geyser and Steam Vent Dynamics** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Geyser and Steam Vent Dynamics: High-Pressure Sonic Gas Jet Simulation | RENDERLINE",
+      title: "Geyser and Steam Vent Dynamics: High-Pressure Sonic Gas Jet Simulation | Render Line",
       desc: "VFX pipeline breakdown: how Geyser and Steam Vent Dynamics implemented high-pressure sonic gas jet simulation to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3952,7 +3953,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Tornado and Cyclone Vortices** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Tornado and Cyclone Vortices: Angular Momentum Conservation in Gas Fields | RENDERLINE",
+      title: "Tornado and Cyclone Vortices: Angular Momentum Conservation in Gas Fields | Render Line",
       desc: "VFX pipeline breakdown: how Tornado and Cyclone Vortices implemented angular momentum conservation in gas fields to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/hero-vfx-breakdown.jpg",
     },
@@ -3998,7 +3999,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Avalanche Dust Powder Clouds** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Avalanche Dust Powder Clouds: Entrained Air Simulation Over Snowpacks | RENDERLINE",
+      title: "Avalanche Dust Powder Clouds: Entrained Air Simulation Over Snowpacks | Render Line",
       desc: "VFX pipeline breakdown: how Avalanche Dust Powder Clouds implemented entrained air simulation over snowpacks to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },
@@ -4044,7 +4045,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Tsunami and Oceanic Surge Solvers** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Tsunami and Oceanic Surge Solvers: Adaptive Mesh Refinement for Coasts | RENDERLINE",
+      title: "Tsunami and Oceanic Surge Solvers: Adaptive Mesh Refinement for Coasts | Render Line",
       desc: "VFX pipeline breakdown: how Tsunami and Oceanic Surge Solvers implemented adaptive mesh refinement for coasts to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     },
@@ -4090,7 +4091,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Dam Break Fluid Dynamics** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Dam Break Fluid Dynamics: Viscous Sludge and Silt Transport Physics | RENDERLINE",
+      title: "Dam Break Fluid Dynamics: Viscous Sludge and Silt Transport Physics | Render Line",
       desc: "VFX pipeline breakdown: how Dam Break Fluid Dynamics implemented viscous sludge and silt transport physics to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     },
@@ -4136,7 +4137,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Ship Bow Wave and Kelvin Wake** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Ship Bow Wave and Kelvin Wake: High-Speed Surface Tension Formulations | RENDERLINE",
+      title: "Ship Bow Wave and Kelvin Wake: High-Speed Surface Tension Formulations | Render Line",
       desc: "VFX pipeline breakdown: how Ship Bow Wave and Kelvin Wake implemented high-speed surface tension formulations to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/hero-vfx-breakdown.jpg",
     },
@@ -4182,7 +4183,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Whitewater Aeration** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Whitewater Aeration: Bubble, Foam, and Spray Multi-State Classification | RENDERLINE",
+      title: "Whitewater Aeration: Bubble, Foam, and Spray Multi-State Classification | Render Line",
       desc: "VFX pipeline breakdown: how Whitewater Aeration implemented bubble, foam, and spray multi-state classification to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/breakdown-creature.jpg",
     },
@@ -4228,7 +4229,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Cavitation Bubble Dynamics** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Cavitation Bubble Dynamics: Submarine Propeller Shockwave Modeling | RENDERLINE",
+      title: "Cavitation Bubble Dynamics: Submarine Propeller Shockwave Modeling | Render Line",
       desc: "VFX pipeline breakdown: how Cavitation Bubble Dynamics implemented submarine propeller shockwave modeling to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/nuke-vfx-comp.jpg",
     },
@@ -4274,7 +4275,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Oil Slick Surface Interference** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Oil Slick Surface Interference: Thin-Film Iridescence Shaders on Water | RENDERLINE",
+      title: "Oil Slick Surface Interference: Thin-Film Iridescence Shaders on Water | Render Line",
       desc: "VFX pipeline breakdown: how Oil Slick Surface Interference implemented thin-film iridescence shaders on water to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },
@@ -4320,7 +4321,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Mud and Silt Accumulation** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Mud and Silt Accumulation: Sticky Particle Solvers for Vehicle Tires | RENDERLINE",
+      title: "Mud and Silt Accumulation: Sticky Particle Solvers for Vehicle Tires | Render Line",
       desc: "VFX pipeline breakdown: how Mud and Silt Accumulation implemented sticky particle solvers for vehicle tires to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/hero-vfx-breakdown.jpg",
     },
@@ -4366,7 +4367,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Automated Plate Lineage Tracking** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Automated Plate Lineage Tracking: Python Metadata Verification in ShotGrid | RENDERLINE",
+      title: "Automated Plate Lineage Tracking: Python Metadata Verification in ShotGrid | Render Line",
       desc: "VFX pipeline breakdown: how Automated Plate Lineage Tracking implemented python metadata verification in shotgrid to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?auto=format&fit=crop&w=1200&q=80",
     },
@@ -4412,7 +4413,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Render Farm Thermal Throttling** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Render Farm Thermal Throttling: Server Rack Temperature Load Balancing | RENDERLINE",
+      title: "Render Farm Thermal Throttling: Server Rack Temperature Load Balancing | Render Line",
       desc: "VFX pipeline breakdown: how Render Farm Thermal Throttling implemented server rack temperature load balancing to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
     },
@@ -4458,7 +4459,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Automated Lookdev Turntables** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Automated Lookdev Turntables: Standardized Lighting Rigs for Asset Sign-Off | RENDERLINE",
+      title: "Automated Lookdev Turntables: Standardized Lighting Rigs for Asset Sign-Off | Render Line",
       desc: "VFX pipeline breakdown: how Automated Lookdev Turntables implemented standardized lighting rigs for asset sign-off to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },
@@ -4504,7 +4505,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **VFX Facility Cloud Bursting** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "VFX Facility Cloud Bursting: Balancing On-Premise Iron with AWS Compute | RENDERLINE",
+      title: "VFX Facility Cloud Bursting: Balancing On-Premise Iron with AWS Compute | Render Line",
       desc: "VFX pipeline breakdown: how VFX Facility Cloud Bursting implemented balancing on-premise iron with aws compute to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/breakdown-creature.jpg",
     },
@@ -4550,7 +4551,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Network File System I/O Tuning** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Network File System I/O Tuning: Minimizing Lock Contention on 5,000 Nodes | RENDERLINE",
+      title: "Network File System I/O Tuning: Minimizing Lock Contention on 5,000 Nodes | Render Line",
       desc: "VFX pipeline breakdown: how Network File System I/O Tuning implemented minimizing lock contention on 5,000 nodes to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     },
@@ -4596,7 +4597,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **Automated Lookdev Calibration** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "Automated Lookdev Calibration: Standardized Digital Studio Turntables | RENDERLINE",
+      title: "Automated Lookdev Calibration: Standardized Digital Studio Turntables | Render Line",
       desc: "VFX pipeline breakdown: how Automated Lookdev Calibration implemented standardized digital studio turntables to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     },
@@ -4642,7 +4643,7 @@ Deep compositing eliminates edge fringing and matting artifacts around complex v
 
 The execution on **The Lead FX Technical Director Mandate** demonstrates why procedural and open-standard pipelines represent the future of tentpole visual effects. By standardizing asset definitions and automating telemetry verification, visual effects teams can deliver unprecedented visual spectacle within sustainable production timeframes.`,
     seo: {
-      title: "The Lead FX Technical Director Mandate: Engineering Artistry into Code | RENDERLINE",
+      title: "The Lead FX Technical Director Mandate: Engineering Artistry into Code | Render Line",
       desc: "VFX pipeline breakdown: how The Lead FX Technical Director Mandate implemented engineering artistry into code to deliver high-fidelity cinematic shots under tight release windows.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },

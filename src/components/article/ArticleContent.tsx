@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Article } from '@/lib/types';
-import { formatTimecode, getCategoryColor } from '@/lib/utils';
+import { formatTimecode, getCategoryColor, isBreaking } from '@/lib/utils';
 import { articles } from '@/lib/data';
 import { rajaRathnaReddy } from '@/lib/author';
 import { generateArticleJsonLd, generateBreadcrumbJsonLd, generateVideoJsonLd } from '@/lib/seo';
@@ -14,7 +14,7 @@ import { useMemo } from 'react';
 import { getAffiliateOfferForArticle } from '@/lib/affiliates';
 import IndustrySponsorCard from '@/components/monetization/IndustrySponsorCard';
 import IndustrySponsorSidebar from '@/components/monetization/IndustrySponsorSidebar';
-import { SITE_URL } from '@/lib/config';
+import { SITE_URL, SHOW_AI_DISCLOSURE } from '@/lib/config';
 
 function slugify(text: string): string {
   return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
@@ -170,7 +170,7 @@ export default function ArticleContent({ article }: { article: Article }) {
               <div className="absolute inset-0 bg-gradient-to-t from-bg-base via-bg-base/30 to-transparent" />
 
               {/* Breaking badge */}
-              {article.breaking && (
+              {isBreaking(article.publishedAt, article.breaking) && (
                 <div className="absolute top-6 left-6 z-10">
                   <span className="bg-accent-primary !text-white px-3 py-1 rounded-sm font-mono text-[11px] uppercase tracking-wider font-bold flex items-center gap-1.5 border border-white/20 shadow-md">
                     <span className="relative flex h-2 w-2">
@@ -252,6 +252,14 @@ export default function ArticleContent({ article }: { article: Article }) {
                     <span className="text-meta text-accent-cyan text-[10px] font-mono block">
                       {rajaRathnaReddy.role}
                     </span>
+                    {SHOW_AI_DISCLOSURE && (
+                      <span className="text-[10px] text-text-secondary/70 font-mono mt-0.5 block">
+                        Written with AI, reviewed by Raja &bull;{' '}
+                        <Link href="/editorial-policy" className="underline hover:text-accent-cyan">
+                          Editorial Policy
+                        </Link>
+                      </span>
+                    )}
                   </div>
                 </div>
                 <span className="text-text-secondary/20">|</span>

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { getAllArticles } from '@/lib/data';
-import { getCategoryColor, formatTimecode } from '@/lib/utils';
+import { getCategoryColor, formatTimecode, isBreaking } from '@/lib/utils';
 import { StaggerContainer, StaggerItem } from '@/components/motion';
 import AuthorBadge from '@/components/common/AuthorBadge';
 
@@ -85,6 +85,7 @@ export default function LatestNewsGrid() {
           <StaggerItem className="lg:col-span-6 flex flex-col">
             <Link
               href={`/article/${lead.slug}`}
+              aria-label={lead.title}
               className={`group flex flex-col justify-between h-full rounded-2xl overflow-hidden border border-border-subtle hover:border-white/20 card-hover bg-bg-card transition-all duration-300 cat-${
                 lead.category === 'virtual-production' ? 'virtual-production' : lead.category
               }`}
@@ -116,7 +117,7 @@ export default function LatestNewsGrid() {
                       />
                       {lead.category.replace('-', ' ')}
                     </span>
-                    {lead.breaking && (
+                    {isBreaking(lead.publishedAt, lead.breaking) && (
                       <span className="font-mono text-[9px] uppercase font-bold tracking-widest px-2 py-0.5 rounded-full bg-accent-primary text-white shadow-lg">
                         BREAKING
                       </span>
@@ -163,7 +164,7 @@ export default function LatestNewsGrid() {
               </div>
 
               <div className="px-6 pb-6 pt-3 border-t border-border-subtle/50 flex items-center justify-between">
-                <AuthorBadge size="sm" showWebsite={true} />
+                <AuthorBadge size="sm" showWebsite={false} />
                 <div className="flex items-center gap-2 font-mono text-[10px] text-text-secondary/60">
                   <time dateTime={lead.publishedAt}>{formatTimecode(lead.publishedAt)}</time>
                   <span className="hidden sm:inline-block text-accent-cyan font-semibold group-hover:translate-x-1 transition-transform">
@@ -180,6 +181,7 @@ export default function LatestNewsGrid() {
               <StaggerItem key={article.slug} className="flex flex-col">
                 <Link
                   href={`/article/${article.slug}`}
+                  aria-label={article.title}
                   className="group flex flex-col justify-between h-full rounded-xl overflow-hidden border border-border-subtle hover:border-white/20 card-hover bg-bg-card transition-all duration-300 p-4"
                 >
                   <div>
@@ -191,7 +193,7 @@ export default function LatestNewsGrid() {
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                       />
-                      {article.breaking && (
+                      {isBreaking(article.publishedAt, article.breaking) && (
                         <span className="absolute top-2 left-2 bg-accent-primary text-white text-[9px] font-mono uppercase tracking-widest px-2 py-0.5 rounded font-bold shadow-md">
                           BREAKING
                         </span>
@@ -227,7 +229,7 @@ export default function LatestNewsGrid() {
                   </div>
 
                   <div className="pt-2.5 border-t border-border-subtle/40 flex items-center justify-between">
-                    <AuthorBadge size="sm" showRole={false} />
+                    <AuthorBadge size="sm" showRole={false} showWebsite={false} />
                     <span className="font-mono text-[10px] text-accent-cyan/80 group-hover:translate-x-0.5 transition-transform font-semibold">
                       Read &rarr;
                     </span>
@@ -245,6 +247,7 @@ export default function LatestNewsGrid() {
               <StaggerItem key={article.slug}>
                 <Link
                   href={`/article/${article.slug}`}
+                  aria-label={article.title}
                   className="group flex flex-col justify-between p-3.5 rounded-xl border border-border-subtle hover:border-white/20 bg-bg-card hover:bg-bg-elevated transition-all duration-300 card-hover h-full"
                 >
                   <div className="flex gap-3">
@@ -278,7 +281,7 @@ export default function LatestNewsGrid() {
                   </div>
 
                   <div className="mt-2.5 pt-2 border-t border-border-subtle/40 flex items-center justify-between">
-                    <AuthorBadge size="sm" showRole={false} />
+                    <AuthorBadge size="sm" showRole={false} showWebsite={false} />
                     <span className="font-mono text-[9px] text-text-secondary/50">
                       {formatTimecode(article.publishedAt).split('&bull;')[0]}
                     </span>

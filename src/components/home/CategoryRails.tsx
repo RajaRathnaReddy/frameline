@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { articles, categories, getAllArticles } from '@/lib/data';
-import { getCategoryColor, formatTimecode } from '@/lib/utils';
+import { getCategoryColor, formatTimecode, isBreaking } from '@/lib/utils';
 import { ScrollReveal } from '@/components/motion';
 import AuthorBadge from '@/components/common/AuthorBadge';
 
@@ -108,6 +108,7 @@ export default function CategoryRails() {
                         <Link
                           key={article.slug}
                           href={`/article/${article.slug}`}
+                          aria-label={article.title}
                           className="group flex flex-col justify-between rounded-xl overflow-hidden border border-border-subtle hover:border-white/20 card-hover bg-bg-card p-4 transition-all duration-300"
                         >
                           <div>
@@ -120,7 +121,7 @@ export default function CategoryRails() {
                                 className="object-cover transition-transform duration-500 group-hover:scale-105"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                               />
-                              {article.breaking && (
+                              {isBreaking(article.publishedAt, article.breaking) && (
                                 <span className="absolute top-2.5 left-2.5 bg-accent-primary text-white text-[9px] font-mono uppercase tracking-widest px-2 py-0.5 rounded font-bold shadow-md">
                                   BREAKING
                                 </span>
@@ -154,23 +155,23 @@ export default function CategoryRails() {
 
                           {/* Footer with Author Byline and Link */}
                           <div className="pt-3 border-t border-white/5 flex items-center justify-between">
-                            <AuthorBadge size="sm" showWebsite={true} />
+                            <AuthorBadge size="sm" showWebsite={false} />
                           </div>
                         </Link>
                       );
                     })}
                   </div>
 
-                  {/* Explore All 100 Button Strip */}
-                  <div className="mt-6 pt-4 border-t border-white/[0.05] flex items-center justify-between">
+                  {/* Explore Complete Archive Strip */}
+                  <div className="mt-6 pt-4 border-t border-white/[0.05] flex items-center justify-between flex-wrap gap-3">
                     <span className="font-mono text-xs text-text-secondary/50">
-                      Showing 3 of 100 curated {cat.name} dispatches
+                      Showing {Math.min(3, catArticles.length)} of {catArticles.length} curated {cat.name} dispatches
                     </span>
                     <Link
                       href={`/category/${cat.slug}`}
                       className="font-mono text-xs uppercase tracking-wider px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-text-primary border border-white/10 transition-all font-semibold flex items-center gap-1.5"
                     >
-                      <span>Explore Complete {cat.name} Archive (100 Reports)</span>
+                      <span>Explore Complete {cat.name} Archive ({catArticles.length} Reports)</span>
                       <span>&rarr;</span>
                     </Link>
                   </div>

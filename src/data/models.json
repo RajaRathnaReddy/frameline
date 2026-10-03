@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Google Veo 3.1",
+    "version": "3.1",
+    "company": "Google DeepMind (Gemini API)",
+    "maxLength": "90s",
+    "resolution": "4K",
+    "audioNative": true,
+    "apiStatus": "live",
+    "source_url": "https://deepmind.google/technologies/veo/",
+    "last_verified": "2026-10-01",
+    "updatedAt": "2026-10-01"
+  },
+  {
+    "name": "Kling 3.0 Omni",
+    "version": "3.0 Omni",
+    "company": "Kuaishou (Studio Access)",
+    "maxLength": "30s (10 Keyframes)",
+    "resolution": "4K",
+    "audioNative": true,
+    "apiStatus": "live",
+    "source_url": "https://klingai.com",
+    "last_verified": "2026-10-01",
+    "updatedAt": "2026-09-30"
+  },
+  {
+    "name": "Luma Ray 3.2",
+    "version": "3.2",
+    "company": "Luma AI (16-bit EXR Export)",
+    "maxLength": "60s",
+    "resolution": "4K",
+    "audioNative": true,
+    "apiStatus": "live",
+    "source_url": "https://lumalabs.ai/dream-machine",
+    "last_verified": "2026-10-01",
+    "updatedAt": "2026-09-28"
+  },
+  {
+    "name": "Adobe Firefly Video 2.0",
+    "version": "2.0",
+    "company": "Adobe",
+    "maxLength": "60s",
+    "resolution": "4K",
+    "audioNative": true,
+    "apiStatus": "live",
+    "source_url": "https://www.adobe.com/sensei/generative-ai/firefly.html",
+    "last_verified": "2026-10-01",
+    "updatedAt": "2026-09-25"
+  },
+  {
+    "name": "Runway Gen-3 Alpha Turbo",
+    "version": "Gen-3 Alpha Turbo",
+    "company": "Runway / Lionsgate Partner",
+    "maxLength": "90s",
+    "resolution": "4K",
+    "audioNative": true,
+    "apiStatus": "live",
+    "source_url": "https://runwayml.com",
+    "last_verified": "2026-10-01",
+    "updatedAt": "2026-09-24"
+  },
+  {
+    "name": "ByteDance Seedance 2.0",
+    "version": "2.0",
+    "company": "ByteDance",
+    "maxLength": "120s",
+    "resolution": "4K",
+    "audioNative": true,
+    "apiStatus": "live",
+    "source_url": "https://bytedance.com",
+    "last_verified": "2026-10-01",
+    "updatedAt": "2026-09-20"
+  },
+  {
+    "name": "Higgsfield AI Engine",
+    "version": "2026.2",
+    "company": "Higgsfield",
+    "maxLength": "95m (Compute)",
+    "resolution": "1080p",
+    "audioNative": true,
+    "apiStatus": "live",
+    "source_url": "https://higgsfield.ai",
+    "last_verified": "2026-10-01",
+    "updatedAt": "2026-09-18"
+  },
+  {
+    "name": "OpenAI Sora",
+    "version": "1.0 / Turbo",
+    "company": "OpenAI",
+    "maxLength": "60s",
+    "resolution": "1080p",
+    "audioNative": false,
+    "apiStatus": "live",
+    "source_url": "https://openai.com/sora",
+    "last_verified": "2026-10-01",
+    "updatedAt": "2026-10-01"
+  }
+]

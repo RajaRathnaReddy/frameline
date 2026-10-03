@@ -5,19 +5,20 @@ export const aiArticles: Article[] = [
   {
     title: "Hell Grind: Inside the $500K AI Action Film That Put Hollywood on Notice",
     slug: "hell-grind-inside-the-500k-ai-action-film-that-put-hollywood-on-notice",
-    dek: "Evaluating Hell Grind for production deployment: examining inside the $500k ai action film that put hollywood on notice, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Hell Grind, analyzing Inside the $500k ai action film that put hollywood on notice and integration requirements for film pipelines.",
     heroImage: "/images/hero-ai-film.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-01T08:00:00.000Z",
     readTime: 6,
-    featured: true,
-    breaking: true,
+    featured: false,
+    breaking: false,
+    status: "needs_review",
     toolsMentioned: ["Unreal Engine","DaVinci Resolve","Foundry Nuke","Houdini","OpenUSD"],
     seoKeywords: ["hell grind","ai","vfx pipeline","hollywood technology"],
     body: `## Neural Model Architecture & Latent Space
-
+    
 The technical implementation of **Hell Grind: Inside the $500K AI Action Film That Put Hollywood on Notice** illustrates how generative diffusion models and transformer backbones are maturing into controllable production instruments. Rather than unpredictable stochastic generation, modern film applications require deterministic temporal coherence and frame-accurate prompt obedience.
 
 Key architectural advancements include:
@@ -48,8 +49,8 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Hell Grind** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Hell Grind: Inside the $500K AI Action Film That Put Hollywood on Notice | RENDERLINE",
-      desc: "Evaluating Hell Grind for production deployment: examining inside the $500k ai action film that put hollywood on notice, temporal coherence, and studio copyright guardrails.",
+      title: "Hell Grind: Inside the $500K AI Action Film That Put Hollywood on Notice | Render Line",
+      desc: "An assessment of Hell Grind, analyzing Inside the $500k ai action film that put hollywood on notice and integration requirements for film pipelines.",
       ogImage: "/images/hero-ai-film.jpg",
     },
   },
@@ -63,8 +64,9 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     author: rajaRathnaReddy,
     publishedAt: "2026-10-02T18:45:00.000Z",
     readTime: 7,
-    featured: false,
+    featured: true,
     breaking: true,
+    status: "approved",
     toolsMentioned: ["Kling 3.0 Omni", "Google Veo 3.1", "Runway Gen-4.5", "DaVinci Resolve", "Adobe Premiere Pro"],
     seoKeywords: ["kling 3.0 omni", "google veo 3.1", "ai multi-shot video", "character consistency ai", "generative cinema pipeline"],
     body: `## The Shift from Single-Prompt Clips to Multi-Shot Directing
@@ -94,7 +96,7 @@ The technical breakthrough powering this leap lies in **volumetric spatio-tempor
 
 The integration of Kling 3.0 Omni and Veo 3.1 into mainstream finishing suites proves that AI is finding its permanent home as an accelerator for pre-vis, B-roll, and visual plate enhancement. When paired with traditional editorial discipline in DaVinci Resolve and Premiere Pro, these models provide directors with unprecedented visual agility without sacrificing cinematic intentionality.`,
     seo: {
-      title: "Kling 3.0 Omni & Google Veo 3.1 Enter Studio Production Pipelines | RENDERLINE",
+      title: "Kling 3.0 Omni & Google Veo 3.1 Enter Studio Production Pipelines | Render Line",
       desc: "In-depth technical breakdown of Kling 3.0 Omni and Google Veo 3.1: achieving multi-shot narrative continuity, synced audio, and native NLE integration.",
       ogImage: "/images/ai-generative-video.jpg",
     },
@@ -102,7 +104,7 @@ The integration of Kling 3.0 Omni and Veo 3.1 into mainstream finishing suites p
   {
     title: "Google Veo 3.1 Gemini API Integration: Enterprise Multi-Camera Spatial Video",
     slug: "google-veo-3-1-gemini-api-integration-enterprise-multi-camera-spatial-video",
-    dek: "Evaluating Google Veo 3.1 Gemini API Integration for production deployment: examining enterprise multi-camera spatial video, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Google Veo 3.1 Gemini API Integration, analyzing Enterprise multi-camera spatial video and integration requirements for film pipelines.",
     heroImage: "/images/review-camera.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -145,15 +147,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Google Veo 3.1 Gemini API Integration** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Google Veo 3.1 Gemini API Integration: Enterprise Multi-Camera Spatial Video | RENDERLINE",
-      desc: "Evaluating Google Veo 3.1 Gemini API Integration for production deployment: examining enterprise multi-camera spatial video, temporal coherence, and studio copyright guardrails.",
+      title: "Google Veo 3.1 Gemini API Integration: Enterprise Multi-Camera Spatial Video | Render Line",
+      desc: "An assessment of Google Veo 3.1 Gemini API Integration, analyzing Enterprise multi-camera spatial video and integration requirements for film pipelines.",
       ogImage: "/images/review-camera.jpg",
     },
   },
   {
     title: "OpenAI Sora API Sunset Post-Mortem: Why Hollywood Demands Open Enterprise Models",
     slug: "openai-sora-api-sunset-post-mortem-why-hollywood-demands-open-enterprise-models",
-    dek: "Evaluating OpenAI Sora API Sunset Post-Mortem for production deployment: examining why hollywood demands open enterprise models, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of OpenAI Sora API Sunset Post-Mortem, analyzing Why hollywood demands open enterprise models and integration requirements for film pipelines.",
     heroImage: "/images/article-sora.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -161,7 +163,8 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     publishedAt: "2026-09-03T10:14:00.000Z",
     readTime: 8,
     featured: false,
-    breaking: true,
+    breaking: false,
+    status: "needs_review",
     toolsMentioned: ["Unreal Engine","DaVinci Resolve","Foundry Nuke","Houdini","OpenUSD"],
     seoKeywords: ["openai sora api sunset post-mortem","ai","vfx pipeline","hollywood technology"],
     body: `## Neural Model Architecture & Latent Space
@@ -196,15 +199,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **OpenAI Sora API Sunset Post-Mortem** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "OpenAI Sora API Sunset Post-Mortem: Why Hollywood Demands Open Enterprise Models | RENDERLINE",
-      desc: "Evaluating OpenAI Sora API Sunset Post-Mortem for production deployment: examining why hollywood demands open enterprise models, temporal coherence, and studio copyright guardrails.",
+      title: "OpenAI Sora API Sunset Post-Mortem: Why Hollywood Demands Open Enterprise Models | Render Line",
+      desc: "An assessment of OpenAI Sora API Sunset Post-Mortem, analyzing Why hollywood demands open enterprise models and integration requirements for film pipelines.",
       ogImage: "/images/article-sora.jpg",
     },
   },
   {
     title: "ByteDance Seedance 2.0 Guardrails: SAG-AFTRA and Studio Likeness Accord",
     slug: "bytedance-seedance-2-0-guardrails-sag-aftra-and-studio-likeness-accord",
-    dek: "Evaluating ByteDance Seedance 2.0 Guardrails for production deployment: examining sag-aftra and studio likeness accord, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of ByteDance Seedance 2.0 Guardrails, analyzing Sag-aftra and studio likeness accord and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -247,15 +250,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **ByteDance Seedance 2.0 Guardrails** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "ByteDance Seedance 2.0 Guardrails: SAG-AFTRA and Studio Likeness Accord | RENDERLINE",
-      desc: "Evaluating ByteDance Seedance 2.0 Guardrails for production deployment: examining sag-aftra and studio likeness accord, temporal coherence, and studio copyright guardrails.",
+      title: "ByteDance Seedance 2.0 Guardrails: SAG-AFTRA and Studio Likeness Accord | Render Line",
+      desc: "An assessment of ByteDance Seedance 2.0 Guardrails, analyzing Sag-aftra and studio likeness accord and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Kuaishou Kling 4.0: 10-Keyframe Temporal Guidance for Shot Direction",
     slug: "kuaishou-kling-4-0-10-keyframe-temporal-guidance-for-shot-direction",
-    dek: "Evaluating Kuaishou Kling 4.0 for production deployment: examining 10-keyframe temporal guidance for shot direction, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Kuaishou Kling 4.0, analyzing 10-keyframe temporal guidance for shot direction and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -298,15 +301,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Kuaishou Kling 4.0** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Kuaishou Kling 4.0: 10-Keyframe Temporal Guidance for Shot Direction | RENDERLINE",
-      desc: "Evaluating Kuaishou Kling 4.0 for production deployment: examining 10-keyframe temporal guidance for shot direction, temporal coherence, and studio copyright guardrails.",
+      title: "Kuaishou Kling 4.0: 10-Keyframe Temporal Guidance for Shot Direction | Render Line",
+      desc: "An assessment of Kuaishou Kling 4.0, analyzing 10-keyframe temporal guidance for shot direction and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Luma Ray 3.2: 16-Bit Linear EXR Export for ACEScg VFX Pipelines",
     slug: "luma-ray-3-2-16-bit-linear-exr-export-for-acescg-vfx-pipelines",
-    dek: "Evaluating Luma Ray 3.2 for production deployment: examining 16-bit linear exr export for acescg vfx pipelines, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Luma Ray 3.2, analyzing 16-bit linear exr export for acescg vfx pipelines and integration requirements for film pipelines.",
     heroImage: "/images/color-grading-suite.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -349,15 +352,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Luma Ray 3.2** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Luma Ray 3.2: 16-Bit Linear EXR Export for ACEScg VFX Pipelines | RENDERLINE",
-      desc: "Evaluating Luma Ray 3.2 for production deployment: examining 16-bit linear exr export for acescg vfx pipelines, temporal coherence, and studio copyright guardrails.",
+      title: "Luma Ray 3.2: 16-Bit Linear EXR Export for ACEScg VFX Pipelines | Render Line",
+      desc: "An assessment of Luma Ray 3.2, analyzing 16-bit linear exr export for acescg vfx pipelines and integration requirements for film pipelines.",
       ogImage: "/images/color-grading-suite.jpg",
     },
   },
   {
     title: "Runway Gen-4 Multimodal Camera Controls: Spatial Motion Brushes",
     slug: "runway-gen-4-multimodal-camera-controls-spatial-motion-brushes",
-    dek: "Evaluating Runway Gen-4 Multimodal Camera Controls for production deployment: examining spatial motion brushes, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Runway Gen-4 Multimodal Camera Controls, analyzing Spatial motion brushes and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -400,15 +403,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Runway Gen-4 Multimodal Camera Controls** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Runway Gen-4 Multimodal Camera Controls: Spatial Motion Brushes | RENDERLINE",
-      desc: "Evaluating Runway Gen-4 Multimodal Camera Controls for production deployment: examining spatial motion brushes, temporal coherence, and studio copyright guardrails.",
+      title: "Runway Gen-4 Multimodal Camera Controls: Spatial Motion Brushes | Render Line",
+      desc: "An assessment of Runway Gen-4 Multimodal Camera Controls, analyzing Spatial motion brushes and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Self-Hosted Ollama 0.5 on RTX 6000 Ada: Air-Gapped Script Breakdown",
     slug: "self-hosted-ollama-0-5-on-rtx-6000-ada-air-gapped-script-breakdown",
-    dek: "Evaluating Self-Hosted Ollama 0.5 on RTX 6000 Ada for production deployment: examining air-gapped script breakdown, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Self-Hosted Ollama 0.5 on RTX 6000 Ada, analyzing Air-gapped script breakdown and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -451,8 +454,8 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Self-Hosted Ollama 0.5 on RTX 6000 Ada** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Self-Hosted Ollama 0.5 on RTX 6000 Ada: Air-Gapped Script Breakdown | RENDERLINE",
-      desc: "Evaluating Self-Hosted Ollama 0.5 on RTX 6000 Ada for production deployment: examining air-gapped script breakdown, temporal coherence, and studio copyright guardrails.",
+      title: "Self-Hosted Ollama 0.5 on RTX 6000 Ada: Air-Gapped Script Breakdown | Render Line",
+      desc: "An assessment of Self-Hosted Ollama 0.5 on RTX 6000 Ada, analyzing Air-gapped script breakdown and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
   },
@@ -502,7 +505,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **OpenClaw Autonomous Multi-Agent Systems for Shot Status Classification** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "OpenClaw Autonomous Multi-Agent Systems for Shot Status Classification | RENDERLINE",
+      title: "OpenClaw Autonomous Multi-Agent Systems for Shot Status Classification | Render Line",
       desc: "Field report on OpenClaw Autonomous Multi-Agent Systems for Shot Status Classification, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/hero-ai-film.jpg",
     },
@@ -510,7 +513,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
   {
     title: "3D Gaussian Splatting in Production VFX: Real-Time Depth-Guided Relighting",
     slug: "3d-gaussian-splatting-in-production-vfx-real-time-depth-guided-relighting",
-    dek: "Evaluating 3D Gaussian Splatting in Production VFX for production deployment: examining real-time depth-guided relighting, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of 3D Gaussian Splatting in Production VFX, analyzing Real-time depth-guided relighting and integration requirements for film pipelines.",
     heroImage: "/images/vfx-space-explosion.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -553,15 +556,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **3D Gaussian Splatting in Production VFX** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "3D Gaussian Splatting in Production VFX: Real-Time Depth-Guided Relighting | RENDERLINE",
-      desc: "Evaluating 3D Gaussian Splatting in Production VFX for production deployment: examining real-time depth-guided relighting, temporal coherence, and studio copyright guardrails.",
+      title: "3D Gaussian Splatting in Production VFX: Real-Time Depth-Guided Relighting | Render Line",
+      desc: "An assessment of 3D Gaussian Splatting in Production VFX, analyzing Real-time depth-guided relighting and integration requirements for film pipelines.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },
   },
   {
     title: "Radiance Field Camera Tracking: Sub-Pixel Solves on Feature Plates",
     slug: "radiance-field-camera-tracking-sub-pixel-solves-on-feature-plates",
-    dek: "Evaluating Radiance Field Camera Tracking for production deployment: examining sub-pixel solves on feature plates, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Radiance Field Camera Tracking, analyzing Sub-pixel solves on feature plates and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -604,8 +607,8 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Radiance Field Camera Tracking** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Radiance Field Camera Tracking: Sub-Pixel Solves on Feature Plates | RENDERLINE",
-      desc: "Evaluating Radiance Field Camera Tracking for production deployment: examining sub-pixel solves on feature plates, temporal coherence, and studio copyright guardrails.",
+      title: "Radiance Field Camera Tracking: Sub-Pixel Solves on Feature Plates | Render Line",
+      desc: "An assessment of Radiance Field Camera Tracking, analyzing Sub-pixel solves on feature plates and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
     },
   },
@@ -655,7 +658,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Luma Interactive 3D Splats for Automated Background Crowd Generation** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Luma Interactive 3D Splats for Automated Background Crowd Generation | RENDERLINE",
+      title: "Luma Interactive 3D Splats for Automated Background Crowd Generation | Render Line",
       desc: "Field report on Luma Interactive 3D Splats for Automated Background Crowd Generation, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     },
@@ -663,7 +666,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
   {
     title: "Foundry CopyCat Deep Dive: Machine-Learning Fremen Blue-Eye Segmentation",
     slug: "foundry-copycat-deep-dive-machine-learning-fremen-blue-eye-segmentation",
-    dek: "Evaluating Foundry CopyCat Deep Dive for production deployment: examining machine-learning fremen blue-eye segmentation, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Foundry CopyCat Deep Dive, analyzing Machine-learning fremen blue-eye segmentation and integration requirements for film pipelines.",
     heroImage: "/images/hero-ai-film.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -706,8 +709,8 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Foundry CopyCat Deep Dive** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Foundry CopyCat Deep Dive: Machine-Learning Fremen Blue-Eye Segmentation | RENDERLINE",
-      desc: "Evaluating Foundry CopyCat Deep Dive for production deployment: examining machine-learning fremen blue-eye segmentation, temporal coherence, and studio copyright guardrails.",
+      title: "Foundry CopyCat Deep Dive: Machine-Learning Fremen Blue-Eye Segmentation | Render Line",
+      desc: "An assessment of Foundry CopyCat Deep Dive, analyzing Machine-learning fremen blue-eye segmentation and integration requirements for film pipelines.",
       ogImage: "/images/hero-ai-film.jpg",
     },
   },
@@ -757,7 +760,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Automated Neural Wire and Rig Removal in 4K ProRes Plates** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Automated Neural Wire and Rig Removal in 4K ProRes Plates | RENDERLINE",
+      title: "Automated Neural Wire and Rig Removal in 4K ProRes Plates | Render Line",
       desc: "Field report on Automated Neural Wire and Rig Removal in 4K ProRes Plates, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
@@ -765,7 +768,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
   {
     title: "AI-Assisted Optical Flow: Eliminating Shutter Artifacts in Retiming",
     slug: "ai-assisted-optical-flow-eliminating-shutter-artifacts-in-retiming",
-    dek: "Evaluating AI-Assisted Optical Flow for production deployment: examining eliminating shutter artifacts in retiming, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of AI-Assisted Optical Flow, analyzing Eliminating shutter artifacts in retiming and integration requirements for film pipelines.",
     heroImage: "/images/ai-neural-editor.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -808,15 +811,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI-Assisted Optical Flow** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI-Assisted Optical Flow: Eliminating Shutter Artifacts in Retiming | RENDERLINE",
-      desc: "Evaluating AI-Assisted Optical Flow for production deployment: examining eliminating shutter artifacts in retiming, temporal coherence, and studio copyright guardrails.",
+      title: "AI-Assisted Optical Flow: Eliminating Shutter Artifacts in Retiming | Render Line",
+      desc: "An assessment of AI-Assisted Optical Flow, analyzing Eliminating shutter artifacts in retiming and integration requirements for film pipelines.",
       ogImage: "/images/ai-neural-editor.jpg",
     },
   },
   {
     title: "Machine Learning Plate Denoising: Preserving 35mm Grain Structure",
     slug: "machine-learning-plate-denoising-preserving-35mm-grain-structure",
-    dek: "Evaluating Machine Learning Plate Denoising for production deployment: examining preserving 35mm grain structure, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Machine Learning Plate Denoising, analyzing Preserving 35mm grain structure and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -859,15 +862,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Machine Learning Plate Denoising** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Machine Learning Plate Denoising: Preserving 35mm Grain Structure | RENDERLINE",
-      desc: "Evaluating Machine Learning Plate Denoising for production deployment: examining preserving 35mm grain structure, temporal coherence, and studio copyright guardrails.",
+      title: "Machine Learning Plate Denoising: Preserving 35mm Grain Structure | Render Line",
+      desc: "An assessment of Machine Learning Plate Denoising, analyzing Preserving 35mm grain structure and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Synthetic Dialogue Replacement: Actor-Consented Vocoder Voice Re-Recording",
     slug: "synthetic-dialogue-replacement-actor-consented-vocoder-voice-re-recording",
-    dek: "Evaluating Synthetic Dialogue Replacement for production deployment: examining actor-consented vocoder voice re-recording, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Synthetic Dialogue Replacement, analyzing Actor-consented vocoder voice re-recording and integration requirements for film pipelines.",
     heroImage: "/images/hero-ai-film.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -910,15 +913,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Synthetic Dialogue Replacement** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Synthetic Dialogue Replacement: Actor-Consented Vocoder Voice Re-Recording | RENDERLINE",
-      desc: "Evaluating Synthetic Dialogue Replacement for production deployment: examining actor-consented vocoder voice re-recording, temporal coherence, and studio copyright guardrails.",
+      title: "Synthetic Dialogue Replacement: Actor-Consented Vocoder Voice Re-Recording | Render Line",
+      desc: "An assessment of Synthetic Dialogue Replacement, analyzing Actor-consented vocoder voice re-recording and integration requirements for film pipelines.",
       ogImage: "/images/hero-ai-film.jpg",
     },
   },
   {
     title: "C2PA Cryptographic Watermarking: Establishing Cryptographic Lineage",
     slug: "c2pa-cryptographic-watermarking-establishing-cryptographic-lineage",
-    dek: "Evaluating C2PA Cryptographic Watermarking for production deployment: examining establishing cryptographic lineage, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of C2PA Cryptographic Watermarking, analyzing Establishing cryptographic lineage and integration requirements for film pipelines.",
     heroImage: "/images/ai-generative-video.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -961,8 +964,8 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **C2PA Cryptographic Watermarking** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "C2PA Cryptographic Watermarking: Establishing Cryptographic Lineage | RENDERLINE",
-      desc: "Evaluating C2PA Cryptographic Watermarking for production deployment: examining establishing cryptographic lineage, temporal coherence, and studio copyright guardrails.",
+      title: "C2PA Cryptographic Watermarking: Establishing Cryptographic Lineage | Render Line",
+      desc: "An assessment of C2PA Cryptographic Watermarking, analyzing Establishing cryptographic lineage and integration requirements for film pipelines.",
       ogImage: "/images/ai-generative-video.jpg",
     },
   },
@@ -1012,7 +1015,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **EU AI Act Mandatory Machine-Readable Provenance Compliance Blueprint** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "EU AI Act Mandatory Machine-Readable Provenance Compliance Blueprint | RENDERLINE",
+      title: "EU AI Act Mandatory Machine-Readable Provenance Compliance Blueprint | Render Line",
       desc: "Field report on EU AI Act Mandatory Machine-Readable Provenance Compliance Blueprint, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/ai-neural-editor.jpg",
     },
@@ -1020,7 +1023,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
   {
     title: "US Copyright Office Guidance: Human Authorship Thresholds for Visual Prompts",
     slug: "us-copyright-office-guidance-human-authorship-thresholds-for-visual-prompts",
-    dek: "Evaluating US Copyright Office Guidance for production deployment: examining human authorship thresholds for visual prompts, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of US Copyright Office Guidance, analyzing Human authorship thresholds for visual prompts and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1063,15 +1066,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **US Copyright Office Guidance** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "US Copyright Office Guidance: Human Authorship Thresholds for Visual Prompts | RENDERLINE",
-      desc: "Evaluating US Copyright Office Guidance for production deployment: examining human authorship thresholds for visual prompts, temporal coherence, and studio copyright guardrails.",
+      title: "US Copyright Office Guidance: Human Authorship Thresholds for Visual Prompts | Render Line",
+      desc: "An assessment of US Copyright Office Guidance, analyzing Human authorship thresholds for visual prompts and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Digital Performer Escrow: Biometric Tokenization of Actor Likeness",
     slug: "digital-performer-escrow-biometric-tokenization-of-actor-likeness",
-    dek: "Evaluating Digital Performer Escrow for production deployment: examining biometric tokenization of actor likeness, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Digital Performer Escrow, analyzing Biometric tokenization of actor likeness and integration requirements for film pipelines.",
     heroImage: "/images/hero-ai-film.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1114,15 +1117,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Digital Performer Escrow** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Digital Performer Escrow: Biometric Tokenization of Actor Likeness | RENDERLINE",
-      desc: "Evaluating Digital Performer Escrow for production deployment: examining biometric tokenization of actor likeness, temporal coherence, and studio copyright guardrails.",
+      title: "Digital Performer Escrow: Biometric Tokenization of Actor Likeness | Render Line",
+      desc: "An assessment of Digital Performer Escrow, analyzing Biometric tokenization of actor likeness and integration requirements for film pipelines.",
       ogImage: "/images/hero-ai-film.jpg",
     },
   },
   {
     title: "NVIDIA Blackwell B200 HGX: Benchmarking Enterprise Studio Model Training",
     slug: "nvidia-blackwell-b200-hgx-benchmarking-enterprise-studio-model-training",
-    dek: "Evaluating NVIDIA Blackwell B200 HGX for production deployment: examining benchmarking enterprise studio model training, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of NVIDIA Blackwell B200 HGX, analyzing Benchmarking enterprise studio model training and integration requirements for film pipelines.",
     heroImage: "/images/ai-generative-video.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1165,15 +1168,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **NVIDIA Blackwell B200 HGX** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "NVIDIA Blackwell B200 HGX: Benchmarking Enterprise Studio Model Training | RENDERLINE",
-      desc: "Evaluating NVIDIA Blackwell B200 HGX for production deployment: examining benchmarking enterprise studio model training, temporal coherence, and studio copyright guardrails.",
+      title: "NVIDIA Blackwell B200 HGX: Benchmarking Enterprise Studio Model Training | Render Line",
+      desc: "An assessment of NVIDIA Blackwell B200 HGX, analyzing Benchmarking enterprise studio model training and integration requirements for film pipelines.",
       ogImage: "/images/ai-generative-video.jpg",
     },
   },
   {
     title: "Apple M4 Ultra Unified Memory: Running 70B Parameter LLMs on DIT Carts",
     slug: "apple-m4-ultra-unified-memory-running-70b-parameter-llms-on-dit-carts",
-    dek: "Evaluating Apple M4 Ultra Unified Memory for production deployment: examining running 70b parameter llms on dit carts, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Apple M4 Ultra Unified Memory, analyzing Running 70b parameter llms on dit carts and integration requirements for film pipelines.",
     heroImage: "/images/ai-neural-editor.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1216,15 +1219,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Apple M4 Ultra Unified Memory** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Apple M4 Ultra Unified Memory: Running 70B Parameter LLMs on DIT Carts | RENDERLINE",
-      desc: "Evaluating Apple M4 Ultra Unified Memory for production deployment: examining running 70b parameter llms on dit carts, temporal coherence, and studio copyright guardrails.",
+      title: "Apple M4 Ultra Unified Memory: Running 70B Parameter LLMs on DIT Carts | Render Line",
+      desc: "An assessment of Apple M4 Ultra Unified Memory, analyzing Running 70b parameter llms on dit carts and integration requirements for film pipelines.",
       ogImage: "/images/ai-neural-editor.jpg",
     },
   },
   {
     title: "Groq LPU Real-Time Inference: Processing 500-Page Screenplays in Seconds",
     slug: "groq-lpu-real-time-inference-processing-500-page-screenplays-in-seconds",
-    dek: "Evaluating Groq LPU Real-Time Inference for production deployment: examining processing 500-page screenplays in seconds, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Groq LPU Real-Time Inference, analyzing Processing 500-page screenplays in seconds and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1267,15 +1270,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Groq LPU Real-Time Inference** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Groq LPU Real-Time Inference: Processing 500-Page Screenplays in Seconds | RENDERLINE",
-      desc: "Evaluating Groq LPU Real-Time Inference for production deployment: examining processing 500-page screenplays in seconds, temporal coherence, and studio copyright guardrails.",
+      title: "Groq LPU Real-Time Inference: Processing 500-Page Screenplays in Seconds | Render Line",
+      desc: "An assessment of Groq LPU Real-Time Inference, analyzing Processing 500-page screenplays in seconds and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Cost-Per-Second Economics: Comparing Cloud Generative Video to Traditional VFX",
     slug: "cost-per-second-economics-comparing-cloud-generative-video-to-traditional-vfx",
-    dek: "Evaluating Cost-Per-Second Economics for production deployment: examining comparing cloud generative video to traditional vfx, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Cost-Per-Second Economics, analyzing Comparing cloud generative video to traditional vfx and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1318,15 +1321,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Cost-Per-Second Economics** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Cost-Per-Second Economics: Comparing Cloud Generative Video to Traditional VFX | RENDERLINE",
-      desc: "Evaluating Cost-Per-Second Economics for production deployment: examining comparing cloud generative video to traditional vfx, temporal coherence, and studio copyright guardrails.",
+      title: "Cost-Per-Second Economics: Comparing Cloud Generative Video to Traditional VFX | Render Line",
+      desc: "An assessment of Cost-Per-Second Economics, analyzing Comparing cloud generative video to traditional vfx and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "NeRF to OpenUSD Mesh Reconstruction: Generating Usable Collision Geometry",
     slug: "nerf-to-openusd-mesh-reconstruction-generating-usable-collision-geometry",
-    dek: "Evaluating NeRF to OpenUSD Mesh Reconstruction for production deployment: examining generating usable collision geometry, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of NeRF to OpenUSD Mesh Reconstruction, analyzing Generating usable collision geometry and integration requirements for film pipelines.",
     heroImage: "/images/ai-generative-video.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1369,15 +1372,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **NeRF to OpenUSD Mesh Reconstruction** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "NeRF to OpenUSD Mesh Reconstruction: Generating Usable Collision Geometry | RENDERLINE",
-      desc: "Evaluating NeRF to OpenUSD Mesh Reconstruction for production deployment: examining generating usable collision geometry, temporal coherence, and studio copyright guardrails.",
+      title: "NeRF to OpenUSD Mesh Reconstruction: Generating Usable Collision Geometry | Render Line",
+      desc: "An assessment of NeRF to OpenUSD Mesh Reconstruction, analyzing Generating usable collision geometry and integration requirements for film pipelines.",
       ogImage: "/images/ai-generative-video.jpg",
     },
   },
   {
     title: "Stable Diffusion 3.5 Medium: Local Texture Synthesis for 3D Asset Rigs",
     slug: "stable-diffusion-3-5-medium-local-texture-synthesis-for-3d-asset-rigs",
-    dek: "Evaluating Stable Diffusion 3.5 Medium for production deployment: examining local texture synthesis for 3d asset rigs, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Stable Diffusion 3.5 Medium, analyzing Local texture synthesis for 3d asset rigs and integration requirements for film pipelines.",
     heroImage: "/images/ai-neural-editor.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1420,8 +1423,8 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Stable Diffusion 3.5 Medium** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Stable Diffusion 3.5 Medium: Local Texture Synthesis for 3D Asset Rigs | RENDERLINE",
-      desc: "Evaluating Stable Diffusion 3.5 Medium for production deployment: examining local texture synthesis for 3d asset rigs, temporal coherence, and studio copyright guardrails.",
+      title: "Stable Diffusion 3.5 Medium: Local Texture Synthesis for 3D Asset Rigs | Render Line",
+      desc: "An assessment of Stable Diffusion 3.5 Medium, analyzing Local texture synthesis for 3d asset rigs and integration requirements for film pipelines.",
       ogImage: "/images/ai-neural-editor.jpg",
     },
   },
@@ -1471,7 +1474,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Neural Style Transfer for Anamorphic Lens Flare Synthesis** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Neural Style Transfer for Anamorphic Lens Flare Synthesis | RENDERLINE",
+      title: "Neural Style Transfer for Anamorphic Lens Flare Synthesis | Render Line",
       desc: "Field report on Neural Style Transfer for Anamorphic Lens Flare Synthesis, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "https://images.unsplash.com/photo-1533561797500-4bad475fe661?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1479,7 +1482,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
   {
     title: "Prompt Engineering for Cinematographers: Translating Focal Lengths to Latent Space",
     slug: "prompt-engineering-for-cinematographers-translating-focal-lengths-to-latent-space",
-    dek: "Evaluating Prompt Engineering for Cinematographers for production deployment: examining translating focal lengths to latent space, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Prompt Engineering for Cinematographers, analyzing Translating focal lengths to latent space and integration requirements for film pipelines.",
     heroImage: "/images/hero-ai-film.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1522,8 +1525,8 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Prompt Engineering for Cinematographers** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Prompt Engineering for Cinematographers: Translating Focal Lengths to Latent Space | RENDERLINE",
-      desc: "Evaluating Prompt Engineering for Cinematographers for production deployment: examining translating focal lengths to latent space, temporal coherence, and studio copyright guardrails.",
+      title: "Prompt Engineering for Cinematographers: Translating Focal Lengths to Latent Space | Render Line",
+      desc: "An assessment of Prompt Engineering for Cinematographers, analyzing Translating focal lengths to latent space and integration requirements for film pipelines.",
       ogImage: "/images/hero-ai-film.jpg",
     },
   },
@@ -1573,7 +1576,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Automated Subtitle and Multilingual Translation with Acoustic Synchronization** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Automated Subtitle and Multilingual Translation with Acoustic Synchronization | RENDERLINE",
+      title: "Automated Subtitle and Multilingual Translation with Acoustic Synchronization | Render Line",
       desc: "Field report on Automated Subtitle and Multilingual Translation with Acoustic Synchronization, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/ai-generative-video.jpg",
     },
@@ -1581,7 +1584,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
   {
     title: "AI Voice Cloning Ethics: SAG-AFTRA Approved Contractual Frameworks",
     slug: "ai-voice-cloning-ethics-sag-aftra-approved-contractual-frameworks",
-    dek: "Evaluating AI Voice Cloning Ethics for production deployment: examining sag-aftra approved contractual frameworks, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of AI Voice Cloning Ethics, analyzing Sag-aftra approved contractual frameworks and integration requirements for film pipelines.",
     heroImage: "/images/ai-neural-editor.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1624,8 +1627,8 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI Voice Cloning Ethics** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI Voice Cloning Ethics: SAG-AFTRA Approved Contractual Frameworks | RENDERLINE",
-      desc: "Evaluating AI Voice Cloning Ethics for production deployment: examining sag-aftra approved contractual frameworks, temporal coherence, and studio copyright guardrails.",
+      title: "AI Voice Cloning Ethics: SAG-AFTRA Approved Contractual Frameworks | Render Line",
+      desc: "An assessment of AI Voice Cloning Ethics, analyzing Sag-aftra approved contractual frameworks and integration requirements for film pipelines.",
       ogImage: "/images/ai-neural-editor.jpg",
     },
   },
@@ -1675,7 +1678,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Real-Time Facial Motion Capture Retargeting Using Vision Transformers** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Real-Time Facial Motion Capture Retargeting Using Vision Transformers | RENDERLINE",
+      title: "Real-Time Facial Motion Capture Retargeting Using Vision Transformers | Render Line",
       desc: "Field report on Real-Time Facial Motion Capture Retargeting Using Vision Transformers, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1683,7 +1686,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
   {
     title: "Depth Map Estimation: Monocular Depth Anything V2 in Production Comp",
     slug: "depth-map-estimation-monocular-depth-anything-v2-in-production-comp",
-    dek: "Evaluating Depth Map Estimation for production deployment: examining monocular depth anything v2 in production comp, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Depth Map Estimation, analyzing Monocular depth anything v2 in production comp and integration requirements for film pipelines.",
     heroImage: "/images/hero-ai-film.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1726,15 +1729,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Depth Map Estimation** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Depth Map Estimation: Monocular Depth Anything V2 in Production Comp | RENDERLINE",
-      desc: "Evaluating Depth Map Estimation for production deployment: examining monocular depth anything v2 in production comp, temporal coherence, and studio copyright guardrails.",
+      title: "Depth Map Estimation: Monocular Depth Anything V2 in Production Comp | Render Line",
+      desc: "An assessment of Depth Map Estimation, analyzing Monocular depth anything v2 in production comp and integration requirements for film pipelines.",
       ogImage: "/images/hero-ai-film.jpg",
     },
   },
   {
     title: "Semantic Segmentation in Nuke: Automatic Mattes for Complex Foliage",
     slug: "semantic-segmentation-in-nuke-automatic-mattes-for-complex-foliage",
-    dek: "Evaluating Semantic Segmentation in Nuke for production deployment: examining automatic mattes for complex foliage, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Semantic Segmentation in Nuke, analyzing Automatic mattes for complex foliage and integration requirements for film pipelines.",
     heroImage: "/images/nuke-vfx-comp.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1777,8 +1780,8 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Semantic Segmentation in Nuke** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Semantic Segmentation in Nuke: Automatic Mattes for Complex Foliage | RENDERLINE",
-      desc: "Evaluating Semantic Segmentation in Nuke for production deployment: examining automatic mattes for complex foliage, temporal coherence, and studio copyright guardrails.",
+      title: "Semantic Segmentation in Nuke: Automatic Mattes for Complex Foliage | Render Line",
+      desc: "An assessment of Semantic Segmentation in Nuke, analyzing Automatic mattes for complex foliage and integration requirements for film pipelines.",
       ogImage: "/images/nuke-vfx-comp.jpg",
     },
   },
@@ -1828,7 +1831,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Neural Inpainting for Anamorphic Sensor Dust and Dirt Clean-Up** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Neural Inpainting for Anamorphic Sensor Dust and Dirt Clean-Up | RENDERLINE",
+      title: "Neural Inpainting for Anamorphic Sensor Dust and Dirt Clean-Up | Render Line",
       desc: "Field report on Neural Inpainting for Anamorphic Sensor Dust and Dirt Clean-Up, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1836,7 +1839,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
   {
     title: "AI Storyboard Generation: Maintaining Character Consistency Across 80 Panels",
     slug: "ai-storyboard-generation-maintaining-character-consistency-across-80-panels",
-    dek: "Evaluating AI Storyboard Generation for production deployment: examining maintaining character consistency across 80 panels, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of AI Storyboard Generation, analyzing Maintaining character consistency across 80 panels and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1879,15 +1882,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI Storyboard Generation** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI Storyboard Generation: Maintaining Character Consistency Across 80 Panels | RENDERLINE",
-      desc: "Evaluating AI Storyboard Generation for production deployment: examining maintaining character consistency across 80 panels, temporal coherence, and studio copyright guardrails.",
+      title: "AI Storyboard Generation: Maintaining Character Consistency Across 80 Panels | Render Line",
+      desc: "An assessment of AI Storyboard Generation, analyzing Maintaining character consistency across 80 panels and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Volumetric Video Reconstruction: Multi-View Neural Radiance Fields",
     slug: "volumetric-video-reconstruction-multi-view-neural-radiance-fields",
-    dek: "Evaluating Volumetric Video Reconstruction for production deployment: examining multi-view neural radiance fields, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Volumetric Video Reconstruction, analyzing Multi-view neural radiance fields and integration requirements for film pipelines.",
     heroImage: "/images/ai-neural-editor.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1930,15 +1933,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Volumetric Video Reconstruction** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Volumetric Video Reconstruction: Multi-View Neural Radiance Fields | RENDERLINE",
-      desc: "Evaluating Volumetric Video Reconstruction for production deployment: examining multi-view neural radiance fields, temporal coherence, and studio copyright guardrails.",
+      title: "Volumetric Video Reconstruction: Multi-View Neural Radiance Fields | Render Line",
+      desc: "An assessment of Volumetric Video Reconstruction, analyzing Multi-view neural radiance fields and integration requirements for film pipelines.",
       ogImage: "/images/ai-neural-editor.jpg",
     },
   },
   {
     title: "Synthetic Atmospheric Volume Synthesis: Generating Realistic Smoke and Fire Latents",
     slug: "synthetic-atmospheric-volume-synthesis-generating-realistic-smoke-and-fire-latents",
-    dek: "Evaluating Synthetic Atmospheric Volume Synthesis for production deployment: examining generating realistic smoke and fire latents, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Synthetic Atmospheric Volume Synthesis, analyzing Generating realistic smoke and fire latents and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -1981,15 +1984,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Synthetic Atmospheric Volume Synthesis** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Synthetic Atmospheric Volume Synthesis: Generating Realistic Smoke and Fire Latents | RENDERLINE",
-      desc: "Evaluating Synthetic Atmospheric Volume Synthesis for production deployment: examining generating realistic smoke and fire latents, temporal coherence, and studio copyright guardrails.",
+      title: "Synthetic Atmospheric Volume Synthesis: Generating Realistic Smoke and Fire Latents | Render Line",
+      desc: "An assessment of Synthetic Atmospheric Volume Synthesis, analyzing Generating realistic smoke and fire latents and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "AI Audio Stem Separation: Isolate Dialogue from Complex Location Bleed",
     slug: "ai-audio-stem-separation-isolate-dialogue-from-complex-location-bleed",
-    dek: "Evaluating AI Audio Stem Separation for production deployment: examining isolate dialogue from complex location bleed, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of AI Audio Stem Separation, analyzing Isolate dialogue from complex location bleed and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2032,15 +2035,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI Audio Stem Separation** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI Audio Stem Separation: Isolate Dialogue from Complex Location Bleed | RENDERLINE",
-      desc: "Evaluating AI Audio Stem Separation for production deployment: examining isolate dialogue from complex location bleed, temporal coherence, and studio copyright guardrails.",
+      title: "AI Audio Stem Separation: Isolate Dialogue from Complex Location Bleed | Render Line",
+      desc: "An assessment of AI Audio Stem Separation, analyzing Isolate dialogue from complex location bleed and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Machine Learning Motion Blur Synthesis: Vector-Guided Frame Interpolation",
     slug: "machine-learning-motion-blur-synthesis-vector-guided-frame-interpolation",
-    dek: "Evaluating Machine Learning Motion Blur Synthesis for production deployment: examining vector-guided frame interpolation, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Machine Learning Motion Blur Synthesis, analyzing Vector-guided frame interpolation and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2083,8 +2086,8 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Machine Learning Motion Blur Synthesis** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Machine Learning Motion Blur Synthesis: Vector-Guided Frame Interpolation | RENDERLINE",
-      desc: "Evaluating Machine Learning Motion Blur Synthesis for production deployment: examining vector-guided frame interpolation, temporal coherence, and studio copyright guardrails.",
+      title: "Machine Learning Motion Blur Synthesis: Vector-Guided Frame Interpolation | Render Line",
+      desc: "An assessment of Machine Learning Motion Blur Synthesis, analyzing Vector-guided frame interpolation and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
   },
@@ -2134,7 +2137,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Automated Crowd Simulation Trajectory Generation via Reinforcement Learning** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Automated Crowd Simulation Trajectory Generation via Reinforcement Learning | RENDERLINE",
+      title: "Automated Crowd Simulation Trajectory Generation via Reinforcement Learning | Render Line",
       desc: "Field report on Automated Crowd Simulation Trajectory Generation via Reinforcement Learning, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/breakdown-creature.jpg",
     },
@@ -2142,7 +2145,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
   {
     title: "Neural Camera Tracking: Optical Flow Solves for Featureless Green Screens",
     slug: "neural-camera-tracking-optical-flow-solves-for-featureless-green-screens",
-    dek: "Evaluating Neural Camera Tracking for production deployment: examining optical flow solves for featureless green screens, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Neural Camera Tracking, analyzing Optical flow solves for featureless green screens and integration requirements for film pipelines.",
     heroImage: "/images/review-camera.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2185,15 +2188,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Neural Camera Tracking** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Neural Camera Tracking: Optical Flow Solves for Featureless Green Screens | RENDERLINE",
-      desc: "Evaluating Neural Camera Tracking for production deployment: examining optical flow solves for featureless green screens, temporal coherence, and studio copyright guardrails.",
+      title: "Neural Camera Tracking: Optical Flow Solves for Featureless Green Screens | Render Line",
+      desc: "An assessment of Neural Camera Tracking, analyzing Optical flow solves for featureless green screens and integration requirements for film pipelines.",
       ogImage: "/images/review-camera.jpg",
     },
   },
   {
     title: "Digital Human Muscle Simulation: Physics-Informed Neural Networks",
     slug: "digital-human-muscle-simulation-physics-informed-neural-networks",
-    dek: "Evaluating Digital Human Muscle Simulation for production deployment: examining physics-informed neural networks, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Digital Human Muscle Simulation, analyzing Physics-informed neural networks and integration requirements for film pipelines.",
     heroImage: "/images/article-sora.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2236,15 +2239,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Digital Human Muscle Simulation** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Digital Human Muscle Simulation: Physics-Informed Neural Networks | RENDERLINE",
-      desc: "Evaluating Digital Human Muscle Simulation for production deployment: examining physics-informed neural networks, temporal coherence, and studio copyright guardrails.",
+      title: "Digital Human Muscle Simulation: Physics-Informed Neural Networks | Render Line",
+      desc: "An assessment of Digital Human Muscle Simulation, analyzing Physics-informed neural networks and integration requirements for film pipelines.",
       ogImage: "/images/article-sora.jpg",
     },
   },
   {
     title: "Neural Texture Compression: Reducing 8K UDIM VRAM Footprint by 75%",
     slug: "neural-texture-compression-reducing-8k-udim-vram-footprint-by-75",
-    dek: "Evaluating Neural Texture Compression for production deployment: examining reducing 8k udim vram footprint by 75%, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Neural Texture Compression, analyzing Reducing 8k udim vram footprint by 75% and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2287,15 +2290,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Neural Texture Compression** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Neural Texture Compression: Reducing 8K UDIM VRAM Footprint by 75% | RENDERLINE",
-      desc: "Evaluating Neural Texture Compression for production deployment: examining reducing 8k udim vram footprint by 75%, temporal coherence, and studio copyright guardrails.",
+      title: "Neural Texture Compression: Reducing 8K UDIM VRAM Footprint by 75% | Render Line",
+      desc: "An assessment of Neural Texture Compression, analyzing Reducing 8k udim vram footprint by 75% and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Generative Sound Effects: Synthesizing Foley from On-Screen Pixel Motion",
     slug: "generative-sound-effects-synthesizing-foley-from-on-screen-pixel-motion",
-    dek: "Evaluating Generative Sound Effects for production deployment: examining synthesizing foley from on-screen pixel motion, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Generative Sound Effects, analyzing Synthesizing foley from on-screen pixel motion and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2338,15 +2341,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Generative Sound Effects** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Generative Sound Effects: Synthesizing Foley from On-Screen Pixel Motion | RENDERLINE",
-      desc: "Evaluating Generative Sound Effects for production deployment: examining synthesizing foley from on-screen pixel motion, temporal coherence, and studio copyright guardrails.",
+      title: "Generative Sound Effects: Synthesizing Foley from On-Screen Pixel Motion | Render Line",
+      desc: "An assessment of Generative Sound Effects, analyzing Synthesizing foley from on-screen pixel motion and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Real-Time Speech-to-Animation: Audio-Driven Facial Rig Deformations",
     slug: "real-time-speech-to-animation-audio-driven-facial-rig-deformations",
-    dek: "Evaluating Real-Time Speech-to-Animation for production deployment: examining audio-driven facial rig deformations, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Real-Time Speech-to-Animation, analyzing Audio-driven facial rig deformations and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2389,15 +2392,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Real-Time Speech-to-Animation** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Real-Time Speech-to-Animation: Audio-Driven Facial Rig Deformations | RENDERLINE",
-      desc: "Evaluating Real-Time Speech-to-Animation for production deployment: examining audio-driven facial rig deformations, temporal coherence, and studio copyright guardrails.",
+      title: "Real-Time Speech-to-Animation: Audio-Driven Facial Rig Deformations | Render Line",
+      desc: "An assessment of Real-Time Speech-to-Animation, analyzing Audio-driven facial rig deformations and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Synthetic Weather Generation: Dynamic Rain and Snow Infill for Exterior Plates",
     slug: "synthetic-weather-generation-dynamic-rain-and-snow-infill-for-exterior-plates",
-    dek: "Evaluating Synthetic Weather Generation for production deployment: examining dynamic rain and snow infill for exterior plates, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Synthetic Weather Generation, analyzing Dynamic rain and snow infill for exterior plates and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2440,15 +2443,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Synthetic Weather Generation** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Synthetic Weather Generation: Dynamic Rain and Snow Infill for Exterior Plates | RENDERLINE",
-      desc: "Evaluating Synthetic Weather Generation for production deployment: examining dynamic rain and snow infill for exterior plates, temporal coherence, and studio copyright guardrails.",
+      title: "Synthetic Weather Generation: Dynamic Rain and Snow Infill for Exterior Plates | Render Line",
+      desc: "An assessment of Synthetic Weather Generation, analyzing Dynamic rain and snow infill for exterior plates and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "AI Color Grading Assistants: Matching Diverse Multi-Camera Sensors Automatically",
     slug: "ai-color-grading-assistants-matching-diverse-multi-camera-sensors-automatically",
-    dek: "Evaluating AI Color Grading Assistants for production deployment: examining matching diverse multi-camera sensors automatically, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of AI Color Grading Assistants, analyzing Matching diverse multi-camera sensors automatically and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2491,8 +2494,8 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI Color Grading Assistants** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI Color Grading Assistants: Matching Diverse Multi-Camera Sensors Automatically | RENDERLINE",
-      desc: "Evaluating AI Color Grading Assistants for production deployment: examining matching diverse multi-camera sensors automatically, temporal coherence, and studio copyright guardrails.",
+      title: "AI Color Grading Assistants: Matching Diverse Multi-Camera Sensors Automatically | Render Line",
+      desc: "An assessment of AI Color Grading Assistants, analyzing Matching diverse multi-camera sensors automatically and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80",
     },
   },
@@ -2542,7 +2545,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Optical Character Recognition for Automated Slate and Metadata Logging** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Optical Character Recognition for Automated Slate and Metadata Logging | RENDERLINE",
+      title: "Optical Character Recognition for Automated Slate and Metadata Logging | Render Line",
       desc: "Field report on Optical Character Recognition for Automated Slate and Metadata Logging, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/hero-ai-film.jpg",
     },
@@ -2593,7 +2596,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Real-Time Neural Denoising in Viewport Render Engines** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Real-Time Neural Denoising in Viewport Render Engines | RENDERLINE",
+      title: "Real-Time Neural Denoising in Viewport Render Engines | Render Line",
       desc: "Field report on Real-Time Neural Denoising in Viewport Render Engines, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2601,7 +2604,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
   {
     title: "AI-Driven Asset Tagging: Organizing 500,000 Studio Digital Assets",
     slug: "ai-driven-asset-tagging-organizing-500-000-studio-digital-assets",
-    dek: "Evaluating AI-Driven Asset Tagging for production deployment: examining organizing 500,000 studio digital assets, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of AI-Driven Asset Tagging, analyzing Organizing 500,000 studio digital assets and integration requirements for film pipelines.",
     heroImage: "/images/ai-neural-editor.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2644,15 +2647,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI-Driven Asset Tagging** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI-Driven Asset Tagging: Organizing 500,000 Studio Digital Assets | RENDERLINE",
-      desc: "Evaluating AI-Driven Asset Tagging for production deployment: examining organizing 500,000 studio digital assets, temporal coherence, and studio copyright guardrails.",
+      title: "AI-Driven Asset Tagging: Organizing 500,000 Studio Digital Assets | Render Line",
+      desc: "An assessment of AI-Driven Asset Tagging, analyzing Organizing 500,000 studio digital assets and integration requirements for film pipelines.",
       ogImage: "/images/ai-neural-editor.jpg",
     },
   },
   {
     title: "Synthetic Lens Distortion Calibration: Modeling Vintage Glass Aberrations",
     slug: "synthetic-lens-distortion-calibration-modeling-vintage-glass-aberrations",
-    dek: "Evaluating Synthetic Lens Distortion Calibration for production deployment: examining modeling vintage glass aberrations, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Synthetic Lens Distortion Calibration, analyzing Modeling vintage glass aberrations and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1533561797500-4bad475fe661?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2695,8 +2698,8 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Synthetic Lens Distortion Calibration** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Synthetic Lens Distortion Calibration: Modeling Vintage Glass Aberrations | RENDERLINE",
-      desc: "Evaluating Synthetic Lens Distortion Calibration for production deployment: examining modeling vintage glass aberrations, temporal coherence, and studio copyright guardrails.",
+      title: "Synthetic Lens Distortion Calibration: Modeling Vintage Glass Aberrations | Render Line",
+      desc: "An assessment of Synthetic Lens Distortion Calibration, analyzing Modeling vintage glass aberrations and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1533561797500-4bad475fe661?auto=format&fit=crop&w=1200&q=80",
     },
   },
@@ -2746,7 +2749,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Automated ShotGrid Task Estimation via Historical Project Analysis** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Automated ShotGrid Task Estimation via Historical Project Analysis | RENDERLINE",
+      title: "Automated ShotGrid Task Estimation via Historical Project Analysis | Render Line",
       desc: "Field report on Automated ShotGrid Task Estimation via Historical Project Analysis, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/hero-ai-film.jpg",
     },
@@ -2754,7 +2757,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
   {
     title: "AI Pre-Lighting Optimization: Predicting Photon Distribution on Virtual Stages",
     slug: "ai-pre-lighting-optimization-predicting-photon-distribution-on-virtual-stages",
-    dek: "Evaluating AI Pre-Lighting Optimization for production deployment: examining predicting photon distribution on virtual stages, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of AI Pre-Lighting Optimization, analyzing Predicting photon distribution on virtual stages and integration requirements for film pipelines.",
     heroImage: "/images/ai-generative-video.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2797,15 +2800,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI Pre-Lighting Optimization** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI Pre-Lighting Optimization: Predicting Photon Distribution on Virtual Stages | RENDERLINE",
-      desc: "Evaluating AI Pre-Lighting Optimization for production deployment: examining predicting photon distribution on virtual stages, temporal coherence, and studio copyright guardrails.",
+      title: "AI Pre-Lighting Optimization: Predicting Photon Distribution on Virtual Stages | Render Line",
+      desc: "An assessment of AI Pre-Lighting Optimization, analyzing Predicting photon distribution on virtual stages and integration requirements for film pipelines.",
       ogImage: "/images/ai-generative-video.jpg",
     },
   },
   {
     title: "Generative Background Matte Painting: Seamless Horizon Inpainting",
     slug: "generative-background-matte-painting-seamless-horizon-inpainting",
-    dek: "Evaluating Generative Background Matte Painting for production deployment: examining seamless horizon inpainting, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Generative Background Matte Painting, analyzing Seamless horizon inpainting and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2848,8 +2851,8 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Generative Background Matte Painting** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Generative Background Matte Painting: Seamless Horizon Inpainting | RENDERLINE",
-      desc: "Evaluating Generative Background Matte Painting for production deployment: examining seamless horizon inpainting, temporal coherence, and studio copyright guardrails.",
+      title: "Generative Background Matte Painting: Seamless Horizon Inpainting | Render Line",
+      desc: "An assessment of Generative Background Matte Painting, analyzing Seamless horizon inpainting and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
     },
   },
@@ -2899,7 +2902,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Machine Learning Cloth Drape Prediction for High-Speed Action Scenes** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Machine Learning Cloth Drape Prediction for High-Speed Action Scenes | RENDERLINE",
+      title: "Machine Learning Cloth Drape Prediction for High-Speed Action Scenes | Render Line",
       desc: "Field report on Machine Learning Cloth Drape Prediction for High-Speed Action Scenes, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2907,7 +2910,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
   {
     title: "Neural Hair Groom Dynamics: Accelerating Stranded Hair Solves",
     slug: "neural-hair-groom-dynamics-accelerating-stranded-hair-solves",
-    dek: "Evaluating Neural Hair Groom Dynamics for production deployment: examining accelerating stranded hair solves, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Neural Hair Groom Dynamics, analyzing Accelerating stranded hair solves and integration requirements for film pipelines.",
     heroImage: "/images/ai-neural-editor.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -2950,8 +2953,8 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Neural Hair Groom Dynamics** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Neural Hair Groom Dynamics: Accelerating Stranded Hair Solves | RENDERLINE",
-      desc: "Evaluating Neural Hair Groom Dynamics for production deployment: examining accelerating stranded hair solves, temporal coherence, and studio copyright guardrails.",
+      title: "Neural Hair Groom Dynamics: Accelerating Stranded Hair Solves | Render Line",
+      desc: "An assessment of Neural Hair Groom Dynamics, analyzing Accelerating stranded hair solves and integration requirements for film pipelines.",
       ogImage: "/images/ai-neural-editor.jpg",
     },
   },
@@ -3001,7 +3004,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Automated Screenplay Formatting and Scene Heading Classification** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Automated Screenplay Formatting and Scene Heading Classification | RENDERLINE",
+      title: "Automated Screenplay Formatting and Scene Heading Classification | Render Line",
       desc: "Field report on Automated Screenplay Formatting and Scene Heading Classification, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/ai-generative-video.jpg",
     },
@@ -3009,7 +3012,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
   {
     title: "Generative Concept Art Iteration: Rapid Prototyping for Art Directors",
     slug: "generative-concept-art-iteration-rapid-prototyping-for-art-directors",
-    dek: "Evaluating Generative Concept Art Iteration for production deployment: examining rapid prototyping for art directors, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Generative Concept Art Iteration, analyzing Rapid prototyping for art directors and integration requirements for film pipelines.",
     heroImage: "/images/hero-vfx-breakdown.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3052,8 +3055,8 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Generative Concept Art Iteration** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Generative Concept Art Iteration: Rapid Prototyping for Art Directors | RENDERLINE",
-      desc: "Evaluating Generative Concept Art Iteration for production deployment: examining rapid prototyping for art directors, temporal coherence, and studio copyright guardrails.",
+      title: "Generative Concept Art Iteration: Rapid Prototyping for Art Directors | Render Line",
+      desc: "An assessment of Generative Concept Art Iteration, analyzing Rapid prototyping for art directors and integration requirements for film pipelines.",
       ogImage: "/images/hero-vfx-breakdown.jpg",
     },
   },
@@ -3103,7 +3106,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Real-Time Video-to-Vector Tracking for Roto and Paint** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Real-Time Video-to-Vector Tracking for Roto and Paint | RENDERLINE",
+      title: "Real-Time Video-to-Vector Tracking for Roto and Paint | Render Line",
       desc: "Field report on Real-Time Video-to-Vector Tracking for Roto and Paint, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3111,7 +3114,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
   {
     title: "AI Camera Shake Generation: Extracting Natural Handheld Profiles from Film",
     slug: "ai-camera-shake-generation-extracting-natural-handheld-profiles-from-film",
-    dek: "Evaluating AI Camera Shake Generation for production deployment: examining extracting natural handheld profiles from film, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of AI Camera Shake Generation, analyzing Extracting natural handheld profiles from film and integration requirements for film pipelines.",
     heroImage: "/images/camera-arri-alexa.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3154,15 +3157,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI Camera Shake Generation** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI Camera Shake Generation: Extracting Natural Handheld Profiles from Film | RENDERLINE",
-      desc: "Evaluating AI Camera Shake Generation for production deployment: examining extracting natural handheld profiles from film, temporal coherence, and studio copyright guardrails.",
+      title: "AI Camera Shake Generation: Extracting Natural Handheld Profiles from Film | Render Line",
+      desc: "An assessment of AI Camera Shake Generation, analyzing Extracting natural handheld profiles from film and integration requirements for film pipelines.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
   },
   {
     title: "Semantic Search for Studio Footage: Searching Archives by Emotional Cadence",
     slug: "semantic-search-for-studio-footage-searching-archives-by-emotional-cadence",
-    dek: "Evaluating Semantic Search for Studio Footage for production deployment: examining searching archives by emotional cadence, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Semantic Search for Studio Footage, analyzing Searching archives by emotional cadence and integration requirements for film pipelines.",
     heroImage: "/images/ai-generative-video.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3205,15 +3208,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Semantic Search for Studio Footage** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Semantic Search for Studio Footage: Searching Archives by Emotional Cadence | RENDERLINE",
-      desc: "Evaluating Semantic Search for Studio Footage for production deployment: examining searching archives by emotional cadence, temporal coherence, and studio copyright guardrails.",
+      title: "Semantic Search for Studio Footage: Searching Archives by Emotional Cadence | Render Line",
+      desc: "An assessment of Semantic Search for Studio Footage, analyzing Searching archives by emotional cadence and integration requirements for film pipelines.",
       ogImage: "/images/ai-generative-video.jpg",
     },
   },
   {
     title: "Neural Radiance Caching: Speeding Up Production Offline Path Tracing",
     slug: "neural-radiance-caching-speeding-up-production-offline-path-tracing",
-    dek: "Evaluating Neural Radiance Caching for production deployment: examining speeding up production offline path tracing, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Neural Radiance Caching, analyzing Speeding up production offline path tracing and integration requirements for film pipelines.",
     heroImage: "/images/article-sora.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3256,15 +3259,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Neural Radiance Caching** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Neural Radiance Caching: Speeding Up Production Offline Path Tracing | RENDERLINE",
-      desc: "Evaluating Neural Radiance Caching for production deployment: examining speeding up production offline path tracing, temporal coherence, and studio copyright guardrails.",
+      title: "Neural Radiance Caching: Speeding Up Production Offline Path Tracing | Render Line",
+      desc: "An assessment of Neural Radiance Caching, analyzing Speeding up production offline path tracing and integration requirements for film pipelines.",
       ogImage: "/images/article-sora.jpg",
     },
   },
   {
     title: "Synthetic Dialogue Lip Sync: Automated Phoneme Alignment for Foreign Releases",
     slug: "synthetic-dialogue-lip-sync-automated-phoneme-alignment-for-foreign-releases",
-    dek: "Evaluating Synthetic Dialogue Lip Sync for production deployment: examining automated phoneme alignment for foreign releases, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Synthetic Dialogue Lip Sync, analyzing Automated phoneme alignment for foreign releases and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3307,15 +3310,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Synthetic Dialogue Lip Sync** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Synthetic Dialogue Lip Sync: Automated Phoneme Alignment for Foreign Releases | RENDERLINE",
-      desc: "Evaluating Synthetic Dialogue Lip Sync for production deployment: examining automated phoneme alignment for foreign releases, temporal coherence, and studio copyright guardrails.",
+      title: "Synthetic Dialogue Lip Sync: Automated Phoneme Alignment for Foreign Releases | Render Line",
+      desc: "An assessment of Synthetic Dialogue Lip Sync, analyzing Automated phoneme alignment for foreign releases and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Machine Learning Keying: Soft Edge Matte Extraction on Complex Hair Plates",
     slug: "machine-learning-keying-soft-edge-matte-extraction-on-complex-hair-plates",
-    dek: "Evaluating Machine Learning Keying for production deployment: examining soft edge matte extraction on complex hair plates, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Machine Learning Keying, analyzing Soft edge matte extraction on complex hair plates and integration requirements for film pipelines.",
     heroImage: "/images/hero-ai-film.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3358,15 +3361,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Machine Learning Keying** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Machine Learning Keying: Soft Edge Matte Extraction on Complex Hair Plates | RENDERLINE",
-      desc: "Evaluating Machine Learning Keying for production deployment: examining soft edge matte extraction on complex hair plates, temporal coherence, and studio copyright guardrails.",
+      title: "Machine Learning Keying: Soft Edge Matte Extraction on Complex Hair Plates | Render Line",
+      desc: "An assessment of Machine Learning Keying, analyzing Soft edge matte extraction on complex hair plates and integration requirements for film pipelines.",
       ogImage: "/images/hero-ai-film.jpg",
     },
   },
   {
     title: "AI Render Farm Anomaly Detection: Predicting Render Crashes Before Failure",
     slug: "ai-render-farm-anomaly-detection-predicting-render-crashes-before-failure",
-    dek: "Evaluating AI Render Farm Anomaly Detection for production deployment: examining predicting render crashes before failure, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of AI Render Farm Anomaly Detection, analyzing Predicting render crashes before failure and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3409,8 +3412,8 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI Render Farm Anomaly Detection** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI Render Farm Anomaly Detection: Predicting Render Crashes Before Failure | RENDERLINE",
-      desc: "Evaluating AI Render Farm Anomaly Detection for production deployment: examining predicting render crashes before failure, temporal coherence, and studio copyright guardrails.",
+      title: "AI Render Farm Anomaly Detection: Predicting Render Crashes Before Failure | Render Line",
+      desc: "An assessment of AI Render Farm Anomaly Detection, analyzing Predicting render crashes before failure and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     },
   },
@@ -3460,7 +3463,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Real-Time Pose Estimation for Pre-Visualization Stunt Blocking** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Real-Time Pose Estimation for Pre-Visualization Stunt Blocking | RENDERLINE",
+      title: "Real-Time Pose Estimation for Pre-Visualization Stunt Blocking | Render Line",
       desc: "Field report on Real-Time Pose Estimation for Pre-Visualization Stunt Blocking, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/mocap-performance-stage.jpg",
     },
@@ -3468,7 +3471,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
   {
     title: "Synthetic Motion Vectors: Enhancing Post-Motion Blur Quality",
     slug: "synthetic-motion-vectors-enhancing-post-motion-blur-quality",
-    dek: "Evaluating Synthetic Motion Vectors for production deployment: examining enhancing post-motion blur quality, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Synthetic Motion Vectors, analyzing Enhancing post-motion blur quality and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3511,15 +3514,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Synthetic Motion Vectors** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Synthetic Motion Vectors: Enhancing Post-Motion Blur Quality | RENDERLINE",
-      desc: "Evaluating Synthetic Motion Vectors for production deployment: examining enhancing post-motion blur quality, temporal coherence, and studio copyright guardrails.",
+      title: "Synthetic Motion Vectors: Enhancing Post-Motion Blur Quality | Render Line",
+      desc: "An assessment of Synthetic Motion Vectors, analyzing Enhancing post-motion blur quality and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Generative Ambient Score Mockups: Accelerating Composer Temp Tracks",
     slug: "generative-ambient-score-mockups-accelerating-composer-temp-tracks",
-    dek: "Evaluating Generative Ambient Score Mockups for production deployment: examining accelerating composer temp tracks, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Generative Ambient Score Mockups, analyzing Accelerating composer temp tracks and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3562,8 +3565,8 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Generative Ambient Score Mockups** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Generative Ambient Score Mockups: Accelerating Composer Temp Tracks | RENDERLINE",
-      desc: "Evaluating Generative Ambient Score Mockups for production deployment: examining accelerating composer temp tracks, temporal coherence, and studio copyright guardrails.",
+      title: "Generative Ambient Score Mockups: Accelerating Composer Temp Tracks | Render Line",
+      desc: "An assessment of Generative Ambient Score Mockups, analyzing Accelerating composer temp tracks and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
   },
@@ -3613,7 +3616,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Automated Continuity Error Detection Across Multi-Day Location Takes** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Automated Continuity Error Detection Across Multi-Day Location Takes | RENDERLINE",
+      title: "Automated Continuity Error Detection Across Multi-Day Location Takes | Render Line",
       desc: "Field report on Automated Continuity Error Detection Across Multi-Day Location Takes, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/ai-generative-video.jpg",
     },
@@ -3621,7 +3624,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
   {
     title: "Neural Super-Sampling: Real-Time 1080p to 4K Upscaling in Game Engines",
     slug: "neural-super-sampling-real-time-1080p-to-4k-upscaling-in-game-engines",
-    dek: "Evaluating Neural Super-Sampling for production deployment: examining real-time 1080p to 4k upscaling in game engines, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Neural Super-Sampling, analyzing Real-time 1080p to 4k upscaling in game engines and integration requirements for film pipelines.",
     heroImage: "/images/ai-generative-video.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3664,15 +3667,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Neural Super-Sampling** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Neural Super-Sampling: Real-Time 1080p to 4K Upscaling in Game Engines | RENDERLINE",
-      desc: "Evaluating Neural Super-Sampling for production deployment: examining real-time 1080p to 4k upscaling in game engines, temporal coherence, and studio copyright guardrails.",
+      title: "Neural Super-Sampling: Real-Time 1080p to 4K Upscaling in Game Engines | Render Line",
+      desc: "An assessment of Neural Super-Sampling, analyzing Real-time 1080p to 4k upscaling in game engines and integration requirements for film pipelines.",
       ogImage: "/images/ai-generative-video.jpg",
     },
   },
   {
     title: "AI-Powered Lens Flare Removal: Cleaning Unwanted Practical Reflections",
     slug: "ai-powered-lens-flare-removal-cleaning-unwanted-practical-reflections",
-    dek: "Evaluating AI-Powered Lens Flare Removal for production deployment: examining cleaning unwanted practical reflections, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of AI-Powered Lens Flare Removal, analyzing Cleaning unwanted practical reflections and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1533561797500-4bad475fe661?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3715,15 +3718,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI-Powered Lens Flare Removal** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI-Powered Lens Flare Removal: Cleaning Unwanted Practical Reflections | RENDERLINE",
-      desc: "Evaluating AI-Powered Lens Flare Removal for production deployment: examining cleaning unwanted practical reflections, temporal coherence, and studio copyright guardrails.",
+      title: "AI-Powered Lens Flare Removal: Cleaning Unwanted Practical Reflections | Render Line",
+      desc: "An assessment of AI-Powered Lens Flare Removal, analyzing Cleaning unwanted practical reflections and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1533561797500-4bad475fe661?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Synthetic Water Surface Generation: Accelerating Ocean Wake Computations",
     slug: "synthetic-water-surface-generation-accelerating-ocean-wake-computations",
-    dek: "Evaluating Synthetic Water Surface Generation for production deployment: examining accelerating ocean wake computations, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Synthetic Water Surface Generation, analyzing Accelerating ocean wake computations and integration requirements for film pipelines.",
     heroImage: "/images/hero-ai-film.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3766,15 +3769,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Synthetic Water Surface Generation** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Synthetic Water Surface Generation: Accelerating Ocean Wake Computations | RENDERLINE",
-      desc: "Evaluating Synthetic Water Surface Generation for production deployment: examining accelerating ocean wake computations, temporal coherence, and studio copyright guardrails.",
+      title: "Synthetic Water Surface Generation: Accelerating Ocean Wake Computations | Render Line",
+      desc: "An assessment of Synthetic Water Surface Generation, analyzing Accelerating ocean wake computations and integration requirements for film pipelines.",
       ogImage: "/images/hero-ai-film.jpg",
     },
   },
   {
     title: "Automated Film Grain Synthesis: Matching Kodak and Fujifilm Stock Profiles",
     slug: "automated-film-grain-synthesis-matching-kodak-and-fujifilm-stock-profiles",
-    dek: "Evaluating Automated Film Grain Synthesis for production deployment: examining matching kodak and fujifilm stock profiles, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Automated Film Grain Synthesis, analyzing Matching kodak and fujifilm stock profiles and integration requirements for film pipelines.",
     heroImage: "/images/ai-generative-video.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3817,15 +3820,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Automated Film Grain Synthesis** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Automated Film Grain Synthesis: Matching Kodak and Fujifilm Stock Profiles | RENDERLINE",
-      desc: "Evaluating Automated Film Grain Synthesis for production deployment: examining matching kodak and fujifilm stock profiles, temporal coherence, and studio copyright guardrails.",
+      title: "Automated Film Grain Synthesis: Matching Kodak and Fujifilm Stock Profiles | Render Line",
+      desc: "An assessment of Automated Film Grain Synthesis, analyzing Matching kodak and fujifilm stock profiles and integration requirements for film pipelines.",
       ogImage: "/images/ai-generative-video.jpg",
     },
   },
   {
     title: "Neural Network Depth of Field: Physically Accurate Bokeh Synthesis",
     slug: "neural-network-depth-of-field-physically-accurate-bokeh-synthesis",
-    dek: "Evaluating Neural Network Depth of Field for production deployment: examining physically accurate bokeh synthesis, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Neural Network Depth of Field, analyzing Physically accurate bokeh synthesis and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3868,15 +3871,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Neural Network Depth of Field** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Neural Network Depth of Field: Physically Accurate Bokeh Synthesis | RENDERLINE",
-      desc: "Evaluating Neural Network Depth of Field for production deployment: examining physically accurate bokeh synthesis, temporal coherence, and studio copyright guardrails.",
+      title: "Neural Network Depth of Field: Physically Accurate Bokeh Synthesis | Render Line",
+      desc: "An assessment of Neural Network Depth of Field, analyzing Physically accurate bokeh synthesis and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "AI-Assisted Script Breakdown: Tagging Props, Vehicles, and Special Effects",
     slug: "ai-assisted-script-breakdown-tagging-props-vehicles-and-special-effects",
-    dek: "Evaluating AI-Assisted Script Breakdown for production deployment: examining tagging props, vehicles, and special effects, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of AI-Assisted Script Breakdown, analyzing Tagging props, vehicles, and special effects and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -3919,8 +3922,8 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI-Assisted Script Breakdown** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI-Assisted Script Breakdown: Tagging Props, Vehicles, and Special Effects | RENDERLINE",
-      desc: "Evaluating AI-Assisted Script Breakdown for production deployment: examining tagging props, vehicles, and special effects, temporal coherence, and studio copyright guardrails.",
+      title: "AI-Assisted Script Breakdown: Tagging Props, Vehicles, and Special Effects | Render Line",
+      desc: "An assessment of AI-Assisted Script Breakdown, analyzing Tagging props, vehicles, and special effects and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
   },
@@ -3970,7 +3973,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Real-Time Virtual Set Extension Alignment via Spatial Transformer Networks** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Real-Time Virtual Set Extension Alignment via Spatial Transformer Networks | RENDERLINE",
+      title: "Real-Time Virtual Set Extension Alignment via Spatial Transformer Networks | Render Line",
       desc: "Field report on Real-Time Virtual Set Extension Alignment via Spatial Transformer Networks, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/server-render-farm.jpg",
     },
@@ -3978,7 +3981,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
   {
     title: "Generative Sky Replacement: Dynamic Cloud Movement and Time-Lapse Infill",
     slug: "generative-sky-replacement-dynamic-cloud-movement-and-time-lapse-infill",
-    dek: "Evaluating Generative Sky Replacement for production deployment: examining dynamic cloud movement and time-lapse infill, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Generative Sky Replacement, analyzing Dynamic cloud movement and time-lapse infill and integration requirements for film pipelines.",
     heroImage: "/images/article-sora.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4021,15 +4024,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Generative Sky Replacement** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Generative Sky Replacement: Dynamic Cloud Movement and Time-Lapse Infill | RENDERLINE",
-      desc: "Evaluating Generative Sky Replacement for production deployment: examining dynamic cloud movement and time-lapse infill, temporal coherence, and studio copyright guardrails.",
+      title: "Generative Sky Replacement: Dynamic Cloud Movement and Time-Lapse Infill | Render Line",
+      desc: "An assessment of Generative Sky Replacement, analyzing Dynamic cloud movement and time-lapse infill and integration requirements for film pipelines.",
       ogImage: "/images/article-sora.jpg",
     },
   },
   {
     title: "Machine Learning Flame Dynamics: Accelerating Pyro Grid Solvers",
     slug: "machine-learning-flame-dynamics-accelerating-pyro-grid-solvers",
-    dek: "Evaluating Machine Learning Flame Dynamics for production deployment: examining accelerating pyro grid solvers, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Machine Learning Flame Dynamics, analyzing Accelerating pyro grid solvers and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4072,15 +4075,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Machine Learning Flame Dynamics** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Machine Learning Flame Dynamics: Accelerating Pyro Grid Solvers | RENDERLINE",
-      desc: "Evaluating Machine Learning Flame Dynamics for production deployment: examining accelerating pyro grid solvers, temporal coherence, and studio copyright guardrails.",
+      title: "Machine Learning Flame Dynamics: Accelerating Pyro Grid Solvers | Render Line",
+      desc: "An assessment of Machine Learning Flame Dynamics, analyzing Accelerating pyro grid solvers and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "AI-Driven Video Compression: Content-Adaptive Bitrate Optimization",
     slug: "ai-driven-video-compression-content-adaptive-bitrate-optimization",
-    dek: "Evaluating AI-Driven Video Compression for production deployment: examining content-adaptive bitrate optimization, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of AI-Driven Video Compression, analyzing Content-adaptive bitrate optimization and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4123,8 +4126,8 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI-Driven Video Compression** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI-Driven Video Compression: Content-Adaptive Bitrate Optimization | RENDERLINE",
-      desc: "Evaluating AI-Driven Video Compression for production deployment: examining content-adaptive bitrate optimization, temporal coherence, and studio copyright guardrails.",
+      title: "AI-Driven Video Compression: Content-Adaptive Bitrate Optimization | Render Line",
+      desc: "An assessment of AI-Driven Video Compression, analyzing Content-adaptive bitrate optimization and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
   },
@@ -4174,7 +4177,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Synthetic Skin Pore Texture Synthesis for Hero Close-Up Digital Doubles** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Synthetic Skin Pore Texture Synthesis for Hero Close-Up Digital Doubles | RENDERLINE",
+      title: "Synthetic Skin Pore Texture Synthesis for Hero Close-Up Digital Doubles | Render Line",
       desc: "Field report on Synthetic Skin Pore Texture Synthesis for Hero Close-Up Digital Doubles, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/hero-ai-film.jpg",
     },
@@ -4182,7 +4185,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
   {
     title: "Automated Video Stabilization: Neural Camera Path Smoothing",
     slug: "automated-video-stabilization-neural-camera-path-smoothing",
-    dek: "Evaluating Automated Video Stabilization for production deployment: examining neural camera path smoothing, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Automated Video Stabilization, analyzing Neural camera path smoothing and integration requirements for film pipelines.",
     heroImage: "/images/review-camera.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4225,8 +4228,8 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Automated Video Stabilization** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Automated Video Stabilization: Neural Camera Path Smoothing | RENDERLINE",
-      desc: "Evaluating Automated Video Stabilization for production deployment: examining neural camera path smoothing, temporal coherence, and studio copyright guardrails.",
+      title: "Automated Video Stabilization: Neural Camera Path Smoothing | Render Line",
+      desc: "An assessment of Automated Video Stabilization, analyzing Neural camera path smoothing and integration requirements for film pipelines.",
       ogImage: "/images/review-camera.jpg",
     },
   },
@@ -4276,7 +4279,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Real-Time Voice Pitch Correction for Location Dialogue Recording** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Real-Time Voice Pitch Correction for Location Dialogue Recording | RENDERLINE",
+      title: "Real-Time Voice Pitch Correction for Location Dialogue Recording | Render Line",
       desc: "Field report on Real-Time Voice Pitch Correction for Location Dialogue Recording, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/ai-neural-editor.jpg",
     },
@@ -4284,7 +4287,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
   {
     title: "AI-Assisted Multi-Track Audio Mixing: Dynamic Frequency Ducking",
     slug: "ai-assisted-multi-track-audio-mixing-dynamic-frequency-ducking",
-    dek: "Evaluating AI-Assisted Multi-Track Audio Mixing for production deployment: examining dynamic frequency ducking, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of AI-Assisted Multi-Track Audio Mixing, analyzing Dynamic frequency ducking and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4327,15 +4330,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI-Assisted Multi-Track Audio Mixing** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI-Assisted Multi-Track Audio Mixing: Dynamic Frequency Ducking | RENDERLINE",
-      desc: "Evaluating AI-Assisted Multi-Track Audio Mixing for production deployment: examining dynamic frequency ducking, temporal coherence, and studio copyright guardrails.",
+      title: "AI-Assisted Multi-Track Audio Mixing: Dynamic Frequency Ducking | Render Line",
+      desc: "An assessment of AI-Assisted Multi-Track Audio Mixing, analyzing Dynamic frequency ducking and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Neural Character Rigging: Automated Weight Painting on Complex Topology",
     slug: "neural-character-rigging-automated-weight-painting-on-complex-topology",
-    dek: "Evaluating Neural Character Rigging for production deployment: examining automated weight painting on complex topology, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Neural Character Rigging, analyzing Automated weight painting on complex topology and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4378,15 +4381,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Neural Character Rigging** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Neural Character Rigging: Automated Weight Painting on Complex Topology | RENDERLINE",
-      desc: "Evaluating Neural Character Rigging for production deployment: examining automated weight painting on complex topology, temporal coherence, and studio copyright guardrails.",
+      title: "Neural Character Rigging: Automated Weight Painting on Complex Topology | Render Line",
+      desc: "An assessment of Neural Character Rigging, analyzing Automated weight painting on complex topology and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Generative Motion Capture Cleaning: Removing Joint Jitter and Foot Sliding",
     slug: "generative-motion-capture-cleaning-removing-joint-jitter-and-foot-sliding",
-    dek: "Evaluating Generative Motion Capture Cleaning for production deployment: examining removing joint jitter and foot sliding, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Generative Motion Capture Cleaning, analyzing Removing joint jitter and foot sliding and integration requirements for film pipelines.",
     heroImage: "/images/ai-generative-video.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4429,8 +4432,8 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Generative Motion Capture Cleaning** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Generative Motion Capture Cleaning: Removing Joint Jitter and Foot Sliding | RENDERLINE",
-      desc: "Evaluating Generative Motion Capture Cleaning for production deployment: examining removing joint jitter and foot sliding, temporal coherence, and studio copyright guardrails.",
+      title: "Generative Motion Capture Cleaning: Removing Joint Jitter and Foot Sliding | Render Line",
+      desc: "An assessment of Generative Motion Capture Cleaning, analyzing Removing joint jitter and foot sliding and integration requirements for film pipelines.",
       ogImage: "/images/ai-generative-video.jpg",
     },
   },
@@ -4480,7 +4483,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI-Powered Color Palette Extraction for Art Direction Reference** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI-Powered Color Palette Extraction for Art Direction Reference | RENDERLINE",
+      title: "AI-Powered Color Palette Extraction for Art Direction Reference | Render Line",
       desc: "Field report on AI-Powered Color Palette Extraction for Art Direction Reference, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/ai-neural-editor.jpg",
     },
@@ -4488,7 +4491,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
   {
     title: "Synthetic Vehicle Traffic Simulation: Pathfinding for Urban Backgrounds",
     slug: "synthetic-vehicle-traffic-simulation-pathfinding-for-urban-backgrounds",
-    dek: "Evaluating Synthetic Vehicle Traffic Simulation for production deployment: examining pathfinding for urban backgrounds, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Synthetic Vehicle Traffic Simulation, analyzing Pathfinding for urban backgrounds and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4531,15 +4534,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Synthetic Vehicle Traffic Simulation** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Synthetic Vehicle Traffic Simulation: Pathfinding for Urban Backgrounds | RENDERLINE",
-      desc: "Evaluating Synthetic Vehicle Traffic Simulation for production deployment: examining pathfinding for urban backgrounds, temporal coherence, and studio copyright guardrails.",
+      title: "Synthetic Vehicle Traffic Simulation: Pathfinding for Urban Backgrounds | Render Line",
+      desc: "An assessment of Synthetic Vehicle Traffic Simulation, analyzing Pathfinding for urban backgrounds and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Automated Video Deflicker: Correcting LED Stage and High-Speed Light Fluctuations",
     slug: "automated-video-deflicker-correcting-led-stage-and-high-speed-light-fluctuations",
-    dek: "Evaluating Automated Video Deflicker for production deployment: examining correcting led stage and high-speed light fluctuations, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Automated Video Deflicker, analyzing Correcting led stage and high-speed light fluctuations and integration requirements for film pipelines.",
     heroImage: "/images/hero-ai-film.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4582,8 +4585,8 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Automated Video Deflicker** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Automated Video Deflicker: Correcting LED Stage and High-Speed Light Fluctuations | RENDERLINE",
-      desc: "Evaluating Automated Video Deflicker for production deployment: examining correcting led stage and high-speed light fluctuations, temporal coherence, and studio copyright guardrails.",
+      title: "Automated Video Deflicker: Correcting LED Stage and High-Speed Light Fluctuations | Render Line",
+      desc: "An assessment of Automated Video Deflicker, analyzing Correcting led stage and high-speed light fluctuations and integration requirements for film pipelines.",
       ogImage: "/images/hero-ai-film.jpg",
     },
   },
@@ -4633,7 +4636,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Real-Time Virtual Production Background Warping for Camera Parallax** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Real-Time Virtual Production Background Warping for Camera Parallax | RENDERLINE",
+      title: "Real-Time Virtual Production Background Warping for Camera Parallax | Render Line",
       desc: "Field report on Real-Time Virtual Production Background Warping for Camera Parallax, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/review-camera.jpg",
     },
@@ -4641,7 +4644,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
   {
     title: "AI-Driven Sound Design: Synthesizing Creature Vocalizations from Animal Bio-Acoustics",
     slug: "ai-driven-sound-design-synthesizing-creature-vocalizations-from-animal-bio-acoustics",
-    dek: "Evaluating AI-Driven Sound Design for production deployment: examining synthesizing creature vocalizations from animal bio-acoustics, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of AI-Driven Sound Design, analyzing Synthesizing creature vocalizations from animal bio-acoustics and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4684,15 +4687,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI-Driven Sound Design** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI-Driven Sound Design: Synthesizing Creature Vocalizations from Animal Bio-Acoustics | RENDERLINE",
-      desc: "Evaluating AI-Driven Sound Design for production deployment: examining synthesizing creature vocalizations from animal bio-acoustics, temporal coherence, and studio copyright guardrails.",
+      title: "AI-Driven Sound Design: Synthesizing Creature Vocalizations from Animal Bio-Acoustics | Render Line",
+      desc: "An assessment of AI-Driven Sound Design, analyzing Synthesizing creature vocalizations from animal bio-acoustics and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Neural Network Light Field Capture: Multi-Angle Incident Light Reconstruction",
     slug: "neural-network-light-field-capture-multi-angle-incident-light-reconstruction",
-    dek: "Evaluating Neural Network Light Field Capture for production deployment: examining multi-angle incident light reconstruction, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Neural Network Light Field Capture, analyzing Multi-angle incident light reconstruction and integration requirements for film pipelines.",
     heroImage: "/images/ai-neural-editor.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4735,15 +4738,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Neural Network Light Field Capture** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Neural Network Light Field Capture: Multi-Angle Incident Light Reconstruction | RENDERLINE",
-      desc: "Evaluating Neural Network Light Field Capture for production deployment: examining multi-angle incident light reconstruction, temporal coherence, and studio copyright guardrails.",
+      title: "Neural Network Light Field Capture: Multi-Angle Incident Light Reconstruction | Render Line",
+      desc: "An assessment of Neural Network Light Field Capture, analyzing Multi-angle incident light reconstruction and integration requirements for film pipelines.",
       ogImage: "/images/ai-neural-editor.jpg",
     },
   },
   {
     title: "Automated Quality Control: Detecting Dead Pixels and Compression Artifacts",
     slug: "automated-quality-control-detecting-dead-pixels-and-compression-artifacts",
-    dek: "Evaluating Automated Quality Control for production deployment: examining detecting dead pixels and compression artifacts, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Automated Quality Control, analyzing Detecting dead pixels and compression artifacts and integration requirements for film pipelines.",
     heroImage: "/images/hero-ai-film.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4786,15 +4789,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Automated Quality Control** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Automated Quality Control: Detecting Dead Pixels and Compression Artifacts | RENDERLINE",
-      desc: "Evaluating Automated Quality Control for production deployment: examining detecting dead pixels and compression artifacts, temporal coherence, and studio copyright guardrails.",
+      title: "Automated Quality Control: Detecting Dead Pixels and Compression Artifacts | Render Line",
+      desc: "An assessment of Automated Quality Control, analyzing Detecting dead pixels and compression artifacts and integration requirements for film pipelines.",
       ogImage: "/images/hero-ai-film.jpg",
     },
   },
   {
     title: "Generative Foley Synthesis: Synchronizing Footsteps to Surface Materials",
     slug: "generative-foley-synthesis-synchronizing-footsteps-to-surface-materials",
-    dek: "Evaluating Generative Foley Synthesis for production deployment: examining synchronizing footsteps to surface materials, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Generative Foley Synthesis, analyzing Synchronizing footsteps to surface materials and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4837,8 +4840,8 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Generative Foley Synthesis** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Generative Foley Synthesis: Synchronizing Footsteps to Surface Materials | RENDERLINE",
-      desc: "Evaluating Generative Foley Synthesis for production deployment: examining synchronizing footsteps to surface materials, temporal coherence, and studio copyright guardrails.",
+      title: "Generative Foley Synthesis: Synchronizing Footsteps to Surface Materials | Render Line",
+      desc: "An assessment of Generative Foley Synthesis, analyzing Synchronizing footsteps to surface materials and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
   },
@@ -4888,7 +4891,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Real-Time Speech Emotion Recognition for Actor Performance Analysis** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Real-Time Speech Emotion Recognition for Actor Performance Analysis | RENDERLINE",
+      title: "Real-Time Speech Emotion Recognition for Actor Performance Analysis | Render Line",
       desc: "Field report on Real-Time Speech Emotion Recognition for Actor Performance Analysis, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/ai-neural-editor.jpg",
     },
@@ -4896,7 +4899,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
   {
     title: "Haiper 2.0 Cinematic Lighting: Interactive Light Field Manipulation",
     slug: "haiper-2-0-cinematic-lighting-interactive-light-field-manipulation",
-    dek: "Evaluating Haiper 2.0 Cinematic Lighting for production deployment: examining interactive light field manipulation, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Haiper 2.0 Cinematic Lighting, analyzing Interactive light field manipulation and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4939,15 +4942,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Haiper 2.0 Cinematic Lighting** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Haiper 2.0 Cinematic Lighting: Interactive Light Field Manipulation | RENDERLINE",
-      desc: "Evaluating Haiper 2.0 Cinematic Lighting for production deployment: examining interactive light field manipulation, temporal coherence, and studio copyright guardrails.",
+      title: "Haiper 2.0 Cinematic Lighting: Interactive Light Field Manipulation | Render Line",
+      desc: "An assessment of Haiper 2.0 Cinematic Lighting, analyzing Interactive light field manipulation and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "Minimax Hailuo AI: Long-Range Temporal Consistency in Dialogue Scenes",
     slug: "minimax-hailuo-ai-long-range-temporal-consistency-in-dialogue-scenes",
-    dek: "Evaluating Minimax Hailuo AI for production deployment: examining long-range temporal consistency in dialogue scenes, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Minimax Hailuo AI, analyzing Long-range temporal consistency in dialogue scenes and integration requirements for film pipelines.",
     heroImage: "/images/hero-ai-film.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -4990,15 +4993,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Minimax Hailuo AI** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Minimax Hailuo AI: Long-Range Temporal Consistency in Dialogue Scenes | RENDERLINE",
-      desc: "Evaluating Minimax Hailuo AI for production deployment: examining long-range temporal consistency in dialogue scenes, temporal coherence, and studio copyright guardrails.",
+      title: "Minimax Hailuo AI: Long-Range Temporal Consistency in Dialogue Scenes | Render Line",
+      desc: "An assessment of Minimax Hailuo AI, analyzing Long-range temporal consistency in dialogue scenes and integration requirements for film pipelines.",
       ogImage: "/images/hero-ai-film.jpg",
     },
   },
   {
     title: "Adobe Firefly Video 2.0: Infinite Canvas Pre-Visualization Workflows",
     slug: "adobe-firefly-video-2-0-infinite-canvas-pre-visualization-workflows",
-    dek: "Evaluating Adobe Firefly Video 2.0 for production deployment: examining infinite canvas pre-visualization workflows, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Adobe Firefly Video 2.0, analyzing Infinite canvas pre-visualization workflows and integration requirements for film pipelines.",
     heroImage: "/images/article-adobe.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -5041,15 +5044,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Adobe Firefly Video 2.0** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Adobe Firefly Video 2.0: Infinite Canvas Pre-Visualization Workflows | RENDERLINE",
-      desc: "Evaluating Adobe Firefly Video 2.0 for production deployment: examining infinite canvas pre-visualization workflows, temporal coherence, and studio copyright guardrails.",
+      title: "Adobe Firefly Video 2.0: Infinite Canvas Pre-Visualization Workflows | Render Line",
+      desc: "An assessment of Adobe Firefly Video 2.0, analyzing Infinite canvas pre-visualization workflows and integration requirements for film pipelines.",
       ogImage: "/images/article-adobe.jpg",
     },
   },
   {
     title: "Diffusion Model Distillation: Achieving Sub-Second 4K Video Synthesis",
     slug: "diffusion-model-distillation-achieving-sub-second-4k-video-synthesis",
-    dek: "Evaluating Diffusion Model Distillation for production deployment: examining achieving sub-second 4k video synthesis, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of Diffusion Model Distillation, analyzing Achieving sub-second 4k video synthesis and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -5092,15 +5095,15 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Diffusion Model Distillation** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Diffusion Model Distillation: Achieving Sub-Second 4K Video Synthesis | RENDERLINE",
-      desc: "Evaluating Diffusion Model Distillation for production deployment: examining achieving sub-second 4k video synthesis, temporal coherence, and studio copyright guardrails.",
+      title: "Diffusion Model Distillation: Achieving Sub-Second 4K Video Synthesis | Render Line",
+      desc: "An assessment of Diffusion Model Distillation, analyzing Achieving sub-second 4k video synthesis and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
   },
   {
     title: "The Future of Creative Direction: Human Authorship in the Neural Cinema Era",
     slug: "the-future-of-creative-direction-human-authorship-in-the-neural-cinema-era",
-    dek: "Evaluating The Future of Creative Direction for production deployment: examining human authorship in the neural cinema era, temporal coherence, and studio copyright guardrails.",
+    dek: "An assessment of The Future of Creative Direction, analyzing Human authorship in the neural cinema era and integration requirements for film pipelines.",
     heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -5143,8 +5146,8 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **The Future of Creative Direction** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "The Future of Creative Direction: Human Authorship in the Neural Cinema Era | RENDERLINE",
-      desc: "Evaluating The Future of Creative Direction for production deployment: examining human authorship in the neural cinema era, temporal coherence, and studio copyright guardrails.",
+      title: "The Future of Creative Direction: Human Authorship in the Neural Cinema Era | Render Line",
+      desc: "An assessment of The Future of Creative Direction, analyzing Human authorship in the neural cinema era and integration requirements for film pipelines.",
       ogImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
     },
   }
