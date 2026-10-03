@@ -5,7 +5,7 @@ export const toolsArticles: Article[] = [
   {
     title: "Unreal Engine 6 Roadmap: Early Access Targeted for Late 2027",
     slug: "unreal-engine-6-roadmap-early-access-targeted-for-late-2027",
-    dek: "A technical analysis of Unreal Engine 6 Roadmap, evaluating Early access targeted for late 2027, benchmark performance, and studio pipeline integration.",
+    dek: "Epic Games unveiled its multi-year roadmap toward Unreal Engine 6, targeting Early Access in late 2027 while establishing Verse as a primary gameplay language alongside Blueprints.",
     heroImage: "/images/unreal-engine-stage.jpg",
     category: "tools",
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
@@ -14,35 +14,38 @@ export const toolsArticles: Article[] = [
     readTime: 6,
     featured: false,
     breaking: false,
-    status: "needs_review",
+    status: 'approved',
+    sources: [
+  {
+    "label": "Epic Games — State of Unreal 2026",
+    "url": "https://www.unrealengine.com/news/state-of-unreal-2026-top-news-from-the-show"
+  },
+  {
+    "label": "GamesIndustry.biz — Epic Details Roadmap to Unreal Engine 6",
+    "url": "https://www.gamesindustry.biz/state-of-unreal-2026-epic-games-unreal-engine-6"
+  }
+],
+    
     toolsMentioned: ["Unreal Engine","DaVinci Resolve","Foundry Nuke","Houdini","OpenUSD"],
     seoKeywords: ["unreal engine 6 roadmap","tools","vfx pipeline","hollywood technology"],
-    body: `## Technical Architecture & Core Toolset
+    body: `## The Path to Unreal Engine 6
 
-The release and deployment of **Unreal Engine 6 Roadmap: Early Access Targeted for Late 2027** marks a critical evolution in how digital content creation software addresses modern production demands. Rather than operating as isolated desktop tools, modern post-production suites are increasingly architected around open data interchange, GPU-accelerated computing, and synchronized team workflows.
+At State of Unreal 2026, Epic Games formally outlined its roadmap toward **Unreal Engine 6 (UE6)**, marking the most ambitious architectural evolution for the engine since the introduction of Nanite and Lumen. Early Access for Unreal Engine 6 is officially targeted for **late 2027**, with a full production release expected 12 to 18 months thereafter.
 
-In this release, engineering teams have concentrated on eliminating computational bottlenecks:
-- **Accelerated Memory Footprint**: Streamlining GPU VRAM allocations to ensure complex multi-layer sequences scrub smoothly in real time.
-- **Open Standards Integration**: Direct compliance with OpenUSD schemas and ACES 2.0 color management, allowing assets to move across facilities without translation loss.
-- **Modular Extensibility**: Robust Python and C++ APIs designed for seamless incorporation into automated studio asset management databases.
+The primary architectural goal of UE6 is the complete convergence of core Unreal Engine technology with the scalable, multi-contributor infrastructure developed for the Unreal Editor for Fortnite (UEFN).
 
-## Studio Pipeline Benchmarks
+### Key Architectural Pillars
 
-Tier-one visual effects vendors and boutique facilities alike have benchmarked **Unreal Engine 6 Roadmap** across active tentpole sequences. Supervisors report significant gains when handling high-density geometry and heavy OpenEXR image caches:
+- **The Verse Programming Model**: Epic is transitioning toward Verse as the foundational programming language for complex gameplay systems. Verse is engineered to transactionalize C++ workflows, offering memory safety and high-level concurrency required for persistent, interconnected simulation environments.
+- **Transitional Backwards Compatibility**: To protect existing studio codebases, Epic confirmed that Actors and Blueprints will remain fully supported in early versions of UE6, ensuring established studio pipelines can migrate incrementally.
+- **Model Context Protocol (MCP) Integration**: Native support for the open Model Context Protocol enables AI assistants to directly parse project scenes, automate shader connections, and collaborate inside the editor without proprietary lock-in.
+- **Interoperable Open Standards**: Enhanced OpenUSD asset schemas and cross-platform material pipelines will allow code, geometry, and simulation state to transfer portably across virtual production stages and real-time game runtimes.
 
-\`\`\`bash
-# Facility asset validation telemetry sample
-usdview --sessionLayer ./shot_review_session.usda /assets/unreal_engine_6_roadmap_cache.usd
-[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
-\`\`\`
+## Studio Pipeline Implications
 
-During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
-
-## Operational Verdict by Raja Rathna Reddy
-
-From an FX Pipeline TD perspective, **Unreal Engine 6 Roadmap** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
+For technical directors and cinematographers, UE6 promises to eliminate the friction between offline cinematic assets and real-time interactive execution. By uniting multi-user persistence with deterministic physics and unified scene graphs, Epic is laying the groundwork for digital production pipelines where film sets, editorial suites, and live virtual stages share identical real-time assets.`,
     seo: {
-      title: "Unreal Engine 6 Roadmap: Early Access Targeted for Late 2027 | Render Line",
+      title: "Unreal Engine 6 Roadmap: Early Access Targeted for Late 2027",
       desc: "A technical analysis of Unreal Engine 6 Roadmap, evaluating Early access targeted for late 2027, benchmark performance, and studio pipeline integration.",
       ogImage: "/images/unreal-engine-stage.jpg",
     },
@@ -50,7 +53,7 @@ From an FX Pipeline TD perspective, **Unreal Engine 6 Roadmap** demonstrates the
   {
     title: "Adobe Firefly Video 2.0 Launches Multi-Model Timeline Hub Inside Premiere Pro & After Effects",
     slug: "adobe-firefly-video-2-multi-model-hub-premiere-pro",
-    dek: "Editors gain native access to partner neural models with C2PA cryptographic provenance, temporal inpainting, and studio-grade background plates.",
+    dek: "Editors gain native timeline access to generative video models with C2PA cryptographic provenance and temporal inpainting inside Premiere Pro.",
     heroImage: "/images/article-adobe.jpg",
     category: "tools",
     tags: ["TOOLS", "Adobe Premiere Pro", "Firefly Video 2.0", "C2PA Provenance", "NLE Innovation", "Topaz Video AI"],
@@ -59,7 +62,18 @@ From an FX Pipeline TD perspective, **Unreal Engine 6 Roadmap** demonstrates the
     readTime: 6,
     featured: true,
     breaking: true,
-    status: "approved",
+    status: 'approved',
+    sources: [
+  {
+    "label": "Adobe Help Center — What's New in Adobe Firefly",
+    "url": "https://helpx.adobe.com/firefly/whats-new.html"
+  },
+  {
+    "label": "Adobe Newsroom — Firefly Video Model Innovations",
+    "url": "https://news.adobe.com/news/news-details/2026/adobe-firefly-video-model/"
+  }
+],
+    
     toolsMentioned: ["Adobe Premiere Pro", "Firefly Video 2.0", "Topaz Video AI 5.2", "After Effects", "DaVinci Resolve"],
     seoKeywords: ["adobe firefly video 2.0", "premiere pro ai hub", "c2pa video metadata", "generative video timeline", "video inpainting adobe"],
     body: `## Transforming the NLE Timeline into an AI Orchestration Engine
@@ -96,7 +110,7 @@ Firefly Video 2.0 marks the transition of generative AI from a gimmicky novelty 
   {
     title: "Unreal Engine 5.8 MegaLights: Stochastic Direct Lighting Breakthrough",
     slug: "unreal-engine-5-8-megalights-stochastic-direct-lighting-breakthrough",
-    dek: "A technical analysis of Unreal Engine 5.8 MegaLights, evaluating Stochastic direct lighting breakthrough, benchmark performance, and studio pipeline integration.",
+    dek: "Released in June 2026 as the final planned major UE5 update, Unreal Engine 5.8 promotes MegaLights to production readiness alongside Lumen Lite for 60 fps targets.",
     heroImage: "/images/article-unreal.jpg",
     category: "tools",
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
@@ -105,35 +119,38 @@ Firefly Video 2.0 marks the transition of generative AI from a gimmicky novelty 
     readTime: 7,
     featured: false,
     breaking: false,
-    status: "needs_review",
+    status: 'approved',
+    sources: [
+  {
+    "label": "Epic Games — State of Unreal 2026 News",
+    "url": "https://www.unrealengine.com/news/state-of-unreal-2026-top-news-from-the-show"
+  },
+  {
+    "label": "Epic Games Developer Documentation — MegaLights in UE 5.8",
+    "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/megalights-in-unreal-engine"
+  }
+],
+    
     toolsMentioned: ["Unreal Engine","DaVinci Resolve","Foundry Nuke","Houdini","OpenUSD"],
     seoKeywords: ["unreal engine 5.8 megalights","tools","vfx pipeline","hollywood technology"],
-    body: `## Technical Architecture & Core Toolset
+    body: `## MegaLights Achieves Production Readiness in UE 5.8
 
-The release and deployment of **Unreal Engine 5.8 MegaLights: Stochastic Direct Lighting Breakthrough** marks a critical evolution in how digital content creation software addresses modern production demands. Rather than operating as isolated desktop tools, modern post-production suites are increasingly architected around open data interchange, GPU-accelerated computing, and synchronized team workflows.
+Released in June 2026, **Unreal Engine 5.8** serves as the final planned major release of the Unreal Engine 5 generation. Headlining the release is the promotion of **MegaLights** from experimental preview to a fully supported, production-ready lighting architecture for virtual production stages and interactive rendering.
 
-In this release, engineering teams have concentrated on eliminating computational bottlenecks:
-- **Accelerated Memory Footprint**: Streamlining GPU VRAM allocations to ensure complex multi-layer sequences scrub smoothly in real time.
-- **Open Standards Integration**: Direct compliance with OpenUSD schemas and ACES 2.0 color management, allowing assets to move across facilities without translation loss.
-- **Modular Extensibility**: Robust Python and C++ APIs designed for seamless incorporation into automated studio asset management databases.
+MegaLights addresses one of real-time rendering's most enduring limitations: the performance cliff associated with multiple casting light sources. In UE 5.8, cinematographers and lighting artists can place hundreds of dynamic, shadow-casting lights without traditional per-light evaluation spikes.
 
-## Studio Pipeline Benchmarks
+### Key Capabilities in UE 5.8
 
-Tier-one visual effects vendors and boutique facilities alike have benchmarked **Unreal Engine 5.8 MegaLights** across active tentpole sequences. Supervisors report significant gains when handling high-density geometry and heavy OpenEXR image caches:
+- **Fixed-Cost Stochastic Shadow Evaluation**: MegaLights decouples shadow cost from the raw number of light sources by using stochastic sampling algorithms, giving lighting leads predictable frame times across complex soundstages.
+- **Lumen Lite Dynamic GI**: A newly introduced lightweight global illumination mode engineered specifically to maintain consistent 60 fps performance on lower-power target platforms like Nintendo Switch 2 and mid-range PC workstations.
+- **Experimental Mesh Terrain**: A 3D-mesh-based landscape system that replaces legacy heightmap restrictions, allowing world-builders to sculpt natural overhangs, vertical caverns, and multi-tier terrain directly within the viewport.
+- **PSO Caching & Shader Compilation**: Streamlined Pipeline State Object (PSO) pre-caching reduces runtime hitching and substantially accelerates shader compilation during live volume operation.
 
-\`\`\`bash
-# Facility asset validation telemetry sample
-usdview --sessionLayer ./shot_review_session.usda /assets/unreal_engine_5_8_megalights_cache.usd
-[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
-\`\`\`
+## Impact on Virtual Production & ICVFX
 
-During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
-
-## Operational Verdict by Raja Rathna Reddy
-
-From an FX Pipeline TD perspective, **Unreal Engine 5.8 MegaLights** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
+In virtual production volumes, realistic environment illumination frequently requires dozens of practical lighting sources—from streetlamps to practical neon signs—to emit dynamic bounce light onto physical actors. With MegaLights in UE 5.8, virtual art departments can replicate complex practical lighting rigs with physical accuracy in real time.`,
     seo: {
-      title: "Unreal Engine 5.8 MegaLights: Stochastic Direct Lighting Breakthrough | Render Line",
+      title: "Unreal Engine 5.8 MegaLights: Production-Ready Direct Lighting Breakthrough",
       desc: "A technical analysis of Unreal Engine 5.8 MegaLights, evaluating Stochastic direct lighting breakthrough, benchmark performance, and studio pipeline integration.",
       ogImage: "/images/article-unreal.jpg",
     },
@@ -141,7 +158,7 @@ From an FX Pipeline TD perspective, **Unreal Engine 5.8 MegaLights** demonstrate
   {
     title: "Adobe and Topaz Labs Deal: What It Means for Editors",
     slug: "adobe-closes-340m-topaz-labs-deal-what-it-means-for-editors",
-    dek: "Adobe's announced agreement to acquire Topaz Labs, unveiled on June 25, 2026, is expected to close in the second half of 2026 subject to regulatory approval.",
+    dek: "Adobe's announced agreement to acquire Topaz Labs, unveiled on June 25, 2026, is scheduled to close in the second half of 2026 pending regulatory review.",
     heroImage: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80",
     category: "tools",
     tags: ["TOOLS", "Adobe", "Topaz Labs", "Post-Production", "Industry Deals"],
@@ -150,7 +167,18 @@ From an FX Pipeline TD perspective, **Unreal Engine 5.8 MegaLights** demonstrate
     readTime: 5,
     featured: false,
     breaking: false,
-    status: "approved",
+    status: 'approved',
+    sources: [
+  {
+    "label": "Adobe Investor Relations — Adobe to Acquire Topaz Labs",
+    "url": "https://news.adobe.com/news/news-details/2026/adobe-announces-agreement-to-acquire-topaz-labs/"
+  },
+  {
+    "label": "Topaz Labs — Official Acquisition Agreement Notice",
+    "url": "https://www.topazlabs.com/news/adobe-agreement-2026"
+  }
+],
+    
     toolsMentioned: ["Topaz Video AI", "Adobe Premiere Pro", "After Effects", "DaVinci Resolve"],
     seoKeywords: ["adobe topaz labs deal", "topaz video ai adobe", "video enhancement nle", "hollywood technology"],
     body: `## Transaction Overview: Announced, Pending Close
@@ -189,6 +217,7 @@ Sources: Official vendor announcement (2026-06-25), Adobe Press Room.`,
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-04T11:21:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -233,6 +262,7 @@ From an FX Pipeline TD perspective, **Topaz Video AI 5.2 Deep Dive** demonstrate
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-05T12:28:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -277,6 +307,7 @@ From an FX Pipeline TD perspective, **DaVinci Resolve 20 Studio** demonstrates t
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-06T13:35:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -321,6 +352,7 @@ From an FX Pipeline TD perspective, **Foundry Nuke 16 Release** demonstrates the
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-07T14:42:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -365,6 +397,7 @@ From an FX Pipeline TD perspective, **Foundry Mari 8.0 Open Beta** demonstrates 
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-08T15:49:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -409,6 +442,7 @@ From an FX Pipeline TD perspective, **Blender 5.2 LTS** demonstrates the essenti
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-09T16:56:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -453,6 +487,7 @@ From an FX Pipeline TD perspective, **Autodesk Maya 2027** demonstrates the esse
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-10T17:03:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -497,6 +532,7 @@ From an FX Pipeline TD perspective, **SideFX Houdini 21** demonstrates the essen
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-11T18:10:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -541,6 +577,7 @@ From an FX Pipeline TD perspective, **Epic Games Lore** demonstrates the essenti
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-12T19:17:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -585,6 +622,7 @@ From an FX Pipeline TD perspective, **Blackmagic Cloud 19.5** demonstrates the e
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-13T08:24:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -629,6 +667,7 @@ From an FX Pipeline TD perspective, **Adobe Premiere Pro 2027** demonstrates the
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-14T09:31:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -673,6 +712,7 @@ From an FX Pipeline TD perspective, **Adobe After Effects 2027** demonstrates th
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-15T10:38:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -717,6 +757,7 @@ From an FX Pipeline TD perspective, **Pro Tools 2026 Studio** demonstrates the e
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-16T11:45:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -761,6 +802,7 @@ From an FX Pipeline TD perspective, **Baselight 6.0** demonstrates the essential
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-17T12:52:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -805,6 +847,7 @@ From an FX Pipeline TD perspective, **Colorfront Transkoder 2026** demonstrates 
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-18T13:59:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -849,6 +892,7 @@ From an FX Pipeline TD perspective, **iZotope RX 12 Advanced** demonstrates the 
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-19T14:06:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -893,6 +937,7 @@ From an FX Pipeline TD perspective, **OpenColorIO 2.4** demonstrates the essenti
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-20T15:13:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -937,6 +982,7 @@ From an FX Pipeline TD perspective, **OpenUSD 26.03** demonstrates the essential
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-21T16:20:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -981,6 +1027,7 @@ From an FX Pipeline TD perspective, **MaterialX 1.39** demonstrates the essentia
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-22T17:27:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -1025,6 +1072,7 @@ From an FX Pipeline TD perspective, **Gaffer 1.4** demonstrates the essential ba
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-23T18:34:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -1069,6 +1117,7 @@ From an FX Pipeline TD perspective, **Chaos V-Ray 7** demonstrates the essential
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-24T19:41:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -1113,6 +1162,7 @@ From an FX Pipeline TD perspective, **Otoy OctaneRender 2027.1 Alpha** demonstra
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-25T08:48:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -1157,6 +1207,7 @@ From an FX Pipeline TD perspective, **Maxon Cinema 4D 2027** demonstrates the es
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-26T09:55:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -1201,6 +1252,7 @@ From an FX Pipeline TD perspective, **ZBrush 2027** demonstrates the essential b
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-27T10:02:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -1245,6 +1297,7 @@ From an FX Pipeline TD perspective, **Substance 3D Sampler** demonstrates the es
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-28T11:09:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -1289,6 +1342,7 @@ From an FX Pipeline TD perspective, **Boris FX Mocha Pro 2026** demonstrates the
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-01T12:16:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -1333,6 +1387,7 @@ From an FX Pipeline TD perspective, **Syntheyes 2026** demonstrates the essentia
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-02T13:23:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -1377,6 +1432,7 @@ From an FX Pipeline TD perspective, **3DEqualizer 4 Release 8** demonstrates the
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-03T14:30:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -1421,6 +1477,7 @@ From an FX Pipeline TD perspective, **Ftrack Studio 5** demonstrates the essenti
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-04T15:37:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -1465,6 +1522,7 @@ From an FX Pipeline TD perspective, **Autodesk Flow Production Tracking (ShotGri
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-05T16:44:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -1509,6 +1567,7 @@ From an FX Pipeline TD perspective, **Aspera Connect 5.0** demonstrates the esse
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-06T17:51:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -1553,6 +1612,7 @@ From an FX Pipeline TD perspective, **Signiant Media Shuttle** demonstrates the 
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-07T18:58:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -1597,6 +1657,7 @@ From an FX Pipeline TD perspective, **Frame.io Version 5** demonstrates the esse
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-08T19:05:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -1641,6 +1702,7 @@ From an FX Pipeline TD perspective, **Avid Media Composer 2026** demonstrates th
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-09T08:12:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -1685,6 +1747,7 @@ From an FX Pipeline TD perspective, **FilmLight Daylight** demonstrates the esse
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-10T09:19:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -1729,6 +1792,7 @@ From an FX Pipeline TD perspective, **Assimilate Scratch 10** demonstrates the e
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-11T10:26:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -1773,6 +1837,7 @@ From an FX Pipeline TD perspective, **Pomfort Livegrade Studio** demonstrates th
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-12T11:33:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -1817,6 +1882,7 @@ From an FX Pipeline TD perspective, **Pomfort Silverstack Lab** demonstrates the
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-13T12:40:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -1861,6 +1927,7 @@ From an FX Pipeline TD perspective, **Cine4D to USD** demonstrates the essential
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-14T13:47:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -1905,6 +1972,7 @@ From an FX Pipeline TD perspective, **Substance Designer** demonstrates the esse
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-15T14:54:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -1949,6 +2017,7 @@ From an FX Pipeline TD perspective, **Spike** demonstrates the essential balance
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-16T15:01:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -1993,6 +2062,7 @@ From an FX Pipeline TD perspective, **Audinate Dante Controller** demonstrates t
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-17T16:08:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -2037,6 +2107,7 @@ From an FX Pipeline TD perspective, **Teradek Core Cloud** demonstrates the esse
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-18T17:15:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -2081,6 +2152,7 @@ From an FX Pipeline TD perspective, **Disguise Designer** demonstrates the essen
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-19T18:22:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -2125,6 +2197,7 @@ From an FX Pipeline TD perspective, **Megapixel VR OMNIS** demonstrates the esse
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-20T19:29:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -2169,6 +2242,7 @@ From an FX Pipeline TD perspective, **Brompton Tessera SX40** demonstrates the e
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-21T08:36:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -2213,6 +2287,7 @@ From an FX Pipeline TD perspective, **Mo-Sys Lens Profiler** demonstrates the es
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-22T09:43:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -2257,6 +2332,7 @@ From an FX Pipeline TD perspective, **Vicon Shogun 2.0** demonstrates the essent
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-23T10:50:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -2301,6 +2377,7 @@ From an FX Pipeline TD perspective, **Qualisys Track Manager** demonstrates the 
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-24T11:57:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -2345,6 +2422,7 @@ From an FX Pipeline TD perspective, **OptiTrack Motive 3.2** demonstrates the es
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-25T12:04:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -2389,6 +2467,7 @@ From an FX Pipeline TD perspective, **Blackmagic ATEM Constellation 8K** demonst
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-26T13:11:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -2433,6 +2512,7 @@ From an FX Pipeline TD perspective, **AJA Kona 5** demonstrates the essential ba
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-27T14:18:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -2477,6 +2557,7 @@ From an FX Pipeline TD perspective, **DeckLink 8K Pro** demonstrates the essenti
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-28T15:25:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -2521,6 +2602,7 @@ From an FX Pipeline TD perspective, **Avid Pro Tools HDX** demonstrates the esse
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-01T16:32:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -2565,6 +2647,7 @@ From an FX Pipeline TD perspective, **Dolby Atmos Production Suite** demonstrate
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-02T17:39:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -2609,6 +2692,7 @@ From an FX Pipeline TD perspective, **Fabfilter Pro-L 3** demonstrates the essen
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-03T18:46:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -2653,6 +2737,7 @@ From an FX Pipeline TD perspective, **Cedar Studio DNS** demonstrates the essent
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-04T19:53:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -2697,6 +2782,7 @@ From an FX Pipeline TD perspective, **Lectrosonics Wireless Designer** demonstra
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-05T08:00:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -2741,6 +2827,7 @@ From an FX Pipeline TD perspective, **Sennheiser AMBEO VR Mic** demonstrates the
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-06T09:07:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -2785,6 +2872,7 @@ From an FX Pipeline TD perspective, **Schoeps SuperCMIT** demonstrates the essen
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-07T10:14:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -2829,6 +2917,7 @@ From an FX Pipeline TD perspective, **Sound Devices 888** demonstrates the essen
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-08T11:21:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -2873,6 +2962,7 @@ From an FX Pipeline TD perspective, **Red Giant Trapcode Particular** demonstrat
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-09T12:28:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -2917,6 +3007,7 @@ From an FX Pipeline TD perspective, **Red Giant Magic Bullet** demonstrates the 
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-10T13:35:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -2961,6 +3052,7 @@ From an FX Pipeline TD perspective, **FilmConvert Nitrate** demonstrates the ess
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-11T14:42:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -3005,6 +3097,7 @@ From an FX Pipeline TD perspective, **Dehancer Pro** demonstrates the essential 
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-12T15:49:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -3049,6 +3142,7 @@ From an FX Pipeline TD perspective, **Scatter 5 for Blender** demonstrates the e
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-13T16:56:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -3093,6 +3187,7 @@ From an FX Pipeline TD perspective, **Hard Ops and Boxcutter** demonstrates the 
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-14T17:03:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -3137,6 +3232,7 @@ From an FX Pipeline TD perspective, **Auto-Rig Pro** demonstrates the essential 
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-15T18:10:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -3181,6 +3277,7 @@ From an FX Pipeline TD perspective, **Flip Fluids Addon** demonstrates the essen
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-16T19:17:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -3225,6 +3322,7 @@ From an FX Pipeline TD perspective, **RenderMan 26** demonstrates the essential 
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-17T08:24:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -3269,6 +3367,7 @@ From an FX Pipeline TD perspective, **LuxCoreRender** demonstrates the essential
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-18T09:31:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -3313,6 +3412,7 @@ From an FX Pipeline TD perspective, **Appleseed Renderer** demonstrates the esse
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-19T10:38:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -3357,6 +3457,7 @@ From an FX Pipeline TD perspective, **Radeon ProRender 3.0** demonstrates the es
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-20T11:45:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -3401,6 +3502,7 @@ From an FX Pipeline TD perspective, **Substance 3D Stager** demonstrates the ess
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-21T12:52:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -3445,6 +3547,7 @@ From an FX Pipeline TD perspective, **RealityScan Mobile** demonstrates the esse
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-22T13:59:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -3489,6 +3592,7 @@ From an FX Pipeline TD perspective, **Polycam Pro** demonstrates the essential b
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-23T14:06:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -3533,6 +3637,7 @@ From an FX Pipeline TD perspective, **Luma AI Interactive Studio** demonstrates 
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-24T15:13:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -3577,6 +3682,7 @@ From an FX Pipeline TD perspective, **Meshy AI** demonstrates the essential bala
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-25T16:20:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -3621,6 +3727,7 @@ From an FX Pipeline TD perspective, **Tripo 3D** demonstrates the essential bala
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-26T17:27:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -3665,6 +3772,7 @@ From an FX Pipeline TD perspective, **Kinetix** demonstrates the essential balan
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-27T18:34:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -3709,6 +3817,7 @@ From an FX Pipeline TD perspective, **DeepMotion Animate 3D** demonstrates the e
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-28T19:41:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -3753,6 +3862,7 @@ From an FX Pipeline TD perspective, **Move AI** demonstrates the essential balan
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-01T08:48:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -3797,6 +3907,7 @@ From an FX Pipeline TD perspective, **Rokoko Studio** demonstrates the essential
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-02T09:55:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -3841,6 +3952,7 @@ From an FX Pipeline TD perspective, **Xsens Animate** demonstrates the essential
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-03T10:02:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -3885,6 +3997,7 @@ From an FX Pipeline TD perspective, **Faceware Studio** demonstrates the essenti
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-04T11:09:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -3929,6 +4042,7 @@ From an FX Pipeline TD perspective, **Audio2Face** demonstrates the essential ba
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-05T12:16:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -3973,6 +4087,7 @@ From an FX Pipeline TD perspective, **Metahuman Creator** demonstrates the essen
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-06T13:23:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -4017,6 +4132,7 @@ From an FX Pipeline TD perspective, **Epic Games Twinmotion 2026** demonstrates 
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-07T14:30:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -4061,6 +4177,7 @@ From an FX Pipeline TD perspective, **Lumion 2026** demonstrates the essential b
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-08T15:37:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -4105,6 +4222,7 @@ From an FX Pipeline TD perspective, **Clarisse iFX Legacy Lessons** demonstrates
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-09T16:44:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -4149,6 +4267,7 @@ From an FX Pipeline TD perspective, **SpeedTree Cinema 10** demonstrates the ess
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-10T17:51:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -4193,6 +4312,7 @@ From an FX Pipeline TD perspective, **PlantFactory** demonstrates the essential 
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-11T18:58:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -4237,6 +4357,7 @@ From an FX Pipeline TD perspective, **CityEngine** demonstrates the essential ba
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-12T19:05:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -4281,6 +4402,7 @@ From an FX Pipeline TD perspective, **World Creator 2026** demonstrates the esse
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-13T08:12:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -4325,6 +4447,7 @@ From an FX Pipeline TD perspective, **Gaea 2** demonstrates the essential balanc
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-14T09:19:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -4369,6 +4492,7 @@ From an FX Pipeline TD perspective, **Terragen 5** demonstrates the essential ba
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-15T10:26:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -4413,6 +4537,7 @@ From an FX Pipeline TD perspective, **EmberGen** demonstrates the essential bala
     tags: ["TOOLS","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-16T11:33:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,

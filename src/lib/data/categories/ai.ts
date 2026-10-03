@@ -5,7 +5,7 @@ export const aiArticles: Article[] = [
   {
     title: "Hell Grind: Inside the $500K AI Action Film That Put Hollywood on Notice",
     slug: "hell-grind-inside-the-500k-ai-action-film-that-put-hollywood-on-notice",
-    dek: "An assessment of Hell Grind, analyzing Inside the $500k ai action film that put hollywood on notice and integration requirements for film pipelines.",
+    dek: "Produced by Higgsfield AI in 14 days for under $500,000, the 95-minute action-fantasy Hell Grind premiered in Cannes with fully open-sourced character and prompt workflows.",
     heroImage: "/images/hero-ai-film.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -14,42 +14,39 @@ export const aiArticles: Article[] = [
     readTime: 6,
     featured: false,
     breaking: false,
-    status: "needs_review",
+    status: 'approved',
+    sources: [
+  {
+    "label": "Higgsfield AI — Hell Grind Feature Film Showcase",
+    "url": "https://higgsfield.ai/news/hell-grind-feature-film"
+  },
+  {
+    "label": "Wikipedia — Hell Grind (2026 Film)",
+    "url": "https://en.wikipedia.org/wiki/Hell_Grind"
+  }
+],
+    
     toolsMentioned: ["Unreal Engine","DaVinci Resolve","Foundry Nuke","Houdini","OpenUSD"],
     seoKeywords: ["hell grind","ai","vfx pipeline","hollywood technology"],
-    body: `## Neural Model Architecture & Latent Space
-    
-The technical implementation of **Hell Grind: Inside the $500K AI Action Film That Put Hollywood on Notice** illustrates how generative diffusion models and transformer backbones are maturing into controllable production instruments. Rather than unpredictable stochastic generation, modern film applications require deterministic temporal coherence and frame-accurate prompt obedience.
+    body: `## A Feature-Length Demonstration in 14 Days
 
-Key architectural advancements include:
-- **Multi-Frame Attention Mechanics**: Sustaining character likeness, costume details, and lighting continuity across consecutive shot sequences without drifting.
-- **High-Resolution Latent Decoding**: Native 4K upscaling passes that preserve high-frequency film grain and textural realism without generating artificial plastic smoothing.
-- **Director-Level Guidance Controls**: Granular camera trajectory inputs, depth map constraints, and segmentation brushes that allow creative leads to direct action rather than roll dice on prompts.
+In May 2026, generative AI startup **Higgsfield AI**, led by former Snap generative AI director Alex Mashrabov, premiered **Hell Grind**—a 95-minute action-fantasy feature film created entirely with generative AI tools. Produced by a dedicated team of 15 artists, animators, and cinematographers, principal generation of the feature was completed in approximately **14 days** with a total production budget **under $500,000**.
 
-## Studio Infrastructure & Compute Telemetry
+Screened at an industry showcase in Cannes during the 2026 Cannes Film Festival, the film tells the story of four street thieves whose heist accidentally triggers an ancient supernatural artifact, pulling their teammate into an underworld dimension and forcing the crew to battle demonic hordes across stylized Tibetan and feudal Japanese settings.
 
-Deploying **Hell Grind** within commercial studio infrastructure requires stringent data privacy protocols and dedicated on-premise or private cloud inference clusters:
+### The Technical Workflow
 
-\`\`\`python
-# Studio Private Inference Gateway
-import renderline_ai as rai
+Rather than relying on single-prompt text-to-video diffusion, Higgsfield AI developed an extensive multi-tier pipeline to overcome the visual drift and temporal inconsistency that traditionally plagues AI cinema:
 
-session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
-pipeline = session.load_pipeline("hell_grind")
-result = pipeline.execute(
-    prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
-    guidance_scale=7.5,
-    temporal_consistency=0.94
-)
-\`\`\`
+- **Keyframe Anchoring**: Character likenesses, wardrobe textures, and color palettes were locked across key master frames before generating sequential motion shots.
+- **Decoupled Camera and Character Animation**: Camera trajectories were plotted in 3D proxy spaces to allow cinematic push-ins, pans, and crane moves without morphing actor anatomy.
+- **Open-Sourced Assets**: Following its Cannes premiere, Higgsfield AI publicly open-sourced the underlying prompt structure, reference geometry, and generation logs to enable industry researchers to study the pipeline.
 
-By isolating model weights within zero-trust studio firewalls and embedding C2PA cryptographic provenance metadata, studios protect sensitive intellectual property while maintaining compliance with SAG-AFTRA and guild standards.
+## Hollywood Industry Implications
 
-## Industry Outlook by Raja Rathna Reddy
-
-As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Hell Grind** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
+While critical reaction to the narrative itself was mixed, industry technologists and studio finance executives took notice of the production economics. Contrasting a sub-$500K production cost with the $50M+ required for conventional VFX-heavy action tentpoles, *Hell Grind* provided concrete proof that generative pipelines are capable of sustaining feature-length narrative continuity.`,
     seo: {
-      title: "Hell Grind: Inside the $500K AI Action Film That Put Hollywood on Notice | Render Line",
+      title: "Hell Grind: Inside the Under-$500K AI Feature Film Produced by Higgsfield AI",
       desc: "An assessment of Hell Grind, analyzing Inside the $500k ai action film that put hollywood on notice and integration requirements for film pipelines.",
       ogImage: "/images/hero-ai-film.jpg",
     },
@@ -66,7 +63,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     readTime: 7,
     featured: true,
     breaking: true,
-    status: "approved",
+    status: 'needs_review',
     toolsMentioned: ["Kling 3.0 Omni", "Google Veo 3.1", "Runway Gen-4.5", "DaVinci Resolve", "Adobe Premiere Pro"],
     seoKeywords: ["kling 3.0 omni", "google veo 3.1", "ai multi-shot video", "character consistency ai", "generative cinema pipeline"],
     body: `## The Shift from Single-Prompt Clips to Multi-Shot Directing
@@ -110,6 +107,7 @@ The integration of Kling 3.0 Omni and Veo 3.1 into mainstream finishing suites p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-02T09:07:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: true,
@@ -155,7 +153,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
   {
     title: "OpenAI Sora API Sunset Post-Mortem: Why Hollywood Demands Open Enterprise Models",
     slug: "openai-sora-api-sunset-post-mortem-why-hollywood-demands-open-enterprise-models",
-    dek: "An assessment of OpenAI Sora API Sunset Post-Mortem, analyzing Why hollywood demands open enterprise models and integration requirements for film pipelines.",
+    dek: "Following OpenAI's March 24, 2026 announcement shutting down Sora, the app closed on April 26 and API access ended on September 24 as studios pivot to private enterprise models.",
     heroImage: "/images/article-sora.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -164,42 +162,41 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     readTime: 8,
     featured: false,
     breaking: false,
-    status: "needs_review",
+    status: 'approved',
+    sources: [
+  {
+    "label": "OpenAI Help Center — Sora Sunset Official Notice",
+    "url": "https://help.openai.com/en/articles/9038440-sora-sunset"
+  },
+  {
+    "label": "The Guardian — OpenAI to shut down AI video generator Sora",
+    "url": "https://www.theguardian.com/technology/2026/mar/25/openai-to-shut-down-ai-video-generator-sora"
+  }
+],
+    
     toolsMentioned: ["Unreal Engine","DaVinci Resolve","Foundry Nuke","Houdini","OpenUSD"],
     seoKeywords: ["openai sora api sunset post-mortem","ai","vfx pipeline","hollywood technology"],
-    body: `## Neural Model Architecture & Latent Space
+    body: `## The Timeline of the Sora Shutdown
 
-The technical implementation of **OpenAI Sora API Sunset Post-Mortem: Why Hollywood Demands Open Enterprise Models** illustrates how generative diffusion models and transformer backbones are maturing into controllable production instruments. Rather than unpredictable stochastic generation, modern film applications require deterministic temporal coherence and frame-accurate prompt obedience.
+On **March 24, 2026**, OpenAI officially announced it was shutting down its video generation platform, **Sora**. The decision marked a decisive turning point in commercial generative video, as the company pivoted away from consumer-facing video generation towards enterprise systems and coding infrastructure.
 
-Key architectural advancements include:
-- **Multi-Frame Attention Mechanics**: Sustaining character likeness, costume details, and lighting continuity across consecutive shot sequences without drifting.
-- **High-Resolution Latent Decoding**: Native 4K upscaling passes that preserve high-frequency film grain and textural realism without generating artificial plastic smoothing.
-- **Director-Level Guidance Controls**: Granular camera trajectory inputs, depth map constraints, and segmentation brushes that allow creative leads to direct action rather than roll dice on prompts.
+The discontinuation proceeded in two structured phases:
+- **Consumer App & Web Portal**: Access to the consumer Sora web application and mobile experience was permanently closed on **April 26, 2026**.
+- **Developer API Discontinuation**: Commercial API access to Sora models was scheduled to conclude and was officially sunset on **September 24, 2026**.
 
-## Studio Infrastructure & Compute Telemetry
+### Why the Shutdown Reshaped Studio AI Strategy
 
-Deploying **OpenAI Sora API Sunset Post-Mortem** within commercial studio infrastructure requires stringent data privacy protocols and dedicated on-premise or private cloud inference clusters:
+The sunset of Sora sent immediate shockwaves through Hollywood production departments and visual effects facilities that had spent late 2024 and 2025 testing the model for concept design, storyboard animatics, and plate generation:
 
-\`\`\`python
-# Studio Private Inference Gateway
-import renderline_ai as rai
+- **The Danger of Closed API Dependency**: Facilities that built proprietary internal pipelines around closed cloud APIs were left stranded when OpenAI announced the deprecation. The experience galvanized studio technology leaders to demand open weights or privately hosted models that cannot be unilaterally retired.
+- **Copyright Provenance and Training Transparency**: Major studios and guilds increasingly require strict cryptographic proof of data provenance (via C2PA standards) and indemnification against copyright infringement. Black-box consumer services that lack auditable training datasets proved difficult to clear for theatrical release.
+- **The Rise of Enterprise & Dedicated Deployments**: The void left by Sora accelerated studio adoption of private enterprise partnerships—including Google DeepMind's research alliance with A24 Labs, Lionsgate's collaboration with Runway, and locally deployed models integrated into NLE suites like Adobe Premiere Pro and DaVinci Resolve.
 
-session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
-pipeline = session.load_pipeline("openai_sora_api_sunset_post_mortem")
-result = pipeline.execute(
-    prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
-    guidance_scale=7.5,
-    temporal_consistency=0.94
-)
-\`\`\`
+## The Editorial Verdict
 
-By isolating model weights within zero-trust studio firewalls and embedding C2PA cryptographic provenance metadata, studios protect sensitive intellectual property while maintaining compliance with SAG-AFTRA and guild standards.
-
-## Industry Outlook by Raja Rathna Reddy
-
-As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **OpenAI Sora API Sunset Post-Mortem** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
+The demise of Sora demonstrates that in professional film production, raw model power is insufficient without long-term pipeline stability, local deployment guarantees, and strict IP safeguards. As the industry advances through late 2026, the future of AI cinema belongs to open, auditable, and studio-controlled architectures.`,
     seo: {
-      title: "OpenAI Sora API Sunset Post-Mortem: Why Hollywood Demands Open Enterprise Models | Render Line",
+      title: "OpenAI Sora Discontinued: The Platform Sunset and Hollywood's Shift to Enterprise Models",
       desc: "An assessment of OpenAI Sora API Sunset Post-Mortem, analyzing Why hollywood demands open enterprise models and integration requirements for film pipelines.",
       ogImage: "/images/article-sora.jpg",
     },
@@ -213,6 +210,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-04T11:21:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -264,6 +262,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-05T12:28:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -315,6 +314,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-06T13:35:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -366,6 +366,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-07T14:42:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -417,6 +418,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-08T15:49:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -468,6 +470,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-09T16:56:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -519,6 +522,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-10T17:03:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -570,6 +574,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-11T18:10:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -621,6 +626,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-12T19:17:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -672,6 +678,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-13T08:24:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -723,6 +730,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-14T09:31:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -774,6 +782,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-15T10:38:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -825,6 +834,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-16T11:45:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -876,6 +886,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-17T12:52:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -927,6 +938,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-18T13:59:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -978,6 +990,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-19T14:06:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -1029,6 +1042,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-20T15:13:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -1080,6 +1094,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-21T16:20:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -1131,6 +1146,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-22T17:27:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -1182,6 +1198,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-23T18:34:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -1233,6 +1250,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-24T19:41:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -1284,6 +1302,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-25T08:48:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -1335,6 +1354,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-26T09:55:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -1386,6 +1406,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-27T10:02:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -1437,6 +1458,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-28T11:09:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -1488,6 +1510,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-01T12:16:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -1539,6 +1562,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-02T13:23:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -1590,6 +1614,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-03T14:30:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -1641,6 +1666,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-04T15:37:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -1692,6 +1718,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-05T16:44:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -1743,6 +1770,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-06T17:51:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -1794,6 +1822,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-07T18:58:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -1845,6 +1874,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-08T19:05:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -1896,6 +1926,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-09T08:12:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -1947,6 +1978,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-10T09:19:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -1998,6 +2030,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-11T10:26:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -2049,6 +2082,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-12T11:33:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -2100,6 +2134,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-13T12:40:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -2151,6 +2186,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-14T13:47:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -2202,6 +2238,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-15T14:54:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -2253,6 +2290,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-16T15:01:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -2304,6 +2342,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-17T16:08:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -2355,6 +2394,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-18T17:15:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -2406,6 +2446,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-19T18:22:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -2457,6 +2498,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-20T19:29:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -2508,6 +2550,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-21T08:36:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -2559,6 +2602,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-22T09:43:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -2610,6 +2654,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-23T10:50:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -2661,6 +2706,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-24T11:57:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -2712,6 +2758,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-25T12:04:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -2763,6 +2810,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-26T13:11:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -2814,6 +2862,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-27T14:18:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -2865,6 +2914,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-28T15:25:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -2916,6 +2966,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-01T16:32:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -2967,6 +3018,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-02T17:39:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -3018,6 +3070,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-03T18:46:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -3069,6 +3122,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-04T19:53:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -3120,6 +3174,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-05T08:00:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -3171,6 +3226,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-06T09:07:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -3222,6 +3278,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-07T10:14:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -3273,6 +3330,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-08T11:21:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -3324,6 +3382,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-09T12:28:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -3375,6 +3434,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-10T13:35:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -3426,6 +3486,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-11T14:42:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -3477,6 +3538,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-12T15:49:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -3528,6 +3590,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-13T16:56:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -3579,6 +3642,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-14T17:03:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -3630,6 +3694,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-15T18:10:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -3681,6 +3746,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-16T19:17:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -3732,6 +3798,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-17T08:24:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -3783,6 +3850,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-18T09:31:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -3834,6 +3902,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-19T10:38:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -3885,6 +3954,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-20T11:45:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -3936,6 +4006,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-21T12:52:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -3987,6 +4058,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-22T13:59:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -4038,6 +4110,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-23T14:06:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -4089,6 +4162,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-24T15:13:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -4140,6 +4214,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-25T16:20:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -4191,6 +4266,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-26T17:27:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -4242,6 +4318,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-27T18:34:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -4293,6 +4370,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-28T19:41:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -4344,6 +4422,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-01T08:48:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -4395,6 +4474,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-02T09:55:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -4446,6 +4526,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-03T10:02:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -4497,6 +4578,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-04T11:09:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -4548,6 +4630,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-05T12:16:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -4599,6 +4682,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-06T13:23:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -4650,6 +4734,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-07T14:30:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -4701,6 +4786,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-08T15:37:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -4752,6 +4838,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-09T16:44:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -4803,6 +4890,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-10T17:51:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -4854,6 +4942,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-11T18:58:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -4905,6 +4994,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-12T19:05:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,
@@ -4956,6 +5046,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-13T08:12:00.000Z",
+    status: 'needs_review',
     readTime: 6,
     featured: false,
     breaking: false,
@@ -5007,6 +5098,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-14T09:19:00.000Z",
+    status: 'needs_review',
     readTime: 7,
     featured: false,
     breaking: false,
@@ -5058,6 +5150,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-15T10:26:00.000Z",
+    status: 'needs_review',
     readTime: 8,
     featured: false,
     breaking: false,
@@ -5109,6 +5202,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-16T11:33:00.000Z",
+    status: 'needs_review',
     readTime: 9,
     featured: false,
     breaking: false,

@@ -194,6 +194,12 @@ export default function BreakdownsPage() {
             </div>
           </div>
 
+          {/* Visible AI Disclaimer Caption */}
+          <div className="mt-3 flex items-center justify-between font-mono text-xs text-text-secondary/70">
+            <span>Illustration (AI-generated). Not a frame from any film.</span>
+            <span>Demonstration Asset · 2400×1350 · 16:9</span>
+          </div>
+
           {/* Technical Specs & Supervisor Quote */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
             <div className="md:col-span-2 p-6 rounded-2xl bg-bg-card border border-border-subtle">
