@@ -19,6 +19,19 @@ export function FramelineIcon({ size = 34, className = '' }: FramelineIconProps)
         xmlns="http://www.w3.org/2000/svg"
         className="w-full h-full select-none"
       >
+        <defs>
+          <linearGradient id="rGradNav" x1="10" y1="9" x2="26" y2="27" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stopColor="#FF5B37"/>
+            <stop offset="50%" stopColor="#FF3314"/>
+            <stop offset="100%" stopColor="#E02600"/>
+          </linearGradient>
+          <linearGradient id="rLegNav" x1="17" y1="17" x2="26" y2="27" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stopColor="#FF4D2E"/>
+            <stop offset="60%" stopColor="#E02600"/>
+            <stop offset="100%" stopColor="#3EE6FF"/>
+          </linearGradient>
+        </defs>
+
         {/* Outer Precision Sensor Chassis */}
         <rect
           x="1.2"
@@ -67,38 +80,34 @@ export function FramelineIcon({ size = 34, className = '' }: FramelineIconProps)
 
         {/* Anamorphic Blue Flare Line across Lens Center */}
         <line
-          x1="4"
+          x1="3"
           y1="18"
-          x2="32"
+          x2="33"
           y2="18"
           stroke="#3EE6FF"
           strokeWidth="0.8"
-          strokeOpacity="0.25"
+          strokeOpacity="0.35"
         />
 
-        {/* Iconic Studio Tally Indicator (Preserving the core tally mark with cinema precision) */}
-        <circle
-          cx="18"
-          cy="18"
-          r="6.5"
-          stroke="#FF4D2E"
-          strokeWidth="1.4"
-          strokeOpacity="0.6"
+        {/* The Iconic Geometric "R" (RenderLine Cinema Core) */}
+        {/* Vertical Pillar */}
+        <rect x="10.5" y="9.5" width="3.4" height="17" rx="1.2" fill="url(#rGradNav)" />
+
+        {/* Upper Loop of "R" */}
+        <path
+          d="M13.9 9.5 H20.5 C23.5 9.5 25.5 11.2 25.5 13.8 C25.5 16.4 23.5 18.1 20.5 18.1 H13.9 V9.5 Z M13.9 12.8 V14.8 H20 C20.9 14.8 21.8 14.3 21.8 13.8 C21.8 13.3 20.9 12.8 20 12.8 H13.9 Z"
+          fill="url(#rGradNav)"
         />
-        <circle
-          cx="18"
-          cy="18"
-          r="3.5"
-          fill="#FF4D2E"
-          className="animate-pulse"
+
+        {/* Diagonal Kick Leg of "R" */}
+        <path
+          d="M17.2 17.6 L24 26.2 C24.4 26.7 25 26.7 25.5 26.3 C25.9 25.9 26 25.3 25.6 24.8 L19.8 17.2 Z"
+          fill="url(#rLegNav)"
         />
-        <circle
-          cx="18"
-          cy="18"
-          r="1.2"
-          fill="#FFFFFF"
-          opacity="0.9"
-        />
+
+        {/* Optical Sensor Core Dot on flare line */}
+        <circle cx="25.5" cy="18" r="1.6" fill="#3EE6FF" />
+        <circle cx="25.5" cy="18" r="0.7" fill="#FFFFFF" />
       </svg>
     </div>
   );
