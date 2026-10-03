@@ -61,10 +61,10 @@ const verifiedSources = [
   {
     source: "Runway Research — Introducing Runway Gen-4.5",
     url: "https://runway.com/research/introducing-runway-gen-4.5",
-    claim: "Runway Gen-4.5 was released in December 2025 with 4K resolution, camera choreography, and API integration.",
-    paraphrasedContent: "(December 2025) Runway research paper and release announcement details Gen-4.5 video generation architecture, 4K resolution, camera choreography, and multi-asset referencing.",
+    claim: "Runway Gen-4.5 was released in December 2025 with cinematic photorealistic output, prompt adherence, and motion quality.",
+    paraphrasedContent: "(December 2025) Runway research paper and release announcement details Gen-4.5 video generation architecture, prompt adherence, advanced motion quality, and visual fidelity.",
     keywords: ["Runway", "Gen-4"],
-    excerptRegex: /State-of-the-Art AI Video Generation/i
+    excerptRegex: /delivers cinematic, photorealistic outputs with precise prompt adherence, advanced motion quality/i
   },
   {
     source: "ByteDance Seedance — Introducing Seedance 2.5",
@@ -72,15 +72,15 @@ const verifiedSources = [
     claim: "ByteDance released Seedance 2.5 on 31 July 2026 with native 30s generation and flexible multimodal referencing.",
     paraphrasedContent: "(July 31, 2026) ByteDance announces Seedance 2.5 release featuring native 30s continuous one-take video generation, flexible multi-subject referencing, and dual-camera movement.",
     keywords: ["Seedance", "ByteDance"],
-    excerptRegex: /Introducing Seedance 2\.5/i
+    excerptRegex: /generate high-quality, 30-second audio-video clips in a single pass/i
   },
   {
     source: "Kling AI — Kling Video 3.0 Omni Multi-Shot Guide",
     url: "https://klingai.com/blog/kling-video-3-omni-multi-shot-native-audio-guide",
-    claim: "Kling 3.0 Omni features unified multimodal audio-visual generation and multi-shot storytelling.",
-    paraphrasedContent: "(August 2026) Kling AI publishes official technical guide for Kling Video 3.0 Omni, specifying native multi-shot generation, synchronized audio synthesis, and character consistency.",
+    claim: "Kling 3.0 Omni features unified multimodal audio-visual generation with synchronized dialogue.",
+    paraphrasedContent: "(August 2026) Kling AI publishes official technical guide for Kling Video 3.0 Omni, specifying native multi-shot generation, synchronized dialogue, and character consistency.",
     keywords: ["Kling", "Omni"],
-    excerptRegex: /Kling VIDEO 3\.0 Omni/i
+    excerptRegex: /enabling 15-second high-resolution clips with synchronized dialogue/i
   },
   {
     source: "Google DeepMind — Veo Generative Video Model",
@@ -93,10 +93,10 @@ const verifiedSources = [
   {
     source: "Luma AI — Ray 3.2 Video-to-Video",
     url: "https://lumalabs.ai/learning-center/articles/ray-3-2-video-to-video",
-    claim: "Luma Ray 3.2 delivers production-grade video-to-video and text-to-video diffusion.",
-    paraphrasedContent: "(July 2026) Luma AI Learning Center provides technical guide for Ray 3.2, introducing high-fidelity video-to-video style transfer and diffusion rendering.",
+    claim: "Luma Ray 3.2 delivers production-grade video-to-video footage transformation and diffusion rendering.",
+    paraphrasedContent: "(July 2026) Luma AI Learning Center provides technical guide for Ray 3.2, introducing high-fidelity video-to-video style transfer and footage transformation.",
     keywords: ["Ray 3.2", "Luma"],
-    excerptRegex: /Ray 3\.2 Video to Video/i
+    excerptRegex: /built for one clear job: transforming footage you already have/i
   },
   {
     source: "Foundry — Official Nuke 17.0 Release Announcement",
@@ -104,7 +104,7 @@ const verifiedSources = [
     claim: "Foundry released Nuke 17.0 on 26 Feb 2026, introducing native 3D Gaussian Splatting and USD workflows.",
     paraphrasedContent: "(February 26, 2026) Foundry officially announces Nuke 17.0, introducing native 3D Gaussian Splatting workflows, production-ready USD 3D system, and the project-scale BigCat ML node.",
     keywords: ["Foundry", "Nuke 17"],
-    excerptRegex: /Foundry releases Nuke 17\.0/i
+    excerptRegex: /Native Gaussian Splat support, new 3D system based on USD/i
   },
   {
     source: "Broadcast Beat — Foundry Releases Nuke 17.0",
@@ -112,7 +112,7 @@ const verifiedSources = [
     claim: "Foundry released Nuke 17.0 on 26 Feb 2026 with native Gaussian Splat manipulation and USD pipelines.",
     paraphrasedContent: "(February 26, 2026) Broadcast Beat reports Foundry released Nuke 17.0 in London on Feb 26, 2026, marking a major compositing evolution with native Gaussian Splat manipulation and USD pipelines.",
     keywords: ["February 26, 2026", "Nuke 17.0", "Foundry"],
-    excerptRegex: /Foundry releases Nuke 17\.0/i
+    excerptRegex: /released Nuke 17\.0, the latest version of its powerful compositing tool/i
   },
   {
     source: "News Shooter — Blackmagic Design Releases DaVinci Resolve 21.1.1",

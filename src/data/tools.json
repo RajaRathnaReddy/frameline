@@ -296,7 +296,7 @@
     "source_url": "https://digitalproduction.com/2026/05/22/maya-2027-1-adds-otio-to-sequencer/",
     "last_verified": "2026-10-03",
     "description": "Industry-standard 3D animation, rigging, character modeling, and simulation platform powering Hollywood feature animation.",
-    "longDescription": "Autodesk released Maya 2027 on 25 Mar 2026 and Maya 2027.1 on 21 May 2026, introducing OTIO support in Sequencer, LookdevX 2.1.0 texture projections, USD for Maya 0.36, and Smart Bevel enhancements.",
+    "longDescription": "Autodesk released Maya 2027 on 25 Mar 2026 and Maya 2027.1 on 21 May 2026, introducing OTIO support in Sequencer, LookdevX texture projections, USD for Maya 0.36, and Smart Bevel enhancements.",
     "features": [
       "Bifrost Procedural Ocean & Liquid Simulation",
       "USD Maya Integration & Lookdev",

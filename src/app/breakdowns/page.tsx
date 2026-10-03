@@ -197,7 +197,7 @@ export default function BreakdownsPage() {
           {/* Visible AI Disclaimer Caption */}
           <div className="mt-3 flex items-center justify-between font-mono text-xs text-text-secondary/70">
             <span>Illustration (AI-generated). Not a frame from any film.</span>
-            <span>Demonstration Asset · 2400×1350 · 16:9</span>
+            <span>2400×1350 · 16:9</span>
           </div>
 
           {/* Technical Specs & Supervisor Quote */}
