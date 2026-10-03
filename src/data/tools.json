@@ -45,7 +45,7 @@
       "Windows",
       "macOS"
     ],
-    "version": "1.3.1 (Subscription) / v7.1.4 (Legacy Perpetual)",
+    "version": "",
     "website": "https://www.topazlabs.com",
     "source_url": "https://www.topazlabs.com/pricing",
     "last_verified": "2026-10-03",
@@ -291,12 +291,12 @@
       "macOS",
       "Linux"
     ],
-    "version": "2026",
+    "version": "2027.1",
     "website": "https://www.autodesk.com/products/maya/overview",
-    "source_url": "https://www.cgchannel.com/2025/03/autodesk-releases-maya-2026-and-maya-creative-2026/",
+    "source_url": "https://digitalproduction.com/2026/05/22/maya-2027-1-adds-otio-to-sequencer/",
     "last_verified": "2026-10-03",
     "description": "Industry-standard 3D animation, rigging, character modeling, and simulation platform powering Hollywood feature animation.",
-    "longDescription": "Autodesk Maya 2026 is the cornerstone 3D animation software relied on by leading VFX houses and animation studios worldwide, featuring OpenPBR default shaders, Volume mode Booleans, native USD workflows, and Bifrost simulation.",
+    "longDescription": "Autodesk released Maya 2027 on 25 Mar 2026 and Maya 2027.1 on 21 May 2026, introducing OTIO support in Sequencer, LookdevX 2.1.0 texture projections, USD for Maya 0.36, and Smart Bevel enhancements.",
     "features": [
       "Bifrost Procedural Ocean & Liquid Simulation",
       "USD Maya Integration & Lookdev",

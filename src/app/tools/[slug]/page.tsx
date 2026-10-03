@@ -22,7 +22,7 @@ export async function generateMetadata({
   if (!tool) return { title: `Tool Not Found | ${SITE_NAME}` };
 
   return {
-    title: `${tool.name} (v${tool.version}) — Film & VFX Tool Profile | ${SITE_NAME}`,
+    title: tool.version ? `${tool.name} (v${tool.version}) — Film & VFX Tool Profile | ${SITE_NAME}` : `${tool.name} — Film & VFX Tool Profile | ${SITE_NAME}`,
     description: tool.description,
   };
 }
@@ -133,9 +133,11 @@ export default async function ToolProfilePage({
                   <h1 className="font-display text-3xl md:text-5xl font-black text-text-primary">
                     {tool.name}
                   </h1>
-                  <span className="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-accent-cyan">
-                    v{tool.version}
-                  </span>
+                  {tool.version && (
+                    <span className="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-accent-cyan">
+                      v{tool.version}
+                    </span>
+                  )}
                 </div>
                 <div className="flex flex-wrap items-center gap-2 font-mono text-xs text-text-secondary">
                   <span className="text-accent-lime uppercase">{tool.category}</span>

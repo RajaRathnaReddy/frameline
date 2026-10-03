@@ -599,7 +599,7 @@ export default function Navbar() {
                                   {tool.name}
                                 </div>
                                 <div className="text-[11px] text-text-secondary truncate">
-                                  {tool.category} &bull; v{tool.version}
+                                  {tool.category}{tool.version ? ` &bull; v${tool.version}` : ''}
                                 </div>
                               </div>
                             </Link>

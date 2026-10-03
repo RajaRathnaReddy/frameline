@@ -144,7 +144,7 @@ export default function ToolsContent() {
                       {tool.name}
                     </h3>
                     <span className="text-meta text-text-secondary/60 text-[10px] block mb-3">
-                      {tool.category} · V{tool.version}
+                      {tool.category}{tool.version ? ` · V${tool.version}` : ''}
                     </span>
                     <p className="text-text-secondary text-sm leading-relaxed mb-4 line-clamp-3">
                       {tool.description}
@@ -185,7 +185,7 @@ export default function ToolsContent() {
                   {tool.name}
                 </h3>
                 <span className="text-meta text-text-secondary/50 text-[10px]">
-                  {tool.category} · V{tool.version}
+                  {tool.category}{tool.version ? ` · V${tool.version}` : ''}
                 </span>
               </div>
               <div className="hidden md:flex gap-1.5">

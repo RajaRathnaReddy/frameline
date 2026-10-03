@@ -46,7 +46,7 @@
   },
   {
     "name": "OpenAI Sora",
-    "version": "1.0 / Turbo (Discontinued)",
+    "version": "Sora 2 / Sora 2 Pro (discontinued)",
     "company": "OpenAI",
     "maxLength": "60s",
     "resolution": "1080p",
@@ -123,7 +123,7 @@
   },
   {
     "name": "Higgsfield AI Engine",
-    "version": "2026.2 (Hell Grind)",
+    "version": "",
     "company": "Higgsfield AI",
     "maxLength": "95m (Compute)",
     "resolution": "1080p",

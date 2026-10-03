@@ -56,7 +56,7 @@ export default function ToolDirectoryTeaser() {
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-meta text-text-secondary/50 text-[10px]">
-                      V{tool.version}
+                      {tool.version ? `V${tool.version}` : ''}
                     </span>
                     <span className={`text-meta text-[10px] ${
                       tool.pricing === 'Free' ? 'text-accent-lime' :

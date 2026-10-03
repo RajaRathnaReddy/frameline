@@ -47,9 +47,14 @@ export default function AIModelTracker() {
                   }`}
                 >
                   <td className="px-5 py-4">
-                    <span className="font-display font-semibold text-text-primary text-sm">
+                    <span className="font-display font-semibold text-text-primary text-sm block">
                       {model.name}
                     </span>
+                    {model.version && (
+                      <span className="text-[11px] font-mono text-text-secondary/60">
+                        {model.version}
+                      </span>
+                    )}
                   </td>
                   <td className="px-5 py-4 text-text-secondary text-sm">{model.company}</td>
                   <td className="px-5 py-4">
@@ -88,7 +93,14 @@ export default function AIModelTracker() {
           <StaggerItem key={model.name}>
             <div className="glass-card rounded-lg p-4">
               <div className="flex items-center justify-between mb-3">
-                <span className="font-display font-semibold text-text-primary">{model.name}</span>
+                <div className="flex flex-col">
+                  <span className="font-display font-semibold text-text-primary">{model.name}</span>
+                  {model.version && (
+                    <span className="text-[10px] font-mono text-text-secondary/60">
+                      {model.version}
+                    </span>
+                  )}
+                </div>
                 <span className={`text-meta px-2.5 py-1 rounded-full text-[10px] font-semibold ${
                   model.apiStatus === 'live' ? 'pill-live' :
                   model.apiStatus === 'beta' ? 'pill-beta' : 'pill-sunset'
