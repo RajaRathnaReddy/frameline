@@ -93,8 +93,8 @@ const verifiedSources = [
   {
     source: "Luma AI — Ray 3.2 Video-to-Video",
     url: "https://lumalabs.ai/learning-center/articles/ray-3-2-video-to-video",
-    claim: "Luma Ray 3.2 delivers production-grade video-to-video footage transformation and diffusion rendering.",
-    paraphrasedContent: "(July 2026) Luma AI Learning Center provides technical guide for Ray 3.2, introducing high-fidelity video-to-video style transfer and footage transformation.",
+    claim: "Luma Ray 3.2 delivers production-grade video-to-video footage transformation.",
+    paraphrasedContent: "(July 2026) Luma AI Learning Center states Ray 3.2 is built for one clear job: transforming footage you already have.",
     keywords: ["Ray 3.2", "Luma"],
     excerptRegex: /built for one clear job: transforming footage you already have/i
   },
@@ -102,7 +102,7 @@ const verifiedSources = [
     source: "Foundry — Official Nuke 17.0 Release Announcement",
     url: "https://www.foundry.com/news-and-awards/foundry-releases-nuke-17-advancing-compositing-workflows",
     claim: "Foundry released Nuke 17.0 on 26 Feb 2026, introducing native 3D Gaussian Splatting and USD workflows.",
-    paraphrasedContent: "(February 26, 2026) Foundry officially announces Nuke 17.0, introducing native 3D Gaussian Splatting workflows, production-ready USD 3D system, and the project-scale BigCat ML node.",
+    paraphrasedContent: "(February 26, 2026) Foundry officially announces Nuke 17.0 with native Gaussian Splat support and a new 3D system based on USD.",
     keywords: ["Foundry", "Nuke 17"],
     excerptRegex: /Native Gaussian Splat support, new 3D system based on USD/i
   },
@@ -110,7 +110,7 @@ const verifiedSources = [
     source: "Broadcast Beat — Foundry Releases Nuke 17.0",
     url: "https://broadcastbeat.com/news/foundry-releases-nuke-17-0",
     claim: "Foundry released Nuke 17.0 on 26 Feb 2026 with native Gaussian Splat manipulation and USD pipelines.",
-    paraphrasedContent: "(February 26, 2026) Broadcast Beat reports Foundry released Nuke 17.0 in London on Feb 26, 2026, marking a major compositing evolution with native Gaussian Splat manipulation and USD pipelines.",
+    paraphrasedContent: "(February 26, 2026) Broadcast Beat reports Foundry released Nuke 17.0, the latest version of its powerful compositing tool.",
     keywords: ["February 26, 2026", "Nuke 17.0", "Foundry"],
     excerptRegex: /released Nuke 17\.0, the latest version of its powerful compositing tool/i
   },
@@ -118,7 +118,7 @@ const verifiedSources = [
     source: "News Shooter — Blackmagic Design Releases DaVinci Resolve 21.1.1",
     url: "https://www.newsshooter.com/2026/10/01/davinci-resolve-21-1-1/",
     claim: "Blackmagic Design released DaVinci Resolve 21.1.1 on 1 Oct 2026, adding trim editor audio controls and USAC decoding.",
-    paraphrasedContent: "(October 1, 2026) News Shooter reports Blackmagic Design released DaVinci Resolve 21.1.1, adding trim editor audio controls, USAC audio decoding on Windows 11, and multi-Fusion effect management.",
+    paraphrasedContent: "(October 1, 2026) News Shooter reports Blackmagic Design has released DaVinci Resolve 21.1.1.",
     keywords: ["DaVinci Resolve 21.1.1", "Blackmagic Design"],
     excerptRegex: /Blackmagic Design has released DaVinci Resolve 21\.1\.1/i
   },
@@ -126,7 +126,7 @@ const verifiedSources = [
     source: "SideFX — What's New in Houdini 22",
     url: "https://www.sidefx.com/products/whats-new-in-h22/",
     claim: "SideFX Houdini 22 provides 3D Gaussian Splatting, Copernicus GPU image context, and KineFX character animation.",
-    paraphrasedContent: "(July 2026) SideFX details Houdini 22 features including native 3D Gaussian Splatting editing/relighting, Copernicus GPU image context for textures/terrains, and KineFX character rigging.",
+    paraphrasedContent: "(July 2026) SideFX details Houdini 22 features production-ready Gaussian Splats to faster character, modeling, and look development.",
     keywords: ["Houdini", "SideFX"],
     excerptRegex: /production-ready Gaussian Splats to faster character, modeling, look development/i
   },
@@ -134,7 +134,7 @@ const verifiedSources = [
     source: "CGPress — Houdini 22 is Out",
     url: "https://cgpress.org/archives/houdini-22-is-out.html",
     claim: "SideFX released Houdini 22 on 16 Jul 2026 with major advances in procedural rigging and Copernicus.",
-    paraphrasedContent: "(July 16, 2026) CGPress announces SideFX released Houdini 22 on July 16, 2026, delivering major architectural advances in procedural rigging, Solaris USD, and Copernicus image processing.",
+    paraphrasedContent: "(July 16, 2026) CGPress reports updates to the procedural 3D software include production-ready Gaussian Splats.",
     keywords: ["Houdini 22", "CGPress"],
     excerptRegex: /procedural 3D software include production-ready Gaussian Splats/i
   },
@@ -142,7 +142,7 @@ const verifiedSources = [
     source: "Digital Production — Maya 2027.1 adds OTIO to Sequencer",
     url: "https://digitalproduction.com/2026/05/22/maya-2027-1-adds-otio-to-sequencer/",
     claim: "Autodesk released Maya 2027 on 25 Mar 2026 and Maya 2027.1 on 21 May 2026, adding OTIO to Sequencer.",
-    paraphrasedContent: "(May 22, 2026) Digital Production reports Autodesk released Maya 2027.1 on May 21, 2026 (following Maya 2027 on March 25, 2026), adding OpenTimelineIO (OTIO) to Sequencer and LookdevX texture projections.",
+    paraphrasedContent: "(May 22, 2026) Digital Production reports Maya 2027.1 adds support for OpenTimelineIO in the Sequencer.",
     keywords: ["Maya 2027.1", "Sequencer"],
     excerptRegex: /Maya 2027\.1 adds support for OpenTimelineIO in the Sequencer/i
   },
