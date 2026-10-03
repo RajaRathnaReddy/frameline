@@ -89,7 +89,7 @@ export default function ReviewsPage() {
                 <div className="mt-6 grid grid-cols-3 gap-4">
                   <div className="p-4 rounded-xl bg-bg-card border border-white/[0.06] text-center">
                     <span className="font-mono text-[10px] text-text-secondary uppercase block mb-1">
-                      FRAMELINE SCORE
+                      RENDERLINE SCORE
                     </span>
                     <div className="font-display text-3xl md:text-4xl font-black text-accent-gold">
                       {activeReview.score}
@@ -131,7 +131,7 @@ export default function ReviewsPage() {
                   {/* Verdict Box */}
                   <div className="p-5 rounded-2xl bg-bg-card border border-white/[0.08] mb-6">
                     <span className="font-mono text-xs uppercase tracking-wider text-accent-gold font-bold block mb-1">
-                      The Frameline Verdict
+                      The RenderLine Verdict
                     </span>
                     <p className="font-serif text-base text-text-primary leading-relaxed">
                       &ldquo;{activeReview.verdict}&rdquo;

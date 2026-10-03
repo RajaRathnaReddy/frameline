@@ -128,7 +128,7 @@ export interface ProductReview {
   category: 'Software' | 'Hardware' | 'AI Suite' | 'Camera Gear';
   heroImage: string;
   score: number; // e.g. 9.6
-  awardBadge?: string; // e.g. "FRAMELINE EDITORS' CHOICE"
+  awardBadge?: string; // e.g. "RENDERLINE EDITORS' CHOICE"
   verdict: string;
   pros: string[];
   cons: string[];

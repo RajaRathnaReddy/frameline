@@ -69,7 +69,7 @@ export default function NewsletterCTA() {
               Executive Film &amp; AI Intelligence.
             </h2>
             <p className="text-text-secondary text-base md:text-lg font-serif mb-2 max-w-xl mx-auto leading-relaxed">
-              Join 40,000+ VFX supervisors, technical directors, and studio executives who rely on FRAMELINE for unfiltered pipeline analysis and compute economics.
+              Join 40,000+ VFX supervisors, technical directors, and studio executives who rely on RENDERLINE for unfiltered pipeline analysis and compute economics.
             </p>
             <p className="text-xs font-mono text-text-tertiary mb-8">
               Curated by{' '}

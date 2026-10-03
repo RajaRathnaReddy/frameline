@@ -81,10 +81,10 @@ export function generateArticleJsonLd(article: Article, siteUrl: string = 'https
     },
     publisher: {
       '@type': 'Organization',
-      name: 'FRAMELINE',
+      name: 'RENDERLINE',
       logo: {
         '@type': 'ImageObject',
-        url: `${siteUrl}/images/frameline-logo.png`,
+        url: `${siteUrl}/renderline-logo.png`,
       },
     },
     mainEntityOfPage: {
@@ -108,7 +108,7 @@ export function buildArticleMetadata(article: Article, siteUrl: string = 'https:
   const keywords = [...(article.seoKeywords || []), ...article.tags];
 
   return {
-    title: `${article.title} — FRAMELINE`,
+    title: `${article.title} — RENDERLINE`,
     description: article.dek,
     keywords,
     authors: [{ name: article.author.name }],
@@ -116,7 +116,7 @@ export function buildArticleMetadata(article: Article, siteUrl: string = 'https:
       title: article.title,
       description: article.dek,
       url,
-      siteName: 'FRAMELINE',
+      siteName: 'RENDERLINE',
       type: 'article',
       publishedTime: article.publishedAt,
       modifiedTime: article.updatedAt || article.publishedAt,
@@ -136,7 +136,7 @@ export function buildArticleMetadata(article: Article, siteUrl: string = 'https:
       title: article.title,
       description: article.dek,
       images: [article.heroImage.startsWith('http') ? article.heroImage : `${siteUrl}${article.heroImage}`],
-      creator: article.author.socials?.twitter || '@framelinefilm',
+      creator: article.author.socials?.twitter || '@RAJARATHNAREDDY',
     },
     alternates: {
       canonical: url,

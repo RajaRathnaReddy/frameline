@@ -18,10 +18,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const tool = getToolBySlug(slug);
-  if (!tool) return { title: 'Tool Not Found | FRAMELINE' };
+  if (!tool) return { title: 'Tool Not Found | RENDERLINE' };
 
   return {
-    title: `${tool.name} (v${tool.version}) — Film & VFX Tool Profile | FRAMELINE`,
+    title: `${tool.name} (v${tool.version}) — Film & VFX Tool Profile | RENDERLINE`,
     description: tool.description,
   };
 }
@@ -195,7 +195,7 @@ export default async function ToolProfilePage({
         {relatedArticles.length > 0 && (
           <div className="mb-12">
             <h3 className="font-display text-2xl font-bold uppercase tracking-tight text-text-primary mb-6">
-              Frameline Coverage of {tool.name} ({relatedArticles.length})
+              RenderLine Coverage of {tool.name} ({relatedArticles.length})
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {relatedArticles.map((art) => (

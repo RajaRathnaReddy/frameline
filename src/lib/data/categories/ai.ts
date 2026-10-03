@@ -31,9 +31,9 @@ Deploying **Hell Grind** within commercial studio infrastructure requires string
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("hell_grind")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -48,7 +48,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Hell Grind** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Hell Grind: Inside the $500K AI Action Film That Put Hollywood on Notice | FRAMELINE",
+      title: "Hell Grind: Inside the $500K AI Action Film That Put Hollywood on Notice | RENDERLINE",
       desc: "Evaluating Hell Grind for production deployment: examining inside the $500k ai action film that put hollywood on notice, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/hero-ai-film.jpg",
     },
@@ -94,7 +94,7 @@ The technical breakthrough powering this leap lies in **volumetric spatio-tempor
 
 The integration of Kling 3.0 Omni and Veo 3.1 into mainstream finishing suites proves that AI is finding its permanent home as an accelerator for pre-vis, B-roll, and visual plate enhancement. When paired with traditional editorial discipline in DaVinci Resolve and Premiere Pro, these models provide directors with unprecedented visual agility without sacrificing cinematic intentionality.`,
     seo: {
-      title: "Kling 3.0 Omni & Google Veo 3.1 Enter Studio Production Pipelines | FRAMELINE",
+      title: "Kling 3.0 Omni & Google Veo 3.1 Enter Studio Production Pipelines | RENDERLINE",
       desc: "In-depth technical breakdown of Kling 3.0 Omni and Google Veo 3.1: achieving multi-shot narrative continuity, synced audio, and native NLE integration.",
       ogImage: "/images/ai-generative-video.jpg",
     },
@@ -128,9 +128,9 @@ Deploying **Google Veo 3.1 Gemini API Integration** within commercial studio inf
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("google_veo_3_1_gemini_api_integration")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -145,7 +145,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Google Veo 3.1 Gemini API Integration** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Google Veo 3.1 Gemini API Integration: Enterprise Multi-Camera Spatial Video | FRAMELINE",
+      title: "Google Veo 3.1 Gemini API Integration: Enterprise Multi-Camera Spatial Video | RENDERLINE",
       desc: "Evaluating Google Veo 3.1 Gemini API Integration for production deployment: examining enterprise multi-camera spatial video, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/review-camera.jpg",
     },
@@ -179,9 +179,9 @@ Deploying **OpenAI Sora API Sunset Post-Mortem** within commercial studio infras
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("openai_sora_api_sunset_post_mortem")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -196,7 +196,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **OpenAI Sora API Sunset Post-Mortem** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "OpenAI Sora API Sunset Post-Mortem: Why Hollywood Demands Open Enterprise Models | FRAMELINE",
+      title: "OpenAI Sora API Sunset Post-Mortem: Why Hollywood Demands Open Enterprise Models | RENDERLINE",
       desc: "Evaluating OpenAI Sora API Sunset Post-Mortem for production deployment: examining why hollywood demands open enterprise models, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/article-sora.jpg",
     },
@@ -230,9 +230,9 @@ Deploying **ByteDance Seedance 2.0 Guardrails** within commercial studio infrast
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("bytedance_seedance_2_0_guardrails")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -247,7 +247,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **ByteDance Seedance 2.0 Guardrails** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "ByteDance Seedance 2.0 Guardrails: SAG-AFTRA and Studio Likeness Accord | FRAMELINE",
+      title: "ByteDance Seedance 2.0 Guardrails: SAG-AFTRA and Studio Likeness Accord | RENDERLINE",
       desc: "Evaluating ByteDance Seedance 2.0 Guardrails for production deployment: examining sag-aftra and studio likeness accord, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
@@ -281,9 +281,9 @@ Deploying **Kuaishou Kling 4.0** within commercial studio infrastructure require
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("kuaishou_kling_4_0")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -298,7 +298,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Kuaishou Kling 4.0** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Kuaishou Kling 4.0: 10-Keyframe Temporal Guidance for Shot Direction | FRAMELINE",
+      title: "Kuaishou Kling 4.0: 10-Keyframe Temporal Guidance for Shot Direction | RENDERLINE",
       desc: "Evaluating Kuaishou Kling 4.0 for production deployment: examining 10-keyframe temporal guidance for shot direction, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
     },
@@ -332,9 +332,9 @@ Deploying **Luma Ray 3.2** within commercial studio infrastructure requires stri
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("luma_ray_3_2")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -349,7 +349,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Luma Ray 3.2** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Luma Ray 3.2: 16-Bit Linear EXR Export for ACEScg VFX Pipelines | FRAMELINE",
+      title: "Luma Ray 3.2: 16-Bit Linear EXR Export for ACEScg VFX Pipelines | RENDERLINE",
       desc: "Evaluating Luma Ray 3.2 for production deployment: examining 16-bit linear exr export for acescg vfx pipelines, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/color-grading-suite.jpg",
     },
@@ -383,9 +383,9 @@ Deploying **Runway Gen-4 Multimodal Camera Controls** within commercial studio i
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("runway_gen_4_multimodal_camera_controls")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -400,7 +400,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Runway Gen-4 Multimodal Camera Controls** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Runway Gen-4 Multimodal Camera Controls: Spatial Motion Brushes | FRAMELINE",
+      title: "Runway Gen-4 Multimodal Camera Controls: Spatial Motion Brushes | RENDERLINE",
       desc: "Evaluating Runway Gen-4 Multimodal Camera Controls for production deployment: examining spatial motion brushes, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
     },
@@ -434,9 +434,9 @@ Deploying **Self-Hosted Ollama 0.5 on RTX 6000 Ada** within commercial studio in
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("self_hosted_ollama_0_5_on_rtx_6000_ada")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -451,7 +451,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Self-Hosted Ollama 0.5 on RTX 6000 Ada** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Self-Hosted Ollama 0.5 on RTX 6000 Ada: Air-Gapped Script Breakdown | FRAMELINE",
+      title: "Self-Hosted Ollama 0.5 on RTX 6000 Ada: Air-Gapped Script Breakdown | RENDERLINE",
       desc: "Evaluating Self-Hosted Ollama 0.5 on RTX 6000 Ada for production deployment: examining air-gapped script breakdown, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
@@ -485,9 +485,9 @@ Deploying **OpenClaw Autonomous Multi-Agent Systems for Shot Status Classificati
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("openclaw_autonomous_multi_agent_systems_for_shot_status_classification")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -502,7 +502,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **OpenClaw Autonomous Multi-Agent Systems for Shot Status Classification** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "OpenClaw Autonomous Multi-Agent Systems for Shot Status Classification | FRAMELINE",
+      title: "OpenClaw Autonomous Multi-Agent Systems for Shot Status Classification | RENDERLINE",
       desc: "Field report on OpenClaw Autonomous Multi-Agent Systems for Shot Status Classification, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/hero-ai-film.jpg",
     },
@@ -536,9 +536,9 @@ Deploying **3D Gaussian Splatting in Production VFX** within commercial studio i
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("3d_gaussian_splatting_in_production_vfx")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -553,7 +553,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **3D Gaussian Splatting in Production VFX** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "3D Gaussian Splatting in Production VFX: Real-Time Depth-Guided Relighting | FRAMELINE",
+      title: "3D Gaussian Splatting in Production VFX: Real-Time Depth-Guided Relighting | RENDERLINE",
       desc: "Evaluating 3D Gaussian Splatting in Production VFX for production deployment: examining real-time depth-guided relighting, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },
@@ -587,9 +587,9 @@ Deploying **Radiance Field Camera Tracking** within commercial studio infrastruc
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("radiance_field_camera_tracking")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -604,7 +604,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Radiance Field Camera Tracking** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Radiance Field Camera Tracking: Sub-Pixel Solves on Feature Plates | FRAMELINE",
+      title: "Radiance Field Camera Tracking: Sub-Pixel Solves on Feature Plates | RENDERLINE",
       desc: "Evaluating Radiance Field Camera Tracking for production deployment: examining sub-pixel solves on feature plates, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
     },
@@ -638,9 +638,9 @@ Deploying **Luma Interactive 3D Splats for Automated Background Crowd Generation
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("luma_interactive_3d_splats_for_automated_background_crowd_generation")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -655,7 +655,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Luma Interactive 3D Splats for Automated Background Crowd Generation** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Luma Interactive 3D Splats for Automated Background Crowd Generation | FRAMELINE",
+      title: "Luma Interactive 3D Splats for Automated Background Crowd Generation | RENDERLINE",
       desc: "Field report on Luma Interactive 3D Splats for Automated Background Crowd Generation, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     },
@@ -689,9 +689,9 @@ Deploying **Foundry CopyCat Deep Dive** within commercial studio infrastructure 
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("foundry_copycat_deep_dive")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -706,7 +706,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Foundry CopyCat Deep Dive** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Foundry CopyCat Deep Dive: Machine-Learning Fremen Blue-Eye Segmentation | FRAMELINE",
+      title: "Foundry CopyCat Deep Dive: Machine-Learning Fremen Blue-Eye Segmentation | RENDERLINE",
       desc: "Evaluating Foundry CopyCat Deep Dive for production deployment: examining machine-learning fremen blue-eye segmentation, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/hero-ai-film.jpg",
     },
@@ -740,9 +740,9 @@ Deploying **Automated Neural Wire and Rig Removal in 4K ProRes Plates** within c
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("automated_neural_wire_and_rig_removal_in_4k_prores_plates")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -757,7 +757,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Automated Neural Wire and Rig Removal in 4K ProRes Plates** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Automated Neural Wire and Rig Removal in 4K ProRes Plates | FRAMELINE",
+      title: "Automated Neural Wire and Rig Removal in 4K ProRes Plates | RENDERLINE",
       desc: "Field report on Automated Neural Wire and Rig Removal in 4K ProRes Plates, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
@@ -791,9 +791,9 @@ Deploying **AI-Assisted Optical Flow** within commercial studio infrastructure r
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("ai_assisted_optical_flow")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -808,7 +808,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI-Assisted Optical Flow** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI-Assisted Optical Flow: Eliminating Shutter Artifacts in Retiming | FRAMELINE",
+      title: "AI-Assisted Optical Flow: Eliminating Shutter Artifacts in Retiming | RENDERLINE",
       desc: "Evaluating AI-Assisted Optical Flow for production deployment: examining eliminating shutter artifacts in retiming, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/ai-neural-editor.jpg",
     },
@@ -842,9 +842,9 @@ Deploying **Machine Learning Plate Denoising** within commercial studio infrastr
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("machine_learning_plate_denoising")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -859,7 +859,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Machine Learning Plate Denoising** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Machine Learning Plate Denoising: Preserving 35mm Grain Structure | FRAMELINE",
+      title: "Machine Learning Plate Denoising: Preserving 35mm Grain Structure | RENDERLINE",
       desc: "Evaluating Machine Learning Plate Denoising for production deployment: examining preserving 35mm grain structure, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
@@ -893,9 +893,9 @@ Deploying **Synthetic Dialogue Replacement** within commercial studio infrastruc
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("synthetic_dialogue_replacement")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -910,7 +910,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Synthetic Dialogue Replacement** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Synthetic Dialogue Replacement: Actor-Consented Vocoder Voice Re-Recording | FRAMELINE",
+      title: "Synthetic Dialogue Replacement: Actor-Consented Vocoder Voice Re-Recording | RENDERLINE",
       desc: "Evaluating Synthetic Dialogue Replacement for production deployment: examining actor-consented vocoder voice re-recording, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/hero-ai-film.jpg",
     },
@@ -944,9 +944,9 @@ Deploying **C2PA Cryptographic Watermarking** within commercial studio infrastru
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("c2pa_cryptographic_watermarking")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -961,7 +961,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **C2PA Cryptographic Watermarking** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "C2PA Cryptographic Watermarking: Establishing Cryptographic Lineage | FRAMELINE",
+      title: "C2PA Cryptographic Watermarking: Establishing Cryptographic Lineage | RENDERLINE",
       desc: "Evaluating C2PA Cryptographic Watermarking for production deployment: examining establishing cryptographic lineage, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/ai-generative-video.jpg",
     },
@@ -995,9 +995,9 @@ Deploying **EU AI Act Mandatory Machine-Readable Provenance Compliance Blueprint
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("eu_ai_act_mandatory_machine_readable_provenance_compliance_blueprint")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -1012,7 +1012,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **EU AI Act Mandatory Machine-Readable Provenance Compliance Blueprint** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "EU AI Act Mandatory Machine-Readable Provenance Compliance Blueprint | FRAMELINE",
+      title: "EU AI Act Mandatory Machine-Readable Provenance Compliance Blueprint | RENDERLINE",
       desc: "Field report on EU AI Act Mandatory Machine-Readable Provenance Compliance Blueprint, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/ai-neural-editor.jpg",
     },
@@ -1046,9 +1046,9 @@ Deploying **US Copyright Office Guidance** within commercial studio infrastructu
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("us_copyright_office_guidance")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -1063,7 +1063,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **US Copyright Office Guidance** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "US Copyright Office Guidance: Human Authorship Thresholds for Visual Prompts | FRAMELINE",
+      title: "US Copyright Office Guidance: Human Authorship Thresholds for Visual Prompts | RENDERLINE",
       desc: "Evaluating US Copyright Office Guidance for production deployment: examining human authorship thresholds for visual prompts, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1097,9 +1097,9 @@ Deploying **Digital Performer Escrow** within commercial studio infrastructure r
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("digital_performer_escrow")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -1114,7 +1114,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Digital Performer Escrow** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Digital Performer Escrow: Biometric Tokenization of Actor Likeness | FRAMELINE",
+      title: "Digital Performer Escrow: Biometric Tokenization of Actor Likeness | RENDERLINE",
       desc: "Evaluating Digital Performer Escrow for production deployment: examining biometric tokenization of actor likeness, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/hero-ai-film.jpg",
     },
@@ -1148,9 +1148,9 @@ Deploying **NVIDIA Blackwell B200 HGX** within commercial studio infrastructure 
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("nvidia_blackwell_b200_hgx")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -1165,7 +1165,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **NVIDIA Blackwell B200 HGX** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "NVIDIA Blackwell B200 HGX: Benchmarking Enterprise Studio Model Training | FRAMELINE",
+      title: "NVIDIA Blackwell B200 HGX: Benchmarking Enterprise Studio Model Training | RENDERLINE",
       desc: "Evaluating NVIDIA Blackwell B200 HGX for production deployment: examining benchmarking enterprise studio model training, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/ai-generative-video.jpg",
     },
@@ -1199,9 +1199,9 @@ Deploying **Apple M4 Ultra Unified Memory** within commercial studio infrastruct
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("apple_m4_ultra_unified_memory")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -1216,7 +1216,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Apple M4 Ultra Unified Memory** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Apple M4 Ultra Unified Memory: Running 70B Parameter LLMs on DIT Carts | FRAMELINE",
+      title: "Apple M4 Ultra Unified Memory: Running 70B Parameter LLMs on DIT Carts | RENDERLINE",
       desc: "Evaluating Apple M4 Ultra Unified Memory for production deployment: examining running 70b parameter llms on dit carts, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/ai-neural-editor.jpg",
     },
@@ -1250,9 +1250,9 @@ Deploying **Groq LPU Real-Time Inference** within commercial studio infrastructu
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("groq_lpu_real_time_inference")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -1267,7 +1267,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Groq LPU Real-Time Inference** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Groq LPU Real-Time Inference: Processing 500-Page Screenplays in Seconds | FRAMELINE",
+      title: "Groq LPU Real-Time Inference: Processing 500-Page Screenplays in Seconds | RENDERLINE",
       desc: "Evaluating Groq LPU Real-Time Inference for production deployment: examining processing 500-page screenplays in seconds, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1301,9 +1301,9 @@ Deploying **Cost-Per-Second Economics** within commercial studio infrastructure 
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("cost_per_second_economics")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -1318,7 +1318,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Cost-Per-Second Economics** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Cost-Per-Second Economics: Comparing Cloud Generative Video to Traditional VFX | FRAMELINE",
+      title: "Cost-Per-Second Economics: Comparing Cloud Generative Video to Traditional VFX | RENDERLINE",
       desc: "Evaluating Cost-Per-Second Economics for production deployment: examining comparing cloud generative video to traditional vfx, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1352,9 +1352,9 @@ Deploying **NeRF to OpenUSD Mesh Reconstruction** within commercial studio infra
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("nerf_to_openusd_mesh_reconstruction")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -1369,7 +1369,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **NeRF to OpenUSD Mesh Reconstruction** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "NeRF to OpenUSD Mesh Reconstruction: Generating Usable Collision Geometry | FRAMELINE",
+      title: "NeRF to OpenUSD Mesh Reconstruction: Generating Usable Collision Geometry | RENDERLINE",
       desc: "Evaluating NeRF to OpenUSD Mesh Reconstruction for production deployment: examining generating usable collision geometry, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/ai-generative-video.jpg",
     },
@@ -1403,9 +1403,9 @@ Deploying **Stable Diffusion 3.5 Medium** within commercial studio infrastructur
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("stable_diffusion_3_5_medium")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -1420,7 +1420,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Stable Diffusion 3.5 Medium** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Stable Diffusion 3.5 Medium: Local Texture Synthesis for 3D Asset Rigs | FRAMELINE",
+      title: "Stable Diffusion 3.5 Medium: Local Texture Synthesis for 3D Asset Rigs | RENDERLINE",
       desc: "Evaluating Stable Diffusion 3.5 Medium for production deployment: examining local texture synthesis for 3d asset rigs, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/ai-neural-editor.jpg",
     },
@@ -1454,9 +1454,9 @@ Deploying **Neural Style Transfer for Anamorphic Lens Flare Synthesis** within c
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("neural_style_transfer_for_anamorphic_lens_flare_synthesis")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -1471,7 +1471,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Neural Style Transfer for Anamorphic Lens Flare Synthesis** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Neural Style Transfer for Anamorphic Lens Flare Synthesis | FRAMELINE",
+      title: "Neural Style Transfer for Anamorphic Lens Flare Synthesis | RENDERLINE",
       desc: "Field report on Neural Style Transfer for Anamorphic Lens Flare Synthesis, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "https://images.unsplash.com/photo-1533561797500-4bad475fe661?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1505,9 +1505,9 @@ Deploying **Prompt Engineering for Cinematographers** within commercial studio i
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("prompt_engineering_for_cinematographers")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -1522,7 +1522,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Prompt Engineering for Cinematographers** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Prompt Engineering for Cinematographers: Translating Focal Lengths to Latent Space | FRAMELINE",
+      title: "Prompt Engineering for Cinematographers: Translating Focal Lengths to Latent Space | RENDERLINE",
       desc: "Evaluating Prompt Engineering for Cinematographers for production deployment: examining translating focal lengths to latent space, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/hero-ai-film.jpg",
     },
@@ -1556,9 +1556,9 @@ Deploying **Automated Subtitle and Multilingual Translation with Acoustic Synchr
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("automated_subtitle_and_multilingual_translation_with_acoustic_synchronization")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -1573,7 +1573,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Automated Subtitle and Multilingual Translation with Acoustic Synchronization** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Automated Subtitle and Multilingual Translation with Acoustic Synchronization | FRAMELINE",
+      title: "Automated Subtitle and Multilingual Translation with Acoustic Synchronization | RENDERLINE",
       desc: "Field report on Automated Subtitle and Multilingual Translation with Acoustic Synchronization, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/ai-generative-video.jpg",
     },
@@ -1607,9 +1607,9 @@ Deploying **AI Voice Cloning Ethics** within commercial studio infrastructure re
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("ai_voice_cloning_ethics")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -1624,7 +1624,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI Voice Cloning Ethics** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI Voice Cloning Ethics: SAG-AFTRA Approved Contractual Frameworks | FRAMELINE",
+      title: "AI Voice Cloning Ethics: SAG-AFTRA Approved Contractual Frameworks | RENDERLINE",
       desc: "Evaluating AI Voice Cloning Ethics for production deployment: examining sag-aftra approved contractual frameworks, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/ai-neural-editor.jpg",
     },
@@ -1658,9 +1658,9 @@ Deploying **Real-Time Facial Motion Capture Retargeting Using Vision Transformer
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("real_time_facial_motion_capture_retargeting_using_vision_transformers")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -1675,7 +1675,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Real-Time Facial Motion Capture Retargeting Using Vision Transformers** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Real-Time Facial Motion Capture Retargeting Using Vision Transformers | FRAMELINE",
+      title: "Real-Time Facial Motion Capture Retargeting Using Vision Transformers | RENDERLINE",
       desc: "Field report on Real-Time Facial Motion Capture Retargeting Using Vision Transformers, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1709,9 +1709,9 @@ Deploying **Depth Map Estimation** within commercial studio infrastructure requi
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("depth_map_estimation")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -1726,7 +1726,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Depth Map Estimation** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Depth Map Estimation: Monocular Depth Anything V2 in Production Comp | FRAMELINE",
+      title: "Depth Map Estimation: Monocular Depth Anything V2 in Production Comp | RENDERLINE",
       desc: "Evaluating Depth Map Estimation for production deployment: examining monocular depth anything v2 in production comp, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/hero-ai-film.jpg",
     },
@@ -1760,9 +1760,9 @@ Deploying **Semantic Segmentation in Nuke** within commercial studio infrastruct
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("semantic_segmentation_in_nuke")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -1777,7 +1777,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Semantic Segmentation in Nuke** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Semantic Segmentation in Nuke: Automatic Mattes for Complex Foliage | FRAMELINE",
+      title: "Semantic Segmentation in Nuke: Automatic Mattes for Complex Foliage | RENDERLINE",
       desc: "Evaluating Semantic Segmentation in Nuke for production deployment: examining automatic mattes for complex foliage, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/nuke-vfx-comp.jpg",
     },
@@ -1811,9 +1811,9 @@ Deploying **Neural Inpainting for Anamorphic Sensor Dust and Dirt Clean-Up** wit
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("neural_inpainting_for_anamorphic_sensor_dust_and_dirt_clean_up")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -1828,7 +1828,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Neural Inpainting for Anamorphic Sensor Dust and Dirt Clean-Up** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Neural Inpainting for Anamorphic Sensor Dust and Dirt Clean-Up | FRAMELINE",
+      title: "Neural Inpainting for Anamorphic Sensor Dust and Dirt Clean-Up | RENDERLINE",
       desc: "Field report on Neural Inpainting for Anamorphic Sensor Dust and Dirt Clean-Up, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1862,9 +1862,9 @@ Deploying **AI Storyboard Generation** within commercial studio infrastructure r
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("ai_storyboard_generation")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -1879,7 +1879,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI Storyboard Generation** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI Storyboard Generation: Maintaining Character Consistency Across 80 Panels | FRAMELINE",
+      title: "AI Storyboard Generation: Maintaining Character Consistency Across 80 Panels | RENDERLINE",
       desc: "Evaluating AI Storyboard Generation for production deployment: examining maintaining character consistency across 80 panels, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1913,9 +1913,9 @@ Deploying **Volumetric Video Reconstruction** within commercial studio infrastru
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("volumetric_video_reconstruction")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -1930,7 +1930,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Volumetric Video Reconstruction** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Volumetric Video Reconstruction: Multi-View Neural Radiance Fields | FRAMELINE",
+      title: "Volumetric Video Reconstruction: Multi-View Neural Radiance Fields | RENDERLINE",
       desc: "Evaluating Volumetric Video Reconstruction for production deployment: examining multi-view neural radiance fields, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/ai-neural-editor.jpg",
     },
@@ -1964,9 +1964,9 @@ Deploying **Synthetic Atmospheric Volume Synthesis** within commercial studio in
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("synthetic_atmospheric_volume_synthesis")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -1981,7 +1981,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Synthetic Atmospheric Volume Synthesis** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Synthetic Atmospheric Volume Synthesis: Generating Realistic Smoke and Fire Latents | FRAMELINE",
+      title: "Synthetic Atmospheric Volume Synthesis: Generating Realistic Smoke and Fire Latents | RENDERLINE",
       desc: "Evaluating Synthetic Atmospheric Volume Synthesis for production deployment: examining generating realistic smoke and fire latents, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2015,9 +2015,9 @@ Deploying **AI Audio Stem Separation** within commercial studio infrastructure r
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("ai_audio_stem_separation")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -2032,7 +2032,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI Audio Stem Separation** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI Audio Stem Separation: Isolate Dialogue from Complex Location Bleed | FRAMELINE",
+      title: "AI Audio Stem Separation: Isolate Dialogue from Complex Location Bleed | RENDERLINE",
       desc: "Evaluating AI Audio Stem Separation for production deployment: examining isolate dialogue from complex location bleed, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2066,9 +2066,9 @@ Deploying **Machine Learning Motion Blur Synthesis** within commercial studio in
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("machine_learning_motion_blur_synthesis")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -2083,7 +2083,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Machine Learning Motion Blur Synthesis** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Machine Learning Motion Blur Synthesis: Vector-Guided Frame Interpolation | FRAMELINE",
+      title: "Machine Learning Motion Blur Synthesis: Vector-Guided Frame Interpolation | RENDERLINE",
       desc: "Evaluating Machine Learning Motion Blur Synthesis for production deployment: examining vector-guided frame interpolation, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2117,9 +2117,9 @@ Deploying **Automated Crowd Simulation Trajectory Generation via Reinforcement L
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("automated_crowd_simulation_trajectory_generation_via_reinforcement_learning")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -2134,7 +2134,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Automated Crowd Simulation Trajectory Generation via Reinforcement Learning** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Automated Crowd Simulation Trajectory Generation via Reinforcement Learning | FRAMELINE",
+      title: "Automated Crowd Simulation Trajectory Generation via Reinforcement Learning | RENDERLINE",
       desc: "Field report on Automated Crowd Simulation Trajectory Generation via Reinforcement Learning, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/breakdown-creature.jpg",
     },
@@ -2168,9 +2168,9 @@ Deploying **Neural Camera Tracking** within commercial studio infrastructure req
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("neural_camera_tracking")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -2185,7 +2185,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Neural Camera Tracking** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Neural Camera Tracking: Optical Flow Solves for Featureless Green Screens | FRAMELINE",
+      title: "Neural Camera Tracking: Optical Flow Solves for Featureless Green Screens | RENDERLINE",
       desc: "Evaluating Neural Camera Tracking for production deployment: examining optical flow solves for featureless green screens, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/review-camera.jpg",
     },
@@ -2219,9 +2219,9 @@ Deploying **Digital Human Muscle Simulation** within commercial studio infrastru
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("digital_human_muscle_simulation")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -2236,7 +2236,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Digital Human Muscle Simulation** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Digital Human Muscle Simulation: Physics-Informed Neural Networks | FRAMELINE",
+      title: "Digital Human Muscle Simulation: Physics-Informed Neural Networks | RENDERLINE",
       desc: "Evaluating Digital Human Muscle Simulation for production deployment: examining physics-informed neural networks, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/article-sora.jpg",
     },
@@ -2270,9 +2270,9 @@ Deploying **Neural Texture Compression** within commercial studio infrastructure
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("neural_texture_compression")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -2287,7 +2287,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Neural Texture Compression** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Neural Texture Compression: Reducing 8K UDIM VRAM Footprint by 75% | FRAMELINE",
+      title: "Neural Texture Compression: Reducing 8K UDIM VRAM Footprint by 75% | RENDERLINE",
       desc: "Evaluating Neural Texture Compression for production deployment: examining reducing 8k udim vram footprint by 75%, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2321,9 +2321,9 @@ Deploying **Generative Sound Effects** within commercial studio infrastructure r
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("generative_sound_effects")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -2338,7 +2338,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Generative Sound Effects** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Generative Sound Effects: Synthesizing Foley from On-Screen Pixel Motion | FRAMELINE",
+      title: "Generative Sound Effects: Synthesizing Foley from On-Screen Pixel Motion | RENDERLINE",
       desc: "Evaluating Generative Sound Effects for production deployment: examining synthesizing foley from on-screen pixel motion, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2372,9 +2372,9 @@ Deploying **Real-Time Speech-to-Animation** within commercial studio infrastruct
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("real_time_speech_to_animation")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -2389,7 +2389,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Real-Time Speech-to-Animation** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Real-Time Speech-to-Animation: Audio-Driven Facial Rig Deformations | FRAMELINE",
+      title: "Real-Time Speech-to-Animation: Audio-Driven Facial Rig Deformations | RENDERLINE",
       desc: "Evaluating Real-Time Speech-to-Animation for production deployment: examining audio-driven facial rig deformations, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2423,9 +2423,9 @@ Deploying **Synthetic Weather Generation** within commercial studio infrastructu
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("synthetic_weather_generation")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -2440,7 +2440,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Synthetic Weather Generation** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Synthetic Weather Generation: Dynamic Rain and Snow Infill for Exterior Plates | FRAMELINE",
+      title: "Synthetic Weather Generation: Dynamic Rain and Snow Infill for Exterior Plates | RENDERLINE",
       desc: "Evaluating Synthetic Weather Generation for production deployment: examining dynamic rain and snow infill for exterior plates, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2474,9 +2474,9 @@ Deploying **AI Color Grading Assistants** within commercial studio infrastructur
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("ai_color_grading_assistants")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -2491,7 +2491,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI Color Grading Assistants** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI Color Grading Assistants: Matching Diverse Multi-Camera Sensors Automatically | FRAMELINE",
+      title: "AI Color Grading Assistants: Matching Diverse Multi-Camera Sensors Automatically | RENDERLINE",
       desc: "Evaluating AI Color Grading Assistants for production deployment: examining matching diverse multi-camera sensors automatically, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2525,9 +2525,9 @@ Deploying **Optical Character Recognition for Automated Slate and Metadata Loggi
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("optical_character_recognition_for_automated_slate_and_metadata_logging")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -2542,7 +2542,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Optical Character Recognition for Automated Slate and Metadata Logging** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Optical Character Recognition for Automated Slate and Metadata Logging | FRAMELINE",
+      title: "Optical Character Recognition for Automated Slate and Metadata Logging | RENDERLINE",
       desc: "Field report on Optical Character Recognition for Automated Slate and Metadata Logging, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/hero-ai-film.jpg",
     },
@@ -2576,9 +2576,9 @@ Deploying **Real-Time Neural Denoising in Viewport Render Engines** within comme
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("real_time_neural_denoising_in_viewport_render_engines")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -2593,7 +2593,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Real-Time Neural Denoising in Viewport Render Engines** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Real-Time Neural Denoising in Viewport Render Engines | FRAMELINE",
+      title: "Real-Time Neural Denoising in Viewport Render Engines | RENDERLINE",
       desc: "Field report on Real-Time Neural Denoising in Viewport Render Engines, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2627,9 +2627,9 @@ Deploying **AI-Driven Asset Tagging** within commercial studio infrastructure re
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("ai_driven_asset_tagging")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -2644,7 +2644,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI-Driven Asset Tagging** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI-Driven Asset Tagging: Organizing 500,000 Studio Digital Assets | FRAMELINE",
+      title: "AI-Driven Asset Tagging: Organizing 500,000 Studio Digital Assets | RENDERLINE",
       desc: "Evaluating AI-Driven Asset Tagging for production deployment: examining organizing 500,000 studio digital assets, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/ai-neural-editor.jpg",
     },
@@ -2678,9 +2678,9 @@ Deploying **Synthetic Lens Distortion Calibration** within commercial studio inf
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("synthetic_lens_distortion_calibration")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -2695,7 +2695,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Synthetic Lens Distortion Calibration** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Synthetic Lens Distortion Calibration: Modeling Vintage Glass Aberrations | FRAMELINE",
+      title: "Synthetic Lens Distortion Calibration: Modeling Vintage Glass Aberrations | RENDERLINE",
       desc: "Evaluating Synthetic Lens Distortion Calibration for production deployment: examining modeling vintage glass aberrations, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1533561797500-4bad475fe661?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2729,9 +2729,9 @@ Deploying **Automated ShotGrid Task Estimation via Historical Project Analysis**
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("automated_shotgrid_task_estimation_via_historical_project_analysis")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -2746,7 +2746,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Automated ShotGrid Task Estimation via Historical Project Analysis** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Automated ShotGrid Task Estimation via Historical Project Analysis | FRAMELINE",
+      title: "Automated ShotGrid Task Estimation via Historical Project Analysis | RENDERLINE",
       desc: "Field report on Automated ShotGrid Task Estimation via Historical Project Analysis, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/hero-ai-film.jpg",
     },
@@ -2780,9 +2780,9 @@ Deploying **AI Pre-Lighting Optimization** within commercial studio infrastructu
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("ai_pre_lighting_optimization")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -2797,7 +2797,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI Pre-Lighting Optimization** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI Pre-Lighting Optimization: Predicting Photon Distribution on Virtual Stages | FRAMELINE",
+      title: "AI Pre-Lighting Optimization: Predicting Photon Distribution on Virtual Stages | RENDERLINE",
       desc: "Evaluating AI Pre-Lighting Optimization for production deployment: examining predicting photon distribution on virtual stages, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/ai-generative-video.jpg",
     },
@@ -2831,9 +2831,9 @@ Deploying **Generative Background Matte Painting** within commercial studio infr
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("generative_background_matte_painting")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -2848,7 +2848,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Generative Background Matte Painting** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Generative Background Matte Painting: Seamless Horizon Inpainting | FRAMELINE",
+      title: "Generative Background Matte Painting: Seamless Horizon Inpainting | RENDERLINE",
       desc: "Evaluating Generative Background Matte Painting for production deployment: examining seamless horizon inpainting, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2882,9 +2882,9 @@ Deploying **Machine Learning Cloth Drape Prediction for High-Speed Action Scenes
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("machine_learning_cloth_drape_prediction_for_high_speed_action_scenes")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -2899,7 +2899,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Machine Learning Cloth Drape Prediction for High-Speed Action Scenes** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Machine Learning Cloth Drape Prediction for High-Speed Action Scenes | FRAMELINE",
+      title: "Machine Learning Cloth Drape Prediction for High-Speed Action Scenes | RENDERLINE",
       desc: "Field report on Machine Learning Cloth Drape Prediction for High-Speed Action Scenes, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2933,9 +2933,9 @@ Deploying **Neural Hair Groom Dynamics** within commercial studio infrastructure
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("neural_hair_groom_dynamics")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -2950,7 +2950,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Neural Hair Groom Dynamics** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Neural Hair Groom Dynamics: Accelerating Stranded Hair Solves | FRAMELINE",
+      title: "Neural Hair Groom Dynamics: Accelerating Stranded Hair Solves | RENDERLINE",
       desc: "Evaluating Neural Hair Groom Dynamics for production deployment: examining accelerating stranded hair solves, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/ai-neural-editor.jpg",
     },
@@ -2984,9 +2984,9 @@ Deploying **Automated Screenplay Formatting and Scene Heading Classification** w
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("automated_screenplay_formatting_and_scene_heading_classification")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -3001,7 +3001,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Automated Screenplay Formatting and Scene Heading Classification** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Automated Screenplay Formatting and Scene Heading Classification | FRAMELINE",
+      title: "Automated Screenplay Formatting and Scene Heading Classification | RENDERLINE",
       desc: "Field report on Automated Screenplay Formatting and Scene Heading Classification, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/ai-generative-video.jpg",
     },
@@ -3035,9 +3035,9 @@ Deploying **Generative Concept Art Iteration** within commercial studio infrastr
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("generative_concept_art_iteration")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -3052,7 +3052,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Generative Concept Art Iteration** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Generative Concept Art Iteration: Rapid Prototyping for Art Directors | FRAMELINE",
+      title: "Generative Concept Art Iteration: Rapid Prototyping for Art Directors | RENDERLINE",
       desc: "Evaluating Generative Concept Art Iteration for production deployment: examining rapid prototyping for art directors, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/hero-vfx-breakdown.jpg",
     },
@@ -3086,9 +3086,9 @@ Deploying **Real-Time Video-to-Vector Tracking for Roto and Paint** within comme
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("real_time_video_to_vector_tracking_for_roto_and_paint")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -3103,7 +3103,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Real-Time Video-to-Vector Tracking for Roto and Paint** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Real-Time Video-to-Vector Tracking for Roto and Paint | FRAMELINE",
+      title: "Real-Time Video-to-Vector Tracking for Roto and Paint | RENDERLINE",
       desc: "Field report on Real-Time Video-to-Vector Tracking for Roto and Paint, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3137,9 +3137,9 @@ Deploying **AI Camera Shake Generation** within commercial studio infrastructure
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("ai_camera_shake_generation")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -3154,7 +3154,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI Camera Shake Generation** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI Camera Shake Generation: Extracting Natural Handheld Profiles from Film | FRAMELINE",
+      title: "AI Camera Shake Generation: Extracting Natural Handheld Profiles from Film | RENDERLINE",
       desc: "Evaluating AI Camera Shake Generation for production deployment: examining extracting natural handheld profiles from film, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
@@ -3188,9 +3188,9 @@ Deploying **Semantic Search for Studio Footage** within commercial studio infras
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("semantic_search_for_studio_footage")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -3205,7 +3205,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Semantic Search for Studio Footage** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Semantic Search for Studio Footage: Searching Archives by Emotional Cadence | FRAMELINE",
+      title: "Semantic Search for Studio Footage: Searching Archives by Emotional Cadence | RENDERLINE",
       desc: "Evaluating Semantic Search for Studio Footage for production deployment: examining searching archives by emotional cadence, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/ai-generative-video.jpg",
     },
@@ -3239,9 +3239,9 @@ Deploying **Neural Radiance Caching** within commercial studio infrastructure re
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("neural_radiance_caching")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -3256,7 +3256,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Neural Radiance Caching** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Neural Radiance Caching: Speeding Up Production Offline Path Tracing | FRAMELINE",
+      title: "Neural Radiance Caching: Speeding Up Production Offline Path Tracing | RENDERLINE",
       desc: "Evaluating Neural Radiance Caching for production deployment: examining speeding up production offline path tracing, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/article-sora.jpg",
     },
@@ -3290,9 +3290,9 @@ Deploying **Synthetic Dialogue Lip Sync** within commercial studio infrastructur
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("synthetic_dialogue_lip_sync")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -3307,7 +3307,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Synthetic Dialogue Lip Sync** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Synthetic Dialogue Lip Sync: Automated Phoneme Alignment for Foreign Releases | FRAMELINE",
+      title: "Synthetic Dialogue Lip Sync: Automated Phoneme Alignment for Foreign Releases | RENDERLINE",
       desc: "Evaluating Synthetic Dialogue Lip Sync for production deployment: examining automated phoneme alignment for foreign releases, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3341,9 +3341,9 @@ Deploying **Machine Learning Keying** within commercial studio infrastructure re
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("machine_learning_keying")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -3358,7 +3358,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Machine Learning Keying** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Machine Learning Keying: Soft Edge Matte Extraction on Complex Hair Plates | FRAMELINE",
+      title: "Machine Learning Keying: Soft Edge Matte Extraction on Complex Hair Plates | RENDERLINE",
       desc: "Evaluating Machine Learning Keying for production deployment: examining soft edge matte extraction on complex hair plates, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/hero-ai-film.jpg",
     },
@@ -3392,9 +3392,9 @@ Deploying **AI Render Farm Anomaly Detection** within commercial studio infrastr
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("ai_render_farm_anomaly_detection")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -3409,7 +3409,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI Render Farm Anomaly Detection** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI Render Farm Anomaly Detection: Predicting Render Crashes Before Failure | FRAMELINE",
+      title: "AI Render Farm Anomaly Detection: Predicting Render Crashes Before Failure | RENDERLINE",
       desc: "Evaluating AI Render Farm Anomaly Detection for production deployment: examining predicting render crashes before failure, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3443,9 +3443,9 @@ Deploying **Real-Time Pose Estimation for Pre-Visualization Stunt Blocking** wit
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("real_time_pose_estimation_for_pre_visualization_stunt_blocking")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -3460,7 +3460,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Real-Time Pose Estimation for Pre-Visualization Stunt Blocking** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Real-Time Pose Estimation for Pre-Visualization Stunt Blocking | FRAMELINE",
+      title: "Real-Time Pose Estimation for Pre-Visualization Stunt Blocking | RENDERLINE",
       desc: "Field report on Real-Time Pose Estimation for Pre-Visualization Stunt Blocking, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/mocap-performance-stage.jpg",
     },
@@ -3494,9 +3494,9 @@ Deploying **Synthetic Motion Vectors** within commercial studio infrastructure r
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("synthetic_motion_vectors")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -3511,7 +3511,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Synthetic Motion Vectors** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Synthetic Motion Vectors: Enhancing Post-Motion Blur Quality | FRAMELINE",
+      title: "Synthetic Motion Vectors: Enhancing Post-Motion Blur Quality | RENDERLINE",
       desc: "Evaluating Synthetic Motion Vectors for production deployment: examining enhancing post-motion blur quality, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3545,9 +3545,9 @@ Deploying **Generative Ambient Score Mockups** within commercial studio infrastr
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("generative_ambient_score_mockups")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -3562,7 +3562,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Generative Ambient Score Mockups** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Generative Ambient Score Mockups: Accelerating Composer Temp Tracks | FRAMELINE",
+      title: "Generative Ambient Score Mockups: Accelerating Composer Temp Tracks | RENDERLINE",
       desc: "Evaluating Generative Ambient Score Mockups for production deployment: examining accelerating composer temp tracks, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3596,9 +3596,9 @@ Deploying **Automated Continuity Error Detection Across Multi-Day Location Takes
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("automated_continuity_error_detection_across_multi_day_location_takes")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -3613,7 +3613,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Automated Continuity Error Detection Across Multi-Day Location Takes** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Automated Continuity Error Detection Across Multi-Day Location Takes | FRAMELINE",
+      title: "Automated Continuity Error Detection Across Multi-Day Location Takes | RENDERLINE",
       desc: "Field report on Automated Continuity Error Detection Across Multi-Day Location Takes, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/ai-generative-video.jpg",
     },
@@ -3647,9 +3647,9 @@ Deploying **Neural Super-Sampling** within commercial studio infrastructure requ
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("neural_super_sampling")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -3664,7 +3664,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Neural Super-Sampling** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Neural Super-Sampling: Real-Time 1080p to 4K Upscaling in Game Engines | FRAMELINE",
+      title: "Neural Super-Sampling: Real-Time 1080p to 4K Upscaling in Game Engines | RENDERLINE",
       desc: "Evaluating Neural Super-Sampling for production deployment: examining real-time 1080p to 4k upscaling in game engines, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/ai-generative-video.jpg",
     },
@@ -3698,9 +3698,9 @@ Deploying **AI-Powered Lens Flare Removal** within commercial studio infrastruct
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("ai_powered_lens_flare_removal")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -3715,7 +3715,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI-Powered Lens Flare Removal** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI-Powered Lens Flare Removal: Cleaning Unwanted Practical Reflections | FRAMELINE",
+      title: "AI-Powered Lens Flare Removal: Cleaning Unwanted Practical Reflections | RENDERLINE",
       desc: "Evaluating AI-Powered Lens Flare Removal for production deployment: examining cleaning unwanted practical reflections, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1533561797500-4bad475fe661?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3749,9 +3749,9 @@ Deploying **Synthetic Water Surface Generation** within commercial studio infras
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("synthetic_water_surface_generation")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -3766,7 +3766,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Synthetic Water Surface Generation** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Synthetic Water Surface Generation: Accelerating Ocean Wake Computations | FRAMELINE",
+      title: "Synthetic Water Surface Generation: Accelerating Ocean Wake Computations | RENDERLINE",
       desc: "Evaluating Synthetic Water Surface Generation for production deployment: examining accelerating ocean wake computations, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/hero-ai-film.jpg",
     },
@@ -3800,9 +3800,9 @@ Deploying **Automated Film Grain Synthesis** within commercial studio infrastruc
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("automated_film_grain_synthesis")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -3817,7 +3817,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Automated Film Grain Synthesis** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Automated Film Grain Synthesis: Matching Kodak and Fujifilm Stock Profiles | FRAMELINE",
+      title: "Automated Film Grain Synthesis: Matching Kodak and Fujifilm Stock Profiles | RENDERLINE",
       desc: "Evaluating Automated Film Grain Synthesis for production deployment: examining matching kodak and fujifilm stock profiles, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/ai-generative-video.jpg",
     },
@@ -3851,9 +3851,9 @@ Deploying **Neural Network Depth of Field** within commercial studio infrastruct
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("neural_network_depth_of_field")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -3868,7 +3868,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Neural Network Depth of Field** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Neural Network Depth of Field: Physically Accurate Bokeh Synthesis | FRAMELINE",
+      title: "Neural Network Depth of Field: Physically Accurate Bokeh Synthesis | RENDERLINE",
       desc: "Evaluating Neural Network Depth of Field for production deployment: examining physically accurate bokeh synthesis, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3902,9 +3902,9 @@ Deploying **AI-Assisted Script Breakdown** within commercial studio infrastructu
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("ai_assisted_script_breakdown")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -3919,7 +3919,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI-Assisted Script Breakdown** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI-Assisted Script Breakdown: Tagging Props, Vehicles, and Special Effects | FRAMELINE",
+      title: "AI-Assisted Script Breakdown: Tagging Props, Vehicles, and Special Effects | RENDERLINE",
       desc: "Evaluating AI-Assisted Script Breakdown for production deployment: examining tagging props, vehicles, and special effects, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3953,9 +3953,9 @@ Deploying **Real-Time Virtual Set Extension Alignment via Spatial Transformer Ne
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("real_time_virtual_set_extension_alignment_via_spatial_transformer_networks")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -3970,7 +3970,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Real-Time Virtual Set Extension Alignment via Spatial Transformer Networks** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Real-Time Virtual Set Extension Alignment via Spatial Transformer Networks | FRAMELINE",
+      title: "Real-Time Virtual Set Extension Alignment via Spatial Transformer Networks | RENDERLINE",
       desc: "Field report on Real-Time Virtual Set Extension Alignment via Spatial Transformer Networks, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/server-render-farm.jpg",
     },
@@ -4004,9 +4004,9 @@ Deploying **Generative Sky Replacement** within commercial studio infrastructure
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("generative_sky_replacement")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -4021,7 +4021,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Generative Sky Replacement** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Generative Sky Replacement: Dynamic Cloud Movement and Time-Lapse Infill | FRAMELINE",
+      title: "Generative Sky Replacement: Dynamic Cloud Movement and Time-Lapse Infill | RENDERLINE",
       desc: "Evaluating Generative Sky Replacement for production deployment: examining dynamic cloud movement and time-lapse infill, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/article-sora.jpg",
     },
@@ -4055,9 +4055,9 @@ Deploying **Machine Learning Flame Dynamics** within commercial studio infrastru
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("machine_learning_flame_dynamics")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -4072,7 +4072,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Machine Learning Flame Dynamics** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Machine Learning Flame Dynamics: Accelerating Pyro Grid Solvers | FRAMELINE",
+      title: "Machine Learning Flame Dynamics: Accelerating Pyro Grid Solvers | RENDERLINE",
       desc: "Evaluating Machine Learning Flame Dynamics for production deployment: examining accelerating pyro grid solvers, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     },
@@ -4106,9 +4106,9 @@ Deploying **AI-Driven Video Compression** within commercial studio infrastructur
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("ai_driven_video_compression")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -4123,7 +4123,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI-Driven Video Compression** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI-Driven Video Compression: Content-Adaptive Bitrate Optimization | FRAMELINE",
+      title: "AI-Driven Video Compression: Content-Adaptive Bitrate Optimization | RENDERLINE",
       desc: "Evaluating AI-Driven Video Compression for production deployment: examining content-adaptive bitrate optimization, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
@@ -4157,9 +4157,9 @@ Deploying **Synthetic Skin Pore Texture Synthesis for Hero Close-Up Digital Doub
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("synthetic_skin_pore_texture_synthesis_for_hero_close_up_digital_doubles")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -4174,7 +4174,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Synthetic Skin Pore Texture Synthesis for Hero Close-Up Digital Doubles** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Synthetic Skin Pore Texture Synthesis for Hero Close-Up Digital Doubles | FRAMELINE",
+      title: "Synthetic Skin Pore Texture Synthesis for Hero Close-Up Digital Doubles | RENDERLINE",
       desc: "Field report on Synthetic Skin Pore Texture Synthesis for Hero Close-Up Digital Doubles, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/hero-ai-film.jpg",
     },
@@ -4208,9 +4208,9 @@ Deploying **Automated Video Stabilization** within commercial studio infrastruct
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("automated_video_stabilization")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -4225,7 +4225,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Automated Video Stabilization** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Automated Video Stabilization: Neural Camera Path Smoothing | FRAMELINE",
+      title: "Automated Video Stabilization: Neural Camera Path Smoothing | RENDERLINE",
       desc: "Evaluating Automated Video Stabilization for production deployment: examining neural camera path smoothing, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/review-camera.jpg",
     },
@@ -4259,9 +4259,9 @@ Deploying **Real-Time Voice Pitch Correction for Location Dialogue Recording** w
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("real_time_voice_pitch_correction_for_location_dialogue_recording")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -4276,7 +4276,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Real-Time Voice Pitch Correction for Location Dialogue Recording** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Real-Time Voice Pitch Correction for Location Dialogue Recording | FRAMELINE",
+      title: "Real-Time Voice Pitch Correction for Location Dialogue Recording | RENDERLINE",
       desc: "Field report on Real-Time Voice Pitch Correction for Location Dialogue Recording, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/ai-neural-editor.jpg",
     },
@@ -4310,9 +4310,9 @@ Deploying **AI-Assisted Multi-Track Audio Mixing** within commercial studio infr
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("ai_assisted_multi_track_audio_mixing")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -4327,7 +4327,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI-Assisted Multi-Track Audio Mixing** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI-Assisted Multi-Track Audio Mixing: Dynamic Frequency Ducking | FRAMELINE",
+      title: "AI-Assisted Multi-Track Audio Mixing: Dynamic Frequency Ducking | RENDERLINE",
       desc: "Evaluating AI-Assisted Multi-Track Audio Mixing for production deployment: examining dynamic frequency ducking, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     },
@@ -4361,9 +4361,9 @@ Deploying **Neural Character Rigging** within commercial studio infrastructure r
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("neural_character_rigging")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -4378,7 +4378,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Neural Character Rigging** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Neural Character Rigging: Automated Weight Painting on Complex Topology | FRAMELINE",
+      title: "Neural Character Rigging: Automated Weight Painting on Complex Topology | RENDERLINE",
       desc: "Evaluating Neural Character Rigging for production deployment: examining automated weight painting on complex topology, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
     },
@@ -4412,9 +4412,9 @@ Deploying **Generative Motion Capture Cleaning** within commercial studio infras
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("generative_motion_capture_cleaning")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -4429,7 +4429,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Generative Motion Capture Cleaning** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Generative Motion Capture Cleaning: Removing Joint Jitter and Foot Sliding | FRAMELINE",
+      title: "Generative Motion Capture Cleaning: Removing Joint Jitter and Foot Sliding | RENDERLINE",
       desc: "Evaluating Generative Motion Capture Cleaning for production deployment: examining removing joint jitter and foot sliding, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/ai-generative-video.jpg",
     },
@@ -4463,9 +4463,9 @@ Deploying **AI-Powered Color Palette Extraction for Art Direction Reference** wi
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("ai_powered_color_palette_extraction_for_art_direction_reference")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -4480,7 +4480,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI-Powered Color Palette Extraction for Art Direction Reference** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI-Powered Color Palette Extraction for Art Direction Reference | FRAMELINE",
+      title: "AI-Powered Color Palette Extraction for Art Direction Reference | RENDERLINE",
       desc: "Field report on AI-Powered Color Palette Extraction for Art Direction Reference, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/ai-neural-editor.jpg",
     },
@@ -4514,9 +4514,9 @@ Deploying **Synthetic Vehicle Traffic Simulation** within commercial studio infr
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("synthetic_vehicle_traffic_simulation")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -4531,7 +4531,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Synthetic Vehicle Traffic Simulation** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Synthetic Vehicle Traffic Simulation: Pathfinding for Urban Backgrounds | FRAMELINE",
+      title: "Synthetic Vehicle Traffic Simulation: Pathfinding for Urban Backgrounds | RENDERLINE",
       desc: "Evaluating Synthetic Vehicle Traffic Simulation for production deployment: examining pathfinding for urban backgrounds, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     },
@@ -4565,9 +4565,9 @@ Deploying **Automated Video Deflicker** within commercial studio infrastructure 
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("automated_video_deflicker")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -4582,7 +4582,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Automated Video Deflicker** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Automated Video Deflicker: Correcting LED Stage and High-Speed Light Fluctuations | FRAMELINE",
+      title: "Automated Video Deflicker: Correcting LED Stage and High-Speed Light Fluctuations | RENDERLINE",
       desc: "Evaluating Automated Video Deflicker for production deployment: examining correcting led stage and high-speed light fluctuations, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/hero-ai-film.jpg",
     },
@@ -4616,9 +4616,9 @@ Deploying **Real-Time Virtual Production Background Warping for Camera Parallax*
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("real_time_virtual_production_background_warping_for_camera_parallax")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -4633,7 +4633,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Real-Time Virtual Production Background Warping for Camera Parallax** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Real-Time Virtual Production Background Warping for Camera Parallax | FRAMELINE",
+      title: "Real-Time Virtual Production Background Warping for Camera Parallax | RENDERLINE",
       desc: "Field report on Real-Time Virtual Production Background Warping for Camera Parallax, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/review-camera.jpg",
     },
@@ -4667,9 +4667,9 @@ Deploying **AI-Driven Sound Design** within commercial studio infrastructure req
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("ai_driven_sound_design")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -4684,7 +4684,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **AI-Driven Sound Design** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "AI-Driven Sound Design: Synthesizing Creature Vocalizations from Animal Bio-Acoustics | FRAMELINE",
+      title: "AI-Driven Sound Design: Synthesizing Creature Vocalizations from Animal Bio-Acoustics | RENDERLINE",
       desc: "Evaluating AI-Driven Sound Design for production deployment: examining synthesizing creature vocalizations from animal bio-acoustics, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     },
@@ -4718,9 +4718,9 @@ Deploying **Neural Network Light Field Capture** within commercial studio infras
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("neural_network_light_field_capture")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -4735,7 +4735,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Neural Network Light Field Capture** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Neural Network Light Field Capture: Multi-Angle Incident Light Reconstruction | FRAMELINE",
+      title: "Neural Network Light Field Capture: Multi-Angle Incident Light Reconstruction | RENDERLINE",
       desc: "Evaluating Neural Network Light Field Capture for production deployment: examining multi-angle incident light reconstruction, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/ai-neural-editor.jpg",
     },
@@ -4769,9 +4769,9 @@ Deploying **Automated Quality Control** within commercial studio infrastructure 
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("automated_quality_control")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -4786,7 +4786,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Automated Quality Control** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Automated Quality Control: Detecting Dead Pixels and Compression Artifacts | FRAMELINE",
+      title: "Automated Quality Control: Detecting Dead Pixels and Compression Artifacts | RENDERLINE",
       desc: "Evaluating Automated Quality Control for production deployment: examining detecting dead pixels and compression artifacts, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/hero-ai-film.jpg",
     },
@@ -4820,9 +4820,9 @@ Deploying **Generative Foley Synthesis** within commercial studio infrastructure
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("generative_foley_synthesis")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -4837,7 +4837,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Generative Foley Synthesis** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Generative Foley Synthesis: Synchronizing Footsteps to Surface Materials | FRAMELINE",
+      title: "Generative Foley Synthesis: Synchronizing Footsteps to Surface Materials | RENDERLINE",
       desc: "Evaluating Generative Foley Synthesis for production deployment: examining synchronizing footsteps to surface materials, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
@@ -4871,9 +4871,9 @@ Deploying **Real-Time Speech Emotion Recognition for Actor Performance Analysis*
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("real_time_speech_emotion_recognition_for_actor_performance_analysis")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -4888,7 +4888,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Real-Time Speech Emotion Recognition for Actor Performance Analysis** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Real-Time Speech Emotion Recognition for Actor Performance Analysis | FRAMELINE",
+      title: "Real-Time Speech Emotion Recognition for Actor Performance Analysis | RENDERLINE",
       desc: "Field report on Real-Time Speech Emotion Recognition for Actor Performance Analysis, benchmarking model inference speeds, artist control surfaces, and studio delivery standards.",
       ogImage: "/images/ai-neural-editor.jpg",
     },
@@ -4922,9 +4922,9 @@ Deploying **Haiper 2.0 Cinematic Lighting** within commercial studio infrastruct
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("haiper_2_0_cinematic_lighting")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -4939,7 +4939,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Haiper 2.0 Cinematic Lighting** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Haiper 2.0 Cinematic Lighting: Interactive Light Field Manipulation | FRAMELINE",
+      title: "Haiper 2.0 Cinematic Lighting: Interactive Light Field Manipulation | RENDERLINE",
       desc: "Evaluating Haiper 2.0 Cinematic Lighting for production deployment: examining interactive light field manipulation, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
@@ -4973,9 +4973,9 @@ Deploying **Minimax Hailuo AI** within commercial studio infrastructure requires
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("minimax_hailuo_ai")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -4990,7 +4990,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Minimax Hailuo AI** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Minimax Hailuo AI: Long-Range Temporal Consistency in Dialogue Scenes | FRAMELINE",
+      title: "Minimax Hailuo AI: Long-Range Temporal Consistency in Dialogue Scenes | RENDERLINE",
       desc: "Evaluating Minimax Hailuo AI for production deployment: examining long-range temporal consistency in dialogue scenes, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/hero-ai-film.jpg",
     },
@@ -5024,9 +5024,9 @@ Deploying **Adobe Firefly Video 2.0** within commercial studio infrastructure re
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("adobe_firefly_video_2_0")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -5041,7 +5041,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Adobe Firefly Video 2.0** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Adobe Firefly Video 2.0: Infinite Canvas Pre-Visualization Workflows | FRAMELINE",
+      title: "Adobe Firefly Video 2.0: Infinite Canvas Pre-Visualization Workflows | RENDERLINE",
       desc: "Evaluating Adobe Firefly Video 2.0 for production deployment: examining infinite canvas pre-visualization workflows, temporal coherence, and studio copyright guardrails.",
       ogImage: "/images/article-adobe.jpg",
     },
@@ -5075,9 +5075,9 @@ Deploying **Diffusion Model Distillation** within commercial studio infrastructu
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("diffusion_model_distillation")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -5092,7 +5092,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **Diffusion Model Distillation** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "Diffusion Model Distillation: Achieving Sub-Second 4K Video Synthesis | FRAMELINE",
+      title: "Diffusion Model Distillation: Achieving Sub-Second 4K Video Synthesis | RENDERLINE",
       desc: "Evaluating Diffusion Model Distillation for production deployment: examining achieving sub-second 4k video synthesis, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     },
@@ -5126,9 +5126,9 @@ Deploying **The Future of Creative Direction** within commercial studio infrastr
 
 \`\`\`python
 # Studio Private Inference Gateway
-import frameline_ai as fai
+import renderline_ai as rai
 
-session = fai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
+session = rai.StudioSession(project="tentpole_2026", security_level="MPAA_COMPLIANT")
 pipeline = session.load_pipeline("the_future_of_creative_direction")
 result = pipeline.execute(
     prompt="Cinematic close-up, anamorphic lens flare, photorealistic lighting",
@@ -5143,7 +5143,7 @@ By isolating model weights within zero-trust studio firewalls and embedding C2PA
 
 As we move deeper into late 2026, generative tools are moving past the novelty phase into specialized, high-leverage utility roles. Facilities that leverage **The Future of Creative Direction** for previs, rapid concept turnaround, and complex plate inpainting are establishing an immense operational advantage without sacrificing human directorial vision.`,
     seo: {
-      title: "The Future of Creative Direction: Human Authorship in the Neural Cinema Era | FRAMELINE",
+      title: "The Future of Creative Direction: Human Authorship in the Neural Cinema Era | RENDERLINE",
       desc: "Evaluating The Future of Creative Direction for production deployment: examining human authorship in the neural cinema era, temporal coherence, and studio copyright guardrails.",
       ogImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
     },

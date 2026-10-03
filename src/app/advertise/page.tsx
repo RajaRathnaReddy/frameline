@@ -15,7 +15,7 @@ export default function AdvertisePage() {
             PARTNERSHIPS & MEDIA KIT 2026/2027
           </span>
           <h1 className="font-display text-4xl md:text-6xl font-extrabold text-text-primary tracking-tight uppercase">
-            Partner With Frameline
+            Partner With RenderLine
           </h1>
           <p className="font-serif text-lg md:text-xl text-text-secondary max-w-3xl mt-3">
             Reach 45,000+ decision-makers across Hollywood studios, VFX powerhouses, 
@@ -118,7 +118,7 @@ export default function AdvertisePage() {
                   Cinematic Hero Takeover
                 </h3>
                 <p className="font-serif text-sm text-text-secondary mb-6">
-                  Full 2.39:1 letterboxed billboard unit across the top of Frameline desktop and mobile, with interactive click-through to your product launch video or demo.
+                  Full 2.39:1 letterboxed billboard unit across the top of RenderLine desktop and mobile, with interactive click-through to your product launch video or demo.
                 </p>
                 <ul className="space-y-2 font-mono text-xs text-text-secondary">
                   <li>&bull; 100% Share of Voice on Home</li>
@@ -161,7 +161,7 @@ export default function AdvertisePage() {
         {/* Media Kit Download CTA */}
         <div className="p-10 rounded-3xl bg-bg-elevated border border-border-subtle text-center max-w-2xl mx-auto shadow-2xl">
           <h3 className="font-display text-2xl md:text-3xl font-bold text-white uppercase mb-3">
-            Request Frameline Media Kit 2026/2027
+            Request RenderLine Media Kit 2026/2027
           </h3>
           <p className="font-serif text-sm text-text-secondary mb-6">
             Get complete demographic breakdowns by job title, studio size, purchasing authority, and quarterly editorial calendar.
@@ -205,7 +205,7 @@ export default function AdvertisePage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto shrink-0">
               <a
-                href="mailto:vfx@rajarathnareddy.com?subject=FRAMELINE%20Advertising%20%26%20Partnership"
+                href="mailto:vfx@rajarathnareddy.com?subject=RENDERLINE%20Advertising%20%26%20Partnership"
                 className="px-5 py-3 rounded-xl bg-accent-gold text-black font-mono text-xs uppercase font-bold text-center hover:bg-accent-gold/90 transition-all shadow-md flex items-center justify-center gap-2"
               >
                 <span>✉ Email Desk</span>

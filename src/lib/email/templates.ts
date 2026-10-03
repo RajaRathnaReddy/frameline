@@ -6,7 +6,7 @@ export function getWelcomeEmailHtml(name?: string): string {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to FRAMELINE Intelligence</title>
+  <title>Welcome to RENDERLINE Intelligence</title>
   <style>
     body {
       margin: 0;
@@ -175,7 +175,7 @@ export function getWelcomeEmailHtml(name?: string): string {
       <!-- Masthead Header -->
       <div class="header">
         <div class="brand-strip">SCENE 01 / TAKE 01 &bull; EDITORIAL DISPATCH</div>
-        <h1 class="brand-title">FRAMELINE</h1>
+        <h1 class="brand-title">RENDERLINE</h1>
         <div class="brand-subtitle">AI &bull; VFX &bull; HOLLYWOOD &bull; FILM TOOLS &bull; VIRTUAL PRODUCTION</div>
       </div>
 
@@ -185,11 +185,11 @@ export function getWelcomeEmailHtml(name?: string): string {
         <div class="h1-greeting">${recipientGreeting}</div>
 
         <p>
-          Welcome to <strong>FRAMELINE Intelligence</strong>. You are now officially subscribed to the premier trade briefing for cinema technologists, VFX supervisors, technical directors, and studio executives.
+          Welcome to <strong>RENDERLINE Intelligence</strong>. You are now officially subscribed to the premier trade briefing for cinema technologists, VFX supervisors, technical directors, and studio executives.
         </p>
 
         <p>
-          We created FRAMELINE with a singular objective: to deliver unfiltered, deeply technical, and commercially rigorous coverage of the technological revolution reshaping Hollywood, visual effects, and generative cinema.
+          We created RENDERLINE with a singular objective: to deliver unfiltered, deeply technical, and commercially rigorous coverage of the technological revolution reshaping Hollywood, visual effects, and generative cinema.
         </p>
 
         <div class="quote-box">
@@ -231,7 +231,7 @@ export function getWelcomeEmailHtml(name?: string): string {
         <!-- Author Signature -->
         <div class="author-signature">
           <p class="signature-name">Raja Rathna Reddy</p>
-          <p class="signature-role">FX Pipeline TD &amp; AI Architect &bull; Founder, FRAMELINE</p>
+          <p class="signature-role">FX Pipeline TD &amp; AI Architect &bull; Founder, RENDERLINE</p>
           <div class="social-links">
             <a href="https://rajarathnareddy.com" target="_blank">&bull; rajarathnareddy.com</a>
             <a href="https://www.imdb.com/name/nm12830221/" target="_blank">&bull; IMDb (nm12830221)</a>
@@ -243,10 +243,10 @@ export function getWelcomeEmailHtml(name?: string): string {
       <!-- Footer -->
       <div class="footer">
         <p style="margin: 0 0 8px 0;">
-          FRAMELINE &bull; Published by Raja Rathna Reddy &bull; High-Throughput Studio Intelligence
+          RENDERLINE &bull; Published by Raja Rathna Reddy &bull; High-Throughput Studio Intelligence
         </p>
         <p style="margin: 0;">
-          You received this email because you subscribed on <a href="https://vfx.rajarathnareddy.com">vfx.rajarathnareddy.com</a> or FRAMELINE.
+          You received this email because you subscribed on <a href="https://vfx.rajarathnareddy.com">vfx.rajarathnareddy.com</a> or RENDERLINE.
         </p>
       </div>
     </div>
@@ -276,14 +276,14 @@ export function getWeeklyDigestHtml(articles: any[]): string {
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>FRAMELINE Weekly Intelligence Digest</title>
+  <title>RENDERLINE Weekly Intelligence Digest</title>
 </head>
 <body style="margin: 0; padding: 0; background-color: #08090A; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #E2E8F0;">
   <div style="width: 100%; background-color: #08090A; padding: 40px 15px;">
     <div style="max-width: 640px; margin: 0 auto; background-color: #0F1113; border: 1px solid #23272D; border-radius: 12px; overflow: hidden;">
       <div style="background: linear-gradient(180deg, #181B1F 0%, #0F1113 100%); padding: 32px; border-bottom: 1px solid #23272D;">
         <div style="font-family: monospace; font-size: 10px; letter-spacing: 2px; color: #3EE6FF; text-transform: uppercase; font-weight: 700; margin-bottom: 6px;">WEEKLY INTELLIGENCE REPORT</div>
-        <h1 style="font-size: 24px; font-weight: 900; color: #FFFFFF; margin: 0;">FRAMELINE WEEKLY</h1>
+        <h1 style="font-size: 24px; font-weight: 900; color: #FFFFFF; margin: 0;">RENDERLINE WEEKLY</h1>
         <div style="font-size: 12px; color: #94A3B8; font-family: monospace; margin-top: 4px;">Curated by Raja Rathna Reddy (FX Pipeline TD &amp; AI Architect)</div>
       </div>
       <div style="padding: 32px;">
@@ -296,7 +296,7 @@ export function getWeeklyDigestHtml(articles: any[]): string {
         </div>
       </div>
       <div style="background-color: #0A0B0D; padding: 20px; border-top: 1px solid #1C2025; font-size: 11px; color: #64748B; font-family: monospace; text-align: center;">
-        FRAMELINE &bull; <a href="https://rajarathnareddy.com" style="color: #94A3B8;">rajarathnareddy.com</a> &bull; IMDb nm12830221
+        RENDERLINE &bull; <a href="https://rajarathnareddy.com" style="color: #94A3B8;">rajarathnareddy.com</a> &bull; IMDb nm12830221
       </div>
     </div>
   </div>

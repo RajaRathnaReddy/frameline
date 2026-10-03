@@ -15,7 +15,7 @@ export default function NotFound() {
           href="/"
           className="inline-flex items-center gap-2 bg-accent-primary hover:bg-accent-primary/90 text-white font-display font-semibold text-sm px-6 py-3 rounded-full transition-colors"
         >
-          ← Back to FRAMELINE
+          ← Back to RENDERLINE
         </Link>
       </div>
     </div>

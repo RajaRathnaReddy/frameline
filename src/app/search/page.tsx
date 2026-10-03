@@ -39,7 +39,7 @@ function SearchComponent() {
             DATABASE ARCHIVE SEARCH
           </span>
           <h1 className="font-display text-4xl md:text-5xl font-black text-text-primary tracking-tight mb-6">
-            Search Frameline
+            Search RenderLine
           </h1>
 
           <form onSubmit={handleSearchSubmit} className="relative">
@@ -131,7 +131,7 @@ function SearchComponent() {
               🔍
             </div>
             <h3 className="font-display text-xl font-bold text-text-primary mb-2">
-              Explore the Frameline Intelligence Archive
+              Explore the RenderLine Intelligence Archive
             </h3>
             <p className="font-serif text-sm text-text-secondary max-w-md mx-auto">
               Enter any camera package, VFX studio, AI algorithm, or software suite to search through our full index.

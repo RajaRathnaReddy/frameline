@@ -29,7 +29,7 @@ export const PARTNER_CONTACT = {
 };
 
 /**
- * FRAMELINE Master Monetization & Partner Link Registry
+ * RENDERLINE Master Monetization & Partner Link Registry
  * 
  * Powered by:
  * - Impact.com (Adobe Creative Cloud, Canva, Envato Elements)
@@ -53,7 +53,7 @@ export const AFFILIATE_OFFERS: AffiliateOffer[] = [
     description: 'The industry-standard temporal stabilization, de-flickering, and neural upscaling engine used by Hollywood archival labs and generative film directors.',
     perk: 'Includes 12 months of neural model updates & lossless ProRes 4444 XQ export.',
     ctaText: 'Get Studio License →',
-    url: 'https://www.topazlabs.com/topaz-video-ai?ref=frameline',
+    url: 'https://www.topazlabs.com/topaz-video-ai?ref=renderline',
     categories: ['ai', 'tools', 'vfx', 'hollywood'],
     keywords: ['topaz', 'upscaling', 'video ai', 'neural', '4k', '8k', 'de-flicker', 'stabilization', 'restoration'],
     pricing: '$299 One-Time (No Subscriptions)',
@@ -73,7 +73,7 @@ export const AFFILIATE_OFFERS: AffiliateOffer[] = [
     description: 'Power your studio with native OpenUSD workflows, Bifrost procedural oceans and liquid simulation, and production-proven Arnold rendering.',
     perk: 'Eligible for Maya Indie license ($305/yr) or Studio Flex tokens.',
     ctaText: 'Explore Autodesk Maya →',
-    url: 'https://www.autodesk.com/products/maya/overview?ref=frameline',
+    url: 'https://www.autodesk.com/products/maya/overview?ref=renderline',
     categories: ['vfx', 'tools', 'virtual-production'],
     keywords: ['maya', 'autodesk', 'rigging', 'animation', 'bifrost', '3d modeling', 'character', 'arnold'],
     pricing: 'Indie $305/yr / Studio Commercial',
@@ -93,7 +93,7 @@ export const AFFILIATE_OFFERS: AffiliateOffer[] = [
     description: 'Unite global VFX artists, technical directors, and studio producers with real-time shot scheduling, high-res RV playback, and SGTK pipeline integrations.',
     perk: '30-day enterprise studio pilot with cloud asset security certifications.',
     ctaText: 'Deploy ShotGrid Pipeline →',
-    url: 'https://www.autodesk.com/products/shotgrid/overview?ref=frameline',
+    url: 'https://www.autodesk.com/products/shotgrid/overview?ref=renderline',
     categories: ['vfx', 'hollywood', 'tools'],
     keywords: ['shotgun', 'shotgrid', 'pipeline', 'tracking', 'dailies', 'asset management', 'review', 'rv', 'sgtk', 'vfx management'],
     pricing: 'Studio Cloud Seats / Enterprise',
@@ -113,7 +113,7 @@ export const AFFILIATE_OFFERS: AffiliateOffer[] = [
     description: 'Empower your effects department with Karma XPU rendering, Solaris USD stage composition, and real-time GPU Vellum multi-physics.',
     perk: 'Houdini Indie tier gives full commercial rendering privileges for studios under $100k gross.',
     ctaText: 'Get Houdini Studio / Indie →',
-    url: 'https://www.sidefx.com?ref=frameline',
+    url: 'https://www.sidefx.com?ref=renderline',
     categories: ['vfx', 'tools', 'technology'],
     keywords: ['houdini', 'sidefx', 'procedural', 'pyro', 'fluids', 'destruction', 'simulation', 'solaris', 'karma'],
     pricing: 'Indie $269/yr / Studio Floating',
@@ -133,7 +133,7 @@ export const AFFILIATE_OFFERS: AffiliateOffer[] = [
     description: 'Deploy seamless Team Projects, Topaz-accelerated motion graphics, and frame-accurate editorial pipelines across your post-production facility.',
     perk: 'Includes 100GB cloud storage, Adobe Fonts library, and monthly Generative AI credits.',
     ctaText: 'Claim Adobe Studio Plan →',
-    url: 'https://www.adobe.com/creativecloud.html?ref=frameline',
+    url: 'https://www.adobe.com/creativecloud.html?ref=renderline',
     categories: ['hollywood', 'tools', 'vfx', 'virtual-production'],
     keywords: ['adobe', 'after effects', 'premiere', 'photoshop', 'illustrator', 'firefly', 'motion graphics', 'editing', 'color grading'],
     pricing: 'Special Studio & Individual Pricing',
@@ -152,7 +152,7 @@ export const AFFILIATE_OFFERS: AffiliateOffer[] = [
     description: 'Essential library for filmmakers and post houses. Download unlimited DaVinci Resolve title packs, After Effects VFX assets, Foley sound effects, and royalty-free cinema music.',
     perk: 'Lifetime commercial license on all downloaded assets, even if you cancel.',
     ctaText: 'Access Unlimited Assets →',
-    url: 'https://elements.envato.com?ref=frameline',
+    url: 'https://elements.envato.com?ref=renderline',
     categories: ['hollywood', 'music', 'vfx', 'tools'],
     keywords: ['envato', 'stock footage', 'sound effects', 'luts', 'video templates', 'assets', 'foley', 'cinema music', 'titles'],
     pricing: '$16.50/mo Unlimited Studio Access',
@@ -171,7 +171,7 @@ export const AFFILIATE_OFFERS: AffiliateOffer[] = [
     description: 'Collaborate with co-producers and directors on film treatment decks, character design boards, festival one-sheets, and executive presentations in real-time.',
     perk: 'Free 30-day trial with 100M+ premium stock photos, brand kits, and AI background remover.',
     ctaText: 'Start Free Studio Trial →',
-    url: 'https://www.canva.com?ref=frameline',
+    url: 'https://www.canva.com?ref=renderline',
     categories: ['hollywood', 'ai'],
     keywords: ['canva', 'pitch deck', 'lookbook', 'moodboard', 'treatment', 'presentation', 'storyboard', 'poster', 'one-sheet'],
     pricing: 'Free / $12.99/mo Pro',
@@ -209,7 +209,7 @@ export const AFFILIATE_OFFERS: AffiliateOffer[] = [
     description: 'Outfit your mixing stage with calibrated reference monitors, Apollo interfaces, Neumann microphones, and hardware DSP processors backed by free 2-year warranties.',
     perk: 'Free 2-year total warranty, fast free shipping, and dedicated audio engineers.',
     ctaText: 'Explore Pro Studio Audio →',
-    url: 'https://www.sweetwater.com?ref=frameline',
+    url: 'https://www.sweetwater.com?ref=renderline',
     categories: ['music', 'technology'],
     keywords: ['sweetwater', 'dolby atmos', 'genelec', 'neumann', 'apollo', 'universal audio', 'microphones', 'monitors', 'audio interface'],
     pricing: 'Authorized Pro Studio Dealer',
@@ -228,7 +228,7 @@ export const AFFILIATE_OFFERS: AffiliateOffer[] = [
     description: 'Equip your pipeline infrastructure with calibrated HDR OLED reference monitors, dual-GPU compute workstations, anamorphic lenses, cinema wireless rigs, and high-speed NVMe arrays.',
     perk: 'Direct Prime delivery, verified studio seller warranties, and corporate financing.',
     ctaText: 'Shop Amazon Pro Hardware →',
-    url: 'https://www.amazon.in/?tag=frameline-21',
+    url: 'https://www.amazon.in/?tag=renderline-21',
     categories: ['technology', 'virtual-production', 'hollywood', 'tools'],
     keywords: ['camera', 'lens', 'arri', 'red', 'sony', 'gpu', 'nvidia', 'rtx', 'workstation', 'monitor', 'asus proart', 'flanders', 'hardware', 'amazon'],
     pricing: 'Pro Studio Hardware Pricing',
@@ -268,7 +268,7 @@ export const AFFILIATE_OFFERS: AffiliateOffer[] = [
     description: 'Empower your pre-production and VFX pipeline with high-fidelity prompt-to-video, spatial camera paths, and director-level temporal framing.',
     perk: 'Free tier available with monthly generative credits & 4K upsampling.',
     ctaText: 'Start Free AI Trial →',
-    url: 'https://runwayml.com?ref=frameline',
+    url: 'https://runwayml.com?ref=renderline',
     categories: ['ai', 'hollywood', 'tools'],
     keywords: ['runway', 'gen-3', 'gen-4', 'ai video', 'generative video', 'camera controls', 'previs', 'ai film'],
     pricing: 'Free / $12/mo Pro',

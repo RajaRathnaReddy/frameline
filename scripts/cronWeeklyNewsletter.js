@@ -1,5 +1,5 @@
 /**
- * FRAMELINE Intelligence — Weekly Newsletter Cron Dispatcher
+ * RENDERLINE Intelligence — Weekly Newsletter Cron Dispatcher
  * Run directly via: node scripts/cronWeeklyNewsletter.js
  * Or automate via Windows Task Scheduler, PM2 cron, or GitHub Actions
  */
@@ -36,11 +36,11 @@ const SMTP_CONFIG = {
   },
 };
 
-const FROM_ADDRESS = process.env.SMTP_FROM || '"Raja Rathna Reddy | FRAMELINE" <vfx@rajarathnareddy.com>';
+const FROM_ADDRESS = process.env.SMTP_FROM || '"Raja Rathna Reddy | RENDERLINE" <vfx@rajarathnareddy.com>';
 
 async function runCron() {
   console.log('====================================================');
-  console.log('🎬 FRAMELINE WEEKLY NEWSLETTER CRON DISPATCHER');
+  console.log('🎬 RENDERLINE WEEKLY NEWSLETTER CRON DISPATCHER');
   console.log('Curated by: Raja Rathna Reddy (FX Pipeline TD & AI Architect)');
   console.log('Timestamp:', new Date().toISOString());
   console.log('====================================================');
@@ -126,14 +126,14 @@ async function runCron() {
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>FRAMELINE Weekly Intelligence Digest</title>
+  <title>RENDERLINE Weekly Intelligence Digest</title>
 </head>
 <body style="margin: 0; padding: 0; background-color: #08090A; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #E2E8F0;">
   <div style="width: 100%; background-color: #08090A; padding: 40px 15px;">
     <div style="max-width: 640px; margin: 0 auto; background-color: #0F1113; border: 1px solid #23272D; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.8);">
       <div style="background: linear-gradient(180deg, #181B1F 0%, #0F1113 100%); padding: 36px; border-bottom: 1px solid #23272D;">
         <div style="font-family: monospace; font-size: 11px; letter-spacing: 2px; color: #3EE6FF; text-transform: uppercase; font-weight: 700; margin-bottom: 6px;">WEEKLY INTELLIGENCE REPORT</div>
-        <h1 style="font-size: 26px; font-weight: 900; color: #FFFFFF; margin: 0;">FRAMELINE WEEKLY</h1>
+        <h1 style="font-size: 26px; font-weight: 900; color: #FFFFFF; margin: 0;">RENDERLINE WEEKLY</h1>
         <div style="font-size: 13px; color: #94A3B8; font-family: monospace; margin-top: 6px;">Curated by Raja Rathna Reddy &bull; FX Pipeline TD &amp; AI Architect</div>
       </div>
       <div style="padding: 36px;">
@@ -148,7 +148,7 @@ async function runCron() {
         </div>
       </div>
       <div style="background-color: #0A0B0D; padding: 24px 36px; border-top: 1px solid #1C2025; font-size: 11px; color: #64748B; font-family: monospace; text-align: center; line-height: 1.6;">
-        <p style="margin: 0 0 6px 0;">FRAMELINE &bull; Published by Raja Rathna Reddy</p>
+        <p style="margin: 0 0 6px 0;">RENDERLINE &bull; Published by Raja Rathna Reddy</p>
         <p style="margin: 0;"><a href="https://rajarathnareddy.com" style="color: #94A3B8; text-decoration: underline;">rajarathnareddy.com</a> &bull; IMDb nm12830221</p>
       </div>
     </div>
@@ -165,9 +165,9 @@ async function runCron() {
       const info = await transporter.sendMail({
         from: FROM_ADDRESS,
         to: sub.email,
-        subject: `FRAMELINE Weekly Intelligence Dispatch — ${new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}`,
+        subject: `RENDERLINE Weekly Intelligence Dispatch — ${new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}`,
         html: digestHtml,
-        text: `FRAMELINE Weekly Intelligence Digest. Read top reports at http://localhost:3000/news`,
+        text: `RENDERLINE Weekly Intelligence Digest. Read top reports at http://localhost:3000/news`,
       });
       console.log(`   ✅ Sent! MessageID: ${info.messageId}`);
       sentCount++;

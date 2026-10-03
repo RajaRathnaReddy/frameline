@@ -546,11 +546,11 @@ export default function ArticleContent({ article }: { article: Article }) {
             },
             publisher: {
               '@type': 'Organization',
-              name: 'FRAMELINE',
+              name: 'RENDERLINE',
               url: 'https://vfx.rajarathnareddy.com',
               logo: {
                 '@type': 'ImageObject',
-                url: 'https://vfx.rajarathnareddy.com/frameline-logo.png',
+                url: 'https://vfx.rajarathnareddy.com/renderline-logo.png',
               },
             },
           }),

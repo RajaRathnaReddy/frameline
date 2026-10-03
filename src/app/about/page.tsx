@@ -3,8 +3,8 @@ import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About — FRAMELINE',
-  description: 'FRAMELINE is the premium news platform for film technology, visual effects, AI in cinema, and virtual production.',
+  title: 'About — RENDERLINE',
+  description: 'RENDERLINE is the premium news platform for film technology, visual effects, AI in cinema, and virtual production.',
 };
 
 export default function AboutPage() {
@@ -17,7 +17,7 @@ export default function AboutPage() {
         </h1>
         <div className="text-body text-text-secondary space-y-6 mb-16">
           <p>
-            FRAMELINE is the premier destination for news and analysis at the intersection of filmmaking and technology. We cover the tools, techniques, and talent shaping the future of visual storytelling — from AI-powered post-production to virtual production stages, from indie VFX breakthroughs to Hollywood&apos;s biggest technical achievements.
+            RENDERLINE is the premier destination for news and analysis at the intersection of filmmaking and technology. We cover the tools, techniques, and talent shaping the future of visual storytelling — from AI-powered post-production to virtual production stages, from indie VFX breakthroughs to Hollywood&apos;s biggest technical achievements.
           </p>
           <p>
             Founded in 2024, we&apos;ve quickly become the go-to source for VFX supervisors, directors, editors, colorists, and technology leaders who need to stay ahead of a rapidly evolving industry.

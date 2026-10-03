@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   if (!cat) return { title: 'Not Found' };
 
   return {
-    title: `${cat.name} — FRAMELINE Intelligence`,
+    title: `${cat.name} — RENDERLINE Intelligence`,
     description: `Latest 100 ${cat.name} reports and deep technical briefings by Raja Rathna Reddy (FX Pipeline TD & AI Architect).`,
   };
 }

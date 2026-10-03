@@ -197,7 +197,7 @@ export default function ContactPage() {
                 For highly confidential studio documents, internal roadmaps, or whistleblower leaks, message our investigative desk directly on Signal:
               </p>
               <div className="p-3 rounded-lg bg-black/60 font-mono text-xs text-accent-cyan select-all border border-accent-cyan/20">
-                +1 (310) 555-FRAME &bull; @frameline.tip
+                +1 (310) 555-RNDR &bull; @renderline.tip
               </div>
             </div>
 
@@ -210,17 +210,17 @@ export default function ContactPage() {
                 <div className="pb-3 border-b border-white/[0.04]">
                   <div className="text-white font-bold mb-0.5">LOS ANGELES (HQ)</div>
                   <div className="text-text-secondary">9255 Sunset Blvd, Suite 800 &bull; West Hollywood, CA 90069</div>
-                  <div className="text-text-secondary/60 text-[10px]">la@frameline.film</div>
+                  <div className="text-text-secondary/60 text-[10px]">la@renderline.film</div>
                 </div>
                 <div className="pb-3 border-b border-white/[0.04]">
                   <div className="text-white font-bold mb-0.5">LONDON (VFX & POST)</div>
                   <div className="text-text-secondary">14 Wardour Street, Soho &bull; London W1D 6PJ, UK</div>
-                  <div className="text-text-secondary/60 text-[10px]">london@frameline.film</div>
+                  <div className="text-text-secondary/60 text-[10px]">london@renderline.film</div>
                 </div>
                 <div>
                   <div className="text-white font-bold mb-0.5">VANCOUVER (VIRTUAL PRODUCTION)</div>
                   <div className="text-text-secondary">250 Northern St &bull; Vancouver, BC V6A 2P7, Canada</div>
-                  <div className="text-text-secondary/60 text-[10px]">vancouver@frameline.film</div>
+                  <div className="text-text-secondary/60 text-[10px]">vancouver@renderline.film</div>
                 </div>
               </div>
             </div>

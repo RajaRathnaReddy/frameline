@@ -57,7 +57,7 @@ export default function StudioPage() {
           title: `Autonomous Dispatch: ${customTopic.slice(0, 50)}`,
           topic: customTopic,
           category: selectedCategory,
-          leadSnippet: `A specialized FRAMELINE briefing tracking breakthrough computational shifts, studio investments, and pipeline restructuring around ${customTopic}.`,
+          leadSnippet: `A specialized RENDERLINE briefing tracking breakthrough computational shifts, studio investments, and pipeline restructuring around ${customTopic}.`,
           tags: ['AI Dispatch', 'Film Tech', selectedCategory.toUpperCase(), 'Autonomous Intel'],
           keywords: ['AI cinema', 'Hollywood pipeline', 'computational VFX', 'real-time rendering'],
           toolsMentioned: ['Unreal Engine', 'Runway', 'Topaz Video AI', 'DaVinci Resolve'],
@@ -135,7 +135,7 @@ With the European Union's machine-readable provenance deadlines and strict SAG-A
 
 The studios and post facilities outperforming their peers in late 2026 are not replacing creative talent—they are arming their craftspeople with autonomous telemetry and neural assistance. The future of cinema remains resolutely human-guided.`,
       seo: {
-        title: `${baseTemplate.title} | FRAMELINE AI Newsroom`,
+        title: `${baseTemplate.title} | RENDERLINE AI Newsroom`,
         desc: baseTemplate.leadSnippet,
         ogImage: '/images/hero-ai-film.jpg',
       },
@@ -171,7 +171,7 @@ The studios and post facilities outperforming their peers in late 2026 are not r
         </h1>
         <p className="text-text-secondary text-base md:text-lg max-w-3xl leading-relaxed">
           Direct the AI newsroom agent to research any breaking industry topic, film technology paper, or studio deal. 
-          The engine synthesizes an unabridged 5-chapter editorial briefing, generates tags and SEO keywords, detects referenced DCC tools, and publishes directly into FRAMELINE's live wire.
+          The engine synthesizes an unabridged 5-chapter editorial briefing, generates tags and SEO keywords, detects referenced DCC tools, and publishes directly into RENDERLINE's live wire.
         </p>
       </div>
 
@@ -341,7 +341,7 @@ The studios and post facilities outperforming their peers in late 2026 are not r
                 </>
               ) : (
                 <>
-                  <span>PUBLISH TO FRAMELINE LIVE WIRE</span>
+                  <span>PUBLISH TO RENDERLINE LIVE WIRE</span>
                   <span>&rarr;</span>
                 </>
               )}

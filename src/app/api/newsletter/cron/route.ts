@@ -15,7 +15,7 @@ async function handleCron(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
     const key = searchParams.get('key');
-    const expectedKey = process.env.CRON_SECRET || 'frameline_secret_2026';
+    const expectedKey = process.env.CRON_SECRET || 'renderline_secret_2026';
 
     // Optional secret key verification (if CRON_SECRET is set)
     if (process.env.CRON_SECRET && key !== expectedKey) {
@@ -41,7 +41,7 @@ async function handleCron(request: Request) {
     return NextResponse.json({
       success: true,
       timestamp: new Date().toISOString(),
-      digestEdition: `FRAMELINE Weekly Dispatch — ${new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}`,
+      digestEdition: `RENDERLINE Weekly Dispatch — ${new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}`,
       articlesIncluded: digestArticles.map(a => ({ title: a.title, slug: a.slug, category: a.category })),
       summary: results,
     });

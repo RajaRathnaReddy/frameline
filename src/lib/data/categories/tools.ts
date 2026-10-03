@@ -32,7 +32,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/unreal_engine_6_roadmap_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -41,7 +41,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Unreal Engine 6 Roadmap** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Unreal Engine 6 Roadmap: Early Access Targeted for Late 2027 | FRAMELINE",
+      title: "Unreal Engine 6 Roadmap: Early Access Targeted for Late 2027 | RENDERLINE",
       desc: "How Unreal Engine 6 Roadmap implements early access targeted for late 2027 — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/unreal-engine-stage.jpg",
     },
@@ -86,7 +86,7 @@ Crucially, Adobe is breaking open its walled garden. Firefly Video 2.0 operates 
 
 Firefly Video 2.0 marks the transition of generative AI from a gimmicky novelty into a transparent post-production utility. By meeting editors directly on the timeline and maintaining rigorous cryptographic provenance, Adobe has established the modern benchmark for professional video tooling.`,
     seo: {
-      title: "Adobe Firefly Video 2.0 Launches Multi-Model Timeline Hub | FRAMELINE",
+      title: "Adobe Firefly Video 2.0 Launches Multi-Model Timeline Hub | RENDERLINE",
       desc: "Adobe unveils Firefly Video 2.0 inside Premiere Pro & After Effects, bringing multi-model generative AI, temporal inpainting, and C2PA provenance to timelines.",
       ogImage: "/images/article-adobe.jpg",
     },
@@ -121,7 +121,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/unreal_engine_5_8_megalights_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -130,7 +130,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Unreal Engine 5.8 MegaLights** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Unreal Engine 5.8 MegaLights: Stochastic Direct Lighting Breakthrough | FRAMELINE",
+      title: "Unreal Engine 5.8 MegaLights: Stochastic Direct Lighting Breakthrough | RENDERLINE",
       desc: "How Unreal Engine 5.8 MegaLights implements stochastic direct lighting breakthrough — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/article-unreal.jpg",
     },
@@ -165,7 +165,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/adobe_closes__340m_topaz_labs_deal_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -174,7 +174,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Adobe Closes $340M Topaz Labs Deal** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Adobe Closes $340M Topaz Labs Deal: What It Means for Editors | FRAMELINE",
+      title: "Adobe Closes $340M Topaz Labs Deal: What It Means for Editors | RENDERLINE",
       desc: "How Adobe Closes $340M Topaz Labs Deal implements what it means for editors — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80",
     },
@@ -209,7 +209,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/topaz_video_ai_5_2_deep_dive_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -218,7 +218,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Topaz Video AI 5.2 Deep Dive** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Topaz Video AI 5.2 Deep Dive: Archival Upscaling Without Artifacts | FRAMELINE",
+      title: "Topaz Video AI 5.2 Deep Dive: Archival Upscaling Without Artifacts | RENDERLINE",
       desc: "How Topaz Video AI 5.2 Deep Dive implements archival upscaling without artifacts — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/article-adobe.jpg",
     },
@@ -253,7 +253,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/davinci_resolve_20_studio_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -262,7 +262,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **DaVinci Resolve 20 Studio** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "DaVinci Resolve 20 Studio: Neural Isolation Brushes and Cloud Sync | FRAMELINE",
+      title: "DaVinci Resolve 20 Studio: Neural Isolation Brushes and Cloud Sync | RENDERLINE",
       desc: "How DaVinci Resolve 20 Studio implements neural isolation brushes and cloud sync — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/davinci-color-suite.jpg",
     },
@@ -297,7 +297,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/foundry_nuke_16_release_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -306,7 +306,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Foundry Nuke 16 Release** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Foundry Nuke 16 Release: Native Deep Data Point Cloud Acceleration | FRAMELINE",
+      title: "Foundry Nuke 16 Release: Native Deep Data Point Cloud Acceleration | RENDERLINE",
       desc: "How Foundry Nuke 16 Release implements native deep data point cloud acceleration — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     },
@@ -341,7 +341,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/foundry_mari_8_0_open_beta_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -350,7 +350,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Foundry Mari 8.0 Open Beta** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Foundry Mari 8.0 Open Beta: USD MaterialX Multi-Tile Streaming | FRAMELINE",
+      title: "Foundry Mari 8.0 Open Beta: USD MaterialX Multi-Tile Streaming | RENDERLINE",
       desc: "How Foundry Mari 8.0 Open Beta implements usd materialx multi-tile streaming — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/nuke-vfx-comp.jpg",
     },
@@ -385,7 +385,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/blender_5_2_lts_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -394,7 +394,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Blender 5.2 LTS** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Blender 5.2 LTS: Geometry Nodes Cloth Physics and Cycles Light Tree | FRAMELINE",
+      title: "Blender 5.2 LTS: Geometry Nodes Cloth Physics and Cycles Light Tree | RENDERLINE",
       desc: "How Blender 5.2 LTS implements geometry nodes cloth physics and cycles light tree — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80",
     },
@@ -429,7 +429,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/autodesk_maya_2027_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -438,7 +438,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Autodesk Maya 2027** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Autodesk Maya 2027: USD Solaris Bifrost Graph Integration | FRAMELINE",
+      title: "Autodesk Maya 2027: USD Solaris Bifrost Graph Integration | RENDERLINE",
       desc: "How Autodesk Maya 2027 implements usd solaris bifrost graph integration — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     },
@@ -473,7 +473,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/sidefx_houdini_21_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -482,7 +482,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **SideFX Houdini 21** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "SideFX Houdini 21: Apex Rigging Graph and Karma XPU Maturation | FRAMELINE",
+      title: "SideFX Houdini 21: Apex Rigging Graph and Karma XPU Maturation | RENDERLINE",
       desc: "How SideFX Houdini 21 implements apex rigging graph and karma xpu maturation — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },
@@ -517,7 +517,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/epic_games_lore_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -526,7 +526,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Epic Games Lore** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Epic Games Lore: The Open-Source Git Alternative for Massive VFX Files | FRAMELINE",
+      title: "Epic Games Lore: The Open-Source Git Alternative for Massive VFX Files | RENDERLINE",
       desc: "How Epic Games Lore implements the open-source git alternative for massive vfx files — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/unreal-engine-stage.jpg",
     },
@@ -561,7 +561,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/blackmagic_cloud_19_5_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -570,7 +570,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Blackmagic Cloud 19.5** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Blackmagic Cloud 19.5: Multi-Seat Collaborative Post-Production | FRAMELINE",
+      title: "Blackmagic Cloud 19.5: Multi-Seat Collaborative Post-Production | RENDERLINE",
       desc: "How Blackmagic Cloud 19.5 implements multi-seat collaborative post-production — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/nuke-vfx-comp.jpg",
     },
@@ -605,7 +605,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/adobe_premiere_pro_2027_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -614,7 +614,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Adobe Premiere Pro 2027** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Adobe Premiere Pro 2027: Native C2PA Watermarking and Neurostream Engine | FRAMELINE",
+      title: "Adobe Premiere Pro 2027: Native C2PA Watermarking and Neurostream Engine | RENDERLINE",
       desc: "How Adobe Premiere Pro 2027 implements native c2pa watermarking and neurostream engine — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/article-adobe.jpg",
     },
@@ -649,7 +649,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/adobe_after_effects_2027_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -658,7 +658,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Adobe After Effects 2027** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Adobe After Effects 2027: 3D Workspace and GLTF Lighting Overhaul | FRAMELINE",
+      title: "Adobe After Effects 2027: 3D Workspace and GLTF Lighting Overhaul | RENDERLINE",
       desc: "How Adobe After Effects 2027 implements 3d workspace and gltf lighting overhaul — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80",
     },
@@ -693,7 +693,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/pro_tools_2026_studio_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -702,7 +702,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Pro Tools 2026 Studio** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Pro Tools 2026 Studio: ARA 3 Integration and Immersive Dolby Atmos | FRAMELINE",
+      title: "Pro Tools 2026 Studio: ARA 3 Integration and Immersive Dolby Atmos | RENDERLINE",
       desc: "How Pro Tools 2026 Studio implements ara 3 integration and immersive dolby atmos — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     },
@@ -737,7 +737,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/baselight_6_0_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -746,7 +746,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Baselight 6.0** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Baselight 6.0: Spatial Color Science and Neural Grade Matching | FRAMELINE",
+      title: "Baselight 6.0: Spatial Color Science and Neural Grade Matching | RENDERLINE",
       desc: "How Baselight 6.0 implements spatial color science and neural grade matching — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80",
     },
@@ -781,7 +781,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/colorfront_transkoder_2026_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -790,7 +790,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Colorfront Transkoder 2026** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Colorfront Transkoder 2026: 8K High-Throughput IMF Authoring | FRAMELINE",
+      title: "Colorfront Transkoder 2026: 8K High-Throughput IMF Authoring | RENDERLINE",
       desc: "How Colorfront Transkoder 2026 implements 8k high-throughput imf authoring — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/davinci-color-suite.jpg",
     },
@@ -825,7 +825,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/izotope_rx_12_advanced_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -834,7 +834,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **iZotope RX 12 Advanced** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "iZotope RX 12 Advanced: Machine Learning Dialogue Isolation 3.0 | FRAMELINE",
+      title: "iZotope RX 12 Advanced: Machine Learning Dialogue Isolation 3.0 | RENDERLINE",
       desc: "How iZotope RX 12 Advanced implements machine learning dialogue isolation 3.0 — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
     },
@@ -869,7 +869,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/opencolorio_2_4_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -878,7 +878,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **OpenColorIO 2.4** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "OpenColorIO 2.4: Standardizing ACES 2.0 Across Linux and Windows | FRAMELINE",
+      title: "OpenColorIO 2.4: Standardizing ACES 2.0 Across Linux and Windows | RENDERLINE",
       desc: "How OpenColorIO 2.4 implements standardizing aces 2.0 across linux and windows — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80",
     },
@@ -913,7 +913,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/openusd_26_03_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -922,7 +922,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **OpenUSD 26.03** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "OpenUSD 26.03: Volumetric OpenVDB Schemas and Hydra 2.0 Delegates | FRAMELINE",
+      title: "OpenUSD 26.03: Volumetric OpenVDB Schemas and Hydra 2.0 Delegates | RENDERLINE",
       desc: "How OpenUSD 26.03 implements volumetric openvdb schemas and hydra 2.0 delegates — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80",
     },
@@ -957,7 +957,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/materialx_1_39_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -966,7 +966,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **MaterialX 1.39** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "MaterialX 1.39: Spectral Shading and Real-Time GPU Transpilation | FRAMELINE",
+      title: "MaterialX 1.39: Spectral Shading and Real-Time GPU Transpilation | RENDERLINE",
       desc: "How MaterialX 1.39 implements spectral shading and real-time gpu transpilation — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/review-davinci.jpg",
     },
@@ -1001,7 +1001,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/gaffer_1_4_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -1010,7 +1010,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Gaffer 1.4** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Gaffer 1.4: Node-Based VFX Lighting and Lookdev at Scale | FRAMELINE",
+      title: "Gaffer 1.4: Node-Based VFX Lighting and Lookdev at Scale | RENDERLINE",
       desc: "How Gaffer 1.4 implements node-based vfx lighting and lookdev at scale — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/vfx-space-explosion.jpg",
     },
@@ -1045,7 +1045,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/chaos_v_ray_7_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -1054,7 +1054,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Chaos V-Ray 7** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Chaos V-Ray 7: Neural Denoiser and Real-Time GPU Light Cache | FRAMELINE",
+      title: "Chaos V-Ray 7: Neural Denoiser and Real-Time GPU Light Cache | RENDERLINE",
       desc: "How Chaos V-Ray 7 implements neural denoiser and real-time gpu light cache — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/article-sora.jpg",
     },
@@ -1089,7 +1089,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/otoy_octanerender_2027_1_alpha_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -1098,7 +1098,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Otoy OctaneRender 2027.1 Alpha** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Otoy OctaneRender 2027.1 Alpha: Real-Time Spectral Photon Tracing | FRAMELINE",
+      title: "Otoy OctaneRender 2027.1 Alpha: Real-Time Spectral Photon Tracing | RENDERLINE",
       desc: "How Otoy OctaneRender 2027.1 Alpha implements real-time spectral photon tracing — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/article-adobe.jpg",
     },
@@ -1133,7 +1133,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/maxon_cinema_4d_2027_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -1142,7 +1142,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Maxon Cinema 4D 2027** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Maxon Cinema 4D 2027: Redshift GPU Real-Time Viewport Acceleration | FRAMELINE",
+      title: "Maxon Cinema 4D 2027: Redshift GPU Real-Time Viewport Acceleration | RENDERLINE",
       desc: "How Maxon Cinema 4D 2027 implements redshift gpu real-time viewport acceleration — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1177,7 +1177,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/zbrush_2027_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -1186,7 +1186,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **ZBrush 2027** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "ZBrush 2027: Sub-Pixel Sculpting on 100 Million Polygon Meshes | FRAMELINE",
+      title: "ZBrush 2027: Sub-Pixel Sculpting on 100 Million Polygon Meshes | RENDERLINE",
       desc: "How ZBrush 2027 implements sub-pixel sculpting on 100 million polygon meshes — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1221,7 +1221,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/substance_3d_sampler_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -1230,7 +1230,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Substance 3D Sampler** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Substance 3D Sampler: AI Material Capture from Mobile Phone Photos | FRAMELINE",
+      title: "Substance 3D Sampler: AI Material Capture from Mobile Phone Photos | RENDERLINE",
       desc: "How Substance 3D Sampler implements ai material capture from mobile phone photos — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1265,7 +1265,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/boris_fx_mocha_pro_2026_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -1274,7 +1274,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Boris FX Mocha Pro 2026** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Boris FX Mocha Pro 2026: Planar Tracking Driven by Deep Learning | FRAMELINE",
+      title: "Boris FX Mocha Pro 2026: Planar Tracking Driven by Deep Learning | RENDERLINE",
       desc: "How Boris FX Mocha Pro 2026 implements planar tracking driven by deep learning — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1309,7 +1309,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/syntheyes_2026_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -1318,7 +1318,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Syntheyes 2026** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Syntheyes 2026: Algorithmic Multi-Camera Lens Calibration | FRAMELINE",
+      title: "Syntheyes 2026: Algorithmic Multi-Camera Lens Calibration | RENDERLINE",
       desc: "How Syntheyes 2026 implements algorithmic multi-camera lens calibration — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
@@ -1353,7 +1353,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/3dequalizer_4_release_8_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -1362,7 +1362,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **3DEqualizer 4 Release 8** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "3DEqualizer 4 Release 8: High-Precision Anamorphic Curve Solver | FRAMELINE",
+      title: "3DEqualizer 4 Release 8: High-Precision Anamorphic Curve Solver | RENDERLINE",
       desc: "How 3DEqualizer 4 Release 8 implements high-precision anamorphic curve solver — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/review-camera.jpg",
     },
@@ -1397,7 +1397,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/ftrack_studio_5_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -1406,7 +1406,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Ftrack Studio 5** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Ftrack Studio 5: Enterprise Pipeline Asset Management and Review | FRAMELINE",
+      title: "Ftrack Studio 5: Enterprise Pipeline Asset Management and Review | RENDERLINE",
       desc: "How Ftrack Studio 5 implements enterprise pipeline asset management and review — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/review-davinci.jpg",
     },
@@ -1441,7 +1441,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/autodesk_flow_production_tracking__shotgrid__cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -1450,7 +1450,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Autodesk Flow Production Tracking (ShotGrid)** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Autodesk Flow Production Tracking (ShotGrid): Cloud REST API 4.0 | FRAMELINE",
+      title: "Autodesk Flow Production Tracking (ShotGrid): Cloud REST API 4.0 | RENDERLINE",
       desc: "How Autodesk Flow Production Tracking (ShotGrid) implements cloud rest api 4.0 — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1485,7 +1485,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/aspera_connect_5_0_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -1494,7 +1494,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Aspera Connect 5.0** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Aspera Connect 5.0: 40Gbps UDP File Acceleration for Global Shoots | FRAMELINE",
+      title: "Aspera Connect 5.0: 40Gbps UDP File Acceleration for Global Shoots | RENDERLINE",
       desc: "How Aspera Connect 5.0 implements 40gbps udp file acceleration for global shoots — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1633493106115-620247657d24?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1529,7 +1529,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/signiant_media_shuttle_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -1538,7 +1538,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Signiant Media Shuttle** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Signiant Media Shuttle: Automated Cloud Storage Gateway Ingest | FRAMELINE",
+      title: "Signiant Media Shuttle: Automated Cloud Storage Gateway Ingest | RENDERLINE",
       desc: "How Signiant Media Shuttle implements automated cloud storage gateway ingest — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1573,7 +1573,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/frame_io_version_5_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -1582,7 +1582,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Frame.io Version 5** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Frame.io Version 5: Multi-Asset Metadata Tagging and 4K HDR Playback | FRAMELINE",
+      title: "Frame.io Version 5: Multi-Asset Metadata Tagging and 4K HDR Playback | RENDERLINE",
       desc: "How Frame.io Version 5 implements multi-asset metadata tagging and 4k hdr playback — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/article-adobe.jpg",
     },
@@ -1617,7 +1617,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/avid_media_composer_2026_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -1626,7 +1626,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Avid Media Composer 2026** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Avid Media Composer 2026: Native OpenUSD Timeline Editing | FRAMELINE",
+      title: "Avid Media Composer 2026: Native OpenUSD Timeline Editing | RENDERLINE",
       desc: "How Avid Media Composer 2026 implements native openusd timeline editing — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/review-davinci.jpg",
     },
@@ -1661,7 +1661,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/filmlight_daylight_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -1670,7 +1670,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **FilmLight Daylight** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "FilmLight Daylight: On-Set Color Timing and Dailies Transcoding | FRAMELINE",
+      title: "FilmLight Daylight: On-Set Color Timing and Dailies Transcoding | RENDERLINE",
       desc: "How FilmLight Daylight implements on-set color timing and dailies transcoding — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/nuke-vfx-comp.jpg",
     },
@@ -1705,7 +1705,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/assimilate_scratch_10_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -1714,7 +1714,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Assimilate Scratch 10** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Assimilate Scratch 10: Real-Time Virtual Production Background Playback | FRAMELINE",
+      title: "Assimilate Scratch 10: Real-Time Virtual Production Background Playback | RENDERLINE",
       desc: "How Assimilate Scratch 10 implements real-time virtual production background playback — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/virtual-stage-setup.jpg",
     },
@@ -1749,7 +1749,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/pomfort_livegrade_studio_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -1758,7 +1758,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Pomfort Livegrade Studio** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Pomfort Livegrade Studio: Camera Sensor Calibration for LED Stages | FRAMELINE",
+      title: "Pomfort Livegrade Studio: Camera Sensor Calibration for LED Stages | RENDERLINE",
       desc: "How Pomfort Livegrade Studio implements camera sensor calibration for led stages — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1793,7 +1793,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/pomfort_silverstack_lab_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -1802,7 +1802,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Pomfort Silverstack Lab** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Pomfort Silverstack Lab: Comprehensive DIT Backup and Verification | FRAMELINE",
+      title: "Pomfort Silverstack Lab: Comprehensive DIT Backup and Verification | RENDERLINE",
       desc: "How Pomfort Silverstack Lab implements comprehensive dit backup and verification — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1837,7 +1837,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/cine4d_to_usd_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -1846,7 +1846,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Cine4D to USD** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Cine4D to USD: Seamless Asset Export Protocols for Broadcast Motion | FRAMELINE",
+      title: "Cine4D to USD: Seamless Asset Export Protocols for Broadcast Motion | RENDERLINE",
       desc: "How Cine4D to USD implements seamless asset export protocols for broadcast motion — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/hero-vfx-breakdown.jpg",
     },
@@ -1881,7 +1881,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/substance_designer_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -1890,7 +1890,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Substance Designer** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Substance Designer: Procedural Node Graph Architecture for Textures | FRAMELINE",
+      title: "Substance Designer: Procedural Node Graph Architecture for Textures | RENDERLINE",
       desc: "How Substance Designer implements procedural node graph architecture for textures — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1925,7 +1925,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/spike_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -1934,7 +1934,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Spike** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Spike: Real-Time High-Speed Audio Spectrogram Telemetry | FRAMELINE",
+      title: "Spike: Real-Time High-Speed Audio Spectrogram Telemetry | RENDERLINE",
       desc: "How Spike implements real-time high-speed audio spectrogram telemetry — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1969,7 +1969,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/audinate_dante_controller_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -1978,7 +1978,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Audinate Dante Controller** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Audinate Dante Controller: Routing 512 Channels over Soundstage IP | FRAMELINE",
+      title: "Audinate Dante Controller: Routing 512 Channels over Soundstage IP | RENDERLINE",
       desc: "How Audinate Dante Controller implements routing 512 channels over soundstage ip — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2013,7 +2013,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/teradek_core_cloud_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -2022,7 +2022,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Teradek Core Cloud** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Teradek Core Cloud: Zero-Latency H.265 Camera-to-Cloud Streaming | FRAMELINE",
+      title: "Teradek Core Cloud: Zero-Latency H.265 Camera-to-Cloud Streaming | RENDERLINE",
       desc: "How Teradek Core Cloud implements zero-latency h.265 camera-to-cloud streaming — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
@@ -2057,7 +2057,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/disguise_designer_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -2066,7 +2066,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Disguise Designer** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Disguise Designer: Real-Time Stage Sequencing and Video Routing | FRAMELINE",
+      title: "Disguise Designer: Real-Time Stage Sequencing and Video Routing | RENDERLINE",
       desc: "How Disguise Designer implements real-time stage sequencing and video routing — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/review-davinci.jpg",
     },
@@ -2101,7 +2101,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/megapixel_vr_omnis_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -2110,7 +2110,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Megapixel VR OMNIS** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Megapixel VR OMNIS: Real-Time Health Monitoring for LED Volumes | FRAMELINE",
+      title: "Megapixel VR OMNIS: Real-Time Health Monitoring for LED Volumes | RENDERLINE",
       desc: "How Megapixel VR OMNIS implements real-time health monitoring for led volumes — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2145,7 +2145,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/brompton_tessera_sx40_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -2154,7 +2154,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Brompton Tessera SX40** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Brompton Tessera SX40: Advanced ShutterSync and Frame Remapping | FRAMELINE",
+      title: "Brompton Tessera SX40: Advanced ShutterSync and Frame Remapping | RENDERLINE",
       desc: "How Brompton Tessera SX40 implements advanced shuttersync and frame remapping — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2189,7 +2189,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/mo_sys_lens_profiler_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -2198,7 +2198,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Mo-Sys Lens Profiler** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Mo-Sys Lens Profiler: Calibrating Anamorphic Glass in Under 10 Minutes | FRAMELINE",
+      title: "Mo-Sys Lens Profiler: Calibrating Anamorphic Glass in Under 10 Minutes | RENDERLINE",
       desc: "How Mo-Sys Lens Profiler implements calibrating anamorphic glass in under 10 minutes — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
@@ -2233,7 +2233,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/vicon_shogun_2_0_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -2242,7 +2242,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Vicon Shogun 2.0** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Vicon Shogun 2.0: Markerless Live Performance Capture for Unreal | FRAMELINE",
+      title: "Vicon Shogun 2.0: Markerless Live Performance Capture for Unreal | RENDERLINE",
       desc: "How Vicon Shogun 2.0 implements markerless live performance capture for unreal — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2277,7 +2277,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/qualisys_track_manager_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -2286,7 +2286,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Qualisys Track Manager** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Qualisys Track Manager: High-Precision Optical Stage Tracking | FRAMELINE",
+      title: "Qualisys Track Manager: High-Precision Optical Stage Tracking | RENDERLINE",
       desc: "How Qualisys Track Manager implements high-precision optical stage tracking — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/mocap-performance-stage.jpg",
     },
@@ -2321,7 +2321,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/optitrack_motive_3_2_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -2330,7 +2330,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **OptiTrack Motive 3.2** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "OptiTrack Motive 3.2: Sub-Millimeter Rigid Body Tracking for Cameras | FRAMELINE",
+      title: "OptiTrack Motive 3.2: Sub-Millimeter Rigid Body Tracking for Cameras | RENDERLINE",
       desc: "How OptiTrack Motive 3.2 implements sub-millimeter rigid body tracking for cameras — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1533561797500-4bad475fe661?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2365,7 +2365,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/blackmagic_atem_constellation_8k_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -2374,7 +2374,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Blackmagic ATEM Constellation 8K** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Blackmagic ATEM Constellation 8K: Zero-Latency Production Switchers | FRAMELINE",
+      title: "Blackmagic ATEM Constellation 8K: Zero-Latency Production Switchers | RENDERLINE",
       desc: "How Blackmagic ATEM Constellation 8K implements zero-latency production switchers — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1633493106115-620247657d24?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2409,7 +2409,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/aja_kona_5_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -2418,7 +2418,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **AJA Kona 5** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "AJA Kona 5: 12G-SDI Multi-Channel Ingest for Unreal Engine Compositing | FRAMELINE",
+      title: "AJA Kona 5: 12G-SDI Multi-Channel Ingest for Unreal Engine Compositing | RENDERLINE",
       desc: "How AJA Kona 5 implements 12g-sdi multi-channel ingest for unreal engine compositing — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/article-unreal.jpg",
     },
@@ -2453,7 +2453,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/decklink_8k_pro_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -2462,7 +2462,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **DeckLink 8K Pro** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "DeckLink 8K Pro: PCI Express Video Capture for Color Grading Suites | FRAMELINE",
+      title: "DeckLink 8K Pro: PCI Express Video Capture for Color Grading Suites | RENDERLINE",
       desc: "How DeckLink 8K Pro implements pci express video capture for color grading suites — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2497,7 +2497,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/avid_pro_tools_hdx_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -2506,7 +2506,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Avid Pro Tools HDX** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Avid Pro Tools HDX: Low-Latency DSP Processing for 500-Track Orchestras | FRAMELINE",
+      title: "Avid Pro Tools HDX: Low-Latency DSP Processing for 500-Track Orchestras | RENDERLINE",
       desc: "How Avid Pro Tools HDX implements low-latency dsp processing for 500-track orchestras — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2541,7 +2541,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/dolby_atmos_production_suite_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -2550,7 +2550,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Dolby Atmos Production Suite** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Dolby Atmos Production Suite: 3D Object Panning and Binaural Monitoring | FRAMELINE",
+      title: "Dolby Atmos Production Suite: 3D Object Panning and Binaural Monitoring | RENDERLINE",
       desc: "How Dolby Atmos Production Suite implements 3d object panning and binaural monitoring — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/audio-atmos-stage.jpg",
     },
@@ -2585,7 +2585,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/fabfilter_pro_l_3_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -2594,7 +2594,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Fabfilter Pro-L 3** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Fabfilter Pro-L 3: True Peak Limiting for Dolby Atmos Specifications | FRAMELINE",
+      title: "Fabfilter Pro-L 3: True Peak Limiting for Dolby Atmos Specifications | RENDERLINE",
       desc: "How Fabfilter Pro-L 3 implements true peak limiting for dolby atmos specifications — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2629,7 +2629,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/cedar_studio_dns_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -2638,7 +2638,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Cedar Studio DNS** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Cedar Studio DNS: Machine Learning Dialogue Noise Suppression | FRAMELINE",
+      title: "Cedar Studio DNS: Machine Learning Dialogue Noise Suppression | RENDERLINE",
       desc: "How Cedar Studio DNS implements machine learning dialogue noise suppression — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2673,7 +2673,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/lectrosonics_wireless_designer_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -2682,7 +2682,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Lectrosonics Wireless Designer** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Lectrosonics Wireless Designer: Multi-Channel RF Coordination on Set | FRAMELINE",
+      title: "Lectrosonics Wireless Designer: Multi-Channel RF Coordination on Set | RENDERLINE",
       desc: "How Lectrosonics Wireless Designer implements multi-channel rf coordination on set — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2717,7 +2717,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/sennheiser_ambeo_vr_mic_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -2726,7 +2726,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Sennheiser AMBEO VR Mic** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Sennheiser AMBEO VR Mic: Spatial Audio Capture for Immersive Soundstages | FRAMELINE",
+      title: "Sennheiser AMBEO VR Mic: Spatial Audio Capture for Immersive Soundstages | RENDERLINE",
       desc: "How Sennheiser AMBEO VR Mic implements spatial audio capture for immersive soundstages — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/audio-atmos-stage.jpg",
     },
@@ -2761,7 +2761,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/schoeps_supercmit_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -2770,7 +2770,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Schoeps SuperCMIT** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Schoeps SuperCMIT: Digital Shotgun Microphone with Real-Time DSP Pattern Control | FRAMELINE",
+      title: "Schoeps SuperCMIT: Digital Shotgun Microphone with Real-Time DSP Pattern Control | RENDERLINE",
       desc: "How Schoeps SuperCMIT implements digital shotgun microphone with real-time dsp pattern control — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2805,7 +2805,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/sound_devices_888_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -2814,7 +2814,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Sound Devices 888** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Sound Devices 888: 16-Channel Portable Field Recorder for Soundstage DITs | FRAMELINE",
+      title: "Sound Devices 888: 16-Channel Portable Field Recorder for Soundstage DITs | RENDERLINE",
       desc: "How Sound Devices 888 implements 16-channel portable field recorder for soundstage dits — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2849,7 +2849,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/red_giant_trapcode_particular_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -2858,7 +2858,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Red Giant Trapcode Particular** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Red Giant Trapcode Particular: GPU-Accelerated Particle Systems in AE | FRAMELINE",
+      title: "Red Giant Trapcode Particular: GPU-Accelerated Particle Systems in AE | RENDERLINE",
       desc: "How Red Giant Trapcode Particular implements gpu-accelerated particle systems in ae — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/article-adobe.jpg",
     },
@@ -2893,7 +2893,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/red_giant_magic_bullet_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -2902,7 +2902,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Red Giant Magic Bullet** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Red Giant Magic Bullet: Photochemical Film Stock Emulation Profiles | FRAMELINE",
+      title: "Red Giant Magic Bullet: Photochemical Film Stock Emulation Profiles | RENDERLINE",
       desc: "How Red Giant Magic Bullet implements photochemical film stock emulation profiles — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/audio-atmos-stage.jpg",
     },
@@ -2937,7 +2937,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/filmconvert_nitrate_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -2946,7 +2946,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **FilmConvert Nitrate** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "FilmConvert Nitrate: Optical Grain Profiles Matched to Specific Sensors | FRAMELINE",
+      title: "FilmConvert Nitrate: Optical Grain Profiles Matched to Specific Sensors | RENDERLINE",
       desc: "How FilmConvert Nitrate implements optical grain profiles matched to specific sensors — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/review-camera.jpg",
     },
@@ -2981,7 +2981,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/dehancer_pro_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -2990,7 +2990,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Dehancer Pro** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Dehancer Pro: 35mm and 16mm Film Grain, Halation, and Bloom Synthesis | FRAMELINE",
+      title: "Dehancer Pro: 35mm and 16mm Film Grain, Halation, and Bloom Synthesis | RENDERLINE",
       desc: "How Dehancer Pro implements 35mm and 16mm film grain, halation, and bloom synthesis — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/nuke-vfx-comp.jpg",
     },
@@ -3025,7 +3025,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/scatter_5_for_blender_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -3034,7 +3034,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Scatter 5 for Blender** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Scatter 5 for Blender: Real-Time Procedural Ecosystem Distribution | FRAMELINE",
+      title: "Scatter 5 for Blender: Real-Time Procedural Ecosystem Distribution | RENDERLINE",
       desc: "How Scatter 5 for Blender implements real-time procedural ecosystem distribution — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3069,7 +3069,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/hard_ops_and_boxcutter_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -3078,7 +3078,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Hard Ops and Boxcutter** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Hard Ops and Boxcutter: Non-Destructive Hard-Surface Modeling in Blender | FRAMELINE",
+      title: "Hard Ops and Boxcutter: Non-Destructive Hard-Surface Modeling in Blender | RENDERLINE",
       desc: "How Hard Ops and Boxcutter implements non-destructive hard-surface modeling in blender — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3113,7 +3113,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/auto_rig_pro_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -3122,7 +3122,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Auto-Rig Pro** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Auto-Rig Pro: Modular Character Biped and Quadruped Auto-Rigging | FRAMELINE",
+      title: "Auto-Rig Pro: Modular Character Biped and Quadruped Auto-Rigging | RENDERLINE",
       desc: "How Auto-Rig Pro implements modular character biped and quadruped auto-rigging — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3157,7 +3157,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/flip_fluids_addon_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -3166,7 +3166,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Flip Fluids Addon** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Flip Fluids Addon: High-Performance Water Simulation inside Blender | FRAMELINE",
+      title: "Flip Fluids Addon: High-Performance Water Simulation inside Blender | RENDERLINE",
       desc: "How Flip Fluids Addon implements high-performance water simulation inside blender — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3201,7 +3201,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/renderman_26_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -3210,7 +3210,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **RenderMan 26** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "RenderMan 26: XPU Production Rendering with Stylized Looks Toolset | FRAMELINE",
+      title: "RenderMan 26: XPU Production Rendering with Stylized Looks Toolset | RENDERLINE",
       desc: "How RenderMan 26 implements xpu production rendering with stylized looks toolset — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/nuke-vfx-comp.jpg",
     },
@@ -3245,7 +3245,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/luxcorerender_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -3254,7 +3254,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **LuxCoreRender** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "LuxCoreRender: Open-Source Physically Unbiased Spectral Path Tracing | FRAMELINE",
+      title: "LuxCoreRender: Open-Source Physically Unbiased Spectral Path Tracing | RENDERLINE",
       desc: "How LuxCoreRender implements open-source physically unbiased spectral path tracing — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1633493106115-620247657d24?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3289,7 +3289,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/appleseed_renderer_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -3298,7 +3298,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Appleseed Renderer** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Appleseed Renderer: Modern Physically-Based Global Illumination | FRAMELINE",
+      title: "Appleseed Renderer: Modern Physically-Based Global Illumination | RENDERLINE",
       desc: "How Appleseed Renderer implements modern physically-based global illumination — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/article-adobe.jpg",
     },
@@ -3333,7 +3333,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/radeon_prorender_3_0_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -3342,7 +3342,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Radeon ProRender 3.0** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Radeon ProRender 3.0: Vulkan Ray Tracing for Multi-Vendor Hardware | FRAMELINE",
+      title: "Radeon ProRender 3.0: Vulkan Ray Tracing for Multi-Vendor Hardware | RENDERLINE",
       desc: "How Radeon ProRender 3.0 implements vulkan ray tracing for multi-vendor hardware — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3377,7 +3377,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/substance_3d_stager_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -3386,7 +3386,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Substance 3D Stager** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Substance 3D Stager: Virtual Photography and Product Rendering | FRAMELINE",
+      title: "Substance 3D Stager: Virtual Photography and Product Rendering | RENDERLINE",
       desc: "How Substance 3D Stager implements virtual photography and product rendering — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1633493106115-620247657d24?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3421,7 +3421,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/realityscan_mobile_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -3430,7 +3430,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **RealityScan Mobile** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "RealityScan Mobile: Photogrammetry Capture on iPhone LiDAR Sensors | FRAMELINE",
+      title: "RealityScan Mobile: Photogrammetry Capture on iPhone LiDAR Sensors | RENDERLINE",
       desc: "How RealityScan Mobile implements photogrammetry capture on iphone lidar sensors — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
@@ -3465,7 +3465,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/polycam_pro_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -3474,7 +3474,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Polycam Pro** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Polycam Pro: Gaussian Splatting and 3D Mesh Export for Concept Artists | FRAMELINE",
+      title: "Polycam Pro: Gaussian Splatting and 3D Mesh Export for Concept Artists | RENDERLINE",
       desc: "How Polycam Pro implements gaussian splatting and 3d mesh export for concept artists — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3509,7 +3509,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/luma_ai_interactive_studio_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -3518,7 +3518,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Luma AI Interactive Studio** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Luma AI Interactive Studio: Generating 3D Splat Assets from Drone Video | FRAMELINE",
+      title: "Luma AI Interactive Studio: Generating 3D Splat Assets from Drone Video | RENDERLINE",
       desc: "How Luma AI Interactive Studio implements generating 3d splat assets from drone video — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1633493106115-620247657d24?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3553,7 +3553,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/meshy_ai_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -3562,7 +3562,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Meshy AI** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Meshy AI: Text-to-3D Asset Generation for Background Clutter | FRAMELINE",
+      title: "Meshy AI: Text-to-3D Asset Generation for Background Clutter | RENDERLINE",
       desc: "How Meshy AI implements text-to-3d asset generation for background clutter — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3597,7 +3597,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/tripo_3d_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -3606,7 +3606,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Tripo 3D** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Tripo 3D: High-Speed Topology Generation for Game Engine Props | FRAMELINE",
+      title: "Tripo 3D: High-Speed Topology Generation for Game Engine Props | RENDERLINE",
       desc: "How Tripo 3D implements high-speed topology generation for game engine props — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3641,7 +3641,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/kinetix_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -3650,7 +3650,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Kinetix** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Kinetix: AI-Assisted Motion Capture from Monocular Smartphone Video | FRAMELINE",
+      title: "Kinetix: AI-Assisted Motion Capture from Monocular Smartphone Video | RENDERLINE",
       desc: "How Kinetix implements ai-assisted motion capture from monocular smartphone video — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3685,7 +3685,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/deepmotion_animate_3d_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -3694,7 +3694,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **DeepMotion Animate 3D** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "DeepMotion Animate 3D: Markerless Body and Hand Tracking in the Browser | FRAMELINE",
+      title: "DeepMotion Animate 3D: Markerless Body and Hand Tracking in the Browser | RENDERLINE",
       desc: "How DeepMotion Animate 3D implements markerless body and hand tracking in the browser — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/mocap-performance-stage.jpg",
     },
@@ -3729,7 +3729,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/move_ai_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -3738,7 +3738,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Move AI** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Move AI: Multi-Camera Computer Vision Motion Capture for Field Shoots | FRAMELINE",
+      title: "Move AI: Multi-Camera Computer Vision Motion Capture for Field Shoots | RENDERLINE",
       desc: "How Move AI implements multi-camera computer vision motion capture for field shoots — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1533561797500-4bad475fe661?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3773,7 +3773,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/rokoko_studio_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -3782,7 +3782,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Rokoko Studio** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Rokoko Studio: Smartsuit Pro II Sensor Fusion and Live Streaming | FRAMELINE",
+      title: "Rokoko Studio: Smartsuit Pro II Sensor Fusion and Live Streaming | RENDERLINE",
       desc: "How Rokoko Studio implements smartsuit pro ii sensor fusion and live streaming — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
@@ -3817,7 +3817,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/xsens_animate_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -3826,7 +3826,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Xsens Animate** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Xsens Animate: Inertial Motion Capture for High-Impact Stunt Work | FRAMELINE",
+      title: "Xsens Animate: Inertial Motion Capture for High-Impact Stunt Work | RENDERLINE",
       desc: "How Xsens Animate implements inertial motion capture for high-impact stunt work — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3861,7 +3861,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/faceware_studio_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -3870,7 +3870,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Faceware Studio** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Faceware Studio: Real-Time Markerless Facial Tracking for Streamers | FRAMELINE",
+      title: "Faceware Studio: Real-Time Markerless Facial Tracking for Streamers | RENDERLINE",
       desc: "How Faceware Studio implements real-time markerless facial tracking for streamers — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/mocap-performance-stage.jpg",
     },
@@ -3905,7 +3905,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/audio2face_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -3914,7 +3914,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Audio2Face** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Audio2Face: NVIDIA Omniverse AI Facial Animation Driven by Speech | FRAMELINE",
+      title: "Audio2Face: NVIDIA Omniverse AI Facial Animation Driven by Speech | RENDERLINE",
       desc: "How Audio2Face implements nvidia omniverse ai facial animation driven by speech — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3949,7 +3949,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/metahuman_creator_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -3958,7 +3958,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Metahuman Creator** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Metahuman Creator: Cloud-Based High-Fidelity Character Customization | FRAMELINE",
+      title: "Metahuman Creator: Cloud-Based High-Fidelity Character Customization | RENDERLINE",
       desc: "How Metahuman Creator implements cloud-based high-fidelity character customization — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/article-adobe.jpg",
     },
@@ -3993,7 +3993,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/epic_games_twinmotion_2026_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -4002,7 +4002,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Epic Games Twinmotion 2026** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Epic Games Twinmotion 2026: Real-Time Architectural Previs in UE5 | FRAMELINE",
+      title: "Epic Games Twinmotion 2026: Real-Time Architectural Previs in UE5 | RENDERLINE",
       desc: "How Epic Games Twinmotion 2026 implements real-time architectural previs in ue5 — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/article-unreal.jpg",
     },
@@ -4037,7 +4037,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/lumion_2026_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -4046,7 +4046,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Lumion 2026** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Lumion 2026: Fast Exterior Previs and Atmospheric Environmental Renders | FRAMELINE",
+      title: "Lumion 2026: Fast Exterior Previs and Atmospheric Environmental Renders | RENDERLINE",
       desc: "How Lumion 2026 implements fast exterior previs and atmospheric environmental renders — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     },
@@ -4081,7 +4081,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/clarisse_ifx_legacy_lessons_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -4090,7 +4090,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Clarisse iFX Legacy Lessons** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Clarisse iFX Legacy Lessons: How Extreme Scene Assembly Influenced USD | FRAMELINE",
+      title: "Clarisse iFX Legacy Lessons: How Extreme Scene Assembly Influenced USD | RENDERLINE",
       desc: "How Clarisse iFX Legacy Lessons implements how extreme scene assembly influenced usd — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/nuke-vfx-comp.jpg",
     },
@@ -4125,7 +4125,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/speedtree_cinema_10_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -4134,7 +4134,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **SpeedTree Cinema 10** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "SpeedTree Cinema 10: Procedural Wind Dynamics and Branch Growth | FRAMELINE",
+      title: "SpeedTree Cinema 10: Procedural Wind Dynamics and Branch Growth | RENDERLINE",
       desc: "How SpeedTree Cinema 10 implements procedural wind dynamics and branch growth — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/audio-atmos-stage.jpg",
     },
@@ -4169,7 +4169,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/plantfactory_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -4178,7 +4178,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **PlantFactory** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "PlantFactory: Dynamic Environmental Foliage for Visual Effects | FRAMELINE",
+      title: "PlantFactory: Dynamic Environmental Foliage for Visual Effects | RENDERLINE",
       desc: "How PlantFactory implements dynamic environmental foliage for visual effects — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
     },
@@ -4213,7 +4213,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/cityengine_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -4222,7 +4222,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **CityEngine** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "CityEngine: Rule-Based Procedural Urban Environment Generation | FRAMELINE",
+      title: "CityEngine: Rule-Based Procedural Urban Environment Generation | RENDERLINE",
       desc: "How CityEngine implements rule-based procedural urban environment generation — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80",
     },
@@ -4257,7 +4257,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/world_creator_2026_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -4266,7 +4266,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **World Creator 2026** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "World Creator 2026: GPU Real-Time Terrain Generation and Erosion | FRAMELINE",
+      title: "World Creator 2026: GPU Real-Time Terrain Generation and Erosion | RENDERLINE",
       desc: "How World Creator 2026 implements gpu real-time terrain generation and erosion — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/review-davinci.jpg",
     },
@@ -4301,7 +4301,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/gaea_2_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -4310,7 +4310,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Gaea 2** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Gaea 2: Node-Based Geological Erosion and Hydraulic Simulation | FRAMELINE",
+      title: "Gaea 2: Node-Based Geological Erosion and Hydraulic Simulation | RENDERLINE",
       desc: "How Gaea 2 implements node-based geological erosion and hydraulic simulation — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "/images/breakdown-creature.jpg",
     },
@@ -4345,7 +4345,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/terragen_5_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -4354,7 +4354,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **Terragen 5** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "Terragen 5: Photorealistic Atmospheric and Volumetric Planetary Renders | FRAMELINE",
+      title: "Terragen 5: Photorealistic Atmospheric and Volumetric Planetary Renders | RENDERLINE",
       desc: "How Terragen 5 implements photorealistic atmospheric and volumetric planetary renders — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
     },
@@ -4389,7 +4389,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/embergen_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -4398,7 +4398,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **EmberGen** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "EmberGen: Real-Time Volumetric Fluid Simulation for Games and VFX | FRAMELINE",
+      title: "EmberGen: Real-Time Volumetric Fluid Simulation for Games and VFX | RENDERLINE",
       desc: "How EmberGen implements real-time volumetric fluid simulation for games and vfx — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80",
     },
@@ -4433,7 +4433,7 @@ Tier-one visual effects vendors and boutique facilities alike have benchmarked *
 \`\`\`bash
 # Facility asset validation telemetry sample
 usdview --sessionLayer ./shot_review_session.usda /assets/liquigen_cache.usd
-[FRAMELINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
+[RENDERLINE BENCHMARK] GPU Frame Latency: 11.4ms | VRAM Allocated: 14.2 GB | Status: Nominal
 \`\`\`
 
 During delivery crunch windows, the ability to eliminate manual export steps translates directly into more creative iteration cycles for artists. Technical directors note that automated background caching prevents artist workstation lockups during high-resolution multi-view renders.
@@ -4442,7 +4442,7 @@ During delivery crunch windows, the ability to eliminate manual export steps tra
 
 From an FX Pipeline TD perspective, **LiquiGen** demonstrates the essential balance between raw processing horsepower and pipeline predictability. As production schedules continue to contract across 2026 and 2027, tools that prioritize deterministic outputs and open pipeline standards will remain the foundational backbone of high-end visual effects and editorial finishing.`,
     seo: {
-      title: "LiquiGen: Real-Time Liquid Dynamics from the Creators of EmberGen | FRAMELINE",
+      title: "LiquiGen: Real-Time Liquid Dynamics from the Creators of EmberGen | RENDERLINE",
       desc: "How LiquiGen implements real-time liquid dynamics from the creators of embergen — evaluating turnaround benchmarks, GPU memory budgets, and multi-seat studio pipeline integration.",
       ogImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     },

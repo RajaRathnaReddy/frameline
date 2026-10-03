@@ -17,10 +17,10 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: ArticlePageProps): Promise<Metadata> {
   const { slug } = await params;
   if (slug.includes('toxic') || slug.includes('the-boys') || slug.includes('kalki')) {
-    return { title: '404 - Not Found | FRAMELINE' };
+    return { title: '404 - Not Found | RENDERLINE' };
   }
   const article = articles.find((a) => a.slug === slug);
-  if (!article) return { title: '404 - Not Found | FRAMELINE' };
+  if (!article) return { title: '404 - Not Found | RENDERLINE' };
 
   const articleUrl = `https://vfx.rajarathnareddy.com/article/${article.slug}`;
   const ogImageUrl = article.seo.ogImage.startsWith('http')
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
       title: article.seo.title,
       description: article.seo.desc,
       url: articleUrl,
-      siteName: 'FRAMELINE',
+      siteName: 'RENDERLINE',
       type: 'article',
       images: [
         {

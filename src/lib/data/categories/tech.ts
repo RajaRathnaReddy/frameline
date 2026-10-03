@@ -42,7 +42,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Sony Pictures Culver City Fiber Backbone** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Sony Pictures Culver City Fiber Backbone: Migrating 40 Petabytes of 8K Footage | FRAMELINE",
+      title: "Sony Pictures Culver City Fiber Backbone: Migrating 40 Petabytes of 8K Footage | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Sony Pictures Culver City Fiber Backbone and migrating 40 petabytes of 8k footage across multi-petabyte studio infrastructure.",
       ogImage: "/images/server-render-farm.jpg",
     },
@@ -88,7 +88,7 @@ A historic technical advancement demonstrated on the show floor is the inclusion
 
 The union of Nikon and RED eliminates the historical trade-offs in digital cinematography. Having true VistaVision 8K resolution with an uncompromised global shutter and hardware-verified cryptographic authenticity sets a new bar for studio cinematography in late 2026.`,
     seo: {
-      title: "Nikon & RED Demonstrate Unified Cinema Ecosystem at IBC | FRAMELINE",
+      title: "Nikon & RED Demonstrate Unified Cinema Ecosystem at IBC | RENDERLINE",
       desc: "Nikon and RED unveil their unified cinema camera platform: native Z-mount V-RAPTOR [X] global shutter, NIKKOR Cine primes, and hardware C2PA security.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
@@ -133,7 +133,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **ARRI ALEXA 35 Long-Term Field Benchmark** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "ARRI ALEXA 35 Long-Term Field Benchmark: 17 Stops of Dynamic Range in Harsh Sun | FRAMELINE",
+      title: "ARRI ALEXA 35 Long-Term Field Benchmark: 17 Stops of Dynamic Range in Harsh Sun | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing ARRI ALEXA 35 Long-Term Field Benchmark and 17 stops of dynamic range in harsh sun across multi-petabyte studio infrastructure.",
       ogImage: "/images/review-camera.jpg",
     },
@@ -178,7 +178,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **RED V-Raptor [X] Global Shutter** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "RED V-Raptor [X] Global Shutter: Eliminating Jello Artifacts in High-Speed Action | FRAMELINE",
+      title: "RED V-Raptor [X] Global Shutter: Eliminating Jello Artifacts in High-Speed Action | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing RED V-Raptor [X] Global Shutter and eliminating jello artifacts in high-speed action across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
     },
@@ -223,7 +223,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Sony CineAlta BURANO and Venice 2 Firmware 4.0** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Sony CineAlta BURANO and Venice 2 Firmware 4.0: High-Speed Frame Ingest Updates | FRAMELINE",
+      title: "Sony CineAlta BURANO and Venice 2 Firmware 4.0: High-Speed Frame Ingest Updates | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Sony CineAlta BURANO and Venice 2 Firmware 4.0 and high-speed frame ingest updates across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1533561797500-4bad475fe661?auto=format&fit=crop&w=1200&q=80",
     },
@@ -268,7 +268,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Pure Storage FlashBlade NVMe-over-Fabrics** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Pure Storage FlashBlade NVMe-over-Fabrics: 400 GB/s Streaming for VFX Render Nodes | FRAMELINE",
+      title: "Pure Storage FlashBlade NVMe-over-Fabrics: 400 GB/s Streaming for VFX Render Nodes | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Pure Storage FlashBlade NVMe-over-Fabrics and 400 gb/s streaming for vfx render nodes across multi-petabyte studio infrastructure.",
       ogImage: "/images/server-render-farm.jpg",
     },
@@ -313,7 +313,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **NVIDIA RTX 6000 Ada Generation** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "NVIDIA RTX 6000 Ada Generation: Enterprise Workstation Thermal and Compute Limits | FRAMELINE",
+      title: "NVIDIA RTX 6000 Ada Generation: Enterprise Workstation Thermal and Compute Limits | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing NVIDIA RTX 6000 Ada Generation and enterprise workstation thermal and compute limits across multi-petabyte studio infrastructure.",
       ogImage: "/images/server-render-farm.jpg",
     },
@@ -358,7 +358,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Dual NVIDIA RTX 4090 Workstations** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Dual NVIDIA RTX 4090 Workstations: Balancing Consumer GPU Value with Studio Power | FRAMELINE",
+      title: "Dual NVIDIA RTX 4090 Workstations: Balancing Consumer GPU Value with Studio Power | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Dual NVIDIA RTX 4090 Workstations and balancing consumer gpu value with studio power across multi-petabyte studio infrastructure.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
@@ -403,7 +403,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **AMD Threadripper PRO 7995WX 96-Core** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "AMD Threadripper PRO 7995WX 96-Core: Compiling USD and Simulating Vellum at 5 GHz | FRAMELINE",
+      title: "AMD Threadripper PRO 7995WX 96-Core: Compiling USD and Simulating Vellum at 5 GHz | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing AMD Threadripper PRO 7995WX 96-Core and compiling usd and simulating vellum at 5 ghz across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     },
@@ -448,7 +448,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Intel Xeon 6 Workstation Processors** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Intel Xeon 6 Workstation Processors: High-Throughput Memory Channels for 3D DCCs | FRAMELINE",
+      title: "Intel Xeon 6 Workstation Processors: High-Throughput Memory Channels for 3D DCCs | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Intel Xeon 6 Workstation Processors and high-throughput memory channels for 3d dccs across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     },
@@ -493,7 +493,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Apple M4 Ultra Unified Architecture** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Apple M4 Ultra Unified Architecture: Ingesting 8K ProRes 4444 XQ Without Proxy Files | FRAMELINE",
+      title: "Apple M4 Ultra Unified Architecture: Ingesting 8K ProRes 4444 XQ Without Proxy Files | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Apple M4 Ultra Unified Architecture and ingesting 8k prores 4444 xq without proxy files across multi-petabyte studio infrastructure.",
       ogImage: "/images/server-render-farm.jpg",
     },
@@ -538,7 +538,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Sony BVM-HX3110 4000-Nit Dual-Layer LCD** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Sony BVM-HX3110 4000-Nit Dual-Layer LCD: Mastering Dolby Vision Theatrical HDR | FRAMELINE",
+      title: "Sony BVM-HX3110 4000-Nit Dual-Layer LCD: Mastering Dolby Vision Theatrical HDR | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Sony BVM-HX3110 4000-Nit Dual-Layer LCD and mastering dolby vision theatrical hdr across multi-petabyte studio infrastructure.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
@@ -583,7 +583,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Flanders Scientific XMP310 QD-OLED** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Flanders Scientific XMP310 QD-OLED: Color Reference Accuracy in Field Grading Carts | FRAMELINE",
+      title: "Flanders Scientific XMP310 QD-OLED: Color Reference Accuracy in Field Grading Carts | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Flanders Scientific XMP310 QD-OLED and color reference accuracy in field grading carts across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     },
@@ -628,7 +628,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Apple Pro Display XDR Studio Validation** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Apple Pro Display XDR Studio Validation: Calibrating P3-D65 for Daily Editorial | FRAMELINE",
+      title: "Apple Pro Display XDR Studio Validation: Calibrating P3-D65 for Daily Editorial | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Apple Pro Display XDR Studio Validation and calibrating p3-d65 for daily editorial across multi-petabyte studio infrastructure.",
       ogImage: "/images/review-camera.jpg",
     },
@@ -673,7 +673,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **SMPTE ST 2110 IP Video Infrastructure** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "SMPTE ST 2110 IP Video Infrastructure: Replacing 12G-SDI Across Studio Lot Networks | FRAMELINE",
+      title: "SMPTE ST 2110 IP Video Infrastructure: Replacing 12G-SDI Across Studio Lot Networks | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing SMPTE ST 2110 IP Video Infrastructure and replacing 12g-sdi across studio lot networks across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     },
@@ -718,7 +718,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Precision Time Protocol IEEE 1588** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Precision Time Protocol IEEE 1588: Master Clock Sync Across Audio and High-Speed Video | FRAMELINE",
+      title: "Precision Time Protocol IEEE 1588: Master Clock Sync Across Audio and High-Speed Video | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Precision Time Protocol IEEE 1588 and master clock sync across audio and high-speed video across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     },
@@ -763,7 +763,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Aspera 40Gbps WAN Transfer** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Aspera 40Gbps WAN Transfer: Shipping 50 Terabytes Overnight from London to LA | FRAMELINE",
+      title: "Aspera 40Gbps WAN Transfer: Shipping 50 Terabytes Overnight from London to LA | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Aspera 40Gbps WAN Transfer and shipping 50 terabytes overnight from london to la across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     },
@@ -808,7 +808,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Signiant Jet** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Signiant Jet: Automated Multi-Facility Synchronization for Tier-One Post Houses | FRAMELINE",
+      title: "Signiant Jet: Automated Multi-Facility Synchronization for Tier-One Post Houses | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Signiant Jet and automated multi-facility synchronization for tier-one post houses across multi-petabyte studio infrastructure.",
       ogImage: "/images/review-camera.jpg",
     },
@@ -853,7 +853,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Qumulo Hybrid Cloud File System** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Qumulo Hybrid Cloud File System: Elastic Scalability for Peak Visual Effects Crunches | FRAMELINE",
+      title: "Qumulo Hybrid Cloud File System: Elastic Scalability for Peak Visual Effects Crunches | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Qumulo Hybrid Cloud File System and elastic scalability for peak visual effects crunches across multi-petabyte studio infrastructure.",
       ogImage: "/images/server-render-farm.jpg",
     },
@@ -898,7 +898,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Dell PowerScale Isilon NAS** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Dell PowerScale Isilon NAS: Managing Multi-Petabyte Archival Storage Tiers | FRAMELINE",
+      title: "Dell PowerScale Isilon NAS: Managing Multi-Petabyte Archival Storage Tiers | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Dell PowerScale Isilon NAS and managing multi-petabyte archival storage tiers across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
     },
@@ -943,7 +943,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **LTO-9 Tape Storage Life Cycles** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "LTO-9 Tape Storage Life Cycles: Preserving Studio Master Negatives for 100 Years | FRAMELINE",
+      title: "LTO-9 Tape Storage Life Cycles: Preserving Studio Master Negatives for 100 Years | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing LTO-9 Tape Storage Life Cycles and preserving studio master negatives for 100 years across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1200&q=80",
     },
@@ -988,7 +988,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Optical Disc Archive (ODA) Generation 3** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Optical Disc Archive (ODA) Generation 3: WORM Media Safeguards Against Ransomware | FRAMELINE",
+      title: "Optical Disc Archive (ODA) Generation 3: WORM Media Safeguards Against Ransomware | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Optical Disc Archive (ODA) Generation 3 and worm media safeguards against ransomware across multi-petabyte studio infrastructure.",
       ogImage: "/images/review-camera.jpg",
     },
@@ -1033,7 +1033,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Liquid-Cooled Server Racks** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Liquid-Cooled Server Racks: Cutting Data Center Energy Costs by 40% on Render Farms | FRAMELINE",
+      title: "Liquid-Cooled Server Racks: Cutting Data Center Energy Costs by 40% on Render Farms | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Liquid-Cooled Server Racks and cutting data center energy costs by 40% on render farms across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1078,7 +1078,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Geothermal Compute Farms in Iceland** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Geothermal Compute Farms in Iceland: Sustainable Zero-Emission Rendering for Hollywood | FRAMELINE",
+      title: "Geothermal Compute Farms in Iceland: Sustainable Zero-Emission Rendering for Hollywood | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Geothermal Compute Farms in Iceland and sustainable zero-emission rendering for hollywood across multi-petabyte studio infrastructure.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
@@ -1123,7 +1123,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Solar-Powered Soundstages** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Solar-Powered Soundstages: Battery Energy Storage Systems (BESS) Replacing Generators | FRAMELINE",
+      title: "Solar-Powered Soundstages: Battery Energy Storage Systems (BESS) Replacing Generators | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Solar-Powered Soundstages and battery energy storage systems (bess) replacing generators across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1168,7 +1168,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Cooke /i Technology Protocol Version 3** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Cooke /i Technology Protocol Version 3: High-Frequency Inertial Lens Telemetry | FRAMELINE",
+      title: "Cooke /i Technology Protocol Version 3: High-Frequency Inertial Lens Telemetry | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Cooke /i Technology Protocol Version 3 and high-frequency inertial lens telemetry across multi-petabyte studio infrastructure.",
       ogImage: "/images/nuke-vfx-comp.jpg",
     },
@@ -1213,7 +1213,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **DJI Ronin 4D 8K** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "DJI Ronin 4D 8K: Integrated 4-Axis Stabilization and Wireless Video Ingest | FRAMELINE",
+      title: "DJI Ronin 4D 8K: Integrated 4-Axis Stabilization and Wireless Video Ingest | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing DJI Ronin 4D 8K and integrated 4-axis stabilization and wireless video ingest across multi-petabyte studio infrastructure.",
       ogImage: "/images/server-render-farm.jpg",
     },
@@ -1258,7 +1258,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Teradek Bolt 4K MAX** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Teradek Bolt 4K MAX: Zero-Delay Uncompressed Wireless Monitoring Across Soundstages | FRAMELINE",
+      title: "Teradek Bolt 4K MAX: Zero-Delay Uncompressed Wireless Monitoring Across Soundstages | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Teradek Bolt 4K MAX and zero-delay uncompressed wireless monitoring across soundstages across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1303,7 +1303,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **SmallHD Cine 24 High-Bright** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "SmallHD Cine 24 High-Bright: 1,350 Nit Sunlight Viewable Directors Monitors | FRAMELINE",
+      title: "SmallHD Cine 24 High-Bright: 1,350 Nit Sunlight Viewable Directors Monitors | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing SmallHD Cine 24 High-Bright and 1,350 nit sunlight viewable directors monitors across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1348,7 +1348,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Panasonic VariCam S35 Legacy Impact** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Panasonic VariCam S35 Legacy Impact: Dual Native ISO Evolution in Modern Sensors | FRAMELINE",
+      title: "Panasonic VariCam S35 Legacy Impact: Dual Native ISO Evolution in Modern Sensors | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Panasonic VariCam S35 Legacy Impact and dual native iso evolution in modern sensors across multi-petabyte studio infrastructure.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
@@ -1393,7 +1393,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Canon Cinema EOS C500 Mark III** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Canon Cinema EOS C500 Mark III: Dual Pixel CMOS AF in High-End Commercial Work | FRAMELINE",
+      title: "Canon Cinema EOS C500 Mark III: Dual Pixel CMOS AF in High-End Commercial Work | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Canon Cinema EOS C500 Mark III and dual pixel cmos af in high-end commercial work across multi-petabyte studio infrastructure.",
       ogImage: "/images/server-render-farm.jpg",
     },
@@ -1438,7 +1438,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Blackmagic URSA Cine 12K** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Blackmagic URSA Cine 12K: Large-Format RGBW Sensor Architecture and Cloud Sync | FRAMELINE",
+      title: "Blackmagic URSA Cine 12K: Large-Format RGBW Sensor Architecture and Cloud Sync | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Blackmagic URSA Cine 12K and large-format rgbw sensor architecture and cloud sync across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1483,7 +1483,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Kinefinity MAVO Edge 8K** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Kinefinity MAVO Edge 8K: Compact Carbon-Fiber Cinema Workhorse in Indie Cinema | FRAMELINE",
+      title: "Kinefinity MAVO Edge 8K: Compact Carbon-Fiber Cinema Workhorse in Indie Cinema | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Kinefinity MAVO Edge 8K and compact carbon-fiber cinema workhorse in indie cinema across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1528,7 +1528,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Leica Cine 1 Laser TV** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Leica Cine 1 Laser TV: Micro-Projection Reference Monitoring in Screening Rooms | FRAMELINE",
+      title: "Leica Cine 1 Laser TV: Micro-Projection Reference Monitoring in Screening Rooms | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Leica Cine 1 Laser TV and micro-projection reference monitoring in screening rooms across multi-petabyte studio infrastructure.",
       ogImage: "/images/audio-atmos-stage.jpg",
     },
@@ -1573,7 +1573,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Barco Residential 4K Laser Projectors** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Barco Residential 4K Laser Projectors: High-Contrast Grading Theaters for Directors | FRAMELINE",
+      title: "Barco Residential 4K Laser Projectors: High-Contrast Grading Theaters for Directors | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Barco Residential 4K Laser Projectors and high-contrast grading theaters for directors across multi-petabyte studio infrastructure.",
       ogImage: "/images/server-render-farm.jpg",
     },
@@ -1618,7 +1618,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Christie Eclipse 4K 6DLP Projector** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Christie Eclipse 4K 6DLP Projector: True Black Levels in Reference Screening Rooms | FRAMELINE",
+      title: "Christie Eclipse 4K 6DLP Projector: True Black Levels in Reference Screening Rooms | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Christie Eclipse 4K 6DLP Projector and true black levels in reference screening rooms across multi-petabyte studio infrastructure.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
@@ -1663,7 +1663,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Dolby Atmos RMU Hardware** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Dolby Atmos RMU Hardware: Dedicated Hardware Spatial Mastering Across 128 Channels | FRAMELINE",
+      title: "Dolby Atmos RMU Hardware: Dedicated Hardware Spatial Mastering Across 128 Channels | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Dolby Atmos RMU Hardware and dedicated hardware spatial mastering across 128 channels across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1708,7 +1708,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Genelec The Ones Coaxial Monitors** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Genelec The Ones Coaxial Monitors: Point Source Acoustic Precision in Mix Stages | FRAMELINE",
+      title: "Genelec The Ones Coaxial Monitors: Point Source Acoustic Precision in Mix Stages | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Genelec The Ones Coaxial Monitors and point source acoustic precision in mix stages across multi-petabyte studio infrastructure.",
       ogImage: "/images/review-camera.jpg",
     },
@@ -1753,7 +1753,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Meyer Sound Bluehorn System** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Meyer Sound Bluehorn System: Zero-Phase Distortion Theatrical Mixing Monitors | FRAMELINE",
+      title: "Meyer Sound Bluehorn System: Zero-Phase Distortion Theatrical Mixing Monitors | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Meyer Sound Bluehorn System and zero-phase distortion theatrical mixing monitors across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1798,7 +1798,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **ATC SCM50A Pro Active Monitors** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "ATC SCM50A Pro Active Monitors: Mastering Micro-Dynamics in Modern Film Scores | FRAMELINE",
+      title: "ATC SCM50A Pro Active Monitors: Mastering Micro-Dynamics in Modern Film Scores | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing ATC SCM50A Pro Active Monitors and mastering micro-dynamics in modern film scores across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1843,7 +1843,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Rupert Neve Designs 5088 Console** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Rupert Neve Designs 5088 Console: Discrete Analog Summing for Film Orchestras | FRAMELINE",
+      title: "Rupert Neve Designs 5088 Console: Discrete Analog Summing for Film Orchestras | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Rupert Neve Designs 5088 Console and discrete analog summing for film orchestras across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1888,7 +1888,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Solid State Logic Duality Fuse** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Solid State Logic Duality Fuse: Hybrid Analog-Digital Tracking on Scoring Stages | FRAMELINE",
+      title: "Solid State Logic Duality Fuse: Hybrid Analog-Digital Tracking on Scoring Stages | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Solid State Logic Duality Fuse and hybrid analog-digital tracking on scoring stages across multi-petabyte studio infrastructure.",
       ogImage: "/images/mocap-performance-stage.jpg",
     },
@@ -1933,7 +1933,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Merging Technologies Pyramix** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Merging Technologies Pyramix: High-Resolution DSD and DXD Audio Post Production | FRAMELINE",
+      title: "Merging Technologies Pyramix: High-Resolution DSD and DXD Audio Post Production | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Merging Technologies Pyramix and high-resolution dsd and dxd audio post production across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
     },
@@ -1978,7 +1978,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Grace Design m908 Surround Monitor Controller** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Grace Design m908 Surround Monitor Controller: 24-Channel Immersive Room Calibration | FRAMELINE",
+      title: "Grace Design m908 Surround Monitor Controller: 24-Channel Immersive Room Calibration | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Grace Design m908 Surround Monitor Controller and 24-channel immersive room calibration across multi-petabyte studio infrastructure.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
@@ -2023,7 +2023,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Trinnov Audio D-MON** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Trinnov Audio D-MON: Acoustic Room Optimization in Asymmetric Post-Production Suites | FRAMELINE",
+      title: "Trinnov Audio D-MON: Acoustic Room Optimization in Asymmetric Post-Production Suites | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Trinnov Audio D-MON and acoustic room optimization in asymmetric post-production suites across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2068,7 +2068,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Mellanox Spectrum SN4000 Switches** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Mellanox Spectrum SN4000 Switches: 100GbE Non-Blocking Fabrics for Media Ingest | FRAMELINE",
+      title: "Mellanox Spectrum SN4000 Switches: 100GbE Non-Blocking Fabrics for Media Ingest | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Mellanox Spectrum SN4000 Switches and 100gbe non-blocking fabrics for media ingest across multi-petabyte studio infrastructure.",
       ogImage: "/images/review-camera.jpg",
     },
@@ -2113,7 +2113,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Cisco Catalyst 9600 Enterprise Switches** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Cisco Catalyst 9600 Enterprise Switches: Core Backbone Routing Across Studio Lots | FRAMELINE",
+      title: "Cisco Catalyst 9600 Enterprise Switches: Core Backbone Routing Across Studio Lots | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Cisco Catalyst 9600 Enterprise Switches and core backbone routing across studio lots across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2158,7 +2158,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Arista 7280R3 Universal Leaf** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Arista 7280R3 Universal Leaf: Ultra-Deep Buffers for Burst-Heavy VFX Render Traffic | FRAMELINE",
+      title: "Arista 7280R3 Universal Leaf: Ultra-Deep Buffers for Burst-Heavy VFX Render Traffic | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Arista 7280R3 Universal Leaf and ultra-deep buffers for burst-heavy vfx render traffic across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2203,7 +2203,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Fortinet FortiGate 4000F** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Fortinet FortiGate 4000F: High-Throughput Hardware Encryption for MPAA Compliance | FRAMELINE",
+      title: "Fortinet FortiGate 4000F: High-Throughput Hardware Encryption for MPAA Compliance | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Fortinet FortiGate 4000F and high-throughput hardware encryption for mpaa compliance across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2248,7 +2248,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Palo Alto Networks PA-5400** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Palo Alto Networks PA-5400: Zero-Trust Security Architectures for Remote Editorial | FRAMELINE",
+      title: "Palo Alto Networks PA-5400: Zero-Trust Security Architectures for Remote Editorial | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Palo Alto Networks PA-5400 and zero-trust security architectures for remote editorial across multi-petabyte studio infrastructure.",
       ogImage: "/images/server-render-farm.jpg",
     },
@@ -2293,7 +2293,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **YubiKey 5 FIPS Hardware Keys** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "YubiKey 5 FIPS Hardware Keys: Two-Factor Authentication Safeguards for Studio Clouds | FRAMELINE",
+      title: "YubiKey 5 FIPS Hardware Keys: Two-Factor Authentication Safeguards for Studio Clouds | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing YubiKey 5 FIPS Hardware Keys and two-factor authentication safeguards for studio clouds across multi-petabyte studio infrastructure.",
       ogImage: "/images/server-render-farm.jpg",
     },
@@ -2338,7 +2338,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Air-Gapped Fiber Optic SAN Fabrics** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Air-Gapped Fiber Optic SAN Fabrics: Physical Isolation for Unreleased Blockbuster IP | FRAMELINE",
+      title: "Air-Gapped Fiber Optic SAN Fabrics: Physical Isolation for Unreleased Blockbuster IP | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Air-Gapped Fiber Optic SAN Fabrics and physical isolation for unreleased blockbuster ip across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2383,7 +2383,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **RAID 6 vs ZFS RAID-Z2** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "RAID 6 vs ZFS RAID-Z2: Rebuild Times and Bit Rot Prevention on 24TB Hard Drives | FRAMELINE",
+      title: "RAID 6 vs ZFS RAID-Z2: Rebuild Times and Bit Rot Prevention on 24TB Hard Drives | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing RAID 6 vs ZFS RAID-Z2 and rebuild times and bit rot prevention on 24tb hard drives across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2428,7 +2428,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Samsung 990 PRO NVMe Drives** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Samsung 990 PRO NVMe Drives: Sustained Write Speeds Under Heavy Continuous DIT Loads | FRAMELINE",
+      title: "Samsung 990 PRO NVMe Drives: Sustained Write Speeds Under Heavy Continuous DIT Loads | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Samsung 990 PRO NVMe Drives and sustained write speeds under heavy continuous dit loads across multi-petabyte studio infrastructure.",
       ogImage: "/images/server-render-farm.jpg",
     },
@@ -2473,7 +2473,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Micron 9400 Enterprise NVMe** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Micron 9400 Enterprise NVMe: High-Endurance PCIe 4.0 Storage for Render Farms | FRAMELINE",
+      title: "Micron 9400 Enterprise NVMe: High-Endurance PCIe 4.0 Storage for Render Farms | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Micron 9400 Enterprise NVMe and high-endurance pcie 4.0 storage for render farms across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2518,7 +2518,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Kioxia CD8 Series PCIe 5.0 SSDs** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Kioxia CD8 Series PCIe 5.0 SSDs: Testing 14 GB/s Read Speeds in 8K Post Workstations | FRAMELINE",
+      title: "Kioxia CD8 Series PCIe 5.0 SSDs: Testing 14 GB/s Read Speeds in 8K Post Workstations | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Kioxia CD8 Series PCIe 5.0 SSDs and testing 14 gb/s read speeds in 8k post workstations across multi-petabyte studio infrastructure.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
@@ -2563,7 +2563,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Western Digital Ultrastar DC HC580 24TB** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Western Digital Ultrastar DC HC580 24TB: High-Density Helium Storage for Nearline Archives | FRAMELINE",
+      title: "Western Digital Ultrastar DC HC580 24TB: High-Density Helium Storage for Nearline Archives | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Western Digital Ultrastar DC HC580 24TB and high-density helium storage for nearline archives across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2608,7 +2608,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Seagate Exos Mozaic 3+ 30TB HAMR** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Seagate Exos Mozaic 3+ 30TB HAMR: Heat-Assisted Magnetic Recording Studio Reliability | FRAMELINE",
+      title: "Seagate Exos Mozaic 3+ 30TB HAMR: Heat-Assisted Magnetic Recording Studio Reliability | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Seagate Exos Mozaic 3+ 30TB HAMR and heat-assisted magnetic recording studio reliability across multi-petabyte studio infrastructure.",
       ogImage: "/images/review-camera.jpg",
     },
@@ -2653,7 +2653,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **OWC ThunderBay 8 RAID** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "OWC ThunderBay 8 RAID: Thunderbolt 4 Field DIT Storage Configurations | FRAMELINE",
+      title: "OWC ThunderBay 8 RAID: Thunderbolt 4 Field DIT Storage Configurations | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing OWC ThunderBay 8 RAID and thunderbolt 4 field dit storage configurations across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2698,7 +2698,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **G-Technology ArmorATD** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "G-Technology ArmorATD: Ruggedized Field Storage for Brutal Location Shoots | FRAMELINE",
+      title: "G-Technology ArmorATD: Ruggedized Field Storage for Brutal Location Shoots | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing G-Technology ArmorATD and ruggedized field storage for brutal location shoots across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2743,7 +2743,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **SanDisk Professional PRO-BLADE** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "SanDisk Professional PRO-BLADE: Modular High-Speed NVMe Workflow Ecosystem | FRAMELINE",
+      title: "SanDisk Professional PRO-BLADE: Modular High-Speed NVMe Workflow Ecosystem | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing SanDisk Professional PRO-BLADE and modular high-speed nvme workflow ecosystem across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2788,7 +2788,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Sony TOUGH CFexpress Type B** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Sony TOUGH CFexpress Type B: Extreme Shock and Temperature Resistance in the Field | FRAMELINE",
+      title: "Sony TOUGH CFexpress Type B: Extreme Shock and Temperature Resistance in the Field | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Sony TOUGH CFexpress Type B and extreme shock and temperature resistance in the field across multi-petabyte studio infrastructure.",
       ogImage: "/images/review-camera.jpg",
     },
@@ -2833,7 +2833,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Angelbird AV PRO CFexpress Type A** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Angelbird AV PRO CFexpress Type A: High-Sustained Write Rates for Sony 8K Cameras | FRAMELINE",
+      title: "Angelbird AV PRO CFexpress Type A: High-Sustained Write Rates for Sony 8K Cameras | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Angelbird AV PRO CFexpress Type A and high-sustained write rates for sony 8k cameras across multi-petabyte studio infrastructure.",
       ogImage: "/images/review-camera.jpg",
     },
@@ -2878,7 +2878,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **ProGrade Digital PG05.6 Dual-Slot Readers** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "ProGrade Digital PG05.6 Dual-Slot Readers: Thermal Throttling Prevention during Offload | FRAMELINE",
+      title: "ProGrade Digital PG05.6 Dual-Slot Readers: Thermal Throttling Prevention during Offload | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing ProGrade Digital PG05.6 Dual-Slot Readers and thermal throttling prevention during offload across multi-petabyte studio infrastructure.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
@@ -2923,7 +2923,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **RED PRO CFexpress 2TB** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "RED PRO CFexpress 2TB: Official Proprietary Certified Media for V-Raptor Bodies | FRAMELINE",
+      title: "RED PRO CFexpress 2TB: Official Proprietary Certified Media for V-Raptor Bodies | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing RED PRO CFexpress 2TB and official proprietary certified media for v-raptor bodies across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     },
@@ -2968,7 +2968,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **ARRI Codex Compact Drive 2TB** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "ARRI Codex Compact Drive 2TB: ARRIRAW Uncompressed Ingest Speeds on Alexa 35 | FRAMELINE",
+      title: "ARRI Codex Compact Drive 2TB: ARRIRAW Uncompressed Ingest Speeds on Alexa 35 | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing ARRI Codex Compact Drive 2TB and arriraw uncompressed ingest speeds on alexa 35 across multi-petabyte studio infrastructure.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
@@ -3013,7 +3013,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Sony AXS-A1TS66 AXS Memory Cards** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Sony AXS-A1TS66 AXS Memory Cards: 6.6 Gbps Throughput for Venice 2 8.6K Raw | FRAMELINE",
+      title: "Sony AXS-A1TS66 AXS Memory Cards: 6.6 Gbps Throughput for Venice 2 8.6K Raw | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Sony AXS-A1TS66 AXS Memory Cards and 6.6 gbps throughput for venice 2 8.6k raw across multi-petabyte studio infrastructure.",
       ogImage: "/images/review-camera.jpg",
     },
@@ -3058,7 +3058,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Anton Bauer Titon Micro Lithium-Ion Batteries** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Anton Bauer Titon Micro Lithium-Ion Batteries: Flight-Safe Power for Rigged Cameras | FRAMELINE",
+      title: "Anton Bauer Titon Micro Lithium-Ion Batteries: Flight-Safe Power for Rigged Cameras | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Anton Bauer Titon Micro Lithium-Ion Batteries and flight-safe power for rigged cameras across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3103,7 +3103,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Core SWX Hypercore NEO 9** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Core SWX Hypercore NEO 9: High-Draw Current Capabilities for Modern Cinema Bodies | FRAMELINE",
+      title: "Core SWX Hypercore NEO 9: High-Draw Current Capabilities for Modern Cinema Bodies | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Core SWX Hypercore NEO 9 and high-draw current capabilities for modern cinema bodies across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3148,7 +3148,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Bebob V-Mount Micro Batteries** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Bebob V-Mount Micro Batteries: Hot-Swap Buffering on Long High-Speed Takes | FRAMELINE",
+      title: "Bebob V-Mount Micro Batteries: Hot-Swap Buffering on Long High-Speed Takes | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Bebob V-Mount Micro Batteries and hot-swap buffering on long high-speed takes across multi-petabyte studio infrastructure.",
       ogImage: "/images/audio-atmos-stage.jpg",
     },
@@ -3193,7 +3193,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Hawk-Woods Real-Time Battery Telemetry** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Hawk-Woods Real-Time Battery Telemetry: Monitoring Remaining Watt-Hours over Bluetooth | FRAMELINE",
+      title: "Hawk-Woods Real-Time Battery Telemetry: Monitoring Remaining Watt-Hours over Bluetooth | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Hawk-Woods Real-Time Battery Telemetry and monitoring remaining watt-hours over bluetooth across multi-petabyte studio infrastructure.",
       ogImage: "/images/server-render-farm.jpg",
     },
@@ -3238,7 +3238,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **EcoFlow Delta Pro Portable Power Stations** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "EcoFlow Delta Pro Portable Power Stations: Silent Mobile Power for Remote Set Lighting | FRAMELINE",
+      title: "EcoFlow Delta Pro Portable Power Stations: Silent Mobile Power for Remote Set Lighting | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing EcoFlow Delta Pro Portable Power Stations and silent mobile power for remote set lighting across multi-petabyte studio infrastructure.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
@@ -3283,7 +3283,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Jackery Explorer 3000 Pro** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Jackery Explorer 3000 Pro: Clean Sine Wave Inverters for Sensitive Sound Gear | FRAMELINE",
+      title: "Jackery Explorer 3000 Pro: Clean Sine Wave Inverters for Sensitive Sound Gear | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Jackery Explorer 3000 Pro and clean sine wave inverters for sensitive sound gear across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3328,7 +3328,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Goal Zero Yeti PRO 4000** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Goal Zero Yeti PRO 4000: Industrial Battery Units for Commercial Production Sprinters | FRAMELINE",
+      title: "Goal Zero Yeti PRO 4000: Industrial Battery Units for Commercial Production Sprinters | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Goal Zero Yeti PRO 4000 and industrial battery units for commercial production sprinters across multi-petabyte studio infrastructure.",
       ogImage: "/images/review-camera.jpg",
     },
@@ -3373,7 +3373,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Anker SOLIX F3800** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Anker SOLIX F3800: Expanding Mobile Power Arrays on 3-Week Wilderness Shoots | FRAMELINE",
+      title: "Anker SOLIX F3800: Expanding Mobile Power Arrays on 3-Week Wilderness Shoots | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Anker SOLIX F3800 and expanding mobile power arrays on 3-week wilderness shoots across multi-petabyte studio infrastructure.",
       ogImage: "/images/server-render-farm.jpg",
     },
@@ -3418,7 +3418,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Aputure Electro Storm CS15** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Aputure Electro Storm CS15: 1,500W Full-Color Point Source Fixtures on Stage Grids | FRAMELINE",
+      title: "Aputure Electro Storm CS15: 1,500W Full-Color Point Source Fixtures on Stage Grids | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Aputure Electro Storm CS15 and 1,500w full-color point source fixtures on stage grids across multi-petabyte studio infrastructure.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
@@ -3463,7 +3463,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Nanlux Evoke 2400B** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Nanlux Evoke 2400B: 2,400W Bi-Color LED Spotlights Replacing 4K HMI Fresnels | FRAMELINE",
+      title: "Nanlux Evoke 2400B: 2,400W Bi-Color LED Spotlights Replacing 4K HMI Fresnels | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Nanlux Evoke 2400B and 2,400w bi-color led spotlights replacing 4k hmi fresnels across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3508,7 +3508,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **ARRI Skypanel Pro** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "ARRI Skypanel Pro: Wireless CRMX Mesh Control on Massive Rigging Grids | FRAMELINE",
+      title: "ARRI Skypanel Pro: Wireless CRMX Mesh Control on Massive Rigging Grids | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing ARRI Skypanel Pro and wireless crmx mesh control on massive rigging grids across multi-petabyte studio infrastructure.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
@@ -3553,7 +3553,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Kino Flo Celeb 850** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Kino Flo Celeb 850: Soft LED Key Lighting with Precision Color Temperature Curves | FRAMELINE",
+      title: "Kino Flo Celeb 850: Soft LED Key Lighting with Precision Color Temperature Curves | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Kino Flo Celeb 850 and soft led key lighting with precision color temperature curves across multi-petabyte studio infrastructure.",
       ogImage: "/images/server-render-farm.jpg",
     },
@@ -3598,7 +3598,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Astera Titan Tubes** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Astera Titan Tubes: Pixel-Addressable Wireless Tubes in In-Camera VFX Sets | FRAMELINE",
+      title: "Astera Titan Tubes: Pixel-Addressable Wireless Tubes in In-Camera VFX Sets | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Astera Titan Tubes and pixel-addressable wireless tubes in in-camera vfx sets across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3643,7 +3643,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Quasar Science Rainbow 2** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Quasar Science Rainbow 2: Linear LED Tubes with Built-In Wireless Art-Net Support | FRAMELINE",
+      title: "Quasar Science Rainbow 2: Linear LED Tubes with Built-In Wireless Art-Net Support | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Quasar Science Rainbow 2 and linear led tubes with built-in wireless art-net support across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3688,7 +3688,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Litepanels Gemini 2x1 Hard** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Litepanels Gemini 2x1 Hard: Punchy Dynamic Beam Angles for Direct Sun Simulation | FRAMELINE",
+      title: "Litepanels Gemini 2x1 Hard: Punchy Dynamic Beam Angles for Direct Sun Simulation | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Litepanels Gemini 2x1 Hard and punchy dynamic beam angles for direct sun simulation across multi-petabyte studio infrastructure.",
       ogImage: "/images/audio-atmos-stage.jpg",
     },
@@ -3733,7 +3733,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Chauvet Professional Maverick Storm** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Chauvet Professional Maverick Storm: IP65 Rated Moving Heads for Rain Stages | FRAMELINE",
+      title: "Chauvet Professional Maverick Storm: IP65 Rated Moving Heads for Rain Stages | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Chauvet Professional Maverick Storm and ip65 rated moving heads for rain stages across multi-petabyte studio infrastructure.",
       ogImage: "/images/server-render-farm.jpg",
     },
@@ -3778,7 +3778,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Robe MegaPointe Automated Fixtures** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Robe MegaPointe Automated Fixtures: High-Speed Spot and Beam Effects for Action Rigs | FRAMELINE",
+      title: "Robe MegaPointe Automated Fixtures: High-Speed Spot and Beam Effects for Action Rigs | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Robe MegaPointe Automated Fixtures and high-speed spot and beam effects for action rigs across multi-petabyte studio infrastructure.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
@@ -3823,7 +3823,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Claypaky Sharpy Plus** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Claypaky Sharpy Plus: Extreme Long-Throw Searchlight Simulation in Sci-Fi Sets | FRAMELINE",
+      title: "Claypaky Sharpy Plus: Extreme Long-Throw Searchlight Simulation in Sci-Fi Sets | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Claypaky Sharpy Plus and extreme long-throw searchlight simulation in sci-fi sets across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     },
@@ -3868,7 +3868,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **ETC Source Four LED Series 3** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "ETC Source Four LED Series 3: Lustr X8 Color System for Studio Theater Sets | FRAMELINE",
+      title: "ETC Source Four LED Series 3: Lustr X8 Color System for Studio Theater Sets | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing ETC Source Four LED Series 3 and lustr x8 color system for studio theater sets across multi-petabyte studio infrastructure.",
       ogImage: "/images/review-camera.jpg",
     },
@@ -3913,7 +3913,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Matthews Studio Equipment MAX Menace Arm** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Matthews Studio Equipment MAX Menace Arm: Safe Overhead Camera and Light Rigging | FRAMELINE",
+      title: "Matthews Studio Equipment MAX Menace Arm: Safe Overhead Camera and Light Rigging | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Matthews Studio Equipment MAX Menace Arm and safe overhead camera and light rigging across multi-petabyte studio infrastructure.",
       ogImage: "/images/review-camera.jpg",
     },
@@ -3958,7 +3958,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Modern Studio Equipment Dana Dolly** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Modern Studio Equipment Dana Dolly: Precision Portable Slider Systems on Track | FRAMELINE",
+      title: "Modern Studio Equipment Dana Dolly: Precision Portable Slider Systems on Track | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Modern Studio Equipment Dana Dolly and precision portable slider systems on track across multi-petabyte studio infrastructure.",
       ogImage: "/images/camera-arri-alexa.jpg",
     },
@@ -4003,7 +4003,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Ronford-Baker Heavy-Duty Fluid Heads** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Ronford-Baker Heavy-Duty Fluid Heads: Counterbalance Engineering for 50-Pound Builds | FRAMELINE",
+      title: "Ronford-Baker Heavy-Duty Fluid Heads: Counterbalance Engineering for 50-Pound Builds | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Ronford-Baker Heavy-Duty Fluid Heads and counterbalance engineering for 50-pound builds across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     },
@@ -4048,7 +4048,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **O'Connor Ultimate 2575D Fluid Head** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "O'Connor Ultimate 2575D Fluid Head: The Industry Gold Standard for Feature Motion | FRAMELINE",
+      title: "O'Connor Ultimate 2575D Fluid Head: The Industry Gold Standard for Feature Motion | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing O'Connor Ultimate 2575D Fluid Head and the industry gold standard for feature motion across multi-petabyte studio infrastructure.",
       ogImage: "/images/breakdown-creature.jpg",
     },
@@ -4093,7 +4093,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Cartoni Master 65** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Cartoni Master 65: Extreme Payload Fluid Heads for Heavy Anamorphic Zoom Packages | FRAMELINE",
+      title: "Cartoni Master 65: Extreme Payload Fluid Heads for Heavy Anamorphic Zoom Packages | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Cartoni Master 65 and extreme payload fluid heads for heavy anamorphic zoom packages across multi-petabyte studio infrastructure.",
       ogImage: "/images/review-camera.jpg",
     },
@@ -4138,7 +4138,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Sachtler Cine 150** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Sachtler Cine 150: Carbon Fiber Tripod Legs with Heavy-Duty Spreader Systems | FRAMELINE",
+      title: "Sachtler Cine 150: Carbon Fiber Tripod Legs with Heavy-Duty Spreader Systems | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Sachtler Cine 150 and carbon fiber tripod legs with heavy-duty spreader systems across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
     },
@@ -4183,7 +4183,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **EasyRig Vario 5 with Stabil** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "EasyRig Vario 5 with Stabil: Relieving Operator Spinal Strain on 14-Hour Shoots | FRAMELINE",
+      title: "EasyRig Vario 5 with Stabil: Relieving Operator Spinal Strain on 14-Hour Shoots | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing EasyRig Vario 5 with Stabil and relieving operator spinal strain on 14-hour shoots across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     },
@@ -4228,7 +4228,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Flowcine Black Arm** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Flowcine Black Arm: Complete 3-Axis Dampening for Chase Vehicle Rigging | FRAMELINE",
+      title: "Flowcine Black Arm: Complete 3-Axis Dampening for Chase Vehicle Rigging | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Flowcine Black Arm and complete 3-axis dampening for chase vehicle rigging across multi-petabyte studio infrastructure.",
       ogImage: "/images/review-camera.jpg",
     },
@@ -4273,7 +4273,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Tilta Armor Man 3** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Tilta Armor Man 3: Exoskeleton Support for Heavy Gimbal Builds on Long Takes | FRAMELINE",
+      title: "Tilta Armor Man 3: Exoskeleton Support for Heavy Gimbal Builds on Long Takes | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Tilta Armor Man 3 and exoskeleton support for heavy gimbal builds on long takes across multi-petabyte studio infrastructure.",
       ogImage: "/images/server-render-farm.jpg",
     },
@@ -4318,7 +4318,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Ready Rig GS ProArm** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Ready Rig GS ProArm: Distributing Camera Weight to Operator Hips and Core | FRAMELINE",
+      title: "Ready Rig GS ProArm: Distributing Camera Weight to Operator Hips and Core | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Ready Rig GS ProArm and distributing camera weight to operator hips and core across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
     },
@@ -4363,7 +4363,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Inovativ Voyager EVO Cart** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Inovativ Voyager EVO Cart: High-End Aerospace Aluminum Mobile Workstations for DITs | FRAMELINE",
+      title: "Inovativ Voyager EVO Cart: High-End Aerospace Aluminum Mobile Workstations for DITs | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Inovativ Voyager EVO Cart and high-end aerospace aluminum mobile workstations for dits across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     },
@@ -4408,7 +4408,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Magliner Senior Film Cart** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Magliner Senior Film Cart: Modular Shelving and Steadicam Bumper Accessories | FRAMELINE",
+      title: "Magliner Senior Film Cart: Modular Shelving and Steadicam Bumper Accessories | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Magliner Senior Film Cart and modular shelving and steadicam bumper accessories across multi-petabyte studio infrastructure.",
       ogImage: "/images/review-camera.jpg",
     },
@@ -4453,7 +4453,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Pelican Air 1615 Travel Cases** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Pelican Air 1615 Travel Cases: Lightweight Honeycomb Polymer Protection for Lenses | FRAMELINE",
+      title: "Pelican Air 1615 Travel Cases: Lightweight Honeycomb Polymer Protection for Lenses | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Pelican Air 1615 Travel Cases and lightweight honeycomb polymer protection for lenses across multi-petabyte studio infrastructure.",
       ogImage: "/images/review-camera.jpg",
     },
@@ -4498,7 +4498,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **Cinema Server Virtualization** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "Cinema Server Virtualization: Hyperconverged Infrastructure for Visual Effects | FRAMELINE",
+      title: "Cinema Server Virtualization: Hyperconverged Infrastructure for Visual Effects | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing Cinema Server Virtualization and hyperconverged infrastructure for visual effects across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
     },
@@ -4543,7 +4543,7 @@ During round-the-clock rendering sprints, this resilient architecture prevents b
 
 Investment in high-end studio infrastructure like **The Chief Technical Officer Role** is what separates chaotic delivery cycles from predictable, pristine releases. In high-stakes filmmaking, technical reliability is the unsung hero that allows creative teams to focus entirely on visual storytelling.`,
     seo: {
-      title: "The Chief Technical Officer Role: Architecting Studio Infrastructure for 2030 | FRAMELINE",
+      title: "The Chief Technical Officer Role: Architecting Studio Infrastructure for 2030 | RENDERLINE",
       desc: "Enterprise hardware teardown: analyzing The Chief Technical Officer Role and architecting studio infrastructure for 2030 across multi-petabyte studio infrastructure.",
       ogImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     },

@@ -116,11 +116,11 @@ export default function Footer() {
               WebkitTextStroke: '1px rgba(255,255,255,0.08)',
             }}
           >
-            FRAMELINE
+            RENDERLINE
           </div>
           <div className="mt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <p className="text-meta text-text-secondary/50">
-              © {new Date().getFullYear()} FRAMELINE. All rights reserved.
+              © {new Date().getFullYear()} RENDERLINE. All rights reserved.
             </p>
             <p className="text-meta text-text-secondary/30">
               BUILT FOR THE FRAME-BY-FRAME OBSESSED

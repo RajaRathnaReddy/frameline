@@ -87,7 +87,7 @@ export default function NewsletterPage() {
           </div>
 
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-display font-black tracking-tight mb-6">
-            The FRAMELINE Intelligence Briefing
+            The RENDERLINE Intelligence Briefing
           </h1>
 
           <p className="text-text-secondary text-lg md:text-xl font-serif max-w-3xl leading-relaxed mb-6">
@@ -317,7 +317,7 @@ export default function NewsletterPage() {
                     <div className="font-mono text-[10px] text-[#E63946] font-bold tracking-widest mb-1 uppercase">
                       SCENE 01 / TAKE 01 &bull; EDITORIAL DISPATCH
                     </div>
-                    <div className="text-2xl font-black text-white font-display mb-1">FRAMELINE</div>
+                    <div className="text-2xl font-black text-white font-display mb-1">RENDERLINE</div>
                     <div className="font-mono text-xs text-[#94A3B8] mb-6">
                       AI &bull; VFX &bull; HOLLYWOOD &bull; FILM TOOLS &bull; VIRTUAL PRODUCTION
                     </div>
@@ -331,7 +331,7 @@ export default function NewsletterPage() {
                     </p>
 
                     <p className="mb-4">
-                      Welcome to <strong>FRAMELINE Intelligence</strong>. You are now subscribed to the premier trade briefing for cinema technologists, VFX supervisors, technical directors, and studio executives.
+                      Welcome to <strong>RENDERLINE Intelligence</strong>. You are now subscribed to the premier trade briefing for cinema technologists, VFX supervisors, technical directors, and studio executives.
                     </p>
 
                     <div className="border-l-2 border-[#E63946] bg-[#14171A] p-4 rounded-r-lg my-5 italic text-[#F1F5F9]">
@@ -359,7 +359,7 @@ export default function NewsletterPage() {
 
                     <div className="pt-6 border-t border-[#23272D]">
                       <div className="font-bold text-white text-sm">Raja Rathna Reddy</div>
-                      <div className="font-mono text-xs text-[#3EE6FF] mt-0.5">FX Pipeline TD &amp; AI Architect &bull; Founder, FRAMELINE</div>
+                      <div className="font-mono text-xs text-[#3EE6FF] mt-0.5">FX Pipeline TD &amp; AI Architect &bull; Founder, RENDERLINE</div>
                       <div className="font-mono text-xs text-[#D4AF37] mt-2">
                         &bull; rajarathnareddy.com &bull; IMDb nm12830221
                       </div>
@@ -370,7 +370,7 @@ export default function NewsletterPage() {
                     <div className="font-mono text-[10px] text-[#3EE6FF] font-bold tracking-widest mb-1 uppercase">
                       WEEKLY INTELLIGENCE REPORT
                     </div>
-                    <div className="text-2xl font-black text-white font-display mb-1">FRAMELINE WEEKLY</div>
+                    <div className="text-2xl font-black text-white font-display mb-1">RENDERLINE WEEKLY</div>
                     <div className="font-mono text-xs text-[#94A3B8] mb-6">
                       Curated by Raja Rathna Reddy &bull; Issue #48
                     </div>

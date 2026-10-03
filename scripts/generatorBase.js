@@ -67,7 +67,7 @@ function buildCategoryFile(categorySlug, categoryName, stories) {
     output += `    seoKeywords: ${seoKwJson},\n`;
     output += `    body: \`${escapedBody}\`,\n`;
     output += `    seo: {\n`;
-    output += `      title: ${JSON.stringify(s.title + ' | FRAMELINE')},\n`;
+    output += `      title: ${JSON.stringify(s.title + ' | RENDERLINE')},\n`;
     output += `      desc: ${JSON.stringify(s.dek)},\n`;
     output += `      ogImage: ${JSON.stringify(heroImage)},\n`;
     output += `    },\n`;

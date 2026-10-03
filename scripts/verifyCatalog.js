@@ -29,7 +29,7 @@ for (const cat of categories) {
   // Check titles
   titleMatches.forEach((title, idx) => {
     // skip seo titles if matched
-    if (title.endsWith('| FRAMELINE')) return;
+    if (title.endsWith('| RENDERLINE') || title.endsWith('| RENDERLINE')) return;
     if (allTitles.has(title)) {
       console.warn(`⚠️ Duplicate title found in ${cat}: "${title}" (originally in ${allTitles.get(title)})`);
       errors++;

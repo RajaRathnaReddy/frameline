@@ -6,11 +6,11 @@ export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
     const key = searchParams.get('key');
     const format = searchParams.get('format'); // 'json' or 'csv'
-    const expectedKey = process.env.CRON_SECRET || 'frameline_admin_2026';
+    const expectedKey = process.env.CRON_SECRET || 'renderline_admin_2026';
 
-    if (key !== expectedKey && key !== 'frameline_admin_2026') {
+    if (key !== expectedKey && key !== 'renderline_admin_2026' && key !== 'frameline_admin_2026') {
       return NextResponse.json(
-        { success: false, error: 'Unauthorized: Pass ?key=frameline_admin_2026 to view subscribers' },
+        { success: false, error: 'Unauthorized: Pass ?key=renderline_admin_2026 to view subscribers' },
         { status: 401 }
       );
     }
@@ -24,7 +24,7 @@ export async function GET(request: Request) {
       return new Response(header + rows, {
         headers: {
           'Content-Type': 'text/csv',
-          'Content-Disposition': 'attachment; filename="frameline_subscribers.csv"',
+          'Content-Disposition': 'attachment; filename="renderline_subscribers.csv"',
         },
       });
     }

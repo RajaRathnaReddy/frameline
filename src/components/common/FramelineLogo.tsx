@@ -110,7 +110,7 @@ interface FramelineLogoProps {
   showSubtitle?: boolean;
 }
 
-export default function FramelineLogo({
+export function RenderLineLogo({
   size = 'md',
   className = '',
   showSubtitle = true,
@@ -131,14 +131,14 @@ export default function FramelineLogo({
     <Link
       href="/"
       className={`flex items-center gap-2.5 sm:gap-3 group shrink-0 select-none ${className}`}
-      aria-label="FRAMELINE Home"
+      aria-label="RENDERLINE Home"
     >
       <FramelineIcon size={iconSizes[size]} />
       <div className="flex flex-col shrink-0 min-w-max justify-center">
         <span
           className={`font-display ${titleSizes[size]} font-black tracking-tight text-white leading-none whitespace-nowrap transition-colors duration-200 group-hover:text-white`}
         >
-          FRAMELINE
+          RENDERLINE
         </span>
         {showSubtitle && (
           <div className="flex items-center gap-1.5 text-[8.5px] font-mono tracking-[0.18em] text-text-secondary/75 uppercase whitespace-nowrap mt-1">
@@ -153,3 +153,6 @@ export default function FramelineLogo({
     </Link>
   );
 }
+
+export default RenderLineLogo;
+export { RenderLineLogo as FramelineLogo };

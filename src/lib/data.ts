@@ -266,7 +266,7 @@ export const reviews: ProductReview[] = [
     category: 'Software',
     heroImage: '/images/review-davinci.jpg',
     score: 9.6,
-    awardBadge: "FRAMELINE EDITORS' CHOICE",
+    awardBadge: "RENDERLINE EDITORS' CHOICE",
     verdict: 'DaVinci Resolve 20 cements Blackmagic’s absolute supremacy in post-production. Neural isolation brushes, real-time spatial denoise, and cloud multi-seat editing make it the most powerful suite on the market.',
     pros: [
       'Revolutionary AI Magic Mask 3.0 isolates complex subjects in milliseconds',
@@ -462,11 +462,12 @@ export function addCustomArticle(article: Article) {
   customArticles.unshift(article);
   if (typeof window !== 'undefined') {
     try {
-      const stored = JSON.parse(localStorage.getItem('frameline_custom_articles') || '[]');
+      const stored = JSON.parse(localStorage.getItem('renderline_custom_articles') || localStorage.getItem('frameline_custom_articles') || '[]');
       // Deduplicate by slug
       const filtered = stored.filter((a: Article) => a.slug !== article.slug);
       filtered.unshift(article);
-      localStorage.setItem('frameline_custom_articles', JSON.stringify(filtered));
+      localStorage.setItem('renderline_custom_articles', JSON.stringify(filtered));
+      window.dispatchEvent(new Event('renderline_articles_updated'));
       window.dispatchEvent(new Event('frameline_articles_updated'));
     } catch {
       // fallback

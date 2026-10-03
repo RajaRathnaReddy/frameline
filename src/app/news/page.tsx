@@ -18,6 +18,7 @@ export default function NewsPage() {
     // Purge any legacy localStorage items from previous mock sessions
     if (typeof window !== 'undefined') {
       try {
+        localStorage.removeItem('renderline_custom_articles');
         localStorage.removeItem('frameline_custom_articles');
       } catch {
         // ignore

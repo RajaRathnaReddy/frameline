@@ -6,14 +6,14 @@ import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://vfx.rajarathnareddy.com'),
-  title: "FRAMELINE — AI · VFX · Hollywood · Film Technology",
+  title: "RENDERLINE — AI · VFX · Hollywood · Film Technology",
   description:
     "The premium news platform for film technology, visual effects, AI in cinema, virtual production, and Hollywood industry coverage.",
-  keywords: ["VFX", "AI", "Hollywood", "film technology", "virtual production", "visual effects"],
+  keywords: ["VFX", "AI", "Hollywood", "film technology", "virtual production", "visual effects", "RenderLine"],
   icons: {
     icon: [
       { url: '/icon.svg', type: 'image/svg+xml' },
-      { url: '/frameline-logo.png', type: 'image/png' },
+      { url: '/renderline-logo.png', type: 'image/png' },
     ],
     shortcut: '/icon.svg',
     apple: '/apple-icon.png',
@@ -22,15 +22,15 @@ export const metadata: Metadata = {
     canonical: 'https://vfx.rajarathnareddy.com',
   },
   openGraph: {
-    title: "FRAMELINE — AI · VFX · Hollywood · Film Technology",
+    title: "RENDERLINE — AI · VFX · Hollywood · Film Technology",
     description:
       "The premium news platform for film technology, visual effects, AI in cinema, virtual production, and Hollywood industry coverage.",
     type: "website",
-    siteName: "FRAMELINE",
+    siteName: "RENDERLINE",
   },
   twitter: {
     card: "summary_large_image",
-    title: "FRAMELINE",
+    title: "RENDERLINE",
     description: "AI · VFX · Hollywood · Film Technology",
   },
 };
@@ -38,13 +38,14 @@ export const metadata: Metadata = {
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "NewsMediaOrganization",
-  "name": "FRAMELINE",
+  "name": "RENDERLINE",
   "url": "https://vfx.rajarathnareddy.com",
-  "logo": "https://vfx.rajarathnareddy.com/frameline-logo.png",
+  "logo": "https://vfx.rajarathnareddy.com/renderline-logo.png",
   "description": "The premium news platform for film technology, visual effects, AI in cinema, virtual production, and Hollywood industry coverage.",
   "founder": {
     "@type": "Person",
     "name": "Raja Rathna Reddy",
+    "jobTitle": "FX Pipeline TD & AI Architect • Founder, RENDERLINE",
     "url": "https://rajarathnareddy.com",
     "sameAs": [
       "https://rajarathnareddy.com",
@@ -70,7 +71,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" type="image/svg+xml" href="/icon.svg" />
-        <link rel="icon" type="image/png" href="/frameline-logo.png" />
+        <link rel="icon" type="image/png" href="/renderline-logo.png" />
         <link rel="apple-touch-icon" href="/apple-icon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

@@ -44,7 +44,7 @@ export async function POST(request: Request) {
     return NextResponse.json({
       success: true,
       message: isNew
-        ? 'Welcome to FRAMELINE Intelligence! Your inaugural welcome dispatch has been sent to your inbox.'
+        ? 'Welcome to RENDERLINE Intelligence! Your inaugural welcome dispatch has been sent to your inbox.'
         : 'Welcome back! Your subscription preferences have been updated.',
       subscriber: {
         email: subscriber.email,

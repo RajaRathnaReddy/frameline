@@ -112,11 +112,11 @@ export default function IndustrySponsorCard({
       {/* FTC Disclosure & Direct Partner Inquiries */}
       <div className="mt-5 pt-3 border-t border-white/[0.04] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-[10px] font-mono text-text-secondary/50">
         <div>
-          <span>FRAMELINE is reader-supported ({offer.network}). Commission earned on verified licenses.</span>
+          <span>RENDERLINE is reader-supported ({offer.network}). Commission earned on verified licenses.</span>
         </div>
         <div className="flex items-center gap-3">
           <a
-            href={`mailto:${PARTNER_CONTACT.email}?subject=FRAMELINE%20Sponsorship%20Inquiry`}
+            href={`mailto:${PARTNER_CONTACT.email}?subject=RENDERLINE%20Sponsorship%20Inquiry`}
             className="hover:text-accent-gold transition-colors text-text-secondary/70 flex items-center gap-1"
           >
             <span>✉</span>
