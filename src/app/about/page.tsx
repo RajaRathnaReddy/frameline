@@ -48,6 +48,24 @@ export default function AboutPage() {
                   className="object-cover w-full h-full"
                 />
               </div>
+              {/* 
+                ====================================================================================
+                AUTHOR CREDENTIAL AUDIT & VERIFICATION LIST (AWAITING USER CONFIRMATION):
+                1. Role / Badge: "LEAD TD" (line 52)
+                2. Studio Affiliation: "DNEG · ReDefine" (line 62)
+                3. Title: "Lead Technical Director & FX Pipeline Architect" (from author profile)
+                4. Experience: "8+ years of production experience managing FX pipelines, tool automation, and render farm optimization"
+                5. Project Credits Claimed:
+                   - Toxic (2026)
+                   - The Boys (2026/2024)
+                   - Kalki 2898 AD (FX Lead)
+                   - The Penguin
+                   - Borderlands
+                   - Brahmāstra
+                6. Core Technical Skills: "Houdini VEX, OpenUSD, Python APIs, n8n studio orchestration, local privacy-first AI systems"
+                7. Links: Portfolio, Instagram, Facebook, IMDb, Filmography, GitHub
+                ====================================================================================
+              */}
               <div className="absolute -bottom-2 -right-2 px-2 py-0.5 rounded bg-accent-gold text-bg-base font-mono text-[9px] font-bold">
                 LEAD TD
               </div>

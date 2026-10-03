@@ -438,15 +438,15 @@ The true strength of **SMPTE OpenTrackIO** lies in how invisible the technology 
     breaking: false,
     status: 'approved',
     sources: [
-  {
-    "label": "Epic Games — State of Unreal 2026",
-    "url": "https://en.wikipedia.org/wiki/Unreal_Engine"
-  },
-  {
-    "label": "Epic Games — Live Link Hub Documentation",
-    "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/live-link-hub-in-unreal-engine"
-  }
-],
+      {
+        label: "Epic Games Developer Community — State of Unreal Keynote & Engine Roadmap",
+        url: "https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-8-documentation"
+      },
+      {
+        label: "Epic Games — Live Link Hub Documentation",
+        url: "https://dev.epicgames.com/documentation/en-us/unreal-engine/live-link-hub-in-unreal-engine"
+      }
+    ],
     
     toolsMentioned: ["Unreal Engine","DaVinci Resolve","Foundry Nuke","Houdini","OpenUSD"],
     seoKeywords: ["unreal engine 5.8 live link hub","virtualproduction","vfx pipeline","hollywood technology"],

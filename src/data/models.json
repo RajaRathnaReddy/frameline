@@ -1,7 +1,7 @@
 [
   {
     "name": "Runway Gen-4.5",
-    "version": "Gen-4.5 (Gen-3 Alpha retired July 2026)",
+    "version": "Gen-4.5 (Released Dec 2025)",
     "company": "Runway",
     "maxLength": "90s",
     "resolution": "4K",
@@ -16,13 +16,13 @@
   },
   {
     "name": "ByteDance Seedance 2.5",
-    "version": "2.5",
+    "version": "2.5 (Released 31 Jul 2026)",
     "company": "ByteDance",
     "maxLength": "120s",
     "resolution": "4K",
     "audioNative": true,
     "apiStatus": "live",
-    "source_url": "https://seed.bytedance.com/en/seedance2_5",
+    "source_url": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5",
     "last_verified": "2026-10-03",
     "updatedAt": "2026-10-03",
     "status": "verified",
@@ -37,7 +37,7 @@
     "resolution": "4K",
     "audioNative": true,
     "apiStatus": "live",
-    "source_url": "https://en.wikipedia.org/wiki/Adobe_Firefly",
+    "source_url": "https://firefly.adobe.com",
     "last_verified": "2026-10-03",
     "updatedAt": "2026-10-03",
     "status": "verified",
@@ -52,7 +52,7 @@
     "resolution": "1080p",
     "audioNative": false,
     "apiStatus": "sunset",
-    "source_url": "https://en.wikipedia.org/wiki/Sora_(text-to-video_model)",
+    "source_url": "https://venturebeat.com/technology/open-ai-sora-launches",
     "last_verified": "2026-10-03",
     "updatedAt": "2026-10-03",
     "status": "verified",
@@ -62,18 +62,18 @@
   },
   {
     "name": "Google Veo 3.1",
-    "version": "3.1",
-    "company": "Google DeepMind (Gemini API)",
+    "version": "3.1 (Gemini API)",
+    "company": "Google DeepMind",
     "maxLength": "90s",
     "resolution": "4K",
     "audioNative": true,
     "apiStatus": "live",
-    "source_url": "https://deepmind.google/technologies/veo/",
+    "source_url": "https://deepmind.google/models/veo/",
     "last_verified": "2026-10-03",
     "updatedAt": "2026-10-03",
-    "status": "unverified",
-    "verified": false,
-    "hidden": true
+    "status": "verified",
+    "verified": true,
+    "hidden": false
   },
   {
     "name": "Kling 4.0 & 3.0 Omni",
@@ -83,27 +83,27 @@
     "resolution": "4K HDR",
     "audioNative": true,
     "apiStatus": "live",
-    "source_url": "https://klingai.com",
+    "source_url": "https://klingai.com/blog/kling-video-3-omni-multi-shot-native-audio-guide",
     "last_verified": "2026-10-03",
     "updatedAt": "2026-10-03",
-    "status": "unverified",
-    "verified": false,
-    "hidden": true
+    "status": "verified",
+    "verified": true,
+    "hidden": false
   },
   {
     "name": "Luma Ray 3.2",
-    "version": "Ray 3.2 (Dream Machine deprecated)",
+    "version": "Ray 3.2 (Video-to-Video)",
     "company": "Luma AI",
     "maxLength": "60s",
     "resolution": "4K",
     "audioNative": true,
     "apiStatus": "live",
-    "source_url": "https://lumalabs.ai",
+    "source_url": "https://lumalabs.ai/learning-center/articles/ray-3-2-video-to-video",
     "last_verified": "2026-10-03",
     "updatedAt": "2026-10-03",
-    "status": "unverified",
-    "verified": false,
-    "hidden": true
+    "status": "verified",
+    "verified": true,
+    "hidden": false
   },
   {
     "name": "Higgsfield AI Engine",
@@ -113,11 +113,11 @@
     "resolution": "1080p",
     "audioNative": true,
     "apiStatus": "live",
-    "source_url": "https://higgsfield.ai",
+    "source_url": "https://higgsfield.ai/@higgsfield.studio/projects/hell-grind",
     "last_verified": "2026-10-03",
     "updatedAt": "2026-10-03",
-    "status": "unverified",
-    "verified": false,
-    "hidden": true
+    "status": "verified",
+    "verified": true,
+    "hidden": false
   }
 ]

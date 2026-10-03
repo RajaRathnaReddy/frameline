@@ -14,12 +14,12 @@ export const hollywoodArticles: Article[] = [
     status: 'approved',
     sources: [
       {
-        label: "Epic Games — State of Unreal 2026 News",
-        url: "https://en.wikipedia.org/wiki/Unreal_Engine"
+        label: "Epic Games Developer Community — State of Unreal Keynote & Engine Roadmap",
+        url: "https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-8-documentation"
       },
       {
-        label: "CG Channel — Adobe to Acquire Topaz Labs",
-        url: "https://www.cgchannel.com/2026/09/adobe-to-acquire-topaz-labs/"
+        label: "TV Technology — Adobe Completes Purchase of Topaz Labs",
+        url: "https://www.tvtechnology.com/business/mergers-acquisitions/adobe-completes-purchase-of-topaz-labs"
       }
     ],
     
@@ -90,7 +90,7 @@ The developments seen in **The New Frame** prove that the entertainment industry
 
 On Monday, June 22, 2026, **Google** announced an investment of approximately **$75 million** in independent studio **A24** as part of a multiyear, non-exclusive research partnership with **Google DeepMind**.
 
-Importantly, the agreement does not grant Google access to A24's proprietary film library or private production data for model training. Instead, the collaboration integrates DeepMind researchers with **A24 Labs**—the studio's creative technology initiative led by A24 partner Scott Belsky, who leads A24 Labs—to explore experimental artist tools.
+Importantly, the agreement does not grant Google access to A24's proprietary film library or private production data for model training. Rather than creating a new entity, the collaboration integrates DeepMind researchers with **A24 Labs**—the studio's existing creative technology initiative led by A24 partner Scott Belsky—to explore experimental artist tools.
 
 \`\`\`markdown
 | Agreement Term | Specification |

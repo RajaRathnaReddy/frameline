@@ -16,15 +16,19 @@ export const aiArticles: Article[] = [
     breaking: false,
     status: 'approved',
     sources: [
-  {
-    "label": "Wikipedia — Hell Grind (2026 Film)",
-    "url": "https://en.wikipedia.org/wiki/Hell_Grind"
-  },
-  {
-    "label": "Higgsfield Studio — Hell Grind Showcase Project",
-    "url": "https://higgsfield.ai/@higgsfield.studio/projects/hell-grind"
-  }
-],
+      {
+        label: "Screen Daily — First AI Feature Film Hell Grind Unveiled in Cannes Market Screening",
+        url: "https://www.screendaily.com/news/in-pictures-higgsfield-unveils-fully-ai-generated-feature-hell-grind-in-cannes/5216871.article"
+      },
+      {
+        label: "Higgsfield Studio — Hell Grind Showcase Project",
+        url: "https://higgsfield.ai/@higgsfield.studio/projects/hell-grind"
+      },
+      {
+        label: "Wikipedia — Hell Grind (2026 Film)",
+        url: "https://en.wikipedia.org/wiki/Hell_Grind"
+      }
+    ],
     
     toolsMentioned: ["Unreal Engine","DaVinci Resolve","Foundry Nuke","Houdini","OpenUSD"],
     seoKeywords: ["hell grind","ai","vfx pipeline","hollywood technology"],
@@ -164,6 +168,10 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     breaking: false,
     status: 'approved',
     sources: [
+      {
+        label: "VentureBeat — OpenAI Sora Video Model Coverage & Rollout Analysis",
+        url: "https://venturebeat.com/technology/open-ai-sora-launches"
+      },
       {
         label: "Wikipedia — Sora (Text-to-Video Model) Discontinuation",
         url: "https://en.wikipedia.org/wiki/Sora_(text-to-video_model)"

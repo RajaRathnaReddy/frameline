@@ -22,7 +22,7 @@ export default function BoxOfficeBusiness() {
         </div>
       </ScrollReveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {businessStats.map((item, i) => (
           <ScrollReveal key={item.label} delay={i * 0.1}>
             <div className="glass-card rounded-xl p-8 text-center group hover:border-accent-gold/40 transition-all hover:bg-bg-card relative overflow-hidden h-full flex flex-col justify-between">

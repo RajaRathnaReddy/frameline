@@ -17,8 +17,8 @@ export const toolsArticles: Article[] = [
     status: 'approved',
     sources: [
       {
-        label: "Epic Games — State of Unreal 2026",
-        url: "https://en.wikipedia.org/wiki/Unreal_Engine"
+        label: "Epic Games Developer Community — State of Unreal Keynote & Engine Roadmap",
+        url: "https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-8-documentation"
       }
     ],
     
@@ -87,7 +87,7 @@ Rather than requiring editors to export proxy cuts, upload them to third-party w
 
 Crucially, Adobe is breaking open its walled garden. Firefly Video 2.0 operates as an open pipeline aggregator:
 - **Partner Model Dropdown**: Editors can switch between Adobe’s commercially safe proprietary models, custom fine-tuned studio styles, and integrated partner architectures directly on the clip context menu.
-- **Topaz Labs Neurostream Integration**: Following Adobe's announced agreement to acquire Topaz Labs (announced June 25, 2026; pending regulatory close), generative clips can pass through a local Neurostream de-flickering pass that cleans temporal micro-stutter before clip placement.
+- **Topaz Labs Neurostream Integration**: Following Adobe's acquisition of Topaz Labs (completed 23 Sep 2026, about $340M, primarily cash), generative clips can pass through a local Neurostream de-flickering pass that cleans temporal micro-stutter before clip placement.
 - **Strict IP Protection Guarantees**: Any video rendered through Firefly Video 2.0 comes backed by Adobe enterprise indemnification, making it safe for commercial broadcast and theatrical release.
 
 ## Editorial Field Verdict by Raja Rathna Reddy
@@ -113,15 +113,15 @@ Firefly Video 2.0 marks the transition of generative AI from a gimmicky novelty 
     breaking: false,
     status: 'approved',
     sources: [
-  {
-    "label": "Epic Games — State of Unreal 2026 News",
-    "url": "https://en.wikipedia.org/wiki/Unreal_Engine"
-  },
-  {
-    "label": "Epic Games Developer Documentation — MegaLights in UE 5.8",
-    "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/megalights-in-unreal-engine"
-  }
-],
+      {
+        label: "Epic Games Developer Community — State of Unreal Keynote & Engine Roadmap",
+        url: "https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-8-documentation"
+      },
+      {
+        label: "Epic Games Developer Documentation — MegaLights in UE 5.8",
+        url: "https://dev.epicgames.com/documentation/en-us/unreal-engine/megalights-in-unreal-engine"
+      }
+    ],
     
     toolsMentioned: ["Unreal Engine","DaVinci Resolve","Foundry Nuke","Houdini","OpenUSD"],
     seoKeywords: ["unreal engine 5.8 megalights","tools","vfx pipeline","hollywood technology"],
@@ -150,20 +150,24 @@ In virtual production volumes, realistic environment illumination frequently req
   {
     title: "Adobe and Topaz Labs Deal: What It Means for Editors",
     slug: "adobe-closes-340m-topaz-labs-deal-what-it-means-for-editors",
-    dek: "Adobe's announced agreement to acquire Topaz Labs, unveiled on June 25, 2026, is scheduled to close in the second half of 2026 pending regulatory review.",
+    dek: "Adobe completed the acquisition of Topaz Labs on 23 Sep 2026 for about $340M, primarily cash, integrating neural video enhancement and upscaling into Premiere Pro and After Effects.",
     heroImage: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80",
     category: "tools",
     tags: ["TOOLS", "Adobe", "Topaz Labs", "Post-Production", "Industry Deals"],
     author: rajaRathnaReddy,
-    publishedAt: "2026-06-25T10:00:00.000Z",
+    publishedAt: "2026-09-23T10:00:00.000Z",
     readTime: 5,
     featured: false,
     breaking: false,
     status: 'approved',
     sources: [
       {
-        label: "CG Channel — Adobe to Acquire Topaz Labs",
-        url: "https://www.cgchannel.com/2026/09/adobe-to-acquire-topaz-labs/"
+        label: "TV Technology — Adobe Completes Purchase of Topaz Labs",
+        url: "https://www.tvtechnology.com/business/mergers-acquisitions/adobe-completes-purchase-of-topaz-labs"
+      },
+      {
+        label: "U.S. SEC — Adobe Inc. Form 10-Q (Acquisition Definitive Agreement)",
+        url: "https://www.sec.gov/Archives/edgar/data/796343/000079634326000156/adbe-20260828.htm"
       },
       {
         label: "Topaz Labs Official — Pricing and Product Suite",
@@ -173,30 +177,28 @@ In virtual production volumes, realistic environment illumination frequently req
     
     toolsMentioned: ["Topaz Video AI", "Adobe Premiere Pro", "After Effects", "DaVinci Resolve"],
     seoKeywords: ["adobe topaz labs deal", "topaz video ai adobe", "video enhancement nle", "hollywood technology"],
-    body: `## Transaction Overview: Announced, Pending Close
+    body: `## Transaction Overview: Completed 23 Sep 2026
 
-On June 25, 2026, **Adobe** announced an agreement to acquire video restoration and enhancement software developer **Topaz Labs**. The transaction is currently classified as **Announced, pending close**, with final completion anticipated in the second half of 2026 subject to customary regulatory reviews and closing conditions.
-
-Financial terms of the transaction were not officially disclosed by the companies at announcement.
+Adobe completed its acquisition of video restoration and enhancement software developer **Topaz Labs** on **23 Sep 2026**. According to Adobe's Form 10-Q filed with the U.S. Securities and Exchange Commission, the definitive agreement entered on June 24, 2026 was valued at approximately **$340 million, primarily in cash consideration**.
 
 \`\`\`markdown
 | Agreement Milestones | Current Verified Status |
 |---|---|
-| Announcement Date | June 25, 2026 |
-| Target Company | Topaz Labs |
-| Transaction Status | Announced, pending close |
-| Expected Closing | Second half of 2026 (Subject to regulatory approval) |
+| Definitive Agreement Date | June 24, 2026 |
+| Target Company | Topaz Labs Inc. |
+| Valuation & Consideration | About $340M, primarily cash (disclosed in SEC Form 10-Q) |
+| Transaction Status | Completed 23 Sep 2026 |
 | Core Focus | Neural upscaling, temporal stabilization, and video enhancement |
 \`\`\`
 
 ## Timeline Integration for Editorial Suites
 
-Topaz Labs has developed industry-standard desktop software for frame interpolation, artifact removal, and neural de-noising. The prospective integration into Adobe’s Creative Cloud ecosystem focuses on bringing specialized local GPU inference tools directly into Premiere Pro and After Effects timelines.
+Topaz Labs has developed industry-standard desktop software for frame interpolation, artifact removal, and neural de-noising. The completed integration into Adobe’s Creative Cloud ecosystem focuses on bringing specialized local GPU inference tools directly into Premiere Pro and After Effects timelines.
 
-Sources: Official vendor announcement (2026-06-25), Adobe Press Room.`,
+Sources: TV Technology (2026-09-23), Adobe Inc. Form 10-Q SEC Filing (2026-08-28), Topaz Labs.`,
     seo: {
       title: "Adobe and Topaz Labs Deal: What It Means for Editors | Render Line",
-      desc: "Adobe's announced agreement to acquire Topaz Labs is expected to close in H2 2026 subject to regulatory approval.",
+      desc: "Adobe completed the acquisition of Topaz Labs on 23 Sep 2026 for about $340M, primarily cash, bringing neural upscaling into Premiere Pro.",
       ogImage: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80",
     },
   },

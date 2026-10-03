@@ -199,6 +199,7 @@ export const reviews: ProductReview[] = [
 
 // ─── BREAKING HEADLINES (for ticker) ───
 export const breakingHeadlines: string[] = [
+  'Adobe completes acquisition of Topaz Labs on 23 Sep 2026 for about $340M, primarily cash',
   'Google DeepMind partners with A24 in ~$75M multiyear research partnership',
   'Alliance for OpenUSD releases v26.08 standardizing 3D Gaussian Splats in core pipelines',
   'Kling 3.0 Omni & Google Veo 3.1 achieve multi-shot narrative camera consistency',
@@ -218,8 +219,18 @@ export const businessStats = [
     suffix: 'M',
     label: 'Google DeepMind / A24',
     change: 'Research Partnership',
-    desc: 'Multiyear non-exclusive research partnership (announced 22 Jun 2026)',
+    desc: 'Multiyear non-exclusive research partnership with A24 Labs (announced 22 Jun 2026)',
     sourceUrl: 'https://blog.google/innovation-and-ai/models-and-research/google-deepmind/deepmind-a24-research-partnership/',
+  },
+  {
+    value: '~$340M',
+    target: 340,
+    prefix: '~$',
+    suffix: 'M',
+    label: 'Adobe / Topaz Labs',
+    change: 'Completed Acquisition',
+    desc: 'Acquisition of Topaz Labs completed 23 Sep 2026, about $340M, primarily cash',
+    sourceUrl: 'https://www.tvtechnology.com/business/mergers-acquisitions/adobe-completes-purchase-of-topaz-labs',
   },
   {
     value: '$587M',
