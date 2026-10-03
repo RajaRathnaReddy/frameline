@@ -35,6 +35,9 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# Local Audit Reports (Private / Download-only)
+RENDER_LINE_AUDIT_REPORT.*
 scratch/
 
 # typescript
