@@ -2,7 +2,7 @@
   "verifiedCount": 22,
   "totalCount": 22,
   "allPassed": true,
-  "timestamp": "2026-10-03T19:35:07.991Z",
+  "timestamp": "2026-10-03T19:42:23.553Z",
   "sources": [
     {
       "source": "Screen Daily — Hell Grind Cannes Market Screening",
@@ -13,7 +13,7 @@
       "paraphrasedContent": "(May 17, 2026) Screen Daily reports Higgsfield AI and director Alex Mashrabov screened the 95-minute AI feature film Hell Grind in Cannes market screenings, produced in 14 days for under $500,000.",
       "excerpt": "\"unveils fully AI-generated feature ‘Hell Grind’\"",
       "passed": true,
-      "verifiedAt": "2026-10-03T19:34:48.748Z"
+      "verifiedAt": "2026-10-03T19:42:01.820Z"
     },
     {
       "source": "CineD — Hell Grind Cannes Screening & Production Breakdown",
@@ -24,7 +24,7 @@
       "paraphrasedContent": "(May 28, 2026) CineD reports Higgsfield AI produced the 95-minute AI feature Hell Grind with a 15-person team in 14 days for under $500,000, confirming the film never screened in the official Cannes program and was instead presented at third-party industry events.",
       "excerpt": "\"team of 15 built in 14 days for under $500,000\"",
       "passed": true,
-      "verifiedAt": "2026-10-03T19:34:50.699Z"
+      "verifiedAt": "2026-10-03T19:42:04.060Z"
     },
     {
       "source": "The Decoder — OpenAI Sets Two-Stage Sora Shutdown",
@@ -35,7 +35,7 @@
       "paraphrasedContent": "(March 28, 2026) The Decoder reports OpenAI announced a two-stage shutdown of Sora: the web and app version closed on April 26, 2026, and the Sora API sunset on September 24, 2026.",
       "excerpt": "\"web and app version goes dark on April 26, 2026, with the Sora API\"",
       "passed": true,
-      "verifiedAt": "2026-10-03T19:34:51.501Z"
+      "verifiedAt": "2026-10-03T19:42:04.968Z"
     },
     {
       "source": "TV Technology — Adobe Completes Purchase of Topaz Labs",
@@ -46,7 +46,7 @@
       "paraphrasedContent": "(September 23, 2026) TV Technology reports Adobe completed its acquisition of Topaz Labs on 23 Sep 2026 for approximately $340 million primarily in cash consideration, integrating Neurostream AI into Creative Cloud.",
       "excerpt": "\"Adobe has completed the acquisition of AI video and image enhancement specialist Topaz Labs\"",
       "passed": true,
-      "verifiedAt": "2026-10-03T19:34:51.804Z"
+      "verifiedAt": "2026-10-03T19:42:05.241Z"
     },
     {
       "source": "U.S. SEC — Adobe Inc. Form 10-Q (Note 13 Acquisitions)",
@@ -57,7 +57,7 @@
       "paraphrasedContent": "(August 28, 2026) Adobe Inc. Form 10-Q Note 13 (Commitments and Contingencies - Acquisitions) discloses that on June 24, 2026, Adobe entered into a definitive agreement to acquire Topaz Labs Inc. for approximately $340 million, primarily in cash consideration.",
       "excerpt": "\"entered into a definitive agreement to acquire Topaz Labs Inc\"",
       "passed": true,
-      "verifiedAt": "2026-10-03T19:34:52.158Z"
+      "verifiedAt": "2026-10-03T19:42:05.566Z"
     },
     {
       "source": "Topaz Labs — Official Pricing & Product Suite",
@@ -68,7 +68,7 @@
       "paraphrasedContent": "(October 2026) Topaz Labs pricing portal lists Topaz Video personal subscriptions at $39/mo with an annual commitment alongside Topaz Studio suites at $399/yr.",
       "excerpt": "\"Topaz Video Personal $39/mo Annual commitment\"",
       "passed": true,
-      "verifiedAt": "2026-10-03T19:34:52.427Z"
+      "verifiedAt": "2026-10-03T19:42:05.863Z"
     },
     {
       "source": "Game Developer — Unreal Engine 6 Roadmap & State of Unreal Keynote",
@@ -79,7 +79,7 @@
       "paraphrasedContent": "(June 17, 2026) Game Developer reports Epic Games unveiled its roadmap for Unreal Engine 6 to merge UE5 and UEFN into a unified engine, targeting Early Access in late 2027 and adopting Verse as a core programming model.",
       "excerpt": "\"in late 2027, when UE6 Early Access releases\"",
       "passed": true,
-      "verifiedAt": "2026-10-03T19:34:52.644Z"
+      "verifiedAt": "2026-10-03T19:42:06.156Z"
     },
     {
       "source": "Runway Research — Introducing Runway Gen-4.5",
@@ -90,7 +90,7 @@
       "paraphrasedContent": "(December 2025) Runway research paper and release announcement details Gen-4.5 video generation architecture, 4K resolution, camera choreography, and multi-asset referencing.",
       "excerpt": "\"State-of-the-Art AI Video Generation\"",
       "passed": true,
-      "verifiedAt": "2026-10-03T19:34:53.026Z"
+      "verifiedAt": "2026-10-03T19:42:06.532Z"
     },
     {
       "source": "ByteDance Seedance — Introducing Seedance 2.5",
@@ -101,7 +101,7 @@
       "paraphrasedContent": "(July 31, 2026) ByteDance announces Seedance 2.5 release featuring native 30s continuous one-take video generation, flexible multi-subject referencing, and dual-camera movement.",
       "excerpt": "\"Introducing Seedance 2.5\"",
       "passed": true,
-      "verifiedAt": "2026-10-03T19:34:54.381Z"
+      "verifiedAt": "2026-10-03T19:42:08.508Z"
     },
     {
       "source": "Kling AI — Kling Video 3.0 Omni Multi-Shot Guide",
@@ -112,7 +112,7 @@
       "paraphrasedContent": "(August 2026) Kling AI publishes official technical guide for Kling Video 3.0 Omni, specifying native multi-shot generation, synchronized audio synthesis, and character consistency.",
       "excerpt": "\"Kling VIDEO 3.0 Omni\"",
       "passed": true,
-      "verifiedAt": "2026-10-03T19:34:56.155Z"
+      "verifiedAt": "2026-10-03T19:42:10.551Z"
     },
     {
       "source": "Google DeepMind — Veo Generative Video Model",
@@ -123,7 +123,7 @@
       "paraphrasedContent": "(October 2025 / 2026) Google DeepMind showcases Veo 3.1, detailing 1080p and 4K generative video output, synchronized audio generation, and enterprise platform integration.",
       "excerpt": "\"Generate outputs in 1080p and 4K\"",
       "passed": true,
-      "verifiedAt": "2026-10-03T19:34:57.736Z"
+      "verifiedAt": "2026-10-03T19:42:12.571Z"
     },
     {
       "source": "Luma AI — Ray 3.2 Video-to-Video",
@@ -134,7 +134,7 @@
       "paraphrasedContent": "(July 2026) Luma AI Learning Center provides technical guide for Ray 3.2, introducing high-fidelity video-to-video style transfer and diffusion rendering.",
       "excerpt": "\"Ray 3.2 Video to Video\"",
       "passed": true,
-      "verifiedAt": "2026-10-03T19:34:58.805Z"
+      "verifiedAt": "2026-10-03T19:42:13.948Z"
     },
     {
       "source": "Foundry — Official Nuke 17.0 Release Announcement",
@@ -145,7 +145,7 @@
       "paraphrasedContent": "(February 26, 2026) Foundry officially announces Nuke 17.0, introducing native 3D Gaussian Splatting workflows, production-ready USD 3D system, and the project-scale BigCat ML node.",
       "excerpt": "\"Foundry releases Nuke 17.0\"",
       "passed": true,
-      "verifiedAt": "2026-10-03T19:34:59.778Z"
+      "verifiedAt": "2026-10-03T19:42:15.029Z"
     },
     {
       "source": "Broadcast Beat — Foundry Releases Nuke 17.0",
@@ -156,7 +156,7 @@
       "paraphrasedContent": "(February 26, 2026) Broadcast Beat reports Foundry released Nuke 17.0 in London on Feb 26, 2026, marking a major compositing evolution with native Gaussian Splat manipulation and USD pipelines.",
       "excerpt": "\"Foundry releases Nuke 17.0\"",
       "passed": true,
-      "verifiedAt": "2026-10-03T19:35:00.817Z"
+      "verifiedAt": "2026-10-03T19:42:16.157Z"
     },
     {
       "source": "News Shooter — Blackmagic Design Releases DaVinci Resolve 21.1.1",
@@ -167,7 +167,7 @@
       "paraphrasedContent": "(October 1, 2026) News Shooter reports Blackmagic Design released DaVinci Resolve 21.1.1, adding trim editor audio controls, USAC audio decoding on Windows 11, and multi-Fusion effect management.",
       "excerpt": "\"Blackmagic Design has released DaVinci Resolve 21.1.1\"",
       "passed": true,
-      "verifiedAt": "2026-10-03T19:35:02.464Z"
+      "verifiedAt": "2026-10-03T19:42:17.964Z"
     },
     {
       "source": "SideFX — What's New in Houdini 22",
@@ -178,7 +178,7 @@
       "paraphrasedContent": "(July 2026) SideFX details Houdini 22 features including native 3D Gaussian Splatting editing/relighting, Copernicus GPU image context for textures/terrains, and KineFX character rigging.",
       "excerpt": "\"production-ready Gaussian Splats to faster character, modeling, look development\"",
       "passed": true,
-      "verifiedAt": "2026-10-03T19:35:03.468Z"
+      "verifiedAt": "2026-10-03T19:42:19.154Z"
     },
     {
       "source": "CGPress — Houdini 22 is Out",
@@ -189,7 +189,7 @@
       "paraphrasedContent": "(July 16, 2026) CGPress announces SideFX released Houdini 22 on July 16, 2026, delivering major architectural advances in procedural rigging, Solaris USD, and Copernicus image processing.",
       "excerpt": "\"procedural 3D software include production-ready Gaussian Splats\"",
       "passed": true,
-      "verifiedAt": "2026-10-03T19:35:05.612Z"
+      "verifiedAt": "2026-10-03T19:42:21.151Z"
     },
     {
       "source": "Digital Production — Maya 2027.1 adds OTIO to Sequencer",
@@ -200,7 +200,7 @@
       "paraphrasedContent": "(May 22, 2026) Digital Production reports Autodesk released Maya 2027.1 on May 21, 2026 (following Maya 2027 on March 25, 2026), adding OpenTimelineIO (OTIO) to Sequencer and LookdevX texture projections.",
       "excerpt": "\"Maya 2027.1 adds support for OpenTimelineIO in the Sequencer\"",
       "passed": true,
-      "verifiedAt": "2026-10-03T19:35:05.968Z"
+      "verifiedAt": "2026-10-03T19:42:21.552Z"
     },
     {
       "source": "The Next Web — Google $75M A24 Alliance",
@@ -211,7 +211,7 @@
       "paraphrasedContent": "(June 22, 2026) The Next Web reports Google committed $75M in an investment and multi-year research alliance with studio A24, partnering Google DeepMind with existing venture A24 Labs.",
       "excerpt": "\"Google invests $75 million in A24\"",
       "passed": true,
-      "verifiedAt": "2026-10-03T19:35:06.785Z"
+      "verifiedAt": "2026-10-03T19:42:22.244Z"
     },
     {
       "source": "Variety — Netflix $587M InterPositive Acquisition",
@@ -222,7 +222,7 @@
       "paraphrasedContent": "(July 2026) Variety reveals Netflix paid $587 million in cash to acquire Ben Affleck's AI production startup InterPositive, as disclosed in Q2 2026 SEC filings.",
       "excerpt": "\"total purchase price of approximately $587 million\"",
       "passed": true,
-      "verifiedAt": "2026-10-03T19:35:07.204Z"
+      "verifiedAt": "2026-10-03T19:42:22.614Z"
     },
     {
       "source": "Mashable — Netflix Acquires Ben Affleck AI Startup",
@@ -233,7 +233,7 @@
       "paraphrasedContent": "(July 2026) Mashable reports Netflix confirmed the $587 million purchase of InterPositive to scale machine learning in pre-visualization and post-production.",
       "excerpt": "\"disclosed that it paid $587 million in cash for an acquisition\"",
       "passed": true,
-      "verifiedAt": "2026-10-03T19:35:07.377Z"
+      "verifiedAt": "2026-10-03T19:42:22.810Z"
     },
     {
       "source": "Blender Foundation — Blender 5.2 Release Notes",
@@ -244,7 +244,7 @@
       "paraphrasedContent": "Blender Foundation release notes detail Blender 5.2 LTS, introducing procedural physics solvers in Geometry Nodes, texture caching in Cycles, and Grease Pencil updates.",
       "excerpt": "\"brings audio-reactive animations and simulations to Geometry Nodes\"",
       "passed": true,
-      "verifiedAt": "2026-10-03T19:35:07.991Z"
+      "verifiedAt": "2026-10-03T19:42:23.553Z"
     }
   ]
 }

@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { articles } from '@/lib/data';
+import { getAllArticles } from '@/lib/data';
 import ArticleContent from '@/components/article/ArticleContent';
 import ArticleClientLoader from '@/components/article/ArticleClientLoader';
 import type { Metadata } from 'next';
@@ -10,7 +10,7 @@ interface ArticlePageProps {
 }
 
 export async function generateStaticParams() {
-  return articles.map((article) => ({
+  return getAllArticles().map((article) => ({
     slug: article.slug,
   }));
 }
@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
   if (slug.includes('toxic') || slug.includes('the-boys') || slug.includes('kalki')) {
     return { title: `404 - Not Found | ${SITE_NAME}` };
   }
-  const article = articles.find((a) => a.slug === slug);
+  const article = getAllArticles().find((a) => a.slug === slug);
   if (!article) return { title: `404 - Not Found | ${SITE_NAME}` };
 
   const articleUrl = `${SITE_URL}/article/${article.slug}`;
@@ -69,7 +69,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     notFound();
   }
 
-  const article = articles.find((a) => a.slug === slug);
+  const article = getAllArticles().find((a) => a.slug === slug);
 
   if (!article) {
     notFound();

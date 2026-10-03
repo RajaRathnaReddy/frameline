@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { articles, categories, tools } from '@/lib/data';
+import { getAllArticles, categories, tools } from '@/lib/data';
 import { SITE_URL } from '@/lib/config';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -20,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/search`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.5 },
   ];
 
-  const articleRoutes: MetadataRoute.Sitemap = articles.map((art) => ({
+  const articleRoutes: MetadataRoute.Sitemap = getAllArticles().map((art) => ({
     url: `${baseUrl}/article/${art.slug}`,
     lastModified: new Date(art.publishedAt),
     changeFrequency: 'weekly',

@@ -346,7 +346,7 @@ export function addCustomArticle(article: Article) {
 }
 
 export function getAllArticles(): Article[] {
-  return articles.filter(a => a.status !== 'needs_review');
+  return articles.filter(a => a.status === 'approved');
 }
 
 // ─── HELPERS ───
@@ -367,7 +367,7 @@ export function getArticleBySlug(slug: string): Article | undefined {
   ) {
     return undefined;
   }
-  return articles.find(a => a.slug === slug);
+  return getAllArticles().find(a => a.slug === slug);
 }
 
 export function getCategoryMeta(slug: string): Category | undefined {

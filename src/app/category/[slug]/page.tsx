@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { articles, categories } from '@/lib/data';
+import { getAllArticles, categories } from '@/lib/data';
 import { getCategoryColor } from '@/lib/utils';
 import CategoryArticleList from '@/components/category/CategoryArticleList';
 import type { Metadata } from 'next';
@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   const cat = categories.find((c) => c.slug === slug);
   if (!cat) return { title: `Not Found | ${SITE_NAME}` };
 
-  const catArticles = articles.filter((a) => a.category === slug);
+  const catArticles = getAllArticles().filter((a) => a.category === slug);
 
   return {
     title: `${cat.name} — ${SITE_NAME}`,
@@ -36,7 +36,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     notFound();
   }
 
-  const catArticles = articles.filter((a) => a.category === slug);
+  const catArticles = getAllArticles().filter((a) => a.category === slug);
 
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Article } from '@/lib/types';
 import { formatTimecode, getCategoryColor, isBreaking } from '@/lib/utils';
-import { articles } from '@/lib/data';
+import { getAllArticles } from '@/lib/data';
 import { rajaRathnaReddy } from '@/lib/author';
 import { generateArticleJsonLd, generateBreadcrumbJsonLd, generateVideoJsonLd } from '@/lib/seo';
 import ReadingProgress from './ReadingProgress';
@@ -111,7 +111,7 @@ export default function ArticleContent({ article }: { article: Article }) {
   const { html, headings } = useMemo(() => parseBody(article.body), [article.body]);
   const sponsorOffer = useMemo(() => getAffiliateOfferForArticle(article), [article]);
 
-  const relatedArticles = articles
+  const relatedArticles = getAllArticles()
     .filter(a => a.slug !== article.slug)
     .filter(a => a.category === article.category || a.tags.some(t => article.tags.includes(t)))
     .slice(0, 3);

@@ -19,14 +19,14 @@ Every single fact in this document and the live production application was verif
 
 ### Key Verified Metrics
 - **Total Articles in Database**: 637
-- **Fully Verified & Published Articles (`status: 'approved'`)**: 10
-- **Unverified Seed Articles Gated (`status: 'needs_review'`)**: 627 (strictly excluded from public site and feeds)
+- **Fully Verified & Published Articles (`status: 'approved'`)**: 9
+- **Unverified Seed & Staging Articles Gated (`status: 'needs_review' | 'unverified'`)**: 628 (strictly excluded from public site, prerendered routes, and feeds)
 - **Synthetic Deks Purged**: 1,018 (replaced with factual 1-sentence summaries)
 - **Brand Transition**: 100% complete ("FRAMELINE" eliminated; "40,000+ subscribers" eliminated; "Render Line" deployed across all pages, footers, meta tags, and feeds)
 - **Frontier AI Video Models**: 7 models verified (Runway Gen-4.5, ByteDance Seedance 2.5, OpenAI Sora Sunset, Google Veo 3.1, Kling 3.0 Omni, Luma Ray 3.2, Higgsfield AI Engine); Adobe Firefly Video 2.0 and Kling 4.0 marked `unverified` and hidden.
 - **DCC Tools & Versions**: Unreal Engine 5.8 (UE6 Early Access late 2027); Foundry Nuke 17.0; SideFX Houdini 22.0; Autodesk Maya 2027.1; Blackmagic DaVinci Resolve 21.1.1; Blender 5.2 LTS; Topaz Video (unverified version numbers removed).
 - **Automated Verification Pipeline**: 22/22 primary sources verified with HTTP 200, 0 root homepage redirects, literal sentence excerpt matching, and raw output saved to `docs/verify-links-output.json` before every production build.
-- **Production Build Status**: Next.js 16.3.8 Turbopack build passing (680 static pages compiled cleanly).
+- **Production Build Status**: Next.js 16.3.8 Turbopack build passing (53 static pages compiled cleanly; all 628 unverified articles strictly gated).
 
 ---
 

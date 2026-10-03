@@ -1,8 +1,8 @@
-import { articles } from '@/lib/data';
+import { getAllArticles } from '@/lib/data';
 import { SITE_NAME, SITE_URL, SITE_DESCRIPTION } from '@/lib/config';
 
 export async function GET() {
-  const rssItems = articles
+  const rssItems = getAllArticles()
     .map(
       (art) => `
     <item>
