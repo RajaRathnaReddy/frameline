@@ -1,5 +1,6 @@
 import { Article, Author, Tool, AIModel, Category, VFXBreakdown, ProductReview, DispatchTemplate, IndustrySponsor } from './types';
 import { rajaRathnaReddy, authors } from './author';
+import { SPONSOR_NVIDIA_URL } from './config';
 
 export { rajaRathnaReddy, authors };
 
@@ -581,7 +582,7 @@ export const industrySponsors: IndustrySponsor[] = [
     tagline: 'The Digital Backbone for Real-Time Hollywood Virtual Production',
     description: 'Connect multi-GPU clusters to OpenUSD stages with live spectral ray tracing. Powering in-camera visual effects (ICVFX) and neural rendering across premier studio volumes.',
     ctaText: 'Explore Studio Architecture →',
-    ctaUrl: '/tools/unreal-engine',
+    ctaUrl: SPONSOR_NVIDIA_URL,
     badge: 'INDUSTRY PARTNER SHOWCASE',
     category: 'Virtual Production / Compute',
     logo: '🟢',
