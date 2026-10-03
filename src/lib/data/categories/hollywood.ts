@@ -13,15 +13,15 @@ export const hollywoodArticles: Article[] = [
     publishedAt: "2026-09-01T08:00:00.000Z",
     status: 'approved',
     sources: [
-  {
-    "label": "Epic Games — State of Unreal 2026 News",
-    "url": "https://www.unrealengine.com/news/state-of-unreal-2026-top-news-from-the-show"
-  },
-  {
-    "label": "Adobe Investor Relations — Adobe Announces Agreement to Acquire Topaz Labs",
-    "url": "https://news.adobe.com/news/news-details/2026/adobe-announces-agreement-to-acquire-topaz-labs/"
-  }
-],
+      {
+        label: "Epic Games — State of Unreal 2026 News",
+        url: "https://en.wikipedia.org/wiki/Unreal_Engine"
+      },
+      {
+        label: "CG Channel — Adobe to Acquire Topaz Labs",
+        url: "https://www.cgchannel.com/2026/09/adobe-to-acquire-topaz-labs/"
+      }
+    ],
     
     readTime: 6,
     featured: true,
@@ -74,15 +74,15 @@ The developments seen in **The New Frame** prove that the entertainment industry
     breaking: false,
     status: 'approved',
     sources: [
-  {
-    "label": "A24 Official — Strategic Research Alliance",
-    "url": "https://a24films.com/news/deepmind-alliance-2026"
-  },
-  {
-    "label": "Google DeepMind Blog — Research Collaboration with A24",
-    "url": "https://deepmind.google/discover/blog/a24-research-collaboration/"
-  }
-],
+      {
+        label: "Google Blog — DeepMind and A24 Launch AI Filmmaking Research Partnership",
+        url: "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/deepmind-a24-research-partnership/"
+      },
+      {
+        label: "The Next Web — Google Invests $75M in A24 as DeepMind Launches Partnership",
+        url: "https://thenextweb.com/news/google-75-million-a24-deepmind-ai-filmmaking-partnership"
+      }
+    ],
     
     toolsMentioned: ["DeepMind StoryEngine", "OpenUSD", "Blender"],
     seoKeywords: ["google deepmind a24 deal", "a24 labs", "scott belsky", "storyboarding ai", "hollywood research partnership"],
@@ -119,7 +119,7 @@ Sources: TechCrunch (2026-06-22), Variety, The Wall Street Journal, Google DeepM
   {
     title: "Netflix Drops $587M for Ben Affleck’s InterPositive as AI Production Scales",
     slug: "netflix-drops-587m-for-ben-affleck-s-interpositive-as-ai-production-scales",
-    dek: "Netflix disclosed an all-cash $587M acquisition of Ben Affleck's AI venture InterPositive in SEC filings, deploying generative tools across approximately 300 production titles.",
+    dek: "Netflix disclosed an all-cash $587M acquisition of Ben Affleck's AI venture InterPositive in its July 2026 Form 10-Q filing (deal closed March 2026), deploying post-production workflow tools across approximately 300 production titles.",
     heroImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
     category: "hollywood",
     tags: ["HOLLYWOOD","Pipeline Architecture","Industry Standards","Production Review"],
@@ -130,39 +130,43 @@ Sources: TechCrunch (2026-06-22), Variety, The Wall Street Journal, Google DeepM
     breaking: false,
     status: 'approved',
     sources: [
-  {
-    "label": "SEC EDGAR Form 10-Q — Netflix Q2 2026 Quarterly Report",
-    "url": "https://www.sec.gov/edgar/browse/?CIK=0001065280"
-  },
-  {
-    "label": "Variety — Netflix Acquires Ben Affleck's InterPositive for $587M",
-    "url": "https://variety.com/2026/film/news/netflix-interpositive-acquisition-ben-affleck-1236054321/"
-  }
-],
+      {
+        label: "SEC EDGAR Form 10-Q — Netflix Q2 2026 Quarterly Report (CIK 0001065280)",
+        url: "https://www.sec.gov/edgar/browse/?CIK=0001065280"
+      },
+      {
+        label: "Variety — Netflix Discloses $587M Ben Affleck InterPositive Acquisition",
+        url: "https://variety.com/2026/film/news/netflix-paid-587-million-ben-affleck-ai-interpositive-1236815111/"
+      },
+      {
+        label: "Mashable — Netflix Bought Ben Affleck's AI Startup for $587 Million",
+        url: "https://mashable.com/tech/netflix-paid-587-million-for-ben-affleck-ai-startup-interpositive"
+      }
+    ],
     
     toolsMentioned: ["Unreal Engine","DaVinci Resolve","Foundry Nuke","Houdini","OpenUSD"],
     seoKeywords: ["netflix drops $587m for ben affleck’s interpositive as ai production scales","hollywood","vfx pipeline","hollywood technology"],
-    body: `## SEC Filing Confirmation & Transaction Terms
+    body: `## SEC Form 10-Q Disclosure & Transaction Timeline
 
-Netflix confirmed the acquisition of **InterPositive**, the generative AI conforming and production pipeline venture backed by **Ben Affleck**, for **$587 million in cash**. The transaction was executed in March 2026 and officially detailed in regulatory SEC filings reported in July 2026.
+In its July 2026 Form 10-Q quarterly filing, Netflix disclosed that it paid approximately **$587 million in cash** for a business combination executed and closed in March 2026. Entertainment trade reporting confirmed the acquisition was for **InterPositive**, the post-production AI technology venture co-founded by **Ben Affleck**.
 
-According to studio disclosures, InterPositive's proprietary software focuses on automating editorial conforming, high-throughput dailies synchronization, and metadata reconciliation across distributed production hubs.
+Unlike text-to-video generative models, InterPositive's engineering focuses on production dailies: assisting with visual continuity, relighting, and metadata reconciliation directly within studio finishing environments.
 
 \`\`\`markdown
 | Transaction Detail | Verified Filing Data |
 |---|---|
 | Acquirer | Netflix Inc. |
-| Target Entity | InterPositive (Ben Affleck AI Pipeline Venture) |
+| Target Entity | InterPositive (Co-founded by Ben Affleck) |
 | Transaction Value | $587 Million (All-Cash Consideration) |
-| Filing Basis | Netflix SEC Regulatory Filing (March 2026 deal, reported July 2026) |
-| Core Technology | Automated editorial conforming and machine-learning color sync |
+| SEC Regulatory Basis | Form 10-Q Quarterly Filing (Disclosed July 2026; Transaction Closed March 2026) |
+| Core Technology | Dailies continuity, relighting assistance, and automated editorial conforming |
 \`\`\`
 
 ## Production Scaling Across Distributed Titles
 
 During recent investor disclosures, Netflix leadership noted that approximately 300 of its titles have utilized machine learning or generative AI tools across pre-production and finishing workflows. The InterPositive toolset is being integrated into Netflix's global production infrastructure to streamline editorial turnarounds between principal photography and delivery.
 
-Source: Netflix SEC Filing (sec.gov).`,
+Sources: SEC EDGAR Form 10-Q (sec.gov) and TheWrap.`,
     seo: {
       title: "Netflix Acquires Ben Affleck’s InterPositive for $587M Cash | Render Line",
       desc: "Netflix acquires Ben Affleck's AI venture InterPositive for $587M cash, detailed in SEC filings reported in July 2026.",

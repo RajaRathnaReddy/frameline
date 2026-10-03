@@ -1,5 +1,66 @@
 [
   {
+    "name": "Runway Gen-4.5",
+    "version": "Gen-4.5 (Gen-3 Alpha retired July 2026)",
+    "company": "Runway",
+    "maxLength": "90s",
+    "resolution": "4K",
+    "audioNative": true,
+    "apiStatus": "live",
+    "source_url": "https://runway.com/research/introducing-runway-gen-4.5",
+    "last_verified": "2026-10-03",
+    "updatedAt": "2026-10-03",
+    "status": "verified",
+    "verified": true,
+    "hidden": false
+  },
+  {
+    "name": "ByteDance Seedance 2.5",
+    "version": "2.5",
+    "company": "ByteDance",
+    "maxLength": "120s",
+    "resolution": "4K",
+    "audioNative": true,
+    "apiStatus": "live",
+    "source_url": "https://seed.bytedance.com/en/seedance2_5",
+    "last_verified": "2026-10-03",
+    "updatedAt": "2026-10-03",
+    "status": "verified",
+    "verified": true,
+    "hidden": false
+  },
+  {
+    "name": "Adobe Firefly Video 2.0",
+    "version": "2.0 (Video Editor Beta)",
+    "company": "Adobe",
+    "maxLength": "60s",
+    "resolution": "4K",
+    "audioNative": true,
+    "apiStatus": "live",
+    "source_url": "https://en.wikipedia.org/wiki/Adobe_Firefly",
+    "last_verified": "2026-10-03",
+    "updatedAt": "2026-10-03",
+    "status": "verified",
+    "verified": true,
+    "hidden": false
+  },
+  {
+    "name": "OpenAI Sora",
+    "version": "1.0 / Turbo (Discontinued)",
+    "company": "OpenAI",
+    "maxLength": "60s",
+    "resolution": "1080p",
+    "audioNative": false,
+    "apiStatus": "sunset",
+    "source_url": "https://en.wikipedia.org/wiki/Sora_(text-to-video_model)",
+    "last_verified": "2026-10-03",
+    "updatedAt": "2026-10-03",
+    "status": "verified",
+    "verified": true,
+    "hidden": false,
+    "notes": "OpenAI announced shutdown on 24 Mar 2026; consumer app and web closed 26 Apr 2026; API scheduled to end 24 Sep 2026."
+  },
+  {
     "name": "Google Veo 3.1",
     "version": "3.1",
     "company": "Google DeepMind (Gemini API)",
@@ -9,7 +70,10 @@
     "apiStatus": "live",
     "source_url": "https://deepmind.google/technologies/veo/",
     "last_verified": "2026-10-03",
-    "updatedAt": "2026-10-03"
+    "updatedAt": "2026-10-03",
+    "status": "unverified",
+    "verified": false,
+    "hidden": true
   },
   {
     "name": "Kling 4.0 & 3.0 Omni",
@@ -21,19 +85,10 @@
     "apiStatus": "live",
     "source_url": "https://klingai.com",
     "last_verified": "2026-10-03",
-    "updatedAt": "2026-10-03"
-  },
-  {
-    "name": "Runway Gen-4.5",
-    "version": "Gen-4.5 (Gen-3 Alpha retired July 2026)",
-    "company": "Runway",
-    "maxLength": "90s",
-    "resolution": "4K",
-    "audioNative": true,
-    "apiStatus": "live",
-    "source_url": "https://runwayml.com/models",
-    "last_verified": "2026-10-03",
-    "updatedAt": "2026-10-03"
+    "updatedAt": "2026-10-03",
+    "status": "unverified",
+    "verified": false,
+    "hidden": true
   },
   {
     "name": "Luma Ray 3.2",
@@ -45,31 +100,10 @@
     "apiStatus": "live",
     "source_url": "https://lumalabs.ai",
     "last_verified": "2026-10-03",
-    "updatedAt": "2026-10-03"
-  },
-  {
-    "name": "Adobe Firefly Video 2.0",
-    "version": "2.0 (Video Editor Beta)",
-    "company": "Adobe",
-    "maxLength": "60s",
-    "resolution": "4K",
-    "audioNative": true,
-    "apiStatus": "live",
-    "source_url": "https://helpx.adobe.com/firefly/whats-new.html",
-    "last_verified": "2026-10-03",
-    "updatedAt": "2026-10-03"
-  },
-  {
-    "name": "ByteDance Seedance 2.5",
-    "version": "2.5",
-    "company": "ByteDance",
-    "maxLength": "120s",
-    "resolution": "4K",
-    "audioNative": true,
-    "apiStatus": "live",
-    "source_url": "https://www.bytedance.com",
-    "last_verified": "2026-10-03",
-    "updatedAt": "2026-10-03"
+    "updatedAt": "2026-10-03",
+    "status": "unverified",
+    "verified": false,
+    "hidden": true
   },
   {
     "name": "Higgsfield AI Engine",
@@ -81,19 +115,9 @@
     "apiStatus": "live",
     "source_url": "https://higgsfield.ai",
     "last_verified": "2026-10-03",
-    "updatedAt": "2026-10-03"
-  },
-  {
-    "name": "OpenAI Sora",
-    "version": "1.0 / Turbo (Discontinued)",
-    "company": "OpenAI",
-    "maxLength": "60s",
-    "resolution": "1080p",
-    "audioNative": false,
-    "apiStatus": "SUNSET / API discontinued",
-    "source_url": "https://help.openai.com/en/articles/9038440-sora-sunset",
-    "last_verified": "2026-10-03",
     "updatedAt": "2026-10-03",
-    "notes": "OpenAI announced shutdown on 24 Mar 2026; consumer app and web closed 26 Apr 2026; API scheduled to end 24 Sep 2026."
+    "status": "unverified",
+    "verified": false,
+    "hidden": true
   }
 ]

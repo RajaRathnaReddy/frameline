@@ -5,6 +5,10 @@ import { ScrollReveal, StaggerContainer, StaggerItem } from '@/components/motion
 import Link from 'next/link';
 
 export default function ToolDirectoryTeaser() {
+  const verifiedTools = tools.filter(
+    (t) => (t as any).status !== 'unverified' && !(t as any).hidden
+  );
+
   return (
     <section className="bg-bg-elevated py-16 md:py-24 border-y border-border-subtle" id="tool-directory">
       <div className="max-w-[1440px] mx-auto px-4 md:px-8">
@@ -34,7 +38,7 @@ export default function ToolDirectoryTeaser() {
 
         {/* Tool Grid */}
         <StaggerContainer className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-          {tools.map(tool => (
+          {verifiedTools.map(tool => (
             <StaggerItem key={tool.name}>
               <div className="group relative glass-card rounded-lg p-5 text-center hover:border-text-secondary/20 transition-all cursor-pointer card-hover">
                 <div className="text-4xl mb-3">{tool.logo}</div>

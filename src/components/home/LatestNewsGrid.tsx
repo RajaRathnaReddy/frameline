@@ -21,16 +21,17 @@ export default function LatestNewsGrid() {
     };
   }, []);
 
-  // Filter stories based on selected pill; when 'all', skip the 3 leading stories shown in Hero
+  // Filter stories based on selected pill
   const nonFeatured = allStories.filter((a) => !a.featured);
   const filteredStories =
     selectedFilter === 'all'
       ? nonFeatured.slice(3)
-      : nonFeatured.filter((a) => a.category === selectedFilter);
+      : allStories.filter((a) => a.category === selectedFilter);
 
-  const lead = filteredStories[0] || nonFeatured[0];
-  const secondary = filteredStories.slice(1, 5); // 4 articles
-  const rail = filteredStories.slice(5, 9); // 4 articles
+  const hasStories = filteredStories.length > 0;
+  const lead = filteredStories[0];
+  const secondary = filteredStories.slice(1, 5);
+  const rail = filteredStories.slice(5);
 
   const filterTabs = [
     { label: 'All Beats', value: 'all' },
@@ -77,12 +78,24 @@ export default function LatestNewsGrid() {
         </div>
       </div>
 
-      {/* Bento Grid with Zero Dead Space */}
-      <StaggerContainer>
-        {/* Top Tier: Lead Card (Left 6 cols) + Secondary 2x2 Grid (Right 6 cols) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 mb-5 items-stretch">
-          {/* Lead Card (lg:col-span-6) */}
-          <StaggerItem className="lg:col-span-6 flex flex-col">
+      {/* Empty State: More Coming Soon */}
+      {!hasStories ? (
+        <div className="py-16 px-6 text-center rounded-2xl border border-dashed border-border-subtle bg-bg-card/40 my-6">
+          <span className="font-mono text-xs uppercase tracking-widest text-accent-primary block mb-2">Editorial Beat In Development</span>
+          <h3 className="font-display font-bold text-xl text-text-primary mb-2">
+            More {filterTabs.find(t => t.value === selectedFilter)?.label} Dispatches Coming Soon
+          </h3>
+          <p className="text-text-secondary text-sm font-serif max-w-md mx-auto">
+            Render Line enforces a strict verification standard against primary technical documentation and regulatory disclosures. New reports for this vertical will appear here once verified.
+          </p>
+        </div>
+      ) : (
+        /* Bento Grid with Zero Dead Space */
+        <StaggerContainer>
+          {/* Top Tier: Lead Card (Left 6 cols) + Secondary 2x2 Grid (Right 6 cols) */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 mb-5 items-stretch">
+            {/* Lead Card (lg:col-span-6) */}
+            <StaggerItem className={`${secondary.length > 0 ? 'lg:col-span-6' : 'lg:col-span-12 max-w-3xl mx-auto'} flex flex-col`}>
             <Link
               href={`/article/${lead.slug}`}
               aria-label={lead.title}
@@ -240,9 +253,14 @@ export default function LatestNewsGrid() {
           </div>
         </div>
 
-        {/* Bottom Tier: 4-Column Full-Width Dispatches (No empty columns) */}
+        {/* Bottom Tier: Full-Width Dispatches (No empty columns) */}
         {rail.length > 0 && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-5">
+          <div className={`grid gap-4 mt-5 ${
+            rail.length === 1 ? 'grid-cols-1 max-w-sm' :
+            rail.length === 2 ? 'grid-cols-1 sm:grid-cols-2 max-w-2xl' :
+            rail.length === 3 ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3' :
+            'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4'
+          }`}>
             {rail.map((article) => (
               <StaggerItem key={article.slug}>
                 <Link
@@ -292,6 +310,13 @@ export default function LatestNewsGrid() {
           </div>
         )}
       </StaggerContainer>
+      )}
+
+      {/* Note: More Coming Soon */}
+      <div className="mt-8 pt-4 border-t border-border-subtle/50 flex flex-col sm:flex-row items-center justify-between gap-3 text-text-secondary/60 text-xs font-mono">
+        <span>More dispatches coming soon — Each briefing is verified against technical release documentation.</span>
+        <span>Updated continuously</span>
+      </div>
     </section>
   );
 }

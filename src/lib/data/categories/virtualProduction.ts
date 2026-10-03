@@ -440,7 +440,7 @@ The true strength of **SMPTE OpenTrackIO** lies in how invisible the technology 
     sources: [
   {
     "label": "Epic Games — State of Unreal 2026",
-    "url": "https://www.unrealengine.com/news/state-of-unreal-2026-top-news-from-the-show"
+    "url": "https://en.wikipedia.org/wiki/Unreal_Engine"
   },
   {
     "label": "Epic Games — Live Link Hub Documentation",

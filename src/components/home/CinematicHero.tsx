@@ -2,14 +2,15 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { getFeaturedArticle, articles } from '@/lib/data';
+import { getFeaturedArticle, articles, getAllArticles } from '@/lib/data';
 import { formatTimecode, getCategoryColor, estimateReadTime } from '@/lib/utils';
 import { motion } from 'framer-motion';
 import AuthorBadge from '@/components/common/AuthorBadge';
 
 export default function CinematicHero() {
+  const allApproved = getAllArticles();
   const featured = getFeaturedArticle();
-  const secondary = articles.filter(a => !a.featured).slice(0, 3);
+  const secondary = allApproved.filter(a => a.slug !== featured.slug).slice(0, 3);
 
   const pubDate = new Date(featured.publishedAt);
   const briefingDateLabel = isNaN(pubDate.getTime())

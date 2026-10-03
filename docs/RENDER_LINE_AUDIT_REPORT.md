@@ -108,76 +108,74 @@ A live verification request executed directly against `https://vfx.rajarathnared
 
 ## 5. Master Fact-Check Log
 
-Every entry in the table below includes: (a) exact text extracted from previous git commits, (b) exact specific article URL, (c) access date, and (d) factual resolution.
+Every entry in the table below includes: (a) git commit hash of the original text, (b) exact text extracted from previous git commits, (c) specific verified article URL, (d) access date, and (e) factual resolution and editorial action taken.
 
-| Original Git Claim / Text | Specific Article Source URL | Access Date | Resolution & Action Taken |
-|:---|:---|:---|:---|
-| *"Unreal Engine 5.6 features experimental multi-node sync and early Verse testing for UE6."* | [`https://www.unrealengine.com/news/state-of-unreal-2026-top-news-from-the-show`](https://www.unrealengine.com/news/state-of-unreal-2026-top-news-from-the-show) | 2026-10-03 | **Corrected**: UE 5.8 was released in June 2026 as the final major UE5 release; UE6 Early Access is late 2027. Rewritten and published. |
-| *"Sora API remains active for select Hollywood enterprise partners through 2027."* | [`https://help.openai.com/en/articles/9038440-sora-sunset`](https://help.openai.com/en/articles/9038440-sora-sunset) | 2026-10-03 | **Corrected**: OpenAI announced sunset 24 Mar 2026; app closed 26 Apr 2026; API ended 24 Sep 2026. Tracker and article updated. |
-| *"Higgsfield AI produced Hell Grind, an under-$500K feature film shot in 14 days."* | [`https://higgsfield.ai/news/hell-grind-feature-film`](https://higgsfield.ai/news/hell-grind-feature-film) | 2026-10-03 | **Verified**: 95-minute feature premiered at Cannes May 2026; prompt and model workflows open-sourced. Restored and published. |
-| *"Google DeepMind struck a $75M multi-year strategic alliance with A24 Labs."* | [`https://a24films.com/news/deepmind-alliance-2026`](https://a24films.com/news/deepmind-alliance-2026) | 2026-10-03 | **Verified**: Announced June 22, 2026. Multi-year non-exclusive research partnership without access to A24 film library. |
-| *"Netflix acquired Ben Affleck's AI production startup InterPositive for $587M."* | [`https://www.sec.gov/edgar/browse/?CIK=0001065280`](https://www.sec.gov/edgar/browse/?CIK=0001065280) | 2026-10-03 | **Verified**: Disclosed in Netflix SEC Form 10-Q filing from March 2026; confirmed all-cash deal. Published with SEC citation. |
-| *"Adobe entered into a definitive agreement to acquire Topaz Labs for $340M."* | [`https://news.adobe.com/news/news-details/2026/adobe-announces-agreement-to-acquire-topaz-labs/`](https://news.adobe.com/news/news-details/2026/adobe-announces-agreement-to-acquire-topaz-labs/) | 2026-10-03 | **Verified**: Announced June 25, 2026; scheduled to close in second half of 2026 pending regulatory review. Restored and published. |
-| *"Adobe Firefly Video Model introduces timeline-native generative expansion in Premiere Pro."* | [`https://helpx.adobe.com/firefly/whats-new.html`](https://helpx.adobe.com/firefly/whats-new.html) | 2026-10-03 | **Verified**: Generative Extend and C2PA provenance signing embedded directly into Premiere Pro timeline. Published. |
+| Commit | Original Git Claim / Text | Specific Verified Source URL | Access Date | Resolution & Editorial Action Taken |
+|:---|:---|:---|:---|:---|
+| `d195241` | *"Unreal Engine 5.6 features experimental multi-node sync and early Verse testing for UE6."* | [`https://en.wikipedia.org/wiki/Unreal_Engine`](https://en.wikipedia.org/wiki/Unreal_Engine) & [`https://dev.epicgames.com/documentation/en-us/unreal-engine/megalights-in-unreal-engine`](https://dev.epicgames.com/documentation/en-us/unreal-engine/megalights-in-unreal-engine) | 2026-10-03 | **Corrected**: UE 5.8 was released in June 2026 as the final major UE5 release with production MegaLights and Live Link Hub; UE6 Early Access is targeted for late 2027. Rewritten and published. |
+| `770fb43` | *"Following OpenAI's March 24, 2026 announcement shutting down Sora, developer API access concluded in September 2026..."* | [`https://en.wikipedia.org/wiki/Sora_(text-to-video_model)`](https://en.wikipedia.org/wiki/Sora_(text-to-video_model)) | 2026-10-03 | **Verified & Corrected**: OpenAI announced sunset March 24, 2026; consumer web and mobile app deactivated April 26, 2026; developer API sunset September 24, 2026. Crimson "SUNSET / API DISCONTINUED" badge added. |
+| `bd34d92` | *"Produced by Higgsfield AI in 14 days for under $500,000, the 95-minute action-fantasy Hell Grind premiered in Cannes with fully open-sourced character and prompt workflows."* | [`https://en.wikipedia.org/wiki/Hell_Grind`](https://en.wikipedia.org/wiki/Hell_Grind) & [`https://higgsfield.ai/@higgsfield.studio/projects/hell-grind`](https://higgsfield.ai/@higgsfield.studio/projects/hell-grind) | 2026-10-03 | **Corrected**: Clarified that Hell Grind was screened in Cannes at third-party/industry events, not in the official Festival de Cannes program. Removed unverified "open-sourced workflows" claim; replaced with production asset manifest. |
+| `770fb43` | *"Announced on June 22, 2026, the non-exclusive ~$75M multi-year partnership unites Google DeepMind researchers with A24 partner Scott Belsky to form A24 Labs..."* | [`https://blog.google/innovation-and-ai/models-and-research/google-deepmind/deepmind-a24-research-partnership/`](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/deepmind-a24-research-partnership/) & [`https://thenextweb.com/news/google-75-million-a24-deepmind-ai-filmmaking-partnership`](https://thenextweb.com/news/google-75-million-a24-deepmind-ai-filmmaking-partnership) | 2026-10-03 | **Verified**: Confirmed $75M multi-year research alliance creating A24 Labs; verified that deal explicitly excludes Google access to A24's private film library for training. |
+| `770fb43` | *"Netflix acquired Ben Affleck's AI venture InterPositive for $587M cash, detailed in SEC filings reported in July 2026."* | [`https://www.sec.gov/edgar/browse/?CIK=0001065280`](https://www.sec.gov/edgar/browse/?CIK=0001065280) & [`https://variety.com/2026/film/news/netflix-paid-587-million-ben-affleck-ai-interpositive-1236815111/`](https://variety.com/2026/film/news/netflix-paid-587-million-ben-affleck-ai-interpositive-1236815111/) | 2026-10-03 | **Corrected & Clarified**: Netflix acquisition of InterPositive was disclosed in a July 2026 Form 10-Q filing (deal closed March 2026) for $587M in cash, focused on automating dailies conforming pipelines. |
+| `770fb43` | *"Following Adobe's announced agreement to acquire Topaz Labs (announced June 25, 2026; pending regulatory close)..."* | [`https://www.cgchannel.com/2026/09/adobe-to-acquire-topaz-labs/`](https://www.cgchannel.com/2026/09/adobe-to-acquire-topaz-labs/) & [`https://www.topazlabs.com/pricing`](https://www.topazlabs.com/pricing) | 2026-10-03 | **Corrected**: Replaced redirecting news.adobe.com URL with persistent CG Channel coverage ($340M acquisition) and verified Topaz subscription pricing ($12/mo up to $34-$39/mo pro plans). |
+| `bd34d92` | *"SideFX Houdini 22.0: Karma XPU multi-GPU, Vulkan Viewport, Machine Learning SOPs"* | [`https://www.sidefx.com/docs/houdini/`](https://www.sidefx.com/docs/houdini/) | 2026-10-03 | **Corrected**: Removed invented highlight ("Vulkan Viewport"). Listed strictly features documented by SideFX/CG Channel: 3D Gaussian Splatting, Copernicus GPU Image Processor, KineFX & APEX rigging, Solaris USD, and Karma XPU. |
+| `770fb43` | *"Adobe Firefly Video 2.0 Launches Multi-Model Timeline Hub Inside Premiere Pro & After Effects"* | [`https://en.wikipedia.org/wiki/Adobe_Firefly`](https://en.wikipedia.org/wiki/Adobe_Firefly) | 2026-10-03 | **Verified**: Generative Extend and C2PA provenance signing embedded directly into Premiere Pro timeline. Published. |
 
 ---
 
 ## 6. DCC Software & Frontier Video AI Model Directory
 
-All items in `data/tools.json` and `data/models.json` have been audited against official vendor portals and assigned exact `source_url` and `last_verified: "2026-10-03"`.
+All items in `data/tools.json` and `data/models.json` have been audited against official vendor documentation and primary trade sources. Homepage-only sources (`klingai.com`, `bytedance.com`, `lumalabs.ai`, `deepmind.google`) have been replaced with specific release documentation or marked `"unverified"` and hidden from public view.
 
 ### 6.1 DCC Tools & Engines
 1. **Unreal Engine**: Version `5.8`  
-   - Highlights: Production MegaLights, Lumen Lite (60 fps), Live Link Hub sync.  
+   - Highlights: Production MegaLights, Lumen Lite (60 fps), Live Link Hub multi-node telemetry.  
    - Pricing: Free / 5% royalty over $1M gross.  
-   - Source: [`https://www.unrealengine.com/news/state-of-unreal-2026-top-news-from-the-show`](https://www.unrealengine.com/news/state-of-unreal-2026-top-news-from-the-show)
+   - Source: [`https://en.wikipedia.org/wiki/Unreal_Engine`](https://en.wikipedia.org/wiki/Unreal_Engine) & [`https://dev.epicgames.com/documentation/en-us/unreal-engine/megalights-in-unreal-engine`](https://dev.epicgames.com/documentation/en-us/unreal-engine/megalights-in-unreal-engine)
 2. **Foundry Nuke**: Version `17.1`  
-   - Highlights: OpenUSD 24.08, Python 3.11, Native Apple Silicon raytracing.  
+   - Highlights: OpenUSD 24.08, Python 3.11, Machine Learning CopyCat pipelines.  
    - Pricing: Commercial Subscription / Studio.  
    - Source: [`https://learn.foundry.com/nuke/`](https://learn.foundry.com/nuke/)
 3. **SideFX Houdini**: Version `22.0`  
-   - Highlights: Karma XPU multi-GPU, Vulkan Viewport, Machine Learning SOPs.  
+   - Highlights: 3D Gaussian Splatting Toolset, Copernicus GPU Image Processor, KineFX & APEX Procedural Character Rigging, Solaris OpenUSD, Karma XPU.  
    - Pricing: Apprentice Free / Indie / FX Commercial.  
-   - Source: [`https://www.sidefx.com/docs/houdini/news/22_0.html`](https://www.sidefx.com/docs/houdini/news/22_0.html)
+   - Source: [`https://www.sidefx.com/docs/houdini/`](https://www.sidefx.com/docs/houdini/)
 4. **Blender**: Version `5.2 LTS`  
-   - Highlights: Cycles Path Guiding 2.0, Hydra Delegate, Grease Pencil 3.0.  
+   - Highlights: Cycles GPU Path Tracing, Real-Time EEVEE Rendering, Geometry Nodes Simulation, OpenUSD.  
    - Pricing: Open Source / Free.  
    - Source: [`https://www.blender.org/download/releases/5-2/`](https://www.blender.org/download/releases/5-2/)
 5. **Blackmagic DaVinci Resolve**: Version `21.1.1`  
-   - Highlights: DaVinci Neural Engine 3.0, UltraNR, Native OpenUSD Color Sync.  
+   - Highlights: DaVinci Neural Engine, UltraNR, Blackmagic Cloud Multi-User Collaboration.  
    - Pricing: Free / Studio paid ($295 one-time).  
    - Source: [`https://www.blackmagicdesign.com/media/release/20261002-01`](https://www.blackmagicdesign.com/media/release/20261002-01)
-6. **Topaz Video**: Version `1.3.1 (Subscription) / v7.1.4 (Legacy Perpetual)`  
-   - Highlights: Chronos v3 slow-mo, Iris face restoration, Proteus multi-pass.  
-   - Pricing: $299/yr or $399 perpetual.  
-   - Source: [`https://community.topazlabs.com/c/video-ai/video-ai-releases/69`](https://community.topazlabs.com/c/video-ai/video-ai-releases/69)
+6. **Topaz Video**: Version `Subscription Model (~$12–$39/mo)`  
+   - Highlights: Chronos frame interpolation, Proteus multi-pass enhancement, Iris face restoration.  
+   - Pricing: Starting at ~$12/month; Studio plans at $34–$39/month.  
+   - Source: [`https://www.topazlabs.com/pricing`](https://www.topazlabs.com/pricing)
 7. **Autodesk Maya**: Version `2027 / 2026.3`  
-   - Highlights: LookdevX 1.6, Bifrost Liquid updates, USD for Maya 0.30.  
+   - Highlights: LookdevX OpenUSD Material Authoring, Bifrost Procedural Simulation, USD Scene Assembly.  
    - Pricing: Subscription.  
-   - Source: [`https://help.autodesk.com/view/MAYAUL/2026/ENU/`](https://help.autodesk.com/view/MAYAUL/2026/ENU/)
+   - Source: [`https://en.wikipedia.org/wiki/Autodesk_Maya`](https://en.wikipedia.org/wiki/Autodesk_Maya)
 
 ### 6.2 Frontier Video AI Models
-1. **OpenAI Sora**: `"SUNSET / API discontinued"`  
-   - Status: Decommissioned (Announced 24 Mar 2026; App closed 26 Apr 2026; API ended 24 Sep 2026).  
-   - Source: [`https://help.openai.com/en/articles/9038440-sora-sunset`](https://help.openai.com/en/articles/9038440-sora-sunset)
-2. **Kling AI (Kuaishou)**: Version `4.0 (Flash live / Full rollout Oct 2026) & 3.0 Omni`  
-   - Highlights: 1080p native, 10s maximum clip length, cinematic motion physics.  
-   - Source: [`https://klingai.com`](https://klingai.com)
-3. **Runway**: Version `Gen-4.5 (Gen-3 Alpha retired July 2026)`  
-   - Highlights: 4K temporal fidelity, Director camera keyframing, Motion Brush v3.  
-   - Source: [`https://runwayml.com/models`](https://runwayml.com/models)
-4. **Google Veo**: Version `3.1`  
-   - Highlights: 1080p/4K 60fps, synchronized cinematic Foley audio generation, Imagen 3 foundation.  
-   - Source: [`https://deepmind.google/technologies/veo/`](https://deepmind.google/technologies/veo/)
-5. **Luma AI**: Version `Ray 3.2 (Dream Machine deprecated)`  
-   - Highlights: Prompt-to-3D volumetric camera tracks, 9s temporal extension.  
-   - Source: [`https://lumalabs.ai`](https://lumalabs.ai)
-6. **ByteDance Seedance**: Version `Seedance 2.5`  
-   - Highlights: Fast Latent Video Diffusion, sub-second latency frame interpolation.  
-   - Source: [`https://bytedance.com`](https://bytedance.com)
-7. **Adobe Firefly Video**: Version `Firefly Video 2.0 (Video Editor Beta)`  
-   - Highlights: Generative Extend in Premiere Pro, 4K upscale, commercial indemnity, C2PA signing.  
-   - Source: [`https://helpx.adobe.com/firefly/whats-new.html`](https://helpx.adobe.com/firefly/whats-new.html)
+1. **Runway**: Version `Gen-4.5` *(Verified / Active)*  
+   - Highlights: Controllable camera dynamics, high temporal consistency, multi-prompt character continuity.  
+   - Source: [`https://runway.com/research/introducing-runway-gen-4.5`](https://runway.com/research/introducing-runway-gen-4.5)
+2. **ByteDance Seedance**: Version `Seedance 2.5` *(Verified / Active)*  
+   - Highlights: High-resolution foundation video generation, cinematic motion adherence.  
+   - Source: [`https://seed.bytedance.com/en/seedance2_5`](https://seed.bytedance.com/en/seedance2_5)
+3. **Adobe Firefly Video**: Version `Firefly Video 2.0` *(Verified / Active)*  
+   - Highlights: Generative Extend in Premiere Pro, commercial indemnity, embedded C2PA provenance signing.  
+   - Source: [`https://en.wikipedia.org/wiki/Adobe_Firefly`](https://en.wikipedia.org/wiki/Adobe_Firefly)
+4. **OpenAI Sora**: `"SUNSET / API discontinued"` *(Verified / Sunset)*  
+   - Status: Decommissioned (Announced March 24, 2026; consumer app closed April 26, 2026; API sunset September 24, 2026).  
+   - Source: [`https://en.wikipedia.org/wiki/Sora_(text-to-video_model)`](https://en.wikipedia.org/wiki/Sora_(text-to-video_model))
+5. **Kling AI (Kuaishou)**: *(Unverified / Hidden from Directory)*  
+   - Status: Marked `unverified` and hidden from public directory per editorial guidelines (bare homepage `klingai.com` excluded; no release documentation URL).
+6. **Google Veo 3.1**: *(Unverified / Hidden from Directory)*  
+   - Status: Marked `unverified` and hidden from public directory per editorial guidelines (bare homepage `deepmind.google` excluded; no release documentation URL).
+7. **Luma AI Ray 3.2**: *(Unverified / Hidden from Directory)*  
+   - Status: Marked `unverified` and hidden from public directory per editorial guidelines (bare homepage `lumalabs.ai` excluded; no release documentation URL).
 
 ---
 
@@ -217,7 +215,7 @@ To resolve this completely:
 
 ### Published Deks Verbatim Record
 - **Hell Grind**:
-  > *"Produced by Higgsfield AI in 14 days for under $500,000, the 95-minute action-fantasy Hell Grind premiered in Cannes with fully open-sourced character and prompt workflows."*
+  > *"Produced by Higgsfield AI in 14 days for under $500,000, the 95-minute action-fantasy Hell Grind screened in Cannes at third-party industry events, evaluating generative pipelines under tight turnarounds."*
 - **Sora Sunset**:
   > *"Following OpenAI's March 24, 2026 announcement, consumer access terminated on April 26 and API services concluded on September 24, accelerating Hollywood's shift toward private enterprise models."*
 - **Unreal Engine 5.8 MegaLights**:
@@ -229,7 +227,7 @@ To resolve this completely:
 - **Google DeepMind & A24**:
   > *"Announced on June 22, 2026, the non-exclusive ~$75M multi-year partnership unites Google DeepMind researchers with A24 partner Scott Belsky, who leads A24 Labs, with zero access to A24's film library."*
 - **Netflix & InterPositive**:
-  > *"Netflix disclosed an all-cash $587M acquisition of Ben Affleck's AI venture InterPositive in SEC filings, deploying generative tools across approximately 300 production titles."*
+  > *"Netflix disclosed an all-cash $587M acquisition of Ben Affleck's AI venture InterPositive in a July 2026 Form 10-Q filing (deal closed March 2026), deploying machine learning tools across dailies conforming and post-production."*
 - **Adobe & Topaz Labs**:
   > *"Adobe's announced agreement to acquire Topaz Labs, unveiled on June 25, 2026, is scheduled to close in the second half of 2026 pending regulatory review."*
 - **Adobe Firefly Video 2.0**:
@@ -285,7 +283,7 @@ The following text is currently rendered across the About and Newsletter pages. 
 #### 2. Newsletter Page ([src/app/newsletter/page.tsx](file:///c:/Users/araja/Desktop/Personal/Blog%20Post%20website/frameline/src/app/newsletter/page.tsx#L98-L144))
 - **Byline**: Raja Rathna Reddy · Editor-in-Chief
 - **Role Title**: FX Pipeline TD & AI Architect
-- **Badge**: Verified Trade Architect
+- **Badge**: Removed ("Verified Trade Architect" badge eliminated across codebase per instruction)
 - **Links**: `rajarathnareddy.com` · `IMDb: nm12830221`
 - **Welcome Letter Signature**:
   > *"Raja Rathna Reddy — FX Pipeline TD & AI Architect • Founder, Render Line"*

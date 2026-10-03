@@ -5,7 +5,7 @@ export const aiArticles: Article[] = [
   {
     title: "Hell Grind: Inside the $500K AI Action Film That Put Hollywood on Notice",
     slug: "hell-grind-inside-the-500k-ai-action-film-that-put-hollywood-on-notice",
-    dek: "Produced by Higgsfield AI in 14 days for under $500,000, the 95-minute action-fantasy Hell Grind premiered in Cannes with fully open-sourced character and prompt workflows.",
+    dek: "Produced by Higgsfield AI in 14 days for under $500,000, the 95-minute action-fantasy Hell Grind was screened in Cannes at third-party/industry events, not in the official Festival de Cannes program.",
     heroImage: "/images/hero-ai-film.jpg",
     category: "ai",
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
@@ -17,12 +17,12 @@ export const aiArticles: Article[] = [
     status: 'approved',
     sources: [
   {
-    "label": "Higgsfield AI — Hell Grind Feature Film Showcase",
-    "url": "https://higgsfield.ai/news/hell-grind-feature-film"
-  },
-  {
     "label": "Wikipedia — Hell Grind (2026 Film)",
     "url": "https://en.wikipedia.org/wiki/Hell_Grind"
+  },
+  {
+    "label": "Higgsfield Studio — Hell Grind Showcase Project",
+    "url": "https://higgsfield.ai/@higgsfield.studio/projects/hell-grind"
   }
 ],
     
@@ -32,19 +32,19 @@ export const aiArticles: Article[] = [
 
 In May 2026, generative AI startup **Higgsfield AI**, led by former Snap generative AI director Alex Mashrabov, premiered **Hell Grind**—a 95-minute action-fantasy feature film created entirely with generative AI tools. Produced by a dedicated team of 15 artists, animators, and cinematographers, principal generation of the feature was completed in approximately **14 days** with a total production budget **under $500,000**.
 
-Screened at an industry showcase in Cannes during the 2026 Cannes Film Festival, the film tells the story of four street thieves whose heist accidentally triggers an ancient supernatural artifact, pulling their teammate into an underworld dimension and forcing the crew to battle demonic hordes across stylized Tibetan and feudal Japanese settings.
+Screened in Cannes at third-party/industry events, not in the official Festival de Cannes program, the film tells the story of four street thieves whose heist accidentally triggers an ancient supernatural artifact, pulling their teammate into an underworld dimension and forcing the crew to battle demonic hordes across stylized Tibetan and feudal Japanese settings.
 
 ### The Technical Workflow
 
-Rather than relying on single-prompt text-to-video diffusion, Higgsfield AI developed an extensive multi-tier pipeline to overcome the visual drift and temporal inconsistency that traditionally plagues AI cinema:
+Rather than relying on single-prompt text-to-video diffusion, Higgsfield AI developed an extensive multi-tier pipeline to overcome visual drift and temporal inconsistency:
 
 - **Keyframe Anchoring**: Character likenesses, wardrobe textures, and color palettes were locked across key master frames before generating sequential motion shots.
 - **Decoupled Camera and Character Animation**: Camera trajectories were plotted in 3D proxy spaces to allow cinematic push-ins, pans, and crane moves without morphing actor anatomy.
-- **Open-Sourced Assets**: Following its Cannes premiere, Higgsfield AI publicly open-sourced the underlying prompt structure, reference geometry, and generation logs to enable industry researchers to study the pipeline.
+- **Production Asset Manifest**: Higgsfield AI showcased the generation prompts, reference keyframes, and multi-tier composition logs used throughout the film's production.
 
 ## Hollywood Industry Implications
 
-While critical reaction to the narrative itself was mixed, industry technologists and studio finance executives took notice of the production economics. Contrasting a sub-$500K production cost with the $50M+ required for conventional VFX-heavy action tentpoles, *Hell Grind* provided concrete proof that generative pipelines are capable of sustaining feature-length narrative continuity.`,
+While critical reaction to the narrative itself was mixed, industry technologists and studio finance executives took notice of the production economics. Contrasting a sub-$500K production cost with the $50M+ required for conventional VFX-heavy action tentpoles, *Hell Grind* demonstrated how generative pipelines can sustain continuous feature-length sequences.`,
     seo: {
       title: "Hell Grind: Inside the Under-$500K AI Feature Film Produced by Higgsfield AI",
       desc: "An assessment of Hell Grind, analyzing Inside the $500k ai action film that put hollywood on notice and integration requirements for film pipelines.",
@@ -164,15 +164,11 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     breaking: false,
     status: 'approved',
     sources: [
-  {
-    "label": "OpenAI Help Center — Sora Sunset Official Notice",
-    "url": "https://help.openai.com/en/articles/9038440-sora-sunset"
-  },
-  {
-    "label": "The Guardian — OpenAI to shut down AI video generator Sora",
-    "url": "https://www.theguardian.com/technology/2026/mar/25/openai-to-shut-down-ai-video-generator-sora"
-  }
-],
+      {
+        label: "Wikipedia — Sora (Text-to-Video Model) Discontinuation",
+        url: "https://en.wikipedia.org/wiki/Sora_(text-to-video_model)"
+      }
+    ],
     
     toolsMentioned: ["Unreal Engine","DaVinci Resolve","Foundry Nuke","Houdini","OpenUSD"],
     seoKeywords: ["openai sora api sunset post-mortem","ai","vfx pipeline","hollywood technology"],

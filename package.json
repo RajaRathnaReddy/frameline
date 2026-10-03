@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "link-check": "node scripts/verify-links.js",
+    "build": "node scripts/verify-links.js && next build",
     "start": "next start",
     "lint": "eslint",
     "cron:newsletter": "node scripts/cronWeeklyNewsletter.js"

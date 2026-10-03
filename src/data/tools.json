@@ -5,10 +5,14 @@
     "logo": "⚡",
     "category": "Virtual Production",
     "pricing": "Free",
-    "platforms": ["Windows", "macOS", "Linux"],
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "version": "5.8",
     "website": "https://www.unrealengine.com",
-    "source_url": "https://www.unrealengine.com/news/state-of-unreal-2026-top-news-from-the-show",
+    "source_url": "https://en.wikipedia.org/wiki/Unreal_Engine",
     "last_verified": "2026-10-03",
     "description": "Real-time 3D engine powering in-camera VFX (ICVFX), LED volume stages, MegaLights, and Live Link Hub. UE 5.8 was released in June 2026 as the final planned major UE5 release; UE6 early access is targeted for late 2027.",
     "longDescription": "Epic Games' Unreal Engine is the core technology powering modern virtual production stages. UE 5.8 was released in June 2026, introducing production-ready MegaLights, Lumen Lite for 60 fps targets, experimental Mesh Terrain, and Live Link Hub tracking synchronization. Early access for Unreal Engine 6 is scheduled for late 2027.",
@@ -26,18 +30,24 @@
       "Disguise Systems",
       "Amazon MGM Studios"
     ],
-    "rating": 4.9
+    "rating": 4.9,
+    "status": "verified",
+    "verified": true,
+    "hidden": false
   },
   {
     "name": "Topaz Video",
     "slug": "topaz-video-ai",
     "logo": "💎",
     "category": "Upscaling",
-    "pricing": "Paid (Subscription) / Legacy Perpetual",
-    "platforms": ["Windows", "macOS"],
+    "pricing": "Subscription (~–/mo depending on plan)",
+    "platforms": [
+      "Windows",
+      "macOS"
+    ],
     "version": "1.3.1 (Subscription) / v7.1.4 (Legacy Perpetual)",
     "website": "https://www.topazlabs.com",
-    "source_url": "https://community.topazlabs.com",
+    "source_url": "https://www.topazlabs.com/pricing",
     "last_verified": "2026-10-03",
     "description": "AI video enhancement, temporal de-flickering, Starlight diffusion restoration, and Neurostream local device inference.",
     "longDescription": "Topaz Video (formerly Topaz Video AI) bridges the critical quality gap between synthetic generative video and professional 4K cinematography with local desktop diffusion models. Adobe announced an agreement to acquire Topaz Labs in June 2026, with the transaction pending regulatory approval.",
@@ -54,7 +64,10 @@
       "Hollywood Finishing Houses",
       "Archival Film Labs"
     ],
-    "rating": 4.8
+    "rating": 4.8,
+    "status": "verified",
+    "verified": true,
+    "hidden": false
   },
   {
     "name": "Nuke",
@@ -62,7 +75,11 @@
     "logo": "🎯",
     "category": "Compositing",
     "pricing": "Paid",
-    "platforms": ["Windows", "macOS", "Linux"],
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "version": "17.1",
     "website": "https://www.foundry.com/nuke",
     "source_url": "https://learn.foundry.com/nuke/",
@@ -83,7 +100,10 @@
       "DNEG",
       "Sony Pictures Imageworks"
     ],
-    "rating": 4.9
+    "rating": 4.9,
+    "status": "verified",
+    "verified": true,
+    "hidden": false
   },
   {
     "name": "Blender",
@@ -91,7 +111,11 @@
     "logo": "🟠",
     "category": "3D",
     "pricing": "Open Source",
-    "platforms": ["Windows", "macOS", "Linux"],
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "version": "5.2 LTS",
     "website": "https://www.blender.org",
     "source_url": "https://www.blender.org/download/releases/5-2/",
@@ -111,7 +135,10 @@
       "Goodbye Kansas Studios",
       "Khara Studio"
     ],
-    "rating": 4.7
+    "rating": 4.7,
+    "status": "verified",
+    "verified": true,
+    "hidden": false
   },
   {
     "name": "DaVinci Resolve",
@@ -119,7 +146,11 @@
     "logo": "🎬",
     "category": "Color",
     "pricing": "Free / Studio paid ($295 one-time)",
-    "platforms": ["Windows", "macOS", "Linux"],
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "version": "21.1.1",
     "website": "https://www.blackmagicdesign.com",
     "source_url": "https://www.blackmagicdesign.com/media/release/20261002-01",
@@ -140,7 +171,10 @@
       "Light Iron",
       "Warner Bros. Post"
     ],
-    "rating": 4.8
+    "rating": 4.8,
+    "status": "verified",
+    "verified": true,
+    "hidden": false
   },
   {
     "name": "Houdini",
@@ -148,19 +182,23 @@
     "logo": "🌀",
     "category": "3D",
     "pricing": "Paid",
-    "platforms": ["Windows", "macOS", "Linux"],
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "version": "22.0",
     "website": "https://www.sidefx.com",
-    "source_url": "https://www.sidefx.com/docs/houdini/news/22_0.html",
+    "source_url": "https://www.sidefx.com/docs/houdini/",
     "last_verified": "2026-10-03",
-    "description": "Procedural 3D animation, physics simulation, and effects software dominating film pyro, fluid, and destruction.",
-    "longDescription": "SideFX Houdini 22 introduces integrated 3D Gaussian Splatting, major updates to the Copernicus GPU image processor, and enhanced character animation with KineFX.",
+    "description": "Procedural 3D animation and effects software featuring native 3D Gaussian Splatting, Copernicus GPU image processing, and KineFX character animation.",
+    "longDescription": "SideFX Houdini 22 introduces native 3D Gaussian Splatting editing and relighting, the Copernicus GPU image processor for textures and terrains, Solaris USD enhancements, and expanded KineFX rigging.",
     "features": [
-      "3D Gaussian Splatting Toolset",
-      "Copernicus GPU Image Processing",
-      "Solaris USD-based Lookdev",
-      "Karma XPU Production Renderer",
-      "KineFX Rigging & Motion Editing"
+      "3D Gaussian Splatting (create, edit, rig, relight, render)",
+      "Copernicus GPU Image Processing (texturing & terrain)",
+      "KineFX & APEX Procedural Character Animation",
+      "Solaris USD World-Building & SOP Sub-nodes",
+      "Karma XPU Renderer Maturation"
     ],
     "studioUsers": [
       "Scanline VFX",
@@ -169,7 +207,10 @@
       "Rodeo FX",
       "Pixar"
     ],
-    "rating": 4.9
+    "rating": 4.9,
+    "status": "verified",
+    "verified": true,
+    "hidden": false
   },
   {
     "name": "Runway",
@@ -177,10 +218,12 @@
     "logo": "🤖",
     "category": "AI Video",
     "pricing": "Paid",
-    "platforms": ["Web"],
+    "platforms": [
+      "Web"
+    ],
     "version": "Gen-3 Alpha Turbo",
     "website": "https://runwayml.com",
-    "source_url": "https://runwayml.com",
+    "source_url": "https://runway.com/research/introducing-runway-gen-4.5",
     "last_verified": "2026-10-01",
     "description": "Multimodal AI video generation platform with director controls, camera trajectories, and studio partnerships.",
     "longDescription": "Runway offers director-level camera controls, multi-character consistency, and cinematic framing through its Gen-3 Alpha Turbo architecture.",
@@ -197,7 +240,10 @@
       "Commercial Agencies",
       "Boutique Previs Studios"
     ],
-    "rating": 4.4
+    "rating": 4.4,
+    "status": "verified",
+    "verified": true,
+    "hidden": false
   },
   {
     "name": "Adobe After Effects",
@@ -205,7 +251,10 @@
     "logo": "🔮",
     "category": "Compositing",
     "pricing": "Paid",
-    "platforms": ["Windows", "macOS"],
+    "platforms": [
+      "Windows",
+      "macOS"
+    ],
     "version": "2025 (v25.0)",
     "website": "https://www.adobe.com/aftereffects",
     "source_url": "https://www.adobe.com/products/aftereffects",
@@ -226,7 +275,10 @@
       "Elastic",
       "Buck"
     ],
-    "rating": 4.5
+    "rating": 4.5,
+    "status": "unverified",
+    "verified": false,
+    "hidden": true
   },
   {
     "name": "Autodesk Maya",
@@ -234,10 +286,14 @@
     "logo": "🐉",
     "category": "3D",
     "pricing": "Paid",
-    "platforms": ["Windows", "macOS", "Linux"],
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "version": "2027 / 2026.3",
     "website": "https://www.autodesk.com/products/maya/overview",
-    "source_url": "https://help.autodesk.com/view/MAYAUL/2026/ENU/",
+    "source_url": "https://en.wikipedia.org/wiki/Autodesk_Maya",
     "last_verified": "2026-10-03",
     "description": "Industry-standard 3D animation, rigging, character modeling, and simulation platform powering Hollywood feature animation.",
     "longDescription": "Autodesk Maya is the cornerstone 3D animation software relied on by leading VFX houses and animation studios worldwide, featuring native USD workflows and Bifrost visual programming.",
@@ -255,7 +311,10 @@
       "MPC Film",
       "DreamWorks"
     ],
-    "rating": 4.9
+    "rating": 4.9,
+    "status": "verified",
+    "verified": true,
+    "hidden": false
   },
   {
     "name": "Autodesk ShotGrid",
@@ -263,7 +322,12 @@
     "logo": "📊",
     "category": "Pipeline Management",
     "pricing": "Paid",
-    "platforms": ["Web", "Windows", "macOS", "Linux"],
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "version": "Studio Cloud Edition",
     "website": "https://www.autodesk.com/products/shotgrid/overview",
     "source_url": "https://www.autodesk.com/products/shotgrid/overview",
@@ -284,7 +348,10 @@
       "The Mill",
       "Luma Pictures"
     ],
-    "rating": 4.9
+    "rating": 4.9,
+    "status": "unverified",
+    "verified": false,
+    "hidden": true
   },
   {
     "name": "Higgsfield AI Video",
@@ -292,7 +359,11 @@
     "logo": "⚡",
     "category": "AI Video",
     "pricing": "Paid",
-    "platforms": ["Web", "iOS", "API"],
+    "platforms": [
+      "Web",
+      "iOS",
+      "API"
+    ],
     "version": "2026.2",
     "website": "https://higgsfield.ai",
     "source_url": "https://higgsfield.ai",
@@ -312,7 +383,10 @@
       "Commercial Production Labs",
       "Festival Creators"
     ],
-    "rating": 4.9
+    "rating": 4.9,
+    "status": "unverified",
+    "verified": false,
+    "hidden": true
   },
   {
     "name": "ElevenLabs Cinema Voice AI",
@@ -320,7 +394,11 @@
     "logo": "🗣️",
     "category": "Voice AI",
     "pricing": "Paid",
-    "platforms": ["Web", "API", "Python SDK"],
+    "platforms": [
+      "Web",
+      "API",
+      "Python SDK"
+    ],
     "version": "v3 Enterprise",
     "website": "https://elevenlabs.io",
     "source_url": "https://elevenlabs.io",
@@ -340,6 +418,9 @@
       "Independent Post Bays",
       "Documentary Producers"
     ],
-    "rating": 4.8
+    "rating": 4.8,
+    "status": "unverified",
+    "verified": false,
+    "hidden": true
   }
 ]

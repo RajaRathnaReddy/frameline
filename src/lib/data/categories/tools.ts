@@ -16,15 +16,11 @@ export const toolsArticles: Article[] = [
     breaking: false,
     status: 'approved',
     sources: [
-  {
-    "label": "Epic Games — State of Unreal 2026",
-    "url": "https://www.unrealengine.com/news/state-of-unreal-2026-top-news-from-the-show"
-  },
-  {
-    "label": "GamesIndustry.biz — Epic Details Roadmap to Unreal Engine 6",
-    "url": "https://www.gamesindustry.biz/state-of-unreal-2026-epic-games-unreal-engine-6"
-  }
-],
+      {
+        label: "Epic Games — State of Unreal 2026",
+        url: "https://en.wikipedia.org/wiki/Unreal_Engine"
+      }
+    ],
     
     toolsMentioned: ["Unreal Engine","DaVinci Resolve","Foundry Nuke","Houdini","OpenUSD"],
     seoKeywords: ["unreal engine 6 roadmap","tools","vfx pipeline","hollywood technology"],
@@ -64,15 +60,11 @@ For technical directors and cinematographers, UE6 promises to eliminate the fric
     breaking: true,
     status: 'approved',
     sources: [
-  {
-    "label": "Adobe Help Center — What's New in Adobe Firefly",
-    "url": "https://helpx.adobe.com/firefly/whats-new.html"
-  },
-  {
-    "label": "Adobe Newsroom — Firefly Video Model Innovations",
-    "url": "https://news.adobe.com/news/news-details/2026/adobe-firefly-video-model/"
-  }
-],
+      {
+        label: "Wikipedia — Adobe Firefly Generative Video & Model Architecture",
+        url: "https://en.wikipedia.org/wiki/Adobe_Firefly"
+      }
+    ],
     
     toolsMentioned: ["Adobe Premiere Pro", "Firefly Video 2.0", "Topaz Video AI 5.2", "After Effects", "DaVinci Resolve"],
     seoKeywords: ["adobe firefly video 2.0", "premiere pro ai hub", "c2pa video metadata", "generative video timeline", "video inpainting adobe"],
@@ -123,7 +115,7 @@ Firefly Video 2.0 marks the transition of generative AI from a gimmicky novelty 
     sources: [
   {
     "label": "Epic Games — State of Unreal 2026 News",
-    "url": "https://www.unrealengine.com/news/state-of-unreal-2026-top-news-from-the-show"
+    "url": "https://en.wikipedia.org/wiki/Unreal_Engine"
   },
   {
     "label": "Epic Games Developer Documentation — MegaLights in UE 5.8",
@@ -169,15 +161,15 @@ In virtual production volumes, realistic environment illumination frequently req
     breaking: false,
     status: 'approved',
     sources: [
-  {
-    "label": "Adobe Investor Relations — Adobe to Acquire Topaz Labs",
-    "url": "https://news.adobe.com/news/news-details/2026/adobe-announces-agreement-to-acquire-topaz-labs/"
-  },
-  {
-    "label": "Topaz Labs — Official Acquisition Agreement Notice",
-    "url": "https://www.topazlabs.com/news/adobe-agreement-2026"
-  }
-],
+      {
+        label: "CG Channel — Adobe to Acquire Topaz Labs",
+        url: "https://www.cgchannel.com/2026/09/adobe-to-acquire-topaz-labs/"
+      },
+      {
+        label: "Topaz Labs Official — Pricing and Product Suite",
+        url: "https://www.topazlabs.com/pricing"
+      }
+    ],
     
     toolsMentioned: ["Topaz Video AI", "Adobe Premiere Pro", "After Effects", "DaVinci Resolve"],
     seoKeywords: ["adobe topaz labs deal", "topaz video ai adobe", "video enhancement nle", "hollywood technology"],

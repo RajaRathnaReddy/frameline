@@ -4,6 +4,10 @@ import { aiModels } from '@/lib/data';
 import { ScrollReveal, StaggerContainer, StaggerItem } from '@/components/motion';
 
 export default function AIModelTracker() {
+  const verifiedModels = aiModels.filter(
+    (m) => m.status !== 'unverified' && !m.hidden
+  );
+
   return (
     <section className="max-w-[1440px] mx-auto px-4 md:px-8 py-16 md:py-24" id="ai-tracker">
       <ScrollReveal>
@@ -16,7 +20,7 @@ export default function AIModelTracker() {
           The State of AI Video
         </h3>
         <p className="text-text-secondary text-base max-w-2xl mb-10 font-serif">
-          Real-time status of every major AI video generation model — resolution, duration limits, audio support, and API availability.
+          Real-time status of every verified frontier AI video generation model — resolution, duration limits, audio support, and API availability.
         </p>
       </ScrollReveal>
 
@@ -35,11 +39,11 @@ export default function AIModelTracker() {
               </tr>
             </thead>
             <tbody>
-              {aiModels.map((model, i) => (
+              {verifiedModels.map((model, i) => (
                 <tr
                   key={model.name}
                   className={`border-b border-border-subtle hover:bg-bg-card/50 transition-colors ${
-                    i === aiModels.length - 1 ? 'border-b-0' : ''
+                    i === verifiedModels.length - 1 ? 'border-b-0' : ''
                   }`}
                 >
                   <td className="px-5 py-4">
@@ -80,7 +84,7 @@ export default function AIModelTracker() {
 
       {/* Mobile Cards */}
       <StaggerContainer className="md:hidden grid grid-cols-1 gap-3">
-        {aiModels.map((model) => (
+        {verifiedModels.map((model) => (
           <StaggerItem key={model.name}>
             <div className="glass-card rounded-lg p-4">
               <div className="flex items-center justify-between mb-3">

@@ -219,7 +219,7 @@ export const businessStats = [
     label: 'Google DeepMind / A24',
     change: 'Research Partnership',
     desc: 'Multiyear non-exclusive research partnership (announced 22 Jun 2026)',
-    sourceUrl: 'https://techcrunch.com',
+    sourceUrl: 'https://blog.google/innovation-and-ai/models-and-research/google-deepmind/deepmind-a24-research-partnership/',
   },
   {
     value: '$587M',
@@ -228,8 +228,8 @@ export const businessStats = [
     suffix: 'M',
     label: 'Netflix / InterPositive',
     change: 'SEC Filing Cash Deal',
-    desc: 'Acquisition of Ben Affleck AI venture pipeline (March 2026 deal, reported July 2026)',
-    sourceUrl: 'https://www.sec.gov',
+    desc: 'Acquisition of Ben Affleck AI venture pipeline (disclosed July 2026 Form 10-Q, deal closed March 2026)',
+    sourceUrl: 'https://variety.com/2026/film/news/netflix-paid-587-million-ben-affleck-ai-interpositive-1236815111/',
   },
 ];
 

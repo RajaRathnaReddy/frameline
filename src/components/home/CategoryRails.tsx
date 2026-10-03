@@ -69,6 +69,27 @@ export default function CategoryRails() {
 
         {/* Category Sections */}
         <div className="space-y-16">
+          {selectedCategory !== 'all' && allStories.filter(a => a.category === selectedCategory).length === 0 && (
+            <div className="rounded-2xl border border-border-subtle bg-bg-card/40 p-8 md:p-12 text-center max-w-2xl mx-auto backdrop-blur-sm">
+              <div
+                className="w-3 h-3 rounded-full mx-auto mb-3 shadow-sm"
+                style={{ backgroundColor: categories.find(c => c.slug === selectedCategory)?.color || '#3EE6FF' }}
+              />
+              <h4 className="font-display text-xl font-bold text-text-primary mb-2">
+                {categories.find(c => c.slug === selectedCategory)?.name || 'Category'} Beat
+              </h4>
+              <p className="text-text-secondary text-sm font-sans mb-5 leading-relaxed">
+                More dispatches coming soon — In-depth technical coverage for this vertical is currently undergoing editorial review and verification.
+              </p>
+              <button
+                onClick={() => setSelectedCategory('all')}
+                className="font-mono text-xs uppercase tracking-wider px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 text-text-primary border border-white/10 transition-all font-semibold"
+              >
+                ← View All Active Dispatches
+              </button>
+            </div>
+          )}
+
           {activeCategories.map((cat, idx) => {
             const catArticles = allStories.filter(a => a.category === cat.slug);
             if (catArticles.length === 0) return null;
@@ -101,8 +122,14 @@ export default function CategoryRails() {
                     </Link>
                   </div>
 
-                  {/* Curated Grid of 3 Non-Repeating Articles */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {/* Curated Grid of Non-Repeating Articles with Dynamic Sizing */}
+                  <div className={
+                    catArticles.length === 1
+                      ? 'grid grid-cols-1 max-w-xl'
+                      : catArticles.length === 2
+                      ? 'grid grid-cols-1 md:grid-cols-2 max-w-4xl gap-6'
+                      : 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'
+                  }>
                     {catArticles.slice(0, 3).map((article) => {
                       return (
                         <Link
@@ -162,16 +189,16 @@ export default function CategoryRails() {
                     })}
                   </div>
 
-                  {/* Explore Complete Archive Strip */}
+                  {/* Explore Archive Strip */}
                   <div className="mt-6 pt-4 border-t border-white/[0.05] flex items-center justify-between flex-wrap gap-3">
                     <span className="font-mono text-xs text-text-secondary/50">
-                      Showing {Math.min(3, catArticles.length)} of {catArticles.length} curated {cat.name} dispatches
+                      Curated {cat.name} Beat &bull; More dispatches coming soon
                     </span>
                     <Link
                       href={`/category/${cat.slug}`}
                       className="font-mono text-xs uppercase tracking-wider px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-text-primary border border-white/10 transition-all font-semibold flex items-center gap-1.5"
                     >
-                      <span>Explore Complete {cat.name} Archive ({catArticles.length} Reports)</span>
+                      <span>Explore {cat.name} Beat Archive</span>
                       <span>&rarr;</span>
                     </Link>
                   </div>

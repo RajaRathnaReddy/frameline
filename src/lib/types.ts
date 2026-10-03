@@ -77,6 +77,9 @@ export interface Tool {
   features?: string[];
   studioUsers?: string[];
   rating: number;
+  status?: 'verified' | 'unverified';
+  verified?: boolean;
+  hidden?: boolean;
 }
 
 export interface AIModel {
@@ -90,6 +93,10 @@ export interface AIModel {
   source_url?: string;
   last_verified?: string;
   updatedAt: string;
+  status?: 'verified' | 'unverified';
+  verified?: boolean;
+  hidden?: boolean;
+  notes?: string;
 }
 
 export interface Category {
