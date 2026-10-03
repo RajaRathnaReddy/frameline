@@ -14,7 +14,7 @@ export default function BreakdownsPage() {
   const [sliderPos, setSliderPos] = useState(50);
   const [selectedStudio, setSelectedStudio] = useState<string>('All');
 
-  const studios = ['All', 'Outpost VFX', 'Framestore & Wētā FX'];
+  const studios = ['All', ...Array.from(new Set(vfxBreakdowns.map(b => b.studio.split('·')[0].trim())))];
   const filtered = selectedStudio === 'All'
     ? vfxBreakdowns
     : vfxBreakdowns.filter(b => b.studio.toLowerCase().includes(selectedStudio.toLowerCase()));
@@ -234,10 +234,10 @@ export default function BreakdownsPage() {
               </div>
 
               <Link
-                href="/article/outpost-vfx-dog-stars-breakdown"
+                href={selectedBreakdown.id === 'demo-neural-comp' ? '/tools' : `/article/${selectedBreakdown.slug}`}
                 className="mt-4 inline-flex items-center justify-center gap-2 font-mono text-xs text-accent-violet hover:text-white py-2 px-3 rounded-lg border border-accent-violet/30 hover:bg-accent-violet/20 transition-all text-center"
               >
-                Read Full 1,200-Shot Case Study &rarr;
+                {selectedBreakdown.id === 'demo-neural-comp' ? 'Explore VFX & Comp Tools →' : 'Read Full Case Study →'}
               </Link>
             </div>
           </div>
