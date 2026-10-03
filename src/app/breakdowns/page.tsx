@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { vfxBreakdowns } from '@/lib/data';
 import type { VFXBreakdown } from '@/lib/types';
 import { motion, AnimatePresence } from 'framer-motion';
+import { SITE_NAME, SITE_URL } from '@/lib/config';
 
 export default function BreakdownsPage() {
   const [selectedBreakdown, setSelectedBreakdown] = useState<VFXBreakdown>(vfxBreakdowns[0]);
@@ -33,13 +34,13 @@ export default function BreakdownsPage() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://vfx.rajarathnareddy.com',
+        item: SITE_URL,
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'VFX Shot Breakdowns',
-        item: 'https://vfx.rajarathnareddy.com/breakdowns',
+        item: `${SITE_URL}/breakdowns`,
       },
     ],
   };
@@ -47,13 +48,13 @@ export default function BreakdownsPage() {
   const collectionJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: 'VFX Shot Breakdowns & Deconstructions — RENDERLINE',
+    name: `VFX Shot Breakdowns & Deconstructions — ${SITE_NAME}`,
     description: 'Frame-by-frame breakdowns, LIDAR terrain alignment, creature simulations, and composite passes from Hollywood leading visual effects studios.',
-    url: 'https://vfx.rajarathnareddy.com/breakdowns',
+    url: `${SITE_URL}/breakdowns`,
     publisher: {
       '@type': 'NewsMediaOrganization',
-      name: 'RENDERLINE',
-      url: 'https://vfx.rajarathnareddy.com',
+      name: SITE_NAME,
+      url: SITE_URL,
     },
   };
 
