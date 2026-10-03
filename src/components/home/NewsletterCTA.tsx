@@ -69,7 +69,7 @@ export default function NewsletterCTA() {
               Executive Film &amp; AI Intelligence.
             </h2>
             <p className="text-text-secondary text-base md:text-lg font-serif mb-2 max-w-xl mx-auto leading-relaxed">
-              Join 40,000+ VFX supervisors, technical directors, and studio executives who rely on RENDERLINE for unfiltered pipeline analysis and compute economics.
+              Get the free weekly briefing on AI, VFX and film technology.
             </p>
             <p className="text-xs font-mono text-text-tertiary mb-8">
               Curated by{' '}
@@ -140,22 +140,8 @@ export default function NewsletterCTA() {
               </motion.div>
             )}
 
-            {/* Social Proof */}
-            <div className="flex flex-wrap items-center justify-center gap-3 mt-4">
-              <div className="flex -space-x-2">
-                {['🎬', '🎨', '🤖', '⚡'].map((emoji, i) => (
-                  <div
-                    key={i}
-                    className="w-7 h-7 rounded-full bg-bg-card border-2 border-bg-elevated flex items-center justify-center text-[10px] text-text-secondary shadow-sm"
-                  >
-                    {emoji}
-                  </div>
-                ))}
-              </div>
-              <span className="text-meta text-text-secondary/70 font-mono text-[11px]">
-                JOIN 40,000+ SUBSCRIBERS FROM WARNER BROS, DISNEY, SONY, &amp; DNEG
-              </span>
-              <span className="text-text-tertiary text-xs">&bull;</span>
+            {/* Sample Issues Link */}
+            <div className="flex items-center justify-center gap-3 mt-4">
               <Link href="/newsletter" className="text-accent-cyan hover:underline text-xs font-mono font-medium">
                 View Sample Issues &rarr;
               </Link>

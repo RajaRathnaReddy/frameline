@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
+import { SITE_NAME } from '@/lib/config';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | RENDERLINE',
-  description: 'Editorial privacy standards, cookie policies, and data handling practices at RENDERLINE.',
+  title: `Privacy Policy | ${SITE_NAME}`,
+  description: `Editorial privacy standards, cookie policies, and data handling practices at ${SITE_NAME}.`,
 };
 
 export default function PrivacyPage() {
@@ -17,7 +18,7 @@ export default function PrivacyPage() {
             Privacy Policy
           </h1>
           <p className="font-serif text-base text-text-secondary mt-2">
-            How RENDERLINE collects, secures, and honors reader telemetry, confidential source data, and subscriber accounts.
+            How {SITE_NAME} collects, secures, and honors reader telemetry, confidential source data, and subscriber accounts.
           </p>
         </div>
 
@@ -27,7 +28,7 @@ export default function PrivacyPage() {
               1. Editorial Integrity & Confidential Sources
             </h2>
             <p>
-              RENDERLINE operates under strict journalistic standards. Communications sent to our confidential newsroom desk, including encrypted Signal transmissions, are shielded by shield law protections to the fullest extent permitted by law. We do not sell, rent, or trade confidential source data under any circumstances.
+              {SITE_NAME} operates under strict journalistic standards. Communications sent to our confidential newsroom desk, including encrypted Signal transmissions, are shielded by shield law protections to the fullest extent permitted by law. We do not sell, rent, or trade confidential source data under any circumstances.
             </p>
           </section>
 
@@ -36,7 +37,7 @@ export default function PrivacyPage() {
               2. Data We Collect
             </h2>
             <p>
-              When you browse RENDERLINE, we collect minimal telemetry necessary to provide high-performance delivery:
+              When you browse {SITE_NAME}, we collect minimal telemetry necessary to provide high-performance delivery:
             </p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><strong>Newsletter Subscriptions:</strong> Your email address and topic preferences for &ldquo;The Daily Render&rdquo;.</li>

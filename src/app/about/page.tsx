@@ -1,10 +1,11 @@
 import { rajaRathnaReddy } from '@/lib/data';
 import Image from 'next/image';
 import type { Metadata } from 'next';
+import { SITE_NAME } from '@/lib/config';
 
 export const metadata: Metadata = {
-  title: 'About — RENDERLINE',
-  description: 'RENDERLINE is the premium news platform for film technology, visual effects, AI in cinema, and virtual production.',
+  title: `About — ${SITE_NAME}`,
+  description: `${SITE_NAME} is the premium news platform for film technology, visual effects, AI in cinema, and virtual production.`,
 };
 
 export default function AboutPage() {
@@ -17,13 +18,16 @@ export default function AboutPage() {
         </h1>
         <div className="text-body text-text-secondary space-y-6 mb-16">
           <p>
-            RENDERLINE is the premier destination for news and analysis at the intersection of filmmaking and technology. We cover the tools, techniques, and talent shaping the future of visual storytelling — from AI-powered post-production to virtual production stages, from indie VFX breakthroughs to Hollywood&apos;s biggest technical achievements.
+            {SITE_NAME} is the premier destination for news and analysis at the intersection of filmmaking and technology. We cover the tools, techniques, and talent shaping the future of visual storytelling — from AI-powered post-production to virtual production stages, from indie VFX breakthroughs to Hollywood&apos;s biggest technical achievements.
           </p>
           <p>
             Founded in 2024, we&apos;ve quickly become the go-to source for VFX supervisors, directors, editors, colorists, and technology leaders who need to stay ahead of a rapidly evolving industry.
           </p>
           <p>
             Our editorial team combines decades of hands-on production experience with deep technical knowledge, ensuring that every story we publish is informed, nuanced, and actionable.
+          </p>
+          <p className="text-sm text-text-secondary/80 italic border-l-2 border-accent-gold/40 pl-4 py-1">
+            Opinions on this site are personal and do not represent any employer or company.
           </p>
         </div>
 

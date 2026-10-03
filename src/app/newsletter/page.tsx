@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { SITE_NAME } from '@/lib/config';
 
 const TOPIC_OPTIONS = [
   'VFX & OpenUSD Solaris Pipeline',
@@ -87,7 +88,7 @@ export default function NewsletterPage() {
           </div>
 
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-display font-black tracking-tight mb-6">
-            The RENDERLINE Intelligence Briefing
+            The {SITE_NAME} Intelligence Briefing
           </h1>
 
           <p className="text-text-secondary text-lg md:text-xl font-serif max-w-3xl leading-relaxed mb-6">
@@ -317,7 +318,7 @@ export default function NewsletterPage() {
                     <div className="font-mono text-[10px] text-[#E63946] font-bold tracking-widest mb-1 uppercase">
                       SCENE 01 / TAKE 01 &bull; EDITORIAL DISPATCH
                     </div>
-                    <div className="text-2xl font-black text-white font-display mb-1">RENDERLINE</div>
+                    <div className="text-2xl font-black text-white font-display mb-1">RENDER LINE</div>
                     <div className="font-mono text-xs text-[#94A3B8] mb-6">
                       AI &bull; VFX &bull; HOLLYWOOD &bull; FILM TOOLS &bull; VIRTUAL PRODUCTION
                     </div>
@@ -331,7 +332,7 @@ export default function NewsletterPage() {
                     </p>
 
                     <p className="mb-4">
-                      Welcome to <strong>RENDERLINE Intelligence</strong>. You are now subscribed to the premier trade briefing for cinema technologists, VFX supervisors, technical directors, and studio executives.
+                      Welcome to <strong>{SITE_NAME} Intelligence</strong>. You are now subscribed to the premier trade briefing for cinema technologists, VFX supervisors, technical directors, and studio executives.
                     </p>
 
                     <div className="border-l-2 border-[#E63946] bg-[#14171A] p-4 rounded-r-lg my-5 italic text-[#F1F5F9]">
@@ -359,7 +360,7 @@ export default function NewsletterPage() {
 
                     <div className="pt-6 border-t border-[#23272D]">
                       <div className="font-bold text-white text-sm">Raja Rathna Reddy</div>
-                      <div className="font-mono text-xs text-[#3EE6FF] mt-0.5">FX Pipeline TD &amp; AI Architect &bull; Founder, RENDERLINE</div>
+                      <div className="font-mono text-xs text-[#3EE6FF] mt-0.5">FX Pipeline TD &amp; AI Architect &bull; Founder, {SITE_NAME}</div>
                       <div className="font-mono text-xs text-[#D4AF37] mt-2">
                         &bull; rajarathnareddy.com &bull; IMDb nm12830221
                       </div>
@@ -370,7 +371,7 @@ export default function NewsletterPage() {
                     <div className="font-mono text-[10px] text-[#3EE6FF] font-bold tracking-widest mb-1 uppercase">
                       WEEKLY INTELLIGENCE REPORT
                     </div>
-                    <div className="text-2xl font-black text-white font-display mb-1">RENDERLINE WEEKLY</div>
+                    <div className="text-2xl font-black text-white font-display mb-1">{SITE_NAME.toUpperCase()} WEEKLY</div>
                     <div className="font-mono text-xs text-[#94A3B8] mb-6">
                       Curated by Raja Rathna Reddy &bull; Issue #48
                     </div>
@@ -404,21 +405,6 @@ export default function NewsletterPage() {
                 )}
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Studio Logos / Readership Bar */}
-        <div className="mt-20 pt-12 border-t border-border-subtle">
-          <p className="text-center font-mono text-xs uppercase tracking-widest text-text-tertiary mb-6">
-            TRUSTED BY ARTISTS, SUPERVISORS, AND ENGINEERS ACROSS GLOBAL STUDIOS
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-14 text-text-secondary/40 font-display font-black text-lg md:text-xl tracking-wider">
-            <span>WARNER BROS.</span>
-            <span>WETA DIGITAL</span>
-            <span>ILM</span>
-            <span>SONY PICTURES IMAGEWORKS</span>
-            <span>DNEG</span>
-            <span>DISNEY</span>
           </div>
         </div>
       </div>

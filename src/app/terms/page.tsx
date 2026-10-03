@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
+import { SITE_NAME } from '@/lib/config';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | RENDERLINE',
-  description: 'Editorial terms of service, copyright notice, and licensing policies at RENDERLINE.',
+  title: `Terms of Service | ${SITE_NAME}`,
+  description: `Editorial terms of service, copyright notice, and licensing policies at ${SITE_NAME}.`,
 };
 
 export default function TermsPage() {
@@ -17,7 +18,7 @@ export default function TermsPage() {
             Terms of Service
           </h1>
           <p className="font-serif text-base text-text-secondary mt-2">
-            Terms governing access to RENDERLINE news, editorial analyses, database directories, and technical benchmarks.
+            Terms governing access to {SITE_NAME} news, editorial analyses, database directories, and technical benchmarks.
           </p>
         </div>
 
@@ -27,7 +28,7 @@ export default function TermsPage() {
               1. Intellectual Property & Copyright
             </h2>
             <p>
-              All original reporting, film industry analyses, VFX shot breakdown diagrams, hardware lab benchmark charts, and proprietary photography featured on RENDERLINE are the copyright &copy; 2026 RENDERLINE Media Group LLC. Film stills, studio logos, and tool marks are used strictly under fair use for commentary and criticism.
+              All original reporting, film industry analyses, VFX shot breakdown diagrams, hardware lab benchmark charts, and proprietary photography featured on {SITE_NAME} are the copyright &copy; 2026 {SITE_NAME} Media Group LLC. Film stills, studio logos, and tool marks are used strictly under fair use for commentary and criticism.
             </p>
           </section>
 
@@ -36,7 +37,7 @@ export default function TermsPage() {
               2. Syndication & Academic Citations
             </h2>
             <p>
-              Excerpts of up to 150 words may be quoted in academic papers, industry newsletters, or peer publications with explicit attribution and a direct canonical hyperlink back to the original RENDERLINE article URL.
+              Excerpts of up to 150 words may be quoted in academic papers, industry newsletters, or peer publications with explicit attribution and a direct canonical hyperlink back to the original {SITE_NAME} article URL.
             </p>
           </section>
 
@@ -45,7 +46,7 @@ export default function TermsPage() {
               3. Independent Editorial Disclosures
             </h2>
             <p>
-              RENDERLINE maintains absolute editorial independence. Software reviews, hardware benchmarks, and rating scores are determined solely by our testing lab editors. Advertising sponsorships never dictate or modify review scores or editorial opinions.
+              {SITE_NAME} maintains absolute editorial independence. Software reviews, hardware benchmarks, and rating scores are determined solely by our testing lab editors. Advertising sponsorships never dictate or modify review scores or editorial opinions.
             </p>
           </section>
 
