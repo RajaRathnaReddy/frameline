@@ -12,7 +12,7 @@
     ],
     "version": "5.8",
     "website": "https://www.unrealengine.com",
-    "source_url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-8-documentation",
+    "source_url": "https://www.gamedeveloper.com/programming/unreal-engine-6-will-merge-ue5-and-uefn-into-a-single-unified-engine-",
     "last_verified": "2026-10-03",
     "description": "Real-time 3D engine powering in-camera VFX (ICVFX), LED volume stages, MegaLights, and Live Link Hub. UE 5.8 was released in June 2026 as the final planned major UE5 release; UE6 early access is targeted for late 2027.",
     "longDescription": "Epic Games' Unreal Engine is the core technology powering modern virtual production stages. UE 5.8 was released in June 2026, introducing production-ready MegaLights, Lumen Lite for 60 fps targets, experimental Mesh Terrain, and Live Link Hub tracking synchronization. Early access for Unreal Engine 6 is scheduled for late 2027.",
@@ -40,7 +40,7 @@
     "slug": "topaz-video-ai",
     "logo": "💎",
     "category": "Upscaling",
-    "pricing": "Subscription (~–/mo depending on plan)",
+    "pricing": "Subscription (~$12–$39/mo depending on plan)",
     "platforms": [
       "Windows",
       "macOS"
@@ -82,7 +82,7 @@
     ],
     "version": "17.0",
     "website": "https://www.foundry.com/nuke",
-    "source_url": "https://learn.foundry.com/nuke",
+    "source_url": "https://www.foundry.com/news-and-awards/foundry-releases-nuke-17-advancing-compositing-workflows",
     "last_verified": "2026-10-03",
     "description": "Industry-standard node-based compositing software featuring native 3D Gaussian Splatting, CopyCat ML, and USD workflows.",
     "longDescription": "Foundry released Nuke 17.0 on 26 Feb 2026, bringing native 3D Gaussian Splatting support, USD 3D system out of beta, and CopyCat neural networks.",
@@ -153,7 +153,7 @@
     ],
     "version": "21.1.1",
     "website": "https://www.blackmagicdesign.com",
-    "source_url": "https://www.blackmagicdesign.com/support/family/davinci-resolve-and-fusion",
+    "source_url": "https://www.newsshooter.com/2026/10/01/davinci-resolve-21-1-1/",
     "last_verified": "2026-10-03",
     "description": "Premier Hollywood color grading, editing, Fusion VFX, and Fairlight audio post-production suite.",
     "longDescription": "Blackmagic Design DaVinci Resolve 21.1.1 combines neural isolation brushes, HDR Dolby Vision mastering, Fusion node VFX, and Cloud Multi-Seat Collaboration with AI assistant integration in both a free tier and professional Studio edition.",
@@ -189,10 +189,10 @@
     ],
     "version": "22.0",
     "website": "https://www.sidefx.com",
-    "source_url": "https://www.sidefx.com/docs/houdini/",
+    "source_url": "https://cgpress.org/archives/houdini-22-is-out.html",
     "last_verified": "2026-10-03",
     "description": "Procedural 3D animation and effects software featuring native 3D Gaussian Splatting, Copernicus GPU image processing, and KineFX character animation.",
-    "longDescription": "SideFX Houdini 22 introduces native 3D Gaussian Splatting editing and relighting, the Copernicus GPU image processor for textures and terrains, Solaris USD enhancements, and expanded KineFX rigging.",
+    "longDescription": "SideFX released Houdini 22 on 16 Jul 2026, delivering native 3D Gaussian Splatting editing and relighting, the Copernicus GPU image processor for textures and terrains, Solaris USD enhancements, and expanded KineFX rigging.",
     "features": [
       "3D Gaussian Splatting (create, edit, rig, relight, render)",
       "Copernicus GPU Image Processing (texturing & terrain)",
@@ -221,12 +221,12 @@
     "platforms": [
       "Web"
     ],
-    "version": "Gen-3 Alpha Turbo",
+    "version": "Gen-4.5",
     "website": "https://runwayml.com",
     "source_url": "https://runway.com/research/introducing-runway-gen-4.5",
-    "last_verified": "2026-10-01",
+    "last_verified": "2026-10-03",
     "description": "Multimodal AI video generation platform with director controls, camera trajectories, and studio partnerships.",
-    "longDescription": "Runway offers director-level camera controls, multi-character consistency, and cinematic framing through its Gen-3 Alpha Turbo architecture.",
+    "longDescription": "Runway offers director-level camera controls, multi-character consistency, and cinematic framing through its Gen-4.5 architecture released in December 2025.",
     "features": [
       "Cinematic Camera Movement Controls",
       "Multi-Motion Brush Spatial Masking",
@@ -291,18 +291,18 @@
       "macOS",
       "Linux"
     ],
-    "version": "2027 / 2026.3",
+    "version": "2026",
     "website": "https://www.autodesk.com/products/maya/overview",
-    "source_url": "https://help.autodesk.com/view/MAYAUL/2026/ENU/",
+    "source_url": "https://www.cgchannel.com/2025/03/autodesk-releases-maya-2026-and-maya-creative-2026/",
     "last_verified": "2026-10-03",
     "description": "Industry-standard 3D animation, rigging, character modeling, and simulation platform powering Hollywood feature animation.",
-    "longDescription": "Autodesk Maya is the cornerstone 3D animation software relied on by leading VFX houses and animation studios worldwide, featuring native USD workflows and Bifrost visual programming.",
+    "longDescription": "Autodesk Maya 2026 is the cornerstone 3D animation software relied on by leading VFX houses and animation studios worldwide, featuring OpenPBR default shaders, Volume mode Booleans, native USD workflows, and Bifrost simulation.",
     "features": [
-      "Bifrost Procedural Ocean & Pyro Simulation",
+      "Bifrost Procedural Ocean & Liquid Simulation",
       "USD Maya Integration & Lookdev",
       "Character Rigging & Retargeting Matrix",
       "Arnold High-Fidelity Renderer",
-      "Python 3 / MEL Pipeline Scripting"
+      "OpenPBR Default Surface Shading"
     ],
     "studioUsers": [
       "Walt Disney Animation",

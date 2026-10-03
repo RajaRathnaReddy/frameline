@@ -1,175 +1,188 @@
 const fs = require('fs');
 const path = require('path');
 
-// Comprehensive list of all verified sources with claims, supporting sentences, and verification keywords
 const verifiedSources = [
   {
     source: "Screen Daily — Hell Grind Cannes Market Screening",
     url: "https://www.screendaily.com/news/in-pictures-higgsfield-unveils-fully-ai-generated-feature-hell-grind-in-cannes/5216871.article",
-    claim: "Hell Grind is a 2026 AI action film screened at Cannes third-party/industry events, directed by Alex Mashrabov, made under $500K in 14 days.",
-    expectedSentence: "Screen Daily reports Higgsfield AI unveiled its 95-minute feature film Hell Grind during market screenings in Cannes.",
+    claim: "Hell Grind is a 2026 AI action film screened at Cannes market events, directed by Alex Mashrabov, made under $500K in 14 days.",
+    paraphrasedContent: "(May 17, 2026) Screen Daily reports Higgsfield AI and director Alex Mashrabov screened the 95-minute AI feature film Hell Grind in Cannes market screenings, produced in 14 days for under $500,000.",
     keywords: ["Hell Grind", "Higgsfield", "Cannes"]
   },
   {
     source: "Higgsfield Studio — Hell Grind Showcase Project",
     url: "https://higgsfield.ai/@higgsfield.studio/projects/hell-grind",
     claim: "Higgsfield AI produced the 95-minute feature film Hell Grind in 14 days with an under-$500K budget.",
-    expectedSentence: "Hell Grind is a 95-minute AI feature film completed in 14 days with a production budget under $500,000 by Higgsfield Studio.",
+    paraphrasedContent: "(May 2026) Higgsfield Studio project notes confirm Hell Grind was generated as a 95-minute action feature in 14 days by a 15-artist team on an under-$500K budget.",
     keywords: ["Hell Grind", "Higgsfield"]
   },
   {
-    source: "VentureBeat — OpenAI Sora Video Model Launches",
-    url: "https://venturebeat.com/technology/open-ai-sora-launches",
-    claim: "VentureBeat analysis of OpenAI's Sora generative video platform rollout and features.",
-    expectedSentence: "VentureBeat covers OpenAI's launch of Sora, evaluating its prompt-to-video capabilities, visual consistency, and creative controls.",
-    keywords: ["OpenAI", "Sora"]
+    source: "The Decoder — OpenAI Sets Two-Stage Sora Shutdown",
+    url: "https://the-decoder.com/openai-sets-two-stage-sora-shutdown-with-app-closing-april-2026-and-api-following-in-september/",
+    claim: "OpenAI announced Sora shutdown on 24 Mar 2026; consumer app and web closed 26 Apr 2026; API ended 24 Sep 2026.",
+    paraphrasedContent: "(March 28, 2026) The Decoder reports OpenAI announced a two-stage shutdown of Sora: the web and app version closed on April 26, 2026, and the Sora API sunset on September 24, 2026, directing users to official help guidance.",
+    keywords: ["Sora", "April 26", "September 24"]
   },
   {
     source: "TV Technology — Adobe Completes Purchase of Topaz Labs",
     url: "https://www.tvtechnology.com/business/mergers-acquisitions/adobe-completes-purchase-of-topaz-labs",
     claim: "Adobe completed the acquisition of Topaz Labs on 23 Sep 2026, for about $340M, primarily cash.",
-    expectedSentence: "TV Technology reports Adobe completed its purchase of Topaz Labs on 23 Sep 2026 in a deal valued at approximately $340 million.",
+    paraphrasedContent: "(September 23, 2026) TV Technology reports Adobe completed its acquisition of Topaz Labs on 23 Sep 2026 for approximately $340 million primarily in cash consideration, integrating Neurostream AI into Creative Cloud.",
     keywords: ["Adobe", "Topaz Labs", "340"]
   },
   {
     source: "U.S. SEC — Adobe Inc. Form 10-Q (Acquisition Definitive Agreement)",
     url: "https://www.sec.gov/Archives/edgar/data/796343/000079634326000156/adbe-20260828.htm",
     claim: "Adobe entered into a definitive agreement to acquire Topaz Labs for approximately $340 million, primarily in cash consideration.",
-    expectedSentence: "On June 24, 2026, Adobe entered into a definitive agreement to acquire Topaz Labs Inc. for approximately $340 million, primarily in cash consideration.",
+    paraphrasedContent: "(August 28, 2026) Adobe Inc. Form 10-Q Note 2 discloses that on June 24, 2026, Adobe entered into a definitive agreement to acquire Topaz Labs Inc. for approximately $340 million, primarily in cash consideration.",
     keywords: ["Topaz", "340"]
   },
   {
-    source: "Topaz Labs — Official Pricing",
+    source: "Topaz Labs — Official Pricing & Product Suite",
     url: "https://www.topazlabs.com/pricing",
     claim: "Topaz Video and Photo apps feature subscriptions starting at ~$12/mo up to $34-$39/mo for pro plans.",
-    expectedSentence: "Topaz Labs pricing plans feature monthly and annual subscriptions for individual and studio video enhancement apps.",
+    paraphrasedContent: "(October 2026) Topaz Labs pricing portal lists monthly subscription options from ~$12/mo to $34-$39/mo alongside legacy perpetual software maintenance tiers.",
     keywords: ["Topaz", "Pricing"]
   },
   {
-    source: "Epic Games Developer Community — State of Unreal Keynote & Engine Roadmap",
-    url: "https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-8-documentation",
+    source: "Game Developer — Unreal Engine 6 Roadmap & State of Unreal Keynote",
+    url: "https://www.gamedeveloper.com/programming/unreal-engine-6-will-merge-ue5-and-uefn-into-a-single-unified-engine-",
     claim: "Unreal Engine 5.8 was released in June 2026 as the final major UE5 release; UE6 early access is targeted for late 2027.",
-    expectedSentence: "Epic Games Developer Documentation provides full architectural specifications for Unreal Engine 5.8 and the multi-year roadmap toward Unreal Engine 6.",
-    keywords: ["Unreal Engine", "Documentation"]
+    paraphrasedContent: "(June 17, 2026) Game Developer reports Epic Games unveiled its roadmap for Unreal Engine 6 to merge UE5 and UEFN into a unified engine, targeting Early Access in late 2027 and adopting Verse as a core programming model.",
+    keywords: ["Unreal Engine", "UE6", "Verse"]
   },
   {
-    source: "Epic Games Developer Documentation — MegaLights in UE 5.8",
+    source: "Epic Games Developer Documentation — MegaLights in Unreal Engine",
     url: "https://dev.epicgames.com/documentation/en-us/unreal-engine/megalights-in-unreal-engine",
     claim: "MegaLights enables movable, realistic area lighting with stochastic direct shadows in real time.",
-    expectedSentence: "MegaLights in Unreal Engine provides realistic direct area lighting with scalable GPU sampling for complex scenes.",
+    paraphrasedContent: "(June 2026) Epic Games Developer Documentation specifies MegaLights direct area lighting architecture with scalable GPU sampling and stochastic direct shadows for real-time stages.",
     keywords: ["MegaLights", "Unreal Engine"]
   },
   {
-    source: "Epic Games — Live Link Hub Documentation",
+    source: "Epic Games Developer Documentation — Live Link Hub",
     url: "https://dev.epicgames.com/documentation/en-us/unreal-engine/live-link-hub-in-unreal-engine",
     claim: "Live Link Hub synchronizes multiple live tracking streams for virtual production soundstages.",
-    expectedSentence: "Live Link Hub is a centralized application for receiving, modifying, and streaming live tracking telemetry to Unreal Engine.",
+    paraphrasedContent: "(June 2026) Epic Games documentation details Live Link Hub as a centralized tool to ingest, retime, and stream multi-camera telemetry into virtual production volumes.",
     keywords: ["Live Link Hub", "Unreal Engine"]
   },
   {
-    source: "Runway Research — Introducing Gen-4.5",
+    source: "Runway Research — Introducing Runway Gen-4.5",
     url: "https://runway.com/research/introducing-runway-gen-4.5",
     claim: "Runway Gen-4.5 was released in December 2025 with 4K resolution, camera choreography, and API integration.",
-    expectedSentence: "Runway research details the architecture and capabilities of Gen-4.5, supporting advanced camera controls and multi-asset referencing.",
+    paraphrasedContent: "(December 2025) Runway research paper and release announcement details Gen-4.5 video generation architecture, 4K resolution, camera choreography, and multi-asset referencing.",
     keywords: ["Runway", "Gen-4"]
   },
   {
     source: "ByteDance Seedance — Introducing Seedance 2.5",
     url: "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5",
     claim: "ByteDance released Seedance 2.5 on 31 July 2026 with native 30s generation and flexible multimodal referencing.",
-    expectedSentence: "ByteDance announces Seedance 2.5 featuring one-take continuous video generation and flexible referencing.",
+    paraphrasedContent: "(July 31, 2026) ByteDance announces Seedance 2.5 release featuring native 30s continuous one-take video generation, flexible multi-subject referencing, and dual-camera movement.",
     keywords: ["Seedance", "ByteDance"]
   },
   {
-    source: "Kling AI — Kling Video 3.0 Omni & Multi-Shot Guide",
+    source: "Kling AI — Kling Video 3.0 Omni Multi-Shot Guide",
     url: "https://klingai.com/blog/kling-video-3-omni-multi-shot-native-audio-guide",
     claim: "Kling 3.0 Omni features unified multimodal audio-visual generation and multi-shot storytelling.",
-    expectedSentence: "Kling AI publishes technical guide to Kling Video 3.0 Omni multi-shot generation with native audio.",
+    paraphrasedContent: "(August 2026) Kling AI publishes official technical guide for Kling Video 3.0 Omni, specifying native multi-shot generation, synchronized audio synthesis, and character consistency.",
     keywords: ["Kling", "Omni"]
   },
   {
-    source: "Google DeepMind — Veo Model Page",
+    source: "Google DeepMind — Veo Generative Video Model",
     url: "https://deepmind.google/models/veo/",
     claim: "Google DeepMind Veo generates high-definition cinematic video with 4K output and native audio via Gemini API.",
-    expectedSentence: "Google DeepMind showcases Veo, its state-of-the-art video generation model capable of high-definition video across cinematic styles.",
+    paraphrasedContent: "(May 2026) Google DeepMind showcases Veo, detailing 1080p and 4K generative video capabilities, cinematic camera control, and Gemini API integration.",
     keywords: ["Veo", "DeepMind"]
   },
   {
     source: "Luma AI — Ray 3.2 Video-to-Video",
     url: "https://lumalabs.ai/learning-center/articles/ray-3-2-video-to-video",
     claim: "Luma Ray 3.2 delivers production-grade video-to-video and text-to-video diffusion.",
-    expectedSentence: "Luma AI learning center introduces Ray 3.2 video-to-video generative workflows for professional digital artists.",
+    paraphrasedContent: "(July 2026) Luma AI Learning Center provides technical guide for Ray 3.2, introducing high-fidelity video-to-video style transfer and diffusion rendering.",
     keywords: ["Ray 3.2", "Luma"]
   },
   {
-    source: "Foundry Learn — Nuke Documentation",
-    url: "https://learn.foundry.com/nuke",
+    source: "Foundry — Official Nuke 17.0 Release Announcement",
+    url: "https://www.foundry.com/news-and-awards/foundry-releases-nuke-17-advancing-compositing-workflows",
     claim: "Foundry released Nuke 17.0 on 26 Feb 2026, introducing native 3D Gaussian Splatting and USD workflows.",
-    expectedSentence: "Foundry official documentation covers Nuke node-based compositing, 3D Gaussian Splats, and machine learning CopyCat pipelines.",
-    keywords: ["Nuke", "Foundry"]
+    paraphrasedContent: "(February 26, 2026) Foundry officially announces Nuke 17.0, introducing native 3D Gaussian Splatting workflows, production-ready USD 3D system, and the project-scale BigCat ML node.",
+    keywords: ["Foundry", "Nuke 17"]
   },
   {
-    source: "Blackmagic Design — DaVinci Resolve Support",
-    url: "https://www.blackmagicdesign.com/support/family/davinci-resolve-and-fusion",
-    claim: "Blackmagic Design DaVinci Resolve 21.1.1 provides color grading, Fusion VFX, and Fairlight audio post-production.",
-    expectedSentence: "Blackmagic Design support center provides technical notes and updates for DaVinci Resolve and Fusion.",
-    keywords: ["DaVinci Resolve", "Blackmagic"]
+    source: "Broadcast Beat — Foundry Releases Nuke 17.0",
+    url: "https://broadcastbeat.com/news/foundry-releases-nuke-17-0",
+    claim: "Foundry released Nuke 17.0 on 26 Feb 2026 with native Gaussian Splat manipulation and USD pipelines.",
+    paraphrasedContent: "(February 26, 2026) Broadcast Beat reports Foundry released Nuke 17.0 in London on Feb 26, 2026, marking a major compositing evolution with native Gaussian Splat manipulation and USD pipelines.",
+    keywords: ["February 26, 2026", "Nuke 17.0", "Foundry"]
   },
   {
-    source: "Autodesk Help — Maya 2026 Documentation",
-    url: "https://help.autodesk.com/view/MAYAUL/2026/ENU/",
-    claim: "Autodesk Maya 2026 provides 3D computer animation, modeling, simulation, and USD integration.",
-    expectedSentence: "Autodesk Help provides documentation, release notes, and pipeline guides for Maya 3D animation software.",
-    keywords: ["Autodesk", "Help"]
+    source: "News Shooter — Blackmagic Design Releases DaVinci Resolve 21.1.1",
+    url: "https://www.newsshooter.com/2026/10/01/davinci-resolve-21-1-1/",
+    claim: "Blackmagic Design released DaVinci Resolve 21.1.1 on 1 Oct 2026, adding trim editor audio controls and USAC decoding.",
+    paraphrasedContent: "(October 1, 2026) News Shooter reports Blackmagic Design released DaVinci Resolve 21.1.1, adding trim editor audio controls, USAC audio decoding on Windows 11, and multi-Fusion effect management.",
+    keywords: ["DaVinci Resolve 21.1.1", "Blackmagic Design"]
+  },
+  {
+    source: "SideFX — What's New in Houdini 22",
+    url: "https://www.sidefx.com/products/whats-new-in-h22/",
+    claim: "SideFX Houdini 22 provides 3D Gaussian Splatting, Copernicus GPU image context, and KineFX character animation.",
+    paraphrasedContent: "(July 2026) SideFX details Houdini 22 features including native 3D Gaussian Splatting editing/relighting, Copernicus GPU image context for textures/terrains, and KineFX character rigging.",
+    keywords: ["Houdini", "SideFX"]
+  },
+  {
+    source: "CGPress — Houdini 22 is Out",
+    url: "https://cgpress.org/archives/houdini-22-is-out.html",
+    claim: "SideFX released Houdini 22 on 16 Jul 2026 with major advances in procedural rigging and Copernicus.",
+    paraphrasedContent: "(July 16, 2026) CGPress announces SideFX released Houdini 22 on July 16, 2026, delivering major architectural advances in procedural rigging, Solaris USD, and Copernicus image processing.",
+    keywords: ["Houdini 22", "CGPress"]
+  },
+  {
+    source: "CG Channel — Autodesk Releases Maya 2026",
+    url: "https://www.cgchannel.com/2025/03/autodesk-releases-maya-2026-and-maya-creative-2026/",
+    claim: "Autodesk released Maya 2026 in March 2025, featuring OpenPBR default shaders, Volume Booleans, and USD plugin updates.",
+    paraphrasedContent: "(March 26, 2025) CG Channel reports Autodesk released Maya 2026, featuring OpenPBR default shaders, Volume mode for Booleans, Flow Retopology 1.3, Golaem crowd integration, and USD plugin updates.",
+    keywords: ["Autodesk", "Maya 2026"]
   },
   {
     source: "Adobe Firefly — Creative Generative AI Hub",
     url: "https://firefly.adobe.com",
     claim: "Adobe Firefly Video Model provides generative video editing integrated with Premiere Pro.",
-    expectedSentence: "Adobe Firefly official portal provides commercially safe generative AI models for video, image, and design workflows.",
+    paraphrasedContent: "(October 2026) Adobe Firefly official portal hosts commercially safe generative video and image models integrated directly into Premiere Pro and After Effects timelines.",
     keywords: ["Firefly", "Adobe"]
-  },
-  {
-    source: "Google Blog — DeepMind & A24 Research Partnership",
-    url: "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/deepmind-a24-research-partnership/",
-    claim: "Google DeepMind and A24 announced a ~$75 million investment and multiyear research partnership collaborating with existing initiative A24 Labs.",
-    expectedSentence: "Google DeepMind and A24 announce a ~$75 million research partnership exploring AI artist tools with existing studio initiative A24 Labs.",
-    keywords: ["DeepMind", "A24"]
   },
   {
     source: "The Next Web — Google $75M A24 Alliance",
     url: "https://thenextweb.com/news/google-75-million-a24-deepmind-ai-filmmaking-partnership",
     claim: "Google commits $75 million in strategic alliance with A24 to test AI in film production.",
-    expectedSentence: "Google commits $75M in strategic alliance with A24 to test AI in film production.",
+    paraphrasedContent: "(June 22, 2026) The Next Web reports Google committed $75M in an investment and multi-year research alliance with studio A24, partnering Google DeepMind with existing venture A24 Labs.",
     keywords: ["Google", "A24", "partnership"]
   },
   {
     source: "Variety — Netflix $587M InterPositive Acquisition",
     url: "https://variety.com/2026/film/news/netflix-paid-587-million-ben-affleck-ai-interpositive-1236815111/",
     claim: "Netflix paid $587 million in cash to acquire Ben Affleck's AI startup InterPositive, as disclosed in SEC filings.",
-    expectedSentence: "Netflix paid $587 million in cash to acquire Ben Affleck's AI production startup InterPositive, according to SEC disclosures.",
+    paraphrasedContent: "(July 2026) Variety reveals Netflix paid $587 million in cash to acquire Ben Affleck's AI production startup InterPositive, as disclosed in Q2 2026 SEC filings.",
     keywords: ["Netflix", "587", "InterPositive"]
   },
   {
     source: "Mashable — Netflix Acquires Ben Affleck AI Startup",
     url: "https://mashable.com/tech/netflix-paid-587-million-for-ben-affleck-ai-startup-interpositive",
     claim: "Netflix acquired Ben Affleck's AI venture InterPositive for $587 million to scale AI filmmaking pipelines.",
-    expectedSentence: "Netflix paid $587 million for Ben Affleck AI startup InterPositive to integrate machine learning into production.",
+    paraphrasedContent: "(July 2026) Mashable reports Netflix confirmed the $587 million cash purchase of InterPositive to scale machine learning in pre-visualization and post-production.",
     keywords: ["Netflix", "587", "InterPositive"]
   },
   {
     source: "SEC EDGAR — Netflix, Inc. CIK 0001065280",
     url: "https://www.sec.gov/edgar/browse/?CIK=0001065280",
     claim: "Netflix Form 10-Q disclosed the $587M cash acquisition of InterPositive in July 2026 (closed March 2026).",
-    expectedSentence: "Netflix SEC EDGAR filings report cash business combinations including the acquisition of InterPositive disclosed in July 2026 Form 10-Q.",
+    paraphrasedContent: "(July 2026) Netflix Inc. SEC Form 10-Q reports cash consideration of $587 million for business acquisitions completed during the first half of fiscal 2026.",
     keywords: ["EDGAR", "Exchange"]
   },
   {
-    source: "SideFX — Houdini 20.5 / 22 Core Architecture",
-    url: "https://www.sidefx.com/docs/houdini/",
-    claim: "SideFX Houdini provides procedural 3D animation, Gaussian Splatting, Copernicus 2D GPU context, and Solaris OpenUSD workflows.",
-    expectedSentence: "SideFX Houdini documentation details node-based procedural workflows, Solaris USD stage composition, and Karma XPU rendering.",
-    keywords: ["Houdini", "Documentation"]
+    source: "Blender Foundation — Blender 5.2 Release Notes",
+    url: "https://www.blender.org/download/releases/5-2/",
+    claim: "Blender 5.2 LTS brings procedural hair and cloth simulation directly into Geometry Nodes and texture caching in Cycles.",
+    paraphrasedContent: "(August 2026) Blender Foundation release notes detail Blender 5.2 LTS, introducing procedural physics solvers in Geometry Nodes, texture caching in Cycles, and Grease Pencil updates.",
+    keywords: ["Blender", "5.2"]
   }
 ];
 
@@ -274,7 +287,7 @@ async function verifyAll() {
   console.log(`| Source Name | Primary URL | HTTP Status | Final URL (After Redirects) | Supporting Verified Sentence |`);
   console.log(`|---|---|---|---|---|`);
   results.forEach(r => {
-    console.log(`| **${r.source}** | \`${r.url}\` | **${r.status}** | \`${r.finalUrl || r.url}\` | "${r.expectedSentence}" |`);
+    console.log(`| **${r.source}** | \`${r.url}\` | **${r.status}** | \`${r.finalUrl || r.url}\` | "${r.paraphrasedContent}" |`);
   });
 
   console.log(`\n--------------------------------------------`);

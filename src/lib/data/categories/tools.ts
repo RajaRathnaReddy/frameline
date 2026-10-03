@@ -17,7 +17,11 @@ export const toolsArticles: Article[] = [
     status: 'approved',
     sources: [
       {
-        label: "Epic Games Developer Community — State of Unreal Keynote & Engine Roadmap",
+        label: "Game Developer — Unreal Engine 6 Roadmap & State of Unreal Keynote",
+        url: "https://www.gamedeveloper.com/programming/unreal-engine-6-will-merge-ue5-and-uefn-into-a-single-unified-engine-"
+      },
+      {
+        label: "Epic Games Developer Documentation — Unreal Engine 5.8 Architecture",
         url: "https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-8-documentation"
       }
     ],
@@ -60,6 +64,10 @@ For technical directors and cinematographers, UE6 promises to eliminate the fric
     breaking: true,
     status: 'approved',
     sources: [
+      {
+        label: "Adobe Firefly — Official Generative AI Hub & Commercial Models",
+        url: "https://firefly.adobe.com"
+      },
       {
         label: "Wikipedia — Adobe Firefly Generative Video & Model Architecture",
         url: "https://en.wikipedia.org/wiki/Adobe_Firefly"

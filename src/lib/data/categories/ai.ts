@@ -169,8 +169,12 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     status: 'approved',
     sources: [
       {
-        label: "VentureBeat — OpenAI Sora Video Model Coverage & Rollout Analysis",
-        url: "https://venturebeat.com/technology/open-ai-sora-launches"
+        label: "The Decoder — OpenAI Sets Two-Stage Sora Shutdown",
+        url: "https://the-decoder.com/openai-sets-two-stage-sora-shutdown-with-app-closing-april-2026-and-api-following-in-september/"
+      },
+      {
+        label: "OpenAI Help Center — What to know about the Sora discontinuation",
+        url: "https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation"
       },
       {
         label: "Wikipedia — Sora (Text-to-Video Model) Discontinuation",

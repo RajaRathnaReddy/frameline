@@ -52,13 +52,13 @@
     "resolution": "1080p",
     "audioNative": false,
     "apiStatus": "sunset",
-    "source_url": "https://venturebeat.com/technology/open-ai-sora-launches",
+    "source_url": "https://the-decoder.com/openai-sets-two-stage-sora-shutdown-with-app-closing-april-2026-and-api-following-in-september/",
     "last_verified": "2026-10-03",
     "updatedAt": "2026-10-03",
     "status": "verified",
     "verified": true,
     "hidden": false,
-    "notes": "OpenAI announced shutdown on 24 Mar 2026; consumer app and web closed 26 Apr 2026; API scheduled to end 24 Sep 2026."
+    "notes": "OpenAI announced shutdown on 24 Mar 2026; consumer app and web closed 26 Apr 2026; API scheduled to end 24 Sep 2026. Official guidance at help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation."
   },
   {
     "name": "Google Veo 3.1",
@@ -76,11 +76,11 @@
     "hidden": false
   },
   {
-    "name": "Kling 4.0 & 3.0 Omni",
-    "version": "4.0 (Flash live / Full rollout Oct 2026) & 3.0 Omni",
+    "name": "Kling 3.0 Omni",
+    "version": "3.0 Omni (Multi-Shot / Native Audio)",
     "company": "Kuaishou",
-    "maxLength": "30s (10 Keyframes)",
-    "resolution": "4K HDR",
+    "maxLength": "30s",
+    "resolution": "1080p / 4K",
     "audioNative": true,
     "apiStatus": "live",
     "source_url": "https://klingai.com/blog/kling-video-3-omni-multi-shot-native-audio-guide",
@@ -89,6 +89,22 @@
     "status": "verified",
     "verified": true,
     "hidden": false
+  },
+  {
+    "name": "Kling 4.0",
+    "version": "4.0 (Awaiting Official Documentation)",
+    "company": "Kuaishou",
+    "maxLength": "30s",
+    "resolution": "4K HDR",
+    "audioNative": true,
+    "apiStatus": "pending",
+    "source_url": "https://klingai.com",
+    "last_verified": "2026-10-03",
+    "updatedAt": "2026-10-03",
+    "status": "unverified",
+    "verified": false,
+    "hidden": true,
+    "notes": "Marked unverified and hidden per editorial standards pending official release notes."
   },
   {
     "name": "Luma Ray 3.2",
