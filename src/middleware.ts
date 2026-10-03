@@ -5,7 +5,10 @@ export function middleware(request: NextRequest) {
   const proto = request.headers.get('x-forwarded-proto');
 
   // In production behind reverse proxy, force http -> https (301)
-  if (proto === 'http') {
+  const host = request.headers.get('host') || '';
+  const isLocalhost = host.includes('localhost') || host.includes('127.0.0.1');
+
+  if (proto === 'http' && !isLocalhost) {
     const httpsUrl = new URL(request.url);
     httpsUrl.protocol = 'https:';
     return NextResponse.redirect(httpsUrl, 301);
