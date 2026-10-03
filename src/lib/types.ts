@@ -42,7 +42,7 @@ export interface Article {
   seoKeywords?: string[];
   aiGenerated?: boolean;
   promptSource?: string;
-  status?: 'approved' | 'needs_review';
+  status?: 'approved' | 'needs_review' | 'unverified';
   seo: {
     title: string;
     desc: string;

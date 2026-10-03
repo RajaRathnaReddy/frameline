@@ -40,9 +40,9 @@
     "source_url": "https://firefly.adobe.com",
     "last_verified": "2026-10-03",
     "updatedAt": "2026-10-03",
-    "status": "verified",
-    "verified": true,
-    "hidden": false
+    "status": "unverified",
+    "verified": false,
+    "hidden": true
   },
   {
     "name": "OpenAI Sora",

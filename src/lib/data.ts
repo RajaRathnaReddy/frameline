@@ -205,7 +205,7 @@ export const breakingHeadlines: string[] = [
   'Kling 3.0 Omni & Google Veo 3.1 achieve multi-shot narrative camera consistency',
   'Brompton & ROE Visual unveil full-spectrum RGBW LED panels with Dynamic Calibration',
   'Nikon & RED showcase unified cinema flagship with native Z-mount & C2PA hardware provenance',
-  'Adobe Firefly Video 2.0 embeds multi-model generative AI directly into Premiere Pro',
+  'Autodesk releases Maya 2027.1 on 21 May 2026 adding OpenTimelineIO to Sequencer',
   'Dolby Atmos rolls out Room-Adaptive AI Calibration & neural dialogue separation for post suites',
   'Netflix says about 300 of its titles have used generative AI tools (reported July 2026)',
 ];

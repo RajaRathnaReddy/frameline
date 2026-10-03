@@ -60,9 +60,9 @@ For technical directors and cinematographers, UE6 promises to eliminate the fric
     author: rajaRathnaReddy,
     publishedAt: "2026-10-02T17:30:00.000Z",
     readTime: 6,
-    featured: true,
-    breaking: true,
-    status: 'approved',
+    featured: false,
+    breaking: false,
+    status: 'unverified',
     sources: [
       {
         label: "Adobe Firefly — Official Generative AI Hub & Commercial Models",

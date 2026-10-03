@@ -21,8 +21,8 @@ export const aiArticles: Article[] = [
         url: "https://www.screendaily.com/news/in-pictures-higgsfield-unveils-fully-ai-generated-feature-hell-grind-in-cannes/5216871.article"
       },
       {
-        label: "Higgsfield Studio — Hell Grind Showcase Project",
-        url: "https://higgsfield.ai/@higgsfield.studio/projects/hell-grind"
+        label: "CineD — Hell Grind: The 95-Minute AI Feature Cannes 2026 Says It Never Screened",
+        url: "https://www.cined.com/hell-grind-the-95-minute-ai-feature-cannes-2026-says-it-never-screened/"
       },
       {
         label: "Wikipedia — Hell Grind (2026 Film)",
@@ -5106,7 +5106,7 @@ As we move deeper into late 2026, generative tools are moving past the novelty p
     tags: ["AI","Pipeline Architecture","Industry Standards","Production Review"],
     author: rajaRathnaReddy,
     publishedAt: "2026-09-14T09:19:00.000Z",
-    status: 'needs_review',
+    status: 'unverified',
     readTime: 7,
     featured: false,
     breaking: false,

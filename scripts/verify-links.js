@@ -8,15 +8,15 @@ const verifiedSources = [
     claim: "Hell Grind is an AI action film screened at Cannes market events, directed by Alex Mashrabov, made under $500K in 14 days.",
     paraphrasedContent: "(May 17, 2026) Screen Daily reports Higgsfield AI and director Alex Mashrabov screened the 95-minute AI feature film Hell Grind in Cannes market screenings, produced in 14 days for under $500,000.",
     keywords: ["Hell Grind", "Higgsfield"],
-    excerptRegex: /Higgsfield unveils fully AI-generated feature [‘']Hell Grind[’']/i
+    excerptRegex: /unveils fully AI-generated feature [‘']Hell Grind[’']/i
   },
   {
-    source: "Higgsfield Studio — Hell Grind Showcase Project",
-    url: "https://higgsfield.ai/@higgsfield.studio/projects/hell-grind",
-    claim: "Higgsfield AI produced the feature film Hell Grind in 14 days with an under-$500K budget.",
-    paraphrasedContent: "(May 2026) Higgsfield Studio project notes confirm Hell Grind was generated as an action feature in 14 days by a 15-artist team on an under-$500K budget.",
-    keywords: ["Hell Grind", "Higgsfield"],
-    excerptRegex: /Hell Grind:\s+a 90-minute AI film,\s+fully open-sourced/i
+    source: "CineD — Hell Grind Cannes Screening & Production Breakdown",
+    url: "https://www.cined.com/hell-grind-the-95-minute-ai-feature-cannes-2026-says-it-never-screened/",
+    claim: "Hell Grind is a 95-minute AI feature made by a team of 15 in 14 days for under $500,000, not in the official Cannes program (screened at industry events organized by third parties).",
+    paraphrasedContent: "(May 28, 2026) CineD reports Higgsfield AI produced the 95-minute AI feature Hell Grind with a 15-person team in 14 days for under $500,000, confirming the film never screened in the official Cannes program and was instead presented at third-party industry events.",
+    keywords: ["Hell Grind", "Higgsfield", "14 days", "500,000"],
+    excerptRegex: /team of 15 built in 14 days for under \$500,000/i
   },
   {
     source: "The Decoder — OpenAI Sets Two-Stage Sora Shutdown",
@@ -24,7 +24,7 @@ const verifiedSources = [
     claim: "OpenAI announced Sora shutdown on 24 Mar 2026; consumer app and web closed 26 Apr 2026; API ended 24 Sep 2026.",
     paraphrasedContent: "(March 28, 2026) The Decoder reports OpenAI announced a two-stage shutdown of Sora: the web and app version closed on April 26, 2026, and the Sora API sunset on September 24, 2026.",
     keywords: ["Sora", "April 2026", "September"],
-    excerptRegex: /OpenAI sets two-stage Sora shutdown with app closing April 2026 and API following in September/i
+    excerptRegex: /web and app version goes dark on April 26,\s*2026,\s*with the Sora API/i
   },
   {
     source: "TV Technology — Adobe Completes Purchase of Topaz Labs",
@@ -32,7 +32,7 @@ const verifiedSources = [
     claim: "Adobe completed the acquisition of Topaz Labs on 23 Sep 2026, for about $340M, primarily cash.",
     paraphrasedContent: "(September 23, 2026) TV Technology reports Adobe completed its acquisition of Topaz Labs on 23 Sep 2026 for approximately $340 million primarily in cash consideration, integrating Neurostream AI into Creative Cloud.",
     keywords: ["Adobe", "Topaz Labs", "340"],
-    excerptRegex: /Adobe Completes Purchase Of Topaz Labs/i
+    excerptRegex: /Adobe has completed the acquisition of AI video and image enhancement specialist Topaz Labs/i
   },
   {
     source: "U.S. SEC — Adobe Inc. Form 10-Q (Note 13 Acquisitions)",
@@ -40,15 +40,15 @@ const verifiedSources = [
     claim: "Adobe entered into a definitive agreement to acquire Topaz Labs for approximately $340 million, primarily in cash consideration.",
     paraphrasedContent: "(August 28, 2026) Adobe Inc. Form 10-Q Note 13 (Commitments and Contingencies - Acquisitions) discloses that on June 24, 2026, Adobe entered into a definitive agreement to acquire Topaz Labs Inc. for approximately $340 million, primarily in cash consideration.",
     keywords: ["Topaz", "340"],
-    excerptRegex: /entered into a definitive agreement to acquire Topaz Labs Inc\.[^,]+,\s+for approximately \$\s*340 million,\s+primarily in cash/i
+    excerptRegex: /entered into a definitive agreement to acquire Topaz Labs Inc/i
   },
   {
     source: "Topaz Labs — Official Pricing & Product Suite",
     url: "https://www.topazlabs.com/pricing",
-    claim: "Topaz Video and Photo apps feature subscriptions starting at ~$12/mo up to $34-$39/mo for pro plans.",
-    paraphrasedContent: "(October 2026) Topaz Labs pricing portal lists subscription options starting at ~$12/mo to $34-$39/mo alongside legacy perpetual software tiers.",
+    claim: "Topaz Video personal subscription is priced at $39/mo with an annual commitment (or $399/yr for Topaz Studio).",
+    paraphrasedContent: "(October 2026) Topaz Labs pricing portal lists Topaz Video personal subscriptions at $39/mo with an annual commitment alongside Topaz Studio suites at $399/yr.",
     keywords: ["Topaz", "Pricing"],
-    excerptRegex: /Topaz Video|Topaz Photo|Pricing/i
+    excerptRegex: /Topaz Video Personal \$39\/mo Annual commitment/i
   },
   {
     source: "Game Developer — Unreal Engine 6 Roadmap & State of Unreal Keynote",
@@ -56,7 +56,7 @@ const verifiedSources = [
     claim: "Unreal Engine 5.8 was released in June 2026 as the final major UE5 release; UE6 early access is targeted for late 2027.",
     paraphrasedContent: "(June 17, 2026) Game Developer reports Epic Games unveiled its roadmap for Unreal Engine 6 to merge UE5 and UEFN into a unified engine, targeting Early Access in late 2027 and adopting Verse as a core programming model.",
     keywords: ["Unreal Engine", "UE6", "Verse"],
-    excerptRegex: /Unreal Engine 6 will merge UE5 and UEFN into one engine/i
+    excerptRegex: /in late 2027,\s*when UE6 Early Access releases/i
   },
   {
     source: "Runway Research — Introducing Runway Gen-4.5",
@@ -64,7 +64,7 @@ const verifiedSources = [
     claim: "Runway Gen-4.5 was released in December 2025 with 4K resolution, camera choreography, and API integration.",
     paraphrasedContent: "(December 2025) Runway research paper and release announcement details Gen-4.5 video generation architecture, 4K resolution, camera choreography, and multi-asset referencing.",
     keywords: ["Runway", "Gen-4"],
-    excerptRegex: /Runway Gen-4\.5:\s+State-of-the-Art AI Video Generation/i
+    excerptRegex: /State-of-the-Art AI Video Generation/i
   },
   {
     source: "ByteDance Seedance — Introducing Seedance 2.5",
@@ -85,10 +85,10 @@ const verifiedSources = [
   {
     source: "Google DeepMind — Veo Generative Video Model",
     url: "https://deepmind.google/models/veo/",
-    claim: "Google DeepMind Veo generates high-definition cinematic video with 4K output and native audio via Gemini API.",
-    paraphrasedContent: "(May 2026) Google DeepMind showcases Veo, detailing 1080p and 4K generative video capabilities, cinematic camera control, and Gemini API integration.",
+    claim: "Google DeepMind Veo 3.1 generates high-definition cinematic video with 1080p and 4K output.",
+    paraphrasedContent: "(October 2025 / 2026) Google DeepMind showcases Veo 3.1, detailing 1080p and 4K generative video output, synchronized audio generation, and enterprise platform integration.",
     keywords: ["Veo", "DeepMind"],
-    excerptRegex: /Veo:\s+Our most capable generative video model/i
+    excerptRegex: /Generate outputs in 1080p and 4K/i
   },
   {
     source: "Luma AI — Ray 3.2 Video-to-Video",
@@ -128,7 +128,7 @@ const verifiedSources = [
     claim: "SideFX Houdini 22 provides 3D Gaussian Splatting, Copernicus GPU image context, and KineFX character animation.",
     paraphrasedContent: "(July 2026) SideFX details Houdini 22 features including native 3D Gaussian Splatting editing/relighting, Copernicus GPU image context for textures/terrains, and KineFX character rigging.",
     keywords: ["Houdini", "SideFX"],
-    excerptRegex: /What['’]s New in H22/i
+    excerptRegex: /production-ready Gaussian Splats to faster character, modeling, look development/i
   },
   {
     source: "CGPress — Houdini 22 is Out",
@@ -136,7 +136,7 @@ const verifiedSources = [
     claim: "SideFX released Houdini 22 on 16 Jul 2026 with major advances in procedural rigging and Copernicus.",
     paraphrasedContent: "(July 16, 2026) CGPress announces SideFX released Houdini 22 on July 16, 2026, delivering major architectural advances in procedural rigging, Solaris USD, and Copernicus image processing.",
     keywords: ["Houdini 22", "CGPress"],
-    excerptRegex: /Houdini 22 is out/i
+    excerptRegex: /procedural 3D software include production-ready Gaussian Splats/i
   },
   {
     source: "Digital Production — Maya 2027.1 adds OTIO to Sequencer",
@@ -144,23 +144,7 @@ const verifiedSources = [
     claim: "Autodesk released Maya 2027 on 25 Mar 2026 and Maya 2027.1 on 21 May 2026, adding OTIO to Sequencer.",
     paraphrasedContent: "(May 22, 2026) Digital Production reports Autodesk released Maya 2027.1 on May 21, 2026 (following Maya 2027 on March 25, 2026), adding OpenTimelineIO (OTIO) to Sequencer and LookdevX texture projections.",
     keywords: ["Maya 2027.1", "Sequencer"],
-    excerptRegex: /Maya 2027\.1 adds OTIO to Sequencer/i
-  },
-  {
-    source: "CG Channel — Maya 2027.1 Updates",
-    url: "https://www.cgchannel.com/tag/maya-2027-1/",
-    claim: "Autodesk Maya 2027.1 delivers updates across VFX and animation pipelines.",
-    paraphrasedContent: "(May 2026) CG Channel tracks Maya 2027.1 release notes, documenting feature updates and bug fixes for studio workflows.",
-    keywords: ["Maya 2027.1", "CG Channel"],
-    excerptRegex: /Maya 2027\.1/i
-  },
-  {
-    source: "Adobe Firefly — Creative Generative AI Hub",
-    url: "https://firefly.adobe.com",
-    claim: "Adobe Firefly Video Model provides generative video editing integrated with Premiere Pro.",
-    paraphrasedContent: "(October 2026) Adobe Firefly official portal hosts commercially safe generative video and image models integrated directly into Premiere Pro and After Effects timelines.",
-    keywords: ["Firefly", "Adobe"],
-    excerptRegex: /Adobe Firefly/i
+    excerptRegex: /Maya 2027\.1 adds support for OpenTimelineIO in the Sequencer/i
   },
   {
     source: "The Next Web — Google $75M A24 Alliance",
@@ -176,7 +160,7 @@ const verifiedSources = [
     claim: "Netflix paid $587 million in cash to acquire Ben Affleck's AI startup InterPositive, as disclosed in SEC filings.",
     paraphrasedContent: "(July 2026) Variety reveals Netflix paid $587 million in cash to acquire Ben Affleck's AI production startup InterPositive, as disclosed in Q2 2026 SEC filings.",
     keywords: ["Netflix", "587", "InterPositive"],
-    excerptRegex: /Netflix Paid \$587 Million for Ben Affleck['’]s AI Startup InterPositive/i
+    excerptRegex: /total purchase price of approximately \$587 million/i
   },
   {
     source: "Mashable — Netflix Acquires Ben Affleck AI Startup",
@@ -184,7 +168,7 @@ const verifiedSources = [
     claim: "Netflix acquired Ben Affleck's AI venture InterPositive for $587 million to scale AI filmmaking pipelines.",
     paraphrasedContent: "(July 2026) Mashable reports Netflix confirmed the $587 million purchase of InterPositive to scale machine learning in pre-visualization and post-production.",
     keywords: ["Netflix", "587", "InterPositive"],
-    excerptRegex: /Netflix bought Ben Affleck['’]?s AI startup for \$587 million/i
+    excerptRegex: /disclosed that it paid \$587 million in cash for an acquisition/i
   },
   {
     source: "Blender Foundation — Blender 5.2 Release Notes",
@@ -192,17 +176,19 @@ const verifiedSources = [
     claim: "Blender 5.2 LTS brings procedural hair and cloth simulation directly into Geometry Nodes and texture caching in Cycles.",
     paraphrasedContent: "Blender Foundation release notes detail Blender 5.2 LTS, introducing procedural physics solvers in Geometry Nodes, texture caching in Cycles, and Grease Pencil updates.",
     keywords: ["Blender", "5.2"],
-    excerptRegex: /5\.2 LTS/i
+    excerptRegex: /brings audio-reactive animations and simulations to Geometry Nodes/i
   }
 ];
 
 function extractExcerpt(html, regex) {
   if (!regex) return "no excerpt found";
-  // Remove script and style tags
   const clean = html
     .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, " ")
     .replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, " ")
     .replace(/<[^>]+>/g, " ")
+    .replace(/&#8217;|&rsquo;|&#039;/g, "'")
+    .replace(/&#8220;|&#8221;|&ldquo;|&rdquo;/g, '"')
+    .replace(/&amp;/g, '&')
     .replace(/\s+/g, " ");
 
   const match = clean.match(regex);
@@ -226,12 +212,12 @@ async function verifyAll() {
 
   for (let i = 0; i < verifiedSources.length; i++) {
     const item = verifiedSources[i];
-    process.stdout.write(`[${i + 1}/${verifiedSources.length}] Testing: ${item.source} (${item.url})... `);
+    process.stdout.write(`[${i + 1}/${verifiedSources.length}] Testing: ${item.source}... `);
 
     try {
       const resp = await fetch(item.url, {
         headers: {
-          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 RenderLineResearch/1.0 (contact@rajarathnareddy.com)',
+          'User-Agent': 'RenderLine Research contact@rajarathnareddy.com (Mozilla/5.0 Windows NT 10.0)',
           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
         },
         signal: AbortSignal.timeout(15000),
@@ -278,7 +264,21 @@ async function verifyAll() {
       }
 
       const excerpt = extractExcerpt(bodyText, item.excerptRegex);
-      console.log(`✅ PASS (HTTP ${resp.status}) -> Excerpt: ${excerpt}`);
+      if (excerpt === "no excerpt found") {
+        console.log(`\n❌ FAIL: Excerpt not found on page`);
+        failures++;
+        results.push({
+          ...item,
+          status: resp.status,
+          finalUrl: resp.url,
+          excerpt: "no excerpt found",
+          passed: false,
+          error: `Excerpt regex did not match page content`
+        });
+        continue;
+      }
+
+      console.log(`✅ PASS (HTTP ${resp.status}) -> ${excerpt}`);
       results.push({
         source: item.source,
         url: item.url,
