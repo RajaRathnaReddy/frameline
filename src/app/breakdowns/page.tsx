@@ -25,8 +25,50 @@ export default function BreakdownsPage() {
     setSliderPos((offset / rect.width) * 100);
   };
 
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://vfx.rajarathnareddy.com',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'VFX Shot Breakdowns',
+        item: 'https://vfx.rajarathnareddy.com/breakdowns',
+      },
+    ],
+  };
+
+  const collectionJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'VFX Shot Breakdowns & Deconstructions — RENDERLINE',
+    description: 'Frame-by-frame breakdowns, LIDAR terrain alignment, creature simulations, and composite passes from Hollywood leading visual effects studios.',
+    url: 'https://vfx.rajarathnareddy.com/breakdowns',
+    publisher: {
+      '@type': 'NewsMediaOrganization',
+      name: 'RENDERLINE',
+      url: 'https://vfx.rajarathnareddy.com',
+    },
+  };
+
   return (
     <div className="min-h-screen bg-bg-base py-12 md:py-16">
+      {/* Google-compliant Breadcrumb and Collection Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
+      />
+
       <div className="max-w-[1440px] mx-auto px-4 md:px-8">
         {/* Slate Header */}
         <div className="border-b border-white/[0.08] pb-8 mb-12">

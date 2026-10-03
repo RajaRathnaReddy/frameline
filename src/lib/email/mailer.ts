@@ -66,7 +66,7 @@ export async function notifyAdminNewSubscriber(
       from: FROM_ADDRESS,
       to: 'vfx@rajarathnareddy.com',
       subject: `🔔 New RENDERLINE Subscriber: ${subscriberEmail}`,
-      text: `New subscriber joined RENDERLINE Intelligence:\n\nEmail: ${subscriberEmail}\nName: ${subscriberName || 'Not specified'}\nSource: ${source || 'Website'}\nTime: ${new Date().toUTCString()}\n\nView list at: https://vfx.rajarathnareddy.com/api/newsletter/subscribers?key=frameline_admin_2026`,
+      text: `New subscriber joined RENDERLINE Intelligence:\n\nEmail: ${subscriberEmail}\nName: ${subscriberName || 'Not specified'}\nSource: ${source || 'Website'}\nTime: ${new Date().toUTCString()}\n\nView list at: https://vfx.rajarathnareddy.com/api/newsletter/subscribers?key=renderline_admin_2026`,
       html: `
         <div style="font-family: sans-serif; background: #08090A; color: #FFFFFF; padding: 24px; border-radius: 8px;">
           <h2 style="color: #3EE6FF; margin-top: 0;">🔔 New RENDERLINE Subscriber!</h2>

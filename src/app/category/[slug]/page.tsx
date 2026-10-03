@@ -35,8 +35,50 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
   const catArticles = articles.filter((a) => a.category === slug);
 
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://vfx.rajarathnareddy.com',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: cat.name,
+        item: `https://vfx.rajarathnareddy.com/category/${slug}`,
+      },
+    ],
+  };
+
+  const collectionJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: `${cat.name} Dispatches — RENDERLINE`,
+    description: `Comprehensive technical intelligence and analysis covering ${cat.name.toLowerCase()} by Raja Rathna Reddy.`,
+    url: `https://vfx.rajarathnareddy.com/category/${slug}`,
+    publisher: {
+      '@type': 'NewsMediaOrganization',
+      name: 'RENDERLINE',
+      url: 'https://vfx.rajarathnareddy.com',
+    },
+  };
+
   return (
     <div className="max-w-[1440px] mx-auto px-4 md:px-8 py-10 md:py-16">
+      {/* Google-compliant Breadcrumb and Collection Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
+      />
+
       {/* Header */}
       <div className="mb-12">
         <div className="flex items-center gap-3 mb-3">

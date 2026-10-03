@@ -36,31 +36,69 @@ export const metadata: Metadata = {
   },
 };
 
-const organizationJsonLd = {
+const siteJsonLd = {
   "@context": "https://schema.org",
-  "@type": "NewsMediaOrganization",
-  "name": "RENDERLINE",
-  "url": "https://vfx.rajarathnareddy.com",
-  "logo": "https://vfx.rajarathnareddy.com/renderline-logo.png",
-  "description": "The premium news platform for film technology, visual effects, AI in cinema, virtual production, and Hollywood industry coverage.",
-  "founder": {
-    "@type": "Person",
-    "name": "Raja Rathna Reddy",
-    "jobTitle": "FX Pipeline TD & AI Architect • Founder, RENDERLINE",
-    "url": "https://rajarathnareddy.com",
-    "sameAs": [
-      "https://rajarathnareddy.com",
-      "https://www.imdb.com/name/nm12830221/",
-      "https://www.linkedin.com/in/rajarathnareddy/",
-      "https://x.com/RAJARATHNAREDDY",
-      "https://www.instagram.com/raja_rathna_reddy/"
-    ]
-  },
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://vfx.rajarathnareddy.com/search?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://vfx.rajarathnareddy.com/#website",
+      "url": "https://vfx.rajarathnareddy.com",
+      "name": "RENDERLINE",
+      "alternateName": ["RenderLine", "Frameline", "RENDERLINE Film Technology"],
+      "description": "The premium news platform for film technology, visual effects, AI in cinema, virtual production, and Hollywood industry coverage.",
+      "publisher": {
+        "@id": "https://vfx.rajarathnareddy.com/#organization"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://vfx.rajarathnareddy.com/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "NewsMediaOrganization",
+      "@id": "https://vfx.rajarathnareddy.com/#organization",
+      "name": "RENDERLINE",
+      "alternateName": ["Frameline"],
+      "url": "https://vfx.rajarathnareddy.com",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://vfx.rajarathnareddy.com/#logo",
+        "url": "https://vfx.rajarathnareddy.com/renderline-logo.png",
+        "contentUrl": "https://vfx.rajarathnareddy.com/renderline-logo.png",
+        "caption": "RENDERLINE",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://vfx.rajarathnareddy.com/renderline-logo.png",
+      "description": "The premium news platform for film technology, visual effects, AI in cinema, virtual production, and Hollywood industry coverage.",
+      "founder": {
+        "@type": "Person",
+        "name": "Raja Rathna Reddy",
+        "jobTitle": "FX Pipeline TD & AI Architect • Founder, RENDERLINE",
+        "url": "https://rajarathnareddy.com",
+        "sameAs": [
+          "https://rajarathnareddy.com",
+          "https://www.imdb.com/name/nm12830221/",
+          "https://www.linkedin.com/in/rajarathnareddy/",
+          "https://x.com/RAJARATHNAREDDY",
+          "https://www.instagram.com/raja_rathna_reddy/",
+          "https://www.facebook.com/RAJARATNAREDDY"
+        ]
+      },
+      "sameAs": [
+        "https://x.com/RAJARATHNAREDDY",
+        "https://www.linkedin.com/in/rajarathnareddy/",
+        "https://www.instagram.com/raja_rathna_reddy/",
+        "https://www.facebook.com/RAJARATNAREDDY",
+        "https://www.imdb.com/name/nm12830221/"
+      ]
+    }
+  ]
 };
 
 export default function RootLayout({
@@ -83,7 +121,7 @@ export default function RootLayout({
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
         />
       </head>
       <body className="film-grain" suppressHydrationWarning>

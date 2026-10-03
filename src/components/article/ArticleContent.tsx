@@ -6,7 +6,7 @@ import { Article } from '@/lib/types';
 import { formatTimecode, getCategoryColor } from '@/lib/utils';
 import { articles } from '@/lib/data';
 import { rajaRathnaReddy } from '@/lib/author';
-import { generateArticleJsonLd } from '@/lib/seo';
+import { generateArticleJsonLd, generateBreadcrumbJsonLd, generateVideoJsonLd } from '@/lib/seo';
 import ReadingProgress from './ReadingProgress';
 import TableOfContents from './TableOfContents';
 import { ScrollReveal } from '@/components/motion';
@@ -115,16 +115,44 @@ export default function ArticleContent({ article }: { article: Article }) {
     .filter(a => a.category === article.category || a.tags.some(t => article.tags.includes(t)))
     .slice(0, 3);
 
+  const breadcrumbItems = useMemo(() => [
+    { name: 'Home', url: 'https://vfx.rajarathnareddy.com' },
+    { name: article.category.replace('-', ' ').toUpperCase(), url: `https://vfx.rajarathnareddy.com/category/${article.category}` },
+    { name: article.title, url: `https://vfx.rajarathnareddy.com/article/${article.slug}` },
+  ], [article]);
+
   return (
     <>
       <ReadingProgress />
 
-      <article itemScope itemType="https://schema.org/NewsArticle">
-        {/* Google-compliant Structured Data (JSON-LD) */}
+      <article>
+        {/* Google-compliant Article Structured Data (JSON-LD) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(generateArticleJsonLd(article)) }}
         />
+        {/* Google-compliant Breadcrumb Structured Data (JSON-LD) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbJsonLd(breadcrumbItems)) }}
+        />
+        {/* Video Structured Data if article has heroVideo */}
+        {article.heroVideo && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(
+                generateVideoJsonLd({
+                  name: article.title,
+                  description: article.dek,
+                  thumbnailUrl: article.heroImage,
+                  uploadDate: article.publishedAt,
+                  contentUrl: article.heroVideo,
+                })
+              ),
+            }}
+          />
+        )}
 
         {/* Hero */}
         <ScrollReveal>
@@ -510,52 +538,6 @@ export default function ArticleContent({ article }: { article: Article }) {
           </div>
         )}
       </article>
-
-      {/* JSON-LD with verified Person Schema and SameAs Knowledge Graph */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: article.title,
-            description: article.dek,
-            image: article.heroImage.startsWith('http') ? article.heroImage : `https://vfx.rajarathnareddy.com${article.heroImage}`,
-            datePublished: article.publishedAt,
-            mainEntityOfPage: {
-              '@type': 'WebPage',
-              '@id': `https://vfx.rajarathnareddy.com/article/${article.slug}`,
-            },
-            author: {
-              '@type': 'Person',
-              name: article.author.name,
-              jobTitle: article.author.role,
-              url: article.author.website || 'https://rajarathnareddy.com',
-              sameAs: [
-                'https://rajarathnareddy.com',
-                'https://www.imdb.com/name/nm12830221/',
-                'https://rajarathnareddy.com/about/',
-                'https://rajarathnareddy.com/filmography/',
-                'https://rajarathnareddy.com/coding/',
-                'https://rajarathnareddy.com/automation/',
-                'https://rajarathnareddy.com/contact/',
-                'https://www.linkedin.com/in/rajarathnareddy/',
-                'https://x.com/RAJARATHNAREDDY',
-                'https://www.instagram.com/raja_rathna_reddy/',
-              ],
-            },
-            publisher: {
-              '@type': 'Organization',
-              name: 'RENDERLINE',
-              url: 'https://vfx.rajarathnareddy.com',
-              logo: {
-                '@type': 'ImageObject',
-                url: 'https://vfx.rajarathnareddy.com/renderline-logo.png',
-              },
-            },
-          }),
-        }}
-      />
     </>
   );
 }

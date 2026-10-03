@@ -66,37 +66,99 @@ export function extractAutonomousTags(body: string, category: string): { tags: s
  * Generate Google-compliant JSON-LD structured data for articles
  */
 export function generateArticleJsonLd(article: Article, siteUrl: string = 'https://vfx.rajarathnareddy.com') {
+  const imageUrl = article.heroImage.startsWith('http')
+    ? article.heroImage
+    : `${siteUrl}${article.heroImage}`;
+
+  const articleUrl = `${siteUrl}/article/${article.slug}`;
+
   return {
     '@context': 'https://schema.org',
     '@type': article.category === 'tech' || article.category === 'tools' ? 'TechArticle' : 'NewsArticle',
     headline: article.title,
     description: article.dek,
-    image: [`${siteUrl}${article.heroImage}`],
+    image: [imageUrl],
     datePublished: article.publishedAt,
     dateModified: article.updatedAt || article.publishedAt,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': articleUrl,
+    },
     author: {
       '@type': 'Person',
       name: article.author.name,
       jobTitle: article.author.role,
+      url: article.author.website || 'https://rajarathnareddy.com',
+      sameAs: [
+        'https://rajarathnareddy.com',
+        'https://www.imdb.com/name/nm12830221/',
+        'https://www.linkedin.com/in/rajarathnareddy/',
+        'https://x.com/RAJARATHNAREDDY',
+        'https://www.instagram.com/raja_rathna_reddy/',
+      ],
     },
     publisher: {
-      '@type': 'Organization',
+      '@type': 'NewsMediaOrganization',
       name: 'RENDERLINE',
+      url: siteUrl,
       logo: {
         '@type': 'ImageObject',
         url: `${siteUrl}/renderline-logo.png`,
+        width: 512,
+        height: 512,
       },
-    },
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': `${siteUrl}/article/${article.slug}`,
     },
     keywords: (article.seoKeywords || article.tags).join(', '),
     articleSection: article.category.toUpperCase(),
-    about: (article.toolsMentioned || []).map(tool => ({
-      '@type': 'SoftwareApplication',
+    inLanguage: 'en-US',
+    about: (article.toolsMentioned || []).map((tool) => ({
+      '@type': 'Thing',
       name: tool,
     })),
+  };
+}
+
+/**
+ * Generate standard Google-compliant BreadcrumbList structured data
+ */
+export function generateBreadcrumbJsonLd(items: { name: string; url: string }[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
+  };
+}
+
+/**
+ * Generate Google-compliant VideoObject structured data for video indexation
+ */
+export function generateVideoJsonLd(
+  video: {
+    name: string;
+    description: string;
+    thumbnailUrl: string;
+    uploadDate: string;
+    contentUrl?: string;
+    embedUrl?: string;
+  },
+  siteUrl: string = 'https://vfx.rajarathnareddy.com'
+) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: video.name,
+    description: video.description,
+    thumbnailUrl: [
+      video.thumbnailUrl.startsWith('http') ? video.thumbnailUrl : `${siteUrl}${video.thumbnailUrl}`,
+    ],
+    uploadDate: video.uploadDate,
+    ...(video.contentUrl ? { contentUrl: video.contentUrl } : {}),
+    ...(video.embedUrl ? { embedUrl: video.embedUrl } : {}),
   };
 }
 

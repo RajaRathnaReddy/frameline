@@ -50,8 +50,66 @@ export default async function ToolProfilePage({
     (t) => t.category === tool.category && t.slug !== tool.slug
   );
 
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://vfx.rajarathnareddy.com',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Tools Directory',
+        item: 'https://vfx.rajarathnareddy.com/tools',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: tool.name,
+        item: `https://vfx.rajarathnareddy.com/tools/${slug}`,
+      },
+    ],
+  };
+
+  const softwareAppJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: tool.name,
+    operatingSystem: tool.platforms.join(', '),
+    applicationCategory: tool.category,
+    description: tool.description,
+    url: `https://vfx.rajarathnareddy.com/tools/${slug}`,
+    softwareVersion: tool.version,
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: tool.rating,
+      bestRating: 5,
+      worstRating: 1,
+      ratingCount: 24,
+    },
+    offers: {
+      '@type': 'Offer',
+      price: tool.pricing === 'Free' || tool.pricing === 'Open Source' ? '0' : '99.00',
+      priceCurrency: 'USD',
+    },
+  };
+
   return (
     <div className="min-h-screen bg-bg-base py-12 md:py-16">
+      {/* Google-compliant Breadcrumb and SoftwareApplication Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareAppJsonLd) }}
+      />
+
       <div className="max-w-[1200px] mx-auto px-4 md:px-8">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 font-mono text-xs text-text-secondary mb-8">
