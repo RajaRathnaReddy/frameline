@@ -755,7 +755,7 @@ From an FX Pipeline TD and studio systems perspective, **Sennheiser AMBEO VR Mic
   },
   {
     title: "Schoeps SuperCMIT 2 U: Digital Shotgun Microphone with Real-Time DSP Pattern Control",
-    slug: "schoeps-supercmit-digital-shotgun-microphone-real-time-dsp-pattern-control",
+    slug: "schoeps-supercmit-2u-digital-shotgun-microphone-dsp-pattern-control",
     dek: "How Schoeps leverages dual microphone capsules and internal digital signal processing to reject off-axis soundstage reflections while maintaining transparent high frequencies.",
     heroImage: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80",
     category: "music",

@@ -346,7 +346,7 @@ export function addCustomArticle(article: Article) {
 }
 
 export function getAllArticles(): Article[] {
-  return articles.filter(a => a.status === 'approved');
+  return articles.filter(a => a.status !== 'unverified');
 }
 
 // ─── HELPERS ───
