@@ -74,11 +74,11 @@ export default function CinematicHero() {
                   </span>
                 </div>
 
-                <h1 className="font-display text-2xl sm:text-3xl lg:text-4xl xl:text-[42px] font-black text-white leading-[1.12] tracking-tight mb-4 transition-colors duration-300 group-hover:text-white/95">
+                <h1 className="font-display text-2xl sm:text-4xl md:text-5xl font-black text-white leading-[1.08] tracking-tight mb-4 group-hover:text-accent-cyan transition-colors duration-300">
                   {featured.title}
                 </h1>
 
-                <p className="font-serif text-sm sm:text-base md:text-lg text-text-secondary/90 line-clamp-2 sm:line-clamp-3 max-w-3xl mb-6 leading-relaxed">
+                <p className="font-serif text-base sm:text-lg text-text-secondary line-clamp-3 md:line-clamp-none max-w-3xl mb-6 leading-relaxed">
                   {featured.dek}
                 </p>
 

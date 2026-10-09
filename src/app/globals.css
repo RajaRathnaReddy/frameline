@@ -43,17 +43,13 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width: 100%;
-  overflow-x: clip;
 }
 
 body {
   font-family: var(--font-display);
   background-color: var(--color-bg-base);
   color: var(--color-text-primary);
-  max-width: 100%;
-  overflow-x: clip;
-  position: relative;
+  overflow-x: hidden;
 }
 
 ::selection {
@@ -79,15 +75,15 @@ body {
 }
 
 .text-fluid-h1 {
-  font-size: clamp(2rem, 3.5vw, 3.25rem);
-  line-height: 1.15;
-  letter-spacing: -0.025em;
+  font-size: clamp(2.75rem, 6vw, 6rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
   font-weight: 800;
 }
 
 .text-fluid-h2 {
-  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
-  line-height: 1.2;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.1;
   letter-spacing: -0.02em;
   font-weight: 700;
 }

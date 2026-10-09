@@ -122,14 +122,8 @@ export default function CategoryRails() {
                     </Link>
                   </div>
 
-                  {/* Curated Grid of Non-Repeating Articles with Dynamic Sizing */}
-                  <div className={
-                    catArticles.length === 1
-                      ? 'grid grid-cols-1 max-w-xl'
-                      : catArticles.length === 2
-                      ? 'grid grid-cols-1 md:grid-cols-2 max-w-4xl gap-6'
-                      : 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'
-                  }>
+                  {/* Curated Grid of Articles across 3 columns */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {catArticles.slice(0, 3).map((article) => {
                       return (
                         <Link

@@ -86,15 +86,14 @@ export default function Navbar() {
         }`}
         onMouseLeave={handleMouseLeaveCategory}
       >
-        <div className="w-full max-w-[1600px] mx-auto px-3 sm:px-4 lg:px-6 h-16 flex items-center justify-between relative">
-          {/* Logo / Brand Identity - completely protected from shrinkage and wrapping */}
-          <div className="flex items-center shrink-0 pr-3 sm:pr-4 xl:pr-6 z-10">
+        <div className="max-w-[1440px] mx-auto px-4 md:px-8 h-16 flex items-center justify-between gap-4 relative">
+          {/* Logo / Brand Identity */}
+          <div className="flex items-center shrink-0">
             <RenderLineLogo size="md" />
           </div>
 
-          {/* Center Nav (Desktop) - Adaptive 2-Tier Hierarchy */}
-          <div className="hidden min-[1180px]:flex items-center justify-center gap-1 xl:gap-1.5 flex-1 min-w-0 px-1 xl:px-3">
-            {/* Primary Categories (Visible on all Desktop viewports) */}
+          {/* Center Nav (Desktop) - 4 Core Pillars + More Dropdown */}
+          <div className="hidden lg:flex items-center gap-1 xl:gap-2 shrink-0">
             {primaryCategories.map((cat) => (
               <div
                 key={cat.slug}
@@ -103,69 +102,21 @@ export default function Navbar() {
               >
                 <Link
                   href={`/category/${cat.slug}`}
-                  className={`flex items-center gap-1.5 font-mono text-[10px] xl:text-[11px] uppercase tracking-wider px-2 xl:px-2.5 py-1.5 rounded-lg transition-all duration-200 text-text-secondary hover:text-text-primary hover:bg-white/5 border border-transparent hover:border-white/10 whitespace-nowrap ${
+                  className={`flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider px-2.5 py-1.5 rounded-lg transition-all duration-200 text-text-secondary hover:text-text-primary hover:bg-white/5 border border-transparent hover:border-white/10 whitespace-nowrap ${
                     activeCategoryHover === cat.slug ? 'text-text-primary bg-white/10 border-white/15' : ''
                   }`}
                 >
                   <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: cat.color }} />
-                  {cat.slug === 'vfx' ? (
-                    <>
-                      <span className="min-[1680px]:inline hidden">VFX & Pipeline</span>
-                      <span className="min-[1680px]:hidden inline">VFX</span>
-                    </>
-                  ) : cat.slug === 'tools' ? (
-                    <>
-                      <span className="min-[1680px]:inline hidden">Film Tools</span>
-                      <span className="min-[1680px]:hidden inline">Tools</span>
-                    </>
-                  ) : cat.slug === 'ai' ? (
-                    <>
-                      <span className="min-[1680px]:inline hidden">AI in Film</span>
-                      <span className="min-[1680px]:hidden inline">AI</span>
-                    </>
-                  ) : (
-                    cat.name
-                  )}
+                  <span>{cat.slug === 'vfx' ? 'VFX' : cat.slug === 'tools' ? 'Tools' : cat.slug === 'ai' ? 'AI' : cat.name}</span>
                 </Link>
               </div>
             ))}
 
-            {/* Secondary Categories (Visible on 1600px+ screens, cleanly folded into "More" on viewports < 1600px) */}
-            {secondaryCategories.map((cat) => (
-              <div
-                key={cat.slug}
-                className="relative py-2 shrink-0 hidden min-[1600px]:block"
-                onMouseEnter={() => handleMouseEnterCategory(cat.slug)}
-              >
-                <Link
-                  href={`/category/${cat.slug}`}
-                  className={`flex items-center gap-1.5 font-mono text-[10px] 2xl:text-[11px] uppercase tracking-wider px-2 2xl:px-2.5 py-1.5 rounded-lg transition-all duration-200 text-text-secondary hover:text-text-primary hover:bg-white/5 border border-transparent hover:border-white/10 whitespace-nowrap ${
-                    activeCategoryHover === cat.slug ? 'text-text-primary bg-white/10 border-white/15' : ''
-                  }`}
-                >
-                  <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: cat.color }} />
-                  {cat.slug === 'virtual-production' ? (
-                    <>
-                      <span className="min-[1680px]:inline hidden">Virtual Production</span>
-                      <span className="min-[1680px]:hidden inline">Virtual Prod</span>
-                    </>
-                  ) : cat.slug === 'music' ? (
-                    <>
-                      <span className="min-[1680px]:inline hidden">Sound & Music</span>
-                      <span className="min-[1680px]:hidden inline">Sound</span>
-                    </>
-                  ) : (
-                    cat.name
-                  )}
-                </Link>
-              </div>
-            ))}
-
-            {/* On viewports < 1600px: Sleek "More" Dropdown combining Secondary Categories + Features */}
-            <div className="relative py-2 shrink-0 group min-[1600px]:hidden">
+            {/* More / Additional Pillars & Formats Dropdown */}
+            <div className="relative py-2 shrink-0 group">
               <button
                 type="button"
-                className="flex items-center gap-1 font-mono text-[10px] xl:text-[11px] uppercase tracking-wider px-2.5 py-1.5 rounded-lg transition-all duration-200 text-text-secondary hover:text-text-primary hover:bg-white/5 border border-transparent hover:border-white/10 whitespace-nowrap cursor-pointer"
+                className="flex items-center gap-1 font-mono text-[11px] uppercase tracking-wider px-2.5 py-1.5 rounded-lg transition-all duration-200 text-text-secondary hover:text-text-primary hover:bg-white/5 border border-transparent hover:border-white/10 whitespace-nowrap cursor-pointer"
               >
                 <span>More</span>
                 <svg className="w-3 h-3 text-text-secondary/60 group-hover:text-text-primary transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -218,45 +169,6 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
-
-            {/* On wide viewports (1600px+): Dedicated Features Dropdown */}
-            <div className="relative py-2 shrink-0 group hidden min-[1600px]:block">
-              <button
-                type="button"
-                className="flex items-center gap-1 font-mono text-[10px] 2xl:text-[11px] uppercase tracking-wider px-2 2xl:px-2.5 py-1.5 rounded-lg transition-all duration-200 text-text-secondary hover:text-text-primary hover:bg-white/5 border border-transparent hover:border-white/10 whitespace-nowrap cursor-pointer"
-              >
-                <span>Features</span>
-                <svg className="w-3 h-3 text-text-secondary/60 group-hover:text-text-primary transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-
-              <div className="absolute right-0 top-full pt-1 hidden group-hover:block z-50 min-w-[200px]">
-                <div className="p-2 bg-[#0B0D13] border border-border-subtle rounded-xl shadow-2xl flex flex-col gap-1">
-                  <Link
-                    href="/breakdowns"
-                    className="flex items-center justify-between px-3 py-2 rounded-lg text-xs font-mono text-text-secondary hover:text-accent-violet hover:bg-white/5 transition-colors"
-                  >
-                    <span>Breakdowns</span>
-                    <span className="text-[9px] text-accent-violet font-semibold">Deep Dive</span>
-                  </Link>
-                  <Link
-                    href="/reviews"
-                    className="flex items-center justify-between px-3 py-2 rounded-lg text-xs font-mono text-text-secondary hover:text-accent-gold hover:bg-white/5 transition-colors"
-                  >
-                    <span>Reviews</span>
-                    <span className="text-[9px] text-accent-gold font-semibold">Hands-on</span>
-                  </Link>
-                  <Link
-                    href="/tools"
-                    className="flex items-center justify-between px-3 py-2 rounded-lg text-xs font-mono text-text-secondary hover:text-accent-lime hover:bg-white/5 transition-colors"
-                  >
-                    <span>Tools Matrix</span>
-                    <span className="text-[9px] text-accent-lime font-semibold">Database</span>
-                  </Link>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Right Actions */}
@@ -273,8 +185,8 @@ export default function Navbar() {
               <svg className="w-4 h-4 text-accent-cyan shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
               </svg>
-              <span className="hidden xl:inline text-xs text-text-secondary">Search</span>
-              <kbd className="hidden min-[1680px]:inline text-[10px] font-mono px-1.5 py-0.5 rounded bg-white/5 text-text-secondary/80 border border-white/10">
+              <span className="hidden sm:inline text-xs text-text-secondary">Search</span>
+              <kbd className="hidden md:inline text-[10px] font-mono px-1.5 py-0.5 rounded bg-white/5 text-text-secondary/80 border border-white/10">
                 ⌘K
               </kbd>
             </button>
@@ -300,7 +212,7 @@ export default function Navbar() {
             {/* Mobile Menu Toggle */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="min-[1180px]:hidden flex flex-col justify-center items-center gap-1.5 p-2 rounded-lg bg-bg-card/40 border border-border-subtle shrink-0 cursor-pointer"
+              className="lg:hidden flex flex-col justify-center items-center gap-1.5 p-2 rounded-lg bg-bg-card/40 border border-border-subtle shrink-0 cursor-pointer"
               aria-label="Toggle Navigation Menu"
             >
               <motion.span
@@ -330,7 +242,7 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -6 }}
               transition={{ duration: 0.18, ease: [0.22, 1, 0.36, 1] }}
-              className="hidden min-[1180px]:block absolute left-0 right-0 top-16 bg-[#0B0D13] border-b border-border-subtle shadow-2xl shadow-black/95 z-50"
+              className="hidden lg:block absolute left-0 right-0 top-16 bg-[#0B0D13] border-b border-border-subtle shadow-2xl shadow-black/95 z-50"
               onMouseEnter={() => {
                 if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
                 if (enterTimeoutRef.current) clearTimeout(enterTimeoutRef.current);
@@ -400,7 +312,7 @@ export default function Navbar() {
               animate={{ height: 'auto', opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              className="min-[1180px]:hidden overflow-hidden border-t border-border-subtle bg-bg-elevated/98 backdrop-blur-2xl"
+              className="lg:hidden overflow-hidden border-t border-border-subtle bg-bg-elevated/98 backdrop-blur-2xl"
             >
               <div className="p-5 flex flex-col gap-2">
                 <span className="font-mono text-[10px] text-text-secondary tracking-widest uppercase px-3 pt-2">

@@ -25,13 +25,16 @@ export default function LatestNewsGrid() {
   const nonFeatured = allStories.filter((a) => !a.featured);
   const filteredStories =
     selectedFilter === 'all'
-      ? nonFeatured.slice(3)
+      ? nonFeatured
       : allStories.filter((a) => a.category === selectedFilter);
 
   const hasStories = filteredStories.length > 0;
-  const lead = filteredStories[0];
-  const secondary = filteredStories.slice(1, 5);
-  const rail = filteredStories.slice(5);
+  const gridArticles = filteredStories.slice(0, 7);
+  const large = gridArticles[0] || nonFeatured[0];
+  const rest = gridArticles.slice(1);
+  const medium = rest.slice(0, 2);
+  const small = rest.slice(2, 6);
+  const rail = filteredStories.slice(7, 11);
 
   const filterTabs = [
     { label: 'All Beats', value: 'all' },
@@ -49,9 +52,9 @@ export default function LatestNewsGrid() {
       {/* Section Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
         <div className="flex items-center gap-3">
-          <span className="text-meta text-accent-primary">SCENE 01 / TAKE 01</span>
+          <span className="text-meta text-accent-primary font-semibold">SCENE 01 / TAKE 01</span>
           <span className="text-meta text-text-secondary/30">—</span>
-          <h2 className="text-meta text-text-secondary">THE CUT &bull; LATEST DISPATCHES</h2>
+          <h2 className="text-meta text-text-secondary font-bold">THE CUT &bull; LATEST DISPATCHES</h2>
         </div>
 
         {/* Filter Pills */}
@@ -78,133 +81,123 @@ export default function LatestNewsGrid() {
         </div>
       </div>
 
-      {/* Empty State: More Coming Soon */}
+      {/* Empty State */}
       {!hasStories ? (
         <div className="py-16 px-6 text-center rounded-2xl border border-dashed border-border-subtle bg-bg-card/40 my-6">
-          <span className="font-mono text-xs uppercase tracking-widest text-accent-primary block mb-2">Editorial Beat In Development</span>
+          <span className="font-mono text-xs uppercase tracking-widest text-accent-primary block mb-2 font-bold">
+            Editorial Beat In Development
+          </span>
           <h3 className="font-display font-bold text-xl text-text-primary mb-2">
-            More {filterTabs.find(t => t.value === selectedFilter)?.label} Dispatches Coming Soon
+            More {filterTabs.find((t) => t.value === selectedFilter)?.label} Dispatches Coming Soon
           </h3>
           <p className="text-text-secondary text-sm font-serif max-w-md mx-auto">
-            Render Line enforces a strict verification standard against primary technical documentation and regulatory disclosures. New reports for this vertical will appear here once verified.
+            Render Line enforces a strict verification standard against primary technical documentation.
           </p>
         </div>
       ) : (
-        /* Bento Grid with Zero Dead Space */
-        <StaggerContainer>
-          {/* Top Tier: Lead Card (Left 6 cols) + Secondary 2x2 Grid (Right 6 cols) */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 mb-5 items-stretch">
-            {/* Lead Card (lg:col-span-6) */}
-            <StaggerItem className={`${secondary.length > 0 ? 'lg:col-span-6' : 'lg:col-span-12 max-w-3xl mx-auto'} flex flex-col`}>
-            <Link
-              href={`/article/${lead.slug}`}
-              aria-label={lead.title}
-              className={`group flex flex-col justify-between h-full rounded-2xl overflow-hidden border border-border-subtle hover:border-white/20 card-hover bg-bg-card transition-all duration-300 cat-${
-                lead.category === 'virtual-production' ? 'virtual-production' : lead.category
-              }`}
-            >
-              <div>
-                <div className="img-hover-container aspect-[16/10] relative overflow-hidden bg-bg-elevated">
-                  <Image
-                    src={lead.heroImage}
-                    alt={lead.title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-bg-card via-transparent to-transparent opacity-80" />
-
-                  {/* Top Badges */}
-                  <div className="absolute top-4 left-4 z-10 flex items-center gap-2">
-                    <span
-                      className="font-mono text-[10px] uppercase font-bold tracking-wider px-2.5 py-1 rounded-full backdrop-blur-md border shadow-lg flex items-center gap-1.5"
-                      style={{
-                        backgroundColor: 'rgba(10, 10, 12, 0.75)',
-                        borderColor: `${getCategoryColor(lead.category)}60`,
-                        color: getCategoryColor(lead.category),
-                      }}
-                    >
-                      <span
-                        className="w-1.5 h-1.5 rounded-full"
-                        style={{ backgroundColor: getCategoryColor(lead.category) }}
+        <>
+          {/* Classic Authentic Bento Grid from First Deployment */}
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {/* Large Bento Card (2 columns x 2 rows) */}
+            {large && (
+              <StaggerItem className="md:col-span-2 lg:row-span-2 flex flex-col">
+                <Link
+                  href={`/article/${large.slug}`}
+                  aria-label={large.title}
+                  className={`group flex flex-col justify-between h-full rounded-2xl overflow-hidden border border-border-subtle hover:border-white/20 card-hover bg-bg-card transition-all duration-300 cat-${
+                    large.category === 'virtual-production' ? 'virtual-production' : large.category
+                  }`}
+                >
+                  <div>
+                    <div className="img-hover-container aspect-[16/10] relative overflow-hidden bg-bg-elevated">
+                      <Image
+                        src={large.heroImage}
+                        alt={large.title}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        sizes="(max-width: 1024px) 100vw, 50vw"
                       />
-                      {lead.category.replace('-', ' ')}
-                    </span>
-                    {isBreaking(lead.publishedAt, lead.breaking) && (
-                      <span className="font-mono text-[9px] uppercase font-bold tracking-widest px-2 py-0.5 rounded-full bg-accent-primary text-white shadow-lg">
-                        BREAKING
-                      </span>
-                    )}
-                  </div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-bg-card via-transparent to-transparent opacity-80" />
 
-                  <div className="absolute top-4 right-4 z-10">
-                    <span className="font-mono text-[10px] text-white/80 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/10">
-                      {lead.readTime} MIN READ
-                    </span>
-                  </div>
-                </div>
-
-                <div className="p-6">
-                  <div
-                    className="h-0.5 w-10 mb-3 rounded"
-                    style={{ backgroundColor: getCategoryColor(lead.category) }}
-                  />
-                  <span
-                    className="text-meta text-[10px] block mb-2 font-mono uppercase tracking-wider font-semibold"
-                    style={{ color: getCategoryColor(lead.category) }}
-                  >
-                    {lead.category.replace('-', ' ')}
-                  </span>
-                  <h3 className="text-xl sm:text-2xl lg:text-[26px] font-display text-text-primary mb-3 group-hover:text-accent-primary transition-colors font-bold leading-tight">
-                    {lead.title}
-                  </h3>
-                  <p className="text-text-secondary text-sm md:text-base font-serif leading-relaxed mb-4 line-clamp-3">
-                    {lead.dek}
-                  </p>
-                  {lead.tags && lead.tags.length > 0 && (
-                    <div className="flex items-center gap-1.5 flex-wrap pt-1">
-                      {lead.tags.slice(0, 3).map((tag) => (
+                      {/* Top Badges */}
+                      <div className="absolute top-4 left-4 z-10 flex items-center gap-2">
                         <span
-                          key={tag}
-                          className="font-mono text-[10px] text-text-secondary/60 bg-white/5 px-2 py-0.5 rounded border border-white/5"
+                          className="font-mono text-[10px] uppercase font-bold tracking-wider px-2.5 py-1 rounded-full backdrop-blur-md border shadow-lg flex items-center gap-1.5"
+                          style={{
+                            backgroundColor: 'rgba(10, 10, 12, 0.75)',
+                            borderColor: `${getCategoryColor(large.category)}60`,
+                            color: getCategoryColor(large.category),
+                          }}
                         >
-                          #{tag}
+                          <span
+                            className="w-1.5 h-1.5 rounded-full"
+                            style={{ backgroundColor: getCategoryColor(large.category) }}
+                          />
+                          {large.category.replace('-', ' ')}
                         </span>
-                      ))}
+                        {isBreaking(large.publishedAt, large.breaking) && (
+                          <span className="font-mono text-[9px] uppercase font-bold tracking-widest px-2 py-0.5 rounded-full bg-accent-primary text-white shadow-lg">
+                            BREAKING
+                          </span>
+                        )}
+                      </div>
+
+                      <div className="absolute top-4 right-4 z-10">
+                        <span className="font-mono text-[10px] text-white/90 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/10">
+                          {large.readTime} MIN READ
+                        </span>
+                      </div>
                     </div>
-                  )}
-                </div>
-              </div>
 
-              <div className="px-6 pb-6 pt-3 border-t border-border-subtle/50 flex items-center justify-between">
-                <AuthorBadge size="sm" showWebsite={false} />
-                <div className="flex items-center gap-2 font-mono text-[10px] text-text-secondary/60">
-                  <time dateTime={lead.publishedAt}>{formatTimecode(lead.publishedAt)}</time>
-                  <span className="hidden sm:inline-block text-accent-cyan font-semibold group-hover:translate-x-1 transition-transform">
-                    Read &rarr;
-                  </span>
-                </div>
-              </div>
-            </Link>
-          </StaggerItem>
+                    <div className="p-6">
+                      <div
+                        className="h-0.5 w-10 mb-3 rounded"
+                        style={{ backgroundColor: getCategoryColor(large.category) }}
+                      />
+                      <span
+                        className="text-meta text-[10px] block mb-2 font-semibold"
+                        style={{ color: getCategoryColor(large.category) }}
+                      >
+                        {large.category.replace('-', ' ')}
+                      </span>
+                      <h3 className="text-fluid-h3 font-display text-text-primary mb-3 group-hover:text-accent-primary transition-colors leading-tight font-bold">
+                        {large.title}
+                      </h3>
+                      <p className="text-text-secondary text-sm leading-relaxed mb-4 line-clamp-3 font-serif">
+                        {large.dek}
+                      </p>
+                    </div>
+                  </div>
 
-          {/* Secondary 2x2 Grid (lg:col-span-6) */}
-          <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {secondary.map((article) => (
-              <StaggerItem key={article.slug} className="flex flex-col">
+                  <div className="px-6 pb-6 pt-3 border-t border-border-subtle/50 flex items-center justify-between">
+                    <AuthorBadge size="sm" showRole={false} showWebsite={false} />
+                    <div className="flex items-center gap-2 text-meta text-text-secondary/50 text-[10px]">
+                      <time dateTime={large.publishedAt}>
+                        {formatTimecode(large.publishedAt).split('&bull;')[0]}
+                      </time>
+                      <span className="text-accent-cyan font-bold font-mono">Read &rarr;</span>
+                    </div>
+                  </div>
+                </Link>
+              </StaggerItem>
+            )}
+
+            {/* Medium Cards (1 col each) */}
+            {medium.map((article) => (
+              <StaggerItem key={article.slug} className="lg:col-span-1 flex flex-col">
                 <Link
                   href={`/article/${article.slug}`}
                   aria-label={article.title}
-                  className="group flex flex-col justify-between h-full rounded-xl overflow-hidden border border-border-subtle hover:border-white/20 card-hover bg-bg-card transition-all duration-300 p-4"
+                  className="group flex flex-col justify-between h-full rounded-2xl overflow-hidden border border-border-subtle hover:border-white/20 card-hover bg-bg-card transition-all duration-300"
                 >
                   <div>
-                    <div className="img-hover-container aspect-[16/10] rounded-lg overflow-hidden relative mb-3 bg-bg-elevated border border-white/5">
+                    <div className="img-hover-container aspect-[16/10] relative overflow-hidden bg-bg-elevated">
                       <Image
                         src={article.heroImage}
                         alt={article.title}
                         fill
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                        sizes="(max-width: 768px) 100vw, 25vw"
                       />
                       {isBreaking(article.publishedAt, article.breaking) && (
                         <span className="absolute top-2 left-2 bg-accent-primary text-white text-[9px] font-mono uppercase tracking-widest px-2 py-0.5 rounded font-bold shadow-md">
@@ -212,73 +205,52 @@ export default function LatestNewsGrid() {
                         </span>
                       )}
                     </div>
-
-                    <div className="flex items-center justify-between gap-2 mb-2">
-                      <div className="flex items-center gap-1.5">
-                        <span
-                          className="w-1.5 h-1.5 rounded-full"
-                          style={{ backgroundColor: getCategoryColor(article.category) }}
-                        />
-                        <span
-                          className="font-mono text-[10px] uppercase tracking-wider font-semibold"
-                          style={{ color: getCategoryColor(article.category) }}
-                        >
-                          {article.category.replace('-', ' ')}
-                        </span>
-                      </div>
-                      <span className="font-mono text-[10px] text-text-secondary/50">
-                        {article.readTime} MIN
+                    <div className="p-4">
+                      <div
+                        className="h-0.5 w-8 mb-2.5 rounded"
+                        style={{ backgroundColor: getCategoryColor(article.category) }}
+                      />
+                      <span
+                        className="text-meta text-[10px] block mb-1.5 font-semibold"
+                        style={{ color: getCategoryColor(article.category) }}
+                      >
+                        {article.category.replace('-', ' ')}
                       </span>
+                      <h4 className="font-display font-semibold text-sm text-text-primary mb-2 group-hover:text-accent-primary transition-colors line-clamp-2 leading-snug">
+                        {article.title}
+                      </h4>
+                      <p className="text-text-secondary text-xs font-serif line-clamp-2 mb-2 leading-relaxed">
+                        {article.dek}
+                      </p>
                     </div>
-
-                    <h4 className="font-display font-semibold text-sm sm:text-[15px] text-text-primary mb-2 group-hover:text-accent-primary transition-colors line-clamp-2 leading-snug">
-                      {article.title}
-                    </h4>
-
-                    {/* Rich Dek / Summary */}
-                    <p className="text-text-secondary text-xs font-serif line-clamp-2 leading-relaxed mb-3">
-                      {article.dek}
-                    </p>
                   </div>
-
-                  <div className="pt-2.5 border-t border-border-subtle/40 flex items-center justify-between">
+                  <div className="p-4 pt-2 border-t border-border-subtle/40 flex items-center justify-between text-meta text-text-secondary/50 text-[10px]">
                     <AuthorBadge size="sm" showRole={false} showWebsite={false} />
-                    <span className="font-mono text-[10px] text-accent-cyan/80 group-hover:translate-x-0.5 transition-transform font-semibold">
-                      Read &rarr;
-                    </span>
+                    <span>{article.readTime} MIN</span>
                   </div>
                 </Link>
               </StaggerItem>
             ))}
-          </div>
-        </div>
 
-        {/* Bottom Tier: Full-Width Dispatches (No empty columns) */}
-        {rail.length > 0 && (
-          <div className={`grid gap-4 mt-5 ${
-            rail.length === 1 ? 'grid-cols-1 max-w-sm' :
-            rail.length === 2 ? 'grid-cols-1 sm:grid-cols-2 max-w-2xl' :
-            rail.length === 3 ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3' :
-            'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4'
-          }`}>
-            {rail.map((article) => (
-              <StaggerItem key={article.slug}>
+            {/* Small Cards (1 col each) */}
+            {small.map((article) => (
+              <StaggerItem key={article.slug} className="lg:col-span-1 flex flex-col">
                 <Link
                   href={`/article/${article.slug}`}
                   aria-label={article.title}
-                  className="group flex flex-col justify-between p-3.5 rounded-xl border border-border-subtle hover:border-white/20 bg-bg-card hover:bg-bg-elevated transition-all duration-300 card-hover h-full"
+                  className="group flex gap-3 p-3.5 rounded-xl border border-border-subtle hover:bg-bg-elevated hover:border-white/20 transition-all card-hover bg-bg-card h-full justify-between"
                 >
-                  <div className="flex gap-3">
-                    <div className="w-20 h-20 rounded-lg overflow-hidden shrink-0 relative bg-bg-elevated border border-white/5 img-hover-container">
-                      <Image
-                        src={article.heroImage}
-                        alt={article.title}
-                        fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
-                        sizes="80px"
-                      />
-                    </div>
-                    <div className="flex-1 min-w-0">
+                  <div className="w-20 h-20 rounded-lg overflow-hidden shrink-0 relative bg-bg-elevated border border-white/5 img-hover-container">
+                    <Image
+                      src={article.heroImage}
+                      alt={article.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="80px"
+                    />
+                  </div>
+                  <div className="flex-1 min-w-0 flex flex-col justify-between">
+                    <div>
                       <div className="flex items-center gap-1.5 mb-1 font-mono text-[9px] uppercase tracking-wider">
                         <span
                           style={{ color: getCategoryColor(article.category) }}
@@ -289,34 +261,66 @@ export default function LatestNewsGrid() {
                         <span className="text-text-secondary/40">&bull;</span>
                         <span className="text-text-secondary/60">{article.readTime}M</span>
                       </div>
-                      <h4 className="font-display font-semibold text-xs text-text-primary leading-snug group-hover:text-accent-primary transition-colors line-clamp-2 mb-1">
+                      <h4 className="font-display font-semibold text-xs text-text-primary leading-snug group-hover:text-accent-primary transition-colors line-clamp-2">
                         {article.title}
                       </h4>
-                      <p className="text-text-secondary text-[11px] font-serif line-clamp-1 leading-normal">
-                        {article.dek}
-                      </p>
                     </div>
-                  </div>
-
-                  <div className="mt-2.5 pt-2 border-t border-border-subtle/40 flex items-center justify-between">
-                    <AuthorBadge size="sm" showRole={false} showWebsite={false} />
-                    <span className="font-mono text-[9px] text-text-secondary/50">
-                      {formatTimecode(article.publishedAt).split('&bull;')[0]}
-                    </span>
+                    <div className="mt-1 flex items-center justify-between">
+                      <AuthorBadge size="sm" showRole={false} showWebsite={false} />
+                    </div>
                   </div>
                 </Link>
               </StaggerItem>
             ))}
-          </div>
-        )}
-      </StaggerContainer>
-      )}
+          </StaggerContainer>
 
-      {/* Note: More Coming Soon */}
-      <div className="mt-8 pt-4 border-t border-border-subtle/50 flex flex-col sm:flex-row items-center justify-between gap-3 text-text-secondary/60 text-xs font-mono">
-        <span>More dispatches coming soon — Each briefing is verified against technical release documentation.</span>
-        <span>Updated continuously</span>
-      </div>
+          {/* Full-Width Dispatch Rail (4 columns) */}
+          {rail.length > 0 && (
+            <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+              {rail.map((article) => (
+                <StaggerItem key={article.slug} className="flex flex-col">
+                  <Link
+                    href={`/article/${article.slug}`}
+                    aria-label={article.title}
+                    className="group flex gap-3 p-3.5 rounded-xl border border-border-subtle hover:border-white/20 bg-bg-card hover:bg-bg-elevated transition-all duration-300 card-hover h-full"
+                  >
+                    <div className="w-16 h-16 rounded-lg overflow-hidden shrink-0 relative bg-bg-elevated border border-white/5 img-hover-container">
+                      <Image
+                        src={article.heroImage}
+                        alt={article.title}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        sizes="64px"
+                      />
+                    </div>
+                    <div className="flex-1 min-w-0 flex flex-col justify-between">
+                      <div>
+                        <div className="flex items-center gap-1.5 mb-1 font-mono text-[9px] uppercase tracking-wider">
+                          <span
+                            style={{ color: getCategoryColor(article.category) }}
+                            className="font-semibold"
+                          >
+                            {article.category.replace('-', ' ')}
+                          </span>
+                          <span className="text-text-secondary/40">&bull;</span>
+                          <span className="text-text-secondary/60">{article.readTime}M</span>
+                        </div>
+                        <h4 className="font-display font-semibold text-xs text-text-primary leading-snug group-hover:text-accent-primary transition-colors line-clamp-2">
+                          {article.title}
+                        </h4>
+                      </div>
+                      <div className="mt-1 flex items-center justify-between text-[10px] font-mono text-text-secondary/50">
+                        <span>{formatTimecode(article.publishedAt).split('&bull;')[0]}</span>
+                        <span className="text-accent-cyan font-semibold group-hover:translate-x-0.5 transition-transform">&rarr;</span>
+                      </div>
+                    </div>
+                  </Link>
+                </StaggerItem>
+              ))}
+            </StaggerContainer>
+          )}
+        </>
+      )}
     </section>
   );
 }

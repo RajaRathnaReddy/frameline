@@ -16,19 +16,16 @@ export function ScrollReveal({
   children,
   className,
   delay = 0,
-  y = 24,
-  duration = 0.6,
+  y = 20,
+  duration = 0.5,
   once = true,
 }: ScrollRevealProps) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once, margin: '-50px' });
-
   return (
     <motion.div
-      ref={ref}
       className={className}
       initial={{ opacity: 0, y }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once }}
       transition={{
         duration,
         delay,
@@ -46,16 +43,13 @@ interface StaggerChildrenProps {
   staggerDelay?: number;
 }
 
-export function StaggerContainer({ children, className, staggerDelay = 0.06 }: StaggerChildrenProps) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-50px' });
-
+export function StaggerContainer({ children, className, staggerDelay = 0.05 }: StaggerChildrenProps) {
   return (
     <motion.div
-      ref={ref}
       className={className}
       initial="hidden"
-      animate={isInView ? 'visible' : 'hidden'}
+      whileInView="visible"
+      viewport={{ once: true }}
       variants={{
         hidden: {},
         visible: {
@@ -75,11 +69,11 @@ export function StaggerItem({ children, className }: { children: ReactNode; clas
     <motion.div
       className={className}
       variants={{
-        hidden: { opacity: 0, y: 24 },
+        hidden: { opacity: 0, y: 20 },
         visible: {
           opacity: 1,
           y: 0,
-          transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+          transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] },
         },
       }}
     >
