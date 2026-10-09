@@ -61,7 +61,17 @@ From an FX Pipeline TD and studio systems perspective, **Hans Zimmer & Remote Co
     readTime: 6,
     featured: false,
     breaking: false,
-    status: 'needs_review',
+    status: 'approved',
+    sources: [
+      {
+        label: "Dolby Professional — Dolby Atmos Renderer & Spatial Audio Post Standards",
+        url: "https://professional.dolby.com/technologies/dolby-atmos/"
+      },
+      {
+        label: "News Shooter — Blackmagic DaVinci Resolve 21.1.1 Fairlight Audio Features",
+        url: "https://www.newsshooter.com/2026/10/01/davinci-resolve-21-1-1/"
+      }
+    ],
     toolsMentioned: ["Dolby Atmos Renderer v6", "Avid Pro Tools 2026", "DaVinci Fairlight", "ElevenLabs Audio"],
     seoKeywords: ["dolby atmos ai calibration", "spatial audio post production", "room adaptive audio", "film sound stem separation", "dolby atmos renderer"],
     body: `## Democratizing Theatrical Monitoring for Indie Post Facilities

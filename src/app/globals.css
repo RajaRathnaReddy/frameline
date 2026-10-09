@@ -57,6 +57,20 @@ body {
   color: white;
 }
 
+/* ─── NAVIGATION DROPDOWN ─── */
+.nav-dropdown-group {
+  position: relative;
+}
+
+.nav-dropdown-menu {
+  display: none;
+}
+
+.nav-dropdown-group:hover .nav-dropdown-menu,
+.nav-dropdown-group:focus-within .nav-dropdown-menu {
+  display: block;
+}
+
 /* ─── TYPOGRAPHY ─── */
 .font-display {
   font-family: var(--font-display);

@@ -23,18 +23,59 @@ export default function LatestNewsGrid() {
 
   // Filter stories based on selected pill
   const nonFeatured = allStories.filter((a) => !a.featured);
-  const filteredStories =
-    selectedFilter === 'all'
-      ? nonFeatured
-      : allStories.filter((a) => a.category === selectedFilter);
 
-  const hasStories = filteredStories.length > 0;
-  const gridArticles = filteredStories.slice(0, 7);
-  const large = gridArticles[0] || nonFeatured[0];
+  // The 7 industry segments for the Bento Grid slots
+  const segmentOrder = ['ai', 'hollywood', 'tools', 'vfx', 'virtual-production', 'music', 'tech'];
+
+  let gridArticles = [];
+  let rail = [];
+
+  if (selectedFilter === 'all') {
+    const selectedArticles = [];
+    const usedSlugs = new Set();
+
+    // Marquee verified dispatches for each segment in the Bento Grid
+    const marqueeBySegment: Record<string, string> = {
+      'ai': 'hell-grind-inside-the-500k-ai-action-film-that-put-hollywood-on-notice',
+      'hollywood': 'google-deepmind-strikes-75m-strategic-alliance-with-a24-a24-labs',
+      'tools': 'adobe-closes-340m-topaz-labs-deal-what-it-means-for-editors',
+      'vfx': 'alliance-for-openusd-standardizes-3d-gaussian-splats-v26-schemas',
+      'virtual-production': 'brompton-roe-visual-full-spectrum-rgbw-led-dynamic-calibration',
+      'music': 'dolby-atmos-room-adaptive-ai-calibration-spatial-audio',
+      'tech': 'nikon-red-unified-cinema-ecosystem-nikon-zr-v-raptor-x',
+    };
+
+    for (const segment of segmentOrder) {
+      const preferredSlug = marqueeBySegment[segment];
+      // Prioritize explicit marquee story, or top verified story for that segment
+      const story =
+        (preferredSlug && nonFeatured.find((a) => a.slug === preferredSlug && !usedSlugs.has(a.slug))) ||
+        (preferredSlug && allStories.find((a) => a.slug === preferredSlug && !usedSlugs.has(a.slug))) ||
+        nonFeatured.find(
+          (a) => a.category === segment && a.sources && a.sources.length > 0 && !usedSlugs.has(a.slug)
+        ) ||
+        nonFeatured.find((a) => a.category === segment && !usedSlugs.has(a.slug)) ||
+        allStories.find((a) => a.category === segment && !usedSlugs.has(a.slug));
+
+      if (story) {
+        selectedArticles.push(story);
+        usedSlugs.add(story.slug);
+      }
+    }
+
+    gridArticles = selectedArticles;
+    rail = nonFeatured.filter((a) => !usedSlugs.has(a.slug)).slice(0, 4);
+  } else {
+    const catStories = allStories.filter((a) => a.category === selectedFilter);
+    gridArticles = catStories.slice(0, 7);
+    rail = catStories.slice(7, 11);
+  }
+
+  const hasStories = gridArticles.length > 0;
+  const large = gridArticles[0];
   const rest = gridArticles.slice(1);
   const medium = rest.slice(0, 2);
   const small = rest.slice(2, 6);
-  const rail = filteredStories.slice(7, 11);
 
   const filterTabs = [
     { label: 'All Beats', value: 'all' },
@@ -51,10 +92,16 @@ export default function LatestNewsGrid() {
     <section className="max-w-[1440px] mx-auto px-4 md:px-8 py-12 md:py-20" id="latest">
       {/* Section Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 flex-wrap">
           <span className="text-meta text-accent-primary font-semibold">SCENE 01 / TAKE 01</span>
           <span className="text-meta text-text-secondary/30">—</span>
           <h2 className="text-meta text-text-secondary font-bold">THE CUT &bull; LATEST DISPATCHES</h2>
+          {selectedFilter === 'all' && (
+            <span className="inline-flex items-center gap-1.5 font-mono text-[9px] uppercase tracking-wider text-accent-cyan bg-accent-cyan/10 border border-accent-cyan/20 px-2 py-0.5 rounded-full">
+              <span className="w-1.5 h-1.5 rounded-full bg-accent-cyan animate-pulse" />
+              Verified News From 7 Segments
+            </span>
+          )}
         </div>
 
         {/* Filter Pills */}
@@ -135,6 +182,12 @@ export default function LatestNewsGrid() {
                           />
                           {large.category.replace('-', ' ')}
                         </span>
+                        {large.sources && large.sources.length > 0 && (
+                          <span className="font-mono text-[9px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-accent-cyan/20 text-accent-cyan border border-accent-cyan/40 backdrop-blur-md shadow-lg flex items-center gap-1">
+                            <span className="w-1 h-1 rounded-full bg-accent-cyan" />
+                            Verified
+                          </span>
+                        )}
                         {isBreaking(large.publishedAt, large.breaking) && (
                           <span className="font-mono text-[9px] uppercase font-bold tracking-widest px-2 py-0.5 rounded-full bg-accent-primary text-white shadow-lg">
                             BREAKING
@@ -199,6 +252,12 @@ export default function LatestNewsGrid() {
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                         sizes="(max-width: 768px) 100vw, 25vw"
                       />
+                      {article.sources && article.sources.length > 0 && (
+                        <span className="absolute top-2 right-2 bg-black/80 backdrop-blur-md text-accent-cyan border border-accent-cyan/30 text-[8px] font-mono uppercase tracking-wider px-1.5 py-0.5 rounded font-semibold flex items-center gap-1 shadow-md">
+                          <span className="w-1 h-1 rounded-full bg-accent-cyan" />
+                          Verified
+                        </span>
+                      )}
                       {isBreaking(article.publishedAt, article.breaking) && (
                         <span className="absolute top-2 left-2 bg-accent-primary text-white text-[9px] font-mono uppercase tracking-widest px-2 py-0.5 rounded font-bold shadow-md">
                           BREAKING
@@ -251,13 +310,19 @@ export default function LatestNewsGrid() {
                   </div>
                   <div className="flex-1 min-w-0 flex flex-col justify-between">
                     <div>
-                      <div className="flex items-center gap-1.5 mb-1 font-mono text-[9px] uppercase tracking-wider">
+                      <div className="flex items-center gap-1.5 mb-1 font-mono text-[9px] uppercase tracking-wider flex-wrap">
                         <span
                           style={{ color: getCategoryColor(article.category) }}
                           className="font-semibold"
                         >
                           {article.category.replace('-', ' ')}
                         </span>
+                        {article.sources && article.sources.length > 0 && (
+                          <>
+                            <span className="text-text-secondary/40">&bull;</span>
+                            <span className="text-accent-cyan font-semibold">Verified</span>
+                          </>
+                        )}
                         <span className="text-text-secondary/40">&bull;</span>
                         <span className="text-text-secondary/60">{article.readTime}M</span>
                       </div>
@@ -295,13 +360,19 @@ export default function LatestNewsGrid() {
                     </div>
                     <div className="flex-1 min-w-0 flex flex-col justify-between">
                       <div>
-                        <div className="flex items-center gap-1.5 mb-1 font-mono text-[9px] uppercase tracking-wider">
+                        <div className="flex items-center gap-1.5 mb-1 font-mono text-[9px] uppercase tracking-wider flex-wrap">
                           <span
                             style={{ color: getCategoryColor(article.category) }}
                             className="font-semibold"
                           >
                             {article.category.replace('-', ' ')}
                           </span>
+                          {article.sources && article.sources.length > 0 && (
+                            <>
+                              <span className="text-text-secondary/40">&bull;</span>
+                              <span className="text-accent-cyan font-semibold">Verified</span>
+                            </>
+                          )}
                           <span className="text-text-secondary/40">&bull;</span>
                           <span className="text-text-secondary/60">{article.readTime}M</span>
                         </div>

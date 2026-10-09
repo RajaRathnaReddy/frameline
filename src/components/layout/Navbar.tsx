@@ -15,11 +15,9 @@ export default function Navbar() {
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [activeCategoryHover, setActiveCategoryHover] = useState<string | null>(null);
+  const [moreOpen, setMoreOpen] = useState(false);
   const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const enterTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-
-  const primaryCategories = categories.slice(0, 4);
-  const secondaryCategories = categories.slice(4);
 
   useEffect(() => {
     return () => {
@@ -62,6 +60,7 @@ export default function Navbar() {
   };
 
   const handleMouseEnterCategory = (slug: string) => {
+    setMoreOpen(false);
     if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
     if (enterTimeoutRef.current) clearTimeout(enterTimeoutRef.current);
     enterTimeoutRef.current = setTimeout(() => {
@@ -92,9 +91,9 @@ export default function Navbar() {
             <RenderLineLogo size="md" />
           </div>
 
-          {/* Center Nav (Desktop) - 4 Core Pillars + More Dropdown */}
-          <div className="hidden lg:flex items-center gap-1 xl:gap-2 shrink-0">
-            {primaryCategories.map((cat) => (
+          {/* Center Nav (Desktop) - All 7 Production Pillars + More Dropdown */}
+          <div className="hidden lg:flex items-center gap-0.5 xl:gap-1 2xl:gap-2 shrink-0">
+            {categories.map((cat) => (
               <div
                 key={cat.slug}
                 className="relative py-2 shrink-0"
@@ -102,7 +101,7 @@ export default function Navbar() {
               >
                 <Link
                   href={`/category/${cat.slug}`}
-                  className={`flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider px-2.5 py-1.5 rounded-lg transition-all duration-200 text-text-secondary hover:text-text-primary hover:bg-white/5 border border-transparent hover:border-white/10 whitespace-nowrap ${
+                  className={`flex items-center gap-1.5 font-mono text-[10px] xl:text-[11px] uppercase tracking-wider px-2 xl:px-2.5 py-1.5 rounded-lg transition-all duration-200 text-text-secondary hover:text-text-primary hover:bg-white/5 border border-transparent hover:border-white/10 whitespace-nowrap ${
                     activeCategoryHover === cat.slug ? 'text-text-primary bg-white/10 border-white/15' : ''
                   }`}
                 >
@@ -112,41 +111,44 @@ export default function Navbar() {
               </div>
             ))}
 
-            {/* More / Additional Pillars & Formats Dropdown */}
-            <div className="relative py-2 shrink-0 group">
+            {/* More / Formats Dropdown */}
+            <div
+              className="relative py-2 shrink-0 group nav-dropdown-group"
+              onMouseEnter={() => {
+                setActiveCategoryHover(null);
+                setMoreOpen(true);
+              }}
+              onMouseLeave={() => setMoreOpen(false)}
+            >
               <button
                 type="button"
-                className="flex items-center gap-1 font-mono text-[11px] uppercase tracking-wider px-2.5 py-1.5 rounded-lg transition-all duration-200 text-text-secondary hover:text-text-primary hover:bg-white/5 border border-transparent hover:border-white/10 whitespace-nowrap cursor-pointer"
+                onClick={() => setMoreOpen((prev) => !prev)}
+                className={`flex items-center gap-1 font-mono text-[10px] xl:text-[11px] uppercase tracking-wider px-2 xl:px-2.5 py-1.5 rounded-lg transition-all duration-200 text-text-secondary group-hover:text-text-primary group-hover:bg-white/5 border border-transparent group-hover:border-white/10 whitespace-nowrap cursor-pointer ${
+                  moreOpen ? 'text-text-primary bg-white/10 border-white/15' : ''
+                }`}
+                aria-expanded={moreOpen}
               >
                 <span>More</span>
-                <svg className="w-3 h-3 text-text-secondary/60 group-hover:text-text-primary transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg
+                  className={`w-3 h-3 text-text-secondary/60 group-hover:text-text-primary group-hover:rotate-180 transition-transform duration-200 ${
+                    moreOpen ? 'rotate-180 text-text-primary' : ''
+                  }`}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
 
-              <div className="absolute right-0 top-full pt-1 hidden group-hover:block z-50 min-w-[220px]">
+              <div className={`nav-dropdown-menu absolute right-0 top-full pt-1 z-50 min-w-[200px] ${moreOpen ? '!block' : ''}`}>
                 <div className="p-2 bg-[#0B0D13] border border-border-subtle rounded-xl shadow-2xl flex flex-col gap-1">
-                  <div className="px-2 py-1 text-[9px] font-mono uppercase tracking-wider text-text-secondary/50 font-bold">
-                    Production Pillars
-                  </div>
-                  {secondaryCategories.map((cat) => (
-                    <Link
-                      key={cat.slug}
-                      href={`/category/${cat.slug}`}
-                      className="flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-mono text-text-secondary hover:text-text-primary hover:bg-white/5 transition-colors"
-                    >
-                      <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: cat.color }} />
-                      <span>{cat.name}</span>
-                    </Link>
-                  ))}
-
-                  <div className="h-px bg-white/[0.08] my-1" />
-
                   <div className="px-2 py-1 text-[9px] font-mono uppercase tracking-wider text-text-secondary/50 font-bold">
                     Features & Formats
                   </div>
                   <Link
                     href="/breakdowns"
+                    onClick={() => setMoreOpen(false)}
                     className="flex items-center justify-between px-3 py-2 rounded-lg text-xs font-mono text-text-secondary hover:text-accent-violet hover:bg-white/5 transition-colors"
                   >
                     <span>Breakdowns</span>
@@ -154,6 +156,7 @@ export default function Navbar() {
                   </Link>
                   <Link
                     href="/reviews"
+                    onClick={() => setMoreOpen(false)}
                     className="flex items-center justify-between px-3 py-2 rounded-lg text-xs font-mono text-text-secondary hover:text-accent-gold hover:bg-white/5 transition-colors"
                   >
                     <span>Reviews</span>
@@ -161,6 +164,7 @@ export default function Navbar() {
                   </Link>
                   <Link
                     href="/tools"
+                    onClick={() => setMoreOpen(false)}
                     className="flex items-center justify-between px-3 py-2 rounded-lg text-xs font-mono text-text-secondary hover:text-accent-lime hover:bg-white/5 transition-colors"
                   >
                     <span>Tools Matrix</span>

@@ -58,7 +58,21 @@ The true strength of **Virtual Production Forecast Reaches $18.5B by 2035** lies
     tags: ["Virtual Production", "Brompton Technology", "ROE Visual", "Full-Spectrum RGBW", "Tessera SX40", "ICVFX Stages"],
     author: rajaRathnaReddy,
     publishedAt: "2026-10-02T16:10:00.000Z",
-    status: 'needs_review',
+    status: 'approved',
+    sources: [
+      {
+        label: "Brompton Technology — Tessera SX40 & Dynamic Calibration Architecture",
+        url: "https://www.bromptontech.com"
+      },
+      {
+        label: "ROE Visual — Black Pearl BP2V2 Full-Spectrum LED Panels for Film",
+        url: "https://www.roevisual.com"
+      },
+      {
+        label: "Epic Games Developer Community — State of Unreal Keynote & Engine Roadmap",
+        url: "https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-8-documentation"
+      }
+    ],
     readTime: 7,
     featured: false,
     breaking: true,

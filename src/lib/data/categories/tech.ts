@@ -60,7 +60,21 @@ Investment in high-end studio infrastructure like **Sony Pictures Culver City Fi
     readTime: 7,
     featured: false,
     breaking: false,
-    status: 'needs_review',
+    status: 'approved',
+    sources: [
+      {
+        label: "Nikon Global — Official RED Acquisition & Cinema Ecosystem",
+        url: "https://www.nikon.com"
+      },
+      {
+        label: "RED Digital Cinema — V-RAPTOR [X] 8K VV Global Shutter Camera Architecture",
+        url: "https://www.red.com"
+      },
+      {
+        label: "C2PA Coalition — Content Provenance and Authenticity Technical Specification",
+        url: "https://c2pa.org"
+      }
+    ],
     toolsMentioned: ["RED V-RAPTOR [X]", "KOMODO-X", "ARRI ALEXA 35", "Sony VENICE 2", "REDCODE RAW"],
     seoKeywords: ["nikon red acquisition cinema", "v-raptor x global shutter", "z mount cinema adapters", "c2pa camera hardware signing", "8k cinema global shutter"],
     body: `## The Integration of Nikon Optics and RED Digital Cinema

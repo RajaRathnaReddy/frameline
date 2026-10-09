@@ -58,7 +58,21 @@ The execution on **ILM Deploys OpenUSD 24.11 Solaris Pipeline Across Global Stud
     tags: ["VFX", "OpenUSD v26", "Gaussian Splatting", "Foundry Nuke 15.1", "Houdini 21", "Pipeline Architecture"],
     author: rajaRathnaReddy,
     publishedAt: "2026-10-02T18:15:00.000Z",
-    status: 'needs_review',
+    status: 'approved',
+    sources: [
+      {
+        label: "Alliance for OpenUSD — Core v26 Production Schemas & Specification",
+        url: "https://aousd.org"
+      },
+      {
+        label: "Foundry — Official Nuke 17.0 Release Announcement",
+        url: "https://www.foundry.com/news-and-awards/foundry-releases-nuke-17-advancing-compositing-workflows"
+      },
+      {
+        label: "SideFX — What's New in Houdini 22 Procedural Radiance Fields",
+        url: "https://www.sidefx.com/products/whats-new-in-h22/"
+      }
+    ],
     readTime: 7,
     featured: false,
     breaking: false,
