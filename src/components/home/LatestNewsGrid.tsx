@@ -38,7 +38,7 @@ export default function LatestNewsGrid() {
     const marqueeBySegment: Record<string, string> = {
       'ai': 'hell-grind-inside-the-500k-ai-action-film-that-put-hollywood-on-notice',
       'hollywood': 'google-deepmind-strikes-75m-strategic-alliance-with-a24-a24-labs',
-      'tools': 'adobe-closes-340m-topaz-labs-deal-what-it-means-for-editors',
+      'tools': 'blackmagic-davinci-resolve-21-1-1-trim-editor-usac-audio',
       'vfx': 'alliance-for-openusd-standardizes-3d-gaussian-splats-v26-schemas',
       'virtual-production': 'brompton-roe-visual-full-spectrum-rgbw-led-dynamic-calibration',
       'music': 'dolby-atmos-room-adaptive-ai-calibration-spatial-audio',
