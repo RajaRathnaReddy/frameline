@@ -1,7 +1,34 @@
 import { NextResponse } from 'next/server';
+import crypto from 'crypto';
 import { getAllArticles } from '@/lib/data';
 import { getActiveSubscribers } from '@/lib/email/subscribers';
 import { sendBroadcastDigest } from '@/lib/email/mailer';
+
+function safeCompare(a: string | null | undefined, b: string | null | undefined): boolean {
+  if (!a || !b) return false;
+  const bufA = Buffer.from(a);
+  const bufB = Buffer.from(b);
+  if (bufA.length !== bufB.length) return false;
+  return crypto.timingSafeEqual(bufA, bufB);
+}
+
+function verifyCronAuth(request: Request): boolean {
+  const { searchParams } = new URL(request.url);
+  const queryKey = searchParams.get('key');
+  const authHeader = request.headers.get('authorization');
+  const bearerToken = authHeader?.startsWith('Bearer ') ? authHeader.slice(7).trim() : null;
+  const candidate = bearerToken || queryKey;
+
+  if (!candidate) return false;
+
+  const cronSecret = process.env.CRON_SECRET;
+  const adminKey = process.env.ADMIN_API_KEY;
+
+  if (cronSecret && safeCompare(candidate, cronSecret)) return true;
+  if (adminKey && safeCompare(candidate, adminKey)) return true;
+
+  return false;
+}
 
 export async function GET(request: Request) {
   return handleCron(request);
@@ -13,13 +40,11 @@ export async function POST(request: Request) {
 
 async function handleCron(request: Request) {
   try {
-    const { searchParams } = new URL(request.url);
-    const key = searchParams.get('key');
-    const expectedKey = process.env.CRON_SECRET || 'renderline_secret_2026';
-
-    // Optional secret key verification (if CRON_SECRET is set)
-    if (process.env.CRON_SECRET && key !== expectedKey) {
-      return NextResponse.json({ success: false, error: 'Unauthorized cron key.' }, { status: 401 });
+    if (!verifyCronAuth(request)) {
+      return NextResponse.json(
+        { success: false, error: 'Unauthorized.' },
+        { status: 401 }
+      );
     }
 
     const allArticles = getAllArticles();
@@ -48,7 +73,7 @@ async function handleCron(request: Request) {
   } catch (error: any) {
     console.error('Newsletter cron dispatch failed:', error);
     return NextResponse.json(
-      { success: false, error: error?.message || 'Failed executing newsletter cron job.' },
+      { success: false, error: 'Failed executing newsletter cron job.' },
       { status: 500 }
     );
   }

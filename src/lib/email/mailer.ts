@@ -7,11 +7,11 @@ const SMTP_CONFIG = {
   port: parseInt(process.env.SMTP_PORT || '465', 10),
   secure: true, // SSL for 465
   auth: {
-    user: process.env.SMTP_USER || 'vfx@rajarathnareddy.com',
-    pass: process.env.SMTP_PASS || 'Raja@777.',
+    user: process.env.SMTP_USER || '',
+    pass: process.env.SMTP_PASS || '',
   },
   tls: {
-    rejectUnauthorized: false, // Required for server-level self-signed cert chain
+    rejectUnauthorized: process.env.NODE_ENV === 'production' && process.env.SMTP_ALLOW_SELFSIGNED !== 'true',
   },
 };
 

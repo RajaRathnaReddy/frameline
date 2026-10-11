@@ -28,15 +28,16 @@ const SMTP_CONFIG = {
   port: parseInt(process.env.SMTP_PORT || '465', 10),
   secure: true,
   auth: {
-    user: process.env.SMTP_USER || 'vfx@rajarathnareddy.com',
-    pass: process.env.SMTP_PASS || 'Raja@777.',
+    user: process.env.SMTP_USER || '',
+    pass: process.env.SMTP_PASS || '',
   },
   tls: {
-    rejectUnauthorized: false,
+    rejectUnauthorized: process.env.SMTP_ALLOW_SELFSIGNED !== 'true',
   },
 };
 
-const FROM_ADDRESS = process.env.SMTP_FROM || '"Raja Rathna Reddy | RENDERLINE" <vfx@rajarathnareddy.com>';
+const SITE_URL = process.env.SITE_URL || 'https://vfx.rajarathnareddy.com';
+const FROM_ADDRESS = process.env.SMTP_FROM || `"Raja Rathna Reddy | RENDERLINE" <${process.env.SMTP_USER || 'vfx@rajarathnareddy.com'}>`;
 
 async function runCron() {
   console.log('====================================================');
@@ -112,7 +113,7 @@ async function runCron() {
         ${a.category.toUpperCase()} &bull; ${a.readTime} MIN READ
       </div>
       <h3 style="margin: 0 0 8px 0; font-size: 18px; color: #FFFFFF; font-weight: 700;">
-        <a href="http://localhost:3000/article/${a.slug}" style="color: #FFFFFF; text-decoration: none;">
+        <a href="${SITE_URL}/article/${a.slug}" style="color: #FFFFFF; text-decoration: none;">
           ${a.title}
         </a>
       </h3>
@@ -142,7 +143,7 @@ async function runCron() {
         </p>
         ${articlesHtml}
         <div style="text-align: center; margin: 32px 0 16px 0;">
-          <a href="http://localhost:3000/news" style="display: inline-block; background-color: #E63946; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 13px; font-family: monospace; letter-spacing: 1px; text-transform: uppercase; padding: 14px 28px; border-radius: 6px;">
+          <a href="${SITE_URL}/news" style="display: inline-block; background-color: #E63946; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 13px; font-family: monospace; letter-spacing: 1px; text-transform: uppercase; padding: 14px 28px; border-radius: 6px;">
             Explore All 600 Industry Reports &rarr;
           </a>
         </div>
@@ -167,7 +168,7 @@ async function runCron() {
         to: sub.email,
         subject: `RENDERLINE Weekly Intelligence Dispatch — ${new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}`,
         html: digestHtml,
-        text: `RENDERLINE Weekly Intelligence Digest. Read top reports at http://localhost:3000/news`,
+        text: `RENDERLINE Weekly Intelligence Digest. Read top reports at ${SITE_URL}/news`,
       });
       console.log(`   ✅ Sent! MessageID: ${info.messageId}`);
       sentCount++;
